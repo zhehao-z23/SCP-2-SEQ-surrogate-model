@@ -1,0 +1,5918 @@
+{
+  "stage": "pooling_20261105",
+  "status": "complete",
+  "fits_completed": 20,
+  "expected_fits": 20,
+  "selected": 12,
+  "seeds_present": [
+    1701,
+    3407
+  ],
+  "scores": [
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "rows": 8756,
+      "proteins": 8753,
+      "groups": 3199,
+      "group_macro_H": 0.06255920502841339,
+      "group_macro_CDF": 0.00035963812842965126,
+      "group_macro_tail": 0.0025315782986581326,
+      "protein_macro_H": 0.06441657300432845,
+      "protein_macro_CDF": 0.00038750332896597683,
+      "protein_macro_tail": 0.002455234993249178,
+      "selected_run_ids": [
+        "95ee4cefb91032079b16e6d6aee470d9574c2efb06895c2a98ad572fa46ecf10",
+        "6a754378628284a4ad53e24b5b7e51e4a64bc98736c03674b8cd7b3a39c02c23"
+      ],
+      "per_fold_H": {
+        "0": 0.06202611016335715,
+        "1": 0.06309196670917899
+      },
+      "selected_budget_limited": 0
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "rows": 8756,
+      "proteins": 8753,
+      "groups": 3199,
+      "group_macro_H": 0.05063912763611723,
+      "group_macro_CDF": 0.00019703101133927703,
+      "group_macro_tail": 0.002008631359785795,
+      "protein_macro_H": 0.05066603747286652,
+      "protein_macro_CDF": 0.00018547254148870707,
+      "protein_macro_tail": 0.0019875988364219666,
+      "selected_run_ids": [
+        "3ffeb8918ea1abf00b2ea4554fd0eeceeef94c063970e54d9f724b5525d0b3fe",
+        "d59d3cb958b61822ad0b81aa30f5604db59b76e9df6aad177d373b307df5186b"
+      ],
+      "per_fold_H": {
+        "1": 0.050416759630024365,
+        "0": 0.0508616347091307
+      },
+      "selected_budget_limited": 0
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "rows": 8756,
+      "proteins": 8753,
+      "groups": 3199,
+      "group_macro_H": 0.050452124549341504,
+      "group_macro_CDF": 0.00020019574731122702,
+      "group_macro_tail": 0.0020057628862559795,
+      "protein_macro_H": 0.05026009091730415,
+      "protein_macro_CDF": 0.0001846444938564673,
+      "protein_macro_tail": 0.0019654647912830114,
+      "selected_run_ids": [
+        "578fe3ba767b717200d450e5d8107465faa5da2afd61b62ecc3371f8250e0d46",
+        "a511dc989eb835d6b9c0ad7baab9ce50127b6529b929bfd0c90e8227649455dc"
+      ],
+      "per_fold_H": {
+        "0": 0.050450396427094236,
+        "1": 0.050453851591512375
+      },
+      "selected_budget_limited": 0
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "rows": 8756,
+      "proteins": 8753,
+      "groups": 3199,
+      "group_macro_H": 0.051826453132723015,
+      "group_macro_CDF": 0.00020367080287542194,
+      "group_macro_tail": 0.002072796458378434,
+      "protein_macro_H": 0.05169586707046103,
+      "protein_macro_CDF": 0.0001938770874403417,
+      "protein_macro_tail": 0.002032291376963258,
+      "selected_run_ids": [
+        "497c5551a6c05f23f9e341b17dfca7ca09e5adc8313477fd077172249a6aeb64",
+        "4f4061f4960c458d13cffe4a2383f4c52d063d9e20283b41dc78d0286153f132"
+      ],
+      "per_fold_H": {
+        "1": 0.051080665308772144,
+        "0": 0.052572707365569425
+      },
+      "selected_budget_limited": 0
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "rows": 8756,
+      "proteins": 8753,
+      "groups": 3199,
+      "group_macro_H": 0.049071795570924205,
+      "group_macro_CDF": 0.00017910340102389455,
+      "group_macro_tail": 0.0019701847340911627,
+      "protein_macro_H": 0.04930506900801054,
+      "protein_macro_CDF": 0.00017117118113674223,
+      "protein_macro_tail": 0.0019367844797670841,
+      "selected_run_ids": [
+        "a460941f4efce5a8e17c571777cf42cdc32c57b46b3489be51f9a0e92d25ef94",
+        "8a6f6980ad36f45eead0074aa8e95e00133582862d008d86daabf739fc434d4f"
+      ],
+      "per_fold_H": {
+        "1": 0.0490401067201977,
+        "0": 0.04910350423956861
+      },
+      "selected_budget_limited": 0
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "rows": 8756,
+      "proteins": 8753,
+      "groups": 3199,
+      "group_macro_H": 0.04905346695666277,
+      "group_macro_CDF": 0.00018060239381156862,
+      "group_macro_tail": 0.001979043474420905,
+      "protein_macro_H": 0.04907347609293111,
+      "protein_macro_CDF": 0.00017030403250828385,
+      "protein_macro_tail": 0.0019500708440318704,
+      "selected_run_ids": [
+        "a69bd3e56223aee428541f7fa4d3b9836975f67b3072ed487b7750e3f9c684bb",
+        "f37e0d8d676ce3d0cfa9866169ffd5dd14c63fc80368617d720d21a458935855"
+      ],
+      "per_fold_H": {
+        "0": 0.0491578742118988,
+        "1": 0.048949124955961244
+      },
+      "selected_budget_limited": 0
+    }
+  ],
+  "strata": [
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 7748,
+      "proteins": 7745,
+      "groups": 3092,
+      "group_macro_H": 0.062404635531246075,
+      "group_macro_CDF": 0.0003496129356790334,
+      "group_macro_tail": 0.00252999784424901,
+      "protein_macro_H": 0.0642562212065289,
+      "protein_macro_CDF": 0.0003841313300654292,
+      "protein_macro_tail": 0.0024937433190643787
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.06315608222008799,
+      "group_macro_CDF": 0.0003225095570087433,
+      "group_macro_tail": 0.002443583682179451,
+      "protein_macro_H": 0.0663256841921845,
+      "protein_macro_CDF": 0.0004096999764442444,
+      "protein_macro_tail": 0.0022797430865466595
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 453,
+      "proteins": 453,
+      "groups": 286,
+      "group_macro_H": 0.06406061959054334,
+      "group_macro_CDF": 0.00044000043999403715,
+      "group_macro_tail": 0.0022785027977079153,
+      "protein_macro_H": 0.06481915129284342,
+      "protein_macro_CDF": 0.00041796083678491414,
+      "protein_macro_tail": 0.0020118525717407465
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 2481,
+      "proteins": 2479,
+      "groups": 1003,
+      "group_macro_H": 0.05958573166390082,
+      "group_macro_CDF": 0.0002258508902741596,
+      "group_macro_tail": 0.001721970154903829,
+      "protein_macro_H": 0.06586438138223456,
+      "protein_macro_CDF": 0.0003713830083142966,
+      "protein_macro_tail": 0.0015850429190322757
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 3152,
+      "proteins": 3151,
+      "groups": 1306,
+      "group_macro_H": 0.05666930990861045,
+      "group_macro_CDF": 0.0002466686419211328,
+      "group_macro_tail": 0.0021033743396401405,
+      "protein_macro_H": 0.05891025118664588,
+      "protein_macro_CDF": 0.00029151132912375033,
+      "protein_macro_tail": 0.0020242114551365376
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 2399,
+      "proteins": 2399,
+      "groups": 1019,
+      "group_macro_H": 0.06451726442407484,
+      "group_macro_CDF": 0.00041179783875122666,
+      "group_macro_tail": 0.002973020076751709,
+      "protein_macro_H": 0.06313575425384194,
+      "protein_macro_CDF": 0.0003597637405619025,
+      "protein_macro_tail": 0.0029006204567849636
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 724,
+      "proteins": 724,
+      "groups": 297,
+      "group_macro_H": 0.09052541111613163,
+      "group_macro_CDF": 0.0011031362228095531,
+      "group_macro_tail": 0.005807057023048401,
+      "protein_macro_H": 0.08766793662463988,
+      "protein_macro_CDF": 0.0009523932822048664,
+      "protein_macro_tail": 0.0058349017053842545
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 1412,
+      "proteins": 1412,
+      "groups": 715,
+      "group_macro_H": 0.0580096195075579,
+      "group_macro_CDF": 0.0002560307621024549,
+      "group_macro_tail": 0.001893145265057683,
+      "protein_macro_H": 0.057160574569985696,
+      "protein_macro_CDF": 0.0002468382299412042,
+      "protein_macro_tail": 0.00201413594186306
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 2554,
+      "proteins": 2552,
+      "groups": 1291,
+      "group_macro_H": 0.06401079109666376,
+      "group_macro_CDF": 0.00037602713564410806,
+      "group_macro_tail": 0.002745305188000202,
+      "protein_macro_H": 0.06623800960782837,
+      "protein_macro_CDF": 0.00042100867722183466,
+      "protein_macro_tail": 0.002740782219916582
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 2232,
+      "proteins": 2232,
+      "groups": 1201,
+      "group_macro_H": 0.06274011656164126,
+      "group_macro_CDF": 0.0003448795760050416,
+      "group_macro_tail": 0.0026636857073754072,
+      "protein_macro_H": 0.06576653483740925,
+      "protein_macro_CDF": 0.00040710350731387734,
+      "protein_macro_tail": 0.0026203743182122707
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 2003,
+      "proteins": 2002,
+      "groups": 980,
+      "group_macro_H": 0.06283999064989758,
+      "group_macro_CDF": 0.0004046730464324355,
+      "group_macro_tail": 0.0024919037241488695,
+      "protein_macro_H": 0.06517805754801655,
+      "protein_macro_CDF": 0.0004159982199780643,
+      "protein_macro_tail": 0.0022668829187750816
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.06315608222008799,
+      "group_macro_CDF": 0.0003225095570087433,
+      "group_macro_tail": 0.002443583682179451,
+      "protein_macro_H": 0.0663256841921845,
+      "protein_macro_CDF": 0.0004096999764442444,
+      "protein_macro_tail": 0.0022797430865466595
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 2099,
+      "proteins": 2097,
+      "groups": 947,
+      "group_macro_H": 0.0595974777327504,
+      "group_macro_CDF": 0.0002239613386336714,
+      "group_macro_tail": 0.0017314563738182187,
+      "protein_macro_H": 0.06536956731157734,
+      "protein_macro_CDF": 0.00036150735104456544,
+      "protein_macro_tail": 0.0016027053352445364
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 2771,
+      "proteins": 2770,
+      "groups": 1253,
+      "group_macro_H": 0.05655927913623958,
+      "group_macro_CDF": 0.00024822307750582695,
+      "group_macro_tail": 0.002099977107718587,
+      "protein_macro_H": 0.058613812665113146,
+      "protein_macro_CDF": 0.00028794576064683497,
+      "protein_macro_tail": 0.0020166628528386354
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 2192,
+      "proteins": 2192,
+      "groups": 984,
+      "group_macro_H": 0.06397244565154563,
+      "group_macro_CDF": 0.00037330141640268266,
+      "group_macro_tail": 0.002947535365819931,
+      "protein_macro_H": 0.06292785366685047,
+      "protein_macro_CDF": 0.00034426679485477507,
+      "protein_macro_tail": 0.002894188743084669
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 686,
+      "proteins": 686,
+      "groups": 289,
+      "group_macro_H": 0.09113551625422875,
+      "group_macro_CDF": 0.0011258419835940003,
+      "group_macro_tail": 0.005807587876915932,
+      "protein_macro_H": 0.08788095374940084,
+      "protein_macro_CDF": 0.0009690577280707657,
+      "protein_macro_tail": 0.005864361766725779
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 221,
+      "proteins": 221,
+      "groups": 99,
+      "group_macro_H": 0.06340746949841007,
+      "group_macro_CDF": 0.0003115283907391131,
+      "group_macro_tail": 0.0014775589806959033,
+      "protein_macro_H": 0.06983410212975397,
+      "protein_macro_CDF": 0.0004757278074976057,
+      "protein_macro_tail": 0.001483841217122972
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 216,
+      "proteins": 216,
+      "groups": 102,
+      "group_macro_H": 0.06056772006288224,
+      "group_macro_CDF": 0.00030091122607700527,
+      "group_macro_tail": 0.0021353617776185274,
+      "protein_macro_H": 0.06234844018625457,
+      "protein_macro_CDF": 0.0003470101801212877,
+      "protein_macro_tail": 0.0022277901880443096
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 100,
+      "proteins": 100,
+      "groups": 66,
+      "group_macro_H": 0.06322933028495951,
+      "group_macro_CDF": 0.00031185499392449856,
+      "group_macro_tail": 0.003560028038918972,
+      "protein_macro_H": 0.06296713954155844,
+      "protein_macro_CDF": 0.0003258926735725254,
+      "protein_macro_tail": 0.0033728466369211674
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 18,
+      "proteins": 18,
+      "groups": 14,
+      "group_macro_H": 0.08285354173170392,
+      "group_macro_CDF": 0.0006014921818859875,
+      "group_macro_tail": 0.006724961567670107,
+      "protein_macro_H": 0.08963561786666344,
+      "protein_macro_CDF": 0.000816899526398629,
+      "protein_macro_tail": 0.006602282170206308
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 161,
+      "proteins": 161,
+      "groups": 102,
+      "group_macro_H": 0.06451202054116398,
+      "group_macro_CDF": 0.00032319180900231004,
+      "group_macro_tail": 0.0015708839055150747,
+      "protein_macro_H": 0.06686013803419992,
+      "protein_macro_CDF": 0.00035678132553584874,
+      "protein_macro_tail": 0.0014939098618924618
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 165,
+      "proteins": 165,
+      "groups": 97,
+      "group_macro_H": 0.058629533243829066,
+      "group_macro_CDF": 0.00024139611923601478,
+      "group_macro_tail": 0.0020801653154194355,
+      "protein_macro_H": 0.05938592319107137,
+      "protein_macro_CDF": 0.00027871658676303923,
+      "protein_macro_tail": 0.001884438912384212
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 107,
+      "proteins": 107,
+      "groups": 86,
+      "group_macro_H": 0.06864569922331087,
+      "group_macro_CDF": 0.0008060960099101067,
+      "group_macro_tail": 0.0028088598046451807,
+      "protein_macro_H": 0.06755238563621262,
+      "protein_macro_CDF": 0.0007088898564688861,
+      "protein_macro_tail": 0.002591043943539262
+    },
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 20,
+      "proteins": 20,
+      "groups": 16,
+      "group_macro_H": 0.07697472789418998,
+      "group_macro_CDF": 0.0005050408071838319,
+      "group_macro_tail": 0.0048508420586586,
+      "protein_macro_H": 0.07859053612751797,
+      "protein_macro_CDF": 0.000502751034218818,
+      "protein_macro_tail": 0.004133784212172031
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 7748,
+      "proteins": 7745,
+      "groups": 3092,
+      "group_macro_H": 0.05048159628061064,
+      "group_macro_CDF": 0.00019223704293835908,
+      "group_macro_tail": 0.0020015356130898,
+      "protein_macro_H": 0.05064190312924145,
+      "protein_macro_CDF": 0.00018575415015220642,
+      "protein_macro_tail": 0.002014384837821126
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.05079791244088641,
+      "group_macro_CDF": 0.00016414301353506744,
+      "group_macro_tail": 0.00203917920589447,
+      "protein_macro_H": 0.05044143682047643,
+      "protein_macro_CDF": 0.00015884793538134545,
+      "protein_macro_tail": 0.001970741432160139
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 453,
+      "proteins": 453,
+      "groups": 286,
+      "group_macro_H": 0.051217875666166326,
+      "group_macro_CDF": 0.00023089862952474505,
+      "group_macro_tail": 0.0018391888588666916,
+      "protein_macro_H": 0.05135383847386576,
+      "protein_macro_CDF": 0.00021327740978449583,
+      "protein_macro_tail": 0.0015502875903621316
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 2481,
+      "proteins": 2479,
+      "groups": 1003,
+      "group_macro_H": 0.049249985075154074,
+      "group_macro_CDF": 0.00013524526730179787,
+      "group_macro_tail": 0.0013894110452383757,
+      "protein_macro_H": 0.05007023035567181,
+      "protein_macro_CDF": 0.00015067608910612762,
+      "protein_macro_tail": 0.0012921965681016445
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 3152,
+      "proteins": 3151,
+      "groups": 1306,
+      "group_macro_H": 0.04760727985333137,
+      "group_macro_CDF": 0.0001571263710502535,
+      "group_macro_tail": 0.0017010318115353584,
+      "protein_macro_H": 0.04785068600041833,
+      "protein_macro_CDF": 0.00015085256018210202,
+      "protein_macro_tail": 0.0016390662640333176
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 2399,
+      "proteins": 2399,
+      "groups": 1019,
+      "group_macro_H": 0.052397653450592864,
+      "group_macro_CDF": 0.00022996202460490167,
+      "group_macro_tail": 0.002546346513554454,
+      "protein_macro_H": 0.05219453755224841,
+      "protein_macro_CDF": 0.00020981694979127496,
+      "protein_macro_tail": 0.002603861503303051
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 724,
+      "proteins": 724,
+      "groups": 297,
+      "group_macro_H": 0.06182516366038096,
+      "group_macro_CDF": 0.0004399540775921196,
+      "group_macro_tail": 0.0036280532367527485,
+      "protein_macro_H": 0.059894361565094055,
+      "protein_macro_CDF": 0.00037462401087395847,
+      "protein_macro_tail": 0.003843556856736541
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 1412,
+      "proteins": 1412,
+      "groups": 715,
+      "group_macro_H": 0.04804570769590891,
+      "group_macro_CDF": 0.00014489922614302486,
+      "group_macro_tail": 0.0016510651912540197,
+      "protein_macro_H": 0.04749587203693796,
+      "protein_macro_CDF": 0.00014601041038986295,
+      "protein_macro_tail": 0.0017457477515563369
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 2554,
+      "proteins": 2552,
+      "groups": 1291,
+      "group_macro_H": 0.051068805643332375,
+      "group_macro_CDF": 0.00019493099534884095,
+      "group_macro_tail": 0.0021046872716397047,
+      "protein_macro_H": 0.05185027675973964,
+      "protein_macro_CDF": 0.00019734656962100416,
+      "protein_macro_tail": 0.002110943431034684
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 2232,
+      "proteins": 2232,
+      "groups": 1201,
+      "group_macro_H": 0.05092617323232162,
+      "group_macro_CDF": 0.00019802554743364453,
+      "group_macro_tail": 0.0021089997608214617,
+      "protein_macro_H": 0.051289378897352446,
+      "protein_macro_CDF": 0.00019506482931319624,
+      "protein_macro_tail": 0.002159693744033575
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 2003,
+      "proteins": 2002,
+      "groups": 980,
+      "group_macro_H": 0.05077529958216885,
+      "group_macro_CDF": 0.00021597702289000154,
+      "group_macro_tail": 0.001964615425094962,
+      "protein_macro_H": 0.05075966896040637,
+      "protein_macro_CDF": 0.00019485550001263618,
+      "protein_macro_tail": 0.0018137512961402535
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.05079791244088641,
+      "group_macro_CDF": 0.00016414301353506744,
+      "group_macro_tail": 0.00203917920589447,
+      "protein_macro_H": 0.05044143682047643,
+      "protein_macro_CDF": 0.00015884793538134545,
+      "protein_macro_tail": 0.001970741432160139
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 2099,
+      "proteins": 2097,
+      "groups": 947,
+      "group_macro_H": 0.04912832909237432,
+      "group_macro_CDF": 0.0001352256367681548,
+      "group_macro_tail": 0.0013874066062271595,
+      "protein_macro_H": 0.05000169303754559,
+      "protein_macro_CDF": 0.00015043934399727732,
+      "protein_macro_tail": 0.001306283287703991
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 2771,
+      "proteins": 2770,
+      "groups": 1253,
+      "group_macro_H": 0.04756738450065396,
+      "group_macro_CDF": 0.00015795246872585267,
+      "group_macro_tail": 0.0017053436022251844,
+      "protein_macro_H": 0.047861636479372166,
+      "protein_macro_CDF": 0.00015294799231924117,
+      "protein_macro_tail": 0.0016374378465116024
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 2192,
+      "proteins": 2192,
+      "groups": 984,
+      "group_macro_H": 0.0520647628114191,
+      "group_macro_CDF": 0.00021225620002951473,
+      "group_macro_tail": 0.0025189772713929415,
+      "protein_macro_H": 0.05183237351610286,
+      "protein_macro_CDF": 0.00019970210269093513,
+      "protein_macro_tail": 0.0025962493382394314
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 686,
+      "proteins": 686,
+      "groups": 289,
+      "group_macro_H": 0.06222468973471221,
+      "group_macro_CDF": 0.0004479746276047081,
+      "group_macro_tail": 0.0036396023351699114,
+      "protein_macro_H": 0.060021419301871035,
+      "protein_macro_CDF": 0.0003816057578660548,
+      "protein_macro_tail": 0.003841767553240061
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 221,
+      "proteins": 221,
+      "groups": 99,
+      "group_macro_H": 0.050293080833619254,
+      "group_macro_CDF": 0.00013959432544652373,
+      "group_macro_tail": 0.001315568690188229,
+      "protein_macro_H": 0.0500722912526394,
+      "protein_macro_CDF": 0.0001522055536042899,
+      "protein_macro_tail": 0.0012997318990528584
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 216,
+      "proteins": 216,
+      "groups": 102,
+      "group_macro_H": 0.050338019572510176,
+      "group_macro_CDF": 0.00016883431817404926,
+      "group_macro_tail": 0.0017528381431475282,
+      "protein_macro_H": 0.049267761555950126,
+      "protein_macro_CDF": 0.0001457467005820945,
+      "protein_macro_tail": 0.0019325480097904801
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 100,
+      "proteins": 100,
+      "groups": 66,
+      "group_macro_H": 0.05188434974646483,
+      "group_macro_CDF": 0.00018396007362753153,
+      "group_macro_tail": 0.0031362620647996664,
+      "protein_macro_H": 0.05272969198689314,
+      "protein_macro_CDF": 0.00018810345500241965,
+      "protein_macro_tail": 0.0031048667151480913
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 18,
+      "proteins": 18,
+      "groups": 14,
+      "group_macro_H": 0.054215242105344015,
+      "group_macro_CDF": 0.00022162380628287792,
+      "group_macro_tail": 0.004124032333493233,
+      "protein_macro_H": 0.05634529854203144,
+      "protein_macro_CDF": 0.00023508543381467462,
+      "protein_macro_tail": 0.0043668742291629314
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 161,
+      "proteins": 161,
+      "groups": 102,
+      "group_macro_H": 0.0502304436577019,
+      "group_macro_CDF": 0.0001458106271456927,
+      "group_macro_tail": 0.0011836796766147017,
+      "protein_macro_H": 0.05096008934872058,
+      "protein_macro_CDF": 0.0001516604097560048,
+      "protein_macro_tail": 0.0010983756510540843
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 165,
+      "proteins": 165,
+      "groups": 97,
+      "group_macro_H": 0.047661005246124634,
+      "group_macro_CDF": 0.00013921594654675573,
+      "group_macro_tail": 0.00159081828314811,
+      "protein_macro_H": 0.04581176995983052,
+      "protein_macro_CDF": 0.00012235846952535212,
+      "protein_macro_tail": 0.0012822088319808245
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 107,
+      "proteins": 107,
+      "groups": 86,
+      "group_macro_H": 0.05551042075215569,
+      "group_macro_CDF": 0.0004187550221104175,
+      "group_macro_tail": 0.002477566245943308,
+      "protein_macro_H": 0.0591136788958611,
+      "protein_macro_CDF": 0.0004373225092422217,
+      "protein_macro_tail": 0.002291574142873287
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 20,
+      "proteins": 20,
+      "groups": 16,
+      "group_macro_H": 0.05815769053451801,
+      "group_macro_CDF": 0.0002851167810149491,
+      "group_macro_tail": 0.0038015975151211023,
+      "protein_macro_H": 0.058730437914400115,
+      "protein_macro_CDF": 0.0002607343776617199,
+      "protein_macro_tail": 0.0034339434932917356
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 7748,
+      "proteins": 7745,
+      "groups": 3092,
+      "group_macro_H": 0.05022886480925824,
+      "group_macro_CDF": 0.00019077814067713916,
+      "group_macro_tail": 0.001995956525206566,
+      "protein_macro_H": 0.0501520229639684,
+      "protein_macro_CDF": 0.00018326057761441916,
+      "protein_macro_tail": 0.0019900426268577576
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.04969770252001638,
+      "group_macro_CDF": 0.0001501672377344221,
+      "group_macro_tail": 0.0020321360789239407,
+      "protein_macro_H": 0.05021321083414119,
+      "protein_macro_CDF": 0.0001567706058267504,
+      "protein_macro_tail": 0.001957136671990156
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 453,
+      "proteins": 453,
+      "groups": 286,
+      "group_macro_H": 0.05198253259534832,
+      "group_macro_CDF": 0.00028069483232684433,
+      "group_macro_tail": 0.0018393502105027437,
+      "protein_macro_H": 0.052165178654038816,
+      "protein_macro_CDF": 0.0002424561680527404,
+      "protein_macro_tail": 0.0015554538695141673
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 2481,
+      "proteins": 2479,
+      "groups": 1003,
+      "group_macro_H": 0.048964411784841434,
+      "group_macro_CDF": 0.00013025887892581522,
+      "group_macro_tail": 0.0013491030549630523,
+      "protein_macro_H": 0.04973894551382931,
+      "protein_macro_CDF": 0.00014911095786374062,
+      "protein_macro_tail": 0.0012607917888090014
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 3152,
+      "proteins": 3151,
+      "groups": 1306,
+      "group_macro_H": 0.04748599942576334,
+      "group_macro_CDF": 0.00015267039998434484,
+      "group_macro_tail": 0.0016846817452460527,
+      "protein_macro_H": 0.04755624366101582,
+      "protein_macro_CDF": 0.00014578067930415273,
+      "protein_macro_tail": 0.0016140795778483152
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 2399,
+      "proteins": 2399,
+      "groups": 1019,
+      "group_macro_H": 0.051936221683546946,
+      "group_macro_CDF": 0.00023702716862317175,
+      "group_macro_tail": 0.0025698465760797262,
+      "protein_macro_H": 0.05158764044606605,
+      "protein_macro_CDF": 0.00020707608200609684,
+      "protein_macro_tail": 0.00259181996807456
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 724,
+      "proteins": 724,
+      "groups": 297,
+      "group_macro_H": 0.06142997219977342,
+      "group_macro_CDF": 0.00046616632607765496,
+      "group_macro_tail": 0.003740941174328327,
+      "protein_macro_H": 0.05941333793426381,
+      "protein_macro_CDF": 0.00040112825809046626,
+      "protein_macro_tail": 0.0038321407046169043
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 1412,
+      "proteins": 1412,
+      "groups": 715,
+      "group_macro_H": 0.04810339241806664,
+      "group_macro_CDF": 0.00015000453277025372,
+      "group_macro_tail": 0.0016197594814002514,
+      "protein_macro_H": 0.04747642733742236,
+      "protein_macro_CDF": 0.000147246741107665,
+      "protein_macro_tail": 0.0017123293364420533
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 2554,
+      "proteins": 2552,
+      "groups": 1291,
+      "group_macro_H": 0.05066131951951064,
+      "group_macro_CDF": 0.00019349284411873668,
+      "group_macro_tail": 0.002105108695104718,
+      "protein_macro_H": 0.05134112091148133,
+      "protein_macro_CDF": 0.00019937506294809282,
+      "protein_macro_tail": 0.002101598773151636
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 2232,
+      "proteins": 2232,
+      "groups": 1201,
+      "group_macro_H": 0.050421360826750285,
+      "group_macro_CDF": 0.00019203290867153555,
+      "group_macro_tail": 0.0021028961054980755,
+      "protein_macro_H": 0.05074127608617555,
+      "protein_macro_CDF": 0.0001886841782834381,
+      "protein_macro_tail": 0.0021425627637654543
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 2003,
+      "proteins": 2002,
+      "groups": 980,
+      "group_macro_H": 0.05054661840259492,
+      "group_macro_CDF": 0.0002263232017867267,
+      "group_macro_tail": 0.0019456988666206598,
+      "protein_macro_H": 0.05032190788977538,
+      "protein_macro_CDF": 0.00019546705880202353,
+      "protein_macro_tail": 0.0017753314459696412
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.04969770252001638,
+      "group_macro_CDF": 0.0001501672377344221,
+      "group_macro_tail": 0.0020321360789239407,
+      "protein_macro_H": 0.05021321083414119,
+      "protein_macro_CDF": 0.0001567706058267504,
+      "protein_macro_tail": 0.001957136671990156
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 2099,
+      "proteins": 2097,
+      "groups": 947,
+      "group_macro_H": 0.048980019673467,
+      "group_macro_CDF": 0.00013068456610199064,
+      "group_macro_tail": 0.0013494346057996154,
+      "protein_macro_H": 0.049709002248489564,
+      "protein_macro_CDF": 0.0001484325621277094,
+      "protein_macro_tail": 0.0012770199682563543
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 2771,
+      "proteins": 2770,
+      "groups": 1253,
+      "group_macro_H": 0.04739116944327086,
+      "group_macro_CDF": 0.00015278198407031596,
+      "group_macro_tail": 0.0016893119318410754,
+      "protein_macro_H": 0.047373157928957355,
+      "protein_macro_CDF": 0.00014590349746868014,
+      "protein_macro_tail": 0.0016099684871733189
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 2192,
+      "proteins": 2192,
+      "groups": 984,
+      "group_macro_H": 0.051449724149689215,
+      "group_macro_CDF": 0.00020842083904426545,
+      "group_macro_tail": 0.002536024898290634,
+      "protein_macro_H": 0.05123779178400001,
+      "protein_macro_CDF": 0.00019459889153949916,
+      "protein_macro_tail": 0.002580873668193817
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 686,
+      "proteins": 686,
+      "groups": 289,
+      "group_macro_H": 0.06151212553056646,
+      "group_macro_CDF": 0.0004649292095564306,
+      "group_macro_tail": 0.003728412790223956,
+      "protein_macro_H": 0.059257657561388864,
+      "protein_macro_CDF": 0.00040433896356262267,
+      "protein_macro_tail": 0.0038164465222507715
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 221,
+      "proteins": 221,
+      "groups": 99,
+      "group_macro_H": 0.04940762060292666,
+      "group_macro_CDF": 0.0001356734719593078,
+      "group_macro_tail": 0.0012634318554773927,
+      "protein_macro_H": 0.04950491441233886,
+      "protein_macro_CDF": 0.00015020462160464376,
+      "protein_macro_tail": 0.0012442006263881922
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 216,
+      "proteins": 216,
+      "groups": 102,
+      "group_macro_H": 0.04904816966501241,
+      "group_macro_CDF": 0.0001475704339100048,
+      "group_macro_tail": 0.0017903557745739818,
+      "protein_macro_H": 0.049497551184536165,
+      "protein_macro_CDF": 0.00014660235319752246,
+      "protein_macro_tail": 0.001942664384841919
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 100,
+      "proteins": 100,
+      "groups": 66,
+      "group_macro_H": 0.05155000887550553,
+      "group_macro_CDF": 0.00017124459554906934,
+      "group_macro_tail": 0.0031451971735805273,
+      "protein_macro_H": 0.05193225154142107,
+      "protein_macro_CDF": 0.00017712618864607066,
+      "protein_macro_tail": 0.0030796562787145376
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 18,
+      "proteins": 18,
+      "groups": 14,
+      "group_macro_H": 0.05484795813440324,
+      "group_macro_CDF": 0.0002245651267003268,
+      "group_macro_tail": 0.004335073288530111,
+      "protein_macro_H": 0.057947206545530795,
+      "protein_macro_CDF": 0.0002463189302943647,
+      "protein_macro_tail": 0.004647854249924421
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 161,
+      "proteins": 161,
+      "groups": 102,
+      "group_macro_H": 0.04959370980980074,
+      "group_macro_CDF": 0.00015120829630177468,
+      "group_macro_tail": 0.0011442851973697543,
+      "protein_macro_H": 0.050450199556356407,
+      "protein_macro_CDF": 0.00015644589439034462,
+      "protein_macro_tail": 0.0010721959406509995
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 165,
+      "proteins": 165,
+      "groups": 97,
+      "group_macro_H": 0.04861700114972514,
+      "group_macro_CDF": 0.00015287297719623893,
+      "group_macro_tail": 0.0015390049666166306,
+      "protein_macro_H": 0.04808851670781329,
+      "protein_macro_CDF": 0.00014264325727708638,
+      "protein_macro_tail": 0.001252946094609797
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 107,
+      "proteins": 107,
+      "groups": 86,
+      "group_macro_H": 0.056651587911796454,
+      "group_macro_CDF": 0.0005300515331327915,
+      "group_macro_tail": 0.0025583836250007153,
+      "protein_macro_H": 0.05843256715366659,
+      "protein_macro_CDF": 0.0004906741087324917,
+      "protein_macro_tail": 0.0023601395078003407
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 20,
+      "proteins": 20,
+      "groups": 16,
+      "group_macro_H": 0.06486394076411114,
+      "group_macro_CDF": 0.00047509907744824886,
+      "group_macro_tail": 0.004074595868587494,
+      "protein_macro_H": 0.06607269297373433,
+      "protein_macro_CDF": 0.00043032923713326454,
+      "protein_macro_tail": 0.003636301727965474
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 7748,
+      "proteins": 7745,
+      "groups": 3092,
+      "group_macro_H": 0.05166943376155492,
+      "group_macro_CDF": 0.0002010631433222443,
+      "group_macro_tail": 0.002065241103991866,
+      "protein_macro_H": 0.05166924293967755,
+      "protein_macro_CDF": 0.00019566643459256738,
+      "protein_macro_tail": 0.002060866914689541
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.05245111672704551,
+      "group_macro_CDF": 0.00017373623268213123,
+      "group_macro_tail": 0.0021138873416930437,
+      "protein_macro_H": 0.051858019284783785,
+      "protein_macro_CDF": 0.00016897611203603446,
+      "protein_macro_tail": 0.0019821180030703545
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 453,
+      "proteins": 453,
+      "groups": 286,
+      "group_macro_H": 0.05212738841972812,
+      "group_macro_CDF": 0.00021237069449853152,
+      "group_macro_tail": 0.0018623595824465156,
+      "protein_macro_H": 0.05195239999312969,
+      "protein_macro_CDF": 0.0001937918714247644,
+      "protein_macro_tail": 0.0016052006976678967
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 2481,
+      "proteins": 2479,
+      "groups": 1003,
+      "group_macro_H": 0.05056930505970444,
+      "group_macro_CDF": 0.00014592766819987446,
+      "group_macro_tail": 0.0014058067463338375,
+      "protein_macro_H": 0.05169676670017601,
+      "protein_macro_CDF": 0.0001703570451354608,
+      "protein_macro_tail": 0.0012988232774659991
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 3152,
+      "proteins": 3151,
+      "groups": 1306,
+      "group_macro_H": 0.049205742996421345,
+      "group_macro_CDF": 0.00016970672004390508,
+      "group_macro_tail": 0.001741283107548952,
+      "protein_macro_H": 0.049176599828259566,
+      "protein_macro_CDF": 0.00016660589608363807,
+      "protein_macro_tail": 0.0016844148049131036
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 2399,
+      "proteins": 2399,
+      "groups": 1019,
+      "group_macro_H": 0.05336866729683115,
+      "group_macro_CDF": 0.00023085519205778837,
+      "group_macro_tail": 0.00265340693295002,
+      "protein_macro_H": 0.05281228169592578,
+      "protein_macro_CDF": 0.00020920643873978406,
+      "protein_macro_tail": 0.0026848623529076576
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 724,
+      "proteins": 724,
+      "groups": 297,
+      "group_macro_H": 0.0612984449014287,
+      "group_macro_CDF": 0.00041209705523215234,
+      "group_macro_tail": 0.0038367370143532753,
+      "protein_macro_H": 0.05895788669977513,
+      "protein_macro_CDF": 0.0003423058660700917,
+      "protein_macro_tail": 0.0038954236079007387
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 1412,
+      "proteins": 1412,
+      "groups": 715,
+      "group_macro_H": 0.04916763802005452,
+      "group_macro_CDF": 0.00016161501116584986,
+      "group_macro_tail": 0.001650692312978208,
+      "protein_macro_H": 0.048515124227103995,
+      "protein_macro_CDF": 0.00015953042020555586,
+      "protein_macro_tail": 0.0017678625881671906
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 2554,
+      "proteins": 2552,
+      "groups": 1291,
+      "group_macro_H": 0.05272250169242958,
+      "group_macro_CDF": 0.00020814454182982445,
+      "group_macro_tail": 0.002204509684816003,
+      "protein_macro_H": 0.05365147213313725,
+      "protein_macro_CDF": 0.0002175640984205529,
+      "protein_macro_tail": 0.0022074913140386343
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 2232,
+      "proteins": 2232,
+      "groups": 1201,
+      "group_macro_H": 0.051776445752950824,
+      "group_macro_CDF": 0.0001987498253583908,
+      "group_macro_tail": 0.0021713038440793753,
+      "protein_macro_H": 0.0520434838734132,
+      "protein_macro_CDF": 0.0001983050024136901,
+      "protein_macro_tail": 0.002185671590268612
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 2003,
+      "proteins": 2002,
+      "groups": 980,
+      "group_macro_H": 0.05162499357631694,
+      "group_macro_CDF": 0.00021348963491618633,
+      "group_macro_tail": 0.002028496004641056,
+      "protein_macro_H": 0.05101386386952797,
+      "protein_macro_CDF": 0.0001898736081784591,
+      "protein_macro_tail": 0.001838367315940559
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.05245111672704551,
+      "group_macro_CDF": 0.00017373623268213123,
+      "group_macro_tail": 0.0021138873416930437,
+      "protein_macro_H": 0.051858019284783785,
+      "protein_macro_CDF": 0.00016897611203603446,
+      "protein_macro_tail": 0.0019821180030703545
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 2099,
+      "proteins": 2097,
+      "groups": 947,
+      "group_macro_H": 0.050561494733371355,
+      "group_macro_CDF": 0.00014797168842051178,
+      "group_macro_tail": 0.0014010313898324966,
+      "protein_macro_H": 0.05165916342421567,
+      "protein_macro_CDF": 0.0001709943317109719,
+      "protein_macro_tail": 0.0013077928451821208
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 2771,
+      "proteins": 2770,
+      "groups": 1253,
+      "group_macro_H": 0.04912622984809592,
+      "group_macro_CDF": 0.0001710325595922768,
+      "group_macro_tail": 0.0017504250863566995,
+      "protein_macro_H": 0.04921369803167113,
+      "protein_macro_CDF": 0.00017065071733668447,
+      "protein_macro_tail": 0.0016860382165759802
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 2192,
+      "proteins": 2192,
+      "groups": 984,
+      "group_macro_H": 0.05288933358677193,
+      "group_macro_CDF": 0.00021633028518408537,
+      "group_macro_tail": 0.002627401612699032,
+      "protein_macro_H": 0.0525018196486385,
+      "protein_macro_CDF": 0.00020264904014766216,
+      "protein_macro_tail": 0.002681923098862171
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 686,
+      "proteins": 686,
+      "groups": 289,
+      "group_macro_H": 0.061849655527539404,
+      "group_macro_CDF": 0.00042472180211916566,
+      "group_macro_tail": 0.003835768438875675,
+      "protein_macro_H": 0.058954939722562265,
+      "protein_macro_CDF": 0.0003497846773825586,
+      "protein_macro_tail": 0.0038919392973184586
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 221,
+      "proteins": 221,
+      "groups": 99,
+      "group_macro_H": 0.052528444022992594,
+      "group_macro_CDF": 0.00016790640074759722,
+      "group_macro_tail": 0.001318352879025042,
+      "protein_macro_H": 0.052134686746341224,
+      "protein_macro_CDF": 0.00017787401156965643,
+      "protein_macro_tail": 0.0012957758735865355
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 216,
+      "proteins": 216,
+      "groups": 102,
+      "group_macro_H": 0.05095132751589959,
+      "group_macro_CDF": 0.00015678942145314068,
+      "group_macro_tail": 0.0018383654532954097,
+      "protein_macro_H": 0.050090915224024354,
+      "protein_macro_CDF": 0.00014383954112417996,
+      "protein_macro_tail": 0.0019505077507346869
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 100,
+      "proteins": 100,
+      "groups": 66,
+      "group_macro_H": 0.05330469183063535,
+      "group_macro_CDF": 0.00019611266907304525,
+      "group_macro_tail": 0.0031996958423405886,
+      "protein_macro_H": 0.05322345454696866,
+      "protein_macro_CDF": 0.0001926857075886801,
+      "protein_macro_tail": 0.0030532863456755877
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 18,
+      "proteins": 18,
+      "groups": 14,
+      "group_macro_H": 0.05956388328836732,
+      "group_macro_CDF": 0.00020726789080072194,
+      "group_macro_tail": 0.004848276264965534,
+      "protein_macro_H": 0.06208065494597029,
+      "protein_macro_CDF": 0.0002296481397934258,
+      "protein_macro_tail": 0.0048372624441981316
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 161,
+      "proteins": 161,
+      "groups": 102,
+      "group_macro_H": 0.050070085044952126,
+      "group_macro_CDF": 0.00013514840975403786,
+      "group_macro_tail": 0.0012434329837560654,
+      "protein_macro_H": 0.051585423467171855,
+      "protein_macro_CDF": 0.00015173839346971363,
+      "protein_macro_tail": 0.0011861786479130387
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 165,
+      "proteins": 165,
+      "groups": 97,
+      "group_macro_H": 0.04949630999694658,
+      "group_macro_CDF": 0.00014821063086856157,
+      "group_macro_tail": 0.00157206563744694,
+      "protein_macro_H": 0.047356877713500556,
+      "protein_macro_CDF": 0.00012850503844674677,
+      "protein_macro_tail": 0.0013088226551190019
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 107,
+      "proteins": 107,
+      "groups": 86,
+      "group_macro_H": 0.05775914402890481,
+      "group_macro_CDF": 0.0003754531207960099,
+      "group_macro_tail": 0.0025944302324205637,
+      "protein_macro_H": 0.05878812770106054,
+      "protein_macro_CDF": 0.00035898140049539506,
+      "protein_macro_tail": 0.002400747500360012
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 20,
+      "proteins": 20,
+      "groups": 16,
+      "group_macro_H": 0.05264950836589178,
+      "group_macro_CDF": 0.00017457774083595723,
+      "group_macro_tail": 0.0035522542893886566,
+      "protein_macro_H": 0.05624847659660072,
+      "protein_macro_CDF": 0.00018717478087637573,
+      "protein_macro_tail": 0.0031672772020101547
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 7748,
+      "proteins": 7745,
+      "groups": 3092,
+      "group_macro_H": 0.04889474341175942,
+      "group_macro_CDF": 0.00017598673002794385,
+      "group_macro_tail": 0.001958392094820738,
+      "protein_macro_H": 0.0491751466150914,
+      "protein_macro_CDF": 0.0001716217229841277,
+      "protein_macro_tail": 0.001960275461897254
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.05016780329081827,
+      "group_macro_CDF": 0.00015618994075339288,
+      "group_macro_tail": 0.002025883411988616,
+      "protein_macro_H": 0.05028218840326671,
+      "protein_macro_CDF": 0.00015574583085253835,
+      "protein_macro_tail": 0.0019417647272348404
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 453,
+      "proteins": 453,
+      "groups": 286,
+      "group_macro_H": 0.04957807001588284,
+      "group_macro_CDF": 0.000192080537090078,
+      "group_macro_tail": 0.0018104775808751583,
+      "protein_macro_H": 0.05032923604728557,
+      "protein_macro_CDF": 0.00018236682808492333,
+      "protein_macro_tail": 0.0015290569281205535
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 2481,
+      "proteins": 2479,
+      "groups": 1003,
+      "group_macro_H": 0.047451820288555574,
+      "group_macro_CDF": 0.00011509726755321026,
+      "group_macro_tail": 0.0013284431770443916,
+      "protein_macro_H": 0.04875753458678978,
+      "protein_macro_CDF": 0.0001351637183688581,
+      "protein_macro_tail": 0.0012408866314217448
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 3152,
+      "proteins": 3151,
+      "groups": 1306,
+      "group_macro_H": 0.046306511685270446,
+      "group_macro_CDF": 0.0001431005948688835,
+      "group_macro_tail": 0.0016349168727174401,
+      "protein_macro_H": 0.04646420767546796,
+      "protein_macro_CDF": 0.00013824488269165158,
+      "protein_macro_tail": 0.0015755874337628484
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 2399,
+      "proteins": 2399,
+      "groups": 1019,
+      "group_macro_H": 0.05065772956905463,
+      "group_macro_CDF": 0.00020059106464032084,
+      "group_macro_tail": 0.0025361967273056507,
+      "protein_macro_H": 0.05075926907802541,
+      "protein_macro_CDF": 0.0001895512396004051,
+      "protein_macro_tail": 0.0025690903421491385
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 724,
+      "proteins": 724,
+      "groups": 297,
+      "group_macro_H": 0.0598756733112338,
+      "group_macro_CDF": 0.00043997119064442813,
+      "group_macro_tail": 0.003666958771646023,
+      "protein_macro_H": 0.05872532580508549,
+      "protein_macro_CDF": 0.00037686110590584576,
+      "protein_macro_tail": 0.003796398639678955
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 1412,
+      "proteins": 1412,
+      "groups": 715,
+      "group_macro_H": 0.04680847534560194,
+      "group_macro_CDF": 0.0001384460338158533,
+      "group_macro_tail": 0.001585793332196772,
+      "protein_macro_H": 0.046020250120227556,
+      "protein_macro_CDF": 0.00013606424909085035,
+      "protein_macro_tail": 0.0016924315132200718
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 2554,
+      "proteins": 2552,
+      "groups": 1291,
+      "group_macro_H": 0.049373861452955324,
+      "group_macro_CDF": 0.00017538570682518184,
+      "group_macro_tail": 0.0020707452204078436,
+      "protein_macro_H": 0.05029115826734822,
+      "protein_macro_CDF": 0.00018229373381473124,
+      "protein_macro_tail": 0.002079383470118046
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 2232,
+      "proteins": 2232,
+      "groups": 1201,
+      "group_macro_H": 0.04928583856442074,
+      "group_macro_CDF": 0.00017742905765771866,
+      "group_macro_tail": 0.002041093772277236,
+      "protein_macro_H": 0.05012114476979501,
+      "protein_macro_CDF": 0.0001798426528694108,
+      "protein_macro_tail": 0.0020994357764720917
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 2003,
+      "proteins": 2002,
+      "groups": 980,
+      "group_macro_H": 0.049126294801454404,
+      "group_macro_CDF": 0.00019474489090498537,
+      "group_macro_tail": 0.0019220823887735605,
+      "protein_macro_H": 0.04918413100353986,
+      "protein_macro_CDF": 0.00017636230040807277,
+      "protein_macro_tail": 0.0017446324927732348
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.05016780329081827,
+      "group_macro_CDF": 0.00015618994075339288,
+      "group_macro_tail": 0.002025883411988616,
+      "protein_macro_H": 0.05028218840326671,
+      "protein_macro_CDF": 0.00015574583085253835,
+      "protein_macro_tail": 0.0019417647272348404
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 2099,
+      "proteins": 2097,
+      "groups": 947,
+      "group_macro_H": 0.04737247590062412,
+      "group_macro_CDF": 0.00011520289262989536,
+      "group_macro_tail": 0.0013291436480358243,
+      "protein_macro_H": 0.048614279246284996,
+      "protein_macro_CDF": 0.0001338615402346477,
+      "protein_macro_tail": 0.0012579913018271327
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 2771,
+      "proteins": 2770,
+      "groups": 1253,
+      "group_macro_H": 0.046221421796632085,
+      "group_macro_CDF": 0.0001436742313671857,
+      "group_macro_tail": 0.0016353670507669449,
+      "protein_macro_H": 0.04631877131088345,
+      "protein_macro_CDF": 0.00013940708595328033,
+      "protein_macro_tail": 0.0015683295205235481
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 2192,
+      "proteins": 2192,
+      "groups": 984,
+      "group_macro_H": 0.0503547477916095,
+      "group_macro_CDF": 0.00019134790636599064,
+      "group_macro_tail": 0.002500757109373808,
+      "protein_macro_H": 0.05047157030741537,
+      "protein_macro_CDF": 0.0001848717511165887,
+      "protein_macro_tail": 0.002558931475505233
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 686,
+      "proteins": 686,
+      "groups": 289,
+      "group_macro_H": 0.05993597453098311,
+      "group_macro_CDF": 0.00043744611321017146,
+      "group_macro_tail": 0.003667461918666959,
+      "protein_macro_H": 0.058280886748428046,
+      "protein_macro_CDF": 0.00037479031016118824,
+      "protein_macro_tail": 0.003776784986257553
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 221,
+      "proteins": 221,
+      "groups": 99,
+      "group_macro_H": 0.050398665944524565,
+      "group_macro_CDF": 0.00013579812366515398,
+      "group_macro_tail": 0.0012610087869688869,
+      "protein_macro_H": 0.049809736155809095,
+      "protein_macro_CDF": 0.00014658567670267075,
+      "protein_macro_tail": 0.0012381509877741337
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 216,
+      "proteins": 216,
+      "groups": 102,
+      "group_macro_H": 0.04865569591734784,
+      "group_macro_CDF": 0.00014438062498811632,
+      "group_macro_tail": 0.0017832859884947538,
+      "protein_macro_H": 0.04904583382094905,
+      "protein_macro_CDF": 0.00013865683285985142,
+      "protein_macro_tail": 0.0019466892117634416
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 100,
+      "proteins": 100,
+      "groups": 66,
+      "group_macro_H": 0.05109749543681103,
+      "group_macro_CDF": 0.0001780536404112354,
+      "group_macro_tail": 0.0030997064895927906,
+      "protein_macro_H": 0.05155478969871153,
+      "protein_macro_CDF": 0.00017805137031245977,
+      "protein_macro_tail": 0.003013346577063203
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 18,
+      "proteins": 18,
+      "groups": 14,
+      "group_macro_H": 0.059794356412622825,
+      "group_macro_CDF": 0.00030501335277222097,
+      "group_macro_tail": 0.004201095085591078,
+      "protein_macro_H": 0.06384909989905913,
+      "protein_macro_CDF": 0.0003493608091957867,
+      "protein_macro_tail": 0.004568246193230152
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 161,
+      "proteins": 161,
+      "groups": 102,
+      "group_macro_H": 0.04722012237262081,
+      "group_macro_CDF": 0.00011932272172998637,
+      "group_macro_tail": 0.001087232492864132,
+      "protein_macro_H": 0.049179086774897095,
+      "protein_macro_CDF": 0.00013644581486005336,
+      "protein_macro_tail": 0.0010218570241704583
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 165,
+      "proteins": 165,
+      "groups": 97,
+      "group_macro_H": 0.046053661456130754,
+      "group_macro_CDF": 0.00012619678454939276,
+      "group_macro_tail": 0.0014900763053447008,
+      "protein_macro_H": 0.04552619241774193,
+      "protein_macro_CDF": 0.00011819481733255088,
+      "protein_macro_tail": 0.0012116278521716595
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 107,
+      "proteins": 107,
+      "groups": 86,
+      "group_macro_H": 0.05433551424824184,
+      "group_macro_CDF": 0.0002955620002467185,
+      "group_macro_tail": 0.002571494085714221,
+      "protein_macro_H": 0.05590958349960105,
+      "protein_macro_CDF": 0.0002961631689686328,
+      "protein_macro_tail": 0.0023620142601430416
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 20,
+      "proteins": 20,
+      "groups": 16,
+      "group_macro_H": 0.06542533407925369,
+      "group_macro_CDF": 0.000488650519400835,
+      "group_macro_tail": 0.004214525688439608,
+      "protein_macro_H": 0.0693581887638598,
+      "protein_macro_CDF": 0.0004726399783976376,
+      "protein_macro_tail": 0.0037744813598692417
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 7748,
+      "proteins": 7745,
+      "groups": 3092,
+      "group_macro_H": 0.04886871275336716,
+      "group_macro_CDF": 0.0001750791270751506,
+      "group_macro_tail": 0.001970516052097082,
+      "protein_macro_H": 0.04900981335549376,
+      "protein_macro_CDF": 0.0001701792934909463,
+      "protein_macro_tail": 0.0019752895459532738
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.04953966393311993,
+      "group_macro_CDF": 0.00015547018847428262,
+      "group_macro_tail": 0.00203425413928926,
+      "protein_macro_H": 0.04893127094640742,
+      "protein_macro_CDF": 0.00014741723134648055,
+      "protein_macro_tail": 0.001953001250512898
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 453,
+      "proteins": 453,
+      "groups": 286,
+      "group_macro_H": 0.050150651505626004,
+      "group_macro_CDF": 0.00022555106261279434,
+      "group_macro_tail": 0.0017747612437233329,
+      "protein_macro_H": 0.05033615105490227,
+      "protein_macro_CDF": 0.00020047683210577816,
+      "protein_macro_tail": 0.001515312702395022
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 2481,
+      "proteins": 2479,
+      "groups": 1003,
+      "group_macro_H": 0.046987152754811676,
+      "group_macro_CDF": 0.00011518088285811245,
+      "group_macro_tail": 0.0013249146286398172,
+      "protein_macro_H": 0.04836044406256933,
+      "protein_macro_CDF": 0.0001355689310003072,
+      "protein_macro_tail": 0.001243339036591351
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 3152,
+      "proteins": 3151,
+      "groups": 1306,
+      "group_macro_H": 0.04636808964728223,
+      "group_macro_CDF": 0.00014505087165161967,
+      "group_macro_tail": 0.0016592142637819052,
+      "protein_macro_H": 0.0462079433513704,
+      "protein_macro_CDF": 0.0001374749408569187,
+      "protein_macro_tail": 0.0015991468681022525
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 2399,
+      "proteins": 2399,
+      "groups": 1019,
+      "group_macro_H": 0.051237846229243815,
+      "group_macro_CDF": 0.00021317991195246577,
+      "group_macro_tail": 0.0025656146463006735,
+      "protein_macro_H": 0.051091338573451904,
+      "protein_macro_CDF": 0.0001982417015824467,
+      "protein_macro_tail": 0.0025947201065719128
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 724,
+      "proteins": 724,
+      "groups": 297,
+      "group_macro_H": 0.058525623215238236,
+      "group_macro_CDF": 0.00040272792102769017,
+      "group_macro_tail": 0.0035874322056770325,
+      "protein_macro_H": 0.05730006170226166,
+      "protein_macro_CDF": 0.0003395447274670005,
+      "protein_macro_tail": 0.0037611722946166992
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 1412,
+      "proteins": 1412,
+      "groups": 715,
+      "group_macro_H": 0.04735297403643769,
+      "group_macro_CDF": 0.00014365444076247513,
+      "group_macro_tail": 0.0016166396671906114,
+      "protein_macro_H": 0.04658546157493104,
+      "protein_macro_CDF": 0.0001400364562869072,
+      "protein_macro_tail": 0.0017195370746776462
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 2554,
+      "proteins": 2552,
+      "groups": 1291,
+      "group_macro_H": 0.04918348350846729,
+      "group_macro_CDF": 0.00017423968529328704,
+      "group_macro_tail": 0.002088173758238554,
+      "protein_macro_H": 0.05025214389667522,
+      "protein_macro_CDF": 0.00018179413746111095,
+      "protein_macro_tail": 0.002102313796058297
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 2232,
+      "proteins": 2232,
+      "groups": 1201,
+      "group_macro_H": 0.04898818563704906,
+      "group_macro_CDF": 0.00017550658958498389,
+      "group_macro_tail": 0.002044070279225707,
+      "protein_macro_H": 0.04966949162059513,
+      "protein_macro_CDF": 0.00017667932843323797,
+      "protein_macro_tail": 0.0020995773375034332
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 2003,
+      "proteins": 2002,
+      "groups": 980,
+      "group_macro_H": 0.04910126237689283,
+      "group_macro_CDF": 0.00019980687648057938,
+      "group_macro_tail": 0.001929501537233591,
+      "protein_macro_H": 0.04870071558485705,
+      "protein_macro_CDF": 0.00017624183965381235,
+      "protein_macro_tail": 0.0017511025071144104
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 555,
+      "proteins": 555,
+      "groups": 257,
+      "group_macro_H": 0.04953966393311993,
+      "group_macro_CDF": 0.00015547018847428262,
+      "group_macro_tail": 0.00203425413928926,
+      "protein_macro_H": 0.04893127094640742,
+      "protein_macro_CDF": 0.00014741723134648055,
+      "protein_macro_tail": 0.001953001250512898
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 2099,
+      "proteins": 2097,
+      "groups": 947,
+      "group_macro_H": 0.046916460204892145,
+      "group_macro_CDF": 0.00011515988444443792,
+      "group_macro_tail": 0.001322194468230009,
+      "protein_macro_H": 0.048247471430290415,
+      "protein_macro_CDF": 0.00013471457350533456,
+      "protein_macro_tail": 0.0012580283218994737
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 2771,
+      "proteins": 2770,
+      "groups": 1253,
+      "group_macro_H": 0.04623350890278925,
+      "group_macro_CDF": 0.00014510635810438544,
+      "group_macro_tail": 0.0016597304493188858,
+      "protein_macro_H": 0.04613579527667194,
+      "protein_macro_CDF": 0.00013898331962991506,
+      "protein_macro_tail": 0.001591799664311111
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 2192,
+      "proteins": 2192,
+      "groups": 984,
+      "group_macro_H": 0.05094730710212951,
+      "group_macro_CDF": 0.00019952000002376735,
+      "group_macro_tail": 0.002539143431931734,
+      "protein_macro_H": 0.05083956016593032,
+      "protein_macro_CDF": 0.0001914372551254928,
+      "protein_macro_tail": 0.002588943811133504
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 686,
+      "proteins": 686,
+      "groups": 289,
+      "group_macro_H": 0.05857144434825395,
+      "group_macro_CDF": 0.0003922075848095119,
+      "group_macro_tail": 0.0036079578567296267,
+      "protein_macro_H": 0.057098524852594236,
+      "protein_macro_CDF": 0.0003366295131854713,
+      "protein_macro_tail": 0.003755515208467841
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 221,
+      "proteins": 221,
+      "groups": 99,
+      "group_macro_H": 0.04866308889133114,
+      "group_macro_CDF": 0.00012792348570656031,
+      "group_macro_tail": 0.0012490423396229744,
+      "protein_macro_H": 0.048464406491086486,
+      "protein_macro_CDF": 0.00014067007577978075,
+      "protein_macro_tail": 0.0012443091254681349
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 216,
+      "proteins": 216,
+      "groups": 102,
+      "group_macro_H": 0.04845907167512352,
+      "group_macro_CDF": 0.00014888576697558165,
+      "group_macro_tail": 0.0017835081089287996,
+      "protein_macro_H": 0.047528490840651326,
+      "protein_macro_CDF": 0.00013012922136113048,
+      "protein_macro_tail": 0.0019424835918471217
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 100,
+      "proteins": 100,
+      "groups": 66,
+      "group_macro_H": 0.05127082209045495,
+      "group_macro_CDF": 0.00018541047757025808,
+      "group_macro_tail": 0.0031955873128026724,
+      "protein_macro_H": 0.05135478138180741,
+      "protein_macro_CDF": 0.00018227579130325466,
+      "protein_macro_tail": 0.003121169749647379
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 18,
+      "proteins": 18,
+      "groups": 14,
+      "group_macro_H": 0.0555569286824074,
+      "group_macro_CDF": 0.0002281326160300523,
+      "group_macro_tail": 0.00395904341712594,
+      "protein_macro_H": 0.05803274338692083,
+      "protein_macro_CDF": 0.00024405497242696583,
+      "protein_macro_tail": 0.004290551878511906
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 161,
+      "proteins": 161,
+      "groups": 102,
+      "group_macro_H": 0.04768954644789719,
+      "group_macro_CDF": 0.0001254158851224929,
+      "group_macro_tail": 0.0011189671931788325,
+      "protein_macro_H": 0.04968918886497053,
+      "protein_macro_CDF": 0.00013969457359053195,
+      "protein_macro_tail": 0.001050681108608842
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 165,
+      "proteins": 165,
+      "groups": 97,
+      "group_macro_H": 0.04761662098638618,
+      "group_macro_CDF": 0.00014289692626334727,
+      "group_macro_tail": 0.0015286427224054933,
+      "protein_macro_H": 0.04569043977094622,
+      "protein_macro_CDF": 0.00012176878954051062,
+      "protein_macro_tail": 0.001273033325560391
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 107,
+      "proteins": 107,
+      "groups": 86,
+      "group_macro_H": 0.054021690534366645,
+      "group_macro_CDF": 0.00035798229509964585,
+      "group_macro_tail": 0.00240398314781487,
+      "protein_macro_H": 0.05600305809169283,
+      "protein_macro_CDF": 0.00035255876719020307,
+      "protein_macro_tail": 0.0022210371680557728
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 20,
+      "proteins": 20,
+      "groups": 16,
+      "group_macro_H": 0.06476763669789104,
+      "group_macro_CDF": 0.0006195590831339359,
+      "group_macro_tail": 0.003955114167183638,
+      "protein_macro_H": 0.06355336212966108,
+      "protein_macro_CDF": 0.0005254769348539412,
+      "protein_macro_tail": 0.0034787734039127827
+    }
+  ],
+  "paired": [
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "all",
+      "value": "all",
+      "groups": 3199,
+      "rows": 8756,
+      "delta_H": -0.0015673320651930158,
+      "descriptive_95": [
+        -0.0019422755747016862,
+        -0.0012088554534607449
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "groups": 3092,
+      "rows": 7748,
+      "delta_H": -0.0015868528688512229,
+      "descriptive_95": [
+        -0.0019443111071441377,
+        -0.0012166085235254338
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": -0.0006301091500681465,
+      "descriptive_95": [
+        -0.0018655972209216417,
+        0.0006343221469843655
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "groups": 286,
+      "rows": 453,
+      "delta_H": -0.0016398056502834786,
+      "descriptive_95": [
+        -0.0030669080167253144,
+        -0.00023353500294654865
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "groups": 1003,
+      "rows": 2481,
+      "delta_H": -0.001798164786598502,
+      "descriptive_95": [
+        -0.0023631748659119723,
+        -0.0012509832903227682
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "groups": 1306,
+      "rows": 3152,
+      "delta_H": -0.001300768168060924,
+      "descriptive_95": [
+        -0.0018812961096744474,
+        -0.0007826360879873754
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "groups": 1019,
+      "rows": 2399,
+      "delta_H": -0.0017399238815382335,
+      "descriptive_95": [
+        -0.0024728874580064175,
+        -0.0009851242717623995
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "groups": 297,
+      "rows": 724,
+      "delta_H": -0.0019494903491471612,
+      "descriptive_95": [
+        -0.0035468215885813706,
+        -0.0002577860297190105
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "groups": 715,
+      "rows": 1412,
+      "delta_H": -0.0012372323503069711,
+      "descriptive_95": [
+        -0.0018761961555713769,
+        -0.0005671643278874158
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "groups": 1291,
+      "rows": 2554,
+      "delta_H": -0.0016949441903770426,
+      "descriptive_95": [
+        -0.0024213342713879002,
+        -0.0010264231630513767
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "groups": 1201,
+      "rows": 2232,
+      "delta_H": -0.0016403346679008798,
+      "descriptive_95": [
+        -0.002230714944267528,
+        -0.0010191391851984274
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "groups": 980,
+      "rows": 2003,
+      "delta_H": -0.0016490047807144446,
+      "descriptive_95": [
+        -0.0023043717698704573,
+        -0.0009724365675790254
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": -0.0006301091500681465,
+      "descriptive_95": [
+        -0.0018655972209216417,
+        0.0006343221469843655
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "groups": 947,
+      "rows": 2099,
+      "delta_H": -0.0017558531917502057,
+      "descriptive_95": [
+        -0.002346870063905476,
+        -0.001180973802192377
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "groups": 1253,
+      "rows": 2771,
+      "delta_H": -0.001345962704021879,
+      "descriptive_95": [
+        -0.001875415515447117,
+        -0.0007673501801258771
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "groups": 984,
+      "rows": 2192,
+      "delta_H": -0.0017100150198096022,
+      "descriptive_95": [
+        -0.002477356808438249,
+        -0.0009535024928802211
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "groups": 289,
+      "rows": 686,
+      "delta_H": -0.002288715203729101,
+      "descriptive_95": [
+        -0.0039141330759118005,
+        -0.0006622363316521595
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "groups": 99,
+      "rows": 221,
+      "delta_H": 0.00010558511090530465,
+      "descriptive_95": [
+        -0.0018365432998819276,
+        0.001985206849181514
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "groups": 102,
+      "rows": 216,
+      "delta_H": -0.0016823236551623323,
+      "descriptive_95": [
+        -0.004054315706313423,
+        0.0004416608995085427
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "groups": 66,
+      "rows": 100,
+      "delta_H": -0.0007868543096537908,
+      "descriptive_95": [
+        -0.0027539250201249967,
+        0.0011256560458052707
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "groups": 14,
+      "rows": 18,
+      "delta_H": 0.005579114307278818,
+      "descriptive_95": [
+        -0.0015110029739880252,
+        0.01357203768653289
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "groups": 102,
+      "rows": 161,
+      "delta_H": -0.0030103212850811096,
+      "descriptive_95": [
+        -0.00494563287643727,
+        -0.001317678707395954
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "groups": 97,
+      "rows": 165,
+      "delta_H": -0.0016073437899938735,
+      "descriptive_95": [
+        -0.003612973495851624,
+        0.00038692825050701924
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "groups": 86,
+      "rows": 107,
+      "delta_H": -0.0011749065039138487,
+      "descriptive_95": [
+        -0.0045519600936697975,
+        0.0017168146989636132
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "groups": 16,
+      "rows": 20,
+      "delta_H": 0.007267643544735676,
+      "descriptive_95": [
+        -0.0024182168128757727,
+        0.017226759803766017
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "all",
+      "value": "all",
+      "groups": 3199,
+      "rows": 8756,
+      "delta_H": 0.011920077392296176,
+      "descriptive_95": [
+        0.011165243020425495,
+        0.012692284105127216
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "groups": 3092,
+      "rows": 7748,
+      "delta_H": 0.011923039250635436,
+      "descriptive_95": [
+        0.011191672550665633,
+        0.012697967970571647
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": 0.012358169779201586,
+      "descriptive_95": [
+        0.009943998557230795,
+        0.014924109410628904
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "groups": 286,
+      "rows": 453,
+      "delta_H": 0.012842743924377014,
+      "descriptive_95": [
+        0.010429222260759268,
+        0.015374686463849405
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "groups": 1003,
+      "rows": 2481,
+      "delta_H": 0.01033574658874675,
+      "descriptive_95": [
+        0.00921203994268237,
+        0.01144717928962181
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "groups": 1306,
+      "rows": 3152,
+      "delta_H": 0.009062030055279094,
+      "descriptive_95": [
+        0.007978549817421094,
+        0.010124135572543862
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "groups": 1019,
+      "rows": 2399,
+      "delta_H": 0.012119610973481977,
+      "descriptive_95": [
+        0.010693839424517326,
+        0.013526747580586888
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "groups": 297,
+      "rows": 724,
+      "delta_H": 0.028700247455750668,
+      "descriptive_95": [
+        0.024870401598882798,
+        0.03273667390933924
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "groups": 715,
+      "rows": 1412,
+      "delta_H": 0.009963911811648997,
+      "descriptive_95": [
+        0.008628598987137534,
+        0.01138994084419276
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "groups": 1291,
+      "rows": 2554,
+      "delta_H": 0.012941985453331391,
+      "descriptive_95": [
+        0.011683723079551366,
+        0.014221608045331159
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "groups": 1201,
+      "rows": 2232,
+      "delta_H": 0.011813943329319641,
+      "descriptive_95": [
+        0.010464697049544232,
+        0.013209634481929243
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "groups": 980,
+      "rows": 2003,
+      "delta_H": 0.012064691067728735,
+      "descriptive_95": [
+        0.010704554059329376,
+        0.013440424185146679
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": 0.012358169779201586,
+      "descriptive_95": [
+        0.009943998557230795,
+        0.014924109410628904
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "groups": 947,
+      "rows": 2099,
+      "delta_H": 0.010469148640376066,
+      "descriptive_95": [
+        0.009408140885082033,
+        0.011598481068368253
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "groups": 1253,
+      "rows": 2771,
+      "delta_H": 0.008991894635585609,
+      "descriptive_95": [
+        0.007864452647745714,
+        0.010180775938036296
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "groups": 984,
+      "rows": 2192,
+      "delta_H": 0.011907682840126534,
+      "descriptive_95": [
+        0.010546278129649693,
+        0.013279237513277023
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "groups": 289,
+      "rows": 686,
+      "delta_H": 0.028910826519516538,
+      "descriptive_95": [
+        0.02493427557638129,
+        0.03298988170218005
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "groups": 99,
+      "rows": 221,
+      "delta_H": 0.013114388664790807,
+      "descriptive_95": [
+        0.009245534658049346,
+        0.016937583820719707
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "groups": 102,
+      "rows": 216,
+      "delta_H": 0.010229700490372069,
+      "descriptive_95": [
+        0.006219246185347153,
+        0.014605732386598565
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "groups": 66,
+      "rows": 100,
+      "delta_H": 0.011344980538494696,
+      "descriptive_95": [
+        0.007241287138198932,
+        0.015605757998973575
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "groups": 14,
+      "rows": 18,
+      "delta_H": 0.02863829962635993,
+      "descriptive_95": [
+        0.013658755898536388,
+        0.046542495349700244
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "groups": 102,
+      "rows": 161,
+      "delta_H": 0.014281576883462089,
+      "descriptive_95": [
+        0.010446665263875856,
+        0.018419661271751493
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "groups": 97,
+      "rows": 165,
+      "delta_H": 0.010968527997704433,
+      "descriptive_95": [
+        0.007070141073067339,
+        0.015322777160436077
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "groups": 86,
+      "rows": 107,
+      "delta_H": 0.01313527847115518,
+      "descriptive_95": [
+        0.007871052253650881,
+        0.019208368404915188
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "max_pre minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "groups": 16,
+      "rows": 20,
+      "delta_H": 0.01881703735967197,
+      "descriptive_95": [
+        0.007632938972348739,
+        0.03140367676755231
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "all",
+      "value": "all",
+      "groups": 3199,
+      "rows": 8756,
+      "delta_H": 0.002754657561798811,
+      "descriptive_95": [
+        0.002277899244973047,
+        0.0032650222207593065
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "groups": 3092,
+      "rows": 7748,
+      "delta_H": 0.0027746903497955023,
+      "descriptive_95": [
+        0.0022518560191967236,
+        0.0032640168753678956
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": 0.0022833134362272474,
+      "descriptive_95": [
+        0.0008898118756738969,
+        0.0036850011662328767
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "groups": 286,
+      "rows": 453,
+      "delta_H": 0.002549318403845275,
+      "descriptive_95": [
+        0.0009788410912212567,
+        0.004038234345471901
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "groups": 1003,
+      "rows": 2481,
+      "delta_H": 0.003117484771148871,
+      "descriptive_95": [
+        0.002449742823544535,
+        0.0037686331687155966
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "groups": 1306,
+      "rows": 3152,
+      "delta_H": 0.0028992313111509036,
+      "descriptive_95": [
+        0.001983861688278318,
+        0.0037735862529023564
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "groups": 1019,
+      "rows": 2399,
+      "delta_H": 0.0027109377277765227,
+      "descriptive_95": [
+        0.0018015236267156004,
+        0.003639011500228736
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "groups": 297,
+      "rows": 724,
+      "delta_H": 0.001422771590194904,
+      "descriptive_95": [
+        -0.00023233781313459096,
+        0.003137839676803644
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "groups": 715,
+      "rows": 1412,
+      "delta_H": 0.0023591626744525964,
+      "descriptive_95": [
+        0.0015207217628927516,
+        0.0031827273021787896
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "groups": 1291,
+      "rows": 2554,
+      "delta_H": 0.003348640239474253,
+      "descriptive_95": [
+        0.0025039696834454205,
+        0.00426928887525962
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "groups": 1201,
+      "rows": 2232,
+      "delta_H": 0.0024906071885300797,
+      "descriptive_95": [
+        0.001626360025651144,
+        0.0033034106354214565
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "groups": 980,
+      "rows": 2003,
+      "delta_H": 0.002498698774862527,
+      "descriptive_95": [
+        0.0017488431019623536,
+        0.003231955852428892
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": 0.0022833134362272474,
+      "descriptive_95": [
+        0.0008898118756738969,
+        0.0036850011662328767
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "groups": 947,
+      "rows": 2099,
+      "delta_H": 0.003189018832747233,
+      "descriptive_95": [
+        0.0025250430832920987,
+        0.003895404615335567
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "groups": 1253,
+      "rows": 2771,
+      "delta_H": 0.0029048080514638367,
+      "descriptive_95": [
+        0.0019469664588133372,
+        0.003829261598460409
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "groups": 984,
+      "rows": 2192,
+      "delta_H": 0.0025345857951624357,
+      "descriptive_95": [
+        0.001664815708207984,
+        0.0034983675096987316
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "groups": 289,
+      "rows": 686,
+      "delta_H": 0.0019136809965562983,
+      "descriptive_95": [
+        0.00044275331510172514,
+        0.003443280422542102
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "groups": 99,
+      "rows": 221,
+      "delta_H": 0.0021297780784680295,
+      "descriptive_95": [
+        -4.730945871139405e-05,
+        0.004446122589655979
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "groups": 102,
+      "rows": 216,
+      "delta_H": 0.002295631598551741,
+      "descriptive_95": [
+        0.00030561190671334434,
+        0.004223229580551664
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "groups": 66,
+      "rows": 100,
+      "delta_H": 0.002207196393824323,
+      "descriptive_95": [
+        -0.000519981480681546,
+        0.0049714625487901004
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "groups": 14,
+      "rows": 18,
+      "delta_H": -0.0002304731242555155,
+      "descriptive_95": [
+        -0.00954725070739104,
+        0.008392246661232363
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "groups": 102,
+      "rows": 161,
+      "delta_H": 0.0028499626723313414,
+      "descriptive_95": [
+        0.0008481621753684177,
+        0.004846026595999155
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "groups": 97,
+      "rows": 165,
+      "delta_H": 0.0034426485408158274,
+      "descriptive_95": [
+        0.0011847724055758064,
+        0.005671523633561398
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "groups": 86,
+      "rows": 107,
+      "delta_H": 0.0034236297806629823,
+      "descriptive_95": [
+        0.0008479630544892549,
+        0.006235005528512876
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "groups": 16,
+      "rows": 20,
+      "delta_H": -0.012775825713361902,
+      "descriptive_95": [
+        -0.02631636326809613,
+        -0.004010259520385933
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "all",
+      "value": "all",
+      "groups": 3199,
+      "rows": 8756,
+      "delta_H": 0.001187325496605795,
+      "descriptive_95": [
+        0.0007181693824568963,
+        0.0016452683764450523
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "groups": 3092,
+      "rows": 7748,
+      "delta_H": 0.0011878374809442798,
+      "descriptive_95": [
+        0.0007027873492975216,
+        0.0016811855083674226
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": 0.0016532042861591007,
+      "descriptive_95": [
+        0.00013617882309214008,
+        0.003174635437935948
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "groups": 286,
+      "rows": 453,
+      "delta_H": 0.000909512753561797,
+      "descriptive_95": [
+        -0.0005036804045044469,
+        0.002277557968958614
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "groups": 1003,
+      "rows": 2481,
+      "delta_H": 0.0013193199845503692,
+      "descriptive_95": [
+        0.0006236103458940596,
+        0.001979485901939911
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "groups": 1306,
+      "rows": 3152,
+      "delta_H": 0.001598463143089979,
+      "descriptive_95": [
+        0.000755033953135211,
+        0.002455525730401184
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "groups": 1019,
+      "rows": 2399,
+      "delta_H": 0.0009710138462382892,
+      "descriptive_95": [
+        0.00014487771132458115,
+        0.0017870964245427058
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "groups": 297,
+      "rows": 724,
+      "delta_H": -0.0005267187589522571,
+      "descriptive_95": [
+        -0.002253592081777633,
+        0.001156103483622324
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "groups": 715,
+      "rows": 1412,
+      "delta_H": 0.0011219303241456252,
+      "descriptive_95": [
+        0.0003328439873786012,
+        0.0019419900916693774
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "groups": 1291,
+      "rows": 2554,
+      "delta_H": 0.001653696049097211,
+      "descriptive_95": [
+        0.0008400922007375781,
+        0.002516889208954752
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "groups": 1201,
+      "rows": 2232,
+      "delta_H": 0.0008502725206292,
+      "descriptive_95": [
+        2.975078065985118e-05,
+        0.0016694917020961715
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "groups": 980,
+      "rows": 2003,
+      "delta_H": 0.0008496939941480824,
+      "descriptive_95": [
+        0.000120612446553202,
+        0.001634723879026399
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": 0.0016532042861591007,
+      "descriptive_95": [
+        0.00013617882309214008,
+        0.003174635437935948
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "groups": 947,
+      "rows": 2099,
+      "delta_H": 0.0014331656409970277,
+      "descriptive_95": [
+        0.000732264623384349,
+        0.002152074330811557
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "groups": 1253,
+      "rows": 2771,
+      "delta_H": 0.0015588453474419577,
+      "descriptive_95": [
+        0.0006589462189055187,
+        0.0024382427369504162
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "groups": 984,
+      "rows": 2192,
+      "delta_H": 0.0008245707753528334,
+      "descriptive_95": [
+        -8.957805459372743e-06,
+        0.001651914708938734
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "groups": 289,
+      "rows": 686,
+      "delta_H": -0.0003750342071728025,
+      "descriptive_95": [
+        -0.0020042831207490895,
+        0.001259209895016069
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "groups": 99,
+      "rows": 221,
+      "delta_H": 0.0022353631893733353,
+      "descriptive_95": [
+        -9.4948440889281e-05,
+        0.004730807057120405
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "groups": 102,
+      "rows": 216,
+      "delta_H": 0.0006133079433894091,
+      "descriptive_95": [
+        -0.0021160608622339755,
+        0.002927026816157327
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "groups": 66,
+      "rows": 100,
+      "delta_H": 0.0014203420841705323,
+      "descriptive_95": [
+        -0.0014560862432034488,
+        0.0042205507431752835
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "groups": 14,
+      "rows": 18,
+      "delta_H": 0.0053486411830233034,
+      "descriptive_95": [
+        -0.0011743281813019401,
+        0.012949316382181816
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "groups": 102,
+      "rows": 161,
+      "delta_H": -0.0001603586127497671,
+      "descriptive_95": [
+        -0.0021195910605331294,
+        0.0017434090609899956
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "groups": 97,
+      "rows": 165,
+      "delta_H": 0.0018353047508219537,
+      "descriptive_95": [
+        -0.00038308751889038075,
+        0.004103300581452972
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "groups": 86,
+      "rows": 107,
+      "delta_H": 0.002248723276749134,
+      "descriptive_95": [
+        -0.0008307749328881261,
+        0.005211711110134523
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_attention minus mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "groups": 16,
+      "rows": 20,
+      "delta_H": -0.005508182168626227,
+      "descriptive_95": [
+        -0.013988421758615022,
+        0.002756601421944873
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "all",
+      "value": "all",
+      "groups": 3199,
+      "rows": 8756,
+      "delta_H": -0.0013986575926787424,
+      "descriptive_95": [
+        -0.0017704988128657887,
+        -0.0010288166318740226
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "groups": 3092,
+      "rows": 7748,
+      "delta_H": -0.0013601520558910764,
+      "descriptive_95": [
+        -0.0017239573944787098,
+        -0.00099772428763846
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "U_unavailable",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": -0.00015803858689644325,
+      "descriptive_95": [
+        -0.0013522064266013546,
+        0.0010459345653012913
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "groups": 286,
+      "rows": 453,
+      "delta_H": -0.0018318810897223203,
+      "descriptive_95": [
+        -0.003368593132801133,
+        -0.00039179952526809586
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "groups": 1003,
+      "rows": 2481,
+      "delta_H": -0.001977259030029752,
+      "descriptive_95": [
+        -0.0025808030275892946,
+        -0.0013895593884998645
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "groups": 1306,
+      "rows": 3152,
+      "delta_H": -0.0011179097784811186,
+      "descriptive_95": [
+        -0.0016663957356621735,
+        -0.000587096761265849
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "groups": 1019,
+      "rows": 2399,
+      "delta_H": -0.0006983754543031299,
+      "descriptive_95": [
+        -0.0014674633217062504,
+        -2.2206764299107914e-06
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "groups": 297,
+      "rows": 724,
+      "delta_H": -0.00290434898453518,
+      "descriptive_95": [
+        -0.004562543426496308,
+        -0.0012407766779311998
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "groups": 715,
+      "rows": 1412,
+      "delta_H": -0.0007504183816289436,
+      "descriptive_95": [
+        -0.0014609846607927404,
+        1.5569743229958558e-05
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "groups": 1291,
+      "rows": 2554,
+      "delta_H": -0.0014778360110433513,
+      "descriptive_95": [
+        -0.002092269359714382,
+        -0.0009048318242258169
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "groups": 1201,
+      "rows": 2232,
+      "delta_H": -0.0014331751897012218,
+      "descriptive_95": [
+        -0.002053584659287445,
+        -0.0007975565968316696
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "groups": 980,
+      "rows": 2003,
+      "delta_H": -0.001445356025702086,
+      "descriptive_95": [
+        -0.0021481021855771845,
+        -0.0007691854012086798
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "coverage_bin",
+      "value": "nan",
+      "groups": 257,
+      "rows": 555,
+      "delta_H": -0.00015803858689644325,
+      "descriptive_95": [
+        -0.0013522064266013546,
+        0.0010459345653012913
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "groups": 947,
+      "rows": 2099,
+      "delta_H": -0.002063559468574844,
+      "descriptive_95": [
+        -0.0026908713921156456,
+        -0.001442289197967697
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "groups": 1253,
+      "rows": 2771,
+      "delta_H": -0.001157660540481607,
+      "descriptive_95": [
+        -0.001748033263518894,
+        -0.0006061552375530231
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "groups": 984,
+      "rows": 2192,
+      "delta_H": -0.0005024170475597065,
+      "descriptive_95": [
+        -0.0012142322804003965,
+        0.00019531381329809255
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "groups": 289,
+      "rows": 686,
+      "delta_H": -0.002940681182312526,
+      "descriptive_95": [
+        -0.004664060566185667,
+        -0.0012714080386394407
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "groups": 99,
+      "rows": 221,
+      "delta_H": -0.0007445317115955328,
+      "descriptive_95": [
+        -0.0028269425513852446,
+        0.0011866060614596967
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "groups": 102,
+      "rows": 216,
+      "delta_H": -0.0005890979898888979,
+      "descriptive_95": [
+        -0.0024344007479967407,
+        0.001321911076392957
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "groups": 66,
+      "rows": 100,
+      "delta_H": -0.0002791867850505702,
+      "descriptive_95": [
+        -0.002509826970320883,
+        0.0019167262080321704
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "groups": 14,
+      "rows": 18,
+      "delta_H": 0.0007089705480041576,
+      "descriptive_95": [
+        -0.0052509539594892095,
+        0.006523497959308533
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "groups": 102,
+      "rows": 161,
+      "delta_H": -0.001904163361903546,
+      "descriptive_95": [
+        -0.004230198204578787,
+        5.676043461219145e-05
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "groups": 97,
+      "rows": 165,
+      "delta_H": -0.0010003801633389534,
+      "descriptive_95": [
+        -0.0027721473765205044,
+        0.0009738997379855429
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "groups": 86,
+      "rows": 107,
+      "delta_H": -0.0026298973774298022,
+      "descriptive_95": [
+        -0.007116799691481295,
+        0.0009511032525589753
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1
+      ],
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "groups": 16,
+      "rows": 20,
+      "delta_H": -9.630406622009469e-05,
+      "descriptive_95": [
+        -0.007332903928010245,
+        0.007234445917481821
+      ],
+      "selection_adjusted": false,
+      "seed_uncertainty_included": false
+    }
+  ],
+  "paired_seed_summary": [
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "all",
+      "value": "all",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0015673320651930158,
+        "3407": -0.0013986575926787424
+      },
+      "mean_delta_H_across_seeds": -0.0014829948289358792,
+      "min_delta_H": -0.0015673320651930158,
+      "max_delta_H": -0.0013986575926787424,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 3199,
+      "rows_per_seed": 8756,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0012372323503069711,
+        "3407": -0.0007504183816289436
+      },
+      "mean_delta_H_across_seeds": -0.0009938253659679574,
+      "min_delta_H": -0.0012372323503069711,
+      "max_delta_H": -0.0007504183816289436,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 715,
+      "rows_per_seed": 1412,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0016949441903770426,
+        "3407": -0.0014778360110433513
+      },
+      "mean_delta_H_across_seeds": -0.001586390100710197,
+      "min_delta_H": -0.0016949441903770426,
+      "max_delta_H": -0.0014778360110433513,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 1291,
+      "rows_per_seed": 2554,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0016403346679008798,
+        "3407": -0.0014331751897012218
+      },
+      "mean_delta_H_across_seeds": -0.0015367549288010508,
+      "min_delta_H": -0.0016403346679008798,
+      "max_delta_H": -0.0014331751897012218,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 1201,
+      "rows_per_seed": 2232,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0016490047807144446,
+        "3407": -0.001445356025702086
+      },
+      "mean_delta_H_across_seeds": -0.0015471804032082654,
+      "min_delta_H": -0.0016490047807144446,
+      "max_delta_H": -0.001445356025702086,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 980,
+      "rows_per_seed": 2003,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "coverage_bin",
+      "value": "nan",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0006301091500681465,
+        "3407": -0.00015803858689644325
+      },
+      "mean_delta_H_across_seeds": -0.00039407386848229486,
+      "min_delta_H": -0.0006301091500681465,
+      "max_delta_H": -0.00015803858689644325,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 257,
+      "rows_per_seed": 555,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.001798164786598502,
+        "3407": -0.001977259030029752
+      },
+      "mean_delta_H_across_seeds": -0.0018877119083141269,
+      "min_delta_H": -0.001977259030029752,
+      "max_delta_H": -0.001798164786598502,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 1003,
+      "rows_per_seed": 2481,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.001300768168060924,
+        "3407": -0.0011179097784811186
+      },
+      "mean_delta_H_across_seeds": -0.0012093389732710214,
+      "min_delta_H": -0.001300768168060924,
+      "max_delta_H": -0.0011179097784811186,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 1306,
+      "rows_per_seed": 3152,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0017399238815382335,
+        "3407": -0.0006983754543031299
+      },
+      "mean_delta_H_across_seeds": -0.0012191496679206818,
+      "min_delta_H": -0.0017399238815382335,
+      "max_delta_H": -0.0006983754543031299,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 1019,
+      "rows_per_seed": 2399,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0019494903491471612,
+        "3407": -0.00290434898453518
+      },
+      "mean_delta_H_across_seeds": -0.0024269196668411704,
+      "min_delta_H": -0.00290434898453518,
+      "max_delta_H": -0.0019494903491471612,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 297,
+      "rows_per_seed": 724,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0015868528688512229,
+        "3407": -0.0013601520558910764
+      },
+      "mean_delta_H_across_seeds": -0.0014735024623711496,
+      "min_delta_H": -0.0015868528688512229,
+      "max_delta_H": -0.0013601520558910764,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 3092,
+      "rows_per_seed": 7748,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation",
+      "value": "U_unavailable",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0006301091500681465,
+        "3407": -0.00015803858689644325
+      },
+      "mean_delta_H_across_seeds": -0.00039407386848229486,
+      "min_delta_H": -0.0006301091500681465,
+      "max_delta_H": -0.00015803858689644325,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 257,
+      "rows_per_seed": 555,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0016398056502834786,
+        "3407": -0.0018318810897223203
+      },
+      "mean_delta_H_across_seeds": -0.0017358433700028993,
+      "min_delta_H": -0.0018318810897223203,
+      "max_delta_H": -0.0016398056502834786,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 286,
+      "rows_per_seed": 453,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0017558531917502057,
+        "3407": -0.002063559468574844
+      },
+      "mean_delta_H_across_seeds": -0.0019097063301625247,
+      "min_delta_H": -0.002063559468574844,
+      "max_delta_H": -0.0017558531917502057,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 947,
+      "rows_per_seed": 2099,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.001345962704021879,
+        "3407": -0.001157660540481607
+      },
+      "mean_delta_H_across_seeds": -0.001251811622251743,
+      "min_delta_H": -0.001345962704021879,
+      "max_delta_H": -0.001157660540481607,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 1253,
+      "rows_per_seed": 2771,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0017100150198096022,
+        "3407": -0.0005024170475597065
+      },
+      "mean_delta_H_across_seeds": -0.0011062160336846544,
+      "min_delta_H": -0.0017100150198096022,
+      "max_delta_H": -0.0005024170475597065,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 984,
+      "rows_per_seed": 2192,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.002288715203729101,
+        "3407": -0.002940681182312526
+      },
+      "mean_delta_H_across_seeds": -0.0026146981930208132,
+      "min_delta_H": -0.002940681182312526,
+      "max_delta_H": -0.002288715203729101,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 289,
+      "rows_per_seed": 686,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": 0.00010558511090530465,
+        "3407": -0.0007445317115955328
+      },
+      "mean_delta_H_across_seeds": -0.0003194733003451141,
+      "min_delta_H": -0.0007445317115955328,
+      "max_delta_H": 0.00010558511090530465,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 99,
+      "rows_per_seed": 221,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0016823236551623323,
+        "3407": -0.0005890979898888979
+      },
+      "mean_delta_H_across_seeds": -0.0011357108225256152,
+      "min_delta_H": -0.0016823236551623323,
+      "max_delta_H": -0.0005890979898888979,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 102,
+      "rows_per_seed": 216,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0007868543096537908,
+        "3407": -0.0002791867850505702
+      },
+      "mean_delta_H_across_seeds": -0.0005330205473521804,
+      "min_delta_H": -0.0007868543096537908,
+      "max_delta_H": -0.0002791867850505702,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 66,
+      "rows_per_seed": 100,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": 0.005579114307278818,
+        "3407": 0.0007089705480041576
+      },
+      "mean_delta_H_across_seeds": 0.003144042427641488,
+      "min_delta_H": 0.0007089705480041576,
+      "max_delta_H": 0.005579114307278818,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 14,
+      "rows_per_seed": 18,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0030103212850811096,
+        "3407": -0.001904163361903546
+      },
+      "mean_delta_H_across_seeds": -0.0024572423234923276,
+      "min_delta_H": -0.0030103212850811096,
+      "max_delta_H": -0.001904163361903546,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 102,
+      "rows_per_seed": 161,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0016073437899938735,
+        "3407": -0.0010003801633389534
+      },
+      "mean_delta_H_across_seeds": -0.0013038619766664135,
+      "min_delta_H": -0.0016073437899938735,
+      "max_delta_H": -0.0010003801633389534,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 97,
+      "rows_per_seed": 165,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": -0.0011749065039138487,
+        "3407": -0.0026298973774298022
+      },
+      "mean_delta_H_across_seeds": -0.0019024019406718253,
+      "min_delta_H": -0.0026298973774298022,
+      "max_delta_H": -0.0011749065039138487,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 86,
+      "rows_per_seed": 107,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "seeds": [
+        1701,
+        3407
+      ],
+      "n_seeds": 2,
+      "per_seed_delta_H": {
+        "1701": 0.007267643544735676,
+        "3407": -9.630406622009469e-05
+      },
+      "mean_delta_H_across_seeds": 0.0035856697392577905,
+      "min_delta_H": -9.630406622009469e-05,
+      "max_delta_H": 0.007267643544735676,
+      "same_evaluation_observations": true,
+      "groups_per_seed": 16,
+      "rows_per_seed": 20,
+      "interpretation": "Descriptive mean of per-seed paired group-macro differences on identical observations; not independent sample replication, ensemble performance, or sufficient characterization of seed uncertainty."
+    }
+  ],
+  "fit_wall_seconds_total": 1525.5329706910998,
+  "all_fit_stop_counts": {
+    "early_stop": 20
+  },
+  "prediction_checks": [
+    {
+      "run_id": "4ed03768390490a9600a2d226acae8d72a9fade8de3e7a9e17964e7827b559db",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "5a3adf7f0da8dbf03838330c08dafc727fcfce78e1469a77553d9a691096cf17",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "d59d3cb958b61822ad0b81aa30f5604db59b76e9df6aad177d373b307df5186b",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "13af2d6240cc1dace3de7ccd317d7ade42b77eec0f82c8efc44fa3d552ab10f7",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "3ffeb8918ea1abf00b2ea4554fd0eeceeef94c063970e54d9f724b5525d0b3fe",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "8a6f6980ad36f45eead0074aa8e95e00133582862d008d86daabf739fc434d4f",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "dbb0f96a7c3d6e7bfd5b2d7a64fb66b0a39fb33bfb2ba6d16dbd1fbf679bda0c",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "95ee4cefb91032079b16e6d6aee470d9574c2efb06895c2a98ad572fa46ecf10",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "39d9c24d0f3a495a550f81f6761180f8ca0ecaea97c57efad4a0c69ad2149826",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "151a292384c23509cc9d935fcb0dfc34e03c9a18dbb14d55aad37bafa7c83448",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "6a754378628284a4ad53e24b5b7e51e4a64bc98736c03674b8cd7b3a39c02c23",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "a460941f4efce5a8e17c571777cf42cdc32c57b46b3489be51f9a0e92d25ef94",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "1e7a22a5b899e7474cb9c90d5fc2e39c0f088f8aba95dcfb4157df5acc82408c",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "4f4061f4960c458d13cffe4a2383f4c52d063d9e20283b41dc78d0286153f132",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "578fe3ba767b717200d450e5d8107465faa5da2afd61b62ecc3371f8250e0d46",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "a511dc989eb835d6b9c0ad7baab9ce50127b6529b929bfd0c90e8227649455dc",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "31a7f03094a228d90606820b24b0c45382473a1d6e81ea3f2abbe7f6f8b43cff",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "497c5551a6c05f23f9e341b17dfca7ca09e5adc8313477fd077172249a6aeb64",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "a69bd3e56223aee428541f7fa4d3b9836975f67b3072ed487b7750e3f9c684bb",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    },
+    {
+      "run_id": "f37e0d8d676ce3d0cfa9866169ffd5dd14c63fc80368617d720d21a458935855",
+      "prediction_recomputed": true,
+      "group_and_exact_sequence_disjoint": true
+    }
+  ],
+  "qualification": "Historical T/vertex-p exposed development; all OOF/stratum/paired metrics reduced separately by seed; no blind/new-C/full-U claim; source PDB only; nearest homology identity unavailable from existing scored search"
+}

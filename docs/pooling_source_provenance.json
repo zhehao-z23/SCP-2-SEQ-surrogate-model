@@ -1,0 +1,237 @@
+{
+  "schema": "seq2scp.pooling.source_provenance.v1",
+  "stage": "pooling_20261105",
+  "checked_date": "2026-11-05",
+  "source": "User-owned Seq2SCP research implementation; no third-party library source added",
+  "archive_status": "complete: 20 fits, all early_stop; 12 selected checkpoints; all predictions recomputed; 12 x 16 length-spanning CPU restoration checks passed",
+  "repository_base": {
+    "identical_tree": "2a7edce3a47077036129c94251f113a4130374a7",
+    "note": "Local branch starts from the content-equivalent review commit because HTTPS fetch was unavailable. API publication will use the actual public parent commit.",
+    "local_review_commit": "4c18dfc6ddae9431ce647de29f5efc033774c70c",
+    "public_commit": "8e484f64a9d5eec6fa1eb3db82a0fec67d7a1ce7"
+  },
+  "scripts": [
+    {
+      "execution_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+      "execution_relative_path": "pooling_20261105/code/pooling_model.py",
+      "archived_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+      "adaptation": "byte_for_byte",
+      "path": "src/pooling_model.py",
+      "matches_executed_bytes": true
+    },
+    {
+      "execution_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+      "execution_relative_path": "pooling_20261105/code/train_pooling.py",
+      "archived_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+      "adaptation": "byte_for_byte",
+      "path": "src/train_pooling.py",
+      "matches_executed_bytes": true
+    },
+    {
+      "execution_sha256": "b890eb378b6d40895e7e342e2b3d4d0fab38d0e7f22d4ae257ec8ee49fc34eb0",
+      "execution_relative_path": "pooling_20261105/code/run_pooling_queue.py",
+      "archived_sha256": "b890eb378b6d40895e7e342e2b3d4d0fab38d0e7f22d4ae257ec8ee49fc34eb0",
+      "adaptation": "byte_for_byte",
+      "path": "src/run_pooling_queue.py",
+      "matches_executed_bytes": true
+    },
+    {
+      "execution_sha256": "22aa6279c5a0c1c9109d0da3c3218f99b440b517c9b73f3e27f78757bf8fe9e2",
+      "execution_relative_path": "pooling_20261105/code/replay_pooling.py",
+      "archived_sha256": "22aa6279c5a0c1c9109d0da3c3218f99b440b517c9b73f3e27f78757bf8fe9e2",
+      "adaptation": "byte_for_byte",
+      "path": "src/replay_pooling.py",
+      "matches_executed_bytes": true
+    },
+    {
+      "execution_sha256": "44d6bfadbbb104675f9eff7509182edaf1e5d34d2d9c35fd0d9c7b8f94f70066",
+      "execution_relative_path": "pooling_20261105/code/accept_pooling_cache.py",
+      "archived_sha256": "44d6bfadbbb104675f9eff7509182edaf1e5d34d2d9c35fd0d9c7b8f94f70066",
+      "adaptation": "byte_for_byte",
+      "path": "src/accept_pooling_cache.py",
+      "matches_executed_bytes": true
+    },
+    {
+      "execution_sha256": "c174186eaf1e1c0d5ce385963ba37bd16aa7205b97a452a424f2c5495c083bad",
+      "execution_relative_path": "pooling_20261105/code/pooling_cache_extract.py",
+      "archived_sha256": "c174186eaf1e1c0d5ce385963ba37bd16aa7205b97a452a424f2c5495c083bad",
+      "adaptation": "byte_for_byte",
+      "path": "src/pooling_cache_extract.py",
+      "matches_executed_bytes": true
+    },
+    {
+      "execution_sha256": "160643aa956c01fdce42039be9021cc2f83816db0113300f9ea3875d98236e37",
+      "execution_relative_path": "pooling_20261105/code/pooling_cache_launch.py",
+      "archived_sha256": "61fec9203cb42ff0a709f28a2bd783cfcae5f41acce14935cf4f0fcfa92dec0a",
+      "adaptation": "Required --gpu-uuids replaces two machine-specific UUIDs; original executed launcher is unchanged on Byte",
+      "path": "src/pooling_cache_launch.py",
+      "matches_executed_bytes": false
+    },
+    {
+      "execution_sha256": "0c704278b4c2c8ea4109d4d8a41d232e722e09f0e7622eef5f29e8840fa0923d",
+      "execution_relative_path": "pooling_20261105/code/pooling_cache_publish.py",
+      "archived_sha256": "0c704278b4c2c8ea4109d4d8a41d232e722e09f0e7622eef5f29e8840fa0923d",
+      "adaptation": "byte_for_byte",
+      "path": "src/pooling_cache_publish.py",
+      "matches_executed_bytes": true
+    },
+    {
+      "execution_sha256": "af7204464712bf0883b299de624bc234fa5fba9396be409d2a36fa5317857695",
+      "execution_relative_path": "pooling_20261105/code/pooling_cache_check_pilot.py",
+      "archived_sha256": "af7204464712bf0883b299de624bc234fa5fba9396be409d2a36fa5317857695",
+      "adaptation": "byte_for_byte",
+      "path": "src/pooling_cache_check_pilot.py",
+      "matches_executed_bytes": true
+    },
+    {
+      "adaptation": "byte_for_byte",
+      "execution_relative_path": "pooling_20261105/code/run_pooling_replicate.py",
+      "execution_sha256": "4045d572d699b58ca1526359ad64153cd5b5e44b1b3934c4345c9271996fc001",
+      "matches_executed_bytes": true,
+      "archived_sha256": "4045d572d699b58ca1526359ad64153cd5b5e44b1b3934c4345c9271996fc001",
+      "path": "src/run_pooling_replicate.py"
+    },
+    {
+      "adaptation": "byte_for_byte",
+      "execution_relative_path": "pooling_20261105/code/select_pooling_confirmation.py",
+      "execution_sha256": "1462d75411a95c7605561453cfc4b84c7ee59f500c1ed82a2b789a2e65deaf7c",
+      "matches_executed_bytes": true,
+      "archived_sha256": "1462d75411a95c7605561453cfc4b84c7ee59f500c1ed82a2b789a2e65deaf7c",
+      "path": "src/select_pooling_confirmation.py"
+    },
+    {
+      "adaptation": "byte_for_byte",
+      "execution_relative_path": "pooling_20261105/code/summarize_pooling.py",
+      "execution_sha256": "db658e9cbc1052d949d78d1931a4019bbdcb78219e97a819f9914c080063836b",
+      "matches_executed_bytes": true,
+      "archived_sha256": "db658e9cbc1052d949d78d1931a4019bbdcb78219e97a819f9914c080063836b",
+      "path": "src/summarize_pooling.py"
+    },
+    {
+      "archived_sha256": "b5a24ce4dc070c9d729d660add5a47fba98d498b4465d923670705c9588e152b",
+      "adaptation": "byte_for_byte; actual Byte hash readback verified",
+      "execution_relative_path": "pooling_20261105/code/export_pooling_cost.py",
+      "path": "src/export_pooling_cost.py",
+      "matches_executed_bytes": true,
+      "execution_sha256": "b5a24ce4dc070c9d729d660add5a47fba98d498b4465d923670705c9588e152b"
+    },
+    {
+      "archived_sha256": "e0c004a71dacca8f4a3d8023d602d06e25d4909e1e9f52d850dd40326156be83",
+      "adaptation": "byte_for_byte; actual Byte hash readback verified",
+      "execution_relative_path": "pooling_20261105/code/compare_pooling_to_charge.py",
+      "path": "src/compare_pooling_to_charge.py",
+      "matches_executed_bytes": true,
+      "execution_sha256": "e0c004a71dacca8f4a3d8023d602d06e25d4909e1e9f52d850dd40326156be83"
+    }
+  ],
+  "configuration": {
+    "path": "configs/pooling_plan.json",
+    "source_and_archived_sha256": "47e16d46eaa9bb79208947c6ea6cc7957ccc76f6d47cb532ec92c7a47595254f"
+  },
+  "parent_stage_helper": {
+    "execution_relative_path": "atlas_scale_20261105/code/train_atlas_scale.py",
+    "sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b",
+    "path": "src/train_atlas_scale.py",
+    "used_functions": [
+      "select",
+      "metrics"
+    ]
+  },
+  "document_adaptations": [
+    {
+      "archived_sha256": "cc94520ced6b81eda56d41facaaf89a7356d3860382867f1f5bfc12e7b29a1e6",
+      "source_sha256": "1a2418d38bd0ff426ecc970634e73ece5d058537b0c8ac0b0951ed383e02e81e",
+      "path": "docs/pooling_round_split_reference.md",
+      "adaptation": "Machine-specific roots replaced by named environment placeholders; bridge document removes the three inspected sample names and their individual lengths. Scientific aggregate findings unchanged."
+    },
+    {
+      "archived_sha256": "f91db63e82256d5dbdff304b5dbb77b6c304ab474fd382e2f892e78eb1030f67",
+      "source_sha256": "e64f7beed5bba56c611bfe6de5ed4c6891b6120dfc4899283376240dc86efa0f",
+      "path": "docs/pooling_round_bridge_status.md",
+      "adaptation": "Machine-specific roots replaced by named environment placeholders; bridge document removes the three inspected sample names and their individual lengths. Scientific aggregate findings unchanged."
+    }
+  ],
+  "external_assets": "Private historical release, sequence snapshot, embeddings and encoder weights are not distributed. Checkpoint and backend identities are bound by execution receipts.",
+  "bridge_posthoc_analysis": {
+    "output_sha256": "1ade88e61aa5536d426fe1ce66e46750e885c36d39f23b2011d86f04c59f9811",
+    "archived_script_sha256": "7053a1a5ea312e6eb9e60d543f3254045ba22af21a88a3c7ab875d2fad1dd5fb",
+    "output": "experiments/pooling_20261105/bridge_subgroup_aggregate.json",
+    "result_reported_script_sha256": "7053a1a5ea312e6eb9e60d543f3254045ba22af21a88a3c7ab875d2fad1dd5fb",
+    "script": "src/analyze_bridge_subgroups.py",
+    "input_private_prediction_table_sha256": "e1a44cbcc29693da8a185be6873d67fe6a17d4506dd5a458dd1fbe2fe760ea4b",
+    "scope": "Completed post-hoc aggregate analysis of the parent Atlas stage, not a result of the new pooling fits",
+    "local_received_output_sha256": "498f810fb57c2240d62279ea2972af6cd09576c348185dd35f399ae49d7ef49f",
+    "output_adaptation": "Normalize received CRLF to repository LF; JSON values unchanged"
+  },
+  "amendment": {
+    "attention_parameters": 1801920,
+    "total_fits": 20,
+    "execution_relative_path": "pooling_20261105/records/amendment.json",
+    "attention_extra_parameters": 65665,
+    "registration": "Last inspected state had 11/12 initial fits; amendment recorded before attention launch. Appended timing note establishes all 12 initial fits had ended by that launch.",
+    "seed_replication": "seed3407; stop-selected seed1701 LR inherited per family/fold; no rescanning",
+    "source_and_archived_sha256": "92f64a4df352bb9e052ddb5acee7929232fabf3efa8153a4e51e0a403a878890",
+    "execution_readback": "Verified same SHA256 via Byte readback on 2026-11-05",
+    "path": "configs/pooling_amendment.json"
+  },
+  "evaluator_revision_history": [
+    {
+      "execution_sha256": "9f2933c6880e966b3d66b810a24323e5397a5f13c123a8b46caf177120e9278a",
+      "reason": "Aggregate and bootstrap separately by (mode,seed); same evaluation observations cannot be concatenated across seeds",
+      "role": "Initial single-seed evaluator before multiseed revision",
+      "superseded_by": "db658e9cbc1052d949d78d1931a4019bbdcb78219e97a819f9914c080063836b"
+    }
+  ],
+  "amendment_timing_note": {
+    "source_and_archived_sha256": "ae8e79c9384dbf01265ad2716edd83003e1dd0c1fe38a215902a9f80af267391",
+    "execution_relative_path": "pooling_20261105/records/amendment_timing_note.json",
+    "execution_readback": "same bytes verified",
+    "path": "configs/pooling_amendment_timing_note.json",
+    "scope": "timing wording correction only; initial amendment preserved and settings unchanged"
+  },
+  "final_public_evidence": {
+    "normalization": "Received text normalized to repository LF where necessary; JSON/CSV values unchanged",
+    "scope": "Aggregate results and artifact hashes only; no sample, sequence or group identities, predicted arrays, embeddings or checkpoints",
+    "failed_fits": 0,
+    "max_checkpoint_replay_abs_error": 2.682209014892578E-07,
+    "files": [
+      {
+        "archived_sha256": "3fe49a0d84696cced0f7b13ae2ba90559dcb795ae8b0fc6dfd97cdc01f15d441",
+        "path": "experiments/pooling_20261105/all_fits.csv"
+      },
+      {
+        "archived_sha256": "1ade88e61aa5536d426fe1ce66e46750e885c36d39f23b2011d86f04c59f9811",
+        "path": "experiments/pooling_20261105/bridge_subgroup_aggregate.json"
+      },
+      {
+        "archived_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "path": "experiments/pooling_20261105/cache_receipt.json"
+      },
+      {
+        "archived_sha256": "2e909638409e8f921d02bcd9c768b49fb11eddd453ff03a092e2efde98bcda74",
+        "path": "experiments/pooling_20261105/checkpoint_replay.json"
+      },
+      {
+        "archived_sha256": "4a48fa0f0125e4928c28228a7f71640eb7ca2131b1584d2e785ab9c3a1d0626a",
+        "path": "experiments/pooling_20261105/confirmation_selection.json"
+      },
+      {
+        "archived_sha256": "94699d4893ddef0d94efaaf98403bcddfd28d38c3bb88d93eea5ee386bb3ca97",
+        "path": "experiments/pooling_20261105/cost_public.json"
+      },
+      {
+        "archived_sha256": "32289ea0a011e486b741efe2e8b141741efe967ee1f24d46b7b2c0792966bb23",
+        "path": "experiments/pooling_20261105/pooling_vs_charge_public.json"
+      },
+      {
+        "archived_sha256": "dc584cbeafadfd9facef014985115a75ab5391b0b267fd268a19c620744f9075",
+        "path": "experiments/pooling_20261105/summary.json"
+      }
+    ],
+    "all_fit_stop_counts": {
+      "early_stop": 20
+    },
+    "private_runtime_manifest": "Retained with Byte execution artifacts",
+    "selected": 12
+  }
+}

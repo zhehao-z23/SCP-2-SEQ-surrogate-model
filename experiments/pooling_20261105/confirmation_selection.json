@@ -1,0 +1,13 @@
+{
+  "rule": "lower seed1701 two-fold exposed development group_macro_H among residue_mean and residue_attention",
+  "summary_sha256": "1f2a5b2172a114e37e302a142bb55185e4e51bc510339860d54ca56a10da9f49",
+  "chosen_mode": "residue_mean",
+  "candidates": {
+    "residue_attention": 0.051826453132723015,
+    "residue_mean": 0.049071795570924205
+  },
+  "reference": "mean_pre",
+  "confirmation_seed": 3407,
+  "confirmation_LR": "fixed seed1701 stop-selected LR per mode/fold",
+  "not_blind": true
+}

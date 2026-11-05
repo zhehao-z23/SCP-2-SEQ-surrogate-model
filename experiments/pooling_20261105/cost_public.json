@@ -1,0 +1,1343 @@
+{
+  "schema": "pooling.cost.aggregate.v1",
+  "stage": "pooling_20261105",
+  "status": "complete",
+  "expected_fits": 20,
+  "completed_fits": 20,
+  "selected_fits": 12,
+  "source_summary_sha256": "dc584cbeafadfd9facef014985115a75ab5391b0b267fd268a19c620744f9075",
+  "source_selected_fits_sha256": "d7c9bd6b3710808271ce03f94c73b6d8cb215d3340729c8240dd4c8b8e1ab27a",
+  "exporter_sha256": "b5a24ce4dc070c9d729d660add5a47fba98d498b4465d923670705c9588e152b",
+  "plan_sha256": {
+    "plan.json": "47e16d46eaa9bb79208947c6ea6cc7957ccc76f6d47cb532ec92c7a47595254f",
+    "amendment.json": "92f64a4df352bb9e052ddb5acee7929232fabf3efa8153a4e51e0a403a878890",
+    "amendment_timing_note.json": "ae8e79c9384dbf01265ad2716edd83003e1dd0c1fe38a215902a9f80af267391",
+    "confirmation_selection.json": "4a48fa0f0125e4928c28228a7f71640eb7ca2131b1584d2e785ab9c3a1d0626a"
+  },
+  "used_source_hashes": {
+    "release_sha256": [
+      "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b"
+    ],
+    "cache_receipt_sha256": [
+      "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23"
+    ],
+    "cache_index_sha256": [
+      "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a"
+    ],
+    "script_sha256": [
+      "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c"
+    ],
+    "model_sha256": [
+      "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81"
+    ],
+    "parent_metrics_and_split_sha256": [
+      "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    ]
+  },
+  "time_definitions": {
+    "fit_wall_seconds": "Trainer timer starts after imports, target/cache loading, normalization and GPU-cache transfer; includes epochs, stop evaluation, final checkpoint/prediction serialization and repeated cached-readout timing; excludes final receipt checksum/write and process cleanup. It is elapsed time, not GPU busy time.",
+    "queue_wall_seconds": "Queue process elapsed time; includes child startup, data/cache loading, fit, checksum and teardown. Sum across concurrent queues is not stage end-to-end elapsed time.",
+    "head_queue_span_seconds": "Last queue end minus first queue start, including inter-queue analysis/selection gaps; not an isolated compute benchmark.",
+    "cached_readout_sequences_per_second": "Single repeated prediction pass on existing cached features; vector summaries or full residue cache already resident as recorded. Includes readout batching/normalization as implemented and device-to-host prediction output, excludes encoder inference, cache building/loading and general sequence-to-p deployment I/O. Very short timings are microbenchmarks.",
+    "encoder_seconds": "Reported launch-to-receipt sum includes startup and artifact hashing for both workers and pilot; it is not profiled GPU busy time.",
+    "residue_presentations": "Input sequence lengths summed over training presentations for every mode; vector modes do not perform residue-wise neural readout work, so equal counts do not imply equal FLOPs."
+  },
+  "totals": {
+    "fit_wall_seconds_sum": 1525.5329706910998,
+    "queue_wall_seconds_sum": 1737.8006656169891,
+    "child_process_wall_seconds_sum": 1737.7869868278503,
+    "head_queue_span_seconds": 1633.4036920070648,
+    "stop_reasons": {
+      "early_stop": 20
+    },
+    "selected_budget_limited": 0
+  },
+  "by_mode_seed": [
+    {
+      "mode": "max_pre",
+      "seed": 1701,
+      "fits": 4,
+      "selected_fits": 2,
+      "fit_wall_seconds_sum": 108.45141559932381,
+      "fit_wall_seconds_range": {
+        "min": 19.280953497625887,
+        "median": 24.369204986374825,
+        "max": 40.43205212894827
+      },
+      "epochs_sum": 224,
+      "epochs_range": {
+        "min": 40,
+        "median": 50.5,
+        "max": 83
+      },
+      "updates_sum": 23072,
+      "updates_range": {
+        "min": 4120,
+        "median": 5201.5,
+        "max": 8549
+      },
+      "sample_presentations_sum": 2941486,
+      "residue_presentations_sum": 849170637,
+      "stop_reasons": {
+        "early_stop": 4
+      },
+      "cached_readout_sequences_per_second_range": {
+        "min": 87999.44068001218,
+        "median": 92588.7371380201,
+        "max": 94341.48441185741
+      },
+      "peak_GPU_bytes_max": 148597248,
+      "peak_RSS_bytes_max": 1604460544,
+      "selected_parameters": [
+        1736255
+      ],
+      "selected_cached_readout_sequences_per_second_range": {
+        "min": 92774.48520588556,
+        "median": 93557.9848088715,
+        "max": 94341.48441185741
+      },
+      "selected_run_ids": [
+        "6a754378628284a4ad53e24b5b7e51e4a64bc98736c03674b8cd7b3a39c02c23",
+        "95ee4cefb91032079b16e6d6aee470d9574c2efb06895c2a98ad572fa46ecf10"
+      ]
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 1701,
+      "fits": 4,
+      "selected_fits": 2,
+      "fit_wall_seconds_sum": 184.3493398539722,
+      "fit_wall_seconds_range": {
+        "min": 26.161534327082336,
+        "median": 46.09954299824312,
+        "max": 65.98871953040361
+      },
+      "epochs_sum": 387,
+      "epochs_range": {
+        "min": 56,
+        "median": 95.0,
+        "max": 141
+      },
+      "updates_sum": 39861,
+      "updates_range": {
+        "min": 5768,
+        "median": 9785.0,
+        "max": 14523
+      },
+      "sample_presentations_sum": 5080277,
+      "residue_presentations_sum": 1467958287,
+      "stop_reasons": {
+        "early_stop": 4
+      },
+      "cached_readout_sequences_per_second_range": {
+        "min": 88710.23223644492,
+        "median": 92329.14754713973,
+        "max": 96570.24046298713
+      },
+      "peak_GPU_bytes_max": 148597248,
+      "peak_RSS_bytes_max": 1601462272,
+      "selected_parameters": [
+        1736255
+      ],
+      "selected_cached_readout_sequences_per_second_range": {
+        "min": 92444.51771418333,
+        "median": 94507.37908858524,
+        "max": 96570.24046298713
+      },
+      "selected_run_ids": [
+        "3ffeb8918ea1abf00b2ea4554fd0eeceeef94c063970e54d9f724b5525d0b3fe",
+        "d59d3cb958b61822ad0b81aa30f5604db59b76e9df6aad177d373b307df5186b"
+      ]
+    },
+    {
+      "mode": "mean_pre",
+      "seed": 3407,
+      "fits": 2,
+      "selected_fits": 2,
+      "fit_wall_seconds_sum": 75.9798815632239,
+      "fit_wall_seconds_range": {
+        "min": 37.51478536427021,
+        "median": 37.98994078161195,
+        "max": 38.46509619895369
+      },
+      "epochs_sum": 150,
+      "epochs_range": {
+        "min": 74,
+        "median": 75.0,
+        "max": 76
+      },
+      "updates_sum": 15450,
+      "updates_range": {
+        "min": 7622,
+        "median": 7725.0,
+        "max": 7828
+      },
+      "sample_presentations_sum": 1969126,
+      "residue_presentations_sum": 568962384,
+      "stop_reasons": {
+        "early_stop": 2
+      },
+      "cached_readout_sequences_per_second_range": {
+        "min": 87435.04658708288,
+        "median": 89642.23909581403,
+        "max": 91849.4316045452
+      },
+      "peak_GPU_bytes_max": 148597248,
+      "peak_RSS_bytes_max": 1605652480,
+      "selected_parameters": [
+        1736255
+      ],
+      "selected_cached_readout_sequences_per_second_range": {
+        "min": 87435.04658708288,
+        "median": 89642.23909581403,
+        "max": 91849.4316045452
+      },
+      "selected_run_ids": [
+        "578fe3ba767b717200d450e5d8107465faa5da2afd61b62ecc3371f8250e0d46",
+        "a511dc989eb835d6b9c0ad7baab9ce50127b6529b929bfd0c90e8227649455dc"
+      ]
+    },
+    {
+      "mode": "residue_attention",
+      "seed": 1701,
+      "fits": 4,
+      "selected_fits": 2,
+      "fit_wall_seconds_sum": 348.0454078586772,
+      "fit_wall_seconds_range": {
+        "min": 79.19689740706235,
+        "median": 84.19213409768417,
+        "max": 100.46424225624651
+      },
+      "epochs_sum": 198,
+      "epochs_range": {
+        "min": 45,
+        "median": 48.0,
+        "max": 57
+      },
+      "updates_sum": 20394,
+      "updates_range": {
+        "min": 4635,
+        "median": 4944.0,
+        "max": 5871
+      },
+      "sample_presentations_sum": 2598826,
+      "residue_presentations_sum": 751248510,
+      "stop_reasons": {
+        "early_stop": 4
+      },
+      "cached_readout_sequences_per_second_range": {
+        "min": 10217.068465777655,
+        "median": 10318.425680582002,
+        "max": 10454.789254345382
+      },
+      "peak_GPU_bytes_max": 12643115520,
+      "peak_RSS_bytes_max": 25458712576,
+      "selected_parameters": [
+        1801920
+      ],
+      "selected_cached_readout_sequences_per_second_range": {
+        "min": 10217.068465777655,
+        "median": 10335.928860061518,
+        "max": 10454.789254345382
+      },
+      "selected_run_ids": [
+        "497c5551a6c05f23f9e341b17dfca7ca09e5adc8313477fd077172249a6aeb64",
+        "4f4061f4960c458d13cffe4a2383f4c52d063d9e20283b41dc78d0286153f132"
+      ]
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 1701,
+      "fits": 4,
+      "selected_fits": 2,
+      "fit_wall_seconds_sum": 512.7988610072061,
+      "fit_wall_seconds_range": {
+        "min": 75.78838696330786,
+        "median": 144.04562179604545,
+        "max": 148.91923045180738
+      },
+      "epochs_sum": 334,
+      "epochs_range": {
+        "min": 49,
+        "median": 93.5,
+        "max": 98
+      },
+      "updates_sum": 34402,
+      "updates_range": {
+        "min": 5047,
+        "median": 9630.5,
+        "max": 10094
+      },
+      "sample_presentations_sum": 4386750,
+      "residue_presentations_sum": 1265767008,
+      "stop_reasons": {
+        "early_stop": 4
+      },
+      "cached_readout_sequences_per_second_range": {
+        "min": 10476.097131915612,
+        "median": 10620.502436689363,
+        "max": 10706.903273000333
+      },
+      "peak_GPU_bytes_max": 12637535232,
+      "peak_RSS_bytes_max": 25456095232,
+      "selected_parameters": [
+        1736255
+      ],
+      "selected_cached_readout_sequences_per_second_range": {
+        "min": 10476.097131915612,
+        "median": 10591.500202457974,
+        "max": 10706.903273000333
+      },
+      "selected_run_ids": [
+        "8a6f6980ad36f45eead0074aa8e95e00133582862d008d86daabf739fc434d4f",
+        "a460941f4efce5a8e17c571777cf42cdc32c57b46b3489be51f9a0e92d25ef94"
+      ]
+    },
+    {
+      "mode": "residue_mean",
+      "seed": 3407,
+      "fits": 2,
+      "selected_fits": 2,
+      "fit_wall_seconds_sum": 295.9080648086965,
+      "fit_wall_seconds_range": {
+        "min": 145.0578609732911,
+        "median": 147.95403240434825,
+        "max": 150.8502038354054
+      },
+      "epochs_sum": 192,
+      "epochs_range": {
+        "min": 95,
+        "median": 96.0,
+        "max": 97
+      },
+      "updates_sum": 19776,
+      "updates_range": {
+        "min": 9785,
+        "median": 9888.0,
+        "max": 9991
+      },
+      "sample_presentations_sum": 2520650,
+      "residue_presentations_sum": 728184279,
+      "stop_reasons": {
+        "early_stop": 2
+      },
+      "cached_readout_sequences_per_second_range": {
+        "min": 10603.728754562464,
+        "median": 10660.900217856317,
+        "max": 10718.07168115017
+      },
+      "peak_GPU_bytes_max": 12637542400,
+      "peak_RSS_bytes_max": 25459044352,
+      "selected_parameters": [
+        1736255
+      ],
+      "selected_cached_readout_sequences_per_second_range": {
+        "min": 10603.728754562464,
+        "median": 10660.900217856317,
+        "max": 10718.07168115017
+      },
+      "selected_run_ids": [
+        "a69bd3e56223aee428541f7fa4d3b9836975f67b3072ed487b7750e3f9c684bb",
+        "f37e0d8d676ce3d0cfa9866169ffd5dd14c63fc80368617d720d21a458935855"
+      ]
+    }
+  ],
+  "queues": [
+    {
+      "record": "records/queue_max_pre.json",
+      "record_sha256": "a295c1cb8f426b77b16ceefcb991787bf357f416112eff23c94dca4e8cb7fd28",
+      "mode": "max_pre",
+      "seed": 1701,
+      "status": "complete",
+      "attempts": 4,
+      "queue_wall_seconds": 124.18429207801819,
+      "child_process_wall_seconds_sum": 124.18234205245972,
+      "child_process_wall_seconds_range": {
+        "min": 23.094453811645508,
+        "median": 28.48087203502655,
+        "max": 44.12614417076111
+      }
+    },
+    {
+      "record": "records/queue_mean_pre.json",
+      "record_sha256": "7730aee427649697952db903db1133859b62038f6f24bff692afeb1ff216769d",
+      "mode": "mean_pre",
+      "seed": 1701,
+      "status": "complete",
+      "attempts": 4,
+      "queue_wall_seconds": 198.93341517448425,
+      "child_process_wall_seconds_sum": 198.93167543411255,
+      "child_process_wall_seconds_range": {
+        "min": 29.601501941680908,
+        "median": 49.93839716911316,
+        "max": 69.45337915420532
+      }
+    },
+    {
+      "record": "records/queue_mean_pre_seed3407.json",
+      "record_sha256": "60de47f9707cbdf8080354bca36d99c0bb7ba2f083ddec7afecb9087a4d2003a",
+      "mode": "mean_pre",
+      "seed": 3407,
+      "status": "complete",
+      "attempts": 2,
+      "queue_wall_seconds": 83.89296126365662,
+      "child_process_wall_seconds_sum": 83.88987135887146,
+      "child_process_wall_seconds_range": {
+        "min": 41.319987297058105,
+        "median": 41.94493567943573,
+        "max": 42.569884061813354
+      }
+    },
+    {
+      "record": "records/queue_residue_attention.json",
+      "record_sha256": "016d540afd8a5369c27a7adffa215c751bc81d59f3a37dc2dcd5294e8f89f28d",
+      "mode": "residue_attention",
+      "seed": 1701,
+      "status": "complete",
+      "attempts": 4,
+      "queue_wall_seconds": 413.62070512771606,
+      "child_process_wall_seconds_sum": 413.61883187294006,
+      "child_process_wall_seconds_range": {
+        "min": 96.84404373168945,
+        "median": 103.17977380752563,
+        "max": 110.41524052619934
+      }
+    },
+    {
+      "record": "records/queue_residue_mean.json",
+      "record_sha256": "d93ece19ecab57e8a48081b3b2dbb38f41d2afb5315b0bf7990c31e53d2c43a5",
+      "mode": "residue_mean",
+      "seed": 1701,
+      "status": "complete",
+      "attempts": 4,
+      "queue_wall_seconds": 585.1275959014893,
+      "child_process_wall_seconds_sum": 585.1257514953613,
+      "child_process_wall_seconds_range": {
+        "min": 93.99786376953125,
+        "median": 162.89992260932922,
+        "max": 165.32804250717163
+      }
+    },
+    {
+      "record": "records/queue_residue_mean_seed3407.json",
+      "record_sha256": "565eb886cbf06fdfab33d2ef99555a405baf51cbdce210eff9f09a57d7c41df1",
+      "mode": "residue_mean",
+      "seed": 3407,
+      "status": "complete",
+      "attempts": 2,
+      "queue_wall_seconds": 332.04169607162476,
+      "child_process_wall_seconds_sum": 332.0385146141052,
+      "child_process_wall_seconds_range": {
+        "min": 162.63888478279114,
+        "median": 166.0192573070526,
+        "max": 169.3996298313141
+      }
+    }
+  ],
+  "fits": [
+    {
+      "run_id": "13af2d6240cc1dace3de7ccd317d7ade42b77eec0f82c8efc44fa3d552ab10f7",
+      "artifact_directory": "runs/13af2d6240cc1dace3de7ccd317d7ade42b77eec0f82c8efc44fa3d552ab10f7",
+      "mode": "mean_pre",
+      "seed": 1701,
+      "fold": 1,
+      "lr": 0.001,
+      "selected_by_stop": false,
+      "parameters": 1736255,
+      "epochs": 141,
+      "best_epoch": 111,
+      "updates": 14523,
+      "sample_presentations": 1845831,
+      "residue_presentations": 537496371,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 65.98871953040361,
+      "cached_readout_sequences_per_second": 92213.77738009611,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1601241088,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "0ba9b40512adb0374e562da09304c2e1c069e70be5b0ea59bd8956f106d346e0",
+      "prediction_sha256": "50023d568bdbec7a98aef52aeb78238210156b538cdb2c54d284be6a7bdfee88",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "151a292384c23509cc9d935fcb0dfc34e03c9a18dbb14d55aad37bafa7c83448",
+      "artifact_directory": "runs/151a292384c23509cc9d935fcb0dfc34e03c9a18dbb14d55aad37bafa7c83448",
+      "mode": "residue_mean",
+      "seed": 1701,
+      "fold": 1,
+      "lr": 0.001,
+      "selected_by_stop": false,
+      "parameters": 1736255,
+      "epochs": 49,
+      "best_epoch": 19,
+      "updates": 5047,
+      "sample_presentations": 641459,
+      "residue_presentations": 186789519,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 75.78838696330786,
+      "cached_readout_sequences_per_second": 10657.706509686412,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12637329408,
+      "peak_RSS_bytes": 25454137344,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "0e7d21288cf7eb6114bcb992a4048d7490f417f5d2624e52b0014774edd757bf",
+      "prediction_sha256": "f62ce76e1f9133fada16e6f41a1c1f358bdf3760edb3827f46bd70d69e8b901e",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "1e7a22a5b899e7474cb9c90d5fc2e39c0f088f8aba95dcfb4157df5acc82408c",
+      "artifact_directory": "runs/1e7a22a5b899e7474cb9c90d5fc2e39c0f088f8aba95dcfb4157df5acc82408c",
+      "mode": "residue_attention",
+      "seed": 1701,
+      "fold": 0,
+      "lr": 0.001,
+      "selected_by_stop": false,
+      "parameters": 1801920,
+      "epochs": 45,
+      "best_epoch": 15,
+      "updates": 4635,
+      "sample_presentations": 592425,
+      "residue_presentations": 169812990,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 79.19689740706235,
+      "cached_readout_sequences_per_second": 10346.751744493757,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12643077632,
+      "peak_RSS_bytes": 25454665728,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "33d95af5761d3fc5515d30ccde6938513dbc087a40ead440d8003b5488d69874",
+      "prediction_sha256": "8f77e24ae3c0ba7185f0f3d08e9a225f83435a9f774f7a61a764d52cbcd4c94f",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "31a7f03094a228d90606820b24b0c45382473a1d6e81ea3f2abbe7f6f8b43cff",
+      "artifact_directory": "runs/31a7f03094a228d90606820b24b0c45382473a1d6e81ea3f2abbe7f6f8b43cff",
+      "mode": "residue_attention",
+      "seed": 1701,
+      "fold": 1,
+      "lr": 0.001,
+      "selected_by_stop": false,
+      "parameters": 1801920,
+      "epochs": 57,
+      "best_epoch": 27,
+      "updates": 5871,
+      "sample_presentations": 746187,
+      "residue_presentations": 217285767,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 100.46424225624651,
+      "cached_readout_sequences_per_second": 10290.099616670248,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12643110400,
+      "peak_RSS_bytes": 25458040832,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "36ac3b3b50122296dcddfb5611dd4e8361dca78d975e9668497794b1d8a9b597",
+      "prediction_sha256": "799272f18983d0f138c98d52f9293b7c6aae376092ddee02915ec20cad1ccda1",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "39d9c24d0f3a495a550f81f6761180f8ca0ecaea97c57efad4a0c69ad2149826",
+      "artifact_directory": "runs/39d9c24d0f3a495a550f81f6761180f8ca0ecaea97c57efad4a0c69ad2149826",
+      "mode": "max_pre",
+      "seed": 1701,
+      "fold": 1,
+      "lr": 0.001,
+      "selected_by_stop": false,
+      "parameters": 1736255,
+      "epochs": 40,
+      "best_epoch": 6,
+      "updates": 4120,
+      "sample_presentations": 523640,
+      "residue_presentations": 152481240,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 19.280953497625887,
+      "cached_readout_sequences_per_second": 92402.98907015462,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1596993536,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "186a2e3e97f99d711283f4ed220ded58c0910b743ecf715101267129d5cfe416",
+      "prediction_sha256": "db1b036dd3a02e1709892865717ecb272c2435f9fc9cff15a54da5937d5e6e26",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "3ffeb8918ea1abf00b2ea4554fd0eeceeef94c063970e54d9f724b5525d0b3fe",
+      "artifact_directory": "runs/3ffeb8918ea1abf00b2ea4554fd0eeceeef94c063970e54d9f724b5525d0b3fe",
+      "mode": "mean_pre",
+      "seed": 1701,
+      "fold": 1,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 56,
+      "best_epoch": 26,
+      "updates": 5768,
+      "sample_presentations": 733096,
+      "residue_presentations": 213473736,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 26.161534327082336,
+      "cached_readout_sequences_per_second": 96570.24046298713,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1601462272,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "0ee1a7a7dddb5aee8ec9424c1ddb8aefb20f1d3f3edf0e4c144b770639437f5d",
+      "prediction_sha256": "7bc9b0e68a35e3b00875d9c43851745215deabd509f6a49d6884bec1c1be1c2b",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "497c5551a6c05f23f9e341b17dfca7ca09e5adc8313477fd077172249a6aeb64",
+      "artifact_directory": "runs/497c5551a6c05f23f9e341b17dfca7ca09e5adc8313477fd077172249a6aeb64",
+      "mode": "residue_attention",
+      "seed": 1701,
+      "fold": 1,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1801920,
+      "epochs": 49,
+      "best_epoch": 19,
+      "updates": 5047,
+      "sample_presentations": 641459,
+      "residue_presentations": 186789519,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 84.62996918149292,
+      "cached_readout_sequences_per_second": 10454.789254345382,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12643110400,
+      "peak_RSS_bytes": 25457065984,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "6c39014bb7b15e8f57ab97cd998ec2517a08c1fcf44a193e2115f9a51aa9b12a",
+      "prediction_sha256": "6a3bd7f4d1a3d3eefef843988a07a1e75beaf52049d6c652984fad81be89fb79",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "4ed03768390490a9600a2d226acae8d72a9fade8de3e7a9e17964e7827b559db",
+      "artifact_directory": "runs/4ed03768390490a9600a2d226acae8d72a9fade8de3e7a9e17964e7827b559db",
+      "mode": "mean_pre",
+      "seed": 1701,
+      "fold": 0,
+      "lr": 0.001,
+      "selected_by_stop": false,
+      "parameters": 1736255,
+      "epochs": 107,
+      "best_epoch": 77,
+      "updates": 11021,
+      "sample_presentations": 1408655,
+      "residue_presentations": 403777554,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 52.17848237324506,
+      "cached_readout_sequences_per_second": 88710.23223644492,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1598275584,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "da8d9ee8ef92e1a8028e8a4b728069ccdd226e42dbd6170e1e7cfc4227fc54ae",
+      "prediction_sha256": "be3d83b92d3cc5e210396e9b40b8716cdebb4ec650a1f79bb495b226c62ec078",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "4f4061f4960c458d13cffe4a2383f4c52d063d9e20283b41dc78d0286153f132",
+      "artifact_directory": "runs/4f4061f4960c458d13cffe4a2383f4c52d063d9e20283b41dc78d0286153f132",
+      "mode": "residue_attention",
+      "seed": 1701,
+      "fold": 0,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1801920,
+      "epochs": 47,
+      "best_epoch": 17,
+      "updates": 4841,
+      "sample_presentations": 618755,
+      "residue_presentations": 177360234,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 83.75429901387542,
+      "cached_readout_sequences_per_second": 10217.068465777655,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12643115520,
+      "peak_RSS_bytes": 25458712576,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "d6e22fa9d9113335c6e149f5449e402c1f4b525a3086753bbf97e32913d00d6c",
+      "prediction_sha256": "ce9afffb791f3168ec6f7105ec2308530cec77d40f4b9ef35016d007badf1e6b",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "578fe3ba767b717200d450e5d8107465faa5da2afd61b62ecc3371f8250e0d46",
+      "artifact_directory": "runs/578fe3ba767b717200d450e5d8107465faa5da2afd61b62ecc3371f8250e0d46",
+      "mode": "mean_pre",
+      "seed": 3407,
+      "fold": 0,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 74,
+      "best_epoch": 44,
+      "updates": 7622,
+      "sample_presentations": 974210,
+      "residue_presentations": 279248028,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 38.46509619895369,
+      "cached_readout_sequences_per_second": 87435.04658708288,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1605029888,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "8a9f26637c3455c84f442b1b5358c11a64504cff364ed3b84526e7e78f9884a5",
+      "prediction_sha256": "66063a015ee9af094b96500a256f9c60ccae06160708ec407e842eca3a4f037c",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "5a3adf7f0da8dbf03838330c08dafc727fcfce78e1469a77553d9a691096cf17",
+      "artifact_directory": "runs/5a3adf7f0da8dbf03838330c08dafc727fcfce78e1469a77553d9a691096cf17",
+      "mode": "residue_mean",
+      "seed": 1701,
+      "fold": 0,
+      "lr": 0.001,
+      "selected_by_stop": false,
+      "parameters": 1736255,
+      "epochs": 96,
+      "best_epoch": 66,
+      "updates": 9888,
+      "sample_presentations": 1263840,
+      "residue_presentations": 362267712,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 146.90902196522802,
+      "cached_readout_sequences_per_second": 10583.298363692313,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12637535232,
+      "peak_RSS_bytes": 25456095232,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "2527da01ff994fc7fb7b57261054ecc43a01bfc159791a18c53d64235f759624",
+      "prediction_sha256": "351dbd3780bba27cf1fe357fd20aa438e1ff6c680c5ff2fdfe8cc82d13c2054a",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "6a754378628284a4ad53e24b5b7e51e4a64bc98736c03674b8cd7b3a39c02c23",
+      "artifact_directory": "runs/6a754378628284a4ad53e24b5b7e51e4a64bc98736c03674b8cd7b3a39c02c23",
+      "mode": "max_pre",
+      "seed": 1701,
+      "fold": 1,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 61,
+      "best_epoch": 31,
+      "updates": 6283,
+      "sample_presentations": 798551,
+      "residue_presentations": 232533891,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 29.43737483024597,
+      "cached_readout_sequences_per_second": 94341.48441185741,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1602351104,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "4d1e4c88e38269a1d799a2f65a15f5164b0d2817894065bf49cb3eb6a74d3992",
+      "prediction_sha256": "ea14f86a19765f324d373a48a76596486be5d19d240ae7627ba19f0635885ee9",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "8a6f6980ad36f45eead0074aa8e95e00133582862d008d86daabf739fc434d4f",
+      "artifact_directory": "runs/8a6f6980ad36f45eead0074aa8e95e00133582862d008d86daabf739fc434d4f",
+      "mode": "residue_mean",
+      "seed": 1701,
+      "fold": 0,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 98,
+      "best_epoch": 68,
+      "updates": 10094,
+      "sample_presentations": 1290170,
+      "residue_presentations": 369814956,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 148.91923045180738,
+      "cached_readout_sequences_per_second": 10476.097131915612,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12637535232,
+      "peak_RSS_bytes": 25454854144,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "4b2f85873e6f98efd387058c1ea0a29f3938837952a3d9bea00548a1dc0cad72",
+      "prediction_sha256": "5bc1e2b18f506d788af58f30f8b4fa7b209e80ebc65b3ca00a6bb6c0b067a621",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "95ee4cefb91032079b16e6d6aee470d9574c2efb06895c2a98ad572fa46ecf10",
+      "artifact_directory": "runs/95ee4cefb91032079b16e6d6aee470d9574c2efb06895c2a98ad572fa46ecf10",
+      "mode": "max_pre",
+      "seed": 1701,
+      "fold": 0,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 83,
+      "best_epoch": 53,
+      "updates": 8549,
+      "sample_presentations": 1092695,
+      "residue_presentations": 313210626,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 40.43205212894827,
+      "cached_readout_sequences_per_second": 92774.48520588556,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1604460544,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "d7c1b38217fd637b207419782dd59e256b9d09429aa728d493efc3e24d39ad62",
+      "prediction_sha256": "6012660e88ee33eeac5e3520200157611147b50ee29206e3b1736b043cdded88",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "a460941f4efce5a8e17c571777cf42cdc32c57b46b3489be51f9a0e92d25ef94",
+      "artifact_directory": "runs/a460941f4efce5a8e17c571777cf42cdc32c57b46b3489be51f9a0e92d25ef94",
+      "mode": "residue_mean",
+      "seed": 1701,
+      "fold": 1,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 91,
+      "best_epoch": 61,
+      "updates": 9373,
+      "sample_presentations": 1191281,
+      "residue_presentations": 346894821,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 141.18222162686288,
+      "cached_readout_sequences_per_second": 10706.903273000333,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12637329408,
+      "peak_RSS_bytes": 25452625920,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "31d31788d0b1d178e2f6c0df1077c362d97ddba695853a0c6be379a31eaa0cfc",
+      "prediction_sha256": "58a679e49c2ea38768f8743f87b42e8d8efdb7080ca30b961f296bf7ee81e897",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "a511dc989eb835d6b9c0ad7baab9ce50127b6529b929bfd0c90e8227649455dc",
+      "artifact_directory": "runs/a511dc989eb835d6b9c0ad7baab9ce50127b6529b929bfd0c90e8227649455dc",
+      "mode": "mean_pre",
+      "seed": 3407,
+      "fold": 1,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 76,
+      "best_epoch": 46,
+      "updates": 7828,
+      "sample_presentations": 994916,
+      "residue_presentations": 289714356,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 37.51478536427021,
+      "cached_readout_sequences_per_second": 91849.4316045452,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1605652480,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "5a74b64a797660584e4888b7de428c05217c9dac138c96c9b4c50bebc3ed51f5",
+      "prediction_sha256": "a6bbafd0e6e98a349411669af51966aecf81c3e0636f3eb520709ed38abe66b4",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "a69bd3e56223aee428541f7fa4d3b9836975f67b3072ed487b7750e3f9c684bb",
+      "artifact_directory": "runs/a69bd3e56223aee428541f7fa4d3b9836975f67b3072ed487b7750e3f9c684bb",
+      "mode": "residue_mean",
+      "seed": 3407,
+      "fold": 0,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 97,
+      "best_epoch": 67,
+      "updates": 9991,
+      "sample_presentations": 1277005,
+      "residue_presentations": 366041334,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 150.8502038354054,
+      "cached_readout_sequences_per_second": 10603.728754562464,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12637542400,
+      "peak_RSS_bytes": 25459044352,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "ef0aa8eee332210133d0c8b133a925d31585e46c6bb0467b84c77ecf00d4e40b",
+      "prediction_sha256": "5232e50023d0b1699d618125c6d1217e241dbe1f178f227984faefa1d5a900ca",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "d59d3cb958b61822ad0b81aa30f5604db59b76e9df6aad177d373b307df5186b",
+      "artifact_directory": "runs/d59d3cb958b61822ad0b81aa30f5604db59b76e9df6aad177d373b307df5186b",
+      "mode": "mean_pre",
+      "seed": 1701,
+      "fold": 0,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 83,
+      "best_epoch": 53,
+      "updates": 8549,
+      "sample_presentations": 1092695,
+      "residue_presentations": 313210626,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 40.020603623241186,
+      "cached_readout_sequences_per_second": 92444.51771418333,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1599971328,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "571156669337f1008d10742bc87b34199e30a6fc0b2b11a3db32a68becc7c736",
+      "prediction_sha256": "717f818324c44b0ea90e287303c271b1bbe181f06a2e69d79b90568027d5f818",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "dbb0f96a7c3d6e7bfd5b2d7a64fb66b0a39fb33bfb2ba6d16dbd1fbf679bda0c",
+      "artifact_directory": "runs/dbb0f96a7c3d6e7bfd5b2d7a64fb66b0a39fb33bfb2ba6d16dbd1fbf679bda0c",
+      "mode": "max_pre",
+      "seed": 1701,
+      "fold": 0,
+      "lr": 0.001,
+      "selected_by_stop": false,
+      "parameters": 1736255,
+      "epochs": 40,
+      "best_epoch": 5,
+      "updates": 4120,
+      "sample_presentations": 526600,
+      "residue_presentations": 150944880,
+      "training_samples": 13165,
+      "training_unique_T": 13162,
+      "training_groups": 4800,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 19.30103514250368,
+      "cached_readout_sequences_per_second": 87999.44068001218,
+      "cache_on_GPU": false,
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1593823232,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "a6f55f8ebce5c5fcdcf51147e2415dbc1d54b5443a724b3ebca5ed6f19f35c52",
+      "prediction_sha256": "58dbcecf3e6148222a3900bfbd71cea2d3bbb2685bbb5060546a5d61ee5a18da",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    {
+      "run_id": "f37e0d8d676ce3d0cfa9866169ffd5dd14c63fc80368617d720d21a458935855",
+      "artifact_directory": "runs/f37e0d8d676ce3d0cfa9866169ffd5dd14c63fc80368617d720d21a458935855",
+      "mode": "residue_mean",
+      "seed": 3407,
+      "fold": 1,
+      "lr": 0.0003,
+      "selected_by_stop": true,
+      "parameters": 1736255,
+      "epochs": 95,
+      "best_epoch": 65,
+      "updates": 9785,
+      "sample_presentations": 1243645,
+      "residue_presentations": 362142945,
+      "training_samples": 13091,
+      "training_unique_T": 13087,
+      "training_groups": 4799,
+      "stop_reason": "early_stop",
+      "fit_wall_seconds": 145.0578609732911,
+      "cached_readout_sequences_per_second": 10718.07168115017,
+      "cache_on_GPU": true,
+      "peak_GPU_bytes": 12636826112,
+      "peak_RSS_bytes": 25457758208,
+      "hashes": {
+        "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+        "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+        "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+        "script_sha256": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+        "model_sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+        "parent_metrics_and_split_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+      },
+      "checkpoint_sha256": "0116773bc3a1e1e8471952342fa34640e7251c622e938306be3695c6689cd43c",
+      "prediction_sha256": "2f53db8bc217bee582a877d371f4dfe43af6f0fd3b8668d2669f2ab249d40976",
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "numpy": "1.26.4",
+        "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+        "gpu": "NVIDIA GeForce RTX 4090"
+      }
+    }
+  ],
+  "encoder_and_cache": {
+    "rows": 21915,
+    "residues": 6358684,
+    "width": 960,
+    "dtype": "float16",
+    "compute": "FP32 singleton",
+    "worker_reported_seconds_sum": 465.84890920855105,
+    "launch_to_receipt_seconds_sum": 482.3688077926636,
+    "publisher_seconds": 64.4467087611556,
+    "encoder_peak_GPU_bytes": 1590214656,
+    "encoder_peak_RSS_bytes": 7576457216,
+    "publisher_peak_RSS_bytes": 25609363456,
+    "published_file_bytes": {
+      "flat.npy": 12208673408,
+      "index.parquet": 1626373,
+      "mean.npy": 84153728,
+      "max.npy": 84153728,
+      "receipt.json": 3231
+    },
+    "published_directory_bytes": 12378610468,
+    "work_cache_directory_bytes": 12465366587,
+    "artifact_sha256": {
+      "flat.npy": "cd9bd826b7b3a6489400856f1a1009e08d2575fe2c424466cc1a7ea0ddd4531d",
+      "index.parquet": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+      "mean.npy": "c87cd7007cca9b0e187fda0d8a355559d5be2fc7fc81b1185c8cb9cf13e93a5f",
+      "max.npy": "379e8c2d6ace80c30aca55d1943fe1550d2cde23c89a5b396b1d929109f58df5"
+    },
+    "receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+    "source_sequence_snapshot_sha256": "a4ab28a21a359b6136dbb22ecc9396b573d26661d8400237b1abf8771e85d6ee",
+    "worker_identities": [
+      {
+        "source_sha256": "a4ab28a21a359b6136dbb22ecc9396b573d26661d8400237b1abf8771e85d6ee",
+        "script_sha256": "c174186eaf1e1c0d5ce385963ba37bd16aa7205b97a452a424f2c5495c083bad",
+        "backend_sha256": "3de075876cdd11896ae76dce4a12140d876fecb66cc0f1e2d98df0c40bf0be18",
+        "checkpoint_manifest_sha256": "dd518367099147283233cb7d23eb587c24d97e9f8c4c93e7b030e6ca9bfdfd36",
+        "rank": 0,
+        "workers": 2,
+        "row_order_sha256": "5f89a5f1907ebd32f87afe23fcf0de46188270c7c15efbdd91a75fe9f554e96d",
+        "dtype": "float16",
+        "compute": "fp32",
+        "encoder": "esmc_300m",
+        "layer": 30,
+        "width": 960,
+        "truncation": false,
+        "special_tokens": false,
+        "singleton_unpadded": true
+      },
+      {
+        "source_sha256": "a4ab28a21a359b6136dbb22ecc9396b573d26661d8400237b1abf8771e85d6ee",
+        "script_sha256": "c174186eaf1e1c0d5ce385963ba37bd16aa7205b97a452a424f2c5495c083bad",
+        "backend_sha256": "3de075876cdd11896ae76dce4a12140d876fecb66cc0f1e2d98df0c40bf0be18",
+        "checkpoint_manifest_sha256": "dd518367099147283233cb7d23eb587c24d97e9f8c4c93e7b030e6ca9bfdfd36",
+        "rank": 1,
+        "workers": 2,
+        "row_order_sha256": "7ee6cbda699125196b426686ce4c181ddcd820a422c27a491d0923bbf369c798",
+        "dtype": "float16",
+        "compute": "fp32",
+        "encoder": "esmc_300m",
+        "layer": 30,
+        "width": 960,
+        "truncation": false,
+        "special_tokens": false,
+        "singleton_unpadded": true
+      }
+    ],
+    "quantized_mean_vs_legacy": {
+      "max_absolute_error": 8.404254913330078e-05,
+      "mean_absolute_error": 3.5374853268876905e-07,
+      "per_sequence_max_quantiles": [
+        8.977949619293213e-07,
+        8.225440979003906e-06,
+        2.0325183868408203e-05,
+        2.9142498970031756e-05,
+        8.404254913330078e-05
+      ]
+    }
+  },
+  "qualification": {
+    "retrospective_development": true,
+    "evaluated_folds": [
+      0,
+      1
+    ],
+    "seeds": [
+      1701,
+      3407
+    ],
+    "no_end_to_end_deployment_throughput_measured": true,
+    "new_C_transfer_permitted": false,
+    "full_U_deployment_validated": false,
+    "summary_only_no_sample_or_group_identifiers": true
+  },
+  "budget_observation": {
+    "head_seconds_cap": 14400,
+    "head_queue_wall_seconds_sum": 1737.8006656169891,
+    "head_queue_wall_sum_within_cap": true,
+    "head_queue_sum_interpretation": "Conservative allocated-time proxy from one queue per assigned GPU; includes process overhead, not measured GPU busy time.",
+    "encoder_seconds_cap": 7200,
+    "encoder_launch_to_receipt_seconds_sum": 482.3688077926636,
+    "encoder_within_cap": true,
+    "cache_disk_bytes_cap": 42949672960,
+    "cache_total_bytes": 24843977055,
+    "cache_disk_within_cap": true
+  }
+}

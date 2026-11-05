@@ -1,0 +1,118 @@
+{
+  "analysis": "posthoc_length_by_U_relation",
+  "input_sha256": "e1a44cbcc29693da8a185be6873d67fe6a17d4506dd5a458dd1fbe2fe760ea4b",
+  "script_sha256": "7053a1a5ea312e6eb9e60d543f3254045ba22af21a88a3c7ab875d2fad1dd5fb",
+  "folds": [
+    0,
+    1
+  ],
+  "seed": 1701,
+  "contrast": "esmc_charge minus composition_charge_deep",
+  "scope": "Two selected original scale-run fits per family, all scale; same saved predictions, no retraining. Near-full coverage >0.98 is descriptive and does not establish full-U equivalence. Paired conditional group-bootstrap intervals exclude selection/multiplicity/seed uncertainty; group counts overlap across cells.",
+  "rows": [
+    {
+      "subset": "exact_U",
+      "length_bin": "1-150",
+      "unique_T": 161,
+      "groups": 102,
+      "delta_H": -0.0004967289860360324,
+      "descriptive_95_interval": [
+        -0.003370605589589104,
+        0.0023218965099658815
+      ],
+      "fusion_H": 0.04994690790772438,
+      "deep_H": 0.050443630665540695
+    },
+    {
+      "subset": "exact_U",
+      "length_bin": "151-300",
+      "unique_T": 165,
+      "groups": 97,
+      "delta_H": -5.350976425688714e-05,
+      "descriptive_95_interval": [
+        -0.0033308055310044436,
+        0.003383794799447059
+      ],
+      "fusion_H": 0.04821270704269409,
+      "deep_H": 0.0482662208378315
+    },
+    {
+      "subset": "exact_U",
+      "length_bin": "301-600",
+      "unique_T": 107,
+      "groups": 86,
+      "delta_H": 0.0009890806395560503,
+      "descriptive_95_interval": [
+        -0.0026013563154265286,
+        0.00437305833911523
+      ],
+      "fusion_H": 0.055626414716243744,
+      "deep_H": 0.05463733151555061
+    },
+    {
+      "subset": "exact_U",
+      "length_bin": "601+",
+      "unique_T": 20,
+      "groups": 16,
+      "delta_H": 0.008536642417311668,
+      "descriptive_95_interval": [
+        -0.006420445209369063,
+        0.02913003754802048
+      ],
+      "fusion_H": 0.06506876647472382,
+      "deep_H": 0.056532129645347595
+    },
+    {
+      "subset": "near_full_T",
+      "length_bin": "1-150",
+      "unique_T": 403,
+      "groups": 188,
+      "delta_H": -0.0018189382972195745,
+      "descriptive_95_interval": [
+        -0.003993726510088891,
+        0.0003281941892055325
+      ],
+      "fusion_H": 0.04947023093700409,
+      "deep_H": 0.05128917470574379
+    },
+    {
+      "subset": "near_full_T",
+      "length_bin": "151-300",
+      "unique_T": 589,
+      "groups": 339,
+      "delta_H": -0.0013984143733978271,
+      "descriptive_95_interval": [
+        -0.002983256027800962,
+        3.497014722595094e-06
+      ],
+      "fusion_H": 0.04669280722737312,
+      "deep_H": 0.04809121787548065
+    },
+    {
+      "subset": "near_full_T",
+      "length_bin": "301-600",
+      "unique_T": 443,
+      "groups": 280,
+      "delta_H": -0.0018773446790874004,
+      "descriptive_95_interval": [
+        -0.0035429885087069125,
+        -0.0002809835081279767
+      ],
+      "fusion_H": 0.05051019415259361,
+      "deep_H": 0.052387535572052
+    },
+    {
+      "subset": "near_full_T",
+      "length_bin": "601+",
+      "unique_T": 114,
+      "groups": 61,
+      "delta_H": -0.0005943250143900514,
+      "descriptive_95_interval": [
+        -0.005519242759328335,
+        0.004265348461922255
+      ],
+      "fusion_H": 0.06282970309257507,
+      "deep_H": 0.06342404335737228
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "pooling.residue.cache.v1",
+  "status": "complete",
+  "rows": 21915,
+  "residues": 6358684,
+  "width": 960,
+  "dtype": "float16",
+  "encoder_compute": "FP32 singleton",
+  "no_truncation": true,
+  "special_tokens_excluded": true,
+  "derived_mean_max": "FP32 reductions of quantized FP16 residue cache",
+  "source_sha256": "a4ab28a21a359b6136dbb22ecc9396b573d26661d8400237b1abf8771e85d6ee",
+  "script_sha256": "0c704278b4c2c8ea4109d4d8a41d232e722e09f0e7622eef5f29e8840fa0923d",
+  "artifacts": {
+    "flat.npy": "cd9bd826b7b3a6489400856f1a1009e08d2575fe2c424466cc1a7ea0ddd4531d",
+    "index.parquet": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+    "mean.npy": "c87cd7007cca9b0e187fda0d8a355559d5be2fc7fc81b1185c8cb9cf13e93a5f",
+    "max.npy": "379e8c2d6ace80c30aca55d1943fe1550d2cde23c89a5b396b1d929109f58df5"
+  },
+  "worker_identities": [
+    {
+      "source_sha256": "a4ab28a21a359b6136dbb22ecc9396b573d26661d8400237b1abf8771e85d6ee",
+      "script_sha256": "c174186eaf1e1c0d5ce385963ba37bd16aa7205b97a452a424f2c5495c083bad",
+      "backend_sha256": "3de075876cdd11896ae76dce4a12140d876fecb66cc0f1e2d98df0c40bf0be18",
+      "checkpoint_manifest_sha256": "dd518367099147283233cb7d23eb587c24d97e9f8c4c93e7b030e6ca9bfdfd36",
+      "rank": 0,
+      "workers": 2,
+      "row_order_sha256": "5f89a5f1907ebd32f87afe23fcf0de46188270c7c15efbdd91a75fe9f554e96d",
+      "dtype": "float16",
+      "compute": "fp32",
+      "encoder": "esmc_300m",
+      "layer": 30,
+      "width": 960,
+      "truncation": false,
+      "special_tokens": false,
+      "singleton_unpadded": true
+    },
+    {
+      "source_sha256": "a4ab28a21a359b6136dbb22ecc9396b573d26661d8400237b1abf8771e85d6ee",
+      "script_sha256": "c174186eaf1e1c0d5ce385963ba37bd16aa7205b97a452a424f2c5495c083bad",
+      "backend_sha256": "3de075876cdd11896ae76dce4a12140d876fecb66cc0f1e2d98df0c40bf0be18",
+      "checkpoint_manifest_sha256": "dd518367099147283233cb7d23eb587c24d97e9f8c4c93e7b030e6ca9bfdfd36",
+      "rank": 1,
+      "workers": 2,
+      "row_order_sha256": "7ee6cbda699125196b426686ce4c181ddcd820a422c27a491d0923bbf369c798",
+      "dtype": "float16",
+      "compute": "fp32",
+      "encoder": "esmc_300m",
+      "layer": 30,
+      "width": 960,
+      "truncation": false,
+      "special_tokens": false,
+      "singleton_unpadded": true
+    }
+  ],
+  "original_FP32_mean_vs_legacy_max_abs_error": 0.0,
+  "quantized_mean_vs_legacy": {
+    "max_absolute_error": 8.404254913330078e-05,
+    "mean_absolute_error": 3.5374853268876905e-07,
+    "per_sequence_max_quantiles": [
+      8.977949619293213e-07,
+      8.225440979003906e-06,
+      2.0325183868408203e-05,
+      2.9142498970031756e-05,
+      8.404254913330078e-05
+    ]
+  },
+  "encoder_worker_reported_seconds": 465.84890920855105,
+  "encoder_launch_to_receipt_seconds_sum": 482.3688077926636,
+  "time_definition": "reported worker time ends before final artifact hashing; launch-to-receipt includes startup and hashing, not measured GPU busy time",
+  "encoder_peak_GPU_bytes": 1590214656,
+  "encoder_peak_RSS_bytes": 7576457216,
+  "publisher_seconds": 64.4467087611556,
+  "publisher_peak_RSS_bytes": 25609363456,
+  "source_sequence_order_preserved": true,
+  "labels_read": false
+}

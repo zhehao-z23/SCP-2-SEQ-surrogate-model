@@ -1,0 +1,13 @@
+{
+  "amendment": "selective_pooling_and_seed_confirmation_v1",
+  "registered_after": "11/12 initial fits completed; max_pre poor on both folds; residue_mean signal on fold0 with LR adaptation; fold1 second LR still running",
+  "reason": "Uniform nonlinear pooling has a signal worth separating from learned residue weighting; a second seed will test whether the strongest alternative is stable.",
+  "attention": {"mode":"residue_attention","folds":[0,1],"learning_rates":[0.001,0.0003],"seed":1701,"fits":4,"parameters":1801920,"capacity_note":"65665 extra score parameters (+3.78%); no exact capacity claim for attention"},
+  "confirmation": {"reference":"mean_pre","candidate_rule":"Lower two-fold development group-macro H among residue_mean and residue_attention after all 16 original+attention fits finish","folds":[0,1],"seed":3407,"learning_rate":"reuse each family/fold stop-selected LR from seed1701 without rescanning","fits":4,"interpretation":"randomness replication after model selection, not a new independent test set"},
+  "stage_total_fits":20,
+  "same_single_fit_seconds":900,
+  "same_total_head_GPU_hours_cap":4,
+  "same_concurrency":2,
+  "repair_budget":2,
+  "stop":"After attention and fixed second-seed comparison, interpret performance, subgroups and costs and close this round; do not add CNN/TCN/other encoders without a separate evidence-based stage decision"
+}

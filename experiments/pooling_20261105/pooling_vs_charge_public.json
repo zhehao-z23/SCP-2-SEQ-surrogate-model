@@ -1,0 +1,385 @@
+{
+  "schema": "pooling.historical_charge.aggregate.v1",
+  "status": "complete",
+  "comparison": "new residue_mean minus historical composition_charge_deep",
+  "folds": [
+    0,
+    1
+  ],
+  "new_seeds": [
+    1701,
+    3407
+  ],
+  "historical_baseline_seed": 1701,
+  "observations_per_seed": 8756,
+  "selection": "Existing stop-only selected configurations; no new tuning, fitting or selection",
+  "metrics": {
+    "H": "Per-record H, then within unique T, then within group, then equal groups",
+    "CDF": "Mean squared cumulative probability error over 62 internal cutpoints; not continuous Wasserstein",
+    "tail": "Mean absolute error of first and last probability-bin masses"
+  },
+  "limitations": [
+    "Practical comparison to an existing historical baseline, not the new parameter- and batch-matched pooling mechanism contrast.",
+    "Historical charge baseline is a single fixed seed; both new seeds reuse its same predictions. Do not pool seeds as independent protein/group observations.",
+    "New and historical effective batching/optimization paths and parameter counts differ. Improvement cannot be attributed solely to pooling.",
+    "Retrospective exposed development; conditional group-bootstrap intervals exclude model selection, multiplicity and seed uncertainty.",
+    "Full-length and long-sequence strata remain conditional subsets, not independent full-U deployment qualification."
+  ],
+  "source_sha256": {
+    "parent_selected": "08ab06040465368d040ddfd7ab68f51e4f6250939b43b36f38d07f9cccb064a3",
+    "new_selected": "d7c9bd6b3710808271ce03f94c73b6d8cb215d3340729c8240dd4c8b8e1ab27a",
+    "data_release": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+    "data": "28e5ed7bb5c614cd51eae385b6ea2f5401ea6635367806ee35c804abd7bc71ae",
+    "target": "8ddc4decbfb9abab2f67d445d04801b03d330ef4a435410e73a97cf91010d128",
+    "qualification": "d108028ecc33c40af9402dbf841734ad7d1fe22f4d275f598ebc663f7525d59c"
+  },
+  "script_sha256": "e0c004a71dacca8f4a3d8023d602d06e25d4909e1e9f52d850dd40326156be83",
+  "checks": [
+    {
+      "model": "charge",
+      "seed": 1701,
+      "fold": 1,
+      "prediction_sha256": "e1701ff6ba587981fc62bc14c46c233f0f6251568a9a7a57997d30b5ca400ba1",
+      "roles_sha256": "b535234178b3412ebe8a0bc2542c681cba8c88d1ac2d506ea200e652b4e31712",
+      "H_recomputed": true
+    },
+    {
+      "model": "charge",
+      "seed": 1701,
+      "fold": 0,
+      "prediction_sha256": "f414a3466f42cda627a8a57f86d820725b42e4e41def3978b5b0b2be2dba659e",
+      "roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a",
+      "H_recomputed": true
+    },
+    {
+      "model": "residue_mean",
+      "seed": 1701,
+      "fold": 1,
+      "prediction_sha256": "58a679e49c2ea38768f8743f87b42e8d8efdb7080ca30b961f296bf7ee81e897",
+      "roles_sha256": "b535234178b3412ebe8a0bc2542c681cba8c88d1ac2d506ea200e652b4e31712",
+      "H_recomputed": true
+    },
+    {
+      "model": "residue_mean",
+      "seed": 1701,
+      "fold": 0,
+      "prediction_sha256": "5bc1e2b18f506d788af58f30f8b4fa7b209e80ebc65b3ca00a6bb6c0b067a621",
+      "roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a",
+      "H_recomputed": true
+    },
+    {
+      "model": "residue_mean",
+      "seed": 3407,
+      "fold": 0,
+      "prediction_sha256": "5232e50023d0b1699d618125c6d1217e241dbe1f178f227984faefa1d5a900ca",
+      "roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a",
+      "H_recomputed": true
+    },
+    {
+      "model": "residue_mean",
+      "seed": 3407,
+      "fold": 1,
+      "prediction_sha256": "2f53db8bc217bee582a877d371f4dfe43af6f0fd3b8668d2669f2ab249d40976",
+      "roles_sha256": "b535234178b3412ebe8a0bc2542c681cba8c88d1ac2d506ea200e652b4e31712",
+      "H_recomputed": true
+    }
+  ],
+  "strata": [
+    {
+      "seed": 1701,
+      "baseline_seed": 1701,
+      "stratum": "all",
+      "rows": 8756,
+      "unique_T": 8753,
+      "groups": 3199,
+      "metrics": {
+        "H": {
+          "residue_mean": 0.049071795570924205,
+          "historical_charge_deep": 0.05218679357436214,
+          "paired_delta": -0.003114998003437936,
+          "descriptive_group_bootstrap_95": [
+            -0.003702441525807712,
+            -0.0025456156825889313
+          ]
+        },
+        "CDF": {
+          "residue_mean": 0.0001791033773137014,
+          "historical_charge_deep": 0.00019816465124779554,
+          "paired_delta": -1.906127393409414e-05,
+          "descriptive_group_bootstrap_95": [
+            -3.105814687630528e-05,
+            -7.193393550805397e-06
+          ]
+        },
+        "tail": {
+          "residue_mean": 0.0019701847070603537,
+          "historical_charge_deep": 0.002089048375654496,
+          "paired_delta": -0.00011886366859414205,
+          "descriptive_group_bootstrap_95": [
+            -0.00016077195559567698,
+            -7.920326565558442e-05
+          ]
+        }
+      }
+    },
+    {
+      "seed": 1701,
+      "baseline_seed": 1701,
+      "stratum": "strict_T_equals_U",
+      "rows": 453,
+      "unique_T": 453,
+      "groups": 286,
+      "metrics": {
+        "H": {
+          "residue_mean": 0.04957807001588284,
+          "historical_charge_deep": 0.05114241358569012,
+          "paired_delta": -0.0015643435698072747,
+          "descriptive_group_bootstrap_95": [
+            -0.0033959649194382577,
+            0.00020625510069048004
+          ]
+        },
+        "CDF": {
+          "residue_mean": 0.0001920805392895665,
+          "historical_charge_deep": 0.00019349031570607567,
+          "paired_delta": -1.4097764165092144e-06,
+          "descriptive_group_bootstrap_95": [
+            -3.176913695710942e-05,
+            3.394321958421408e-05
+          ]
+        },
+        "tail": {
+          "residue_mean": 0.0018104775099902209,
+          "historical_charge_deep": 0.0017969457416166484,
+          "paired_delta": 1.3531768373572723e-05,
+          "descriptive_group_bootstrap_95": [
+            -0.00011467592863641566,
+            0.00014489691494897546
+          ]
+        }
+      }
+    },
+    {
+      "seed": 1701,
+      "baseline_seed": 1701,
+      "stratum": "length_gt_600",
+      "rows": 724,
+      "unique_T": 724,
+      "groups": 297,
+      "metrics": {
+        "H": {
+          "residue_mean": 0.0598756733112338,
+          "historical_charge_deep": 0.06039037599323558,
+          "paired_delta": -0.0005147026820017886,
+          "descriptive_group_bootstrap_95": [
+            -0.0029149196388052545,
+            0.001982622739279598
+          ]
+        },
+        "CDF": {
+          "residue_mean": 0.0004399711008537221,
+          "historical_charge_deep": 0.00039040733571402646,
+          "paired_delta": 4.956376513969566e-05,
+          "descriptive_group_bootstrap_95": [
+            -2.130667377789847e-05,
+            0.000140387743848217
+          ]
+        },
+        "tail": {
+          "residue_mean": 0.0036669588323687,
+          "historical_charge_deep": 0.0036267552882378027,
+          "paired_delta": 4.0203544130897e-05,
+          "descriptive_group_bootstrap_95": [
+            -0.00015695981729814146,
+            0.00023728097688039781
+          ]
+        }
+      }
+    },
+    {
+      "seed": 1701,
+      "baseline_seed": 1701,
+      "stratum": "strict_U_and_length_gt_600",
+      "rows": 20,
+      "unique_T": 20,
+      "groups": 16,
+      "metrics": {
+        "H": {
+          "residue_mean": 0.06542533407925369,
+          "historical_charge_deep": 0.05653212903098037,
+          "paired_delta": 0.008893205048273315,
+          "descriptive_group_bootstrap_95": [
+            -0.0018499179700776217,
+            0.02022030470021303
+          ]
+        },
+        "CDF": {
+          "residue_mean": 0.0004886506756295237,
+          "historical_charge_deep": 0.0003004857781318364,
+          "paired_delta": 0.0001881648974976872,
+          "descriptive_group_bootstrap_95": [
+            -5.68076513967774e-05,
+            0.0005806182982181283
+          ]
+        },
+        "tail": {
+          "residue_mean": 0.004214525768475141,
+          "historical_charge_deep": 0.0033662982626992744,
+          "paired_delta": 0.000848227505775867,
+          "descriptive_group_bootstrap_95": [
+            -8.117143843264782e-05,
+            0.0018118297735236404
+          ]
+        }
+      }
+    },
+    {
+      "seed": 3407,
+      "baseline_seed": 1701,
+      "stratum": "all",
+      "rows": 8756,
+      "unique_T": 8753,
+      "groups": 3199,
+      "metrics": {
+        "H": {
+          "residue_mean": 0.04905346695666277,
+          "historical_charge_deep": 0.05218679357436214,
+          "paired_delta": -0.003133326617699381,
+          "descriptive_group_bootstrap_95": [
+            -0.003661161744148851,
+            -0.0026131272516591417
+          ]
+        },
+        "CDF": {
+          "residue_mean": 0.00018060240225043048,
+          "historical_charge_deep": 0.00019816465124779554,
+          "paired_delta": -1.7562248997365053e-05,
+          "descriptive_group_bootstrap_95": [
+            -2.829024688372384e-05,
+            -6.771944996970416e-06
+          ]
+        },
+        "tail": {
+          "residue_mean": 0.0019790436172679986,
+          "historical_charge_deep": 0.002089048375654496,
+          "paired_delta": -0.00011000475838649718,
+          "descriptive_group_bootstrap_95": [
+            -0.00015002697869280525,
+            -6.962929322847632e-05
+          ]
+        }
+      }
+    },
+    {
+      "seed": 3407,
+      "baseline_seed": 1701,
+      "stratum": "strict_T_equals_U",
+      "rows": 453,
+      "unique_T": 453,
+      "groups": 286,
+      "metrics": {
+        "H": {
+          "residue_mean": 0.050150651505626004,
+          "historical_charge_deep": 0.05114241358569012,
+          "paired_delta": -0.0009917620800641187,
+          "descriptive_group_bootstrap_95": [
+            -0.0027442404957447545,
+            0.0007609766243598157
+          ]
+        },
+        "CDF": {
+          "residue_mean": 0.00022555109993936987,
+          "historical_charge_deep": 0.00019349031570607567,
+          "paired_delta": 3.2060784233294164e-05,
+          "descriptive_group_bootstrap_95": [
+            -1.00029134353362e-05,
+            8.68355208806511e-05
+          ]
+        },
+        "tail": {
+          "residue_mean": 0.0017747611055591484,
+          "historical_charge_deep": 0.0017969457416166484,
+          "paired_delta": -2.2184636057499872e-05,
+          "descriptive_group_bootstrap_95": [
+            -0.00015236744107641136,
+            0.0001159648305390328
+          ]
+        }
+      }
+    },
+    {
+      "seed": 3407,
+      "baseline_seed": 1701,
+      "stratum": "length_gt_600",
+      "rows": 724,
+      "unique_T": 724,
+      "groups": 297,
+      "metrics": {
+        "H": {
+          "residue_mean": 0.058525623215238236,
+          "historical_charge_deep": 0.06039037599323558,
+          "paired_delta": -0.0018647527779973542,
+          "descriptive_group_bootstrap_95": [
+            -0.004102051179241417,
+            0.0005107857791992008
+          ]
+        },
+        "CDF": {
+          "residue_mean": 0.00040272788999028787,
+          "historical_charge_deep": 0.00039040733571402646,
+          "paired_delta": 1.2320554276261354e-05,
+          "descriptive_group_bootstrap_95": [
+            -6.018995370633022e-05,
+            9.850099115713656e-05
+          ]
+        },
+        "tail": {
+          "residue_mean": 0.003587431986071421,
+          "historical_charge_deep": 0.0036267552882378027,
+          "paired_delta": -3.9323302166382406e-05,
+          "descriptive_group_bootstrap_95": [
+            -0.0002570824406700822,
+            0.0001773708967500435
+          ]
+        }
+      }
+    },
+    {
+      "seed": 3407,
+      "baseline_seed": 1701,
+      "stratum": "strict_U_and_length_gt_600",
+      "rows": 20,
+      "unique_T": 20,
+      "groups": 16,
+      "metrics": {
+        "H": {
+          "residue_mean": 0.06476763669789104,
+          "historical_charge_deep": 0.05653212903098037,
+          "paired_delta": 0.008235507666910674,
+          "descriptive_group_bootstrap_95": [
+            -0.0034218033038552064,
+            0.02396230708880836
+          ]
+        },
+        "CDF": {
+          "residue_mean": 0.0006195589358813195,
+          "historical_charge_deep": 0.0003004857781318364,
+          "paired_delta": 0.00031907315774948303,
+          "descriptive_group_bootstrap_95": [
+            -7.524126101142976e-05,
+            0.0010293230568759273
+          ]
+        },
+        "tail": {
+          "residue_mean": 0.003955114007840166,
+          "historical_charge_deep": 0.0033662982626992744,
+          "paired_delta": 0.0005888157451408915,
+          "descriptive_group_bootstrap_95": [
+            -0.000287067164099426,
+            0.0015522000754572217
+          ]
+        }
+      }
+    }
+  ]
+}

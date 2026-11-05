@@ -1,0 +1,8 @@
+{
+  "parent": "amendment.json",
+  "correction_scope": "timing wording only; no family, seed, learning rate, selection rule or resource change",
+  "decision_information": "The last inspected summary contained 11 completed fits and the final initial trial was last observed running.",
+  "actual_initial_final_fit_ended_epoch": 1793890456.7189777,
+  "actual_attention_queue_started_epoch": 1793890538.4143999,
+  "clarification": "By attention launch the twelfth initial fit had already completed. The amendment wording 'still running' describes the last observed state, not a verified live state at registration. Preserve the original amendment and this correction."
+}
