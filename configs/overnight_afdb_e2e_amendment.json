@@ -1,0 +1,11 @@
+{
+ "reason": "Measure actual continuous sequence-to-two-head cold-process time and independently replay the cache route; do not equate sum of disconnected stages with end-to-end time.",
+ "new_training_fits": 0,
+ "additional_fresh_extraction_replays": 1,
+ "same_64_sequence_panel": true,
+ "same_checkpoint_and_precision": true,
+ "within_original_GPU6_1800_second_budget": true,
+ "max_seconds": 1800,
+ "output": "aggregate timing, probability checks and prediction parity only",
+ "stop": "One successful replay; do not expand the panel or scan AFDB"
+}

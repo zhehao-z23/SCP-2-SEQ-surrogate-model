@@ -1,0 +1,309 @@
+{
+  "schema": "AFDB.sequence.engineering_diagnostic.v1",
+  "status": "complete",
+  "scope": "Frozen biased legacy AFDB annotation/candidate sequences; no paired qualified physical labels and no accuracy metric",
+  "source": {
+    "sha256": "6d115d531a60e76944fad3b27fb9ee84054765875df2e0dfe7adad59b4ebc24f",
+    "receipt_sha256": "a2965fc8e687a540ecb1f2ec2372192f6f45745dbe47ab9a3d96a2b6112c2dd7",
+    "all_rows": 38594,
+    "canonical_length_eligible": 38592,
+    "eligible_unique_sequences": 38592,
+    "strata": {
+      "40-150": {
+        "eligible": 3383,
+        "selected": 16
+      },
+      "151-300": {
+        "eligible": 14303,
+        "selected": 16
+      },
+      "301-600": {
+        "eligible": 13873,
+        "selected": 16
+      },
+      "601-2400": {
+        "eligible": 7033,
+        "selected": 16
+      }
+    }
+  },
+  "source_panel_sha256": "ef0dd50fc28ecee100ef868fac30d3ba13a6ad3b026bf9133c99cdcede57e9b8",
+  "script_sha256": "09a555119b3e063a7f3d0dfb964c14dadb089e27b1d10c013b4fde848cbbe4e9",
+  "sequence_checks": {
+    "rows": 64,
+    "unique_sequences": 64,
+    "canonical_AA20": true,
+    "length_range": [
+      107,
+      1240
+    ],
+    "length_quantiles": {
+      "0": 107.0,
+      "0.5": 302.0,
+      "0.9": 875.3000000000001,
+      "0.95": 1011.0999999999997,
+      "0.99": 1195.2699999999998,
+      "1": 1240.0
+    },
+    "residues": 26671,
+    "no_truncation": true,
+    "exact_sequence_overlap_with_Atlas": 0,
+    "AF_v4_coordinate_sequence_mapping_verified": false
+  },
+  "feature_version": "sequence_charge_bjellqvist_v1.0.0",
+  "identities": [
+    {
+      "mode": "residue_mean",
+      "checkpoint_sha256": "4b2f85873e6f98efd387058c1ea0a29f3938837952a3d9bea00548a1dc0cad72",
+      "config_sha256": "39e63c1a59235c15d168536b2e9297317a8b10ccd5f0daab2e1bf7d7e1561d65",
+      "role_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a",
+      "seed": 1701,
+      "fold": 0
+    },
+    {
+      "mode": "mean_pre",
+      "checkpoint_sha256": "571156669337f1008d10742bc87b34199e30a6fc0b2b11a3db32a68becc7c736",
+      "config_sha256": "29cc157fa14a6fd9551e743fd835c708368ecdbb92b9208979e3d560fef0acf4",
+      "role_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a",
+      "seed": 1701,
+      "fold": 0
+    }
+  ],
+  "probability_checks": [
+    {
+      "mode": "residue_mean",
+      "probability_shape": [
+        64,
+        63
+      ],
+      "finite_nonnegative": true,
+      "sum_error_max": 1.1920928955078125e-07,
+      "five_repeats_max_abs_difference": 0.0
+    },
+    {
+      "mode": "mean_pre",
+      "probability_shape": [
+        64,
+        63
+      ],
+      "finite_nonnegative": true,
+      "sum_error_max": 1.7881393432617188e-07,
+      "five_repeats_max_abs_difference": 0.0
+    }
+  ],
+  "feature_shift": [
+    {
+      "mode": "residue_mean",
+      "diagnostic": "mean_embedding_standardized_RMS",
+      "atlas_fit_rows": 13165,
+      "atlas_quantiles": {
+        "0": 0.5150271654129028,
+        "0.5": 0.9349644184112549,
+        "0.9": 1.2617102146148682,
+        "0.95": 1.3978755950927733,
+        "0.99": 1.6678322744369516,
+        "1": 2.2793562412261963
+      },
+      "afdb_quantiles": {
+        "0": 0.7388473153114319,
+        "0.5": 1.0511290431022644,
+        "0.9": 1.5096022844314576,
+        "0.95": 1.6850180923938751,
+        "0.99": 2.055936024188994,
+        "1": 2.398120641708374
+      },
+      "AF_above_training_99th_percentile_count": 5,
+      "interpretation": "Descriptive feature shift, not calibrated OOD probability or electrostatic error; length and candidate sampling differ"
+    },
+    {
+      "mode": "residue_mean",
+      "diagnostic": "charge_standardized_RMS",
+      "atlas_fit_rows": 13165,
+      "atlas_quantiles": {
+        "0": 0.3224562704563141,
+        "0.5": 0.8071621060371399,
+        "0.9": 1.39569890499115,
+        "0.95": 1.6428114414215087,
+        "0.99": 2.315437116622926,
+        "1": 4.259330749511719
+      },
+      "afdb_quantiles": {
+        "0": 0.5673652291297913,
+        "0.5": 1.1523625254631042,
+        "0.9": 2.3137569665908817,
+        "0.95": 2.527041435241699,
+        "0.99": 3.1629134464263893,
+        "1": 3.7452826499938965
+      },
+      "AF_above_training_99th_percentile_count": 7,
+      "interpretation": "Descriptive feature shift, not calibrated OOD probability or electrostatic error; length and candidate sampling differ"
+    },
+    {
+      "mode": "mean_pre",
+      "diagnostic": "mean_embedding_standardized_RMS",
+      "atlas_fit_rows": 13165,
+      "atlas_quantiles": {
+        "0": 0.5150271654129028,
+        "0.5": 0.9349644184112549,
+        "0.9": 1.2617102146148682,
+        "0.95": 1.3978755950927733,
+        "0.99": 1.6678322744369516,
+        "1": 2.2793562412261963
+      },
+      "afdb_quantiles": {
+        "0": 0.7388473153114319,
+        "0.5": 1.0511290431022644,
+        "0.9": 1.5096022844314576,
+        "0.95": 1.6850180923938751,
+        "0.99": 2.055936024188994,
+        "1": 2.398120641708374
+      },
+      "AF_above_training_99th_percentile_count": 5,
+      "interpretation": "Descriptive feature shift, not calibrated OOD probability or electrostatic error; length and candidate sampling differ"
+    },
+    {
+      "mode": "mean_pre",
+      "diagnostic": "charge_standardized_RMS",
+      "atlas_fit_rows": 13165,
+      "atlas_quantiles": {
+        "0": 0.3224562704563141,
+        "0.5": 0.8071621060371399,
+        "0.9": 1.39569890499115,
+        "0.95": 1.6428114414215087,
+        "0.99": 2.315437116622926,
+        "1": 4.259330749511719
+      },
+      "afdb_quantiles": {
+        "0": 0.5673652291297913,
+        "0.5": 1.1523625254631042,
+        "0.9": 2.3137569665908817,
+        "0.95": 2.527041435241699,
+        "0.99": 3.1629134464263893,
+        "1": 3.7452826499938965
+      },
+      "AF_above_training_99th_percentile_count": 7,
+      "interpretation": "Descriptive feature shift, not calibrated OOD probability or electrostatic error; length and candidate sampling differ"
+    }
+  ],
+  "prediction_disagreement": {
+    "meaning": "Difference between two models, not error against physics or calibrated uncertainty",
+    "mean_H": 0.034593105050001835,
+    "H_quantiles": {
+      "0": 0.008229330254295592,
+      "0.5": 0.024993428506398928,
+      "0.9": 0.059383874715112375,
+      "0.95": 0.07825612835521843,
+      "0.99": 0.12805549379631692,
+      "1": 0.16119262125525208
+    },
+    "strata": [
+      {
+        "length_bin": "151-300",
+        "rows": 16,
+        "prediction_disagreement_H_mean": 0.024001346348328765,
+        "prediction_disagreement_H_quantiles": {
+          "0": 0.008229330254295592,
+          "0.5": 0.019751752969579085,
+          "0.9": 0.047548981585394126,
+          "0.95": 0.052943805803675394,
+          "0.99": 0.05501987804222841,
+          "1": 0.055538896101866665
+        },
+        "prediction_disagreement_CDF_mean": 6.73521135468036e-05,
+        "prediction_disagreement_tail_mean": 0.00034411289379931986
+      },
+      {
+        "length_bin": "301-600",
+        "rows": 16,
+        "prediction_disagreement_H_mean": 0.037250911086168834,
+        "prediction_disagreement_H_quantiles": {
+          "0": 0.008537887335684244,
+          "0.5": 0.03094409330395238,
+          "0.9": 0.066654716839788,
+          "0.95": 0.07690389596877091,
+          "0.99": 0.08800673992416104,
+          "1": 0.09078245091300859
+        },
+        "prediction_disagreement_CDF_mean": 0.00020088512974325567,
+        "prediction_disagreement_tail_mean": 0.0007508981507271528
+      },
+      {
+        "length_bin": "40-150",
+        "rows": 16,
+        "prediction_disagreement_H_mean": 0.03957518165567459,
+        "prediction_disagreement_H_quantiles": {
+          "0": 0.015230572046986732,
+          "0.5": 0.027079730464693863,
+          "0.9": 0.059170584468923385,
+          "0.95": 0.08967505452232448,
+          "0.99": 0.14688910790866652,
+          "1": 0.16119262125525208
+        },
+        "prediction_disagreement_CDF_mean": 0.00028493624995462596,
+        "prediction_disagreement_tail_mean": 0.00047220749547705054
+      },
+      {
+        "length_bin": "601-2400",
+        "rows": 16,
+        "prediction_disagreement_H_mean": 0.03754498110983516,
+        "prediction_disagreement_H_quantiles": {
+          "0": 0.012983977662712008,
+          "0.5": 0.03187350547735324,
+          "0.9": 0.06599454458618838,
+          "0.95": 0.08663185894889802,
+          "0.99": 0.10420157678263521,
+          "1": 0.10859400624106952
+        },
+        "prediction_disagreement_CDF_mean": 0.00020312020205892622,
+        "prediction_disagreement_tail_mean": 0.0008143086452037096
+      }
+    ]
+  },
+  "cost": {
+    "encoder_receipt_elapsed_seconds": 5.803310154937208,
+    "encoder_peak_GPU_bytes": 1424014848,
+    "encoder_peak_RSS_bytes": 2280988672,
+    "residue_cache_bytes": 51208320,
+    "mean_cache_bytes": 245760,
+    "head_costs": [
+      {
+        "mode": "residue_mean",
+        "head_load_seconds": 0.017954490147531033,
+        "first_forward_seconds": 0.1493332153186202,
+        "cached_forward_5_repeats_seconds": [
+          0.016458171419799328,
+          0.016113185323774815,
+          0.0161737697198987,
+          0.01603537891060114,
+          0.01613074168562889
+        ],
+        "cached_forward_median_sequences_per_second": 3967.579498035017,
+        "inference_batching": "singleton_no_padding",
+        "comparison_limit": "Different inference batching; observed implementation cost, not intrinsic model speed ratio"
+      },
+      {
+        "mode": "mean_pre",
+        "head_load_seconds": 0.014355807565152645,
+        "first_forward_seconds": 0.0026652878150343895,
+        "cached_forward_5_repeats_seconds": [
+          0.00021521840244531631,
+          0.00016667041927576065,
+          0.000189892016351223,
+          0.0001590382307767868,
+          0.00015548337250947952
+        ],
+        "cached_forward_median_sequences_per_second": 383991.35418331367,
+        "inference_batching": "all64",
+        "comparison_limit": "Different inference batching; observed implementation cost, not intrinsic model speed ratio"
+      }
+    ],
+    "diagnostic_wall_seconds": 1.1675686780363321,
+    "peak_GPU_bytes": 92932608,
+    "peak_RSS_bytes": 1404854272,
+    "boundary": "Encoder and diagnostic are measured separate processes; sum is stage-duration estimate, not observed continuous end-to-end wall time; no whole-AFDB throughput claim"
+  },
+  "new_training_fits": 0,
+  "physical_calls": 0,
+  "accuracy_evaluated": false,
+  "next_decision": "Input/model interfaces work; preserve mean as cheap deployment reference. Before an AF accuracy challenge, bind exact structure-sequence/protocol and trustworthy compatible labels; current disagreement cannot select a winner."
+}

@@ -1,0 +1,5793 @@
+{
+  "stage": "overnight_20261106_confirmation",
+  "status": "complete",
+  "expected_total": 30,
+  "fits_total": 30,
+  "reused_fits": 10,
+  "new_fits": 20,
+  "missing": [],
+  "all_predictions_recomputed": 30,
+  "scores": [
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "per_fold_H": {
+        "1": 0.052020030562532675,
+        "0": 0.05235366087825653,
+        "2": 0.05184160007827878,
+        "3": 0.05327164960586721,
+        "4": 0.052234382349122054
+      },
+      "rows": 21921,
+      "proteins": 21915,
+      "groups": 7999,
+      "group_macro_H": 0.05234426352014168,
+      "group_macro_CDF": 0.0001964745606528595,
+      "group_macro_tail": 0.0020774162840098143,
+      "protein_macro_H": 0.05212043737492982,
+      "protein_macro_CDF": 0.00019563661771826446,
+      "protein_macro_tail": 0.0019577420316636562
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "per_fold_H": {
+        "0": 0.05241241616735248,
+        "1": 0.0521358165194267,
+        "2": 0.051796299494870864,
+        "3": 0.053215930657350814,
+        "4": 0.05223004907972451
+      },
+      "rows": 21921,
+      "proteins": 21915,
+      "groups": 7999,
+      "group_macro_H": 0.05235809559367336,
+      "group_macro_CDF": 0.00019813570543192327,
+      "group_macro_tail": 0.002085646614432335,
+      "protein_macro_H": 0.05206403205014655,
+      "protein_macro_CDF": 0.0001957728818524629,
+      "protein_macro_tail": 0.0019620710518211126
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "per_fold_H": {
+        "1": 0.050416759630024365,
+        "0": 0.0508616347091307,
+        "2": 0.05048046966934501,
+        "3": 0.050917851770104855,
+        "4": 0.050328250062222274
+      },
+      "rows": 21921,
+      "proteins": 21915,
+      "groups": 7999,
+      "group_macro_H": 0.05060096058389979,
+      "group_macro_CDF": 0.00019515887834131718,
+      "group_macro_tail": 0.0019700578413903713,
+      "protein_macro_H": 0.05074923474797421,
+      "protein_macro_CDF": 0.0001918857597047463,
+      "protein_macro_tail": 0.0018880281131714582
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "per_fold_H": {
+        "0": 0.050450396427094236,
+        "1": 0.050453851591512375,
+        "2": 0.050387784926934326,
+        "3": 0.050752843353806434,
+        "4": 0.05011787180365909
+      },
+      "rows": 21921,
+      "proteins": 21915,
+      "groups": 7999,
+      "group_macro_H": 0.05043254738947159,
+      "group_macro_CDF": 0.0001943020906765014,
+      "group_macro_tail": 0.0019801852758973837,
+      "protein_macro_H": 0.050554037372482895,
+      "protein_macro_CDF": 0.00019199629605282098,
+      "protein_macro_tail": 0.0018912997329607606
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "per_fold_H": {
+        "1": 0.0490401067201977,
+        "0": 0.04910350423956861,
+        "2": 0.04910056475247646,
+        "3": 0.049182992150171925,
+        "4": 0.048765077609963965
+      },
+      "rows": 21921,
+      "proteins": 21915,
+      "groups": 7999,
+      "group_macro_H": 0.04903844096156598,
+      "group_macro_CDF": 0.00017756567103788257,
+      "group_macro_tail": 0.0019420755561441183,
+      "protein_macro_H": 0.04926106405706268,
+      "protein_macro_CDF": 0.00017575932724867016,
+      "protein_macro_tail": 0.0018644302617758512
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "per_fold_H": {
+        "0": 0.0491578742118988,
+        "1": 0.048949124955961244,
+        "2": 0.048681948914706244,
+        "3": 0.049467090666841906,
+        "4": 0.04887660360347446
+      },
+      "rows": 21921,
+      "proteins": 21915,
+      "groups": 7999,
+      "group_macro_H": 0.04902651205030634,
+      "group_macro_CDF": 0.000177213063579984,
+      "group_macro_tail": 0.001954796025529504,
+      "protein_macro_H": 0.04923822507795657,
+      "protein_macro_CDF": 0.0001754802360665053,
+      "protein_macro_tail": 0.0018814546056091785
+    }
+  ],
+  "strata": [
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "proteins": 19471,
+      "groups": 7701,
+      "group_macro_H": 0.05231590881996611,
+      "group_macro_CDF": 0.00019659666577354074,
+      "group_macro_tail": 0.0020813080482184887,
+      "protein_macro_H": 0.052045466668662915,
+      "protein_macro_CDF": 0.00019562638772185892,
+      "protein_macro_tail": 0.001987019320949912
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.05456211667127867,
+      "group_macro_CDF": 0.00020704520284198225,
+      "group_macro_tail": 0.0019372128881514072,
+      "protein_macro_H": 0.05399039209524612,
+      "protein_macro_CDF": 0.00020696960564237088,
+      "protein_macro_tail": 0.0018251265864819288
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "proteins": 1164,
+      "groups": 767,
+      "group_macro_H": 0.0506834175188235,
+      "group_macro_CDF": 0.0001834852882893756,
+      "group_macro_tail": 0.0017937995726242661,
+      "protein_macro_H": 0.05131821450527181,
+      "protein_macro_CDF": 0.0001833456481108442,
+      "protein_macro_tail": 0.001613830216228962
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "proteins": 6305,
+      "groups": 2533,
+      "group_macro_H": 0.05165071166722814,
+      "group_macro_CDF": 0.0001446773239877075,
+      "group_macro_tail": 0.0013508875854313374,
+      "protein_macro_H": 0.05183694190755702,
+      "protein_macro_CDF": 0.0001597615919308737,
+      "protein_macro_tail": 0.0012419383274391294
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "proteins": 7802,
+      "groups": 3200,
+      "group_macro_H": 0.049071757853678705,
+      "group_macro_CDF": 0.0001613107742741704,
+      "group_macro_tail": 0.0017454047920182347,
+      "protein_macro_H": 0.04919556711145838,
+      "protein_macro_CDF": 0.00016617686196696013,
+      "protein_macro_tail": 0.0016535177128389478
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "proteins": 6117,
+      "groups": 2565,
+      "group_macro_H": 0.054142264712900616,
+      "group_macro_CDF": 0.00022956894827075303,
+      "group_macro_tail": 0.00266222539357841,
+      "protein_macro_H": 0.05392330882336039,
+      "protein_macro_CDF": 0.00022557452030014247,
+      "protein_macro_tail": 0.002560919150710106
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "proteins": 1691,
+      "groups": 729,
+      "group_macro_H": 0.06076519338310364,
+      "group_macro_CDF": 0.00038890764699317515,
+      "group_macro_tail": 0.004000475164502859,
+      "protein_macro_H": 0.06015066331658565,
+      "protein_macro_CDF": 0.00035702469176612794,
+      "protein_macro_tail": 0.003848376451060176
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "proteins": 3463,
+      "groups": 1772,
+      "group_macro_H": 0.04922782319279657,
+      "group_macro_CDF": 0.00015017644909676164,
+      "group_macro_tail": 0.0016453147400170565,
+      "protein_macro_H": 0.04883204542400664,
+      "protein_macro_CDF": 0.00015605073713231832,
+      "protein_macro_tail": 0.0016772350063547492
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "proteins": 6391,
+      "groups": 3157,
+      "group_macro_H": 0.05397932122832671,
+      "group_macro_CDF": 0.00019867300579790026,
+      "group_macro_tail": 0.0022273105569183826,
+      "protein_macro_H": 0.05345871573480062,
+      "protein_macro_CDF": 0.00019573031750041991,
+      "protein_macro_tail": 0.0021125709172338247
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "proteins": 5870,
+      "groups": 3067,
+      "group_macro_H": 0.05262572663220981,
+      "group_macro_CDF": 0.00021103002654854208,
+      "group_macro_tail": 0.0021718780044466257,
+      "protein_macro_H": 0.05232796899423376,
+      "protein_macro_CDF": 0.00020714549464173615,
+      "protein_macro_tail": 0.002083864761516452
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "proteins": 4911,
+      "groups": 2516,
+      "group_macro_H": 0.051247906596435945,
+      "group_macro_CDF": 0.0001999794039875269,
+      "group_macro_tail": 0.001991423312574625,
+      "protein_macro_H": 0.0519622235041894,
+      "protein_macro_CDF": 0.00020671867241617292,
+      "protein_macro_tail": 0.0018378657987341285
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.05456211667127867,
+      "group_macro_CDF": 0.00020704520284198225,
+      "group_macro_tail": 0.0019372128881514072,
+      "protein_macro_H": 0.05399039209524612,
+      "protein_macro_CDF": 0.00020696960564237088,
+      "protein_macro_tail": 0.0018251265864819288
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "proteins": 5356,
+      "groups": 2386,
+      "group_macro_H": 0.0516956288061105,
+      "group_macro_CDF": 0.0001450754061806947,
+      "group_macro_tail": 0.0013558696955442429,
+      "protein_macro_H": 0.05187260767609925,
+      "protein_macro_CDF": 0.00015955447452142835,
+      "protein_macro_tail": 0.0012635649181902409
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "proteins": 6886,
+      "groups": 3047,
+      "group_macro_H": 0.048934706440471924,
+      "group_macro_CDF": 0.00016092919395305216,
+      "group_macro_tail": 0.0017462527612224221,
+      "protein_macro_H": 0.04889108075229386,
+      "protein_macro_CDF": 0.00016339815920218825,
+      "protein_macro_tail": 0.001659021363593638
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "proteins": 5627,
+      "groups": 2482,
+      "group_macro_H": 0.05402653569164555,
+      "group_macro_CDF": 0.00022690331388730556,
+      "group_macro_tail": 0.0026481894310563803,
+      "protein_macro_H": 0.0538753410312431,
+      "protein_macro_CDF": 0.000224828501814045,
+      "protein_macro_tail": 0.002552055288106203
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "proteins": 1602,
+      "groups": 703,
+      "group_macro_H": 0.06086423467998341,
+      "group_macro_CDF": 0.00039289824781008065,
+      "group_macro_tail": 0.004005191382020712,
+      "protein_macro_H": 0.05975472456257651,
+      "protein_macro_CDF": 0.00035218335688114166,
+      "protein_macro_tail": 0.0038309386000037193
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "proteins": 504,
+      "groups": 248,
+      "group_macro_H": 0.052707862495677826,
+      "group_macro_CDF": 0.00016284898447338492,
+      "group_macro_tail": 0.0011793212033808231,
+      "protein_macro_H": 0.052415038732145355,
+      "protein_macro_CDF": 0.00017092018970288336,
+      "protein_macro_tail": 0.0011647825594991446
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "proteins": 475,
+      "groups": 233,
+      "group_macro_H": 0.05254376817762524,
+      "group_macro_CDF": 0.00019272589997854084,
+      "group_macro_tail": 0.0016870308900251985,
+      "protein_macro_H": 0.053093772154059436,
+      "protein_macro_CDF": 0.00020222895545884967,
+      "protein_macro_tail": 0.001699669985100627
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "proteins": 260,
+      "groups": 163,
+      "group_macro_H": 0.05570814944291757,
+      "group_macro_CDF": 0.00022593620815314353,
+      "group_macro_tail": 0.0030189016833901405,
+      "protein_macro_H": 0.05445307523480482,
+      "protein_macro_CDF": 0.0002155646070605144,
+      "protein_macro_tail": 0.002893651369959116
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "proteins": 41,
+      "groups": 28,
+      "group_macro_H": 0.07424733705548613,
+      "group_macro_CDF": 0.0005112967337481678,
+      "group_macro_tail": 0.004453758243471384,
+      "protein_macro_H": 0.08080929333381184,
+      "protein_macro_CDF": 0.0006505307392217219,
+      "protein_macro_tail": 0.004619971849024296
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "proteins": 445,
+      "groups": 269,
+      "group_macro_H": 0.049349288909883916,
+      "group_macro_CDF": 0.00013410186511464417,
+      "group_macro_tail": 0.0011738676112145185,
+      "protein_macro_H": 0.050752926950467576,
+      "protein_macro_CDF": 0.00014961636043153703,
+      "protein_macro_tail": 0.0010690276976674795
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "proteins": 441,
+      "groups": 298,
+      "group_macro_H": 0.049222974673022016,
+      "group_macro_CDF": 0.00016753347881603986,
+      "group_macro_tail": 0.0015520183369517326,
+      "protein_macro_H": 0.049751226236109974,
+      "protein_macro_CDF": 0.0001707330229692161,
+      "protein_macro_tail": 0.0015178710455074906
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "proteins": 230,
+      "groups": 188,
+      "group_macro_H": 0.05402712799259588,
+      "group_macro_CDF": 0.000256421510130167,
+      "group_macro_tail": 0.0025260685943067074,
+      "protein_macro_H": 0.054497984907136254,
+      "protein_macro_CDF": 0.0002551413490436971,
+      "protein_macro_tail": 0.002401643665507436
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "proteins": 48,
+      "groups": 42,
+      "group_macro_H": 0.05607522192241682,
+      "group_macro_CDF": 0.00028531215502880514,
+      "group_macro_tail": 0.003937753848731518,
+      "protein_macro_H": 0.05571920609192662,
+      "protein_macro_CDF": 0.0002679017197806388,
+      "protein_macro_tail": 0.003771288553252816
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "proteins": 19471,
+      "groups": 7701,
+      "group_macro_H": 0.05231997983084858,
+      "group_macro_CDF": 0.00019848770170938224,
+      "group_macro_tail": 0.002089436398819089,
+      "protein_macro_H": 0.05199248240329006,
+      "protein_macro_CDF": 0.00019599712686613202,
+      "protein_macro_tail": 0.0019913946744054556
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.054420083714108586,
+      "group_macro_CDF": 0.0002066009328700602,
+      "group_macro_tail": 0.0019416207214817405,
+      "protein_macro_H": 0.0538513360303914,
+      "protein_macro_CDF": 0.00020723373745568097,
+      "protein_macro_tail": 0.0018258194904774427
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "proteins": 1164,
+      "groups": 767,
+      "group_macro_H": 0.050743168966600895,
+      "group_macro_CDF": 0.00017990171909332275,
+      "group_macro_tail": 0.0018063427414745092,
+      "protein_macro_H": 0.05129547026254287,
+      "protein_macro_CDF": 0.0001794189738575369,
+      "protein_macro_tail": 0.0016213877825066447
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "proteins": 6305,
+      "groups": 2533,
+      "group_macro_H": 0.051615132149751414,
+      "group_macro_CDF": 0.00014451955212280154,
+      "group_macro_tail": 0.0013662808341905475,
+      "protein_macro_H": 0.05183699481108168,
+      "protein_macro_CDF": 0.00015907612396404147,
+      "protein_macro_tail": 0.001253688707947731
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "proteins": 7802,
+      "groups": 3200,
+      "group_macro_H": 0.04907691815500174,
+      "group_macro_CDF": 0.0001620499388081953,
+      "group_macro_tail": 0.0017479014350101352,
+      "protein_macro_H": 0.049099756604746025,
+      "protein_macro_CDF": 0.0001640393165871501,
+      "protein_macro_tail": 0.0016624581767246127
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "proteins": 6117,
+      "groups": 2565,
+      "group_macro_H": 0.05425154601929199,
+      "group_macro_CDF": 0.00023042062821332365,
+      "group_macro_tail": 0.0026623099111020565,
+      "protein_macro_H": 0.05383934345263721,
+      "protein_macro_CDF": 0.00022382338647730649,
+      "protein_macro_tail": 0.0025607121642678976
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "proteins": 1691,
+      "groups": 729,
+      "group_macro_H": 0.060712352636441404,
+      "group_macro_CDF": 0.00040559397893957794,
+      "group_macro_tail": 0.004024029243737459,
+      "protein_macro_H": 0.0601652543850274,
+      "protein_macro_CDF": 0.00037754306686110795,
+      "protein_macro_tail": 0.003820169484242797
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "proteins": 3463,
+      "groups": 1772,
+      "group_macro_H": 0.04907420313215093,
+      "group_macro_CDF": 0.00014922487025614828,
+      "group_macro_tail": 0.0016551408916711807,
+      "protein_macro_H": 0.04858018221864401,
+      "protein_macro_CDF": 0.0001540952071081847,
+      "protein_macro_tail": 0.0016769177746027708
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "proteins": 6391,
+      "groups": 3157,
+      "group_macro_H": 0.0540227779797155,
+      "group_macro_CDF": 0.00020252166723366827,
+      "group_macro_tail": 0.0022314272355288267,
+      "protein_macro_H": 0.05354619353053007,
+      "protein_macro_CDF": 0.00020066910656169057,
+      "protein_macro_tail": 0.0021171155385673046
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "proteins": 5870,
+      "groups": 3067,
+      "group_macro_H": 0.05268541164055743,
+      "group_macro_CDF": 0.0002129058411810547,
+      "group_macro_tail": 0.0021842734422534704,
+      "protein_macro_H": 0.052268460711327173,
+      "protein_macro_CDF": 0.00020619876158889383,
+      "protein_macro_tail": 0.0020898720249533653
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "proteins": 4911,
+      "groups": 2516,
+      "group_macro_H": 0.051284994845641675,
+      "group_macro_CDF": 0.00019900957704521716,
+      "group_macro_tail": 0.001995715545490384,
+      "protein_macro_H": 0.051881652210911865,
+      "protein_macro_CDF": 0.0002033412893069908,
+      "protein_macro_tail": 0.0018441338324919343
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.054420083714108586,
+      "group_macro_CDF": 0.0002066009328700602,
+      "group_macro_tail": 0.0019416207214817405,
+      "protein_macro_H": 0.0538513360303914,
+      "protein_macro_CDF": 0.00020723373745568097,
+      "protein_macro_tail": 0.0018258194904774427
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "proteins": 5356,
+      "groups": 2386,
+      "group_macro_H": 0.05163541876210704,
+      "group_macro_CDF": 0.00014460619422607124,
+      "group_macro_tail": 0.0013717361725866795,
+      "protein_macro_H": 0.05187791195567777,
+      "protein_macro_CDF": 0.00015879150305408984,
+      "protein_macro_tail": 0.0012760815443471074
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "proteins": 6886,
+      "groups": 3047,
+      "group_macro_H": 0.04893086265602576,
+      "group_macro_CDF": 0.00016192182374652475,
+      "group_macro_tail": 0.0017491701291874051,
+      "protein_macro_H": 0.04880841102687977,
+      "protein_macro_CDF": 0.00016161309031303972,
+      "protein_macro_tail": 0.0016668927855789661
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "proteins": 5627,
+      "groups": 2482,
+      "group_macro_H": 0.054101062535561406,
+      "group_macro_CDF": 0.00022748837363906205,
+      "group_macro_tail": 0.0026471279561519623,
+      "protein_macro_H": 0.053776443592856736,
+      "protein_macro_CDF": 0.0002228997036581859,
+      "protein_macro_tail": 0.002554143313318491
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "proteins": 1602,
+      "groups": 703,
+      "group_macro_H": 0.060902338970764025,
+      "group_macro_CDF": 0.00041261708247475326,
+      "group_macro_tail": 0.004027464427053928,
+      "protein_macro_H": 0.059795731592853694,
+      "protein_macro_CDF": 0.0003736881189979613,
+      "protein_macro_tail": 0.0038011011201888323
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "proteins": 504,
+      "groups": 248,
+      "group_macro_H": 0.05271129731542611,
+      "group_macro_CDF": 0.0001621897390577942,
+      "group_macro_tail": 0.0012127289082854986,
+      "protein_macro_H": 0.052408807180656845,
+      "protein_macro_CDF": 0.00017196661792695522,
+      "protein_macro_tail": 0.0011826575500890613
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "proteins": 475,
+      "groups": 233,
+      "group_macro_H": 0.05235875700314929,
+      "group_macro_CDF": 0.00019040328334085643,
+      "group_macro_tail": 0.0016896167071536183,
+      "protein_macro_H": 0.05282114676618945,
+      "protein_macro_CDF": 0.0001984256086871028,
+      "protein_macro_tail": 0.0017088113818317652
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "proteins": 260,
+      "groups": 163,
+      "group_macro_H": 0.05583772202799016,
+      "group_macro_CDF": 0.00022919836919754744,
+      "group_macro_tail": 0.0030015981756150723,
+      "protein_macro_H": 0.05447919867147489,
+      "protein_macro_CDF": 0.00021947808272670954,
+      "protein_macro_tail": 0.0028608820866793394
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "proteins": 41,
+      "groups": 28,
+      "group_macro_H": 0.0737338253206268,
+      "group_macro_CDF": 0.0005407003918662667,
+      "group_macro_tail": 0.0043264045380055904,
+      "protein_macro_H": 0.07953743734942642,
+      "protein_macro_CDF": 0.00066515983780846,
+      "protein_macro_tail": 0.004523780196905136
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "proteins": 445,
+      "groups": 269,
+      "group_macro_H": 0.049523881897557125,
+      "group_macro_CDF": 0.00013351670349948108,
+      "group_macro_tail": 0.0011751330457627773,
+      "protein_macro_H": 0.05069689220271628,
+      "protein_macro_CDF": 0.00014790243585593998,
+      "protein_macro_tail": 0.0010646191658452153
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "proteins": 441,
+      "groups": 298,
+      "group_macro_H": 0.04912835348215452,
+      "group_macro_CDF": 0.00016293293447233737,
+      "group_macro_tail": 0.0015697344206273556,
+      "protein_macro_H": 0.049640675703388606,
+      "protein_macro_CDF": 0.00016488638357259333,
+      "protein_macro_tail": 0.0015432876534759998
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "proteins": 230,
+      "groups": 188,
+      "group_macro_H": 0.05414096902349437,
+      "group_macro_CDF": 0.00025266633019782603,
+      "group_macro_tail": 0.0025168778374791145,
+      "protein_macro_H": 0.054654887600841466,
+      "protein_macro_CDF": 0.00025133354938589036,
+      "protein_macro_tail": 0.002382097067311406
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "proteins": 48,
+      "groups": 42,
+      "group_macro_H": 0.05662787991588141,
+      "group_macro_CDF": 0.0002759512863121927,
+      "group_macro_tail": 0.004064340144395828,
+      "protein_macro_H": 0.05595100462506747,
+      "protein_macro_CDF": 0.00026053053443320096,
+      "protein_macro_tail": 0.003855576505884528
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "proteins": 19471,
+      "groups": 7701,
+      "group_macro_H": 0.050513186615691444,
+      "group_macro_CDF": 0.00019399134907871485,
+      "group_macro_tail": 0.0019728471525013447,
+      "protein_macro_H": 0.05061791044809192,
+      "protein_macro_CDF": 0.00019118543423246592,
+      "protein_macro_tail": 0.001910486025735736
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.05276802389429441,
+      "group_macro_CDF": 0.00019836566934827715,
+      "group_macro_tail": 0.0019485162338241935,
+      "protein_macro_H": 0.05291742246271112,
+      "protein_macro_CDF": 0.00020414628670550883,
+      "protein_macro_tail": 0.0018567409133538604
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "proteins": 1164,
+      "groups": 767,
+      "group_macro_H": 0.05023297604797488,
+      "group_macro_CDF": 0.00019616125791799277,
+      "group_macro_tail": 0.0017246438656002283,
+      "protein_macro_H": 0.05056172200583033,
+      "protein_macro_CDF": 0.000190118356840685,
+      "protein_macro_tail": 0.0015467656776309013
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "proteins": 6305,
+      "groups": 2533,
+      "group_macro_H": 0.04933171058880677,
+      "group_macro_CDF": 0.00013332291564438492,
+      "group_macro_tail": 0.0013070988934487104,
+      "protein_macro_H": 0.050198037132345705,
+      "protein_macro_CDF": 0.00015271997835952789,
+      "protein_macro_tail": 0.001227055792696774
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "proteins": 7802,
+      "groups": 3200,
+      "group_macro_H": 0.04790966748547405,
+      "group_macro_CDF": 0.00016066500393208116,
+      "group_macro_tail": 0.0016659004613757133,
+      "protein_macro_H": 0.04848177967758297,
+      "protein_macro_CDF": 0.00016799179138615727,
+      "protein_macro_tail": 0.0016002951888367534
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "proteins": 6117,
+      "groups": 2565,
+      "group_macro_H": 0.05195453543617792,
+      "group_macro_CDF": 0.00021784935961477458,
+      "group_macro_tail": 0.002444990910589695,
+      "protein_macro_H": 0.05175777296176354,
+      "protein_macro_CDF": 0.00020825436513405293,
+      "protein_macro_tail": 0.0023837273474782705
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "proteins": 1691,
+      "groups": 729,
+      "group_macro_H": 0.0615530355765666,
+      "group_macro_CDF": 0.0004554368497338146,
+      "group_macro_tail": 0.004002243746072054,
+      "protein_macro_H": 0.05961780788338562,
+      "protein_macro_CDF": 0.0003889492363668978,
+      "protein_macro_tail": 0.0038869231939315796
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "proteins": 3463,
+      "groups": 1772,
+      "group_macro_H": 0.04802820300516442,
+      "group_macro_CDF": 0.00015332686598412693,
+      "group_macro_tail": 0.0016294275410473347,
+      "protein_macro_H": 0.0474873359757767,
+      "protein_macro_CDF": 0.00014902750262990594,
+      "protein_macro_tail": 0.0016554808244109154
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "proteins": 6391,
+      "groups": 3157,
+      "group_macro_H": 0.05188480919832837,
+      "group_macro_CDF": 0.000194184307474643,
+      "group_macro_tail": 0.0021117227151989937,
+      "protein_macro_H": 0.05178038776426905,
+      "protein_macro_CDF": 0.00019191144383512437,
+      "protein_macro_tail": 0.002030625008046627
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "proteins": 5870,
+      "groups": 3067,
+      "group_macro_H": 0.05084020404583246,
+      "group_macro_CDF": 0.00020876838243566453,
+      "group_macro_tail": 0.002033646684139967,
+      "protein_macro_H": 0.05090982039178123,
+      "protein_macro_CDF": 0.0002029061142820865,
+      "protein_macro_tail": 0.0019777652341872454
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "proteins": 4911,
+      "groups": 2516,
+      "group_macro_H": 0.049963731471510515,
+      "group_macro_CDF": 0.00020006175327580422,
+      "group_macro_tail": 0.001898914109915495,
+      "protein_macro_H": 0.05095040325071685,
+      "protein_macro_CDF": 0.00020570603373926133,
+      "protein_macro_tail": 0.001767332898452878
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.05276802389429441,
+      "group_macro_CDF": 0.00019836566934827715,
+      "group_macro_tail": 0.0019485162338241935,
+      "protein_macro_H": 0.05291742246271112,
+      "protein_macro_CDF": 0.00020414628670550883,
+      "protein_macro_tail": 0.0018567409133538604
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "proteins": 5356,
+      "groups": 2386,
+      "group_macro_H": 0.04924395285297067,
+      "group_macro_CDF": 0.0001327825157204643,
+      "group_macro_tail": 0.0013091880828142166,
+      "protein_macro_H": 0.05014869257323088,
+      "protein_macro_CDF": 0.00015134653949644417,
+      "protein_macro_tail": 0.0012415002565830946
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "proteins": 6886,
+      "groups": 3047,
+      "group_macro_H": 0.047807474616918685,
+      "group_macro_CDF": 0.0001604738790774718,
+      "group_macro_tail": 0.0016715510282665491,
+      "protein_macro_H": 0.04819649595326718,
+      "protein_macro_CDF": 0.00016566889826208353,
+      "protein_macro_tail": 0.0016047126846387982
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "proteins": 5627,
+      "groups": 2482,
+      "group_macro_H": 0.05180044642000384,
+      "group_macro_CDF": 0.00021185657533351332,
+      "group_macro_tail": 0.002426745370030403,
+      "protein_macro_H": 0.05153886180541539,
+      "protein_macro_CDF": 0.0002039018290815875,
+      "protein_macro_tail": 0.002366084372624755
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "proteins": 1602,
+      "groups": 703,
+      "group_macro_H": 0.06181952367706213,
+      "group_macro_CDF": 0.00046324526192620397,
+      "group_macro_tail": 0.004005731083452702,
+      "protein_macro_H": 0.05935998152266117,
+      "protein_macro_CDF": 0.0003893931279890239,
+      "protein_macro_tail": 0.0038611667696386576
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "proteins": 504,
+      "groups": 248,
+      "group_macro_H": 0.05129127066321435,
+      "group_macro_CDF": 0.00016007691738195717,
+      "group_macro_tail": 0.0012767398729920387,
+      "protein_macro_H": 0.05135119112801124,
+      "protein_macro_CDF": 0.00017317966558039188,
+      "protein_macro_tail": 0.0012215127935633063
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "proteins": 475,
+      "groups": 233,
+      "group_macro_H": 0.05161787960336657,
+      "group_macro_CDF": 0.0001926172262756154,
+      "group_macro_tail": 0.0016711248317733407,
+      "protein_macro_H": 0.05278257630253107,
+      "protein_macro_CDF": 0.00021200698392931372,
+      "protein_macro_tail": 0.0016930815763771534
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "proteins": 260,
+      "groups": 163,
+      "group_macro_H": 0.05342101627138874,
+      "group_macro_CDF": 0.00020762661006301641,
+      "group_macro_tail": 0.002973053604364395,
+      "protein_macro_H": 0.05320105498206644,
+      "protein_macro_CDF": 0.0002051818009931594,
+      "protein_macro_tail": 0.0029222217854112387
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "proteins": 41,
+      "groups": 28,
+      "group_macro_H": 0.0693165304259673,
+      "group_macro_CDF": 0.00046479093725793064,
+      "group_macro_tail": 0.004411711823195219,
+      "protein_macro_H": 0.07193420450519585,
+      "protein_macro_CDF": 0.0004871734417974949,
+      "protein_macro_tail": 0.004804752767086029
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "proteins": 445,
+      "groups": 269,
+      "group_macro_H": 0.04881946457187734,
+      "group_macro_CDF": 0.0001395807630615309,
+      "group_macro_tail": 0.001162158790975809,
+      "protein_macro_H": 0.04948590195212915,
+      "protein_macro_CDF": 0.00014607830962631851,
+      "protein_macro_tail": 0.00105948222335428
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "proteins": 441,
+      "groups": 298,
+      "group_macro_H": 0.04852481391928102,
+      "group_macro_CDF": 0.00016241968842223287,
+      "group_macro_tail": 0.0014640041626989841,
+      "protein_macro_H": 0.048303968631751334,
+      "protein_macro_CDF": 0.00015685384278185666,
+      "protein_macro_tail": 0.001431377837434411
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "proteins": 230,
+      "groups": 188,
+      "group_macro_H": 0.05347591578624924,
+      "group_macro_CDF": 0.00030446526943705976,
+      "group_macro_tail": 0.0023309113457798958,
+      "protein_macro_H": 0.055481945794338385,
+      "protein_macro_CDF": 0.00031821351149119437,
+      "protein_macro_tail": 0.0022066328674554825
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "proteins": 48,
+      "groups": 42,
+      "group_macro_H": 0.056739562142293795,
+      "group_macro_CDF": 0.00028392666717991233,
+      "group_macro_tail": 0.004253080580383539,
+      "protein_macro_H": 0.05770250722476813,
+      "protein_macro_CDF": 0.00029023492243140936,
+      "protein_macro_tail": 0.0039625526405870914
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "proteins": 19471,
+      "groups": 7701,
+      "group_macro_H": 0.05034297768321956,
+      "group_macro_CDF": 0.00019145374244544655,
+      "group_macro_tail": 0.0019813873805105686,
+      "protein_macro_H": 0.05042594361726397,
+      "protein_macro_CDF": 0.00019093330774921924,
+      "protein_macro_tail": 0.00191593449562788
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.05191381213509008,
+      "group_macro_CDF": 0.00018781960534397513,
+      "group_macro_tail": 0.0019116750918328762,
+      "protein_macro_H": 0.05234668491176159,
+      "protein_macro_CDF": 0.0001983758993446827,
+      "protein_macro_tail": 0.001821085810661316
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "proteins": 1164,
+      "groups": 767,
+      "group_macro_H": 0.050056535127574825,
+      "group_macro_CDF": 0.00021262619702611119,
+      "group_macro_tail": 0.0017393599264323711,
+      "protein_macro_H": 0.050725450308557574,
+      "protein_macro_CDF": 0.00020276199211366475,
+      "protein_macro_tail": 0.0015564288478344679
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "proteins": 6305,
+      "groups": 2533,
+      "group_macro_H": 0.04887309274432717,
+      "group_macro_CDF": 0.00013028447574470192,
+      "group_macro_tail": 0.0012921247398480773,
+      "protein_macro_H": 0.049907198533074515,
+      "protein_macro_CDF": 0.00015275309851858765,
+      "protein_macro_tail": 0.0012166555970907211
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "proteins": 7802,
+      "groups": 3200,
+      "group_macro_H": 0.04784082926467388,
+      "group_macro_CDF": 0.00015863761655054986,
+      "group_macro_tail": 0.0016723632579669356,
+      "protein_macro_H": 0.04822878125930455,
+      "protein_macro_CDF": 0.00016612440231256187,
+      "protein_macro_tail": 0.0016029772814363241
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "proteins": 6117,
+      "groups": 2565,
+      "group_macro_H": 0.051594681749558884,
+      "group_macro_CDF": 0.00021706918778363615,
+      "group_macro_tail": 0.0024652795400470495,
+      "protein_macro_H": 0.05158300536439881,
+      "protein_macro_CDF": 0.0002076781092910096,
+      "protein_macro_tail": 0.002394890645518899
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "proteins": 1691,
+      "groups": 729,
+      "group_macro_H": 0.06201988806461229,
+      "group_macro_CDF": 0.0004615784855559468,
+      "group_macro_tail": 0.0040754154324531555,
+      "protein_macro_H": 0.05997199708326793,
+      "protein_macro_CDF": 0.00040095829172059894,
+      "protein_macro_tail": 0.003915342502295971
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "proteins": 3463,
+      "groups": 1772,
+      "group_macro_H": 0.048086679816861565,
+      "group_macro_CDF": 0.00015383961726911366,
+      "group_macro_tail": 0.0016160832019522786,
+      "protein_macro_H": 0.04795240591353948,
+      "protein_macro_CDF": 0.00015564929344691336,
+      "protein_macro_tail": 0.001654246123507619
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "proteins": 6391,
+      "groups": 3157,
+      "group_macro_H": 0.051687107344251006,
+      "group_macro_CDF": 0.00019325068569742143,
+      "group_macro_tail": 0.0021247314289212227,
+      "protein_macro_H": 0.051422450789978945,
+      "protein_macro_CDF": 0.00019242707639932632,
+      "protein_macro_tail": 0.0020488870795816183
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "proteins": 5870,
+      "groups": 3067,
+      "group_macro_H": 0.05058702841462116,
+      "group_macro_CDF": 0.00020311935804784298,
+      "group_macro_tail": 0.002051168354228139,
+      "protein_macro_H": 0.050729388293531325,
+      "protein_macro_CDF": 0.00019954278832301497,
+      "protein_macro_tail": 0.001988054718822241
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "proteins": 4911,
+      "groups": 2516,
+      "group_macro_H": 0.0496273788241177,
+      "group_macro_CDF": 0.00020369754929561168,
+      "group_macro_tail": 0.0018952460959553719,
+      "protein_macro_H": 0.050581632736822695,
+      "protein_macro_CDF": 0.0002063828578684479,
+      "protein_macro_tail": 0.0017560311825945973
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.05191381213509008,
+      "group_macro_CDF": 0.00018781960534397513,
+      "group_macro_tail": 0.0019116750918328762,
+      "protein_macro_H": 0.05234668491176159,
+      "protein_macro_CDF": 0.0001983758993446827,
+      "protein_macro_tail": 0.001821085810661316
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "proteins": 5356,
+      "groups": 2386,
+      "group_macro_H": 0.048880280951871066,
+      "group_macro_CDF": 0.0001303666940657422,
+      "group_macro_tail": 0.0012937341816723347,
+      "protein_macro_H": 0.049863443745685035,
+      "protein_macro_CDF": 0.00015147941303439438,
+      "protein_macro_tail": 0.0012318147346377373
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "proteins": 6886,
+      "groups": 3047,
+      "group_macro_H": 0.04773213958591156,
+      "group_macro_CDF": 0.00015830836491659284,
+      "group_macro_tail": 0.0016786062624305487,
+      "protein_macro_H": 0.04791746056532463,
+      "protein_macro_CDF": 0.00016314377717208117,
+      "protein_macro_tail": 0.0016074256272986531
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "proteins": 5627,
+      "groups": 2482,
+      "group_macro_H": 0.051409238374835124,
+      "group_macro_CDF": 0.00020690141536761075,
+      "group_macro_tail": 0.002445126185193658,
+      "protein_macro_H": 0.05140604360649965,
+      "protein_macro_CDF": 0.00020288235100451857,
+      "protein_macro_tail": 0.002381835365667939
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "proteins": 1602,
+      "groups": 703,
+      "group_macro_H": 0.06219996651837119,
+      "group_macro_CDF": 0.0004663969448301941,
+      "group_macro_tail": 0.004074777010828257,
+      "protein_macro_H": 0.05964638117556726,
+      "protein_macro_CDF": 0.0004003191424999386,
+      "protein_macro_tail": 0.0038927823770791292
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "proteins": 504,
+      "groups": 248,
+      "group_macro_H": 0.051148586430838666,
+      "group_macro_CDF": 0.000162415555678308,
+      "group_macro_tail": 0.00128641864284873,
+      "protein_macro_H": 0.05120696875758022,
+      "protein_macro_CDF": 0.00017387174011673778,
+      "protein_macro_tail": 0.0012139196041971445
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "proteins": 475,
+      "groups": 233,
+      "group_macro_H": 0.05017829890647633,
+      "group_macro_CDF": 0.0001768492511473596,
+      "group_macro_tail": 0.0016714533558115363,
+      "protein_macro_H": 0.05191209458677358,
+      "protein_macro_CDF": 0.00020451257296372205,
+      "protein_macro_tail": 0.0016850432148203254
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "proteins": 260,
+      "groups": 163,
+      "group_macro_H": 0.052043524748806747,
+      "group_macro_CDF": 0.00018336002540308982,
+      "group_macro_tail": 0.0028775297105312347,
+      "protein_macro_H": 0.05213925309817813,
+      "protein_macro_CDF": 0.00019064599473495036,
+      "protein_macro_tail": 0.002797985216602683
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "proteins": 41,
+      "groups": 28,
+      "group_macro_H": 0.070657144508893,
+      "group_macro_CDF": 0.0004683669831138104,
+      "group_macro_tail": 0.004237737972289324,
+      "protein_macro_H": 0.0727071633900154,
+      "protein_macro_CDF": 0.0004775212437380105,
+      "protein_macro_tail": 0.004665920976549387
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "proteins": 445,
+      "groups": 269,
+      "group_macro_H": 0.04770015127588864,
+      "group_macro_CDF": 0.00013254488294478506,
+      "group_macro_tail": 0.001133857760578394,
+      "protein_macro_H": 0.048961729877135714,
+      "protein_macro_CDF": 0.00014416441263165325,
+      "protein_macro_tail": 0.0010372998658567667
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "proteins": 441,
+      "groups": 298,
+      "group_macro_H": 0.04873998674797051,
+      "group_macro_CDF": 0.0001715802209218964,
+      "group_macro_tail": 0.00148214481305331,
+      "protein_macro_H": 0.049122614520524424,
+      "protein_macro_CDF": 0.000171317471540533,
+      "protein_macro_tail": 0.001445123110897839
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "proteins": 230,
+      "groups": 188,
+      "group_macro_H": 0.05365811173770059,
+      "group_macro_CDF": 0.00035127633600495756,
+      "group_macro_tail": 0.002379676792770624,
+      "protein_macro_H": 0.055283611455337583,
+      "protein_macro_CDF": 0.00034426088677719235,
+      "protein_macro_tail": 0.0022586144041270018
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "proteins": 48,
+      "groups": 42,
+      "group_macro_H": 0.059415164547466516,
+      "group_macro_CDF": 0.00036973878741264343,
+      "group_macro_tail": 0.004370180424302816,
+      "protein_macro_H": 0.05996147344909803,
+      "protein_macro_CDF": 0.0003568916581571102,
+      "protein_macro_tail": 0.004027166869491339
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "proteins": 19471,
+      "groups": 7701,
+      "group_macro_H": 0.048968323592876485,
+      "group_macro_CDF": 0.0001772832329152152,
+      "group_macro_tail": 0.0019427146762609482,
+      "protein_macro_H": 0.04909989377719047,
+      "protein_macro_CDF": 0.00017548963660374284,
+      "protein_macro_tail": 0.0018865532474592328
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.051489930933816236,
+      "group_macro_CDF": 0.00018221275240648538,
+      "group_macro_tail": 0.001913375104777515,
+      "protein_macro_H": 0.05170954258201845,
+      "protein_macro_CDF": 0.00018728422583080828,
+      "protein_macro_tail": 0.0018235150491818786
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "proteins": 1164,
+      "groups": 767,
+      "group_macro_H": 0.048476784332053456,
+      "group_macro_CDF": 0.00016876567678991705,
+      "group_macro_tail": 0.0017283506458625197,
+      "protein_macro_H": 0.0492645812455922,
+      "protein_macro_CDF": 0.00016759737627580762,
+      "protein_macro_tail": 0.0015393616631627083
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "proteins": 6305,
+      "groups": 2533,
+      "group_macro_H": 0.048035202793291015,
+      "group_macro_CDF": 0.00012141996558057144,
+      "group_macro_tail": 0.001291019725613296,
+      "protein_macro_H": 0.049052471658659585,
+      "protein_macro_CDF": 0.00013973709428682923,
+      "protein_macro_tail": 0.0012129652313888073
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "proteins": 7802,
+      "groups": 3200,
+      "group_macro_H": 0.046552176143431365,
+      "group_macro_CDF": 0.0001466465910198167,
+      "group_macro_tail": 0.0016253547510132194,
+      "protein_macro_H": 0.046985791824223765,
+      "protein_macro_CDF": 0.0001538272190373391,
+      "protein_macro_tail": 0.0015591563424095511
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "proteins": 6117,
+      "groups": 2565,
+      "group_macro_H": 0.049878745557697814,
+      "group_macro_CDF": 0.00019231437181588262,
+      "group_macro_tail": 0.00241209683008492,
+      "protein_macro_H": 0.04986723172959545,
+      "protein_macro_CDF": 0.00018445572641212493,
+      "protein_macro_tail": 0.002367950277402997
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "proteins": 1691,
+      "groups": 729,
+      "group_macro_H": 0.05957746000774396,
+      "group_macro_CDF": 0.0004290600190870464,
+      "group_macro_tail": 0.003983599599450827,
+      "protein_macro_H": 0.05834380881144332,
+      "protein_macro_CDF": 0.000379803532268852,
+      "protein_macro_tail": 0.0038805173244327307
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "proteins": 3463,
+      "groups": 1772,
+      "group_macro_H": 0.046935445776044485,
+      "group_macro_CDF": 0.0001457042235415429,
+      "group_macro_tail": 0.0015949078369885683,
+      "protein_macro_H": 0.04636677998688935,
+      "protein_macro_CDF": 0.00014066335279494524,
+      "protein_macro_tail": 0.0016370391240343451
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "proteins": 6391,
+      "groups": 3157,
+      "group_macro_H": 0.05032291194826228,
+      "group_macro_CDF": 0.00017719723109621555,
+      "group_macro_tail": 0.002087014028802514,
+      "protein_macro_H": 0.05020316860798516,
+      "protein_macro_CDF": 0.00017723719065543264,
+      "protein_macro_tail": 0.0020176705438643694
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "proteins": 5870,
+      "groups": 3067,
+      "group_macro_H": 0.04901340039074116,
+      "group_macro_CDF": 0.00018393530626781285,
+      "group_macro_tail": 0.0019862952176481485,
+      "protein_macro_H": 0.0493393108744184,
+      "protein_macro_CDF": 0.00018262457160744816,
+      "protein_macro_tail": 0.0019492203136906028
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "proteins": 4911,
+      "groups": 2516,
+      "group_macro_H": 0.04840421472709579,
+      "group_macro_CDF": 0.00018406643357593566,
+      "group_macro_tail": 0.0018778512021526694,
+      "protein_macro_H": 0.04934425571257952,
+      "protein_macro_CDF": 0.00018737437494564801,
+      "protein_macro_tail": 0.001734670833684504
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.051489930933816236,
+      "group_macro_CDF": 0.00018221275240648538,
+      "group_macro_tail": 0.001913375104777515,
+      "protein_macro_H": 0.05170954258201845,
+      "protein_macro_CDF": 0.00018728422583080828,
+      "protein_macro_tail": 0.0018235150491818786
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "proteins": 5356,
+      "groups": 2386,
+      "group_macro_H": 0.04791403634106023,
+      "group_macro_CDF": 0.00012058277934556827,
+      "group_macro_tail": 0.0012936961138620973,
+      "protein_macro_H": 0.04897357691540834,
+      "protein_macro_CDF": 0.00013865114306099713,
+      "protein_macro_tail": 0.0012315759668126702
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "proteins": 6886,
+      "groups": 3047,
+      "group_macro_H": 0.0464660612816217,
+      "group_macro_CDF": 0.0001468742120778188,
+      "group_macro_tail": 0.0016315602697432041,
+      "protein_macro_H": 0.04667206218482573,
+      "protein_macro_CDF": 0.00015145400539040565,
+      "protein_macro_tail": 0.001563259749673307
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "proteins": 5627,
+      "groups": 2482,
+      "group_macro_H": 0.04981076279182045,
+      "group_macro_CDF": 0.00019077885372098535,
+      "group_macro_tail": 0.0023907162249088287,
+      "protein_macro_H": 0.04970796354923592,
+      "protein_macro_CDF": 0.0001830336987040937,
+      "protein_macro_tail": 0.0023488057777285576
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "proteins": 1602,
+      "groups": 703,
+      "group_macro_H": 0.05966114178831577,
+      "group_macro_CDF": 0.0004313183599151671,
+      "group_macro_tail": 0.003970854915678501,
+      "protein_macro_H": 0.057822111535885144,
+      "protein_macro_CDF": 0.0003754682547878474,
+      "protein_macro_tail": 0.003842332400381565
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "proteins": 504,
+      "groups": 248,
+      "group_macro_H": 0.05094125960255656,
+      "group_macro_CDF": 0.00014683209883514792,
+      "group_macro_tail": 0.0012351741315796971,
+      "protein_macro_H": 0.050553443083342996,
+      "protein_macro_CDF": 0.00015599351900164038,
+      "protein_macro_tail": 0.0011749386321753263
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "proteins": 475,
+      "groups": 233,
+      "group_macro_H": 0.049921520915653814,
+      "group_macro_CDF": 0.0001731828087940812,
+      "group_macro_tail": 0.001673517283052206,
+      "protein_macro_H": 0.05136460724712723,
+      "protein_macro_CDF": 0.00019530767167452723,
+      "protein_macro_tail": 0.0016895165899768472
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "proteins": 260,
+      "groups": 163,
+      "group_macro_H": 0.05057045834420282,
+      "group_macro_CDF": 0.00017428048886358738,
+      "group_macro_tail": 0.0028753899969160557,
+      "protein_macro_H": 0.05067518346374602,
+      "protein_macro_CDF": 0.00017068262968678027,
+      "protein_macro_tail": 0.0028397643472999334
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "proteins": 41,
+      "groups": 28,
+      "group_macro_H": 0.07398929050091001,
+      "group_macro_CDF": 0.0005719327018596232,
+      "group_macro_tail": 0.004509106744080782,
+      "protein_macro_H": 0.07647665970778905,
+      "protein_macro_CDF": 0.000584254739806056,
+      "protein_macro_tail": 0.004904178902506828
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "proteins": 445,
+      "groups": 269,
+      "group_macro_H": 0.04730630395821997,
+      "group_macro_CDF": 0.00012677365157287568,
+      "group_macro_tail": 0.0011399706127122045,
+      "protein_macro_H": 0.04830206861779048,
+      "protein_macro_CDF": 0.00013439594476949424,
+      "protein_macro_tail": 0.0010320378933101892
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "proteins": 441,
+      "groups": 298,
+      "group_macro_H": 0.04666119241886714,
+      "group_macro_CDF": 0.00014514918439090252,
+      "group_macro_tail": 0.0014051045291125774,
+      "protein_macro_H": 0.047168116021538274,
+      "protein_macro_CDF": 0.000146204954944551,
+      "protein_macro_tail": 0.0013546724803745747
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "proteins": 230,
+      "groups": 188,
+      "group_macro_H": 0.05141153746712914,
+      "group_macro_CDF": 0.00022664832067675889,
+      "group_macro_tail": 0.0024313158355653286,
+      "protein_macro_H": 0.05285042564265604,
+      "protein_macro_CDF": 0.00023481546668335795,
+      "protein_macro_tail": 0.00230296584777534
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "proteins": 48,
+      "groups": 42,
+      "group_macro_H": 0.0578182464753022,
+      "group_macro_CDF": 0.0003398960689082742,
+      "group_macro_tail": 0.004529185593128204,
+      "protein_macro_H": 0.060266978575901874,
+      "protein_macro_CDF": 0.0003498585138004273,
+      "protein_macro_tail": 0.004280568566173315
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "proteins": 19471,
+      "groups": 7701,
+      "group_macro_H": 0.048949309827903846,
+      "group_macro_CDF": 0.00017591282085049897,
+      "group_macro_tail": 0.001957044703885913,
+      "protein_macro_H": 0.049114469820241195,
+      "protein_macro_CDF": 0.00017501288675703108,
+      "protein_macro_tail": 0.001905721495859325
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.05123846291430377,
+      "group_macro_CDF": 0.00018036464462056756,
+      "group_macro_tail": 0.0019071492133662105,
+      "protein_macro_H": 0.05119597497087443,
+      "protein_macro_CDF": 0.00018341050599701703,
+      "protein_macro_tail": 0.0018219385528936982
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "proteins": 1164,
+      "groups": 767,
+      "group_macro_H": 0.04861755502705574,
+      "group_macro_CDF": 0.00018108388758264482,
+      "group_macro_tail": 0.0017146007157862186,
+      "protein_macro_H": 0.049155509236067464,
+      "protein_macro_CDF": 0.000174577216967009,
+      "protein_macro_tail": 0.001540973549708724
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "proteins": 6305,
+      "groups": 2533,
+      "group_macro_H": 0.04754418834187299,
+      "group_macro_CDF": 0.00011794073361670598,
+      "group_macro_tail": 0.0012879363493993878,
+      "protein_macro_H": 0.048634422026988366,
+      "protein_macro_CDF": 0.00013850117102265358,
+      "protein_macro_tail": 0.0012125523062422872
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "proteins": 7802,
+      "groups": 3200,
+      "group_macro_H": 0.04657813183731568,
+      "group_macro_CDF": 0.00014765566447749734,
+      "group_macro_tail": 0.0016614181222394109,
+      "protein_macro_H": 0.04697391795094736,
+      "protein_macro_CDF": 0.0001535824267193675,
+      "protein_macro_tail": 0.0015955667477101088
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "proteins": 6117,
+      "groups": 2565,
+      "group_macro_H": 0.05040802467675649,
+      "group_macro_CDF": 0.0001984335103770718,
+      "group_macro_tail": 0.0024301887024194,
+      "protein_macro_H": 0.05042901269777631,
+      "protein_macro_CDF": 0.00019099142809864134,
+      "protein_macro_tail": 0.002399949822574854
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "proteins": 1691,
+      "groups": 729,
+      "group_macro_H": 0.05899050759273554,
+      "group_macro_CDF": 0.0004105489351786673,
+      "group_macro_tail": 0.003926669247448444,
+      "protein_macro_H": 0.05762915031204463,
+      "protein_macro_CDF": 0.0003582820063456893,
+      "protein_macro_tail": 0.0038189420010894537
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "proteins": 3463,
+      "groups": 1772,
+      "group_macro_H": 0.04700035791216099,
+      "group_macro_CDF": 0.00014329288387671113,
+      "group_macro_tail": 0.0016189839225262403,
+      "protein_macro_H": 0.04671541126201675,
+      "protein_macro_CDF": 0.00014209120126906782,
+      "protein_macro_tail": 0.0016614636406302452
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "proteins": 6391,
+      "groups": 3157,
+      "group_macro_H": 0.05023652744995312,
+      "group_macro_CDF": 0.00017618668789509684,
+      "group_macro_tail": 0.0020856307819485664,
+      "protein_macro_H": 0.05036509366634157,
+      "protein_macro_CDF": 0.0001775617856765166,
+      "protein_macro_tail": 0.002025901572778821
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "proteins": 5870,
+      "groups": 3067,
+      "group_macro_H": 0.04892673966713524,
+      "group_macro_CDF": 0.00018287326383870095,
+      "group_macro_tail": 0.0020172058138996363,
+      "protein_macro_H": 0.04913347025702254,
+      "protein_macro_CDF": 0.00018053939857054502,
+      "protein_macro_tail": 0.0019761016592383385
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "proteins": 4911,
+      "groups": 2516,
+      "group_macro_H": 0.048352835319675234,
+      "group_macro_CDF": 0.00018556533905211836,
+      "group_macro_tail": 0.0018859002739191055,
+      "protein_macro_H": 0.04916566918957922,
+      "protein_macro_CDF": 0.0001882016658782959,
+      "protein_macro_tail": 0.001750986441038549
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "proteins": 1280,
+      "groups": 614,
+      "group_macro_H": 0.05123846291430377,
+      "group_macro_CDF": 0.00018036464462056756,
+      "group_macro_tail": 0.0019071492133662105,
+      "protein_macro_H": 0.05119597497087443,
+      "protein_macro_CDF": 0.00018341050599701703,
+      "protein_macro_tail": 0.0018219385528936982
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "proteins": 5356,
+      "groups": 2386,
+      "group_macro_H": 0.04750010658567669,
+      "group_macro_CDF": 0.00011776979954447597,
+      "group_macro_tail": 0.0012890059733763337,
+      "protein_macro_H": 0.04857544406599614,
+      "protein_macro_CDF": 0.00013756444968748838,
+      "protein_macro_tail": 0.00122633611317724
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "proteins": 6886,
+      "groups": 3047,
+      "group_macro_H": 0.04645442949708953,
+      "group_macro_CDF": 0.0001477324840379879,
+      "group_macro_tail": 0.00166750093922019,
+      "protein_macro_H": 0.04669406908671983,
+      "protein_macro_CDF": 0.00015164971409831196,
+      "protein_macro_tail": 0.0016010438557714224
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "proteins": 5627,
+      "groups": 2482,
+      "group_macro_H": 0.0502820384026316,
+      "group_macro_CDF": 0.00019381468882784247,
+      "group_macro_tail": 0.002410008804872632,
+      "protein_macro_H": 0.050267517883597665,
+      "protein_macro_CDF": 0.00018810524488799274,
+      "protein_macro_tail": 0.0023856668267399073
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "proteins": 1602,
+      "groups": 703,
+      "group_macro_H": 0.059191586086644085,
+      "group_macro_CDF": 0.00041087300633080304,
+      "group_macro_tail": 0.0039446549490094185,
+      "protein_macro_H": 0.0572703374471187,
+      "protein_macro_CDF": 0.000354652147507295,
+      "protein_macro_tail": 0.003800943959504366
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "proteins": 504,
+      "groups": 248,
+      "group_macro_H": 0.049656562842262095,
+      "group_macro_CDF": 0.00014111465134192258,
+      "group_macro_tail": 0.0012561156181618571,
+      "protein_macro_H": 0.04972325542881934,
+      "protein_macro_CDF": 0.00015386562154162675,
+      "protein_macro_tail": 0.0012159623438492417
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "proteins": 475,
+      "groups": 233,
+      "group_macro_H": 0.05012466112428219,
+      "group_macro_CDF": 0.00017698363808449358,
+      "group_macro_tail": 0.0016788316424936056,
+      "protein_macro_H": 0.050712387404150995,
+      "protein_macro_CDF": 0.00018675343017093837,
+      "protein_macro_tail": 0.0016798106953501701
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "proteins": 260,
+      "groups": 163,
+      "group_macro_H": 0.05108819936478098,
+      "group_macro_CDF": 0.0001805798092391342,
+      "group_macro_tail": 0.0028984099626541138,
+      "protein_macro_H": 0.05148557714567552,
+      "protein_macro_CDF": 0.000185171069460921,
+      "protein_macro_tail": 0.0028393964748829603
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "proteins": 41,
+      "groups": 28,
+      "group_macro_H": 0.07058175415012541,
+      "group_macro_CDF": 0.00047603706480003893,
+      "group_macro_tail": 0.003900723997503519,
+      "protein_macro_H": 0.0730656866279745,
+      "protein_macro_CDF": 0.0004967029672116041,
+      "protein_macro_tail": 0.00446544261649251
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "proteins": 445,
+      "groups": 269,
+      "group_macro_H": 0.046809285097269886,
+      "group_macro_CDF": 0.0001218274628627114,
+      "group_macro_tail": 0.0011468257289379835,
+      "protein_macro_H": 0.04811108253159863,
+      "protein_macro_CDF": 0.00013237408711574972,
+      "protein_macro_tail": 0.001042787916958332
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "proteins": 441,
+      "groups": 298,
+      "group_macro_H": 0.04746579282103001,
+      "group_macro_CDF": 0.0001524533872725442,
+      "group_macro_tail": 0.001455926219932735,
+      "protein_macro_H": 0.04731692540854156,
+      "protein_macro_CDF": 0.00014803241356275976,
+      "protein_macro_tail": 0.0014193080132827163
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "proteins": 230,
+      "groups": 188,
+      "group_macro_H": 0.05171898929552994,
+      "group_macro_CDF": 0.0002642137696966529,
+      "group_macro_tail": 0.0023572819773107767,
+      "protein_macro_H": 0.053185641232251994,
+      "protein_macro_CDF": 0.0002681816986296326,
+      "protein_macro_tail": 0.0022526169195771217
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "proteins": 48,
+      "groups": 42,
+      "group_macro_H": 0.056287822454459444,
+      "group_macro_CDF": 0.0003815446689259261,
+      "group_macro_tail": 0.004141511861234903,
+      "protein_macro_H": 0.05641915490909075,
+      "protein_macro_CDF": 0.00036119413562119007,
+      "protein_macro_tail": 0.0038674126844853163
+    }
+  ],
+  "paired": [
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "all",
+      "value": "all",
+      "rows": 21921,
+      "groups": 7999,
+      "delta_H": -0.0015625196223338017,
+      "descriptive_95": [
+        -0.001816996922582203,
+        -0.001332787524361946
+      ],
+      "delta_CDF": -1.759321276040282e-05,
+      "delta_tail": -2.798233981593512e-05,
+      "per_fold_delta_H": {
+        "0": -0.0017581304695620942,
+        "1": -0.0013766529098266644,
+        "2": -0.0013799049168685476,
+        "3": -0.0017348596199329297,
+        "4": -0.0015631724522583088
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "groups": 7701,
+      "delta_H": -0.001544863022814957,
+      "descriptive_95": [
+        -0.001788674045438042,
+        -0.0013092477946361671
+      ],
+      "delta_CDF": -1.670809979259502e-05,
+      "delta_tail": -3.013260538864415e-05,
+      "per_fold_delta_H": {
+        "0": -0.001754263016586495,
+        "1": -0.0014179198217863231,
+        "2": -0.0013850280276836782,
+        "3": -0.001657946693328291,
+        "4": -0.0015085498510602896
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0012780929604781712,
+      "descriptive_95": [
+        -0.0023691146698702975,
+        -0.0002783774841395604
+      ],
+      "delta_CDF": -1.6152924217749387e-05,
+      "delta_tail": -3.514088166411966e-05,
+      "per_fold_delta_H": {
+        "0": -0.0009164779246376431,
+        "1": -0.0003672482599782409,
+        "2": -0.0010657520410932361,
+        "3": -0.0016535038920134984,
+        "4": -0.002394038681175728
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "groups": 767,
+      "delta_H": -0.0017561917159214261,
+      "descriptive_95": [
+        -0.002563111149335472,
+        -0.0009910296296546737
+      ],
+      "delta_CDF": -2.7395593861001544e-05,
+      "delta_tail": 3.706849838636117e-06,
+      "per_fold_delta_H": {
+        "0": -0.0017215862396788087,
+        "1": -0.001562475705208996,
+        "2": -0.0018160707002145143,
+        "3": -0.0021511310381124096,
+        "4": -0.0014924289738627791
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "groups": 2533,
+      "delta_H": -0.0012965077955157441,
+      "descriptive_95": [
+        -0.0016490907247828964,
+        -0.0009468623921949727
+      ],
+      "delta_CDF": -1.190295643027639e-05,
+      "delta_tail": -1.6079071428976022e-05,
+      "per_fold_delta_H": {
+        "0": -0.0017311058483333308,
+        "1": -0.0018572974338492212,
+        "2": -0.0014893324445975284,
+        "3": -0.0010005160691579362,
+        "4": -0.00040380899438036827
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "groups": 3200,
+      "delta_H": -0.001357491342042688,
+      "descriptive_95": [
+        -0.0017096322793272681,
+        -0.0009825291249573598
+      ],
+      "delta_CDF": -1.401840927428566e-05,
+      "delta_tail": -4.054571036249399e-05,
+      "per_fold_delta_H": {
+        "0": -0.0016837999568015058,
+        "1": -0.0008947786380393702,
+        "2": -0.0015170548223521346,
+        "3": -0.0017876096633919203,
+        "4": -0.0008978957927932366
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "groups": 2565,
+      "delta_H": -0.0020757898784801105,
+      "descriptive_95": [
+        -0.0025585845904340177,
+        -0.0016171259954181338
+      ],
+      "delta_CDF": -2.5534975065966137e-05,
+      "delta_tail": -3.289406231488101e-05,
+      "per_fold_delta_H": {
+        "0": -0.0022423710620614948,
+        "1": -0.001186713996178597,
+        "2": -0.0016597356417115683,
+        "3": -0.002500532305301062,
+        "4": -0.00272395035519013
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "groups": 729,
+      "delta_H": -0.001975575568822636,
+      "descriptive_95": [
+        -0.002969283582471783,
+        -0.0010200143324362219
+      ],
+      "delta_CDF": -2.6376823370810598e-05,
+      "delta_tail": -1.8644073861651123e-05,
+      "per_fold_delta_H": {
+        "0": -0.0006592569099069662,
+        "1": -0.003180305143159208,
+        "2": -0.0014504583939548912,
+        "3": -0.0010940361273544946,
+        "4": -0.003251190468971016
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "groups": 1772,
+      "delta_H": -0.001092757229119945,
+      "descriptive_95": [
+        -0.0015312875898808639,
+        -0.0006351234216477395
+      ],
+      "delta_CDF": -7.6226315286476165e-06,
+      "delta_tail": -3.451972588663921e-05,
+      "per_fold_delta_H": {
+        "0": -0.0016415948786365486,
+        "1": -0.0008580739904098592,
+        "2": -0.0015876752496101001,
+        "3": -0.0007393835169621152,
+        "4": -0.0006736044185240778
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "groups": 3157,
+      "delta_H": -0.0015618972500660866,
+      "descriptive_95": [
+        -0.0020282508375717248,
+        -0.0011068005294406842
+      ],
+      "delta_CDF": -1.698706364550162e-05,
+      "delta_tail": -2.470855542924255e-05,
+      "per_fold_delta_H": {
+        "0": -0.0018308798259382558,
+        "1": -0.0015496411953139985,
+        "2": -0.0013432308830645945,
+        "3": -0.0014965609341507785,
+        "4": -0.0015726045309486722
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "groups": 3067,
+      "delta_H": -0.0018268036550913127,
+      "descriptive_95": [
+        -0.0022157222760119093,
+        -0.0014348075857741633
+      ],
+      "delta_CDF": -2.4833074348862283e-05,
+      "delta_tail": -4.735126640298404e-05,
+      "per_fold_delta_H": {
+        "0": -0.0016410117294118204,
+        "1": -0.0016396358396070163,
+        "2": -0.0013440195926290727,
+        "3": -0.002247551680068495,
+        "4": -0.002243010520273793
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "groups": 2516,
+      "delta_H": -0.0015595167444147247,
+      "descriptive_95": [
+        -0.0019609448362620805,
+        -0.0011629366911500914
+      ],
+      "delta_CDF": -1.5995316061889753e-05,
+      "delta_tail": -2.106298597936984e-05,
+      "per_fold_delta_H": {
+        "0": -0.0016166717265007208,
+        "1": -0.0016806846419137461,
+        "2": -0.001501113218843761,
+        "3": -0.0017426115555940758,
+        "4": -0.0012536111068611258
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0012780929604781712,
+      "descriptive_95": [
+        -0.0023691146698702975,
+        -0.0002783774841395604
+      ],
+      "delta_CDF": -1.6152924217749387e-05,
+      "delta_tail": -3.514088166411966e-05,
+      "per_fold_delta_H": {
+        "0": -0.0009164779246376431,
+        "1": -0.0003672482599782409,
+        "2": -0.0010657520410932361,
+        "3": -0.0016535038920134984,
+        "4": -0.002394038681175728
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "groups": 2386,
+      "delta_H": -0.0013299165119104314,
+      "descriptive_95": [
+        -0.0017232302341629714,
+        -0.0009468552102140967
+      ],
+      "delta_CDF": -1.2199734555906616e-05,
+      "delta_tail": -1.549198350403458e-05,
+      "per_fold_delta_H": {
+        "0": -0.001688875787948775,
+        "1": -0.001815225591534346,
+        "2": -0.0016361432445232416,
+        "3": -0.0010993153310368403,
+        "4": -0.00039216962293159296
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "groups": 3047,
+      "delta_H": -0.0013414133352969895,
+      "descriptive_95": [
+        -0.0017195029267914775,
+        -0.0009579962569701745
+      ],
+      "delta_CDF": -1.3599657904705964e-05,
+      "delta_tail": -3.9990754885366186e-05,
+      "per_fold_delta_H": {
+        "0": -0.0016728979821856171,
+        "1": -0.0009969080423520085,
+        "2": -0.0014605442736573895,
+        "3": -0.0018008457187397298,
+        "4": -0.0007789504646625312
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "groups": 2482,
+      "delta_H": -0.001989683628183386,
+      "descriptive_95": [
+        -0.0024749921123432446,
+        -0.001514397142390889
+      ],
+      "delta_CDF": -2.107770887960214e-05,
+      "delta_tail": -3.602916331146844e-05,
+      "per_fold_delta_H": {
+        "0": -0.002328152421834012,
+        "1": -0.0010256958830930848,
+        "2": -0.0014452980472766871,
+        "3": -0.0022697942066506466,
+        "4": -0.002811689983689164
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "groups": 703,
+      "delta_H": -0.0021583818887463734,
+      "descriptive_95": [
+        -0.003115465588625192,
+        -0.001130733192390786
+      ],
+      "delta_CDF": -3.192692020093091e-05,
+      "delta_tail": -3.4876360587077215e-05,
+      "per_fold_delta_H": {
+        "0": -0.0006938267300362067,
+        "1": -0.0038508319964557225,
+        "2": -0.0019771000474088363,
+        "3": -0.0007467903596441589,
+        "4": -0.003283885568555432
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "groups": 248,
+      "delta_H": -0.00035001106065778154,
+      "descriptive_95": [
+        -0.0016914099466713553,
+        0.0009648051776251389
+      ],
+      "delta_CDF": -1.3244821275293361e-05,
+      "delta_tail": -4.156585782766342e-05,
+      "per_fold_delta_H": {
+        "0": -0.0009324741759345057,
+        "1": 0.0010065422277851371,
+        "2": -0.00247871141817204,
+        "3": -4.699088465918988e-05,
+        "4": 0.0007070807931352299
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "groups": 233,
+      "delta_H": -0.001696358687712772,
+      "descriptive_95": [
+        -0.004310729363141371,
+        0.00040874443738495497
+      ],
+      "delta_CDF": -1.9434428395470604e-05,
+      "delta_tail": 2.3924458218971267e-06,
+      "per_fold_delta_H": {
+        "0": -0.001778944735018273,
+        "1": -0.0015736249403243904,
+        "2": 0.0009220489276510341,
+        "3": -0.0004976637899646794,
+        "4": -0.0046903971411834736
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "groups": 163,
+      "delta_H": -0.0028505579271859253,
+      "descriptive_95": [
+        -0.00424018609037369,
+        -0.0014916407756919638
+      ],
+      "delta_CDF": -3.3346121199429035e-05,
+      "delta_tail": -9.766354924067855e-05,
+      "per_fold_delta_H": {
+        "0": -0.0014552556401951425,
+        "1": -0.00019484170260287287,
+        "2": -0.006146974189571115,
+        "3": -0.004206123137218104,
+        "4": -0.0031109565640974543
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "groups": 28,
+      "delta_H": 0.00467276007494269,
+      "descriptive_95": [
+        -0.00013539416276870566,
+        0.01023171891200907
+      ],
+      "delta_CDF": 0.00010714172822190449,
+      "delta_tail": 9.739441884448752e-05,
+      "per_fold_delta_H": {
+        "0": 0.018119601438939287,
+        "1": -0.0013878229880881082,
+        "2": 0.017503978351871577,
+        "3": -0.005577839428352729,
+        "4": -7.895904656232688e-05
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "groups": 269,
+      "delta_H": -0.001513160613657363,
+      "descriptive_95": [
+        -0.002755989473888028,
+        -0.00021710282937726524
+      ],
+      "delta_CDF": -1.2807115126634017e-05,
+      "delta_tail": -2.218796726083383e-05,
+      "per_fold_delta_H": {
+        "0": -0.002544445083723791,
+        "1": -0.0034084336753319178,
+        "2": 0.0006998942018471149,
+        "3": -8.801718092023986e-05,
+        "4": -0.0023145195723532005
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "groups": 298,
+      "delta_H": -0.0018636215004138813,
+      "descriptive_95": [
+        -0.003011316826122713,
+        -0.000716458510444898
+      ],
+      "delta_CDF": -1.7270487660425715e-05,
+      "delta_tail": -5.889961539651267e-05,
+      "per_fold_delta_H": {
+        "0": -0.0018019158411112651,
+        "1": -0.0013729729102388358,
+        "2": -0.0025574490723370633,
+        "3": -0.002435066682873313,
+        "4": -0.0009545873753002629
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "groups": 188,
+      "delta_H": -0.002064378319120102,
+      "descriptive_95": [
+        -0.004027052725160253,
+        -0.00021044392756924943
+      ],
+      "delta_CDF": -7.781697786413133e-05,
+      "delta_tail": 0.000100404788099695,
+      "per_fold_delta_H": {
+        "0": 9.514322032093403e-05,
+        "1": -0.0023872266952288668,
+        "2": -0.0037313230480993526,
+        "3": -0.004612491730857281,
+        "4": -0.00012260553148948222
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "groups": 42,
+      "delta_H": 0.0010786843330084,
+      "descriptive_95": [
+        -0.00390876799636823,
+        0.0063176008526815266
+      ],
+      "delta_CDF": 5.596939445240423e-05,
+      "delta_tail": 0.00027610501274466515,
+      "per_fold_delta_H": {
+        "0": -0.0008963526881881623,
+        "1": 0.015431639777659496,
+        "2": 0.0007385210172814877,
+        "3": -0.0041692026170529195,
+        "4": -0.0056261429957262035
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "all",
+      "value": "all",
+      "rows": 21921,
+      "groups": 7999,
+      "delta_H": -0.003305822558575702,
+      "descriptive_95": [
+        -0.0037014719339549837,
+        -0.0029217247518354473
+      ],
+      "delta_CDF": -1.890887870104052e-05,
+      "delta_tail": -0.00013534074241761118,
+      "per_fold_delta_H": {
+        "0": -0.003250156638687926,
+        "1": -0.002979923842334975,
+        "2": -0.0027410353258023185,
+        "3": -0.004088657455695283,
+        "4": -0.0034693047391580883
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "groups": 7701,
+      "delta_H": -0.0033475852270896233,
+      "descriptive_95": [
+        -0.003740197104916784,
+        -0.0029517453463768343
+      ],
+      "delta_CDF": -1.9313423763378523e-05,
+      "delta_tail": -0.00013859306636732072,
+      "per_fold_delta_H": {
+        "0": -0.003307444446529792,
+        "1": -0.003131538143581643,
+        "2": -0.00275821035336158,
+        "3": -0.004072207775088557,
+        "4": -0.003476072487061138
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0030721857374624447,
+      "descriptive_95": [
+        -0.004590321357126704,
+        -0.0015776796348161309
+      ],
+      "delta_CDF": -2.4832448616507463e-05,
+      "delta_tail": -2.3837699700379744e-05,
+      "per_fold_delta_H": {
+        "0": -0.0017353918334538018,
+        "1": -0.002688006485274258,
+        "2": -0.003197993262144566,
+        "3": -0.0026114605336440624,
+        "4": -0.0049999411009614
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "groups": 767,
+      "delta_H": -0.002206633186770045,
+      "descriptive_95": [
+        -0.0032965003499024616,
+        -0.0011817840231286697
+      ],
+      "delta_CDF": -1.4719612408953253e-05,
+      "delta_tail": -6.544894131366163e-05,
+      "per_fold_delta_H": {
+        "0": -0.002410660168946935,
+        "1": -0.0007640850168793081,
+        "2": -0.0031729464793056605,
+        "3": -0.002144071372855612,
+        "4": -0.0024747908110299074
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "groups": 2533,
+      "delta_H": -0.0036155088739371196,
+      "descriptive_95": [
+        -0.004206361795699594,
+        -0.003039432931909589
+      ],
+      "delta_CDF": -2.3257363864104263e-05,
+      "delta_tail": -5.986792530165985e-05,
+      "per_fold_delta_H": {
+        "0": -0.0033124814869046407,
+        "1": -0.004376372943750699,
+        "2": -0.003694235757711377,
+        "3": -0.0026362135186928995,
+        "4": -0.003949443162598987
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "groups": 3200,
+      "delta_H": -0.00251958171024734,
+      "descriptive_95": [
+        -0.003070485326868758,
+        -0.0019093054981984235
+      ],
+      "delta_CDF": -1.466417234041728e-05,
+      "delta_tail": -0.00012005016469629481,
+      "per_fold_delta_H": {
+        "0": -0.0029745408532342935,
+        "1": -0.00136407080282748,
+        "2": -0.0017901016111375595,
+        "3": -0.003527763689766386,
+        "4": -0.0029127187726784437
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "groups": 2565,
+      "delta_H": -0.004263519155202806,
+      "descriptive_95": [
+        -0.005047448885644956,
+        -0.003490380498971241
+      ],
+      "delta_CDF": -3.725459100678563e-05,
+      "delta_tail": -0.0002501285925973207,
+      "per_fold_delta_H": {
+        "0": -0.004313063492146871,
+        "1": -0.0034178100757356056,
+        "2": -0.003245009749787496,
+        "3": -0.006115322947679594,
+        "4": -0.004049331081638845
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "groups": 729,
+      "delta_H": -0.0011877333753596753,
+      "descriptive_95": [
+        -0.002872469840803458,
+        0.000530509555056007
+      ],
+      "delta_CDF": 4.015235026599839e-05,
+      "delta_tail": -1.687597978161648e-05,
+      "per_fold_delta_H": {
+        "0": 0.0010980632165369791,
+        "1": -0.0020531964667920635,
+        "2": -0.002358457305231383,
+        "3": -0.000568954183174139,
+        "4": -0.00194903246255905
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "groups": 1772,
+      "delta_H": -0.0022923774167520885,
+      "descriptive_95": [
+        -0.0029704087530031654,
+        -0.0015738495777818053
+      ],
+      "delta_CDF": -4.472210093808826e-06,
+      "delta_tail": -5.040705582359806e-05,
+      "per_fold_delta_H": {
+        "0": -0.0016635060898784748,
+        "1": -0.0025243873550899396,
+        "2": -0.003042888659280589,
+        "3": -0.0014037883731279899,
+        "4": -0.002772858214183334
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "groups": 3157,
+      "delta_H": -0.0036564092800644263,
+      "descriptive_95": [
+        -0.004402355999819847,
+        -0.0029583247364530674
+      ],
+      "delta_CDF": -2.1475769244716503e-05,
+      "delta_tail": -0.00014029645535629243,
+      "per_fold_delta_H": {
+        "0": -0.003382199910759949,
+        "1": -0.003987213170362769,
+        "2": -0.0019873799032199407,
+        "3": -0.004991898931696159,
+        "4": -0.004073829366933783
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "groups": 3067,
+      "delta_H": -0.003612326241468664,
+      "descriptive_95": [
+        -0.00425923267475631,
+        -0.0029434494170175866
+      ],
+      "delta_CDF": -2.7094734832644463e-05,
+      "delta_tail": -0.00018558251031208783,
+      "per_fold_delta_H": {
+        "0": -0.0036720916431627754,
+        "1": -0.002688293866519427,
+        "2": -0.002689509414689123,
+        "3": -0.004587224642219188,
+        "4": -0.004364180324722779
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "groups": 2516,
+      "delta_H": -0.002843691869340159,
+      "descriptive_95": [
+        -0.003397314202266782,
+        -0.002292541863284852
+      ],
+      "delta_CDF": -1.5912992239464074e-05,
+      "delta_tail": -0.00011357198673067614,
+      "per_fold_delta_H": {
+        "0": -0.0025796529970613033,
+        "1": -0.0022085308769427964,
+        "2": -0.0037958692061013863,
+        "3": -0.0031104492787175433,
+        "4": -0.002509353787410247
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0030721857374624447,
+      "descriptive_95": [
+        -0.004590321357126704,
+        -0.0015776796348161309
+      ],
+      "delta_CDF": -2.4832448616507463e-05,
+      "delta_tail": -2.3837699700379744e-05,
+      "per_fold_delta_H": {
+        "0": -0.0017353918334538018,
+        "1": -0.002688006485274258,
+        "2": -0.003197993262144566,
+        "3": -0.0026114605336440624,
+        "4": -0.0049999411009614
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "groups": 2386,
+      "delta_H": -0.0037815924650502677,
+      "descriptive_95": [
+        -0.0044105260924263935,
+        -0.003159521711134017
+      ],
+      "delta_CDF": -2.4492610464221798e-05,
+      "delta_tail": -6.217357440618798e-05,
+      "per_fold_delta_H": {
+        "0": -0.0034953073042590724,
+        "1": -0.004378517956613079,
+        "2": -0.0038185829100046975,
+        "3": -0.0028415400484241224,
+        "4": -0.004268089050365187
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "groups": 3047,
+      "delta_H": -0.0024686451588502283,
+      "descriptive_95": [
+        -0.0030460175555648704,
+        -0.0018907396246824618
+      ],
+      "delta_CDF": -1.405498096573865e-05,
+      "delta_tail": -0.0001146923823398538,
+      "per_fold_delta_H": {
+        "0": -0.0029390869458745528,
+        "1": -0.0014129246657194755,
+        "2": -0.0017010243298133249,
+        "3": -0.0035230513686293763,
+        "4": -0.002761808646770808
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "groups": 2482,
+      "delta_H": -0.004215772899825095,
+      "descriptive_95": [
+        -0.0049891368460932015,
+        -0.003443896885868883
+      ],
+      "delta_CDF": -3.6124460166320205e-05,
+      "delta_tail": -0.0002574733807705343,
+      "per_fold_delta_H": {
+        "0": -0.004219345471414192,
+        "1": -0.003747000464171285,
+        "2": -0.0030449482719239543,
+        "3": -0.005937420255060416,
+        "4": -0.003940714997847913
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "groups": 703,
+      "delta_H": -0.001203092891667659,
+      "descriptive_95": [
+        -0.0028193690830649347,
+        0.0004376428841660767
+      ],
+      "delta_CDF": 3.842009391519241e-05,
+      "delta_tail": -3.4336397220613435e-05,
+      "per_fold_delta_H": {
+        "0": 0.0011062922592357943,
+        "1": -0.0027735197682883933,
+        "2": -0.002362431921601141,
+        "3": -0.00020138704378989958,
+        "4": -0.0017129566124326825
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "groups": 248,
+      "delta_H": -0.0017666028931212585,
+      "descriptive_95": [
+        -0.003812880862851307,
+        0.0004052193261259664
+      ],
+      "delta_CDF": -1.6016882000258192e-05,
+      "delta_tail": 5.585288454312831e-05,
+      "per_fold_delta_H": {
+        "0": 6.678650955329463e-05,
+        "1": -0.0026057634957026843,
+        "2": -0.0023006927784108983,
+        "3": -0.001786925934238591,
+        "4": -0.001997684091796327
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "groups": 233,
+      "delta_H": -0.0026222472619714344,
+      "descriptive_95": [
+        -0.005586233691049406,
+        -8.085419254261943e-05
+      ],
+      "delta_CDF": -1.9543102098396048e-05,
+      "delta_tail": -1.351369428448379e-05,
+      "per_fold_delta_H": {
+        "0": -0.0016001718828141179,
+        "1": -0.0013370164225315964,
+        "2": -0.0038003507836104206,
+        "3": 0.0011344945369290774,
+        "4": -0.007033296814493155
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "groups": 163,
+      "delta_H": -0.005137691098714754,
+      "descriptive_95": [
+        -0.007811375259725939,
+        -0.0025918202109820334
+      ],
+      "delta_CDF": -5.165573747945018e-05,
+      "delta_tail": -0.00014351162826642394,
+      "per_fold_delta_H": {
+        "0": -0.006025078988144243,
+        "1": -0.0029857301645270923,
+        "2": -0.007648808239447698,
+        "3": -0.005534853691136737,
+        "4": -0.004445753014925412
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "groups": 28,
+      "delta_H": -0.00025804655457612623,
+      "descriptive_95": [
+        -0.010445783882282548,
+        0.011613304381627443
+      ],
+      "delta_CDF": 6.0635888075921685e-05,
+      "delta_tail": 5.534820957109332e-05,
+      "per_fold_delta_H": {
+        "0": 0.014683526254081952,
+        "1": -0.0033875035764900363,
+        "2": 0.018026035524449438,
+        "3": -0.012894479993592778,
+        "4": -0.01193944353245005
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "groups": 269,
+      "delta_H": -0.0020429849516639402,
+      "descriptive_95": [
+        -0.0036642118297375926,
+        -0.00041783687108671756
+      ],
+      "delta_CDF": -7.328218998736702e-06,
+      "delta_tail": -3.38969512085896e-05,
+      "per_fold_delta_H": {
+        "0": -0.002246666504559569,
+        "1": -0.0040582710226513205,
+        "2": -0.0025861235651212233,
+        "3": -8.04126941647415e-05,
+        "4": -0.0015455958470958556
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "groups": 298,
+      "delta_H": -0.002561782254154879,
+      "descriptive_95": [
+        -0.0041759787717416,
+        -0.0009627544146329333
+      ],
+      "delta_CDF": -2.2384281692211516e-05,
+      "delta_tail": -0.00014691385149490088,
+      "per_fold_delta_H": {
+        "0": -0.0031411207030319424,
+        "1": -0.0010940582907682933,
+        "2": -0.003204097961320783,
+        "3": -0.0028971373296823727,
+        "4": -0.0020960771270199102
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "groups": 188,
+      "delta_H": -0.0026155905254667336,
+      "descriptive_95": [
+        -0.004846806765034581,
+        -0.0004175626817435673
+      ],
+      "delta_CDF": -2.977317308250349e-05,
+      "delta_tail": -9.475286060478538e-05,
+      "per_fold_delta_H": {
+        "0": -0.00043783644898982843,
+        "1": -0.0001719799430378241,
+        "2": -0.005428718251150731,
+        "3": -0.0022916842937973567,
+        "4": -0.005520218056677462
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "groups": 42,
+      "delta_H": 0.0017430245528853633,
+      "descriptive_95": [
+        -0.0052944196448924,
+        0.008720174519195404
+      ],
+      "delta_CDF": 5.458390660351142e-05,
+      "delta_tail": 0.0005914318026043475,
+      "per_fold_delta_H": {
+        "0": -0.0022648770797160517,
+        "1": 0.020051287176262672,
+        "2": -1.0489996826880399e-05,
+        "3": -0.010343387075741388,
+        "4": 0.0017209683778764973
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "all",
+      "value": "all",
+      "rows": 21921,
+      "groups": 7999,
+      "delta_H": -0.0017433029362419006,
+      "descriptive_95": [
+        -0.002118650671570973,
+        -0.001359638800210382
+      ],
+      "delta_CDF": -1.315664803769323e-06,
+      "delta_tail": -0.00010735840623965487,
+      "per_fold_delta_H": {
+        "0": -0.0014920261691258319,
+        "1": -0.0016032709325083105,
+        "2": -0.0013611304089337709,
+        "3": -0.002353797835762353,
+        "4": -0.0019061322868997796
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "groups": 7701,
+      "delta_H": -0.0018027222042746659,
+      "descriptive_95": [
+        -0.002196176229559971,
+        -0.0014069777314542659
+      ],
+      "delta_CDF": -2.6053232886624755e-06,
+      "delta_tail": -0.00010846045915968716,
+      "per_fold_delta_H": {
+        "0": -0.001553181429943297,
+        "1": -0.0017136183217953196,
+        "2": -0.0013731823256779019,
+        "3": -0.002414261081760266,
+        "4": -0.0019675226360008485
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0017940927769842737,
+      "descriptive_95": [
+        -0.0031641928061974783,
+        -0.0003780462002507365
+      ],
+      "delta_CDF": -8.679522579768673e-06,
+      "delta_tail": 1.1303182873234618e-05,
+      "per_fold_delta_H": {
+        "0": -0.0008189139088161587,
+        "1": -0.002320758225296017,
+        "2": -0.00213224122105133,
+        "3": -0.000957956641630564,
+        "4": -0.0026059024197856717
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "groups": 767,
+      "delta_H": -0.0004504414708486193,
+      "descriptive_95": [
+        -0.001514705024945775,
+        0.0006601722628837853
+      ],
+      "delta_CDF": 1.2675977814069483e-05,
+      "delta_tail": -6.91557870595716e-05,
+      "per_fold_delta_H": {
+        "0": -0.0006890739292681261,
+        "1": 0.0007983906883296879,
+        "2": -0.0013568757790911462,
+        "3": 7.059665256797798e-06,
+        "4": -0.0009823618371671283
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "groups": 2533,
+      "delta_H": -0.002319001078421376,
+      "descriptive_95": [
+        -0.0029217270977047647,
+        -0.0017375612595386502
+      ],
+      "delta_CDF": -1.1354407433827873e-05,
+      "delta_tail": -4.378885205369443e-05,
+      "per_fold_delta_H": {
+        "0": -0.0015813756385713099,
+        "1": -0.0025190755099014778,
+        "2": -0.0022049033131138485,
+        "3": -0.0016356974495349633,
+        "4": -0.0035456341682186185
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "groups": 3200,
+      "delta_H": -0.001162090368204652,
+      "descriptive_95": [
+        -0.001704743544704483,
+        -0.0006213826389041588
+      ],
+      "delta_CDF": -6.457612471422181e-07,
+      "delta_tail": -7.950445433380082e-05,
+      "per_fold_delta_H": {
+        "0": -0.0012907408964327877,
+        "1": -0.00046929216478810987,
+        "2": -0.0002730467887854249,
+        "3": -0.0017401540263744658,
+        "4": -0.002014822979885207
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "groups": 2565,
+      "delta_H": -0.0021877292767226958,
+      "descriptive_95": [
+        -0.002969589911853345,
+        -0.0014210412338027825
+      ],
+      "delta_CDF": -1.1719610483851284e-05,
+      "delta_tail": -0.00021723452664446086,
+      "per_fold_delta_H": {
+        "0": -0.002070692430085376,
+        "1": -0.0022310960795570087,
+        "2": -0.0015852741080759278,
+        "3": -0.003614790642378532,
+        "4": -0.0013253807264487147
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "groups": 729,
+      "delta_H": 0.0007878421934629607,
+      "descriptive_95": [
+        -0.0008541023062761851,
+        0.0024626100056768115
+      ],
+      "delta_CDF": 6.652917363680899e-05,
+      "delta_tail": 1.7681101098787622e-06,
+      "per_fold_delta_H": {
+        "0": 0.0017573201264439453,
+        "1": 0.0011271086763671445,
+        "2": -0.0009079989112764919,
+        "3": 0.0005250819441803556,
+        "4": 0.0013021580064119659
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "groups": 1772,
+      "delta_H": -0.001199620187632143,
+      "descriptive_95": [
+        -0.0018913447272789162,
+        -0.0004800685004910998
+      ],
+      "delta_CDF": 3.1504198432230623e-06,
+      "delta_tail": -1.5887333574937657e-05,
+      "per_fold_delta_H": {
+        "0": -2.1911211241926187e-05,
+        "1": -0.0016663133646800804,
+        "2": -0.0014552134096704888,
+        "3": -0.0006644048561658747,
+        "4": -0.002099253795659256
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "groups": 3157,
+      "delta_H": -0.002094512029998339,
+      "descriptive_95": [
+        -0.002764110262283675,
+        -0.0014181065254589606
+      ],
+      "delta_CDF": -4.488705599214882e-06,
+      "delta_tail": -0.00011558789992704988,
+      "per_fold_delta_H": {
+        "0": -0.0015513200848216932,
+        "1": -0.0024375719750487704,
+        "2": -0.0006441490201553463,
+        "3": -0.0034953379975453808,
+        "4": -0.002501224835985111
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "groups": 3067,
+      "delta_H": -0.0017855225863773506,
+      "descriptive_95": [
+        -0.0024297395299908366,
+        -0.0011249845887584338
+      ],
+      "delta_CDF": -2.2616593469138024e-06,
+      "delta_tail": -0.0001382312475470826,
+      "per_fold_delta_H": {
+        "0": -0.002031079913750955,
+        "1": -0.0010486580269124107,
+        "2": -0.0013454898220600503,
+        "3": -0.0023396729621506934,
+        "4": -0.0021211698044489857
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "groups": 2516,
+      "delta_H": -0.0012841751249254342,
+      "descriptive_95": [
+        -0.001842160579150721,
+        -0.0006908028631362681
+      ],
+      "delta_CDF": 8.232469639324336e-08,
+      "delta_tail": -9.250899165635929e-05,
+      "per_fold_delta_H": {
+        "0": -0.0009629812705605825,
+        "1": -0.0005278462350290503,
+        "2": -0.0022947559872576254,
+        "3": -0.0013678377231234676,
+        "4": -0.0012557426805491212
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0017940927769842737,
+      "descriptive_95": [
+        -0.0031641928061974783,
+        -0.0003780462002507365
+      ],
+      "delta_CDF": -8.679522579768673e-06,
+      "delta_tail": 1.1303182873234618e-05,
+      "per_fold_delta_H": {
+        "0": -0.0008189139088161587,
+        "1": -0.002320758225296017,
+        "2": -0.00213224122105133,
+        "3": -0.000957956641630564,
+        "4": -0.0026059024197856717
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "groups": 2386,
+      "delta_H": -0.0024516759531398357,
+      "descriptive_95": [
+        -0.003070107598795894,
+        -0.001839951106155261
+      ],
+      "delta_CDF": -1.2292876817809884e-05,
+      "delta_tail": -4.6681587264174595e-05,
+      "per_fold_delta_H": {
+        "0": -0.0018064315163102973,
+        "1": -0.002563292365078733,
+        "2": -0.002182439665481456,
+        "3": -0.001742224717387282,
+        "4": -0.003875919427433594
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "groups": 3047,
+      "delta_H": -0.0011272318235532384,
+      "descriptive_95": [
+        -0.001668707496233483,
+        -0.0005650001647942447
+      ],
+      "delta_CDF": -4.553232884063618e-07,
+      "delta_tail": -7.470163109246641e-05,
+      "per_fold_delta_H": {
+        "0": -0.0012661889636889356,
+        "1": -0.000416016623367467,
+        "2": -0.00024048005615593532,
+        "3": -0.0017222056498896465,
+        "4": -0.001982858182108277
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "groups": 2482,
+      "delta_H": -0.0022260892716417097,
+      "descriptive_95": [
+        -0.0029953278331711214,
+        -0.0014346990502327169
+      ],
+      "delta_CDF": -1.5046750377223361e-05,
+      "delta_tail": -0.00022144420654512942,
+      "per_fold_delta_H": {
+        "0": -0.0018911930495801796,
+        "1": -0.0027213045810782002,
+        "2": -0.0015996502246472671,
+        "3": -0.0036676260484097695,
+        "4": -0.0011290250141587493
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "groups": 703,
+      "delta_H": 0.0009552889970787142,
+      "descriptive_95": [
+        -0.0008028482771275107,
+        0.002588377438436675
+      ],
+      "delta_CDF": 7.03470068401657e-05,
+      "delta_tail": 5.399683686846402e-07,
+      "per_fold_delta_H": {
+        "0": 0.001800118989272001,
+        "1": 0.0010773122281673292,
+        "2": -0.0003853318741923045,
+        "3": 0.0005454033158542593,
+        "4": 0.0015709289561227496
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "groups": 248,
+      "delta_H": -0.0014165918324634773,
+      "descriptive_95": [
+        -0.0035625735464381632,
+        0.0008057195916075721
+      ],
+      "delta_CDF": -2.7720618618332082e-06,
+      "delta_tail": 9.741874237079173e-05,
+      "per_fold_delta_H": {
+        "0": 0.0009992606854878003,
+        "1": -0.0036123057234878214,
+        "2": 0.0001780186397611419,
+        "3": -0.001739935049579401,
+        "4": -0.002704764884931557
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "groups": 233,
+      "delta_H": -0.0009258885742586631,
+      "descriptive_95": [
+        -0.0031073635158042883,
+        0.001252261972860136
+      ],
+      "delta_CDF": -1.0867670141578856e-07,
+      "delta_tail": -1.5906145563349128e-05,
+      "per_fold_delta_H": {
+        "0": 0.00017877285220415512,
+        "1": 0.00023660851779279402,
+        "2": -0.004722399711261455,
+        "3": 0.0016321583268937567,
+        "4": -0.0023428996733096813
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "groups": 163,
+      "delta_H": -0.002287133171528829,
+      "descriptive_95": [
+        -0.005319585445482349,
+        0.0005282331183208274
+      ],
+      "delta_CDF": -1.8309616280021146e-05,
+      "delta_tail": -4.5848100853618234e-05,
+      "per_fold_delta_H": {
+        "0": -0.004569823347949101,
+        "1": -0.0027908884619242194,
+        "2": -0.0015018340498765825,
+        "3": -0.0013287305539186334,
+        "4": -0.0013347964508279575
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "groups": 28,
+      "delta_H": -0.004930806629518816,
+      "descriptive_95": [
+        -0.014998063364003314,
+        0.004723601158637103
+      ],
+      "delta_CDF": -4.650583287002519e-05,
+      "delta_tail": -4.2046238377224654e-05,
+      "per_fold_delta_H": {
+        "0": -0.0034360751848573345,
+        "1": -0.001999680588401928,
+        "2": 0.0005220571725778611,
+        "3": -0.0073166405652400485,
+        "4": -0.011860484485887723
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "groups": 269,
+      "delta_H": -0.0005298243380065778,
+      "descriptive_95": [
+        -0.0022213630441935694,
+        0.0012253313083795039
+      ],
+      "delta_CDF": 5.478897492139367e-06,
+      "delta_tail": -1.1708978490787558e-05,
+      "per_fold_delta_H": {
+        "0": 0.00029777857916422207,
+        "1": -0.0006498373473194027,
+        "2": -0.0032860177669683382,
+        "3": 7.604486755498352e-06,
+        "4": 0.000768923725257345
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "groups": 298,
+      "delta_H": -0.0006981607537409978,
+      "descriptive_95": [
+        -0.0023964646957875067,
+        0.0010006059934086055
+      ],
+      "delta_CDF": -5.113794486533152e-06,
+      "delta_tail": -8.801421790849417e-05,
+      "per_fold_delta_H": {
+        "0": -0.0013392048619206773,
+        "1": 0.00027891461947054247,
+        "2": -0.0006466488889837196,
+        "3": -0.0004620706468090596,
+        "4": -0.0011414897517196473
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "groups": 188,
+      "delta_H": -0.0005512122063466315,
+      "descriptive_95": [
+        -0.002987707249702458,
+        0.0017956370076455377
+      ],
+      "delta_CDF": 4.804381023859605e-05,
+      "delta_tail": -0.00019515764142852277,
+      "per_fold_delta_H": {
+        "0": -0.0005329796693107625,
+        "1": 0.0022152467521910427,
+        "2": -0.0016973952030513786,
+        "3": 0.002320807437059924,
+        "4": -0.0053976125251879795
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 1701,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "groups": 42,
+      "delta_H": 0.0006643402198769639,
+      "descriptive_95": [
+        -0.00560837333358465,
+        0.006914651849976729
+      ],
+      "delta_CDF": -1.3854868257112685e-06,
+      "delta_tail": 0.0003153268771711737,
+      "per_fold_delta_H": {
+        "0": -0.0013685243915278894,
+        "1": 0.004619647398603176,
+        "2": -0.0007490110141083681,
+        "3": -0.006174184458688468,
+        "4": 0.007347111373602701
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "all",
+      "value": "all",
+      "rows": 21921,
+      "groups": 7999,
+      "delta_H": -0.0014060353391652503,
+      "descriptive_95": [
+        -0.0016276760910549717,
+        -0.0011871687965850314
+      ],
+      "delta_CDF": -1.708903073449619e-05,
+      "delta_tail": -2.538917942729313e-05,
+      "per_fold_delta_H": {
+        "0": -0.0012925222151954352,
+        "1": -0.0015047266355511305,
+        "2": -0.001705836012228082,
+        "3": -0.001285752686964528,
+        "4": -0.0012412682001846295
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "groups": 7701,
+      "delta_H": -0.001393667855315718,
+      "descriptive_95": [
+        -0.0016159821382787127,
+        -0.001168432285496761
+      ],
+      "delta_CDF": -1.5540932508883998e-05,
+      "delta_tail": -2.4342789401998743e-05,
+      "per_fold_delta_H": {
+        "0": -0.0012215831529410262,
+        "1": -0.0014999814946704132,
+        "2": -0.0017700108592262412,
+        "3": -0.0012859909318678267,
+        "4": -0.0011905205251610679
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0006753492207863121,
+      "descriptive_95": [
+        -0.0014368442971284172,
+        0.0001290433859544672
+      ],
+      "delta_CDF": -7.4549529927026015e-06,
+      "delta_tail": -4.52589119959157e-06,
+      "per_fold_delta_H": {
+        "0": 0.00019772275349871915,
+        "1": -0.00048459563815467926,
+        "2": -0.0014144801447683736,
+        "3": -0.0009339354151363249,
+        "4": -0.0008376709949665037
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "groups": 767,
+      "delta_H": -0.001438980100519083,
+      "descriptive_95": [
+        -0.0022306108723509524,
+        -0.0006362789377018129
+      ],
+      "delta_CDF": -3.154233127133921e-05,
+      "delta_tail": -2.4759352527325973e-05,
+      "per_fold_delta_H": {
+        "0": -0.0024370774197525064,
+        "1": -0.0012596206143876548,
+        "2": -0.0018762381087926716,
+        "3": -0.0007356112918454408,
+        "4": -0.0010322714424731497
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "groups": 2533,
+      "delta_H": -0.0013289044024541797,
+      "descriptive_95": [
+        -0.0016790252479355386,
+        -0.0010013653483758604
+      ],
+      "delta_CDF": -1.2343741218501236e-05,
+      "delta_tail": -4.188389084447408e-06,
+      "per_fold_delta_H": {
+        "0": -0.002312812139659233,
+        "1": -0.0016813679202251491,
+        "2": -0.0014385171366424199,
+        "3": -0.0004512238557096149,
+        "4": -0.00078503778208424
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "groups": 3200,
+      "delta_H": -0.0012626974273581934,
+      "descriptive_95": [
+        -0.0015637634224882839,
+        -0.0009395936015621723
+      ],
+      "delta_CDF": -1.0981951163557824e-05,
+      "delta_tail": -1.094516755983932e-05,
+      "per_fold_delta_H": {
+        "0": -0.000851092806786316,
+        "1": -0.001400718934599282,
+        "2": -0.0014904359421789234,
+        "3": -0.0014345084280773385,
+        "4": -0.0011676424004197355
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "groups": 2565,
+      "delta_H": -0.0011866570728023924,
+      "descriptive_95": [
+        -0.0016131246414762608,
+        -0.0007654227989936738
+      ],
+      "delta_CDF": -1.8635704691405408e-05,
+      "delta_tail": -3.509093221509829e-05,
+      "per_fold_delta_H": {
+        "0": -0.0005702977843692822,
+        "1": -0.0008393929300653385,
+        "2": -0.0015407746451701829,
+        "3": -0.0018036037437733632,
+        "4": -0.0011532032202780512
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "groups": 729,
+      "delta_H": -0.003029380471876756,
+      "descriptive_95": [
+        -0.003979828024150622,
+        -0.002037431405415727
+      ],
+      "delta_CDF": -5.102953582536429e-05,
+      "delta_tail": -0.00014874592307023704,
+      "per_fold_delta_H": {
+        "0": -0.0025604831361539376,
+        "1": -0.003232378905688317,
+        "2": -0.004147381945087604,
+        "3": -0.0015814462402248264,
+        "4": -0.0035140000054050477
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "groups": 1772,
+      "delta_H": -0.0010863219047005668,
+      "descriptive_95": [
+        -0.0015027285756588058,
+        -0.000651751636357842
+      ],
+      "delta_CDF": -1.0546762496232986e-05,
+      "delta_tail": 2.900855633924948e-06,
+      "per_fold_delta_H": {
+        "0": -0.000533720309894202,
+        "1": -0.000953609527483204,
+        "2": -0.0009298999120493784,
+        "3": -0.0017064405974588637,
+        "4": -0.0013090705118670026
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "groups": 3157,
+      "delta_H": -0.0014505798942978877,
+      "descriptive_95": [
+        -0.0018135216248258757,
+        -0.0010631912163324131
+      ],
+      "delta_CDF": -1.706398143141996e-05,
+      "delta_tail": -3.910056329914369e-05,
+      "per_fold_delta_H": {
+        "0": -0.0013453477167740951,
+        "1": -0.0016194541076420751,
+        "2": -0.0021829166779110884,
+        "3": -0.0005655383832390351,
+        "4": -0.001469987440731929
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "groups": 3067,
+      "delta_H": -0.0016602887474859353,
+      "descriptive_95": [
+        -0.002024621525489023,
+        -0.0012965048513538093
+      ],
+      "delta_CDF": -2.0246077838237397e-05,
+      "delta_tail": -3.396256943233311e-05,
+      "per_fold_delta_H": {
+        "0": -0.0013924782071664185,
+        "1": -0.0014751805354647207,
+        "2": -0.0016955659782079552,
+        "3": -0.0024071591056011865,
+        "4": -0.001296013669035749
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "groups": 2516,
+      "delta_H": -0.0012745435044424595,
+      "descriptive_95": [
+        -0.0016845515689222108,
+        -0.0008937573100113134
+      ],
+      "delta_CDF": -1.8132199329556897e-05,
+      "delta_tail": -9.345749276690185e-06,
+      "per_fold_delta_H": {
+        "0": -0.0015289524546991326,
+        "1": -0.001363448413452449,
+        "2": -0.0015507593017533919,
+        "3": -0.0011302173887720243,
+        "4": -0.0008284926748692301
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0006753492207863121,
+      "descriptive_95": [
+        -0.0014368442971284172,
+        0.0001290433859544672
+      ],
+      "delta_CDF": -7.4549529927026015e-06,
+      "delta_tail": -4.52589119959157e-06,
+      "per_fold_delta_H": {
+        "0": 0.00019772275349871915,
+        "1": -0.00048459563815467926,
+        "2": -0.0014144801447683736,
+        "3": -0.0009339354151363249,
+        "4": -0.0008376709949665037
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "groups": 2386,
+      "delta_H": -0.0013801743661943824,
+      "descriptive_95": [
+        -0.001757803080480161,
+        -0.0010330661894713442
+      ],
+      "delta_CDF": -1.2596879969350994e-05,
+      "delta_tail": -4.728249678009888e-06,
+      "per_fold_delta_H": {
+        "0": -0.0021891466374799884,
+        "1": -0.0019522321973342305,
+        "2": -0.0014669406270743507,
+        "3": -0.0005518023162354446,
+        "4": -0.0007268481083361686
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "groups": 3047,
+      "delta_H": -0.0012777100888220242,
+      "descriptive_95": [
+        -0.0016206339797934994,
+        -0.0009532865086402292
+      ],
+      "delta_CDF": -1.057588633557316e-05,
+      "delta_tail": -1.1105367775599007e-05,
+      "per_fold_delta_H": {
+        "0": -0.0009338120244146847,
+        "1": -0.001396653923147119,
+        "2": -0.0015083408447217825,
+        "3": -0.0013881444810475638,
+        "4": -0.0011930798137404636
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "groups": 2482,
+      "delta_H": -0.0011271999722035242,
+      "descriptive_95": [
+        -0.0015505912586043996,
+        -0.0007161820799316387
+      ],
+      "delta_CDF": -1.3086715625831857e-05,
+      "delta_tail": -3.511725662974641e-05,
+      "per_fold_delta_H": {
+        "0": -0.0005076263656464963,
+        "1": -0.0004966499866370794,
+        "2": -0.0016095717874541962,
+        "3": -0.0018839333892097729,
+        "4": -0.0010752951556611892
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "groups": 703,
+      "delta_H": -0.0030083804317271087,
+      "descriptive_95": [
+        -0.004008526474714016,
+        -0.0020244107190914586
+      ],
+      "delta_CDF": -5.55238984816242e-05,
+      "delta_tail": -0.00013012212002649903,
+      "per_fold_delta_H": {
+        "0": -0.0023789475617660982,
+        "1": -0.0034908723312038967,
+        "2": -0.004236095689141774,
+        "3": -0.0013385898379729005,
+        "4": -0.003494153484923865
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "groups": 248,
+      "delta_H": -0.0014920235885765715,
+      "descriptive_95": [
+        -0.0027646494697486828,
+        -0.00010824704321638979
+      ],
+      "delta_CDF": -2.130089524143841e-05,
+      "delta_tail": -3.0303088351502083e-05,
+      "per_fold_delta_H": {
+        "0": -0.000983767431179186,
+        "1": -0.0005368931625229154,
+        "2": -0.0046140145227076546,
+        "3": -0.0011458408440292792,
+        "4": -4.963624599993444e-06
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "groups": 233,
+      "delta_H": -5.363778219414592e-05,
+      "descriptive_95": [
+        -0.0012065549920863212,
+        0.0011301615492934818
+      ],
+      "delta_CDF": 1.3439074564303155e-07,
+      "delta_tail": 7.378203463304089e-06,
+      "per_fold_delta_H": {
+        "0": 0.00020713031042030733,
+        "1": -0.0014848548277367549,
+        "2": 0.0007006334952761178,
+        "3": 8.153592069997523e-05,
+        "4": 0.0003318178951561557
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "groups": 163,
+      "delta_H": -0.0009553253840257771,
+      "descriptive_95": [
+        -0.0024911898592913403,
+        0.0005409190655149389
+      ],
+      "delta_CDF": -2.780210479613743e-06,
+      "delta_tail": 2.0880142983514816e-05,
+      "per_fold_delta_H": {
+        "0": 3.685241201526607e-05,
+        "1": -0.0005591072167374436,
+        "2": 9.71516990289703e-05,
+        "3": -0.0015792095432340045,
+        "4": -0.002229644921877501
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "groups": 28,
+      "delta_H": -7.539035876758442e-05,
+      "descriptive_95": [
+        -0.004816023838748696,
+        0.00519784996943606
+      ],
+      "delta_CDF": 7.670060767850373e-06,
+      "delta_tail": -0.0003370141494087875,
+      "per_fold_delta_H": {
+        "0": 0.002773810602085744,
+        "1": -0.00043816281537450985,
+        "2": 0.002012015868979339,
+        "3": -0.0048236873359038465,
+        "4": -0.0008019313122509253
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "groups": 269,
+      "delta_H": -0.0008908661786187629,
+      "descriptive_95": [
+        -0.0021087208753528645,
+        0.0003618909682301521
+      ],
+      "delta_CDF": -1.0717428267525975e-05,
+      "delta_tail": 1.2967983820999507e-05,
+      "per_fold_delta_H": {
+        "0": -0.0037037881095632816,
+        "1": -0.00036630221390338696,
+        "2": -0.0010389613007631832,
+        "3": 0.0002526319847042935,
+        "4": -0.00015858616362657285
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "groups": 298,
+      "delta_H": -0.001274193926940495,
+      "descriptive_95": [
+        -0.002326998987116315,
+        -0.0002127331038730404
+      ],
+      "delta_CDF": -1.9126835468341596e-05,
+      "delta_tail": -2.6218665880151093e-05,
+      "per_fold_delta_H": {
+        "0": -0.0012180698591809716,
+        "1": -0.0007381630297110808,
+        "2": -0.0016890194666903877,
+        "3": -0.001466111538096164,
+        "4": -0.001071282685454103
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "groups": 188,
+      "delta_H": -0.0019391224421706457,
+      "descriptive_95": [
+        -0.00411259277237775,
+        1.4996203712099454e-05
+      ],
+      "delta_CDF": -8.706257358426228e-05,
+      "delta_tail": -2.2394788175006397e-05,
+      "per_fold_delta_H": {
+        "0": -0.000970083180171083,
+        "1": -0.004214265474813121,
+        "2": -0.0015967990294710604,
+        "3": 0.00012858162783652843,
+        "4": -0.0023709318393192735
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus mean_pre",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "groups": 42,
+      "delta_H": -0.003127342093007077,
+      "descriptive_95": [
+        -0.007457023148067352,
+        0.0010701416854126003
+      ],
+      "delta_CDF": 1.1805802387243602e-05,
+      "delta_tail": -0.00022866856306791306,
+      "per_fold_delta_H": {
+        "0": -0.004427567450144304,
+        "1": 0.004234959317704123,
+        "2": -0.006734969995052353,
+        "3": -0.007012320275013889,
+        "4": -0.0007949050870176416
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "all",
+      "value": "all",
+      "rows": 21921,
+      "groups": 7999,
+      "delta_H": -0.00333158354336703,
+      "descriptive_95": [
+        -0.0037050592190558704,
+        -0.002951325038805764
+      ],
+      "delta_CDF": -2.0922632756992243e-05,
+      "delta_tail": -0.00013085073442198336,
+      "per_fold_delta_H": {
+        "0": -0.003254541955453681,
+        "1": -0.0031866915634654533,
+        "2": -0.0031143505801646196,
+        "3": -0.003748839990508908,
+        "4": -0.00335344547625005
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "groups": 7701,
+      "delta_H": -0.0033706700029447387,
+      "descriptive_95": [
+        -0.003749087178409799,
+        -0.002994689208065245
+      ],
+      "delta_CDF": -2.257488995383028e-05,
+      "delta_tail": -0.00013239175314083695,
+      "per_fold_delta_H": {
+        "0": -0.003236398468309136,
+        "1": -0.003450616298712239,
+        "2": -0.0031049886178089944,
+        "3": -0.0036726816501903223,
+        "4": -0.0033929318197240613
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.003181620799804821,
+      "descriptive_95": [
+        -0.004529341353549556,
+        -0.0018433895139372324
+      ],
+      "delta_CDF": -2.623627551656682e-05,
+      "delta_tail": -3.447146445978433e-05,
+      "per_fold_delta_H": {
+        "0": -0.0019766705283166194,
+        "1": -0.0043916506453440946,
+        "2": -0.0036479071807081487,
+        "3": -0.002159864687420951,
+        "4": -0.0035663730166402424
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "groups": 767,
+      "delta_H": -0.0021256139395451497,
+      "descriptive_95": [
+        -0.003173937407915612,
+        -0.0010321277278711343
+      ],
+      "delta_CDF": 1.1821695125036058e-06,
+      "delta_tail": -9.174230945063755e-05,
+      "per_fold_delta_H": {
+        "0": -0.002833262597949679,
+        "1": 0.0004812298201088694,
+        "2": -0.0027934940495600927,
+        "3": -0.0028996581765149618,
+        "4": -0.0024515275379095383
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "groups": 2533,
+      "delta_H": -0.00407094380787842,
+      "descriptive_95": [
+        -0.004650653451041613,
+        -0.0035025157853729068
+      ],
+      "delta_CDF": -2.6578820325084962e-05,
+      "delta_tail": -7.834447751520202e-05,
+      "per_fold_delta_H": {
+        "0": -0.004308188418327745,
+        "1": -0.004416375115142139,
+        "2": -0.004019491135860434,
+        "3": -0.0032692012498625883,
+        "4": -0.004307270029243644
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "groups": 3200,
+      "delta_H": -0.002498786317686059,
+      "descriptive_95": [
+        -0.003023820049758838,
+        -0.001966606553794426
+      ],
+      "delta_CDF": -1.439427796867676e-05,
+      "delta_tail": -8.64833127707243e-05,
+      "per_fold_delta_H": {
+        "0": -0.0027015379262255515,
+        "1": -0.0020635870954626087,
+        "2": -0.0018730690372472589,
+        "3": -0.0029432963978169094,
+        "4": -0.002893027646882179
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "groups": 2565,
+      "delta_H": -0.0038435213425354964,
+      "descriptive_95": [
+        -0.004590817042470365,
+        -0.0030881842542145937
+      ],
+      "delta_CDF": -3.198713602614589e-05,
+      "delta_tail": -0.00023212112137116492,
+      "per_fold_delta_H": {
+        "0": -0.003442727575631223,
+        "1": -0.0035190821661086266,
+        "2": -0.0033277408231955213,
+        "3": -0.0053499799806444245,
+        "4": -0.0034699897014626516
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "groups": 729,
+      "delta_H": -0.001721845043705876,
+      "descriptive_95": [
+        -0.003386738177592201,
+        -0.00015839229298203288
+      ],
+      "delta_CDF": 4.954974428983405e-06,
+      "delta_tail": -9.735966159496456e-05,
+      "per_fold_delta_H": {
+        "0": -0.0010161282272142802,
+        "1": -0.0016538150028238621,
+        "2": -0.0034207551686074797,
+        "3": -1.8782740247691443e-05,
+        "4": -0.002388950127056068
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "groups": 1772,
+      "delta_H": -0.0020738452199899346,
+      "descriptive_95": [
+        -0.002712291565377005,
+        -0.001395712755296874
+      ],
+      "delta_CDF": -5.931994110142114e-06,
+      "delta_tail": -3.61570309905801e-05,
+      "per_fold_delta_H": {
+        "0": -0.0009502149090485149,
+        "1": -0.0017817538295330157,
+        "2": -0.0026817030466095987,
+        "3": -0.0017786028596589315,
+        "4": -0.0031280666761775433
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "groups": 3157,
+      "delta_H": -0.0037862505297623834,
+      "descriptive_95": [
+        -0.004426695138935417,
+        -0.0031640434880539038
+      ],
+      "delta_CDF": -2.6334977519582026e-05,
+      "delta_tail": -0.00014579652633983642,
+      "per_fold_delta_H": {
+        "0": -0.0038335229561342055,
+        "1": -0.004349034121347281,
+        "2": -0.0024856211300450445,
+        "3": -0.003964643862946156,
+        "4": -0.0043307517898047085
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "groups": 3067,
+      "delta_H": -0.0037586719734221956,
+      "descriptive_95": [
+        -0.004375127166591075,
+        -0.0031217630816481145
+      ],
+      "delta_CDF": -3.0032568247406743e-05,
+      "delta_tail": -0.0001670675992500037,
+      "per_fold_delta_H": {
+        "0": -0.0037205987871958973,
+        "1": -0.00370992045009208,
+        "2": -0.0031226453153281944,
+        "3": -0.004863985244884808,
+        "4": -0.0033397932478258993
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "groups": 2516,
+      "delta_H": -0.0029321595259664385,
+      "descriptive_95": [
+        -0.0035032564450458224,
+        -0.0023632120093090465
+      ],
+      "delta_CDF": -1.3444221622194164e-05,
+      "delta_tail": -0.00010981508967233822,
+      "per_fold_delta_H": {
+        "0": -0.002814141758533513,
+        "1": -0.002378442106577748,
+        "2": -0.0035205436690976394,
+        "3": -0.003404068912792345,
+        "4": -0.0025194040446877633
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.003181620799804821,
+      "descriptive_95": [
+        -0.004529341353549556,
+        -0.0018433895139372324
+      ],
+      "delta_CDF": -2.623627551656682e-05,
+      "delta_tail": -3.447146445978433e-05,
+      "per_fold_delta_H": {
+        "0": -0.0019766705283166194,
+        "1": -0.0043916506453440946,
+        "2": -0.0036479071807081487,
+        "3": -0.002159864687420951,
+        "4": -0.0035663730166402424
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "groups": 2386,
+      "delta_H": -0.004135312176430359,
+      "descriptive_95": [
+        -0.004747059860453367,
+        -0.0035475399177250407
+      ],
+      "delta_CDF": -2.683638194866944e-05,
+      "delta_tail": -8.27303301775828e-05,
+      "per_fold_delta_H": {
+        "0": -0.004306105600118966,
+        "1": -0.0046379336863899,
+        "2": -0.003914425866959816,
+        "3": -0.0031512881835200693,
+        "4": -0.00460849977666003
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "groups": 3047,
+      "delta_H": -0.002476433158936218,
+      "descriptive_95": [
+        -0.0030270170843341195,
+        -0.0019255564763552317
+      ],
+      "delta_CDF": -1.4189338799042162e-05,
+      "delta_tail": -8.16692627267912e-05,
+      "per_fold_delta_H": {
+        "0": -0.0027023563997707264,
+        "1": -0.002180135411797471,
+        "2": -0.001880922435316769,
+        "3": -0.002896740150128814,
+        "4": -0.0027120947165305206
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "groups": 2482,
+      "delta_H": -0.0038190241329298063,
+      "descriptive_95": [
+        -0.004544036615498002,
+        -0.0031049326200116405
+      ],
+      "delta_CDF": -3.367371027707122e-05,
+      "delta_tail": -0.00023711899120826274,
+      "per_fold_delta_H": {
+        "0": -0.003345297926167931,
+        "1": -0.0037561586450376577,
+        "2": -0.003166298019238123,
+        "3": -0.005346960146582043,
+        "4": -0.0033502996453936146
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "groups": 703,
+      "delta_H": -0.001710752884119942,
+      "descriptive_95": [
+        -0.0034157976647753063,
+        -0.0001150388419824721
+      ],
+      "delta_CDF": -1.7441061572753824e-06,
+      "delta_tail": -8.280888141598552e-05,
+      "per_fold_delta_H": {
+        "0": -0.0008499128671606293,
+        "1": -0.0026770835574762147,
+        "2": -0.003241895380470962,
+        "3": 0.000291329331813181,
+        "4": -0.001966677256118536
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "groups": 248,
+      "delta_H": -0.003054734473164023,
+      "descriptive_95": [
+        -0.005038297195096236,
+        -0.0009734842780983973
+      ],
+      "delta_CDF": -2.107508225890342e-05,
+      "delta_tail": 4.338672442827374e-05,
+      "per_fold_delta_H": {
+        "0": -0.0027746743949716574,
+        "1": -0.005107704745544048,
+        "2": -0.0036856709966547677,
+        "3": -0.002650045209292802,
+        "4": -0.0007859097620989963
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "groups": 233,
+      "delta_H": -0.0022340958788671,
+      "descriptive_95": [
+        -0.004804185161218647,
+        -5.3176735954008395e-05
+      ],
+      "delta_CDF": -1.3419655260804575e-05,
+      "delta_tail": -1.0785257472889498e-05,
+      "per_fold_delta_H": {
+        "0": -0.0005036020529975427,
+        "1": -0.003924781250895883,
+        "2": -0.0035249863632187406,
+        "3": 0.0008816530079810356,
+        "4": -0.0039928163535854
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "groups": 163,
+      "delta_H": -0.004749522663209178,
+      "descriptive_95": [
+        -0.007652173848508799,
+        -0.002096898694784853
+      ],
+      "delta_CDF": -4.8618534492561594e-05,
+      "delta_tail": -0.00010318813292542472,
+      "per_fold_delta_H": {
+        "0": -0.004586309404074777,
+        "1": -0.0032961838544114178,
+        "2": -0.0069205162806299445,
+        "3": -0.0034615696474194976,
+        "4": -0.005821175798480134
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "groups": 28,
+      "delta_H": -0.003152071170501395,
+      "descriptive_95": [
+        -0.010846615056481131,
+        0.004388818262018224
+      ],
+      "delta_CDF": -6.466331251431257e-05,
+      "delta_tail": -0.000425680133048445,
+      "per_fold_delta_H": {
+        "0": 0.0014656677056370943,
+        "1": -0.000997000077947792,
+        "2": 0.008850038003161365,
+        "3": -0.00859826384467801,
+        "4": -0.013745527297043675
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "groups": 269,
+      "delta_H": -0.00271459680028724,
+      "descriptive_95": [
+        -0.004301078191824832,
+        -0.0011412225737248095
+      ],
+      "delta_CDF": -1.1689238817780279e-05,
+      "delta_tail": -2.830721132340841e-05,
+      "per_fold_delta_H": {
+        "0": -0.0035006704839888395,
+        "1": -0.001744803540448453,
+        "2": -0.0032457784810563037,
+        "3": -0.004727939009314723,
+        "4": -0.00033995764614488944
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "groups": 298,
+      "delta_H": -0.0016625606611245028,
+      "descriptive_95": [
+        -0.0034596071528458215,
+        0.00010522430228727653
+      ],
+      "delta_CDF": -1.0479559932718985e-05,
+      "delta_tail": -0.00011380831710994244,
+      "per_fold_delta_H": {
+        "0": -0.0026496975510109586,
+        "1": 0.0006109609603470248,
+        "2": -0.0015752833593131385,
+        "3": -0.0015740684661845541,
+        "4": -0.0025653879979511407
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "groups": 188,
+      "delta_H": -0.002421979727964419,
+      "descriptive_95": [
+        -0.004500397603585526,
+        -0.0003059035624052476
+      ],
+      "delta_CDF": 1.1547420399438124e-05,
+      "delta_tail": -0.00015959593292791396,
+      "per_fold_delta_H": {
+        "0": -0.0015492895998610312,
+        "1": -3.83671840440622e-05,
+        "2": -0.004214065995114806,
+        "3": -0.0011734741720958869,
+        "4": -0.005635772083934405
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "residue_mean minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "groups": 42,
+      "delta_H": -0.0003400574614219685,
+      "descriptive_95": [
+        -0.007998812797136379,
+        0.008528832335088382
+      ],
+      "delta_CDF": 0.00010559330985415727,
+      "delta_tail": 7.717212429270148e-05,
+      "per_fold_delta_H": {
+        "0": -0.002961231456203514,
+        "1": 0.01894100359444971,
+        "2": -0.006394400743777791,
+        "3": -0.0074549654599089105,
+        "4": -0.002317107421080364
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "all",
+      "value": "all",
+      "rows": 21921,
+      "groups": 7999,
+      "delta_H": -0.0019255482042017803,
+      "descriptive_95": [
+        -0.0023055823390685888,
+        -0.001547222795106086
+      ],
+      "delta_CDF": -3.833602022496052e-06,
+      "delta_tail": -0.00010546156408963725,
+      "per_fold_delta_H": {
+        "0": -0.001962019740258246,
+        "1": -0.0016819649279143228,
+        "2": -0.0014085145679365377,
+        "3": -0.00246308730354438,
+        "4": -0.0021121772760654203
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation",
+      "value": "T_differs_from_U",
+      "rows": 19477,
+      "groups": 7701,
+      "delta_H": -0.0019770021476290213,
+      "descriptive_95": [
+        -0.0023894255143566195,
+        -0.0015976465351725275
+      ],
+      "delta_CDF": -7.03395653545158e-06,
+      "delta_tail": -0.00010804895282490179,
+      "per_fold_delta_H": {
+        "0": -0.0020148153153681098,
+        "1": -0.0019506348040418259,
+        "2": -0.0013349777585827532,
+        "3": -0.0023866907183224956,
+        "4": -0.0022024112945629934
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation",
+      "value": "U_unavailable",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0025062715790185094,
+      "descriptive_95": [
+        -0.003922622249352119,
+        -0.001110522763647474
+      ],
+      "delta_CDF": -1.878132388810627e-05,
+      "delta_tail": -2.9945569622213952e-05,
+      "per_fold_delta_H": {
+        "0": -0.0021743932818153386,
+        "1": -0.003907055007189415,
+        "2": -0.002233427035939775,
+        "3": -0.001225929272284626,
+        "4": -0.0027287020216737387
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation",
+      "value": "strict_T_equals_U",
+      "rows": 1164,
+      "groups": 767,
+      "delta_H": -0.000686633839026067,
+      "descriptive_95": [
+        -0.001908323889949973,
+        0.0005343034946159428
+      ],
+      "delta_CDF": 3.272450339864008e-05,
+      "delta_tail": -6.698296056129038e-05,
+      "per_fold_delta_H": {
+        "0": -0.0003961851781971726,
+        "1": 0.0017408504344965242,
+        "2": -0.0009172559407674211,
+        "3": -0.002164046884669521,
+        "4": -0.0014192560954363886
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(0.0, 150.0]",
+      "rows": 6309,
+      "groups": 2533,
+      "delta_H": -0.0027420394054242406,
+      "descriptive_95": [
+        -0.0032858290556372124,
+        -0.0021943590515367934
+      ],
+      "delta_CDF": -1.4235080016078427e-05,
+      "delta_tail": -7.415608706651255e-05,
+      "per_fold_delta_H": {
+        "0": -0.001995376278668512,
+        "1": -0.00273500719491699,
+        "2": -0.002580973999218014,
+        "3": -0.0028179773941529734,
+        "4": -0.003522232247159404
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(150.0, 300.0]",
+      "rows": 7804,
+      "groups": 3200,
+      "delta_H": -0.0012360888903278655,
+      "descriptive_95": [
+        -0.0017668060591535576,
+        -0.0006941081207246687
+      ],
+      "delta_CDF": -3.412327714613639e-06,
+      "delta_tail": -7.553814793936908e-05,
+      "per_fold_delta_H": {
+        "0": -0.0018504451194392355,
+        "1": -0.0006628681608633266,
+        "2": -0.0003826330950683354,
+        "3": -0.001508787969739571,
+        "4": -0.0017253852464624436
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(300.0, 600.0]",
+      "rows": 6117,
+      "groups": 2565,
+      "delta_H": -0.0026568642697331044,
+      "descriptive_95": [
+        -0.003413825937635754,
+        -0.0018700909731314624
+      ],
+      "delta_CDF": -1.3351428606256377e-05,
+      "delta_tail": -0.000197030181880109,
+      "per_fold_delta_H": {
+        "0": -0.0028724297912619406,
+        "1": -0.002679689236043288,
+        "2": -0.0017869661780253385,
+        "3": -0.0035463762368710613,
+        "4": -0.0023167864811846003
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "length_bin",
+      "value": "(600.0, inf]",
+      "rows": 1691,
+      "groups": 729,
+      "delta_H": 0.0013075354281708797,
+      "descriptive_95": [
+        -0.00029508557391698885,
+        0.002975280896892185
+      ],
+      "delta_CDF": 5.59845102543477e-05,
+      "delta_tail": 5.138625419931486e-05,
+      "per_fold_delta_H": {
+        "0": 0.0015443549089396574,
+        "1": 0.001578563902864455,
+        "2": 0.0007266267764801243,
+        "3": 0.001562663499977135,
+        "4": 0.0011250498783489798
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(-inf, 0.7]",
+      "rows": 3465,
+      "groups": 1772,
+      "delta_H": -0.0009875233152893677,
+      "descriptive_95": [
+        -0.0016100526537431057,
+        -0.0002965180647733986
+      ],
+      "delta_CDF": 4.614768386090873e-06,
+      "delta_tail": -3.9057886169757694e-05,
+      "per_fold_delta_H": {
+        "0": -0.00041649459915431286,
+        "1": -0.0008281443020498117,
+        "2": -0.0017518031345602203,
+        "3": -7.216226220006783e-05,
+        "4": -0.0018189961643105407
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.7, 0.9]",
+      "rows": 6393,
+      "groups": 3157,
+      "delta_H": -0.0023356706354644963,
+      "descriptive_95": [
+        -0.0030154942559650543,
+        -0.0017278202653959818
+      ],
+      "delta_CDF": -9.270996997656766e-06,
+      "delta_tail": -0.00010669597395462915,
+      "per_fold_delta_H": {
+        "0": -0.0024881752393601103,
+        "1": -0.002729580013705206,
+        "2": -0.00030270445213395614,
+        "3": -0.0033991054797071207,
+        "4": -0.0028607643490727794
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.9, 0.98]",
+      "rows": 5870,
+      "groups": 3067,
+      "delta_H": -0.0020983832259362603,
+      "descriptive_95": [
+        -0.002720308059646531,
+        -0.0014491112334531844
+      ],
+      "delta_CDF": -9.786489499674644e-06,
+      "delta_tail": -0.00013310502981767058,
+      "per_fold_delta_H": {
+        "0": -0.002328120580029479,
+        "1": -0.0022347399146273594,
+        "2": -0.0014270793371202392,
+        "3": -0.0024568261392836216,
+        "4": -0.0020437795787901503
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "(0.98, inf]",
+      "rows": 4913,
+      "groups": 2516,
+      "delta_H": -0.0016576160215239792,
+      "descriptive_95": [
+        -0.0022733006821948044,
+        -0.0010359195957073786
+      ],
+      "delta_CDF": 4.6879786168574356e-06,
+      "delta_tail": -0.00010046934039564803,
+      "per_fold_delta_H": {
+        "0": -0.0012851893038343803,
+        "1": -0.001014993693125299,
+        "2": -0.0019697843673442475,
+        "3": -0.0022738515240203205,
+        "4": -0.0016909113698185332
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "coverage_bin",
+      "value": "nan",
+      "rows": 1280,
+      "groups": 614,
+      "delta_H": -0.0025062715790185094,
+      "descriptive_95": [
+        -0.003922622249352119,
+        -0.001110522763647474
+      ],
+      "delta_CDF": -1.878132388810627e-05,
+      "delta_tail": -2.9945569622213952e-05,
+      "per_fold_delta_H": {
+        "0": -0.0021743932818153386,
+        "1": -0.003907055007189415,
+        "2": -0.002233427035939775,
+        "3": -0.001225929272284626,
+        "4": -0.0027287020216737387
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (0.0, 150.0]",
+      "rows": 5360,
+      "groups": 2386,
+      "delta_H": -0.002755137810235977,
+      "descriptive_95": [
+        -0.003342165268296196,
+        -0.0021595660152680927
+      ],
+      "delta_CDF": -1.4239501979318447e-05,
+      "delta_tail": -7.800207822583616e-05,
+      "per_fold_delta_H": {
+        "0": -0.0021169589626389776,
+        "1": -0.0026857014890556696,
+        "2": -0.002447485239885465,
+        "3": -0.0025994858672846247,
+        "4": -0.0038816516683238614
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (150.0, 300.0]",
+      "rows": 6888,
+      "groups": 3047,
+      "delta_H": -0.0011987230701141938,
+      "descriptive_95": [
+        -0.0017536585073103348,
+        -0.0006268979583227459
+      ],
+      "delta_CDF": -3.6134515539743006e-06,
+      "delta_tail": -7.05638958606869e-05,
+      "per_fold_delta_H": {
+        "0": -0.0017685443753560418,
+        "1": -0.0007834814886503519,
+        "2": -0.0003725815905949864,
+        "3": -0.0015085956690812502,
+        "4": -0.001519014902790057
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (300.0, 600.0]",
+      "rows": 5627,
+      "groups": 2482,
+      "delta_H": -0.0026918241607262823,
+      "descriptive_95": [
+        -0.0034123788957190174,
+        -0.0019761038958132407
+      ],
+      "delta_CDF": -2.058699647022877e-05,
+      "delta_tail": -0.0002020017709583044,
+      "per_fold_delta_H": {
+        "0": -0.0028376715605214348,
+        "1": -0.0032595086584005784,
+        "2": -0.0015567262317839267,
+        "3": -0.00346302675737227,
+        "4": -0.0022750044897324254
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "T_differs_from_U | (600.0, inf]",
+      "rows": 1602,
+      "groups": 703,
+      "delta_H": 0.0012976275476071666,
+      "descriptive_95": [
+        -0.0005110901408389135,
+        0.0029095271076854134
+      ],
+      "delta_CDF": 5.377979687182233e-05,
+      "delta_tail": 4.7313231334555894e-05,
+      "per_fold_delta_H": {
+        "0": 0.001529034694605469,
+        "1": 0.0008137887737276819,
+        "2": 0.0009942003086708118,
+        "3": 0.0016299191697860815,
+        "4": 0.0015274762288053287
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (0.0, 150.0]",
+      "rows": 504,
+      "groups": 248,
+      "delta_H": -0.0015627108845874516,
+      "descriptive_95": [
+        -0.0036035094687419957,
+        0.0006378605630291649
+      ],
+      "delta_CDF": 2.258133378063576e-07,
+      "delta_tail": 7.368980732280761e-05,
+      "per_fold_delta_H": {
+        "0": -0.0017909069637924713,
+        "1": -0.004570811583021132,
+        "2": 0.0009283435260528869,
+        "3": -0.0015042043652635229,
+        "4": -0.0007809461374990029
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (150.0, 300.0]",
+      "rows": 475,
+      "groups": 233,
+      "delta_H": -0.002180458096672954,
+      "descriptive_95": [
+        -0.004793999183961441,
+        0.00016597498804929995
+      ],
+      "delta_CDF": -1.3554044926422648e-05,
+      "delta_tail": -1.8163464119425043e-05,
+      "per_fold_delta_H": {
+        "0": -0.00071073236341785,
+        "1": -0.0024399264231591278,
+        "2": -0.0042256198584948584,
+        "3": 0.0008001170872810603,
+        "4": -0.004324634248741556
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (300.0, 600.0]",
+      "rows": 260,
+      "groups": 163,
+      "delta_H": -0.0037941972791834012,
+      "descriptive_95": [
+        -0.006815485685726144,
+        -0.0009298926216636754
+      ],
+      "delta_CDF": -4.583833288052119e-05,
+      "delta_tail": -0.00012406827590893954,
+      "per_fold_delta_H": {
+        "0": -0.004623161816090043,
+        "1": -0.002737076637673974,
+        "2": -0.007017667979658915,
+        "3": -0.0018823601041854932,
+        "4": -0.0035915308766026333
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "U_unavailable | (600.0, inf]",
+      "rows": 41,
+      "groups": 28,
+      "delta_H": -0.0030766808117338104,
+      "descriptive_95": [
+        -0.010779338278641755,
+        0.005017365477212155
+      ],
+      "delta_CDF": -7.233336509671062e-05,
+      "delta_tail": -8.866599091561511e-05,
+      "per_fold_delta_H": {
+        "0": -0.0013081428964486497,
+        "1": -0.0005588372625732821,
+        "2": 0.006838022134182026,
+        "3": -0.0037745765087741634,
+        "4": -0.01294359598479275
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (0.0, 150.0]",
+      "rows": 445,
+      "groups": 269,
+      "delta_H": -0.001823730621668477,
+      "descriptive_95": [
+        -0.003484736580538052,
+        -0.00014725689126186202
+      ],
+      "delta_CDF": -9.718130513647338e-07,
+      "delta_tail": -4.127519787289202e-05,
+      "per_fold_delta_H": {
+        "0": 0.00020311762557444213,
+        "1": -0.001378501326545066,
+        "2": -0.0022068171802931205,
+        "3": -0.0049805709940190165,
+        "4": -0.00018137148251831658
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (150.0, 300.0]",
+      "rows": 441,
+      "groups": 298,
+      "delta_H": -0.00038836673418400766,
+      "descriptive_95": [
+        -0.0022270219758028734,
+        0.001452409112774256
+      ],
+      "delta_CDF": 8.647275535622612e-06,
+      "delta_tail": -8.758963667787611e-05,
+      "per_fold_delta_H": {
+        "0": -0.001431627691829987,
+        "1": 0.0013491239900581056,
+        "2": 0.00011373610737724915,
+        "3": -0.00010795692808839019,
+        "4": -0.0014941053124970377
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (300.0, 600.0]",
+      "rows": 230,
+      "groups": 188,
+      "delta_H": -0.0004828572857937732,
+      "descriptive_95": [
+        -0.0033037682244428414,
+        0.0026910449470181376
+      ],
+      "delta_CDF": 9.860999853117391e-05,
+      "delta_tail": -0.00013720114657189697,
+      "per_fold_delta_H": {
+        "0": -0.0005792064196899482,
+        "1": 0.004175898290769059,
+        "2": -0.0026172669656437456,
+        "3": -0.0013020557999324153,
+        "4": -0.0032648402446151317
+      },
+      "selection_adjusted": false
+    },
+    {
+      "comparison": "mean_pre minus composition_charge_deep",
+      "seed": 3407,
+      "field": "relation_length",
+      "value": "strict_T_equals_U | (600.0, inf]",
+      "rows": 48,
+      "groups": 42,
+      "delta_H": 0.002787284631585108,
+      "descriptive_95": [
+        -0.004974170689870989,
+        0.010978729117866296
+      ],
+      "delta_CDF": 9.378750837640837e-05,
+      "delta_tail": 0.00030584068736061454,
+      "per_fold_delta_H": {
+        "0": 0.00146633599394079,
+        "1": 0.014706044276745586,
+        "2": 0.00034056925127456256,
+        "3": -0.00044264518489502136,
+        "4": -0.0015222023340627222
+      },
+      "selection_adjusted": false
+    }
+  ],
+  "new_fit_wall_seconds_sum": 1415.2908376669511,
+  "all_stop_counts": {
+    "early_stop": 30
+  },
+  "qualification": "Retrospective exposed development OOF. Seeds use the same observations and are reduced separately. Existing sequence/identity closure, not profile/family-independent final confirmation. Charge pipeline retained from its validated historical runner; mean/residue use matched pooling runner."
+}

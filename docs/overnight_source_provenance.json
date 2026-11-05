@@ -1,0 +1,432 @@
+{
+  "schema": "seq2scp.overnight.archive_provenance.v1",
+  "stage": "overnight_20261106",
+  "public_base_commit": "fbc3fe3dae4893f6750a4fa453a5b032f325400c",
+  "local_review_base_commit": "51b3f9da77d6e18230d7c9c262a0fb13b798a40a",
+  "base_tree_equal": "5caa05ce2e6162175c90f8a1dd2e04865711753a",
+  "date": "2026-11-06",
+  "scope": "User-owned source and aggregate evidence only; source/execute hashes are distinct from any later Git publication commit",
+  "files": [
+    {
+      "path": "src/overnight_afdb_diagnose.py",
+      "source_sha256": "09a555119b3e063a7f3d0dfb964c14dadb089e27b1d10c013b4fde848cbbe4e9",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "09a555119b3e063a7f3d0dfb964c14dadb089e27b1d10c013b4fde848cbbe4e9",
+      "execution_relative_path": "overnight_20261106/afdb/code/overnight_afdb_diagnose.py",
+      "execution_sha256": "09a555119b3e063a7f3d0dfb964c14dadb089e27b1d10c013b4fde848cbbe4e9",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_afdb_e2e.py",
+      "source_sha256": "c5a824bbe6d9cf6975b84c0becc0e506a0603990d996e38e4aacb2963f4a06b7",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "c5a824bbe6d9cf6975b84c0becc0e506a0603990d996e38e4aacb2963f4a06b7",
+      "execution_relative_path": "overnight_20261106/afdb/code/overnight_afdb_e2e.py",
+      "execution_sha256": "c5a824bbe6d9cf6975b84c0becc0e506a0603990d996e38e4aacb2963f4a06b7",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_afdb_select.py",
+      "source_sha256": "2db09a9e843cbda64d1222f63ee1b8d4a53e8803267f174d735efe283ad4f20a",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "2db09a9e843cbda64d1222f63ee1b8d4a53e8803267f174d735efe283ad4f20a",
+      "execution_relative_path": "overnight_20261106/afdb/code/overnight_afdb_select.py",
+      "execution_sha256": "2db09a9e843cbda64d1222f63ee1b8d4a53e8803267f174d735efe283ad4f20a",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_confirmation_queue.py",
+      "source_sha256": "30c17a0c8625fa2d0830607a4257a229f7630c48cfa94d6fe8c366e4122b3f77",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "30c17a0c8625fa2d0830607a4257a229f7630c48cfa94d6fe8c366e4122b3f77",
+      "execution_relative_path": "overnight_20261106/confirmation/code/overnight_confirmation_queue.py",
+      "execution_sha256": "30c17a0c8625fa2d0830607a4257a229f7630c48cfa94d6fe8c366e4122b3f77",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_explore_audit.py",
+      "source_sha256": "302d37182f5baa450ca21643acfffe6fcf49f030b153a551f308a4bbf939fd3b",
+      "adaptation": "Machine-specific literals replaced with required PROJECT_ROOT/GPU_UUID_0/GPU_UUID_1 environment variables, and/or text normalized to LF; no scientific algorithm change",
+      "archived_sha256": "c319a9d124b392f00461938fa333897d92f6fa75491fa6c14107637cff796dcf",
+      "execution_relative_path": "overnight_20261106/explore/code/overnight_explore_audit.py",
+      "execution_sha256": "302d37182f5baa450ca21643acfffe6fcf49f030b153a551f308a4bbf939fd3b",
+      "matches_executed_bytes": false
+    },
+    {
+      "path": "src/overnight_explore_confirmation_audit.py",
+      "source_sha256": "74b6e3a685a480b8d427161a522342442d43d4b9ea78eae69eae17df6bc99575",
+      "adaptation": "Machine-specific literals replaced with required PROJECT_ROOT/GPU_UUID_0/GPU_UUID_1 environment variables, and/or text normalized to LF; no scientific algorithm change",
+      "archived_sha256": "2e4a3c833d07cebd6f74ecd147d008626ec5b002e42c2e8bccebe76a364e7c6b",
+      "execution_relative_path": "overnight_20261106/explore/code/overnight_explore_confirmation_audit.py",
+      "execution_sha256": "74b6e3a685a480b8d427161a522342442d43d4b9ea78eae69eae17df6bc99575",
+      "matches_executed_bytes": false
+    },
+    {
+      "path": "src/overnight_explore_confirmation_queue.py",
+      "source_sha256": "88238491e3f461a7aa6d9b4eb515828cdbcfd7e671b2a965f9313b0b45fcab35",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "88238491e3f461a7aa6d9b4eb515828cdbcfd7e671b2a965f9313b0b45fcab35",
+      "execution_relative_path": "overnight_20261106/explore/confirmation/code/overnight_explore_confirmation_queue.py",
+      "execution_sha256": "88238491e3f461a7aa6d9b4eb515828cdbcfd7e671b2a965f9313b0b45fcab35",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_explore_confirmation_train.py",
+      "source_sha256": "6e6aebd501692828631b34f2b6b412e63e35a2c95ded22a93401355c4e06de39",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "6e6aebd501692828631b34f2b6b412e63e35a2c95ded22a93401355c4e06de39",
+      "execution_relative_path": "overnight_20261106/explore/confirmation/code/overnight_explore_train.py",
+      "execution_sha256": "6e6aebd501692828631b34f2b6b412e63e35a2c95ded22a93401355c4e06de39",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_explore_model.py",
+      "source_sha256": "affd330d01cf497f09401dcd2c4414a0fa65d8487f2a290703ca18b62d0ab37d",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "affd330d01cf497f09401dcd2c4414a0fa65d8487f2a290703ca18b62d0ab37d",
+      "execution_relative_path": "overnight_20261106/explore/code/overnight_explore_model.py",
+      "execution_sha256": "affd330d01cf497f09401dcd2c4414a0fa65d8487f2a290703ca18b62d0ab37d",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_explore_queue.py",
+      "source_sha256": "f12778710cff2834293497177e5b5d0f05e618fe797359aa93aa7a85de6dedfd",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "f12778710cff2834293497177e5b5d0f05e618fe797359aa93aa7a85de6dedfd",
+      "execution_relative_path": "overnight_20261106/explore/code/overnight_explore_queue.py",
+      "execution_sha256": "f12778710cff2834293497177e5b5d0f05e618fe797359aa93aa7a85de6dedfd",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_explore_replay.py",
+      "source_sha256": "1bc82e1ea479102ec36d6dada62900deb891137aa0a72c50a87a20c5df300dee",
+      "adaptation": "Machine-specific literals replaced with required PROJECT_ROOT/GPU_UUID_0/GPU_UUID_1 environment variables, and/or text normalized to LF; no scientific algorithm change",
+      "archived_sha256": "be31f3a8a9a381311530d4886ac67096bbcff92a5563e2110cef20bb5fd94828",
+      "execution_relative_path": "overnight_20261106/explore/code/overnight_explore_replay.py",
+      "execution_sha256": "1bc82e1ea479102ec36d6dada62900deb891137aa0a72c50a87a20c5df300dee",
+      "matches_executed_bytes": false
+    },
+    {
+      "path": "src/overnight_explore_train.py",
+      "source_sha256": "a6d5bffe9f91b13213489511cf93ceae2d17fc426a8b163e53429a72d808c94d",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "a6d5bffe9f91b13213489511cf93ceae2d17fc426a8b163e53429a72d808c94d",
+      "execution_relative_path": "overnight_20261106/explore/code/overnight_explore_train.py",
+      "execution_sha256": "a6d5bffe9f91b13213489511cf93ceae2d17fc426a8b163e53429a72d808c94d",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_export_confirmation.py",
+      "source_sha256": "8ffab0b6c08e47fe25656eef86919e64a37f5798fcc1ff9eed05418fa64d2f3a",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "8ffab0b6c08e47fe25656eef86919e64a37f5798fcc1ff9eed05418fa64d2f3a",
+      "execution_relative_path": "overnight_20261106/confirmation/code/overnight_export_confirmation.py",
+      "execution_sha256": "8ffab0b6c08e47fe25656eef86919e64a37f5798fcc1ff9eed05418fa64d2f3a",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_prepare_confirmation.py",
+      "source_sha256": "5995e3049182524f176ca7b15cd89c09d34280626c34185a13738aef2746d850",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "5995e3049182524f176ca7b15cd89c09d34280626c34185a13738aef2746d850",
+      "execution_relative_path": "overnight_20261106/confirmation/code/overnight_prepare_confirmation.py",
+      "execution_sha256": "5995e3049182524f176ca7b15cd89c09d34280626c34185a13738aef2746d850",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_replay_confirmation.py",
+      "source_sha256": "c4b6ab728a0c35ac0c9cbaa64cdf64b425d206f95c13fa3bc8fcfd41405f3da5",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "c4b6ab728a0c35ac0c9cbaa64cdf64b425d206f95c13fa3bc8fcfd41405f3da5",
+      "execution_relative_path": "overnight_20261106/confirmation/code/overnight_replay_confirmation.py",
+      "execution_sha256": "c4b6ab728a0c35ac0c9cbaa64cdf64b425d206f95c13fa3bc8fcfd41405f3da5",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_summarize_confirmation.py",
+      "source_sha256": "1644df28afaaffcc86ea72b85fb7304e1ac75038e390a389ff4af3e7923b1ea1",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "1644df28afaaffcc86ea72b85fb7304e1ac75038e390a389ff4af3e7923b1ea1",
+      "execution_relative_path": "overnight_20261106/confirmation/code/overnight_summarize_confirmation.py",
+      "execution_sha256": "1644df28afaaffcc86ea72b85fb7304e1ac75038e390a389ff4af3e7923b1ea1",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_traditional_queue.py",
+      "source_sha256": "bf5d5cbc004ab4a2540464f366cc5bddf9e87934b528c2f7cbb32f58663e6387",
+      "adaptation": "Machine-specific literals replaced with required PROJECT_ROOT/GPU_UUID_0/GPU_UUID_1 environment variables, and/or text normalized to LF; no scientific algorithm change",
+      "archived_sha256": "64f6162287b735138872b05b3afd44912df16c40515a39a0a50002497866abbe",
+      "execution_relative_path": "overnight_20261106/traditional/tools/overnight_traditional_queue.py",
+      "execution_sha256": "bf5d5cbc004ab4a2540464f366cc5bddf9e87934b528c2f7cbb32f58663e6387",
+      "matches_executed_bytes": false
+    },
+    {
+      "path": "src/overnight_traditional_replay.py",
+      "source_sha256": "9530deb9b02e9e60c8ca26890cb5ed0a1cc823a9bc8097cb4b93dbfa6cd2224d",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "9530deb9b02e9e60c8ca26890cb5ed0a1cc823a9bc8097cb4b93dbfa6cd2224d",
+      "execution_relative_path": "overnight_20261106/traditional/tools/overnight_traditional_replay.py",
+      "execution_sha256": "9530deb9b02e9e60c8ca26890cb5ed0a1cc823a9bc8097cb4b93dbfa6cd2224d",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "src/overnight_traditional_summarize.py",
+      "source_sha256": "122b0f6115487a5d5f8054064d2983dbc90f70510e52dfe4e115039d7242e207",
+      "adaptation": "Machine-specific literals replaced with required PROJECT_ROOT/GPU_UUID_0/GPU_UUID_1 environment variables, and/or text normalized to LF; no scientific algorithm change",
+      "archived_sha256": "422394100a574d9311d1abaf92b0f926fc372f1a01f3dee4c6db5bb01fbd664b",
+      "execution_relative_path": "overnight_20261106/traditional/tools/overnight_traditional_summarize.py",
+      "execution_sha256": "122b0f6115487a5d5f8054064d2983dbc90f70510e52dfe4e115039d7242e207",
+      "matches_executed_bytes": false
+    },
+    {
+      "path": "src/overnight_traditional.py",
+      "source_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "adaptation": "byte_for_byte",
+      "archived_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "execution_relative_path": "overnight_20261106/traditional/tools/overnight_traditional.py",
+      "execution_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "matches_executed_bytes": true
+    },
+    {
+      "path": "configs/overnight_plan.json",
+      "source_sha256": "c9218afc713e03a45d3fcc06f365d6be58f71a10928eb72c0e1bb5f7a8bb0f7d",
+      "adaptation": "Machine paths/GPU UUIDs replaced by environment placeholders where present; materialize a machine-local plan before execution; scientific settings unchanged",
+      "archived_sha256": "c9218afc713e03a45d3fcc06f365d6be58f71a10928eb72c0e1bb5f7a8bb0f7d"
+    },
+    {
+      "path": "configs/overnight_afdb_plan.json",
+      "source_sha256": "157d509da31c14e6d78221c7b9920802ed357674989e7a46b2971b6698171397",
+      "adaptation": "Machine paths/GPU UUIDs replaced by environment placeholders where present; materialize a machine-local plan before execution; scientific settings unchanged",
+      "archived_sha256": "157d509da31c14e6d78221c7b9920802ed357674989e7a46b2971b6698171397"
+    },
+    {
+      "path": "configs/overnight_afdb_e2e_amendment.json",
+      "source_sha256": "c7f2f7c00e148728c7db869f3e3b5f2a4640824e3558ac311f5e0cd5e430c96d",
+      "adaptation": "Machine paths/GPU UUIDs replaced by environment placeholders where present; materialize a machine-local plan before execution; scientific settings unchanged",
+      "archived_sha256": "c7f2f7c00e148728c7db869f3e3b5f2a4640824e3558ac311f5e0cd5e430c96d"
+    },
+    {
+      "path": "configs/overnight_explore_plan.json",
+      "source_sha256": "e9bafcc5bc756bba6131a58f7dec1f1fd24f631c3c89090b008220c722fec7bb",
+      "adaptation": "Machine paths/GPU UUIDs replaced by environment placeholders where present; materialize a machine-local plan before execution; scientific settings unchanged",
+      "archived_sha256": "48410632717dddc4fb2308ebb84f8151d970947a7dd517393bade9402f84ab01"
+    },
+    {
+      "path": "configs/overnight_explore_confirmation_plan.json",
+      "source_sha256": "5495f1e6815657ba6e7af9e25bc6f3e9c9dc79bd02896420fee7b90875184f64",
+      "adaptation": "Machine paths/GPU UUIDs replaced by environment placeholders where present; materialize a machine-local plan before execution; scientific settings unchanged",
+      "archived_sha256": "e603d8c1f0b685fc30a364255bdad47f5f44dafa8c50ab8a127246c0051b6e37"
+    },
+    {
+      "path": "docs/overnight_explore_notes.md",
+      "source_sha256": "5289ae3662799682909132e5d65e8e592ac07812f6408e465f5614b8d9043577",
+      "adaptation": "Machine root replaced by PROJECT_ROOT placeholder; LF text",
+      "archived_sha256": "5289ae3662799682909132e5d65e8e592ac07812f6408e465f5614b8d9043577"
+    },
+    {
+      "path": "experiments/overnight_20261106/confirmation/summary.json",
+      "archived_sha256": "fe7ac207b1127f5d594d5dc518b79e024d9bb5f146646e6ca2ce08acd4d78927",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "fe7ac207b1127f5d594d5dc518b79e024d9bb5f146646e6ca2ce08acd4d78927"
+    },
+    {
+      "path": "experiments/overnight_20261106/confirmation/checkpoint_replay.json",
+      "archived_sha256": "e2819b0f58ec4edbaad836adf439e4e9d5ddbaed5b90b0a8cab6d1d63a0ca5cd",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "e2819b0f58ec4edbaad836adf439e4e9d5ddbaed5b90b0a8cab6d1d63a0ca5cd"
+    },
+    {
+      "path": "experiments/overnight_20261106/confirmation/cost_public.json",
+      "archived_sha256": "1f0160804cbc9a40660c5c1957615b3173b6e63d31e5f573f3fb67af504d572d",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "1f0160804cbc9a40660c5c1957615b3173b6e63d31e5f573f3fb67af504d572d"
+    },
+    {
+      "path": "experiments/overnight_20261106/confirmation/provenance_public.json",
+      "archived_sha256": "569c678b0c30b18310574926ba1a3da078fd7affcbb483ae74872d31bfc61acb",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "569c678b0c30b18310574926ba1a3da078fd7affcbb483ae74872d31bfc61acb"
+    },
+    {
+      "path": "experiments/overnight_20261106/confirmation/all_fits_public.csv",
+      "archived_sha256": "f7e52f5435e7df3f6fa1e33901424989b889ea133ce465e2023bd845db5ea921",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "f7e52f5435e7df3f6fa1e33901424989b889ea133ce465e2023bd845db5ea921"
+    },
+    {
+      "path": "docs/overnight_afdb_report.md",
+      "archived_sha256": "ff6cc1fdf55bd5b9d7a0f9870b53a03846d75e423950301c92eea15cd574856d",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "a01256f5a9b0a7e78c2eb73f788c4ec67514c2d9702a9085b8e46ea5a252cb71"
+    },
+    {
+      "path": "docs/overnight_traditional_REPORT.md",
+      "archived_sha256": "2a7ca919ff10c56b641399e647833b6b88ccd378e559a4fd5c160766df908a7a",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "ff51a7dc162e391c769e81a1aa090e50854018fb03e761bf55f1666e526f5fd8"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/code_provenance.json",
+      "archived_sha256": "dcf28219aefd919400d85d10cb95cb61b4e7761f44f83ffa7ac2f82dee5c846b",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "dcf28219aefd919400d85d10cb95cb61b4e7761f44f83ffa7ac2f82dee5c846b"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/cost.json",
+      "archived_sha256": "466d83c066f4d081091c3d8153e145868760b98bf1e08c96db871d28750c261b",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "466d83c066f4d081091c3d8153e145868760b98bf1e08c96db871d28750c261b"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/fits.csv",
+      "archived_sha256": "a7d859d654588cd83e3eb6ada8523dffd27552f994d8999469635b0540615251",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "a7d859d654588cd83e3eb6ada8523dffd27552f994d8999469635b0540615251"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/independent_checkpoint_replay.json",
+      "archived_sha256": "53f1f6c78b703733bdf8de1bcee55a26a5a7fcf1766fbdedd6c6d6c631b0e16a",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "53f1f6c78b703733bdf8de1bcee55a26a5a7fcf1766fbdedd6c6d6c631b0e16a"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/neural_fivefold_paired.json",
+      "archived_sha256": "74a9fc337240c6f7aff0ba6d02dc234455df87b1fb4c41d6a896375f1c3e8af9",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "74a9fc337240c6f7aff0ba6d02dc234455df87b1fb4c41d6a896375f1c3e8af9"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/plan.json",
+      "archived_sha256": "0d4a6cd3a64d56d9dc299b1235135ee89610a16b013b9775c5a3c7768dde5af5",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "0d4a6cd3a64d56d9dc299b1235135ee89610a16b013b9775c5a3c7768dde5af5"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/pooled.csv",
+      "archived_sha256": "b35c3d07f96a896a736af6e18010fec1ac27c526a5e57a951999b1cc75b98cdc",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "b35c3d07f96a896a736af6e18010fec1ac27c526a5e57a951999b1cc75b98cdc"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/promotion.json",
+      "archived_sha256": "181de0be9a38add3acc5045e2074bcc9b2a33d7ca96e80d28bff43249be83155",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "181de0be9a38add3acc5045e2074bcc9b2a33d7ca96e80d28bff43249be83155"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/screen_by_stop.csv",
+      "archived_sha256": "4ff4db4a855faec346966a8e8957278f8e9a3bfb210dc1dedf06a6b2f8a0df5d",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "4ff4db4a855faec346966a8e8957278f8e9a3bfb210dc1dedf06a6b2f8a0df5d"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/strata.csv",
+      "archived_sha256": "f4213ac5c297605c9dc56873a70ec6bf5dab83d344459298d6245b0790528985",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "f4213ac5c297605c9dc56873a70ec6bf5dab83d344459298d6245b0790528985"
+    },
+    {
+      "path": "experiments/overnight_20261106/traditional/summary.json",
+      "archived_sha256": "4bb668279143532732e09e8c95d8d4ffd76401f144c1c8ab8e68de24388130ab",
+      "adaptation": "Public aggregate/document; project-root placeholder substitution where present and LF normalization only",
+      "source_sha256": "4bb668279143532732e09e8c95d8d4ffd76401f144c1c8ab8e68de24388130ab"
+    },
+    {
+      "path": "experiments/overnight_20261106/afdb/summary_public.json",
+      "archived_sha256": "4fc9cecc2026fa8183e88a5829cee6d8f03b77ddf292bd02da995619a332986e",
+      "adaptation": "public aggregate only; LF text",
+      "source_sha256": "4fc9cecc2026fa8183e88a5829cee6d8f03b77ddf292bd02da995619a332986e"
+    },
+    {
+      "path": "experiments/overnight_20261106/afdb/e2e_public.json",
+      "archived_sha256": "74057018deb3feb664ee1ca96202e9634945a799d071b68325b5727f605be46a",
+      "adaptation": "public aggregate only; LF text",
+      "source_sha256": "74057018deb3feb664ee1ca96202e9634945a799d071b68325b5727f605be46a"
+    },
+    {
+      "path": "experiments/overnight_20261106/afdb/provenance_public.json",
+      "archived_sha256": "9f65c38c3d69eae1a56d16348a1283cb2ef4e9c182a71cf9db8e3b36245b7554",
+      "adaptation": "public aggregate only; LF text",
+      "source_sha256": "9f65c38c3d69eae1a56d16348a1283cb2ef4e9c182a71cf9db8e3b36245b7554"
+    },
+    {
+      "source_sha256": "841b53fa7db1393d9cb3620d1ed9093d7502e80e906db979e2940ca24159d41e",
+      "archived_sha256": "841b53fa7db1393d9cb3620d1ed9093d7502e80e906db979e2940ca24159d41e",
+      "adaptation": "Final public aggregate/document only; LF normalization",
+      "path": "experiments/overnight_20261106/explore/summary_public.json"
+    },
+    {
+      "source_sha256": "ea8cfc68d888d9dd1a0d5cd0ab1e5dd8c1974cde15fe49b118491319ae404734",
+      "archived_sha256": "ea8cfc68d888d9dd1a0d5cd0ab1e5dd8c1974cde15fe49b118491319ae404734",
+      "adaptation": "Final public aggregate/document only; LF normalization",
+      "path": "experiments/overnight_20261106/explore/provenance_public.json"
+    },
+    {
+      "source_sha256": "f2e559f9a6d568f2654faf2c0a2c1b536c608447c27f9f85110af0c007534748",
+      "archived_sha256": "f2e559f9a6d568f2654faf2c0a2c1b536c608447c27f9f85110af0c007534748",
+      "adaptation": "Final public aggregate/document only; LF normalization",
+      "path": "docs/overnight_explore_report.md"
+    },
+    {
+      "source_sha256": "9afbd0d1df17a5d044943f7d94ba2f040868569f0a6a2d7278327115ba9b2aa5",
+      "adaptation": "Project root replaced by environment placeholder; root README adds repository evidence/history/reproduction links; scientific conclusions unchanged",
+      "archived_sha256": "cce50f8821e11b11a51804317e78bfe4e01f29ceafaac3e2ce267cd47999d449",
+      "path": "docs/overnight_20261106.md"
+    },
+    {
+      "source_sha256": "c66e83aa932db895248cc436fe417ba7df7c92e218b382e127315e7f266a2f21",
+      "adaptation": "Project root replaced by environment placeholder; root README adds repository evidence/history/reproduction links; scientific conclusions unchanged",
+      "archived_sha256": "1c7fea3781e583e662d415b00e9e3eaff611d55d1a38f5c70cff034b9dd99aaf",
+      "path": "README.md"
+    }
+  ],
+  "source_readback": "Actual code hashes read from Byte and cross-checked against each lane public provenance",
+  "adaptation_policy": "Only machine-root/GPU settings and text line endings adapted in archive. Execution arrays, trained models and Byte sources unchanged. Configuration JSONs with placeholders must be materialized locally before use.",
+  "reused_modules": "Existing published source is reused by reference; no duplicate old stages or third-party source added",
+  "private_exclusions": [
+    "overnight_afdb_private_panel.json",
+    "overnight_afdb_sequences.json",
+    "per-sample roles, predictions and raw label arrays",
+    "embeddings, checkpoints and full logs",
+    "original explore diagnostic with sample_ids"
+  ],
+  "traditional_environment": {
+    "post_completion_import_readback": {
+      "scipy": "1.15.3",
+      "joblib": "1.5.3"
+    },
+    "from_fit_receipts": {
+      "numpy": "1.26.4",
+      "scikit_learn": "1.7.2",
+      "python": "3.10.21",
+      "pandas": "2.3.3"
+    },
+    "note": "SciPy/joblib versions were read from the same unchanged runtime after completion, not separately bound in original fit receipts"
+  },
+  "archive_checks": {
+    "public_release": "Owner-authorized code and aggregate-only summaries; no sample details",
+    "confirmation": {
+      "total": 30,
+      "new_checkpoint_replay": "one fresh CPU process loads 20 checkpoints, 16 length-spanning rows each",
+      "new": 20,
+      "reused": 10
+    },
+    "syntax_compiled_new_sources": 20,
+    "new_fits": 44,
+    "afdb": {
+      "panel_rows": 64,
+      "physical_accuracy_evaluated": false,
+      "supervised_fits": 0
+    },
+    "explore": {
+      "continuation": 2,
+      "initial": 8,
+      "fresh_replay": "six selected checkpoints; see lane public report"
+    },
+    "traditional": {
+      "fits": 14,
+      "fresh_process_replay": "14 models x 128 rows"
+    },
+    "independent_final_report_review": "Passed; includes sequence-hash versus physical qualification, AF qualification denominator, row-to-T-to-group reduction, complete exploration cost/replay and fair continued-optimization baseline opportunity"
+  }
+}

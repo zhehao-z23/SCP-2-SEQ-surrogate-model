@@ -1,0 +1,41 @@
+{
+  "schema": "AFDB.cold_process_e2e.v1",
+  "status": "complete",
+  "rows": 64,
+  "residues": 26671,
+  "length_range": [
+    107,
+    1240
+  ],
+  "cold_process_sequence_to_two_predictions_seconds": 7.772561035118997,
+  "scope": "Includes Python scientific-library imports, local encoder and two trained-head loads, descriptors, fresh full-sequence encoder inference, both head predictions and CPU transfer. Excludes remote source discovery/transfer and posthoc feature-shift analysis. Local OS filesystem may be warm; no network/model download. Two heads share one extraction. Singleton batching for both.",
+  "cold_import_and_model_load_seconds": 5.948829423636198,
+  "encoder_forward_seconds_sum": 1.5094754742458463,
+  "descriptor_seconds_sum": 0.024200642481446266,
+  "head_including_normalization_transfer_seconds_sum": {
+    "residue_mean": 0.11337490566074848,
+    "mean_pre": 0.04401788301765919
+  },
+  "peak_GPU_bytes": 1438069760,
+  "peak_RSS_bytes": 2277896192,
+  "checks": [
+    {
+      "mode": "residue_mean",
+      "previous_cache_route_prediction_max_abs_difference": 0.0,
+      "probability_sum_error_max": 1.1920928955078125e-07,
+      "all_rows_pass": true
+    },
+    {
+      "mode": "mean_pre",
+      "previous_cache_route_prediction_max_abs_difference": 1.6391277313232422e-07,
+      "probability_sum_error_max": 1.1920928955078125e-07,
+      "all_rows_pass": true
+    }
+  ],
+  "script_sha256": "c5a824bbe6d9cf6975b84c0becc0e506a0603990d996e38e4aacb2963f4a06b7",
+  "source_sha256": "60702a259521545e652c869b9e1c632fc08da1b039dec892c0f0f2a8bd106fda",
+  "checkpoint_manifest_sha256": "dd518367099147283233cb7d23eb587c24d97e9f8c4c93e7b030e6ca9bfdfd36",
+  "precision": "FP32 extraction/math; residue FP16 roundtrip matches training cache",
+  "accuracy_evaluated": false,
+  "warning": "Measured engineering pipeline only. Prediction parity and throughput do not establish AFDB physical accuracy or whole-library throughput."
+}

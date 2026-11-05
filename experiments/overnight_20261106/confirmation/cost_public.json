@@ -1,0 +1,174 @@
+{
+  "status": "complete",
+  "by_family_seed": [
+    {
+      "family": "composition_charge_deep",
+      "seed": 1701,
+      "configs": 5,
+      "reused": 2,
+      "fit_wall_seconds": {
+        "min": 15.441868998110294,
+        "median": 18.081589886918664,
+        "max": 27.58912475220859
+      },
+      "new_fit_wall_seconds_sum": 66.98292032349855,
+      "cached_head_sequences_per_second": {
+        "min": 2965730.895535289,
+        "median": 3234001.964897809,
+        "max": 3387893.159903094
+      },
+      "peak_GPU_bytes": 49606144,
+      "peak_RSS_bytes": 1526325248,
+      "epochs": {
+        "min": 72,
+        "median": 82,
+        "max": 120
+      },
+      "stop_reasons": {
+        "early_stop": 5
+      }
+    },
+    {
+      "family": "composition_charge_deep",
+      "seed": 3407,
+      "configs": 5,
+      "reused": 0,
+      "fit_wall_seconds": {
+        "min": 16.38951178174466,
+        "median": 19.820074047893286,
+        "max": 25.502125774510205
+      },
+      "new_fit_wall_seconds_sum": 103.97243952471763,
+      "cached_head_sequences_per_second": {
+        "min": 2999527.9305997025,
+        "median": 3288446.561959169,
+        "max": 3344375.4658292145
+      },
+      "peak_GPU_bytes": 49606144,
+      "peak_RSS_bytes": 1528643584,
+      "epochs": {
+        "min": 73,
+        "median": 89,
+        "max": 119
+      },
+      "stop_reasons": {
+        "early_stop": 5
+      }
+    },
+    {
+      "family": "mean_pre",
+      "seed": 1701,
+      "configs": 5,
+      "reused": 2,
+      "fit_wall_seconds": {
+        "min": 26.161534327082336,
+        "median": 34.27217983081937,
+        "max": 40.020603623241186
+      },
+      "new_fit_wall_seconds_sum": 105.57069650664926,
+      "cached_head_sequences_per_second": {
+        "min": 88008.12361490079,
+        "median": 92444.51771418333,
+        "max": 96570.24046298713
+      },
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1605947392,
+      "epochs": {
+        "min": 56,
+        "median": 70,
+        "max": 83
+      },
+      "stop_reasons": {
+        "early_stop": 5
+      }
+    },
+    {
+      "family": "mean_pre",
+      "seed": 3407,
+      "configs": 5,
+      "reused": 2,
+      "fit_wall_seconds": {
+        "min": 30.383399358019233,
+        "median": 34.62079892400652,
+        "max": 38.46509619895369
+      },
+      "new_fit_wall_seconds_sum": 96.74286741670221,
+      "cached_head_sequences_per_second": {
+        "min": 83122.55262671104,
+        "median": 87435.04658708288,
+        "max": 98401.51352544257
+      },
+      "peak_GPU_bytes": 148597248,
+      "peak_RSS_bytes": 1605652480,
+      "epochs": {
+        "min": 56,
+        "median": 68,
+        "max": 76
+      },
+      "stop_reasons": {
+        "early_stop": 5
+      }
+    },
+    {
+      "family": "residue_mean",
+      "seed": 1701,
+      "configs": 5,
+      "reused": 2,
+      "fit_wall_seconds": {
+        "min": 141.18222162686288,
+        "median": 166.82351167872548,
+        "max": 193.73668070603162
+      },
+      "new_fit_wall_seconds_sum": 535.1643461603671,
+      "cached_head_sequences_per_second": {
+        "min": 10476.097131915612,
+        "median": 10706.903273000333,
+        "max": 11355.67254109233
+      },
+      "peak_GPU_bytes": 12637700608,
+      "peak_RSS_bytes": 25455984640,
+      "epochs": {
+        "min": 91,
+        "median": 104,
+        "max": 119
+      },
+      "stop_reasons": {
+        "early_stop": 5
+      }
+    },
+    {
+      "family": "residue_mean",
+      "seed": 3407,
+      "configs": 5,
+      "reused": 2,
+      "fit_wall_seconds": {
+        "min": 105.06540014129132,
+        "median": 150.8502038354054,
+        "max": 207.16391636896878
+      },
+      "new_fit_wall_seconds_sum": 506.85756773501635,
+      "cached_head_sequences_per_second": {
+        "min": 10603.728754562464,
+        "median": 10718.07168115017,
+        "max": 11632.313878578374
+      },
+      "peak_GPU_bytes": 12637700608,
+      "peak_RSS_bytes": 25459044352,
+      "epochs": {
+        "min": 68,
+        "median": 97,
+        "max": 133
+      },
+      "stop_reasons": {
+        "early_stop": 5
+      }
+    }
+  ],
+  "new_fit_wall_seconds_sum": 1415.2908376669511,
+  "new_child_wall_seconds_sum": 1598.7814543247223,
+  "new_queue_wall_seconds_sum": 1598.7922384738922,
+  "confirmation_elapsed_span_seconds": 1181.183836698532,
+  "allocated_seconds_cap": 18000,
+  "encoder_new_extractions": 0,
+  "interpretation": "All use previously frozen features. Cached head throughput excludes encoder/cache loading. Fit wall time is recorded by the original trainer; one queue per GPU gives a conservative allocation proxy, not GPU busy time. Charge and pooling timing code differ; not a rigorous cross-family deployment benchmark."
+}

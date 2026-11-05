@@ -1,0 +1,60 @@
+{
+  "schema": "AFDB.diagnostic.provenance.v1",
+  "code": [
+    {
+      "relative_role": "code/overnight_afdb_diagnose.py",
+      "sha256": "09a555119b3e063a7f3d0dfb964c14dadb089e27b1d10c013b4fde848cbbe4e9"
+    },
+    {
+      "relative_role": "code/overnight_afdb_e2e.py",
+      "sha256": "c5a824bbe6d9cf6975b84c0becc0e506a0603990d996e38e4aacb2963f4a06b7"
+    },
+    {
+      "relative_role": "code/overnight_afdb_select.py",
+      "sha256": "2db09a9e843cbda64d1222f63ee1b8d4a53e8803267f174d735efe283ad4f20a"
+    },
+    {
+      "relative_role": "code/pooling_cache_extract.py",
+      "sha256": "c174186eaf1e1c0d5ce385963ba37bd16aa7205b97a452a424f2c5495c083bad"
+    },
+    {
+      "relative_role": "reused_module/pooling_model.py",
+      "sha256": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81"
+    },
+    {
+      "relative_role": "reused_module/charge_features.py",
+      "sha256": "5553add8cc81565cb345baa55d6ddc14644b2618100fcab56b9e0816dd3b9796"
+    },
+    {
+      "relative_role": "reused_module/features.py",
+      "sha256": "2cef7bc4e3a0cf88e3c059f946926a4827563ae18b529864bb07637d39d7560a"
+    },
+    {
+      "relative_role": "reused_module/hf_backend.py",
+      "sha256": "3de075876cdd11896ae76dce4a12140d876fecb66cc0f1e2d98df0c40bf0be18"
+    }
+  ],
+  "checkpoint_manifest_sha256": "dd518367099147283233cb7d23eb587c24d97e9f8c4c93e7b030e6ca9bfdfd36",
+  "trained_head_identity": [
+    {
+      "mode": "residue_mean",
+      "checkpoint_sha256": "4b2f85873e6f98efd387058c1ea0a29f3938837952a3d9bea00548a1dc0cad72",
+      "config_sha256": "39e63c1a59235c15d168536b2e9297317a8b10ccd5f0daab2e1bf7d7e1561d65",
+      "role_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a",
+      "seed": 1701,
+      "fold": 0
+    },
+    {
+      "mode": "mean_pre",
+      "checkpoint_sha256": "571156669337f1008d10742bc87b34199e30a6fc0b2b11a3db32a68becc7c736",
+      "config_sha256": "29cc157fa14a6fd9551e743fd835c708368ecdbb92b9208979e3d560fef0acf4",
+      "role_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a",
+      "seed": 1701,
+      "fold": 0
+    }
+  ],
+  "source_panel_sha256": "ef0dd50fc28ecee100ef868fac30d3ba13a6ad3b026bf9133c99cdcede57e9b8",
+  "cache_receipt_sha256": "9afeb1a74731d023f6ab035034b12f205e2d024ba7f778f00f2d0a9c6f56ed6d",
+  "source_notes": "Selection executed on the frozen G3 FASTA via stdin, identical version archived in code. Encoding and both inference paths executed from the listed Byte code. Private data remain outside Git.",
+  "privacy": "No individual AF IDs, sequences, per-sample predictions, training labels or model weights are included."
+}

@@ -49,3 +49,7 @@ secrets.json
 config.local.*
 .DS_Store
 Thumbs.db
+
+# Private AFDB diagnostics inputs
+overnight_afdb_private_panel.json
+overnight_afdb_sequences.json

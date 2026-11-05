@@ -1,0 +1,20 @@
+{
+  "stage": "overnight_20261106_afdb",
+  "purpose": "Actual AFDB sequence engineering and domain-shift diagnostic, without an accuracy claim",
+  "source": "Frozen 38,594 legacy AFDB annotation/candidate sequences; not AFDB-wide random sampling",
+  "panel": "64 canonical sequences, 16 deterministic SHA-ranked items per length bin 40-150,151-300,301-600,601-2400; zero truncation",
+  "encoder": "Reuse validated frozen local ESMC300 FP32 singleton extraction; save FP16 residues and FP32 reductions",
+  "heads": "Existing pooling_20261105 stop-selected seed1701 fold0 mean_pre and residue_mean, use their own fit-only normalization",
+  "new_fits": 0,
+  "gpu": 6,
+  "gpu_wall_seconds_cap": 1800,
+  "host_threads_max": 4,
+  "RSS_GiB_max": 32,
+  "cache_GiB_cap": 1,
+  "automatic_retries": 0,
+  "labels_read_for_accuracy": false,
+  "physical_calls": 0,
+  "checks": ["sequence hash and exact residue positions", "finite canonical full sequence inputs", "bounded residue cache", "fresh model checkpoint inference", "probability validity", "mean-residue prediction disagreement", "feature shift against Atlas train normalization", "timed extraction, loading and inference"],
+  "limitations": ["Exact AF v4 coordinate-sequence provenance not closed for each CSV sequence", "Legacy 240-bin conditional physics cannot be substituted for current historical Atlas 63-bin targets", "Paused new AF physical panel is not numerically qualified", "Prediction disagreement is not electrostatic accuracy or uncertainty calibration"],
+  "stop": "Finish the 64-sequence diagnostic once and report measured bottlenecks and next data qualification; no physical or full-AFDB scan"
+}

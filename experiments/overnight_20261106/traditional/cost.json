@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "fits": 14,
+  "screen": 6,
+  "fivefold_families": 2,
+  "CPU_threads": 8,
+  "GPU_used": false,
+  "sum_fit_wall_seconds": 703.6397545523942,
+  "sum_estimator_fit_seconds": 228.24170111492276,
+  "max_peak_RSS_GiB": 11.052310943603516,
+  "queue_wall_seconds": 727.8638951778412,
+  "elapsed_since_initial_queue_seconds": 1123.068232536316,
+  "checkpoint_bytes": 10228371781,
+  "failure_count": 0,
+  "repair_count": 0,
+  "deadline_seconds": 7200,
+  "note": "Fit wall includes feature loading, estimator fitting, prediction, serialization and in-process replay; queue adds process start/exit. CPU-seconds and machine total utilization are not measured. Pure handcrafted inference excludes feature computation; ESMC control excludes encoder cost."
+}

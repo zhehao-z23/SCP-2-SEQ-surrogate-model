@@ -1,0 +1,42 @@
+{
+  "candidates": [
+    "hgb_q",
+    "et_q_leaf3"
+  ],
+  "rule": "Two lowest stop group-macro H on fold0; fixed configurations and seed1701 for remaining four folds, no further parameter search",
+  "screen_ranking": [
+    {
+      "candidate": "hgb_q",
+      "stop_H": 0.05366432670073766,
+      "receipt_sha256": "e454a729021e1e12d9e341f2725386663a29e58f77f79943391e893834134fb2"
+    },
+    {
+      "candidate": "et_q_leaf3",
+      "stop_H": 0.05386269545611453,
+      "receipt_sha256": "811c2649cd39c87d5017d916c2cb7af63ca8aeb315370f9a4d6295a5cd09ba7f"
+    },
+    {
+      "candidate": "et_q_leaf1",
+      "stop_H": 0.053944294697644606,
+      "receipt_sha256": "d60847fb942efc500287f5bc262c7db1d167b54494ca3790d020ea33ff6b3c8b"
+    },
+    {
+      "candidate": "rf_q_leaf3",
+      "stop_H": 0.054269779381689726,
+      "receipt_sha256": "0f7b5f9027176af6ba6c3aef10c04ba711421c24bf16407f976888bd95276b50"
+    },
+    {
+      "candidate": "et_p_leaf3",
+      "stop_H": 0.054340876962884976,
+      "receipt_sha256": "46af2045771e3d10bf9f64f1bc46c1872c7966bd15a86bb6eea8f09c32604129"
+    },
+    {
+      "candidate": "et_q_esmc_charge",
+      "stop_H": 0.05552957257156978,
+      "receipt_sha256": "760acfe8fd6b8cb353d3eb32c17f9e14f0086f0bca3acdd0b5b232bdd0b7c195"
+    }
+  ],
+  "selection_epoch": 1793898709.6633682,
+  "not_blind": true,
+  "reason": "Both inexpensive and distinct model classes; stop difference small, worthwhile fivefold practical baseline reference"
+}

@@ -1,0 +1,922 @@
+{
+  "confirmation_fits_sha256": "af3225c0a8e751461c5ae3171f5510e4f03e4cd56dff119e8f515c96349bcb6f",
+  "available_complete_seed1701_families": [
+    "composition_charge_deep",
+    "mean_pre",
+    "residue_mean"
+  ],
+  "paired": [
+    {
+      "contrast": "hgb_q minus composition_charge_deep",
+      "groups": 7999,
+      "delta_H": 0.0018052186175413524,
+      "delta_CDF": 2.105988728297829e-05,
+      "delta_tail": 5.862275309727609e-05,
+      "descriptive_95_group_bootstrap": [
+        0.0015791419185596793,
+        0.0020642181423079246
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "all",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05414948213768303,
+        "CDF": 0.00021753443787234043,
+        "tail": 0.0021360390229989714
+      },
+      "neural_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05234426352014168,
+        "CDF": 0.00019647455058936214,
+        "tail": 0.002077416269901695
+      }
+    },
+    {
+      "contrast": "hgb_q minus composition_charge_deep",
+      "groups": 767,
+      "delta_H": 0.0024165415086185456,
+      "delta_CDF": 3.17463630242423e-05,
+      "delta_tail": 5.305697433322339e-05,
+      "descriptive_95_group_bootstrap": [
+        0.0016546398171692676,
+        0.0031711768134664153
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_T_equals_U",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.05309995902744203,
+        "CDF": 0.00021523164151760184,
+        "tail": 0.0018468565866870252
+      },
+      "neural_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.0506834175188235,
+        "CDF": 0.00018348527849335958,
+        "tail": 0.0017937996123538018
+      }
+    },
+    {
+      "contrast": "hgb_q minus composition_charge_deep",
+      "groups": 729,
+      "delta_H": 0.0027461236339014505,
+      "delta_CDF": 9.301470944547155e-05,
+      "delta_tail": 0.00012051407861008301,
+      "descriptive_95_group_bootstrap": [
+        0.001499295373194163,
+        0.003964611495174565
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.06351131701700509,
+        "CDF": 0.00048192238529577345,
+        "tail": 0.004120989683575571
+      },
+      "neural_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.06076519338310364,
+        "CDF": 0.00038890767585030185,
+        "tail": 0.004000475604965488
+      }
+    },
+    {
+      "contrast": "hgb_q minus composition_charge_deep",
+      "groups": 42,
+      "delta_H": 0.00233832734596305,
+      "delta_CDF": -8.209703295223593e-06,
+      "delta_tail": 4.4837879165498734e-05,
+      "descriptive_95_group_bootstrap": [
+        -0.0022860488943147574,
+        0.006054643675302057
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_U_and_length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.058413549268379876,
+        "CDF": 0.0002771022896264256,
+        "tail": 0.003982591460557546
+      },
+      "neural_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.05607522192241682,
+        "CDF": 0.0002853119929216492,
+        "tail": 0.003937753581392046
+      }
+    },
+    {
+      "contrast": "hgb_q minus mean_pre",
+      "groups": 7999,
+      "delta_H": 0.003548521553783253,
+      "delta_CDF": 2.2375551401362295e-05,
+      "delta_tail": 0.00016598116328858678,
+      "descriptive_95_group_bootstrap": [
+        0.003155114821027105,
+        0.003954321601523847
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "all",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05414948213768303,
+        "CDF": 0.00021753443787234043,
+        "tail": 0.0021360390229989714
+      },
+      "neural_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05060096058389979,
+        "CDF": 0.00019515888647097813,
+        "tail": 0.0019700578597103844
+      }
+    },
+    {
+      "contrast": "hgb_q minus mean_pre",
+      "groups": 767,
+      "delta_H": 0.0028669829794671646,
+      "delta_CDF": 1.907039399033024e-05,
+      "delta_tail": 0.00012221276326698956,
+      "descriptive_95_group_bootstrap": [
+        0.00168165653996261,
+        0.0039898431394799014
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_T_equals_U",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.05309995902744203,
+        "CDF": 0.00021523164151760184,
+        "tail": 0.0018468565866870252
+      },
+      "neural_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.05023297604797488,
+        "CDF": 0.00019616124752727164,
+        "tail": 0.0017246438234200354
+      }
+    },
+    {
+      "contrast": "hgb_q minus mean_pre",
+      "groups": 729,
+      "delta_H": 0.001958281440438489,
+      "delta_CDF": 2.6485541522396597e-05,
+      "delta_tail": 0.0001187459592050695,
+      "descriptive_95_group_bootstrap": [
+        0.0005981513358635224,
+        0.003396080591469236
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.06351131701700509,
+        "CDF": 0.00048192238529577345,
+        "tail": 0.004120989683575571
+      },
+      "neural_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.0615530355765666,
+        "CDF": 0.00045543684377337683,
+        "tail": 0.004002243724370502
+      }
+    },
+    {
+      "contrast": "hgb_q minus mean_pre",
+      "groups": 42,
+      "delta_H": 0.0016739871260860858,
+      "delta_CDF": -6.824276264473674e-06,
+      "delta_tail": -0.0002704890088156692,
+      "descriptive_95_group_bootstrap": [
+        -0.005152217406641274,
+        0.008443814155081315
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_U_and_length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.058413549268379876,
+        "CDF": 0.0002771022896264256,
+        "tail": 0.003982591460557546
+      },
+      "neural_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.056739562142293795,
+        "CDF": 0.0002839265658908993,
+        "tail": 0.004253080469373215
+      }
+    },
+    {
+      "contrast": "hgb_q minus residue_mean",
+      "groups": 7999,
+      "delta_H": 0.005111041176117055,
+      "delta_CDF": 3.996877220381884e-05,
+      "delta_tail": 0.00019396350031921736,
+      "descriptive_95_group_bootstrap": [
+        0.004723327994119107,
+        0.005534251164907052
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "all",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05414948213768303,
+        "CDF": 0.00021753443787234043,
+        "tail": 0.0021360390229989714
+      },
+      "neural_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.04903844096156598,
+        "CDF": 0.00017756566566852158,
+        "tail": 0.001942075522679754
+      }
+    },
+    {
+      "contrast": "hgb_q minus residue_mean",
+      "groups": 767,
+      "delta_H": 0.00462317469538859,
+      "delta_CDF": 4.6465947108048994e-05,
+      "delta_tail": 0.00011850591144547204,
+      "descriptive_95_group_bootstrap": [
+        0.0033820072413288617,
+        0.005791684027398064
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_T_equals_U",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.05309995902744203,
+        "CDF": 0.00021523164151760184,
+        "tail": 0.0018468565866870252
+      },
+      "neural_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.048476784332053456,
+        "CDF": 0.00016876569440955292,
+        "tail": 0.001728350675241553
+      }
+    },
+    {
+      "contrast": "hgb_q minus residue_mean",
+      "groups": 729,
+      "delta_H": 0.0039338570092611255,
+      "delta_CDF": 5.2862369847434826e-05,
+      "delta_tail": 0.0001373900478910985,
+      "descriptive_95_group_bootstrap": [
+        0.0024066910745297663,
+        0.005438875050149542
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.06351131701700509,
+        "CDF": 0.00048192238529577345,
+        "tail": 0.004120989683575571
+      },
+      "neural_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.05957746000774396,
+        "CDF": 0.0004290600154483386,
+        "tail": 0.003983599635684472
+      }
+    },
+    {
+      "contrast": "hgb_q minus residue_mean",
+      "groups": 42,
+      "delta_H": 0.0005953027930776868,
+      "delta_CDF": -6.279385038971684e-05,
+      "delta_tail": -0.0005465939863585583,
+      "descriptive_95_group_bootstrap": [
+        -0.009113980915568327,
+        0.0085448367590587
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_U_and_length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.058413549268379876,
+        "CDF": 0.0002771022896264256,
+        "tail": 0.003982591460557546
+      },
+      "neural_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.0578182464753022,
+        "CDF": 0.00033989614001614247,
+        "tail": 0.004529185446916104
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus composition_charge_deep",
+      "groups": 7999,
+      "delta_H": 0.0024499341543909267,
+      "delta_CDF": 3.811267267441733e-05,
+      "delta_tail": 9.784841635255362e-05,
+      "descriptive_95_group_bootstrap": [
+        0.002141346362894312,
+        0.0027949720039378684
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "all",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05479419767453262,
+        "CDF": 0.00023458722326377948,
+        "tail": 0.002175264686254249
+      },
+      "neural_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05234426352014168,
+        "CDF": 0.00019647455058936214,
+        "tail": 0.002077416269901695
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus composition_charge_deep",
+      "groups": 767,
+      "delta_H": 0.0032087986834371074,
+      "delta_CDF": 4.027790013672782e-05,
+      "delta_tail": 0.00013357376614861653,
+      "descriptive_95_group_bootstrap": [
+        0.0023580166834447987,
+        0.004048209159040548
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_T_equals_U",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.053892216202260604,
+        "CDF": 0.0002237631786300874,
+        "tail": 0.001927373378502418
+      },
+      "neural_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.0506834175188235,
+        "CDF": 0.00018348527849335958,
+        "tail": 0.0017937996123538018
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus composition_charge_deep",
+      "groups": 729,
+      "delta_H": 0.003216864387178124,
+      "delta_CDF": 0.00013501372029621006,
+      "delta_tail": 0.00021134261641179782,
+      "descriptive_95_group_bootstrap": [
+        0.0017851296195506446,
+        0.004702768701978776
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.06398205777028175,
+        "CDF": 0.000523921396146512,
+        "tail": 0.004211818221377285
+      },
+      "neural_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.06076519338310364,
+        "CDF": 0.00038890767585030185,
+        "tail": 0.004000475604965488
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus composition_charge_deep",
+      "groups": 42,
+      "delta_H": 0.003986364570096383,
+      "delta_CDF": 2.0286810560136357e-05,
+      "delta_tail": 0.00024485024380505857,
+      "descriptive_95_group_bootstrap": [
+        -5.032387691889426e-05,
+        0.008092386883956934
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_U_and_length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.06006158649251322,
+        "CDF": 0.0003055988034817856,
+        "tail": 0.004182603825197105
+      },
+      "neural_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.05607522192241682,
+        "CDF": 0.0002853119929216492,
+        "tail": 0.003937753581392046
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus mean_pre",
+      "groups": 7999,
+      "delta_H": 0.0041932370906328275,
+      "delta_CDF": 3.942833679280134e-05,
+      "delta_tail": 0.00020520682654386432,
+      "descriptive_95_group_bootstrap": [
+        0.003766485883651058,
+        0.004625554997411742
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "all",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05479419767453262,
+        "CDF": 0.00023458722326377948,
+        "tail": 0.002175264686254249
+      },
+      "neural_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05060096058389979,
+        "CDF": 0.00019515888647097813,
+        "tail": 0.0019700578597103844
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus mean_pre",
+      "groups": 767,
+      "delta_H": 0.003659240154285727,
+      "delta_CDF": 2.760193110281576e-05,
+      "delta_tail": 0.00020272955508238266,
+      "descriptive_95_group_bootstrap": [
+        0.0023997790861955155,
+        0.004850344036488326
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_T_equals_U",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.053892216202260604,
+        "CDF": 0.0002237631786300874,
+        "tail": 0.001927373378502418
+      },
+      "neural_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.05023297604797488,
+        "CDF": 0.00019616124752727164,
+        "tail": 0.0017246438234200354
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus mean_pre",
+      "groups": 729,
+      "delta_H": 0.0024290221937151627,
+      "delta_CDF": 6.848455237313511e-05,
+      "delta_tail": 0.00020957449700678428,
+      "descriptive_95_group_bootstrap": [
+        0.0009532611435992089,
+        0.00403083284240106
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.06398205777028175,
+        "CDF": 0.000523921396146512,
+        "tail": 0.004211818221377285
+      },
+      "neural_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.0615530355765666,
+        "CDF": 0.00045543684377337683,
+        "tail": 0.004002243724370502
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus mean_pre",
+      "groups": 42,
+      "delta_H": 0.0033220243502194205,
+      "delta_CDF": 2.1672237590886264e-05,
+      "delta_tail": -7.04766441761093e-05,
+      "descriptive_95_group_bootstrap": [
+        -0.002752116909881286,
+        0.009823980018430037
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_U_and_length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.06006158649251322,
+        "CDF": 0.0003055988034817856,
+        "tail": 0.004182603825197105
+      },
+      "neural_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.056739562142293795,
+        "CDF": 0.0002839265658908993,
+        "tail": 0.004253080469373215
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus residue_mean",
+      "groups": 7999,
+      "delta_H": 0.005755756712966629,
+      "delta_CDF": 5.7021557595257884e-05,
+      "delta_tail": 0.0002331891635744949,
+      "descriptive_95_group_bootstrap": [
+        0.005324479531661237,
+        0.006218509953161592
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "all",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.05479419767453262,
+        "CDF": 0.00023458722326377948,
+        "tail": 0.002175264686254249
+      },
+      "neural_score": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999,
+        "H": 0.04903844096156598,
+        "CDF": 0.00017756566566852158,
+        "tail": 0.001942075522679754
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus residue_mean",
+      "groups": 767,
+      "delta_H": 0.005415431870207153,
+      "delta_CDF": 5.499748422053451e-05,
+      "delta_tail": 0.00019902270326086518,
+      "descriptive_95_group_bootstrap": [
+        0.004200999166338703,
+        0.0066113699957893275
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_T_equals_U",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.053892216202260604,
+        "CDF": 0.0002237631786300874,
+        "tail": 0.001927373378502418
+      },
+      "neural_score": {
+        "rows": 1164,
+        "unique_T": 1164,
+        "groups": 767,
+        "H": 0.048476784332053456,
+        "CDF": 0.00016876569440955292,
+        "tail": 0.001728350675241553
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus residue_mean",
+      "groups": 729,
+      "delta_H": 0.004404597762537799,
+      "delta_CDF": 9.486138069817336e-05,
+      "delta_tail": 0.0002282185856928133,
+      "descriptive_95_group_bootstrap": [
+        0.002796051554459883,
+        0.005973512793493225
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.06398205777028175,
+        "CDF": 0.000523921396146512,
+        "tail": 0.004211818221377285
+      },
+      "neural_score": {
+        "rows": 1691,
+        "unique_T": 1691,
+        "groups": 729,
+        "H": 0.05957746000774396,
+        "CDF": 0.0004290600154483386,
+        "tail": 0.003983599635684472
+      }
+    },
+    {
+      "contrast": "et_q_leaf3 minus residue_mean",
+      "groups": 42,
+      "delta_H": 0.0022433400172110194,
+      "delta_CDF": -3.4297336534356914e-05,
+      "delta_tail": -0.00034658162171899854,
+      "descriptive_95_group_bootstrap": [
+        -0.005288760223053613,
+        0.009553726941001687
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false,
+      "stratum": "strict_U_and_length_gt600",
+      "seed": 1701,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.06006158649251322,
+        "CDF": 0.0003055988034817856,
+        "tail": 0.004182603825197105
+      },
+      "neural_score": {
+        "rows": 48,
+        "unique_T": 48,
+        "groups": 42,
+        "H": 0.0578182464753022,
+        "CDF": 0.00033989614001614247,
+        "tail": 0.004529185446916104
+      }
+    }
+  ]
+}

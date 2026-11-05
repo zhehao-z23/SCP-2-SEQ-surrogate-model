@@ -1,0 +1,15 @@
+{
+  "objective": "Actual traditional ML comparison on all qualified Atlas T development rows",
+  "authorization": "parent overnight task 2026-11-06",
+  "cpu_threads": 8,
+  "max_RSS_GiB": 32,
+  "total_wall_seconds": 7200,
+  "screen_fits_max": 6,
+  "confirmation_fits_max": 8,
+  "GPU": false,
+  "repair_budget": 2,
+  "history": "196 scoped valid index files checked; no recorded RF/ExtraTrees/GBDT runs found. Not exhaustive older G1 audit.",
+  "environment": "existing sklearn 1.7.2; no packages installed",
+  "selection": "screen fold0,stop1,train234; use stop group H for fixed config promotion; subsequent fivefold results are exposed development, not nested blind validation",
+  "probability": "multioutput p means or sqrt(p) means then square-normalize; HGB independent sqrt coordinate regressions clipped then square-normalized; never interpreted as softmax logits"
+}

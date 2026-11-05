@@ -1,0 +1,26 @@
+{
+  "stage":"overnight_20261106_mean_continuation_confirmation_v1",
+  "registered_after":"8fit exploration independently audited; no unseen confirmation outcomes inspected",
+  "decision":"Do not promote attention on stop differences of 3.53e-5 or 1.03e-6 and near-mean learned pooling; replicate simpler mean continuation first",
+  "root":"${PROJECT_ROOT}/overnight_20261106/explore/confirmation",
+  "parent":"${PROJECT_ROOT}/atlas_scale_20261105",
+  "cache_root":"${PROJECT_ROOT}/pooling_20261105",
+  "mode":"mean_continue",
+  "lr":0.0001,
+  "fits":[
+    {"fold":1,"seed":1701,"warmstart":"${PROJECT_ROOT}/pooling_20261105/runs/a460941f4efce5a8e17c571777cf42cdc32c57b46b3489be51f9a0e92d25ef94/best.pt","gpu_uuid":"${GPU_UUID_0}"},
+    {"fold":0,"seed":3407,"warmstart":"${PROJECT_ROOT}/pooling_20261105/runs/a69bd3e56223aee428541f7fa4d3b9836975f67b3072ed487b7750e3f9c684bb/best.pt","gpu_uuid":"${GPU_UUID_1}"}
+  ],
+  "max_fits":2,
+  "max_seconds_per_fit":900,
+  "max_process_seconds_per_fit":1020,
+  "max_epochs":300,
+  "max_concurrency":2,
+  "max_gpu_hours":1,
+  "automatic_retries":0,
+  "baseline":"Each own fold/seed original residue_mean checkpoint selected on stop only; roles and normalization asserted identical",
+  "initial_checkpoint_eligible":true,
+  "new_C_transfer_permitted":false,
+  "not_blind":true,
+  "stop":"Close after these two fits plus numerical replay/audit; no extra exploratory fit"
+}

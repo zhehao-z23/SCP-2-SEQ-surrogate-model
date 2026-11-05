@@ -1,0 +1,14 @@
+{
+  "stage":"overnight_20261106",
+  "purpose":"Five-fold/two-seed confirmation plus bounded one-fold mechanism discovery, traditional baselines and small cross-source evidence",
+  "confirmation":{"families":["mean_pre","residue_mean","composition_charge_deep"],"folds":[0,1,2,3,4],"seeds":[1701,3407],"fixed_lr":0.0003,"reused_fits":10,"new_fits":20,"pooling_fit_seconds":900,"charge_fit_seconds":600,"GPU_hours_cap":5,"GPUs":[0,1]},
+  "exploration":{"development_fold":0,"stop_fold":1,"initial_fits_max":8,"fit_seconds":900,"GPU_hours_cap":4,"GPUs":[2,3],"promotion_cap_fits":6,"promotion_GPU_hours_cap":2,"criteria":"Mechanistic or practical gain that survives code, convergence, paired errors and cost checks; no permanent percentage threshold"},
+  "traditional":{"initial_fits_max":6,"CPU_threads_max":8,"RSS_GiB_max":32,"initial_wall_hours_max":2,"confirmation":"only strongest qualified 1-2 families; reuse same target, roles and feature snapshots"},
+  "cross_source":{"GPU_hours_cap":0.5,"GPU":6,"CPU_threads_max":4,"RSS_GiB_max":32,"scope":"small existing AFDB assets; electrostatic accuracy only with qualified physical labels; embedding-only evidence limited to adaptation, representation and cost"},
+  "frozen_backbone":true,
+  "data":"reuse immutable historical T/vertex-p release and frozen ESMC300 residue cache; no relabeling or production changes",
+  "exposure":"development fold and reused outer evaluations remain exposed; no independent final test claim",
+  "recovery":"no automatic relaunch on observation timeout; reconcile PID/startticks and receipts; each lane at most2 engineering repair attempts before reconsidering method",
+  "publication":"code/configuration/aggregate results only, existing owner authorization; no sample details, sequences, weights, raw labels or full logs",
+  "closure":"actual completed confirmation, a module research-to-experiment decision, traditional baseline evidence, cross-source measured evidence, final independent reductions and Byte/Git/README records"
+}

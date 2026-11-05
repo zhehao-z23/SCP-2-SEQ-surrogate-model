@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+  "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+  "confirmation_plan_sha256": "255a790f7e5139fb448cbc71afb22f5ce6417090dc27855e56e08fc63cb1619d",
+  "records": {
+    "summary.json": "fe7ac207b1127f5d594d5dc518b79e024d9bb5f146646e6ca2ce08acd4d78927",
+    "checkpoint_replay.json": "e2819b0f58ec4edbaad836adf439e4e9d5ddbaed5b90b0a8cab6d1d63a0ca5cd",
+    "all_fits_public.csv": "f7e52f5435e7df3f6fa1e33901424989b889ea133ce465e2023bd845db5ea921",
+    "cost_public.json": "1f0160804cbc9a40660c5c1957615b3173b6e63d31e5f573f3fb67af504d572d"
+  },
+  "executed_code": {
+    "overnight_prepare_confirmation.py": "5995e3049182524f176ca7b15cd89c09d34280626c34185a13738aef2746d850",
+    "overnight_confirmation_queue.py": "30c17a0c8625fa2d0830607a4257a229f7630c48cfa94d6fe8c366e4122b3f77",
+    "train_pooling.py": "69ecba77cf9b8ea9285bd87d5a4115dd1ca7bf91d4a35b6d2e7c0cc4b4d6321c",
+    "pooling_model.py": "4ba3a73d07d57478836bcbae0ef7d65fc7fd7abe70b175ffec5f7631241f7a81",
+    "train_atlas_capacity.py": "19f885f2c15a1c975505753330bf6e70f57f494d73b05d9e1491de1f0d033c7d",
+    "overnight_summarize_confirmation.py": "1644df28afaaffcc86ea72b85fb7304e1ac75038e390a389ff4af3e7923b1ea1",
+    "overnight_replay_confirmation.py": "c4b6ab728a0c35ac0c9cbaa64cdf64b425d206f95c13fa3bc8fcfd41405f3da5",
+    "overnight_export_confirmation.py": "8ffab0b6c08e47fe25656eef86919e64a37f5798fcc1ff9eed05418fa64d2f3a"
+  },
+  "original_checkpoint_checks": "Ten reused fits retain replay evidence from atlas_scale_20261105 and pooling_20261105. The new replay report covers all twenty additional fits.",
+  "exposure": "All five evaluation folds are development OOF, separately for each seed. No independently protected final newC test results."
+}

@@ -1,0 +1,253 @@
+{
+  "executed_tools": {
+    "overnight_traditional.py": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+    "overnight_traditional_queue.py": "bf5d5cbc004ab4a2540464f366cc5bddf9e87934b528c2f7cbb32f58663e6387",
+    "overnight_traditional_replay.py": "9530deb9b02e9e60c8ca26890cb5ed0a1cc823a9bc8097cb4b93dbfa6cd2224d",
+    "overnight_traditional_summarize.py": "122b0f6115487a5d5f8054064d2983dbc90f70510e52dfe4e115039d7242e207"
+  },
+  "model_configs": [
+    {
+      "candidate": "et_p_leaf3",
+      "fold": 0,
+      "seed": 1701,
+      "spec": {
+        "kind": "et",
+        "features": "charge",
+        "target": "p",
+        "leaf": 3,
+        "max_features": 1.0,
+        "trees": 256
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "bab002502845fa1fe451900c8d88d975ba9ff1ba8d5039605d99358640b2c3bc"
+    },
+    {
+      "candidate": "et_q_esmc_charge",
+      "fold": 0,
+      "seed": 1701,
+      "spec": {
+        "kind": "et",
+        "features": "esmc_charge",
+        "target": "sqrt_p",
+        "leaf": 3,
+        "max_features": 0.3,
+        "trees": 256
+      },
+      "input_dim": 1038,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "7822a82a769d3b85a468b7aa2862cb14786507a761b7f4f67975700ae7ca5850"
+    },
+    {
+      "candidate": "et_q_leaf1",
+      "fold": 0,
+      "seed": 1701,
+      "spec": {
+        "kind": "et",
+        "features": "charge",
+        "target": "sqrt_p",
+        "leaf": 1,
+        "max_features": 1.0,
+        "trees": 256
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "1efb1c2ec30692a4ab2277621ba4cda310e5b44ec4a91d7698c74859369d52e9"
+    },
+    {
+      "candidate": "et_q_leaf3",
+      "fold": 0,
+      "seed": 1701,
+      "spec": {
+        "kind": "et",
+        "features": "charge",
+        "target": "sqrt_p",
+        "leaf": 3,
+        "max_features": 1.0,
+        "trees": 256
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "b59664f67f750362437de97cb34b14333437cba94df3f6e20a30f622178c7161"
+    },
+    {
+      "candidate": "et_q_leaf3",
+      "fold": 1,
+      "seed": 1701,
+      "spec": {
+        "kind": "et",
+        "features": "charge",
+        "target": "sqrt_p",
+        "leaf": 3,
+        "max_features": 1.0,
+        "trees": 256
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "0bd6be2c0c1b1ad8b8c10adbcb302a690dd447840c8a3d027944cfd42ab6fdee"
+    },
+    {
+      "candidate": "et_q_leaf3",
+      "fold": 2,
+      "seed": 1701,
+      "spec": {
+        "kind": "et",
+        "features": "charge",
+        "target": "sqrt_p",
+        "leaf": 3,
+        "max_features": 1.0,
+        "trees": 256
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "5fdf1671f4e2aa192be96a4be2b95db1f28cf3571043a30fae1f7230f9942580"
+    },
+    {
+      "candidate": "et_q_leaf3",
+      "fold": 3,
+      "seed": 1701,
+      "spec": {
+        "kind": "et",
+        "features": "charge",
+        "target": "sqrt_p",
+        "leaf": 3,
+        "max_features": 1.0,
+        "trees": 256
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "0570669396d053eb0f6a6f95e2dd588a0c5916c328ed28fad1bfc82f99118ea2"
+    },
+    {
+      "candidate": "et_q_leaf3",
+      "fold": 4,
+      "seed": 1701,
+      "spec": {
+        "kind": "et",
+        "features": "charge",
+        "target": "sqrt_p",
+        "leaf": 3,
+        "max_features": 1.0,
+        "trees": 256
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "81cfb339fa546d3b4b66b193ca68c905ed2a631b7565f856fe9c50a765d53562"
+    },
+    {
+      "candidate": "hgb_q",
+      "fold": 0,
+      "seed": 1701,
+      "spec": {
+        "kind": "hgb",
+        "features": "charge",
+        "target": "sqrt_p",
+        "iterations": 200,
+        "leaves": 15,
+        "learning_rate": 0.08,
+        "l2": 1.0
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "eaf536df02abf8cefcd2bbb29f9bd2679526e02e6e687aff91b84dd149c68e43"
+    },
+    {
+      "candidate": "hgb_q",
+      "fold": 1,
+      "seed": 1701,
+      "spec": {
+        "kind": "hgb",
+        "features": "charge",
+        "target": "sqrt_p",
+        "iterations": 200,
+        "leaves": 15,
+        "learning_rate": 0.08,
+        "l2": 1.0
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "f735652d59298213fd3088c58fbad54112ca1552927f10845e186fd8d726836b"
+    },
+    {
+      "candidate": "hgb_q",
+      "fold": 2,
+      "seed": 1701,
+      "spec": {
+        "kind": "hgb",
+        "features": "charge",
+        "target": "sqrt_p",
+        "iterations": 200,
+        "leaves": 15,
+        "learning_rate": 0.08,
+        "l2": 1.0
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "fc262a02c12943545c8884087e44a7f0b1ee16287f925a95664d28969f3607f4"
+    },
+    {
+      "candidate": "hgb_q",
+      "fold": 3,
+      "seed": 1701,
+      "spec": {
+        "kind": "hgb",
+        "features": "charge",
+        "target": "sqrt_p",
+        "iterations": 200,
+        "leaves": 15,
+        "learning_rate": 0.08,
+        "l2": 1.0
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "5729b935b1d6449789c9054e9857763d4aed012c57759ca1d8d0ffc9af1197d7"
+    },
+    {
+      "candidate": "hgb_q",
+      "fold": 4,
+      "seed": 1701,
+      "spec": {
+        "kind": "hgb",
+        "features": "charge",
+        "target": "sqrt_p",
+        "iterations": 200,
+        "leaves": 15,
+        "learning_rate": 0.08,
+        "l2": 1.0
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "b7a8c7e2e16feb68f0e23685ad460243ce39051acd53e9d9f2659fca3eeb3acf"
+    },
+    {
+      "candidate": "rf_q_leaf3",
+      "fold": 0,
+      "seed": 1701,
+      "spec": {
+        "kind": "rf",
+        "features": "charge",
+        "target": "sqrt_p",
+        "leaf": 3,
+        "max_features": 1.0,
+        "trees": 256
+      },
+      "input_dim": 78,
+      "script_sha256": "dd9dfcbdbfeff8512b69752d6335165394dff2915aff664adec8866b4edc06ea",
+      "data_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+      "checkpoint_sha256": "9fa009b24229d4f1e2f0dff2c71fb7e0e798e8a9c7fe1dbd7877a2f44b1de08f"
+    }
+  ]
+}
