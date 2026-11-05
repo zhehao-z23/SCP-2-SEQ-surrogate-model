@@ -1,0 +1,121 @@
+{
+  "schema": "seq2scp.repository.source_provenance.v1",
+  "date": "2026-11-05",
+  "source": "user-owned existing Seq2SCP Byte execution project",
+  "machine_location": "recorded privately in the execution manifest",
+  "license_status": "No new license granted here; project owner retains control",
+  "modules": [
+    {
+      "path": "package/src/seq2scp_training/models.py",
+      "source_relative_path": "package/src/seq2scp_training/models.py",
+      "source_sha256": "24d1c2cfbd98395cb681da65ffe30847ec7eed84076e838a313c2e84e01b4d26",
+      "archived_sha256": "24d1c2cfbd98395cb681da65ffe30847ec7eed84076e838a313c2e84e01b4d26",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "package/src/seq2scp_training/losses.py",
+      "source_relative_path": "package/src/seq2scp_training/losses.py",
+      "source_sha256": "fd5960f742aa5324a00f8e367d00f4a6d3aa0251e6055ca51a937c83e7f882df",
+      "archived_sha256": "fd5960f742aa5324a00f8e367d00f4a6d3aa0251e6055ca51a937c83e7f882df",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "package/src/seq2scp_training/features.py",
+      "source_relative_path": "package/src/seq2scp_training/features.py",
+      "source_sha256": "2cef7bc4e3a0cf88e3c059f946926a4827563ae18b529864bb07637d39d7560a",
+      "archived_sha256": "2cef7bc4e3a0cf88e3c059f946926a4827563ae18b529864bb07637d39d7560a",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "package/src/seq2scp_training/charge_features.py",
+      "source_relative_path": "package/src/seq2scp_training/charge_features.py",
+      "source_sha256": "5553add8cc81565cb345baa55d6ddc14644b2618100fcab56b9e0816dd3b9796",
+      "archived_sha256": "5553add8cc81565cb345baa55d6ddc14644b2618100fcab56b9e0816dd3b9796",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "package/src/seq2scp_training/contracts.py",
+      "source_relative_path": "package/src/seq2scp_training/contracts.py",
+      "source_sha256": "8d8b30d401b6d8a4902a46f1f84dc004fac2b2606e88c0e3ce6425360203b4ad",
+      "archived_sha256": "5d86915cd3dc3284c7cf491e55ef3815fb74737821f954517b28aaa24f1e749c",
+      "adaptation": "Removed machine-specific protected path from safe_output; callers supply forbidden paths. Actual Byte runs use the original source, not this adapted module."
+    },
+    {
+      "path": "package/src/seq2scp_training/__init__.py",
+      "source_relative_path": "package/src/seq2scp_training/__init__.py",
+      "source_sha256": "3c9943e6eafd6adaa302c33dbbd3eb52eaa6169f12eec8f776e698730c64ff74",
+      "archived_sha256": "3c9943e6eafd6adaa302c33dbbd3eb52eaa6169f12eec8f776e698730c64ff74",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "package/src/seq2scp_training/hf_backend.py",
+      "source_relative_path": "night_20261013/package/src/seq2scp_training/hf_backend.py",
+      "source_sha256": "3de075876cdd11896ae76dce4a12140d876fecb66cc0f1e2d98df0c40bf0be18",
+      "archived_sha256": "3de075876cdd11896ae76dce4a12140d876fecb66cc0f1e2d98df0c40bf0be18",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "package/src/seq2scp_training/encoders.py",
+      "source_relative_path": "night_20261013/package/src/seq2scp_training/encoders.py",
+      "source_sha256": "ef28748054dec5cc9446a520c89dd8d83d37c1dcf641107476f47e00028af3d2",
+      "archived_sha256": "ef28748054dec5cc9446a520c89dd8d83d37c1dcf641107476f47e00028af3d2",
+      "adaptation": "byte_for_byte"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "src/bind_label_contract.py",
+      "sha256": "dc88c853d3b8e33511a099a82fe615fdfb1c97e9344ccfc7df07df2bcbebd379",
+      "source": "current stage implementation"
+    },
+    {
+      "path": "src/cache_atlas_esmc_mean.py",
+      "sha256": "a88fe8570ab86ad93839c831ac18c13aef9509453d76c1933e31d81d2f09361c",
+      "source": "current stage implementation"
+    },
+    {
+      "path": "src/prepare_atlas_scale.py",
+      "sha256": "6a4417f93684b02933d728fff96bfc29cced11b7765fcd4a23b5197021eabe85",
+      "source": "current stage implementation"
+    },
+    {
+      "path": "src/publish_atlas_esmc_mean.py",
+      "sha256": "85baecd61150782cd67e8745594f80637cf49455ed89e698b1daf1623d442d6d",
+      "source": "current stage implementation"
+    },
+    {
+      "path": "src/run_scale_queue.py",
+      "sha256": "f557158edb543c39272a0c8f26945364261d64b30aa686251e3e83f35fb62a1a",
+      "source": "current stage implementation"
+    },
+    {
+      "path": "src/summarize_atlas_scale.py",
+      "sha256": "aded23dddafbda83bab59453759767190810d25e59a8d057d655e0bf557e439f",
+      "source": "current stage implementation"
+    },
+    {
+      "path": "src/train_atlas_scale.py",
+      "sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b",
+      "source": "current stage implementation"
+    }
+  ],
+  "configuration": {
+    "path": "configs/scale_plan.json",
+    "private_source_sha256": "2eb0e76fcdd69fdaac8f4eb9db0ed84483ea940f4ef5d71eeb2b89d556810271",
+    "archived_sha256": "55d6cca860031219317f78d3912bfbb1601139a74a02cb2a5e29eaf03842cca4",
+    "adaptation": "Private authorization attachment identifier replaced by dated scope statement; scientific settings unchanged"
+  },
+  "label_binding_correction": {
+    "initial_prepare_sha256": "1945b5c6af1b8bc6aa0edccf44fb17be9266f1ae5148c1b73133a9a506e230dc",
+    "current_prepare_sha256": "6a4417f93684b02933d728fff96bfc29cced11b7765fcd4a23b5197021eabe85",
+    "reason": "Replace unused new-physical bin reference with actual historical label contract. Existing release remains immutable and has a separate addendum. No array or metric transformation."
+  },
+  "document_adaptations": [
+    {
+      "path": "docs/history_increment_20261105.md",
+      "source_sha256": "d0d4c34c4cfc639cfbaa9d387c6878d6bbf3d41ef3e230db21a0e6a6076c3075",
+      "archived_sha256": "a7f896ba7592ed2d63d3486f9a14cdc28d6866b0345a7c82684d5b0a6c12c73a",
+      "adaptation": "Machine-specific legacy project root replaced by LEGACY_ROOT placeholder; numerical findings unchanged"
+    }
+  ]
+}

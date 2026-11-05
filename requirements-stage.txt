@@ -1,0 +1,6 @@
+# Relevant packages observed in the existing head/data runtime on 2026-11-05.
+# Encoder extraction has a separate validated environment.
+numpy==1.26.4
+pandas==2.3.3
+pyarrow==23.0.1
+torch==2.8.0

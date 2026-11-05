@@ -19,4 +19,4 @@ Large data, embeddings, checkpoints, and complete logs remain in the execution w
 
 ## Development
 
-Work on `codex/` feature branches with focused commits. Read `CONTRIBUTING.md` when present. Runtime dependencies and reproduction commands will be added with the executable experiments; this initial repository does not yet contain a training implementation.
+Work on `codex/` feature branches with focused commits and read `CONTRIBUTING.md`. The bounded Atlas learning-curve scripts are in `src/`; their fixed stage plan is in `configs/scale_plan.json`. See [reproduction notes](docs/reproduction.md) for the private source-data layout, portable module provenance, environment versions, and execution commands. Literature-driven experiment decisions are documented separately from measured model results.
