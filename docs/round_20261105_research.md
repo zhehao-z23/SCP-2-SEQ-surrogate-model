@@ -43,7 +43,7 @@
 
 原始代码固定为 `Biohub/esm@8f0834cbc350aeaf507f755475873f7c61fa44a1`，不是建议自动升级现有Byte环境。
 
-公共本地checkpoint入口为`esm3-sm-open-v1`；官方文档将small列为约1.4B，公开构造函数为48层、1536隐藏维、24 attention heads。当前Hugging Face页面从EvolutionaryScale重定向至biohub；实际运行必须绑定下载到的revision和权重hash。本轮仅核公共可获取性，**未核Byte已有缓存、未验实际加载**。参考：[官方ESM3说明](https://github.com/Biohub/esm/blob/main/_assets/ESM3_README.md)、[模型卡](https://huggingface.co/biohub/esm3-sm-open-v1)、[固定版本构造函数](https://github.com/Biohub/esm/blob/8f0834cbc350aeaf507f755475873f7c61fa44a1/esm/pretrained.py)。
+公共本地checkpoint入口为`esm3-sm-open-v1`；官方文档将small列为约1.4B，公开构造函数为48层、1536隐藏维、24 attention heads。当前Hugging Face页面从EvolutionaryScale重定向至biohub；实际运行必须绑定下载到的revision和权重hash。公共接口已核；Byte已完成下述限定目录盘点，但**未验实际加载**。参考：[官方ESM3说明](https://github.com/Biohub/esm/blob/main/_assets/ESM3_README.md)、[模型卡](https://huggingface.co/biohub/esm3-sm-open-v1)、[固定版本构造函数](https://github.com/Biohub/esm/blob/8f0834cbc350aeaf507f755475873f7c61fa44a1/esm/pretrained.py)。
 
 源码证实`encode(ESMProtein)`将序列和可选坐标等转为输入，`logits(..., LogitsConfig(return_embeddings=True))`能返回表征。坐标经结构encoder生成structure tokens；forward同时接收structure tokens与坐标几何，缺失结构采用相应mask/default。只做表征提取不需要调用迭代`generate()`。参考：[固定版本ESM3实现](https://github.com/Biohub/esm/blob/8f0834cbc350aeaf507f755475873f7c61fa44a1/esm/models/esm3.py)、[官方调用示例](https://github.com/Biohub/esm/blob/8f0834cbc350aeaf507f755475873f7c61fa44a1/cookbook/snippets/esm3.py)。
 
@@ -62,3 +62,7 @@
 ## 核验关闭状态
 
 已足够支持本轮学习曲线、读出机制与初始化对照设计，应转入实验。未解决的最终版SI、完整KaML发布训练复现、ESM3本地加载与吞吐，只限制相应强主张或pilot启动，不构成等待Atlas主线的理由。
+
+### Byte本地ESM3可用性补核（2026-11-05）
+
+只读盘点了已知`/root/Software/models`下3层，以及`/root/Software/models/huggingface`下3层（含模型revision目录）；没有全盘搜索、凭证读取、下载或模型加载。该范围列出`arcinstitute/evo2_1b_base`、`Synthyra/ESMplusplus_small`、`Synthyra/ESMplusplus_large`、`biohub/ESMC-6B`及`biohub/ESMFold2`，**未见`esm3-sm-open-v1`模型目录或对应manifest**。因此ESM3当前应登记为“已核官方接口；已知本地模型根未找到，需获取或由用户提供其他确切路径”，不能登记为“本地exists/可立即执行”。这不是全机不存在的证明。补齐checkpoint身份、必要tokenizer/结构encoder配套资产和固定环境后，才进入16条加载/前向pilot。

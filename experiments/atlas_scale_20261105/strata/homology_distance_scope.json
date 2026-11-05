@@ -1,0 +1,15 @@
+{
+  "status": "not_estimable_from_available_pairwise_search",
+  "current_unique_T": 21915,
+  "T_in_new_U": 0,
+  "T_in_old_views": 21915,
+  "scope_proof": "Both stored searches have new_U at one endpoint; zero current T sequences belong to new_U. Old-old pairwise relations are inherited as components, not available here as scored alignments.",
+  "interpretation": "No reported nearest identity; unavailable is not identity zero and not evidence of no remote homology.",
+  "search_filters": {
+    "minimum_identity": 0.3,
+    "minimum_shorter_coverage": 0.8,
+    "maximum_evalue": 0.001,
+    "sensitivity": 7.5
+  },
+  "required_next": "Reuse the original old-old raw scored search if located, or separately authorize a bounded T-to-training similarity audit; no new search in this postprocessing."
+}

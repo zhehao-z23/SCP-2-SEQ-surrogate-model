@@ -1,0 +1,12 @@
+{
+  "length": "Length of model input teacher sequence T, in amino acids; bins (0,150], (150,300], (300,600], (600,infinity).",
+  "coverage": "Existing data/samples coverage field inherited from T_U_coverage; bins [0,.7], (.7,.9], (.9,.98], (.98,1]; unavailable separate. Same boundaries as training strata.json.",
+  "metric": "Sample H is averaged within group/protein, then proteins within group, then groups equally within each conditional stratum.",
+  "limitation": "Marginal retrospective strata; group counts overlap across strata and are not additive; T/U relation, length and coverage are correlated; no causal heterogeneity or independence claim.",
+  "bootstrap": "2000 paired group resamples seed3407; post-selection exploratory 95% intervals, no selection or multiplicity correction; no seed variation.",
+  "folds": [
+    0,
+    1
+  ],
+  "selected_fits": 26
+}

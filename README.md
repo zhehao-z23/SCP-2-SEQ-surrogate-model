@@ -20,3 +20,5 @@ Large data, embeddings, checkpoints, and complete logs remain in the execution w
 ## Development
 
 Work on `codex/` feature branches with focused commits and read `CONTRIBUTING.md`. The bounded Atlas learning-curve scripts are in `src/`; their fixed stage plan is in `configs/scale_plan.json`. See [reproduction notes](docs/reproduction.md) for the private source-data layout, portable module provenance, environment versions, and execution commands. Literature-driven experiment decisions are documented separately from measured model results.
+
+The [completed 52-fit Atlas stage](experiments/atlas_scale_20261105/README.md) includes verified learning curves, the added readout control, aggregate strata, and separate encoder/head costs. Its two-fold, one-seed development evidence does not freeze the final model.

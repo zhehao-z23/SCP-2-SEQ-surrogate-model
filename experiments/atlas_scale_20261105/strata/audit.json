@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "selected_fits": 26,
+  "folds": [
+    0,
+    1
+  ],
+  "selected_fits_sha256": "08ab06040465368d040ddfd7ab68f51e4f6250939b43b36f38d07f9cccb064a3",
+  "script_sha256": "f26185f7470a4671dd8f3eebb0558981954beb365d8ac7e16795c730d0b1c2dc",
+  "protected_group_overlaps": 0,
+  "train_stop_group_overlaps": 0,
+  "train_eval_group_overlaps": 0,
+  "stop_eval_group_overlaps": 0,
+  "train_eval_exact_T_overlaps": 0,
+  "contents": "Aggregate metrics and counts only; no sample/group/protein/run identifiers, sequences, predictions or checkpoint files.",
+  "qualification": "Retrospective development comparison, not blind confirmation. Both component isolation and exact-T isolation checked for each selected fit."
+}

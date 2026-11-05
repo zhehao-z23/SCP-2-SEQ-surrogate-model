@@ -52,7 +52,7 @@ python src/summarize_atlas_scale.py --root "$RUN_ROOT"
 
 Start another family only within the declared concurrent-process and memory budget. Existing queue records intentionally prevent duplicate ownership; inspect the live process and artifact receipts before any recovery. The ESMC families additionally need a separately verified encoder cache. The code performs no model download or automatic encoder extraction.
 
-The evaluator recomputes saved per-sample predictions, checks group isolation, chooses learning rates using the stop split, and aggregates evaluation results. Its group bootstrap intervals are descriptive, conditional on the selected fits; they do not include model-selection or seed uncertainty. Final checked metrics will be added separately. Archiving these scripts is not a claim that all planned fits have completed.
+The evaluator recomputes saved per-sample predictions, checks group isolation, chooses learning rates using the stop split, and aggregates evaluation results. Its group bootstrap intervals are descriptive, conditional on the selected fits; they do not include model-selection or seed uncertainty. The final stage completed 52 fits (48 original fits plus 4 capacity controls). All saved predictions were independently recomputed; 26 configurations selected using the stop split all reached early stopping. Final aggregate results and costs are archived in `../experiments/atlas_scale_20261105/summary.json` and its README.
 
 ## Historical label contract correction
 
@@ -73,3 +73,32 @@ This command is a corrective addendum for the initial release, not a general rel
 `publish_atlas_esmc_mean.py` is the specific two-worker stage publisher. It expects the documented `RUN_ROOT/cache/esmc300_T/worker{0,1}` layout and `full01`/`pilot02` receipts; those are stage conventions rather than a generic arbitrary-worker interface. It checks shard hashes, disjoint complete row coverage, and numerical agreement on all exact-sequence overlaps with a specified legacy singleton cache before publishing the new mean cache.
 
 Encoder extraction uses the separately validated checkpoint environment. Its full environment and encoder-cache receipts stay with the private execution record; `requirements-stage.txt` describes the head/data runtime only. Encoder extraction cost must be reported separately from head fitting and inference cost.
+
+## Capacity-control amendment
+
+`configs/capacity_amendment.json` adds four explicitly registered development fits after inspecting the original 48-fit comparison. `train_atlas_capacity.py` is a separate entry; the original `train_atlas_scale.py` remains unchanged. The added charge-only head uses hidden widths `[1024, 512, 256]` and dropout `0.3`, matching the fusion head's hidden architecture and regularization. Different input dimensions mean total parameter counts still differ. This is a joint readout-capacity/regularization control, not a parameter-matched or blind confirmation experiment.
+
+Place the amendment at `RUN_ROOT/records/capacity_amendment.json` and its trainer at `RUN_ROOT/code/train_atlas_capacity.py`, retaining their hashes. The dedicated queue enforces the four listed fold/learning-rate combinations and stops on failure without automatic retry.
+
+```bash
+CUDA_VISIBLE_DEVICES="$ASSIGNED_GPU" python src/run_capacity_control.py \
+  --root "$RUN_ROOT" --source "$SOURCE_ROOT"
+python src/summarize_atlas_scale.py --root "$RUN_ROOT" --expected-fits 52
+python src/replay_scale_checkpoints.py --root "$RUN_ROOT" --source "$SOURCE_ROOT"
+```
+
+The checkpoint replay loads the selected checkpoints in a fresh process and compares the first 128 evaluation rows per selected fit against saved GPU predictions. This verifies that the saved preprocessing and weights reproduce those rows; it is not an independent evaluation on new proteins. The summary's expected-fit count checks completion cardinality only; compare actual trial identities to the registered plan and amendment as part of the final run audit.
+
+## Final aggregate archive
+
+The 52-fit stage is complete. Fresh checkpoint loads reproduced 128 evaluation rows for each of 26 selected fits, with maximum absolute difference 3.129243850708008e-7. These subset checks do not constitute a fresh evaluation. Across all 52 fits, 48 stopped early and 4 reached the epoch ceiling; none of the selected fits was ceiling-limited.
+
+`export_stage_aggregate.py` exports aggregate metrics, run/checkpoint identities, source-release hashes, and separately measured costs. It does not export sequences or per-sample/group identities. `stratify_atlas_scale.py` supplies post-hoc aggregate error strata; the private intermediate predictions and stratum membership tables are not distributed.
+
+```bash
+python src/export_stage_aggregate.py --root "$RUN_ROOT" --source "$SOURCE_ROOT"
+```
+
+Two launch repairs are retained in the evidence: a missing encoder launch-tools directory before extraction, and a capacity-control launch using an encoder Python without pandas before training. The latter was restarted with the original head runtime wrapper, without an algorithm change. These were engineering launch failures; the 52-fit scientific result does not omit a failed training run.
+
+The archived result remains retrospective development on two evaluation folds and one seed. It does not freeze the final five-fold protocol, validate initialization for the new C target, or establish full-U deployment performance. See `stage_decisions_20261105.md` for the next decision gates.

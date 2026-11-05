@@ -1,0 +1,35 @@
+{
+  "total": {
+    "rows": 8756,
+    "unique_T": 8753,
+    "groups": 3199
+  },
+  "strata": [
+    {
+      "stratum": "T_differs_from_U",
+      "rows": 7748,
+      "unique_T": 7745,
+      "groups": 3092
+    },
+    {
+      "stratum": "U_unavailable",
+      "rows": 555,
+      "unique_T": 555,
+      "groups": 257
+    },
+    {
+      "stratum": "strict_T_equals_U",
+      "rows": 453,
+      "unique_T": 453,
+      "groups": 286
+    }
+  ],
+  "groups_spanning_multiple_strata": 381,
+  "proteins_spanning_multiple_strata": 0,
+  "unknown_U_reason_counts": {
+    "no_parent_accession_available": 306,
+    "retrieved_U_but_construct_relation_not_supported": 242,
+    "multiple_distinct_construct_supported_U_sequences": 7
+  },
+  "note": "Group counts are conditional within strata and are not additive. U_unavailable means no unique accepted parent U mapping, including absent, unsupported or ambiguous mapping; not a claim that no natural full sequence exists."
+}

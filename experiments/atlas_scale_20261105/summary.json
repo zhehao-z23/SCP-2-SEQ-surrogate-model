@@ -1,0 +1,1658 @@
+{
+  "schema": "atlas.scale.aggregate.v1",
+  "stage": "atlas_scale_20261105",
+  "status": "complete",
+  "fits": 52,
+  "selected_fits": 26,
+  "learning_curves": [
+    {
+      "family": "composition_charge",
+      "scale": "1000",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.055887605035745996,
+      "group_macro_CDF_MSE": 0.00024094755644910038,
+      "group_macro_edge_mass_MAE": 0.0021696363110095263,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        2549,
+        2577
+      ],
+      "train_groups_range": [
+        1000,
+        1000
+      ],
+      "selected_run_ids": [
+        "a618a9c8cd497fb24398b49b0ab81c9222952c03860f8e6e182e2cce38d926cf",
+        "aafad6d92124c77738ae79822ea947ed4b7ef8fde763a9fac26fca2c0c27c287"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.05563139817194913,
+      "protein_macro_cutpoint_CDF_MSE": 0.0002244362412799149,
+      "protein_macro_edge_bin_mass_MAE": 0.0020873143069165614,
+      "per_fold_H": {
+        "0": 0.05663076788187027,
+        "1": 0.055144909769296646
+      }
+    },
+    {
+      "family": "composition_charge",
+      "scale": "200",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.06424707161004749,
+      "group_macro_CDF_MSE": 0.0003533010894898325,
+      "group_macro_edge_mass_MAE": 0.002419202821329236,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        482,
+        496
+      ],
+      "train_groups_range": [
+        200,
+        200
+      ],
+      "selected_run_ids": [
+        "a48ff6f29d89c47fde21447b24b92e24b4d00485ab4e9ec949ac9e88e7fbc132",
+        "96415fca088d748253f924ae096088dc8cb276d889c8c4f1a0751c679a87ee65"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.06610062812279119,
+      "protein_macro_cutpoint_CDF_MSE": 0.00037667123381602576,
+      "protein_macro_edge_bin_mass_MAE": 0.0023402169722509148,
+      "per_fold_H": {
+        "1": 0.06256566196680069,
+        "0": 0.06592953205108643
+      }
+    },
+    {
+      "family": "composition_charge",
+      "scale": "all",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.05263326750369636,
+      "group_macro_CDF_MSE": 0.00020226460765115917,
+      "group_macro_edge_mass_MAE": 0.0021115264389663935,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        13091,
+        13165
+      ],
+      "train_groups_range": [
+        4799,
+        4800
+      ],
+      "selected_run_ids": [
+        "8f075c18e12ae18a90006547cec38e4372e44ff4b4bbca0b9e0eff4a4132108d",
+        "9fce6920e6e52f86e14844fe5834079c1d39c31013451bf7caaaaef05580cffd"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.05227046126199084,
+      "protein_macro_cutpoint_CDF_MSE": 0.00018988465965566625,
+      "protein_macro_edge_bin_mass_MAE": 0.0020366967876499125,
+      "per_fold_H": {
+        "1": 0.05244269222021103,
+        "0": 0.05282396823167801
+      }
+    },
+    {
+      "family": "composition_charge_deep",
+      "scale": "all",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.05218679357436214,
+      "group_macro_CDF_MSE": 0.0001981646491913125,
+      "group_macro_edge_mass_MAE": 0.0020890485029667616,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        13091,
+        13165
+      ],
+      "train_groups_range": [
+        4799,
+        4800
+      ],
+      "selected_run_ids": [
+        "d1939458f2949feb01ae4ce28719faebdd07a23c541fc9ba19a2687ec4000829",
+        "4a5b1ca2bdf65b852b05c10564f8282826f016dcabee9a5822ec55fcd71dddc3"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.052049418932405125,
+      "protein_macro_cutpoint_CDF_MSE": 0.00018863823460028772,
+      "protein_macro_edge_bin_mass_MAE": 0.0020150021944838965,
+      "per_fold_H": {
+        "1": 0.05202002823352814,
+        "0": 0.05235365778207779
+      }
+    },
+    {
+      "family": "composition_length",
+      "scale": "1000",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.05680661343071248,
+      "group_macro_CDF_MSE": 0.00024959936854429543,
+      "group_macro_edge_mass_MAE": 0.0021740864031016827,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        2549,
+        2577
+      ],
+      "train_groups_range": [
+        1000,
+        1000
+      ],
+      "selected_run_ids": [
+        "fb7e58cbcf3ba8e30ff85c055536527a07352a552154ed10c051ba2a6e1f08cf",
+        "ecb59c275d0d2249468d3f247d95bebdc0329550b778c3831c2e16b02b8f0eee"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.0568795732193663,
+      "protein_macro_cutpoint_CDF_MSE": 0.00023756221269748563,
+      "protein_macro_edge_bin_mass_MAE": 0.0020925847747359214,
+      "per_fold_H": {
+        "0": 0.057593636214733124,
+        "1": 0.056020088493824005
+      }
+    },
+    {
+      "family": "composition_length",
+      "scale": "200",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.06541733151951472,
+      "group_macro_CDF_MSE": 0.00037364536547102034,
+      "group_macro_edge_mass_MAE": 0.0023596675600856543,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        482,
+        496
+      ],
+      "train_groups_range": [
+        200,
+        200
+      ],
+      "selected_run_ids": [
+        "f608c65783cb2b389eea978f282ae60d5c87aedda38a9d939774d6ccff9ce779",
+        "b5d539217a457755fa2c17ab5919eb941686478a46967f2e05dae1f6d96d5e89"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.06695356941316437,
+      "protein_macro_cutpoint_CDF_MSE": 0.0003805252222037208,
+      "protein_macro_edge_bin_mass_MAE": 0.0022857868734853146,
+      "per_fold_H": {
+        "0": 0.06655645370483398,
+        "1": 0.06427891552448273
+      }
+    },
+    {
+      "family": "composition_length",
+      "scale": "all",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.052732318202894764,
+      "group_macro_CDF_MSE": 0.00020269339438527822,
+      "group_macro_edge_mass_MAE": 0.0021122756879776716,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        13091,
+        13165
+      ],
+      "train_groups_range": [
+        4799,
+        4800
+      ],
+      "selected_run_ids": [
+        "4fecbed1627df4a9a9d0379a72dd21a34bf841725ea4131cc3731f755f5657fa",
+        "0566b89e010116fa0cab08dbfcfb7b105f7344f65fd2353b4f54af4f90040062"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.05259566005937756,
+      "protein_macro_cutpoint_CDF_MSE": 0.00019078668696724386,
+      "protein_macro_edge_bin_mass_MAE": 0.0020387939292472335,
+      "per_fold_H": {
+        "1": 0.052252836525440216,
+        "0": 0.053212106227874756
+      }
+    },
+    {
+      "family": "esmc_charge",
+      "scale": "1000",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.05693480847834636,
+      "group_macro_CDF_MSE": 0.0002708802931010723,
+      "group_macro_edge_mass_MAE": 0.0021811530459672213,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        2549,
+        2577
+      ],
+      "train_groups_range": [
+        1000,
+        1000
+      ],
+      "selected_run_ids": [
+        "6cd7d5d66935fae76adc30ac5457c9d06083341b75f4aaab5a8e7205f5ba3834",
+        "2e2d9fe059a1be9455909b9c59237b58629a21b1daef5b05c9f6015ef5f05b93"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.057489055594137625,
+      "protein_macro_cutpoint_CDF_MSE": 0.00026347210009023845,
+      "protein_macro_edge_bin_mass_MAE": 0.0021414864189283557,
+      "per_fold_H": {
+        "1": 0.05637296661734581,
+        "0": 0.05749699845910072
+      }
+    },
+    {
+      "family": "esmc_charge",
+      "scale": "200",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.06712973352710026,
+      "group_macro_CDF_MSE": 0.00045975809916853905,
+      "group_macro_edge_mass_MAE": 0.002367653651162982,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        482,
+        496
+      ],
+      "train_groups_range": [
+        200,
+        200
+      ],
+      "selected_run_ids": [
+        "119fdf8789220775c7fec4c1aad647935611dcb20ef3a749703b61ddb6304dc7",
+        "42e460cd81409ca08716b4084a83682107caf26a499125d85f8391a865db2b32"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.0715396929305444,
+      "protein_macro_cutpoint_CDF_MSE": 0.0005525796213331982,
+      "protein_macro_edge_bin_mass_MAE": 0.002367246908503964,
+      "per_fold_H": {
+        "0": 0.0664934441447258,
+        "1": 0.06776562333106995
+      }
+    },
+    {
+      "family": "esmc_charge",
+      "scale": "all",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.05013966860044312,
+      "group_macro_CDF_MSE": 0.00019236291700508446,
+      "group_macro_edge_mass_MAE": 0.001992132281884551,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        13091,
+        13165
+      ],
+      "train_groups_range": [
+        4799,
+        4800
+      ],
+      "selected_run_ids": [
+        "49db30f5b55ad7eec38352b39f82b8b9d819a8ac55a2dedaac647e393c05965d",
+        "634aa3eea143c9445ecd7269a944d7ac9b85d37434bc8c88fac9bea163bf639f"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.050114987184187484,
+      "protein_macro_cutpoint_CDF_MSE": 0.00017889535870416033,
+      "protein_macro_edge_bin_mass_MAE": 0.0019552188457123785,
+      "per_fold_H": {
+        "0": 0.050506044179201126,
+        "1": 0.04977352172136307
+      }
+    },
+    {
+      "family": "esmc_mean",
+      "scale": "1000",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.0646741013991159,
+      "group_macro_CDF_MSE": 0.0004012392892036587,
+      "group_macro_edge_mass_MAE": 0.0022370347287505865,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        2549,
+        2577
+      ],
+      "train_groups_range": [
+        1000,
+        1000
+      ],
+      "selected_run_ids": [
+        "f86d3436412726d6698eb33befd794875d686025f1c5828ba178d583509aa28a",
+        "d0a596be735155bd22d2c167cd52cedf89ee415dea0c5c21b9bf868c21760f15"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.06622534343566565,
+      "protein_macro_cutpoint_CDF_MSE": 0.00042243726634737846,
+      "protein_macro_edge_bin_mass_MAE": 0.0021949492836326164,
+      "per_fold_H": {
+        "1": 0.06449801474809647,
+        "0": 0.06485030055046082
+      }
+    },
+    {
+      "family": "esmc_mean",
+      "scale": "200",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.07851118419306066,
+      "group_macro_CDF_MSE": 0.0007063835510052741,
+      "group_macro_edge_mass_MAE": 0.002448465907946229,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        482,
+        496
+      ],
+      "train_groups_range": [
+        200,
+        200
+      ],
+      "selected_run_ids": [
+        "9b5e421eecf99b9298bb57ca4ac3fd9cb3160b4585d8d94218ee5b6556b00483",
+        "cc7d615e5cf1c96d5f948672573cb1e7edd0c16735b813843e3349f25918cb70"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.08825622267802348,
+      "protein_macro_cutpoint_CDF_MSE": 0.0010616762554302801,
+      "protein_macro_edge_bin_mass_MAE": 0.0024828176104512473,
+      "per_fold_H": {
+        "0": 0.07826420664787292,
+        "1": 0.07875800877809525
+      }
+    },
+    {
+      "family": "esmc_mean",
+      "scale": "all",
+      "folds": [
+        0,
+        1
+      ],
+      "group_macro_H": 0.05726374134461031,
+      "group_macro_CDF_MSE": 0.0002978838747367263,
+      "group_macro_edge_mass_MAE": 0.0020640131551772356,
+      "evaluation_groups": 3199,
+      "train_samples_range": [
+        13091,
+        13165
+      ],
+      "train_groups_range": [
+        4799,
+        4800
+      ],
+      "selected_run_ids": [
+        "38776cff4b46fb6d75192ff01744b28f72e1d6afef89aa3448348fb563c46143",
+        "66428608312ad5ca703aa80ab049de4e4b18add178d9b7b7daee9b5f856befd8"
+      ],
+      "budget_limited_selected": 0,
+      "protein_macro_H": 0.05789025545019797,
+      "protein_macro_cutpoint_CDF_MSE": 0.00029786691460504685,
+      "protein_macro_edge_bin_mass_MAE": 0.002034141058103314,
+      "per_fold_H": {
+        "1": 0.057251423597335815,
+        "0": 0.05727606266736984
+      }
+    }
+  ],
+  "paired": [
+    {
+      "family_minus_charge": "composition_length",
+      "scale": "200",
+      "groups": 3199,
+      "delta_H": 0.0011702599094672221,
+      "descriptive_group_bootstrap_95": [
+        0.0006949719311023057,
+        0.0016149049207949664
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "family_minus_charge": "esmc_mean",
+      "scale": "200",
+      "groups": 3199,
+      "delta_H": 0.014264112583013173,
+      "descriptive_group_bootstrap_95": [
+        0.013109748247557248,
+        0.01545827272596469
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "family_minus_charge": "esmc_charge",
+      "scale": "200",
+      "groups": 3199,
+      "delta_H": 0.0028826619170527804,
+      "descriptive_group_bootstrap_95": [
+        0.0019647399990246122,
+        0.003827023494393537
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "family_minus_charge": "composition_length",
+      "scale": "1000",
+      "groups": 3199,
+      "delta_H": 0.0009190083949664778,
+      "descriptive_group_bootstrap_95": [
+        0.0006575350082496765,
+        0.0011611810554273518
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "family_minus_charge": "esmc_mean",
+      "scale": "1000",
+      "groups": 3199,
+      "delta_H": 0.008786496363369893,
+      "descriptive_group_bootstrap_95": [
+        0.007963625263581674,
+        0.009667675497120488
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "family_minus_charge": "esmc_charge",
+      "scale": "1000",
+      "groups": 3199,
+      "delta_H": 0.0010472034426003557,
+      "descriptive_group_bootstrap_95": [
+        0.0003215601763622098,
+        0.0017172836065261535
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "family_minus_charge": "composition_length",
+      "scale": "all",
+      "groups": 3199,
+      "delta_H": 9.905069919840228e-05,
+      "descriptive_group_bootstrap_95": [
+        -9.829012489191102e-05,
+        0.0002834439319704981
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "family_minus_charge": "esmc_mean",
+      "scale": "all",
+      "groups": 3199,
+      "delta_H": 0.004630473840913951,
+      "descriptive_group_bootstrap_95": [
+        0.0038864365166940184,
+        0.005339791746429845
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "family_minus_charge": "esmc_charge",
+      "scale": "all",
+      "groups": 3199,
+      "delta_H": -0.0024935989032532505,
+      "descriptive_group_bootstrap_95": [
+        -0.0030744284160307226,
+        -0.0018883905626600904
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "family_minus_charge": "composition_charge_deep",
+      "scale": "all",
+      "groups": 3199,
+      "delta_H": -0.00044647392933422196,
+      "descriptive_group_bootstrap_95": [
+        -0.0006779672723510448,
+        -0.00021672304020526573
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    },
+    {
+      "comparison": "esmc_charge minus composition_charge_deep",
+      "scale": "all",
+      "groups": 3199,
+      "delta_H": -0.0020471249739190287,
+      "descriptive_group_bootstrap_95": [
+        -0.0026117659773341496,
+        -0.0014971685715301634
+      ],
+      "selection_adjusted": false,
+      "seed_variation_included": false
+    }
+  ],
+  "data": {
+    "rows": 21921,
+    "unique_T": 21915,
+    "groups": 7999,
+    "source_composition": [
+      {
+        "source": "PDB_historical_vertex_p",
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999
+      }
+    ],
+    "source_groups_may_overlap": true,
+    "input": "teacher-retained T",
+    "target": "historical vertex probability p",
+    "bins": 63,
+    "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+    "label_contract_addendum_sha256": "c7d55d8c1f09637112da3edc0a3125ba055ceb6dd63d6d5dec3c2f90224f15b0"
+  },
+  "cost": {
+    "sum_of_individual_fit_wall_seconds": 592.8914979556575,
+    "fit_time_is_not_end_to_end_wall": true,
+    "encoder_allocated_GPU_seconds_including_pilot": 452.0089870961383,
+    "encoder_peak_GPU_bytes": 1583277568,
+    "encoder_peak_RSS_bytes": 2315931648,
+    "mean_cache_bytes": 84153728,
+    "queues": [
+      {
+        "family": "composition_charge",
+        "queue_seconds": 184.42727613449097,
+        "fits": 12
+      },
+      {
+        "family": "composition_length",
+        "queue_seconds": 192.6249942779541,
+        "fits": 12
+      },
+      {
+        "family": "esmc_mean",
+        "queue_seconds": 159.03565907478333,
+        "fits": 12
+      },
+      {
+        "family": "esmc_charge",
+        "queue_seconds": 166.549165725708,
+        "fits": 12
+      },
+      {
+        "family": "composition_charge_deep",
+        "queue_seconds": 69.15863752365112,
+        "fits": 4
+      }
+    ]
+  },
+  "selected": [
+    {
+      "family": "esmc_charge",
+      "scale": "all",
+      "fold": 0,
+      "run_id": "49db30f5b55ad7eec38352b39f82b8b9d819a8ac55a2dedaac647e393c05965d",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 1038,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1736255,
+      "training_samples": 13165,
+      "training_proteins": 13162,
+      "training_groups": 4800,
+      "epochs": 65,
+      "best_epoch": 35,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.050506044179201126,
+        "group_macro_cutpoint_CDF_MSE": 0.00019794408581219614,
+        "group_macro_edge_bin_mass_MAE": 0.002048082184046507,
+        "protein_macro_H": 0.05042049288749695,
+        "protein_macro_cutpoint_CDF_MSE": 0.00018097010615747422,
+        "protein_macro_edge_bin_mass_MAE": 0.001964824739843607,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 14.108604495413601,
+      "head_sequences_per_second": 2848045.4157978063,
+      "peak_GPU_bytes": 152831488,
+      "peak_RSS_bytes": 1873367040,
+      "checkpoint_sha256": "1eb316916651df849b47686f28270cd00ecf7bd3f443a426e9da0f6b7bf006f2",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_charge",
+      "scale": "all",
+      "fold": 1,
+      "run_id": "634aa3eea143c9445ecd7269a944d7ac9b85d37434bc8c88fac9bea163bf639f",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 1038,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1736255,
+      "training_samples": 13091,
+      "training_proteins": 13087,
+      "training_groups": 4799,
+      "epochs": 58,
+      "best_epoch": 28,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.04977352172136307,
+        "group_macro_cutpoint_CDF_MSE": 0.0001867852552095428,
+        "group_macro_edge_bin_mass_MAE": 0.0019362178863957524,
+        "protein_macro_H": 0.0498112216591835,
+        "protein_macro_cutpoint_CDF_MSE": 0.00017683242913335562,
+        "protein_macro_edge_bin_mass_MAE": 0.0019456676673144102,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 12.510422660037875,
+      "head_sequences_per_second": 2946068.081844693,
+      "peak_GPU_bytes": 152954880,
+      "peak_RSS_bytes": 1878818816,
+      "checkpoint_sha256": "ab4783549d11e988657401c5a2550f3c58d319bb0e2eefa289b6cbb0403fb3ac",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_charge_deep",
+      "scale": "all",
+      "fold": 1,
+      "run_id": "d1939458f2949feb01ae4ce28719faebdd07a23c541fc9ba19a2687ec4000829",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 78,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 753215,
+      "training_samples": 13091,
+      "training_proteins": 13087,
+      "training_groups": 4799,
+      "epochs": 72,
+      "best_epoch": 42,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.05202002823352814,
+        "group_macro_cutpoint_CDF_MSE": 0.00019883037020917982,
+        "group_macro_edge_bin_mass_MAE": 0.0019985998515039682,
+        "protein_macro_H": 0.05217428132891655,
+        "protein_macro_cutpoint_CDF_MSE": 0.0001905879471451044,
+        "protein_macro_edge_bin_mass_MAE": 0.0020134192891418934,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 15.441868998110294,
+      "head_sequences_per_second": 3374634.5120134363,
+      "peak_GPU_bytes": 49574912,
+      "peak_RSS_bytes": 1523503104,
+      "checkpoint_sha256": "a85eb37cb9767d6308cc5172bbb362d01d07db2e4329126f6915a62ba544d752",
+      "script_sha256": "19f885f2c15a1c975505753330bf6e70f57f494d73b05d9e1491de1f0d033c7d"
+    },
+    {
+      "family": "composition_charge",
+      "scale": "all",
+      "fold": 1,
+      "run_id": "8f075c18e12ae18a90006547cec38e4372e44ff4b4bbca0b9e0eff4a4132108d",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 78,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 61247,
+      "training_samples": 13091,
+      "training_proteins": 13087,
+      "training_groups": 4799,
+      "epochs": 171,
+      "best_epoch": 141,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.05244269222021103,
+        "group_macro_cutpoint_CDF_MSE": 0.00020192749798297882,
+        "group_macro_edge_bin_mass_MAE": 0.0020428989082574844,
+        "protein_macro_H": 0.05233042314648628,
+        "protein_macro_cutpoint_CDF_MSE": 0.00019068457186222076,
+        "protein_macro_edge_bin_mass_MAE": 0.0020562130957841873,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 34.206458606757224,
+      "head_sequences_per_second": 3869536.8414243413,
+      "peak_GPU_bytes": 33215488,
+      "peak_RSS_bytes": 1513979904,
+      "checkpoint_sha256": "1d5d69ef85ca8bc83dfb2d3f4045b02dba4eb69368d6fb53e322c0ba79f6b899",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_charge",
+      "scale": "all",
+      "fold": 0,
+      "run_id": "9fce6920e6e52f86e14844fe5834079c1d39c31013451bf7caaaaef05580cffd",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 78,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 61247,
+      "training_samples": 13165,
+      "training_proteins": 13162,
+      "training_groups": 4800,
+      "epochs": 91,
+      "best_epoch": 61,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.05282396823167801,
+        "group_macro_cutpoint_CDF_MSE": 0.0002026019210461527,
+        "group_macro_edge_bin_mass_MAE": 0.0021801970433443785,
+        "protein_macro_H": 0.05221015587449074,
+        "protein_macro_cutpoint_CDF_MSE": 0.0001890801650006324,
+        "protein_macro_edge_bin_mass_MAE": 0.002017068676650524,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 18.861378198489547,
+      "head_sequences_per_second": 3389392.436830773,
+      "peak_GPU_bytes": 33197056,
+      "peak_RSS_bytes": 1473503232,
+      "checkpoint_sha256": "e39d46002f2bef1e9834482b5d0329120660c1d26f4d63df9e2f389928adf6c8",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_length",
+      "scale": "all",
+      "fold": 1,
+      "run_id": "4fecbed1627df4a9a9d0379a72dd21a34bf841725ea4131cc3731f755f5657fa",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 44,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 52543,
+      "training_samples": 13091,
+      "training_proteins": 13087,
+      "training_groups": 4799,
+      "epochs": 135,
+      "best_epoch": 105,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.052252836525440216,
+        "group_macro_cutpoint_CDF_MSE": 0.00019958447956014425,
+        "group_macro_edge_bin_mass_MAE": 0.002028912538662553,
+        "protein_macro_H": 0.05251891538500786,
+        "protein_macro_cutpoint_CDF_MSE": 0.00019081613572780043,
+        "protein_macro_edge_bin_mass_MAE": 0.002048080787062645,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 28.75298367254436,
+      "head_sequences_per_second": 3703715.8795696087,
+      "peak_GPU_bytes": 29886464,
+      "peak_RSS_bytes": 1513467904,
+      "checkpoint_sha256": "a325c144a61c1d5f32b84295e7356e205c488ef01e69a52a8b7e3410f67a4750",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_charge_deep",
+      "scale": "all",
+      "fold": 0,
+      "run_id": "4a5b1ca2bdf65b852b05c10564f8282826f016dcabee9a5822ec55fcd71dddc3",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 78,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 753215,
+      "training_samples": 13165,
+      "training_proteins": 13162,
+      "training_groups": 4800,
+      "epochs": 76,
+      "best_epoch": 46,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.05235365778207779,
+        "group_macro_cutpoint_CDF_MSE": 0.000197498535271734,
+        "group_macro_edge_bin_mass_MAE": 0.002179553499445319,
+        "protein_macro_H": 0.05192384123802185,
+        "protein_macro_cutpoint_CDF_MSE": 0.00018667735275812447,
+        "protein_macro_edge_bin_mass_MAE": 0.0020165941677987576,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 16.708935152739286,
+      "head_sequences_per_second": 3156932.7930654585,
+      "peak_GPU_bytes": 49530880,
+      "peak_RSS_bytes": 1483202560,
+      "checkpoint_sha256": "68a75c17fc90213709e8c3e2301dc4c6ba05b334e269995caa49a59cb01f552d",
+      "script_sha256": "19f885f2c15a1c975505753330bf6e70f57f494d73b05d9e1491de1f0d033c7d"
+    },
+    {
+      "family": "composition_length",
+      "scale": "all",
+      "fold": 0,
+      "run_id": "0566b89e010116fa0cab08dbfcfb7b105f7344f65fd2353b4f54af4f90040062",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 44,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 52543,
+      "training_samples": 13165,
+      "training_proteins": 13162,
+      "training_groups": 4800,
+      "epochs": 111,
+      "best_epoch": 81,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.053212106227874756,
+        "group_macro_cutpoint_CDF_MSE": 0.00020580423006322235,
+        "group_macro_edge_bin_mass_MAE": 0.002195690991356969,
+        "protein_macro_H": 0.052672844380140305,
+        "protein_macro_cutpoint_CDF_MSE": 0.0001907570695038885,
+        "protein_macro_edge_bin_mass_MAE": 0.002029453869909048,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 23.01275952346623,
+      "head_sequences_per_second": 3866046.8429197827,
+      "peak_GPU_bytes": 29869056,
+      "peak_RSS_bytes": 1488232448,
+      "checkpoint_sha256": "5ebc2da1f6b92cdcf9e99183e9d2ee1d9847e3375d092121edb6f9cbbe736d36",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_charge",
+      "scale": "1000",
+      "fold": 0,
+      "run_id": "a618a9c8cd497fb24398b49b0ab81c9222952c03860f8e6e182e2cce38d926cf",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 78,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 61247,
+      "training_samples": 2577,
+      "training_proteins": 2577,
+      "training_groups": 1000,
+      "epochs": 201,
+      "best_epoch": 171,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.05663076788187027,
+        "group_macro_cutpoint_CDF_MSE": 0.0002474022039677948,
+        "group_macro_edge_bin_mass_MAE": 0.002256599487736821,
+        "protein_macro_H": 0.056101977825164795,
+        "protein_macro_cutpoint_CDF_MSE": 0.0002310986747033894,
+        "protein_macro_edge_bin_mass_MAE": 0.00207344233058393,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 11.313953757286072,
+      "head_sequences_per_second": 3617490.6695845556,
+      "peak_GPU_bytes": 33155072,
+      "peak_RSS_bytes": 1517694976,
+      "checkpoint_sha256": "b9073acd6a6bf79acc58bfe4745f325fac855c3491bf6333a081fb608080618e",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_charge",
+      "scale": "1000",
+      "fold": 1,
+      "run_id": "aafad6d92124c77738ae79822ea947ed4b7ef8fde763a9fac26fca2c0c27c287",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 78,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 61247,
+      "training_samples": 2549,
+      "training_proteins": 2549,
+      "training_groups": 1000,
+      "epochs": 222,
+      "best_epoch": 192,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.055144909769296646,
+        "group_macro_cutpoint_CDF_MSE": 0.00023449695436283946,
+        "group_macro_edge_bin_mass_MAE": 0.0020827276166528463,
+        "protein_macro_H": 0.05516349896788597,
+        "protein_macro_cutpoint_CDF_MSE": 0.00021781175746582448,
+        "protein_macro_edge_bin_mass_MAE": 0.002101107267662883,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 12.468507667072117,
+      "head_sequences_per_second": 3551335.4499133965,
+      "peak_GPU_bytes": 33172992,
+      "peak_RSS_bytes": 1515114496,
+      "checkpoint_sha256": "124ffdd742470492e35122a19739664dd026af6224092d5934ca91d606432474",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_charge",
+      "scale": "1000",
+      "fold": 1,
+      "run_id": "6cd7d5d66935fae76adc30ac5457c9d06083341b75f4aaab5a8e7205f5ba3834",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 1038,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1736255,
+      "training_samples": 2549,
+      "training_proteins": 2549,
+      "training_groups": 1000,
+      "epochs": 102,
+      "best_epoch": 72,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.05637296661734581,
+        "group_macro_cutpoint_CDF_MSE": 0.0002570477081462741,
+        "group_macro_edge_bin_mass_MAE": 0.0021221390925347805,
+        "protein_macro_H": 0.05722679942846298,
+        "protein_macro_cutpoint_CDF_MSE": 0.0002592190867289901,
+        "protein_macro_edge_bin_mass_MAE": 0.0021520238369703293,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 6.624552313238382,
+      "head_sequences_per_second": 2612742.2122352603,
+      "peak_GPU_bytes": 152912384,
+      "peak_RSS_bytes": 1878392832,
+      "checkpoint_sha256": "4a6678f8b54c4bd50fcaaed000f4c4645916ea93de0fcb7c9ebd5a4ca01f60e5",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_length",
+      "scale": "1000",
+      "fold": 0,
+      "run_id": "fb7e58cbcf3ba8e30ff85c055536527a07352a552154ed10c051ba2a6e1f08cf",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 44,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 52543,
+      "training_samples": 2577,
+      "training_proteins": 2577,
+      "training_groups": 1000,
+      "epochs": 242,
+      "best_epoch": 212,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.057593636214733124,
+        "group_macro_cutpoint_CDF_MSE": 0.00025511017884127796,
+        "group_macro_edge_bin_mass_MAE": 0.0022537282202392817,
+        "protein_macro_H": 0.05725540220737457,
+        "protein_macro_cutpoint_CDF_MSE": 0.00023958837846294045,
+        "protein_macro_edge_bin_mass_MAE": 0.002078999998047948,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 13.301596430130303,
+      "head_sequences_per_second": 3689398.8645109297,
+      "peak_GPU_bytes": 29827072,
+      "peak_RSS_bytes": 1488986112,
+      "checkpoint_sha256": "b1704293a64e7c67aae0f65213200eafb223d8d280f7e07e91676b542748886d",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_mean",
+      "scale": "all",
+      "fold": 1,
+      "run_id": "38776cff4b46fb6d75192ff01744b28f72e1d6afef89aa3448348fb563c46143",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 960,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1656383,
+      "training_samples": 13091,
+      "training_proteins": 13087,
+      "training_groups": 4799,
+      "epochs": 63,
+      "best_epoch": 33,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.057251423597335815,
+        "group_macro_cutpoint_CDF_MSE": 0.0003005173639394343,
+        "group_macro_edge_bin_mass_MAE": 0.0020227935165166855,
+        "protein_macro_H": 0.0586499460041523,
+        "protein_macro_cutpoint_CDF_MSE": 0.0003178912156727165,
+        "protein_macro_edge_bin_mass_MAE": 0.0020490423776209354,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 14.72513769287616,
+      "head_sequences_per_second": 3039333.479071615,
+      "peak_GPU_bytes": 145272832,
+      "peak_RSS_bytes": 1857191936,
+      "checkpoint_sha256": "5bb579251fc13dbac29a5c7fb988d9fecb72b3359186121803cd89128c02da26",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_length",
+      "scale": "1000",
+      "fold": 1,
+      "run_id": "ecb59c275d0d2249468d3f247d95bebdc0329550b778c3831c2e16b02b8f0eee",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 44,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 52543,
+      "training_samples": 2549,
+      "training_proteins": 2549,
+      "training_groups": 1000,
+      "epochs": 289,
+      "best_epoch": 259,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.056020088493824005,
+        "group_macro_cutpoint_CDF_MSE": 0.0002440919488435611,
+        "group_macro_edge_bin_mass_MAE": 0.0020944946445524693,
+        "protein_macro_H": 0.05650588497519493,
+        "protein_macro_cutpoint_CDF_MSE": 0.00023554758809041232,
+        "protein_macro_edge_bin_mass_MAE": 0.002106092171743512,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 15.432737431488931,
+      "head_sequences_per_second": 3859221.616300385,
+      "peak_GPU_bytes": 29843968,
+      "peak_RSS_bytes": 1512501248,
+      "checkpoint_sha256": "04a49f873d246df80fdbebe24e97d4e2ff6e5fabce09b9eb6b41d2de33f8b62d",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_mean",
+      "scale": "all",
+      "fold": 0,
+      "run_id": "66428608312ad5ca703aa80ab049de4e4b18add178d9b7b7daee9b5f856befd8",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 960,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1656383,
+      "training_samples": 13165,
+      "training_proteins": 13162,
+      "training_groups": 4800,
+      "epochs": 65,
+      "best_epoch": 35,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.05727606266736984,
+        "group_macro_cutpoint_CDF_MSE": 0.0002952487557195127,
+        "group_macro_edge_bin_mass_MAE": 0.0021052586380392313,
+        "protein_macro_H": 0.05712621286511421,
+        "protein_macro_cutpoint_CDF_MSE": 0.00027772790053859353,
+        "protein_macro_edge_bin_mass_MAE": 0.0020191543735563755,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 14.095775776542723,
+      "head_sequences_per_second": 3150246.0840521352,
+      "peak_GPU_bytes": 145152512,
+      "peak_RSS_bytes": 1860153344,
+      "checkpoint_sha256": "041977dc52949e266d2e6ccff389b0f1d65d045e5cf5058454c54362fe952cc5",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_charge",
+      "scale": "1000",
+      "fold": 0,
+      "run_id": "2e2d9fe059a1be9455909b9c59237b58629a21b1daef5b05c9f6015ef5f05b93",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 1038,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1736255,
+      "training_samples": 2577,
+      "training_proteins": 2577,
+      "training_groups": 1000,
+      "epochs": 78,
+      "best_epoch": 48,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.05749699845910072,
+        "group_macro_cutpoint_CDF_MSE": 0.00028472155099734664,
+        "group_macro_edge_bin_mass_MAE": 0.0022402037866413593,
+        "protein_macro_H": 0.0577528141438961,
+        "protein_macro_cutpoint_CDF_MSE": 0.00026774947764351964,
+        "protein_macro_edge_bin_mass_MAE": 0.0021308886352926493,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 4.637926212511957,
+      "head_sequences_per_second": 3095362.0666644657,
+      "peak_GPU_bytes": 152789504,
+      "peak_RSS_bytes": 1882791936,
+      "checkpoint_sha256": "5b4ebd433216451497b818e1cb73f7428257fa46b7d77fa14230300c7ba637f5",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_charge",
+      "scale": "200",
+      "fold": 1,
+      "run_id": "a48ff6f29d89c47fde21447b24b92e24b4d00485ab4e9ec949ac9e88e7fbc132",
+      "lr": 0.001,
+      "seed": 1701,
+      "input_dim": 78,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 61247,
+      "training_samples": 482,
+      "training_proteins": 482,
+      "training_groups": 200,
+      "epochs": 262,
+      "best_epoch": 232,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.06256566196680069,
+        "group_macro_cutpoint_CDF_MSE": 0.0003284564591012895,
+        "group_macro_edge_bin_mass_MAE": 0.0022834488190710545,
+        "protein_macro_H": 0.06483029574155807,
+        "protein_macro_cutpoint_CDF_MSE": 0.0003439338179305196,
+        "protein_macro_edge_bin_mass_MAE": 0.002336507197469473,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 6.84541686438024,
+      "head_sequences_per_second": 3752381.481361189,
+      "peak_GPU_bytes": 33164800,
+      "peak_RSS_bytes": 1494917120,
+      "checkpoint_sha256": "09fd85d7a9991df1f5d92e3230bb7196b567034d648fd3fd96d630d96beed281",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_charge",
+      "scale": "200",
+      "fold": 0,
+      "run_id": "96415fca088d748253f924ae096088dc8cb276d889c8c4f1a0751c679a87ee65",
+      "lr": 0.001,
+      "seed": 1701,
+      "input_dim": 78,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 61247,
+      "training_samples": 496,
+      "training_proteins": 496,
+      "training_groups": 200,
+      "epochs": 208,
+      "best_epoch": 178,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.06592953205108643,
+        "group_macro_cutpoint_CDF_MSE": 0.0003781612904276699,
+        "group_macro_edge_bin_mass_MAE": 0.002555041341111064,
+        "protein_macro_H": 0.06737823784351349,
+        "protein_macro_cutpoint_CDF_MSE": 0.00040959619218483567,
+        "protein_macro_edge_bin_mass_MAE": 0.0023439479991793633,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 5.284334726631641,
+      "head_sequences_per_second": 3807904.4015361723,
+      "peak_GPU_bytes": 33146368,
+      "peak_RSS_bytes": 1512714240,
+      "checkpoint_sha256": "5ea30f1f77593ae2e35c9d2113ef2d60929dc7f8d3d1ec9d9f644dfbf9082377",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_mean",
+      "scale": "1000",
+      "fold": 1,
+      "run_id": "f86d3436412726d6698eb33befd794875d686025f1c5828ba178d583509aa28a",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 960,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1656383,
+      "training_samples": 2549,
+      "training_proteins": 2549,
+      "training_groups": 1000,
+      "epochs": 93,
+      "best_epoch": 63,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.06449801474809647,
+        "group_macro_cutpoint_CDF_MSE": 0.000394773407606408,
+        "group_macro_edge_bin_mass_MAE": 0.0021990034729242325,
+        "protein_macro_H": 0.06740270555019379,
+        "protein_macro_cutpoint_CDF_MSE": 0.0004508867859840393,
+        "protein_macro_edge_bin_mass_MAE": 0.002217740984633565,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 5.261752714402974,
+      "head_sequences_per_second": 3191037.0980322603,
+      "peak_GPU_bytes": 145230336,
+      "peak_RSS_bytes": 1863479296,
+      "checkpoint_sha256": "d435b75c8d400675383b27d5052e4221344cbd06168211f53c03a5083b6297fb",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_length",
+      "scale": "200",
+      "fold": 0,
+      "run_id": "f608c65783cb2b389eea978f282ae60d5c87aedda38a9d939774d6ccff9ce779",
+      "lr": 0.001,
+      "seed": 1701,
+      "input_dim": 44,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 52543,
+      "training_samples": 496,
+      "training_proteins": 496,
+      "training_groups": 200,
+      "epochs": 270,
+      "best_epoch": 240,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.06655645370483398,
+        "group_macro_cutpoint_CDF_MSE": 0.00039417031803168356,
+        "group_macro_edge_bin_mass_MAE": 0.002465461380779743,
+        "protein_macro_H": 0.06726627051830292,
+        "protein_macro_cutpoint_CDF_MSE": 0.00039517838740721345,
+        "protein_macro_edge_bin_mass_MAE": 0.002289558295160532,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 5.99594047293067,
+      "head_sequences_per_second": 3933390.8386590104,
+      "peak_GPU_bytes": 29818368,
+      "peak_RSS_bytes": 1508528128,
+      "checkpoint_sha256": "763e24d805a09a420f70c94b9dbe663f3c48f1f6b99f03fa39604b9d1b8c25a4",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "composition_length",
+      "scale": "200",
+      "fold": 1,
+      "run_id": "b5d539217a457755fa2c17ab5919eb941686478a46967f2e05dae1f6d96d5e89",
+      "lr": 0.001,
+      "seed": 1701,
+      "input_dim": 44,
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "parameters": 52543,
+      "training_samples": 482,
+      "training_proteins": 482,
+      "training_groups": 200,
+      "epochs": 235,
+      "best_epoch": 205,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.06427891552448273,
+        "group_macro_cutpoint_CDF_MSE": 0.000353133276803419,
+        "group_macro_edge_bin_mass_MAE": 0.002253939863294363,
+        "protein_macro_H": 0.0666426494717598,
+        "protein_macro_cutpoint_CDF_MSE": 0.0003659555222839117,
+        "protein_macro_edge_bin_mass_MAE": 0.0022820369340479374,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 5.325880111195147,
+      "head_sequences_per_second": 3539926.063792957,
+      "peak_GPU_bytes": 29835776,
+      "peak_RSS_bytes": 1488535552,
+      "checkpoint_sha256": "21627eb3b2b694ddfc901c963f91fbcc97d56f8847447572e0ae8ddf3f0d9ab7",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_mean",
+      "scale": "1000",
+      "fold": 0,
+      "run_id": "d0a596be735155bd22d2c167cd52cedf89ee415dea0c5c21b9bf868c21760f15",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 960,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1656383,
+      "training_samples": 2577,
+      "training_proteins": 2577,
+      "training_groups": 1000,
+      "epochs": 128,
+      "best_epoch": 98,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.06485030055046082,
+        "group_macro_cutpoint_CDF_MSE": 0.00040770918712951243,
+        "group_macro_edge_bin_mass_MAE": 0.002275089966133237,
+        "protein_macro_H": 0.06504123657941818,
+        "protein_macro_cutpoint_CDF_MSE": 0.00039382476825267076,
+        "protein_macro_edge_bin_mass_MAE": 0.002172027016058564,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 7.354537443257868,
+      "head_sequences_per_second": 2751993.0140436296,
+      "peak_GPU_bytes": 145110528,
+      "peak_RSS_bytes": 1862205440,
+      "checkpoint_sha256": "274b8d8683092c9ecac9ee9557e5722b37c1de9227302c8fd26cbf99a4381cde",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_charge",
+      "scale": "200",
+      "fold": 0,
+      "run_id": "119fdf8789220775c7fec4c1aad647935611dcb20ef3a749703b61ddb6304dc7",
+      "lr": 0.001,
+      "seed": 1701,
+      "input_dim": 1038,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1736255,
+      "training_samples": 496,
+      "training_proteins": 496,
+      "training_groups": 200,
+      "epochs": 148,
+      "best_epoch": 118,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.0664934441447258,
+        "group_macro_cutpoint_CDF_MSE": 0.0004497069458011538,
+        "group_macro_edge_bin_mass_MAE": 0.0024168596137315035,
+        "protein_macro_H": 0.06888951361179352,
+        "protein_macro_cutpoint_CDF_MSE": 0.00046727483277209103,
+        "protein_macro_edge_bin_mass_MAE": 0.002355838194489479,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 3.680541092529893,
+      "head_sequences_per_second": 2947065.984952726,
+      "peak_GPU_bytes": 152780800,
+      "peak_RSS_bytes": 1884364800,
+      "checkpoint_sha256": "a3035cec88c94cd4db573a50a9951f115da71ce24fa9552d2b133d117d864f12",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_charge",
+      "scale": "200",
+      "fold": 1,
+      "run_id": "42e460cd81409ca08716b4084a83682107caf26a499125d85f8391a865db2b32",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 1038,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1736255,
+      "training_samples": 482,
+      "training_proteins": 482,
+      "training_groups": 200,
+      "epochs": 191,
+      "best_epoch": 161,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.06776562333106995,
+        "group_macro_cutpoint_CDF_MSE": 0.00046980290790088475,
+        "group_macro_edge_bin_mass_MAE": 0.002318478189408779,
+        "protein_macro_H": 0.07417477667331696,
+        "protein_macro_cutpoint_CDF_MSE": 0.0006373985088430345,
+        "protein_macro_edge_bin_mass_MAE": 0.002378590637817979,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 4.723267106339335,
+      "head_sequences_per_second": 3004390.5955718043,
+      "peak_GPU_bytes": 152904192,
+      "peak_RSS_bytes": 1885024256,
+      "checkpoint_sha256": "2ad91ca36eb8761aceac9cac9b7d9735bf8a5347814a1c753932dfa608cdfc0a",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_mean",
+      "scale": "200",
+      "fold": 0,
+      "run_id": "9b5e421eecf99b9298bb57ca4ac3fd9cb3160b4585d8d94218ee5b6556b00483",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 960,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1656383,
+      "training_samples": 496,
+      "training_proteins": 496,
+      "training_groups": 200,
+      "epochs": 224,
+      "best_epoch": 194,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.07826420664787292,
+        "group_macro_cutpoint_CDF_MSE": 0.0007022243225947022,
+        "group_macro_edge_bin_mass_MAE": 0.0024800533428788185,
+        "protein_macro_H": 0.08623744547367096,
+        "protein_macro_cutpoint_CDF_MSE": 0.0009461882873438299,
+        "protein_macro_edge_bin_mass_MAE": 0.002471295651048422,
+        "samples": 4366,
+        "proteins": 4364,
+        "groups": 1599
+      },
+      "wall_seconds": 5.550641866400838,
+      "head_sequences_per_second": 2840199.6176988236,
+      "peak_GPU_bytes": 145101824,
+      "peak_RSS_bytes": 1858211840,
+      "checkpoint_sha256": "d7b40d93fb2d769a5627992e927d405a04d6c2ba6598d8cb4822d1eb1f8fd9dc",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    },
+    {
+      "family": "esmc_mean",
+      "scale": "200",
+      "fold": 1,
+      "run_id": "cc7d615e5cf1c96d5f948672573cb1e7edd0c16735b813843e3349f25918cb70",
+      "lr": 0.0003,
+      "seed": 1701,
+      "input_dim": 960,
+      "hidden": [
+        1024,
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "parameters": 1656383,
+      "training_samples": 482,
+      "training_proteins": 482,
+      "training_groups": 200,
+      "epochs": 266,
+      "best_epoch": 236,
+      "stop_reason": "early_stop",
+      "result": {
+        "group_macro_H": 0.07875800877809525,
+        "group_macro_cutpoint_CDF_MSE": 0.0007105401018634439,
+        "group_macro_edge_bin_mass_MAE": 0.0024168980307877064,
+        "protein_macro_H": 0.0902635008096695,
+        "protein_macro_cutpoint_CDF_MSE": 0.0011765063973143697,
+        "protein_macro_edge_bin_mass_MAE": 0.002494273940101266,
+        "samples": 4390,
+        "proteins": 4389,
+        "groups": 1600
+      },
+      "wall_seconds": 6.299395021982491,
+      "head_sequences_per_second": 3081090.5937358853,
+      "peak_GPU_bytes": 145222144,
+      "peak_RSS_bytes": 1862164480,
+      "checkpoint_sha256": "19af41fdf73f74694f3ed927087cdb3f1e9789c5737c78bc5e3fe22694496674",
+      "script_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b"
+    }
+  ],
+  "checks": {
+    "predictions_recomputed": 52,
+    "checkpoint_reload_subset_checks": 26,
+    "checkpoint_reload_rows_each": 128,
+    "checkpoint_reload_max_abs_error": 3.129243850708008e-07,
+    "selected_budget_limited": 0,
+    "all_fit_stop_counts": {
+      "early_stop": 48,
+      "epoch_budget": 4
+    },
+    "exact_legacy_encoder_overlap": 1061,
+    "legacy_encoder_max_abs_difference": 0.0
+  },
+  "engineering_repairs": [
+    {
+      "stage": "encoder",
+      "reason": "missing launch tools directory; exited before extraction",
+      "scientific_data_affected": false
+    },
+    {
+      "stage": "capacity_control",
+      "reason": "encoder Python lacked pandas; exited before training; resumed using original head runtime wrapper",
+      "scientific_data_affected": false
+    }
+  ],
+  "qualification": {
+    "retrospective_exposed_development": true,
+    "seeds": [
+      1701
+    ],
+    "evaluation_folds": [
+      0,
+      1
+    ],
+    "new_C_transfer_permitted": false,
+    "initialization_benefit_tested": false,
+    "full_U_deployment_validated": false,
+    "capacity_control": "same hidden widths/depth/dropout, not exact total parameter matching",
+    "CDF": "unweighted mean squared error across 62 internal cutpoints, not continuous Wasserstein",
+    "tails": "mean absolute error of first and last bin masses"
+  }
+}

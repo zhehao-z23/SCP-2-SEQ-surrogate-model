@@ -64,39 +64,64 @@
   ],
   "scripts": [
     {
-      "path": "src/bind_label_contract.py",
       "sha256": "dc88c853d3b8e33511a099a82fe615fdfb1c97e9344ccfc7df07df2bcbebd379",
-      "source": "current stage implementation"
+      "source": "current stage implementation",
+      "path": "src/bind_label_contract.py"
     },
     {
-      "path": "src/cache_atlas_esmc_mean.py",
       "sha256": "a88fe8570ab86ad93839c831ac18c13aef9509453d76c1933e31d81d2f09361c",
-      "source": "current stage implementation"
+      "source": "current stage implementation",
+      "path": "src/cache_atlas_esmc_mean.py"
     },
     {
-      "path": "src/prepare_atlas_scale.py",
+      "sha256": "210e89c1929407e43bd4d6737cf82880b26eb9d246d87c6643edcc60dbeb283f",
+      "source": "current stage implementation",
+      "path": "src/export_stage_aggregate.py"
+    },
+    {
       "sha256": "6a4417f93684b02933d728fff96bfc29cced11b7765fcd4a23b5197021eabe85",
-      "source": "current stage implementation"
+      "source": "current stage implementation",
+      "path": "src/prepare_atlas_scale.py"
     },
     {
-      "path": "src/publish_atlas_esmc_mean.py",
       "sha256": "85baecd61150782cd67e8745594f80637cf49455ed89e698b1daf1623d442d6d",
-      "source": "current stage implementation"
+      "source": "current stage implementation",
+      "path": "src/publish_atlas_esmc_mean.py"
     },
     {
-      "path": "src/run_scale_queue.py",
+      "sha256": "0647d98a5a36522f9629f78580ad3690ff13bc272a8e39bc6d17ef99f784de29",
+      "source": "current stage implementation",
+      "path": "src/replay_scale_checkpoints.py"
+    },
+    {
+      "sha256": "eb6fe78ab382daa869e0c974f84d1cfe53b99a6f87ddc1671fff6477f9473cf9",
+      "source": "current stage implementation",
+      "path": "src/run_capacity_control.py"
+    },
+    {
       "sha256": "f557158edb543c39272a0c8f26945364261d64b30aa686251e3e83f35fb62a1a",
-      "source": "current stage implementation"
+      "source": "current stage implementation",
+      "path": "src/run_scale_queue.py"
     },
     {
-      "path": "src/summarize_atlas_scale.py",
-      "sha256": "aded23dddafbda83bab59453759767190810d25e59a8d057d655e0bf557e439f",
-      "source": "current stage implementation"
+      "sha256": "f26185f7470a4671dd8f3eebb0558981954beb365d8ac7e16795c730d0b1c2dc",
+      "source": "current stage implementation",
+      "path": "src/stratify_atlas_scale.py"
     },
     {
-      "path": "src/train_atlas_scale.py",
+      "sha256": "aa9398fd3a56266a265e2cfb1ed02c0d93a6a0d6d3c38c3e9352af52a430f05a",
+      "source": "current stage implementation",
+      "path": "src/summarize_atlas_scale.py"
+    },
+    {
+      "sha256": "19f885f2c15a1c975505753330bf6e70f57f494d73b05d9e1491de1f0d033c7d",
+      "source": "current stage implementation",
+      "path": "src/train_atlas_capacity.py"
+    },
+    {
       "sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b",
-      "source": "current stage implementation"
+      "source": "current stage implementation",
+      "path": "src/train_atlas_scale.py"
     }
   ],
   "configuration": {
@@ -116,6 +141,165 @@
       "source_sha256": "d0d4c34c4cfc639cfbaa9d387c6878d6bbf3d41ef3e230db21a0e6a6076c3075",
       "archived_sha256": "a7f896ba7592ed2d63d3486f9a14cdc28d6866b0345a7c82684d5b0a6c12c73a",
       "adaptation": "Machine-specific legacy project root replaced by LEGACY_ROOT placeholder; numerical findings unchanged"
+    },
+    {
+      "adaptation": "Machine-specific project/run roots replaced with LEGACY_ROOT and RUN_ROOT placeholders; scientific content unchanged",
+      "source_sha256": "4b8f1f2beea751d86775c33c01fb92a41334d188903048b3fade49c242ca9c91",
+      "archived_sha256": "d77f85eb79affda57487ee14897fa99fd57403b33ac7fe899f39d486c0eea359",
+      "path": "docs/stage_decisions_20261105.md"
+    },
+    {
+      "adaptation": "Machine-specific project/run roots replaced with LEGACY_ROOT and RUN_ROOT placeholders; scientific content unchanged",
+      "source_sha256": "578d4ba555ec521cc43aa529cfe2bfa1bc686ab31c84391df05b4f9510b525eb",
+      "archived_sha256": "578d4ba555ec521cc43aa529cfe2bfa1bc686ab31c84391df05b4f9510b525eb",
+      "path": "docs/round_20261105_research.md"
     }
-  ]
+  ],
+  "capacity_amendment": {
+    "path": "configs/capacity_amendment.json",
+    "source_sha256": "3863c6bca4ccdfecb35fd15d3f9dc29894b45ac34b1c7c9b7480933fbe1dde24",
+    "archived_sha256": "3863c6bca4ccdfecb35fd15d3f9dc29894b45ac34b1c7c9b7480933fbe1dde24",
+    "scope": "Four additional development fits, matched hidden widths/depth/dropout but not total parameter count; original trainer unchanged"
+  },
+  "execution_code_readback": {
+    "checked_date": "2026-11-05",
+    "scope": "Current execution files, not a claim all earlier run receipts used the latest evaluator or preparation revision",
+    "files": [
+      {
+        "execution_sha256": "dc88c853d3b8e33511a099a82fe615fdfb1c97e9344ccfc7df07df2bcbebd379",
+        "archived_path": "src/bind_label_contract.py",
+        "match": true,
+        "note": "same bytes",
+        "archived_sha256": "dc88c853d3b8e33511a099a82fe615fdfb1c97e9344ccfc7df07df2bcbebd379",
+        "execution_relative_path": "atlas_scale_20261105/code/bind_label_contract.py"
+      },
+      {
+        "execution_sha256": "1945b5c6af1b8bc6aa0edccf44fb17be9266f1ae5148c1b73133a9a506e230dc",
+        "archived_path": "src/prepare_atlas_scale.py",
+        "match": false,
+        "note": "Executed initial preparation retained; corrected repository version and immutable label-contract addendum documented in label_binding_correction.",
+        "archived_sha256": "6a4417f93684b02933d728fff96bfc29cced11b7765fcd4a23b5197021eabe85",
+        "execution_relative_path": "atlas_scale_20261105/code/prepare_atlas_scale.py"
+      },
+      {
+        "execution_sha256": "0647d98a5a36522f9629f78580ad3690ff13bc272a8e39bc6d17ef99f784de29",
+        "archived_path": "src/replay_scale_checkpoints.py",
+        "match": true,
+        "note": "same bytes",
+        "archived_sha256": "0647d98a5a36522f9629f78580ad3690ff13bc272a8e39bc6d17ef99f784de29",
+        "execution_relative_path": "atlas_scale_20261105/code/replay_scale_checkpoints.py"
+      },
+      {
+        "execution_sha256": "eb6fe78ab382daa869e0c974f84d1cfe53b99a6f87ddc1671fff6477f9473cf9",
+        "archived_path": "src/run_capacity_control.py",
+        "match": true,
+        "note": "same bytes",
+        "archived_sha256": "eb6fe78ab382daa869e0c974f84d1cfe53b99a6f87ddc1671fff6477f9473cf9",
+        "execution_relative_path": "atlas_scale_20261105/code/run_capacity_control.py"
+      },
+      {
+        "execution_sha256": "f557158edb543c39272a0c8f26945364261d64b30aa686251e3e83f35fb62a1a",
+        "archived_path": "src/run_scale_queue.py",
+        "match": true,
+        "note": "same bytes",
+        "archived_sha256": "f557158edb543c39272a0c8f26945364261d64b30aa686251e3e83f35fb62a1a",
+        "execution_relative_path": "atlas_scale_20261105/code/run_scale_queue.py"
+      },
+      {
+        "execution_sha256": "aa9398fd3a56266a265e2cfb1ed02c0d93a6a0d6d3c38c3e9352af52a430f05a",
+        "archived_path": "src/summarize_atlas_scale.py",
+        "match": true,
+        "note": "same bytes",
+        "archived_sha256": "aa9398fd3a56266a265e2cfb1ed02c0d93a6a0d6d3c38c3e9352af52a430f05a",
+        "execution_relative_path": "atlas_scale_20261105/code/summarize_atlas_scale.py"
+      },
+      {
+        "execution_sha256": "19f885f2c15a1c975505753330bf6e70f57f494d73b05d9e1491de1f0d033c7d",
+        "archived_path": "src/train_atlas_capacity.py",
+        "match": true,
+        "note": "same bytes",
+        "archived_sha256": "19f885f2c15a1c975505753330bf6e70f57f494d73b05d9e1491de1f0d033c7d",
+        "execution_relative_path": "atlas_scale_20261105/code/train_atlas_capacity.py"
+      },
+      {
+        "execution_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b",
+        "archived_path": "src/train_atlas_scale.py",
+        "match": true,
+        "note": "same bytes",
+        "archived_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b",
+        "execution_relative_path": "atlas_scale_20261105/code/train_atlas_scale.py"
+      },
+      {
+        "match": true,
+        "archived_sha256": "210e89c1929407e43bd4d6737cf82880b26eb9d246d87c6643edcc60dbeb283f",
+        "note": "same bytes",
+        "archived_path": "src/export_stage_aggregate.py",
+        "execution_sha256": "210e89c1929407e43bd4d6737cf82880b26eb9d246d87c6643edcc60dbeb283f",
+        "execution_relative_path": "atlas_scale_20261105/code/export_stage_aggregate.py"
+      },
+      {
+        "note": "same bytes; execution hash is also recorded in the public stratum audit",
+        "execution_sha256": "f26185f7470a4671dd8f3eebb0558981954beb365d8ac7e16795c730d0b1c2dc",
+        "archived_sha256": "f26185f7470a4671dd8f3eebb0558981954beb365d8ac7e16795c730d0b1c2dc",
+        "execution_relative_path": "atlas_scale_20261105/tools/stratify_atlas_scale.py",
+        "match": true,
+        "archived_path": "src/stratify_atlas_scale.py"
+      }
+    ]
+  },
+  "final_aggregate_archive": {
+    "files": [
+      {
+        "path": "experiments/atlas_scale_20261105/strata/audit.json",
+        "sha256": "4e491076fcbf2cec045f5fa032d3b2187efd30b6f6730daee729d8282e46875f"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/strata/denominators.json",
+        "sha256": "a8914847884e6fc26cd7115b3c0a7fb1abd44d13aa244d9fda5bd178beb8baa1"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/strata/homology_distance_scope.json",
+        "sha256": "cbd3d084297d9fa41ff242bc047c465d9f5ffc6e4d0f34f45c413b185cd9b67e"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/strata/length_coverage_paired.csv",
+        "sha256": "9c0a389eeed1a48f7c65ee6b76dfe13d029fcc141bd8a01823de11b5a226fc17"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/strata/length_coverage_pooled.csv",
+        "sha256": "af7d217919e17b5a892dd1165a1cb923ac015b4e56250d84fac11b19701188bf"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/strata/length_coverage_relation_counts.csv",
+        "sha256": "b462a25defdbc2628b1220bb571417a0bcd999a6b731bd2c5b0a331f406d8eab"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/strata/paired_stratum_differences.csv",
+        "sha256": "691025d63d9269a4ceab4e665d4b7bf2db7a2c020954e35443884a151a4742fa"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/strata/strata_definitions.json",
+        "sha256": "b50d96b35d3cf28d308b3cc3d70292582fe7d09542d8b4d01f9246703fa6700b"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/strata/strict_T_U_per_fold.csv",
+        "sha256": "e893e27ff2f89e1e5ffe59896bc92e57d2b10e71919e251c2fa13ee6b834c9c9"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/strata/strict_T_U_pooled.csv",
+        "sha256": "2627d60f0ef99277bb9764253f7a9d1acbdf85f1b7cf0980fc5f7e61294000e5"
+      },
+      {
+        "path": "experiments/atlas_scale_20261105/summary.json",
+        "sha256": "0ef6b191fde87619c69e586414424f518ad4f8fd90f18fe719381c3ebb454271"
+      }
+    ],
+    "private_data_not_distributed": true,
+    "authorization": "Project owner explicitly approved publication of this code, same-stage reproduction revisions and summaries without sample details on 2026-11-05",
+    "source_aggregate_sha256": "0ef6b191fde87619c69e586414424f518ad4f8fd90f18fe719381c3ebb454271",
+    "selected": 26,
+    "engineering_launch_repairs": 2,
+    "stage": "atlas_scale_20261105",
+    "fits": 52
+  }
 }

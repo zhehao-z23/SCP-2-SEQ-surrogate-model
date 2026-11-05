@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--root',required=True);a=ap.parse_args();r=Path(a.root);d=pd.read_parquet(r/'data/samples.parquet').set_index('sample_id');y=np.load(r/'data/p.npy');receipts=[];tables={};checks=[]
+ ap=argparse.ArgumentParser();ap.add_argument('--root',required=True);ap.add_argument('--expected-fits',type=int,default=48);a=ap.parse_args();r=Path(a.root);d=pd.read_parquet(r/'data/samples.parquet').set_index('sample_id');y=np.load(r/'data/p.npy');receipts=[];tables={};checks=[]
  for path in sorted((r/'runs').glob('*/receipt.json')):
   x=json.loads(path.read_text());cfg=x['config'];out=path.parent;roles=json.loads((out/'roles.json').read_text());ids=roles['evaluation_ids'];meta=d.loc[ids].copy()
   loc=pd.Series(np.arange(len(d)),index=d.index).loc[ids].to_numpy();truth=y[loc];pred=np.load(out/'evaluation_prediction.npy')
@@ -35,12 +35,16 @@ def main():
  for scale in ['200','1000','all']:
   base=group_tables.get('composition_charge:'+scale)
   if base is None:continue
-  for family in ['composition_length','esmc_mean','esmc_charge']:
+  for family in ['composition_length','esmc_mean','esmc_charge','composition_charge_deep']:
    other=group_tables.get(family+':'+scale)
    if other is None or set(other.index)!=set(base.index):continue
    delta=other.loc[base.index].H.to_numpy()-base.H.to_numpy()
    boots=np.array([rng.choice(delta,len(delta),replace=True).mean() for _ in range(2000)])
    comparisons.append({'family_minus_charge':family,'scale':scale,'groups':len(delta),'delta_H':float(delta.mean()),'descriptive_group_bootstrap_95':np.quantile(boots,[.025,.975]).tolist(),'selection_adjusted':False,'seed_variation_included':False})
- summary={'status':'partial' if len(receipts)<48 else 'complete','fits_complete':len(receipts),'expected_fits':48,'all_recomputed':len(checks),'learning_curves':summaries,'paired':comparisons,'fit_wall_seconds_total':float(allrows.wall_seconds.sum()),'qualification':'retrospective development; LR selected on stop, model/scale comparison on exposed evaluation; no blind or new-C claim'}
+ if 'composition_charge_deep:all' in group_tables and 'esmc_charge:all' in group_tables:
+  base=group_tables['composition_charge_deep:all'];other=group_tables['esmc_charge:all'];assert set(base.index)==set(other.index)
+  delta=other.loc[base.index].H.to_numpy()-base.H.to_numpy();boots=np.array([rng.choice(delta,len(delta),replace=True).mean() for _ in range(2000)])
+  comparisons.append({'comparison':'esmc_charge minus composition_charge_deep','scale':'all','groups':len(delta),'delta_H':float(delta.mean()),'descriptive_group_bootstrap_95':np.quantile(boots,[.025,.975]).tolist(),'selection_adjusted':False,'seed_variation_included':False})
+ summary={'status':'complete' if len(receipts)==a.expected_fits else 'partial_or_extra','fits_complete':len(receipts),'expected_fits':a.expected_fits,'all_recomputed':len(checks),'learning_curves':summaries,'paired':comparisons,'fit_wall_seconds_total':float(allrows.wall_seconds.sum()),'qualification':'retrospective development; LR selected on stop, model/scale comparison on exposed evaluation; no blind or new-C claim'}
  (r/'results/summary.json').write_text(json.dumps(summary,indent=2)+'\n');(r/'results/audit.json').write_text(json.dumps(checks,indent=2)+'\n');print(json.dumps(summary))
 if __name__=='__main__':main()
