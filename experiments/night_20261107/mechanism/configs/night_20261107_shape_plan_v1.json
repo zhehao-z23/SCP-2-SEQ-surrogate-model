@@ -1,0 +1,71 @@
+{
+  "schema": "frozen_shape_information_probe_plan.v1",
+  "timing": "Recorded before new feature extraction and fitting; existing diagnostic outcomes are already known development evidence.",
+  "question": "Is strong-shape failure explained by low-dimensional score scaling, by the PMF-to-shape readout, or by a lack of readily accessible shape signal in the current representation?",
+  "hypotheses": {
+    "score_scaling": "A positive affine correction may repair numerical threshold calls but cannot improve the original strict ordering. It is an explicit low-flexibility control, not a probability-calibration guarantee.",
+    "PMF_readout": "An independently trained shape readout from the full predicted PMF may outperform the current uniform-quantile shape functional without modifying the PMF.",
+    "hidden_accessibility": "A shape probe on the frozen 256-dimensional H2-model representation may recover signal not readily available to a linear probe on the PMF. This tests accessibility, not information-theoretic sufficiency.",
+    "label_representation": "Matched probes supervised by raw-QC Bowley versus the true63 uniform-quantile Bowley isolate a target-representation contrast within a fixed feature/loss geometry.",
+    "alternatives": "Sparse strong-shape support, nonlinear accessibility, shared sequence/structure ambiguity, finite estimation and prior stop-based representation selection can still explain poor probe generalization."
+  },
+  "extract_code_sha256": "23effde896b21013c672b33ed1b1a304949c5f34cf40eefef38879ab2800085c",
+  "GPU": "${GPU}",
+  "CPU": [
+    172,
+    173
+  ],
+  "feature_extraction_process_cap_seconds": 600,
+  "existing_backbone": "Exact-replayed H2 residue_mean fold0 seed1701 best104; frozen parameters and eval mode; all train/stop/evaluation predictions replayed against saved arrays before any probe result is accepted.",
+  "partitions": "Original fit folds2/3/4, stop1, development evaluation0; no new split, no protected data.",
+  "initial_probe_design": {
+    "references": [
+      "original predicted-PMF uniform Bowley",
+      "training-only constant raw Bowley",
+      "nonnegative-slope affine raw-Bowley fit on original predicted scalar"
+    ],
+    "ridge_features": [
+      "standardized charge78",
+      "mean ESMC960 plus charge78",
+      "frozen hidden256",
+      "predicted PMF63"
+    ],
+    "training_targets": [
+      "raw QC Bowley",
+      "true63 explicitly uniform-within-bin Bowley"
+    ],
+    "weights": "Equal training T by inverse number of views, normalized to mean1. No rare-label oversampling or weighting.",
+    "scalers": "Weighted fit-only feature mean/std, constant features zeroed. Target-centered weighted ridge with unpenalized intercept.",
+    "ridge_objective": "mean_weighted_squared_error + lambda * squared_coefficient_norm; lambda in [0.0001,0.01,1.0]",
+    "selection": "For each feature source, choose raw-target lambda by raw-Bowley stop group-macro MSE, exact ties prefer larger lambda. Lock the same lambda for its binned-target partner; no evaluation selection.",
+    "bounded_values": "Clip scalar predictions to [-1,1] for Bowley value error and absolute thresholds. Use the preclip scalar for ranking, with deterministic existing sample-ID tie rules; report clipping and ties. Constant-score ranking is uninformative and must not be credited as retrieval.",
+    "label_eligibility": "Raw IQR>=1 and abs(Bowley)>=0.30 for strong-shape truth, matching the already declared absolute rule. This is not the complete historical source-percentile screen."
+  },
+  "evaluation": [
+    "Same protein-to-group macro continuous raw-Bowley MSE/MAE; rare union and each direction separately, with support counts",
+    "Fixed +/-0.30 calls: TP/FP/FN, unchanged threshold; fixed1%uniqueT budget per direction using original canonical-view/any-view-truth convention",
+    "Fit versus stop versus evaluation under the same fixed prediction definitions; no online-loss gap",
+    "Raw-versus-binned target intervention using identical feature standardization, ridge lambda and objective",
+    "Whole-PMF H/CDF/tails unchanged by construction and verified; unchanged PMF is not an improvement claim or proof of shape recovery",
+    "Fit time, parameter count, replay identities, input-level privacy/protection and exposure limits"
+  ],
+  "decision_rule": {
+    "promising_for_confirmation": "A raw-shape probe must reduce rare-union raw Bowley MAE by at least10% on both stop and evaluation, keep all-object raw Bowley MSE within5% of the PMF-derived baseline on both, and not reduce fixed-budget summed TP on either, with at least2 additional summed TP on one partition. If met, compare all available matched-fold strong PMF baselines before considering a bounded second-fold/seed confirmation. These are engineering gates, not significance tests.",
+    "no_direct_promotion": "No initial probe can replace the whole-distribution model or qualify a new scientific screening task. A scalar head can only be a separately stated development auxiliary output.",
+    "followup": "At most one evidence-motivated nonlinear or paired-fold followup family before reevaluation. Freeze that new experiment separately before fitting; do not relax these promotion thresholds to obtain success.",
+    "stop": "If no additional discriminating evidence appears, retain current candidate and report the tested scope; do not claim representation contains no information merely from failed linear probes."
+  },
+  "primary_reading": [
+    {
+      "url": "https://arxiv.org/pdf/1610.01644",
+      "read": "Introduction and section3 text; linear probes are independent measurements that do not change the backbone. Applied here to regression, not claimed as a new method."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1206.4661",
+      "read": "Sections1-3, particularly score transformations, ranking versus regression and ties. Its binary probability theory is not transferred as a guarantee for continuous protein-shape regression."
+    }
+  ],
+  "archive_status": "portable_plan_template_not_executed",
+  "actual_executed_plan_sha256": "f3541fd8fe14e59cb8a2a08e6c0b84877c52d1cb7731c722530a80c33cb442f5",
+  "actual_executed_extract_code_sha256": "1da4188030558be5e96bebf13718e0abc4650dc091e7ecf5a63acaf7d36eabd4"
+}

@@ -1,5 +1,10 @@
 # SCP sequence surrogate: completed bridge stage, 2026-11-06
 
+**2026-11-07 夜间阶段已完成。** 冻结表示的校准、24 个解析岭系数拟合及两臂小型非线性读出均已实际测试；稀有误差改善未转化为预算筛选提升，未晋级。旧标签的固定预算任务中，学习型 charge 仍是低成本强基线。完整新 Atlas 输入/新 head/面积标签路径已用 1 个合格开发对象在 CPU 跑通；这不等于新协议泛化或最终模型。
+
+[夜间结果、实际成本与新 Atlas 交接](experiments/night_20261107/README.md) · [源码/匿名摘要归档映射](experiments/night_20261107/archive_manifest.json)。组会 13 页演示、病例、图册及预测只保留私有。以下为原 2026-11-06 桥接与诊断记录；其中后续探针的实际结果见上述新章节。
+
+
 本轮四项模型诊断已收束：既有 plateau 仅证实有限改善；强形态与极端筛选仍有缺口；病例核验排除了部分简单错配，但主要因果未分离。固定路径 H² 对 CE/4 的两臂 134 轮实验实际完成，H²精确重放和配对检查通过，**CE/4未达推广门槛，保留H²，不追加第二折或事后调参**。CE在预算末端仍改善，不能由此宣称其全局无用。任务仍限已曝光开发数据，最终模型和新C迁移尚未完成。
 
 [本轮四项验收、支持数与负结果](experiments/diagnostic_decisions_20261106/README.md) · [指标依据与解释边界](experiments/diagnostic_decisions_20261106/docs/metric_rationale.md) · [独立决策复核](experiments/diagnostic_decisions_20261106/results/loss_independent_review.json)。该章节保留19个已审归档文件的原始字节与内部目录；私有图册和病例数值不在公开仓库。

@@ -1,0 +1,6420 @@
+{
+  "schema": "shape_information_accessibility_anonymous.v1",
+  "status": "complete",
+  "source_summary_sha256": {
+    "linear": "e7c0f3d6c66d4f9da3947a3c9f6c1ade4ce4ce6727a2edbe7c84c3ce93de1b41",
+    "nonlinear": "c56fe6c6bb5e3c6d2bf813b7d90ec399213281297270a3a1a42c075618199fd9",
+    "extract": "b4cdf785c67d8f47a52eb8517e8a8f77fce0183b77c57f99beb1a8875bcf4a30"
+  },
+  "question": "Does correcting score scale, changing scalar supervision, or increasing frozen-readout capacity recover strong-shape screening information?",
+  "development_design": {
+    "fit_folds": [
+      2,
+      3,
+      4
+    ],
+    "stop_fold": 1,
+    "evaluation_fold": 0,
+    "seed": 1701,
+    "head_seed": 1707,
+    "final_independent_test": false,
+    "backbone_selection": "Historical stop group-H checkpoint 104; reused, frozen.",
+    "probe_selection": "Ridge lambda and neural epoch selected only on stop raw group-MSE; development evaluation is exposed.",
+    "truth": "Raw QC Bowley <=-0.30 or >=+0.30 with raw IQR>=1; not the complete historical percentile screen.",
+    "ranking": "Separate negative and positive top ceil(1% unique T); canonical fixed view score; any-view truth.",
+    "support": {
+      "train": {
+        "T": 13162,
+        "groups": 4800,
+        "strong_T": 49,
+        "strong_groups": 48
+      },
+      "stop": {
+        "T": 4389,
+        "groups": 1600,
+        "strong_T": 13,
+        "strong_groups": 12
+      },
+      "evaluation": {
+        "T": 4364,
+        "groups": 1599,
+        "strong_T": 16,
+        "strong_groups": 16
+      }
+    }
+  },
+  "controls": {
+    "affine_slope": 1.1480785239650741,
+    "affine_intercept": 0.0026515352672317784,
+    "affine_nonnegative_slope": true,
+    "rank_invariance_expected_if_positive_slope": true,
+    "constant_has_no_ranking_information": true,
+    "affine_exact_rank_order_by_partition": {
+      "train": true,
+      "stop": true,
+      "evaluation": true
+    }
+  },
+  "ridge_selection": [
+    {
+      "feature": "charge",
+      "dimension": 78,
+      "active_dimensions": 38,
+      "lambda": 0.0001,
+      "stop_candidates": [
+        {
+          "lambda": 0.0001,
+          "stop_raw_group_MSE": 0.004014056051873931,
+          "normal_equation_residual": 5.967448757360216e-16
+        },
+        {
+          "lambda": 0.01,
+          "stop_raw_group_MSE": 0.0040288784276777435,
+          "normal_equation_residual": 2.0816681711721685e-16
+        },
+        {
+          "lambda": 1.0,
+          "stop_raw_group_MSE": 0.004302588332993638,
+          "normal_equation_residual": 1.8041124150158794e-16
+        }
+      ],
+      "selection_target": "raw Bowley stop group-MSE; same chosen lambda reused for binned-target intervention",
+      "fits_coefficient_vectors": 6,
+      "wall_seconds": 0.08527340274304152,
+      "coefficient_archive_sha256": "9d2acb9f69645e8e3087d30548af34c6737e7ce79dc1a0c674de5add6d3783b2"
+    },
+    {
+      "feature": "input_mean_charge",
+      "dimension": 1038,
+      "active_dimensions": 998,
+      "lambda": 1.0,
+      "stop_candidates": [
+        {
+          "lambda": 0.0001,
+          "stop_raw_group_MSE": 0.004193389123921877,
+          "normal_equation_residual": 3.4867941867133823e-16
+        },
+        {
+          "lambda": 0.01,
+          "stop_raw_group_MSE": 0.0040239639201445875,
+          "normal_equation_residual": 2.1163626406917047e-16
+        },
+        {
+          "lambda": 1.0,
+          "stop_raw_group_MSE": 0.004013524915719595,
+          "normal_equation_residual": 1.0581813203458523e-16
+        }
+      ],
+      "selection_target": "raw Bowley stop group-MSE; same chosen lambda reused for binned-target intervention",
+      "fits_coefficient_vectors": 6,
+      "wall_seconds": 1.4400153057649732,
+      "coefficient_archive_sha256": "657a4b437b51b3ff47fbf8318605ca0a4840ceb3685f465b5afa4cc425992f75"
+    },
+    {
+      "feature": "hidden256",
+      "dimension": 256,
+      "active_dimensions": 256,
+      "lambda": 0.01,
+      "stop_candidates": [
+        {
+          "lambda": 0.0001,
+          "stop_raw_group_MSE": 0.0034579883787951527,
+          "normal_equation_residual": 1.8518173106052416e-16
+        },
+        {
+          "lambda": 0.01,
+          "stop_raw_group_MSE": 0.003398522194556075,
+          "normal_equation_residual": 1.457167719820518e-16
+        },
+        {
+          "lambda": 1.0,
+          "stop_raw_group_MSE": 0.003454728889346934,
+          "normal_equation_residual": 1.0408340855860843e-16
+        }
+      ],
+      "selection_target": "raw Bowley stop group-MSE; same chosen lambda reused for binned-target intervention",
+      "fits_coefficient_vectors": 6,
+      "wall_seconds": 0.22664452623575926,
+      "coefficient_archive_sha256": "880a5f1539c1a1f68ffe8f48d4d02ed2309b4a990dafc358faec5efafbe33212"
+    },
+    {
+      "feature": "predicted_PMF",
+      "dimension": 63,
+      "active_dimensions": 63,
+      "lambda": 0.0001,
+      "stop_candidates": [
+        {
+          "lambda": 0.0001,
+          "stop_raw_group_MSE": 0.0035919335913849114,
+          "normal_equation_residual": 1.0824674490095276e-15
+        },
+        {
+          "lambda": 0.01,
+          "stop_raw_group_MSE": 0.003711964404905292,
+          "normal_equation_residual": 3.885780586188048e-16
+        },
+        {
+          "lambda": 1.0,
+          "stop_raw_group_MSE": 0.004069580712231288,
+          "normal_equation_residual": 8.326672684688674e-17
+        }
+      ],
+      "selection_target": "raw Bowley stop group-MSE; same chosen lambda reused for binned-target intervention",
+      "fits_coefficient_vectors": 6,
+      "wall_seconds": 0.058468147180974483,
+      "coefficient_archive_sha256": "8feeee215009f06a798c3f8b3014eb6b7da573ff9e23135d458ad97f467bc009"
+    }
+  ],
+  "neural_fits": [
+    {
+      "arm": "raw",
+      "epochs": 200,
+      "selected_epoch": 3,
+      "stop_raw_MSE": 0.0033242454538645583,
+      "initial_stop_raw_MSE": 0.00805315210823143,
+      "initial_state_sha256": "120ed0af1bdfb3b6c1070a0be88a54d099c492e2a54a62569022070d12acb9d6",
+      "initial_RNG_sha256": "62eda32edb8e05ba1c72b3c9f7c7f03039cedb7741bdb9dad1fb543cc89f142e",
+      "fit_seconds": 15.865821090526879,
+      "parameters": 33025,
+      "checkpoint_sha256": "a481eb38bbd5a3be5774d7b5adad527837441954768df93cedab61ef863ffafc",
+      "curve_sha256": "92a6bcda0dbc391043d0b1a3884166143ea97503274b6eb5f65ec3ac16bc3342",
+      "checkpoint_prediction_replay_maxdiff": 0.0
+    },
+    {
+      "arm": "binned",
+      "epochs": 200,
+      "selected_epoch": 3,
+      "stop_raw_MSE": 0.003307863487189993,
+      "initial_stop_raw_MSE": 0.00805315210823143,
+      "initial_state_sha256": "120ed0af1bdfb3b6c1070a0be88a54d099c492e2a54a62569022070d12acb9d6",
+      "initial_RNG_sha256": "62eda32edb8e05ba1c72b3c9f7c7f03039cedb7741bdb9dad1fb543cc89f142e",
+      "fit_seconds": 15.867646525613964,
+      "parameters": 33025,
+      "checkpoint_sha256": "9b5dba4042befd050d12482f89616025c00ce929731bb4df95420ef82af679f6",
+      "curve_sha256": "452d932188c618fa3ecb7ba1e8ab7b8cb53dcf7cb6a1d2087f5b2927b65c261e",
+      "checkpoint_prediction_replay_maxdiff": 0.0
+    }
+  ],
+  "pairing": {
+    "neural_init_and_rng_equal": true,
+    "batch_and_dropout_checks": 200,
+    "checkpoint_prediction_replay_maxdiff": 0.0,
+    "PMF_unchanged": true
+  },
+  "results": [
+    {
+      "method": "PMF_uniform_Bowley",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.03962373837458544,
+          "protein_macro": 0.03752575655035065,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0027082828124191318,
+          "protein_macro": 0.002390108926843886,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.1471658569710839,
+            "protein_macro": 0.14636156067188621,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.023421986061802635,
+            "protein_macro": 0.02319520852381774,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.1422259529965381,
+            "protein_macro": 0.1413188315574291,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.021635230561648185,
+            "protein_macro": 0.021389826775829627,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.16378189761273806,
+            "protein_macro": 0.16378189761273806,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.029431981835049425,
+            "protein_macro": 0.029431981835049425,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 36,
+            "unique_T": 36,
+            "groups": 35
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 92,
+          "true_positive_T": 25,
+          "true_positive_groups": 24,
+          "false_positive_T": 107,
+          "false_negative_T": 13,
+          "truth_positive_T": 38,
+          "precision": 0.1893939393939394,
+          "recall": 0.6578947368421053
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 51,
+          "true_positive_T": 10,
+          "true_positive_groups": 10,
+          "false_positive_T": 122,
+          "false_negative_T": 1,
+          "truth_positive_T": 11,
+          "precision": 0.07575757575757576,
+          "recall": 0.9090909090909091
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "PMF_uniform_Bowley",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04548241501376973,
+          "protein_macro": 0.04430667081933856,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0034368704317149844,
+          "protein_macro": 0.003237446308076407,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.19005616835245917,
+            "protein_macro": 0.18546514150944673,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04098684815593833,
+            "protein_macro": 0.039280712950320956,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.16905191539761424,
+            "protein_macro": 0.16553563394267637,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03147939083157257,
+            "protein_macro": 0.03032736352714893,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.2950774331266839,
+            "protein_macro": 0.2950774331266839,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.0885241347777671,
+            "protein_macro": 0.0885241347777671,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 35,
+          "true_positive_T": 8,
+          "true_positive_groups": 7,
+          "false_positive_T": 36,
+          "false_negative_T": 3,
+          "truth_positive_T": 11,
+          "precision": 0.18181818181818182,
+          "recall": 0.7272727272727273
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 18,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 1,
+          "truth_positive_T": 2,
+          "precision": 0.022727272727272728,
+          "recall": 0.5
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "PMF_uniform_Bowley",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04608750745057152,
+          "protein_macro": 0.04727583813742694,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0036948497121588176,
+          "protein_macro": 0.0038978694471354255,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.1613556924599889,
+            "protein_macro": 0.1613556924599889,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.02965461527273154,
+            "protein_macro": 0.02965461527273154,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.1563225266633225,
+            "protein_macro": 0.1563225266633225,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.028637508540893784,
+            "protein_macro": 0.028637508540893784,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.1764551898499882,
+            "protein_macro": 0.1764551898499882,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03270593546824483,
+            "protein_macro": 0.03270593546824483,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 12,
+            "unique_T": 12,
+            "groups": 12
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 36,
+          "true_positive_T": 8,
+          "true_positive_groups": 8,
+          "false_positive_T": 36,
+          "false_negative_T": 4,
+          "truth_positive_T": 12,
+          "precision": 0.18181818181818182,
+          "recall": 0.6666666666666666
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 17,
+          "true_positive_T": 3,
+          "true_positive_groups": 3,
+          "false_positive_T": 41,
+          "false_negative_T": 1,
+          "truth_positive_T": 4,
+          "precision": 0.06818181818181818,
+          "recall": 0.75
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "constant_train_mean",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.07413574334997321,
+          "protein_macro": 0.07832816480393345,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.009147717607186105,
+          "protein_macro": 0.00973395765310137,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.3299859399151043,
+            "protein_macro": 0.3299122330788185,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.11118110330318813,
+            "protein_macro": 0.11108812822968428,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.3203913688055458,
+            "protein_macro": 0.3205488144932184,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.10484447630477436,
+            "protein_macro": 0.10489134073626713,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.3622585881927098,
+            "protein_macro": 0.3622585881927098,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.13249521229785263,
+            "protein_macro": 0.13249521229785263,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 38,
+            "unique_T": 38,
+            "groups": 37
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": null
+    },
+    {
+      "method": "constant_train_mean",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.07248188889760632,
+          "protein_macro": 0.07498974274426742,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.008619464536335579,
+          "protein_macro": 0.009199065765111945,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.32966957223672694,
+            "protein_macro": 0.32964790767474406,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.11033304921080445,
+            "protein_macro": 0.11022953370984744,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.31571307229763834,
+            "protein_macro": 0.31695624144612133,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.10035916401157459,
+            "protein_macro": 0.10114354434673724,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.3994520719321697,
+            "protein_macro": 0.3994520719321697,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.16020247520695358,
+            "protein_macro": 0.16020247520695358,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": null
+    },
+    {
+      "method": "constant_train_mean",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.07421329151306749,
+          "protein_macro": 0.07565941309615591,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.009218658122898332,
+          "protein_macro": 0.009456219640340508,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.3327657246516777,
+            "protein_macro": 0.3327657246516777,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.11401015793510394,
+            "protein_macro": 0.11401015793510394,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.324904935188294,
+            "protein_macro": 0.324904935188294,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.10955309447209045,
+            "protein_macro": 0.10955309447209045,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.3563480930418288,
+            "protein_macro": 0.3563480930418288,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.12738134832414444,
+            "protein_macro": 0.12738134832414444,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 12,
+            "unique_T": 12,
+            "groups": 12
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": null
+    },
+    {
+      "method": "affine_scalar_raw",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.03879486444673157,
+          "protein_macro": 0.03667153095462668,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.002557711292051259,
+          "protein_macro": 0.002265217478685482,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.11959516919223863,
+            "protein_macro": 0.1186740720244101,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.016295214607620363,
+            "protein_macro": 0.01609277276682111,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.11492232474901379,
+            "protein_macro": 0.11385756378110926,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.014796394015414788,
+            "protein_macro": 0.014574793236284312,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.13531291868308584,
+            "protein_macro": 0.13531291868308584,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.021336702054130036,
+            "protein_macro": 0.021336702054130036,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 34,
+            "unique_T": 34,
+            "groups": 33
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 92,
+          "true_positive_T": 25,
+          "true_positive_groups": 24,
+          "false_positive_T": 107,
+          "false_negative_T": 13,
+          "truth_positive_T": 38,
+          "precision": 0.1893939393939394,
+          "recall": 0.6578947368421053
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 51,
+          "true_positive_T": 10,
+          "true_positive_groups": 10,
+          "false_positive_T": 122,
+          "false_negative_T": 1,
+          "truth_positive_T": 11,
+          "precision": 0.07575757575757576,
+          "recall": 0.9090909090909091
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "affine_scalar_raw",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04545060851636715,
+          "protein_macro": 0.04425034651397462,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0034097414837363778,
+          "protein_macro": 0.003213853169255106,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.1687683172776019,
+            "protein_macro": 0.16347704661632464,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03463774235812822,
+            "protein_macro": 0.03290194425241755,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.14641339130794578,
+            "protein_macro": 0.14219233743276866,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.025372847954274767,
+            "protein_macro": 0.024163713320603384,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.2805429471258825,
+            "protein_macro": 0.2805429471258825,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.08096221437739548,
+            "protein_macro": 0.08096221437739548,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 35,
+          "true_positive_T": 8,
+          "true_positive_groups": 7,
+          "false_positive_T": 36,
+          "false_negative_T": 3,
+          "truth_positive_T": 11,
+          "precision": 0.18181818181818182,
+          "recall": 0.7272727272727273
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 18,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 1,
+          "truth_positive_T": 2,
+          "precision": 0.022727272727272728,
+          "recall": 0.5
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "affine_scalar_raw",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04622228217312431,
+          "protein_macro": 0.047186267348112654,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0036724041858127625,
+          "protein_macro": 0.0038776465000619135,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.1355129696737864,
+            "protein_macro": 0.1355129696737864,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.02220248896182299,
+            "protein_macro": 0.02220248896182299,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.1304379359895648,
+            "protein_macro": 0.1304379359895648,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.02133941156411352,
+            "protein_macro": 0.02133941156411352,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.15073807072645123,
+            "protein_macro": 0.15073807072645123,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.0247917211549514,
+            "protein_macro": 0.0247917211549514,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 12,
+            "unique_T": 12,
+            "groups": 12
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 36,
+          "true_positive_T": 8,
+          "true_positive_groups": 8,
+          "false_positive_T": 36,
+          "false_negative_T": 4,
+          "truth_positive_T": 12,
+          "precision": 0.18181818181818182,
+          "recall": 0.6666666666666666
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 17,
+          "true_positive_T": 3,
+          "true_positive_groups": 3,
+          "false_positive_T": 41,
+          "false_negative_T": 1,
+          "truth_positive_T": 4,
+          "precision": 0.06818181818181818,
+          "recall": 0.75
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "charge__raw",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.048643520238203355,
+          "protein_macro": 0.04812936059455224,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.00421612185460144,
+          "protein_macro": 0.003978020727332364,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.21243762424462184,
+            "protein_macro": 0.21020712566407587,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04983237121593117,
+            "protein_macro": 0.04904502860940969,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.20308558178791933,
+            "protein_macro": 0.20045551894607586,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.046125527169108706,
+            "protein_macro": 0.04520781812508949,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.24389449432625773,
+            "protein_macro": 0.24389449432625773,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.06230084664615216,
+            "protein_macro": 0.06230084664615216,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 7,
+            "unique_T": 7,
+            "groups": 3
+          },
+          "FN": {
+            "rows": 38,
+            "unique_T": 38,
+            "groups": 37
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 113,
+          "true_positive_T": 12,
+          "true_positive_groups": 11,
+          "false_positive_T": 120,
+          "false_negative_T": 26,
+          "truth_positive_T": 38,
+          "precision": 0.09090909090909091,
+          "recall": 0.3157894736842105
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 27,
+          "true_positive_T": 2,
+          "true_positive_groups": 2,
+          "false_positive_T": 130,
+          "false_negative_T": 9,
+          "truth_positive_T": 11,
+          "precision": 0.015151515151515152,
+          "recall": 0.18181818181818182
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "charge__raw",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04818377589675919,
+          "protein_macro": 0.04628062262449001,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.004014056051873931,
+          "protein_macro": 0.0036373596658312657,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.21120463142642334,
+            "protein_macro": 0.201189911410993,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.050152803941308104,
+            "protein_macro": 0.04693883186185914,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.19097350582904302,
+            "protein_macro": 0.1809771208651144,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04056842567739943,
+            "protein_macro": 0.03764140215295144,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.3123602594133251,
+            "protein_macro": 0.3123602594133251,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.09807469526085148,
+            "protein_macro": 0.09807469526085148,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 33,
+          "true_positive_T": 4,
+          "true_positive_groups": 3,
+          "false_positive_T": 40,
+          "false_negative_T": 7,
+          "truth_positive_T": 11,
+          "precision": 0.09090909090909091,
+          "recall": 0.36363636363636365
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 8,
+          "true_positive_T": 0,
+          "true_positive_groups": 0,
+          "false_positive_T": 44,
+          "false_negative_T": 2,
+          "truth_positive_T": 2,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "charge__raw",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.05010885954977479,
+          "protein_macro": 0.05023617347403728,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.004448883915786907,
+          "protein_macro": 0.004422152417770296,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.21714949978957238,
+            "protein_macro": 0.21714949978957238,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05580043487062765,
+            "protein_macro": 0.05580043487062765,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.21077451547980017,
+            "protein_macro": 0.21077451547980017,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.055171335508651914,
+            "protein_macro": 0.055171335508651914,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.2362744527188891,
+            "protein_macro": 0.2362744527188891,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05768773295655489,
+            "protein_macro": 0.05768773295655489,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 35,
+          "true_positive_T": 4,
+          "true_positive_groups": 4,
+          "false_positive_T": 40,
+          "false_negative_T": 8,
+          "truth_positive_T": 12,
+          "precision": 0.09090909090909091,
+          "recall": 0.3333333333333333
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 6,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 3,
+          "truth_positive_T": 4,
+          "precision": 0.022727272727272728,
+          "recall": 0.25
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "charge__binned",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.048781787849600494,
+          "protein_macro": 0.04840345851843014,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.004283475338845262,
+          "protein_macro": 0.004040746491836665,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.22388978096124457,
+            "protein_macro": 0.22163108897868933,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05463952234438509,
+            "protein_macro": 0.05379686888713243,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.21371858342551348,
+            "protein_macro": 0.2110737226463167,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05032026535233658,
+            "protein_macro": 0.04934735055198573,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.25810199085415825,
+            "protein_macro": 0.25810199085415825,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.0691679322267301,
+            "protein_macro": 0.0691679322267301,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 7,
+            "unique_T": 7,
+            "groups": 3
+          },
+          "FN": {
+            "rows": 38,
+            "unique_T": 38,
+            "groups": 37
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 113,
+          "true_positive_T": 11,
+          "true_positive_groups": 10,
+          "false_positive_T": 121,
+          "false_negative_T": 27,
+          "truth_positive_T": 38,
+          "precision": 0.08333333333333333,
+          "recall": 0.2894736842105263
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 24,
+          "true_positive_T": 2,
+          "true_positive_groups": 2,
+          "false_positive_T": 130,
+          "false_negative_T": 9,
+          "truth_positive_T": 11,
+          "precision": 0.015151515151515152,
+          "recall": 0.18181818181818182
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "charge__binned",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04836602457333384,
+          "protein_macro": 0.046395262992019744,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0040560870476473825,
+          "protein_macro": 0.003675996665750783,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.2218899070042877,
+            "protein_macro": 0.21194155746925425,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.054517254772907954,
+            "protein_macro": 0.05110206155377525,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.20150500098747043,
+            "protein_macro": 0.19160103390214153,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04434205046474958,
+            "protein_macro": 0.04123093159742533,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.3238144370883742,
+            "protein_macro": 0.3238144370883742,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.10539327631369977,
+            "protein_macro": 0.10539327631369977,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 34,
+          "true_positive_T": 4,
+          "true_positive_groups": 3,
+          "false_positive_T": 40,
+          "false_negative_T": 7,
+          "truth_positive_T": 11,
+          "precision": 0.09090909090909091,
+          "recall": 0.36363636363636365
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 8,
+          "true_positive_T": 0,
+          "true_positive_groups": 0,
+          "false_positive_T": 44,
+          "false_negative_T": 2,
+          "truth_positive_T": 2,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "charge__binned",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.05032480273165983,
+          "protein_macro": 0.050429349160947545,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.004500775088511149,
+          "protein_macro": 0.004460603004783311,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.22570230642320027,
+            "protein_macro": 0.22570230642320027,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05997524289157945,
+            "protein_macro": 0.05997524289157945,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.21844977935917784,
+            "protein_macro": 0.21844977935917784,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05896270791499956,
+            "protein_macro": 0.05896270791499956,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.24745988761526758,
+            "protein_macro": 0.24745988761526758,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.06301284782131912,
+            "protein_macro": 0.06301284782131912,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 35,
+          "true_positive_T": 4,
+          "true_positive_groups": 4,
+          "false_positive_T": 40,
+          "false_negative_T": 8,
+          "truth_positive_T": 12,
+          "precision": 0.09090909090909091,
+          "recall": 0.3333333333333333
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 7,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 3,
+          "truth_positive_T": 4,
+          "precision": 0.022727272727272728,
+          "recall": 0.25
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "input_mean_charge__raw",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04756039877970674,
+          "protein_macro": 0.046255242820210665,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.004053922765756947,
+          "protein_macro": 0.0037111334291849395,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.2092207538201852,
+            "protein_macro": 0.20745145588134004,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04891306054637193,
+            "protein_macro": 0.0482343472986261,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.1941839087292477,
+            "protein_macro": 0.1922981520473404,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04228485675379755,
+            "protein_macro": 0.0415841002972983,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.2597992327624295,
+            "protein_macro": 0.2597992327624295,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.0712079278486676,
+            "protein_macro": 0.0712079278486676,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 7,
+            "unique_T": 7,
+            "groups": 3
+          },
+          "FN": {
+            "rows": 38,
+            "unique_T": 38,
+            "groups": 37
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 95,
+          "true_positive_T": 14,
+          "true_positive_groups": 13,
+          "false_positive_T": 118,
+          "false_negative_T": 24,
+          "truth_positive_T": 38,
+          "precision": 0.10606060606060606,
+          "recall": 0.3684210526315789
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 30,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 131,
+          "false_negative_T": 10,
+          "truth_positive_T": 11,
+          "precision": 0.007575757575757576,
+          "recall": 0.09090909090909091
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "input_mean_charge__raw",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04810424691177923,
+          "protein_macro": 0.04627795854281745,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.004013524915719595,
+          "protein_macro": 0.003663372237810649,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.21102704080947166,
+            "protein_macro": 0.19865737968295635,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.052239847714217275,
+            "protein_macro": 0.04849925806194438,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.19083771313718462,
+            "protein_macro": 0.17805441613969258,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04253432945076931,
+            "protein_macro": 0.03899595243112389,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.3119736791709069,
+            "protein_macro": 0.3119736791709069,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.10076743903145707,
+            "protein_macro": 0.10076743903145707,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 10,
+            "unique_T": 10,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 28,
+          "true_positive_T": 4,
+          "true_positive_groups": 3,
+          "false_positive_T": 40,
+          "false_negative_T": 7,
+          "truth_positive_T": 11,
+          "precision": 0.09090909090909091,
+          "recall": 0.36363636363636365
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 7,
+          "true_positive_T": 0,
+          "true_positive_groups": 0,
+          "false_positive_T": 44,
+          "false_negative_T": 2,
+          "truth_positive_T": 2,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "input_mean_charge__raw",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.049190238466858126,
+          "protein_macro": 0.04934031772934837,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.004281085866236833,
+          "protein_macro": 0.0042765253132577485,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.21122945463490672,
+            "protein_macro": 0.21122945463490672,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05157849447870877,
+            "protein_macro": 0.05157849447870877,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.20244991098515064,
+            "protein_macro": 0.20244991098515064,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04927048317598745,
+            "protein_macro": 0.04927048317598745,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.23756808558417514,
+            "protein_macro": 0.23756808558417514,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05850252838687269,
+            "protein_macro": 0.05850252838687269,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 30,
+          "true_positive_T": 4,
+          "true_positive_groups": 4,
+          "false_positive_T": 40,
+          "false_negative_T": 8,
+          "truth_positive_T": 12,
+          "precision": 0.09090909090909091,
+          "recall": 0.3333333333333333
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 6,
+          "true_positive_T": 0,
+          "true_positive_groups": 0,
+          "false_positive_T": 44,
+          "false_negative_T": 4,
+          "truth_positive_T": 4,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "input_mean_charge__binned",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04855369835001862,
+          "protein_macro": 0.04718762396270027,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.004235800112946712,
+          "protein_macro": 0.003868787236148341,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.22233324143605734,
+            "protein_macro": 0.22081996050216593,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05415751767597887,
+            "protein_macro": 0.05351348603785499,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.20655648502996096,
+            "protein_macro": 0.20502032688905086,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.046713336432526176,
+            "protein_macro": 0.04607877408977308,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.27540051298383605,
+            "protein_macro": 0.27540051298383605,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.0791970364039561,
+            "protein_macro": 0.0791970364039561,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 6,
+            "unique_T": 6,
+            "groups": 3
+          },
+          "FN": {
+            "rows": 38,
+            "unique_T": 38,
+            "groups": 37
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 94,
+          "true_positive_T": 14,
+          "true_positive_groups": 13,
+          "false_positive_T": 118,
+          "false_negative_T": 24,
+          "truth_positive_T": 38,
+          "precision": 0.10606060606060606,
+          "recall": 0.3684210526315789
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 29,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 131,
+          "false_negative_T": 10,
+          "truth_positive_T": 11,
+          "precision": 0.007575757575757576,
+          "recall": 0.09090909090909091
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "input_mean_charge__binned",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04886140284987633,
+          "protein_macro": 0.04684569250274545,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.004150516644953266,
+          "protein_macro": 0.0037646667526157365,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.22305832396335093,
+            "protein_macro": 0.21170630956704733,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05653421226521469,
+            "protein_macro": 0.05269978734919763,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.20225110213762137,
+            "protein_macro": 0.1907266507443289,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04585568381211831,
+            "protein_macro": 0.04229486604347054,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.3270944330919987,
+            "protein_macro": 0.3270944330919987,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.10992685453069653,
+            "protein_macro": 0.10992685453069653,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 28,
+          "true_positive_T": 4,
+          "true_positive_groups": 3,
+          "false_positive_T": 40,
+          "false_negative_T": 7,
+          "truth_positive_T": 11,
+          "precision": 0.09090909090909091,
+          "recall": 0.36363636363636365
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 8,
+          "true_positive_T": 0,
+          "true_positive_groups": 0,
+          "false_positive_T": 44,
+          "false_negative_T": 2,
+          "truth_positive_T": 2,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "input_mean_charge__binned",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.050064652733183335,
+          "protein_macro": 0.05006739851227809,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.00443991190361424,
+          "protein_macro": 0.004396275070413654,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.22023180222481725,
+            "protein_macro": 0.22023180222481725,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05599121958304643,
+            "protein_macro": 0.05599121958304643,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.209440691436254,
+            "protein_macro": 0.209440691436254,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05267207965103371,
+            "protein_macro": 0.05267207965103371,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.252605134590507,
+            "protein_macro": 0.252605134590507,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.06594863937908463,
+            "protein_macro": 0.06594863937908463,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 30,
+          "true_positive_T": 4,
+          "true_positive_groups": 4,
+          "false_positive_T": 40,
+          "false_negative_T": 8,
+          "truth_positive_T": 12,
+          "precision": 0.09090909090909091,
+          "recall": 0.3333333333333333
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 6,
+          "true_positive_T": 0,
+          "true_positive_groups": 0,
+          "false_positive_T": 44,
+          "false_negative_T": 4,
+          "truth_positive_T": 4,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "hidden256__raw",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.03911291226970324,
+          "protein_macro": 0.03715847068727331,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0025605311305436475,
+          "protein_macro": 0.0022851688815516713,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.11326751208493664,
+            "protein_macro": 0.11176920354739753,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.015095693861267133,
+            "protein_macro": 0.014828860912137599,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.10970772485154506,
+            "protein_macro": 0.10786937403296545,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.013492912323356102,
+            "protein_macro": 0.013191016718897258,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.12524134186998107,
+            "protein_macro": 0.12524134186998107,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.02048686812514969,
+            "protein_macro": 0.02048686812514969,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 8,
+            "unique_T": 8,
+            "groups": 7
+          },
+          "FP": {
+            "rows": 3,
+            "unique_T": 3,
+            "groups": 3
+          },
+          "FN": {
+            "rows": 30,
+            "unique_T": 30,
+            "groups": 30
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 10,
+            "unique_T": 10,
+            "groups": 10
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 93,
+          "true_positive_T": 22,
+          "true_positive_groups": 21,
+          "false_positive_T": 110,
+          "false_negative_T": 16,
+          "truth_positive_T": 38,
+          "precision": 0.16666666666666666,
+          "recall": 0.5789473684210527
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 58,
+          "true_positive_T": 10,
+          "true_positive_groups": 10,
+          "false_positive_T": 122,
+          "false_negative_T": 1,
+          "truth_positive_T": 11,
+          "precision": 0.07575757575757576,
+          "recall": 0.9090909090909091
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "hidden256__raw",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04546598114345903,
+          "protein_macro": 0.044293575656451645,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.003398522194556075,
+          "protein_macro": 0.0032221076644141913,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.16272787565489605,
+            "protein_macro": 0.15948852567644362,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.031898409603722755,
+            "protein_macro": 0.030609954426063853,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.14504463574837956,
+            "protein_macro": 0.14282388031080087,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.025439145729306806,
+            "protein_macro": 0.02450363178065683,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.25114407518747844,
+            "protein_macro": 0.25114407518747844,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.0641947289758025,
+            "protein_macro": 0.0641947289758025,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 32,
+          "true_positive_T": 6,
+          "true_positive_groups": 5,
+          "false_positive_T": 38,
+          "false_negative_T": 5,
+          "truth_positive_T": 11,
+          "precision": 0.13636363636363635,
+          "recall": 0.5454545454545454
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 14,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 1,
+          "truth_positive_T": 2,
+          "precision": 0.022727272727272728,
+          "recall": 0.5
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "hidden256__raw",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04645605673994025,
+          "protein_macro": 0.04758337800417283,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0036936660397662684,
+          "protein_macro": 0.0039377686973017115,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.1311228207748926,
+            "protein_macro": 0.1311228207748926,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.021025236652426497,
+            "protein_macro": 0.021025236652426497,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.1258804482972922,
+            "protein_macro": 0.1258804482972922,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.020420459406346982,
+            "protein_macro": 0.020420459406346982,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.14684993820769388,
+            "protein_macro": 0.14684993820769388,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.02283956839066504,
+            "protein_macro": 0.02283956839066504,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 36,
+          "true_positive_T": 6,
+          "true_positive_groups": 6,
+          "false_positive_T": 38,
+          "false_negative_T": 6,
+          "truth_positive_T": 12,
+          "precision": 0.13636363636363635,
+          "recall": 0.5
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 12,
+          "true_positive_T": 3,
+          "true_positive_groups": 3,
+          "false_positive_T": 41,
+          "false_negative_T": 1,
+          "truth_positive_T": 4,
+          "precision": 0.06818181818181818,
+          "recall": 0.75
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "hidden256__binned",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.0401083326098464,
+          "protein_macro": 0.03818933138911458,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.002732654684475088,
+          "protein_macro": 0.0024443302477427766,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.14254221008909604,
+            "protein_macro": 0.14101246973817627,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.022793269555306556,
+            "protein_macro": 0.022432160811175172,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.13216233777677214,
+            "protein_macro": 0.13046293238512102,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.019114353366741898,
+            "protein_macro": 0.018745526727955767,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.17745632604873082,
+            "protein_macro": 0.17745632604873082,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03516780582593313,
+            "protein_macro": 0.03516780582593313,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 37,
+            "unique_T": 37,
+            "groups": 36
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 93,
+          "true_positive_T": 23,
+          "true_positive_groups": 22,
+          "false_positive_T": 109,
+          "false_negative_T": 15,
+          "truth_positive_T": 38,
+          "precision": 0.17424242424242425,
+          "recall": 0.6052631578947368
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 47,
+          "true_positive_T": 8,
+          "true_positive_groups": 8,
+          "false_positive_T": 124,
+          "false_negative_T": 3,
+          "truth_positive_T": 11,
+          "precision": 0.06060606060606061,
+          "recall": 0.7272727272727273
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "hidden256__binned",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04573941396207,
+          "protein_macro": 0.04442051769041535,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.003483963229844767,
+          "protein_macro": 0.003282318166948359,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.18446179758563022,
+            "protein_macro": 0.18117207564639753,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.0394078958432085,
+            "protein_macro": 0.03796983260489115,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.16336126297363238,
+            "protein_macro": 0.16139164019199354,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03035287920414679,
+            "protein_macro": 0.029476533253322803,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.2899644706456196,
+            "protein_macro": 0.2899644706456196,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.08468297903851707,
+            "protein_macro": 0.08468297903851707,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 34,
+          "true_positive_T": 6,
+          "true_positive_groups": 5,
+          "false_positive_T": 38,
+          "false_negative_T": 5,
+          "truth_positive_T": 11,
+          "precision": 0.13636363636363635,
+          "recall": 0.5454545454545454
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 9,
+          "true_positive_T": 0,
+          "true_positive_groups": 0,
+          "false_positive_T": 44,
+          "false_negative_T": 2,
+          "truth_positive_T": 2,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "hidden256__binned",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04654175473381993,
+          "protein_macro": 0.04760588822011672,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.003718665633284473,
+          "protein_macro": 0.003930484212990004,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.15711203917486083,
+            "protein_macro": 0.15711203917486083,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.028914073027548316,
+            "protein_macro": 0.028914073027548316,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.14786593456097508,
+            "protein_macro": 0.14786593456097508,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.026551780666058875,
+            "protein_macro": 0.026551780666058875,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.1848503530165182,
+            "protein_macro": 0.1848503530165182,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03600095011201664,
+            "protein_macro": 0.03600095011201664,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 12,
+            "unique_T": 12,
+            "groups": 12
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 35,
+          "true_positive_T": 6,
+          "true_positive_groups": 6,
+          "false_positive_T": 38,
+          "false_negative_T": 6,
+          "truth_positive_T": 12,
+          "precision": 0.13636363636363635,
+          "recall": 0.5
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 10,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 3,
+          "truth_positive_T": 4,
+          "precision": 0.022727272727272728,
+          "recall": 0.25
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "predicted_PMF__raw",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.0438208446707835,
+          "protein_macro": 0.04247361813697231,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0033487772492437735,
+          "protein_macro": 0.0030633947712631893,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.172793131079354,
+            "protein_macro": 0.17246952901029075,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03302573291227979,
+            "protein_macro": 0.03285844842006715,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.1661752499366062,
+            "protein_macro": 0.16593212835130747,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.030278893323377153,
+            "protein_macro": 0.03013546962523199,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.1950532767413238,
+            "protein_macro": 0.1950532767413238,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04226510243858866,
+            "protein_macro": 0.04226510243858866,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 38,
+            "unique_T": 38,
+            "groups": 37
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 90,
+          "true_positive_T": 17,
+          "true_positive_groups": 16,
+          "false_positive_T": 115,
+          "false_negative_T": 21,
+          "truth_positive_T": 38,
+          "precision": 0.12878787878787878,
+          "recall": 0.4473684210526316
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 47,
+          "true_positive_T": 5,
+          "true_positive_groups": 5,
+          "false_positive_T": 127,
+          "false_negative_T": 6,
+          "truth_positive_T": 11,
+          "precision": 0.03787878787878788,
+          "recall": 0.45454545454545453
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "predicted_PMF__raw",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04633458561777752,
+          "protein_macro": 0.044717724979425374,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0035919335913849114,
+          "protein_macro": 0.00331525023262556,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.1974720322019298,
+            "protein_macro": 0.1958325154173832,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04350961800740838,
+            "protein_macro": 0.042592267034907656,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.17801453762406588,
+            "protein_macro": 0.17784579002213474,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03482564238460927,
+            "protein_macro": 0.0345309526555447,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.2947595050912495,
+            "protein_macro": 0.2947595050912495,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.08692949612140388,
+            "protein_macro": 0.08692949612140388,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 33,
+          "true_positive_T": 5,
+          "true_positive_groups": 5,
+          "false_positive_T": 39,
+          "false_negative_T": 6,
+          "truth_positive_T": 11,
+          "precision": 0.11363636363636363,
+          "recall": 0.45454545454545453
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 12,
+          "true_positive_T": 0,
+          "true_positive_groups": 0,
+          "false_positive_T": 44,
+          "false_negative_T": 2,
+          "truth_positive_T": 2,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "predicted_PMF__raw",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.047379271996725494,
+          "protein_macro": 0.047505217407176135,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.003836936029557873,
+          "protein_macro": 0.003915376348163877,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.17664430389409197,
+            "protein_macro": 0.17664430389409197,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.033858532977024625,
+            "protein_macro": 0.033858532977024625,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.17462769449176316,
+            "protein_macro": 0.17462769449176316,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.033757439934098896,
+            "protein_macro": 0.033757439934098896,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.18269413210107832,
+            "protein_macro": 0.18269413210107832,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03416181210580185,
+            "protein_macro": 0.03416181210580185,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 12,
+            "unique_T": 12,
+            "groups": 12
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 31,
+          "true_positive_T": 6,
+          "true_positive_groups": 6,
+          "false_positive_T": 38,
+          "false_negative_T": 6,
+          "truth_positive_T": 12,
+          "precision": 0.13636363636363635,
+          "recall": 0.5
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 10,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 3,
+          "truth_positive_T": 4,
+          "precision": 0.022727272727272728,
+          "recall": 0.25
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "predicted_PMF__binned",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.044450459271302485,
+          "protein_macro": 0.04307813749557429,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0034970990173591406,
+          "protein_macro": 0.003189726959302046,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.19333803943612818,
+            "protein_macro": 0.19285316161868868,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04056616123061822,
+            "protein_macro": 0.04032846182539144,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.18384123257548324,
+            "protein_macro": 0.1834659113598546,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.0366307422817992,
+            "protein_macro": 0.03642779881055464,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.2252818443310247,
+            "protein_macro": 0.2252818443310247,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.05380347951300945,
+            "protein_macro": 0.05380347951300945,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 38,
+            "unique_T": 38,
+            "groups": 37
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 88,
+          "true_positive_T": 16,
+          "true_positive_groups": 15,
+          "false_positive_T": 116,
+          "false_negative_T": 22,
+          "truth_positive_T": 38,
+          "precision": 0.12121212121212122,
+          "recall": 0.42105263157894735
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 42,
+          "true_positive_T": 2,
+          "true_positive_groups": 2,
+          "false_positive_T": 130,
+          "false_negative_T": 9,
+          "truth_positive_T": 11,
+          "precision": 0.015151515151515152,
+          "recall": 0.18181818181818182
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "predicted_PMF__binned",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04671771638476833,
+          "protein_macro": 0.04496541671485323,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.003690872835015711,
+          "protein_macro": 0.0033878560946362054,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.2099310320364709,
+            "protein_macro": 0.20848310176092918,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04837328818447551,
+            "protein_macro": 0.04750298149502156,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.19160200771621672,
+            "protein_macro": 0.19155709232878146,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03984842034966792,
+            "protein_macro": 0.039594864065295755,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.30157615363774193,
+            "protein_macro": 0.30157615363774193,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.09099762735851344,
+            "protein_macro": 0.09099762735851344,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 34,
+          "true_positive_T": 6,
+          "true_positive_groups": 6,
+          "false_positive_T": 38,
+          "false_negative_T": 5,
+          "truth_positive_T": 11,
+          "precision": 0.13636363636363635,
+          "recall": 0.5454545454545454
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 10,
+          "true_positive_T": 0,
+          "true_positive_groups": 0,
+          "false_positive_T": 44,
+          "false_negative_T": 2,
+          "truth_positive_T": 2,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "predicted_PMF__binned",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.0475114185241209,
+          "protein_macro": 0.047715975767216603,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0039348529932739145,
+          "protein_macro": 0.003981946893232518,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.1949363112677971,
+            "protein_macro": 0.1949363112677971,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04117478877761758,
+            "protein_macro": 0.04117478877761758,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.18979347590613707,
+            "protein_macro": 0.18979347590613707,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03961481435136357,
+            "protein_macro": 0.03961481435136357,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.21036481735277723,
+            "protein_macro": 0.21036481735277723,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.04585471205637963,
+            "protein_macro": 0.04585471205637963,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 12,
+            "unique_T": 12,
+            "groups": 12
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 31,
+          "true_positive_T": 6,
+          "true_positive_groups": 6,
+          "false_positive_T": 38,
+          "false_negative_T": 6,
+          "truth_positive_T": 12,
+          "precision": 0.13636363636363635,
+          "recall": 0.5
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 10,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 3,
+          "truth_positive_T": 4,
+          "precision": 0.022727272727272728,
+          "recall": 0.25
+        },
+        "score": "preclip continuous score; threshold/value metrics use clipped [-1,1] estimate"
+      }
+    },
+    {
+      "method": "hidden256_MLP__raw",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.03800470202731835,
+          "protein_macro": 0.03622779111069533,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.002410182217062189,
+          "protein_macro": 0.002165152458217874,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.0942247935006319,
+            "protein_macro": 0.09301295698947928,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.010728891183150869,
+            "protein_macro": 0.01053726168577947,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.09941125505169225,
+            "protein_macro": 0.0977121379307044,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.011014151188326361,
+            "protein_macro": 0.010759543152105994,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.07677942282888345,
+            "protein_macro": 0.07677942282888345,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.009769380256651474,
+            "protein_macro": 0.009769380256651474,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 8,
+            "unique_T": 8,
+            "groups": 7
+          },
+          "FP": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          },
+          "FN": {
+            "rows": 30,
+            "unique_T": 30,
+            "groups": 30
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 7,
+            "unique_T": 7,
+            "groups": 7
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 97,
+          "true_positive_T": 27,
+          "true_positive_groups": 26,
+          "false_positive_T": 105,
+          "false_negative_T": 11,
+          "truth_positive_T": 38,
+          "precision": 0.20454545454545456,
+          "recall": 0.7105263157894737
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 66,
+          "true_positive_T": 10,
+          "true_positive_groups": 10,
+          "false_positive_T": 122,
+          "false_negative_T": 1,
+          "truth_positive_T": 11,
+          "precision": 0.07575757575757576,
+          "recall": 0.9090909090909091
+        }
+      }
+    },
+    {
+      "method": "hidden256_MLP__raw",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.044963149928789733,
+          "protein_macro": 0.04415386172710038,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0033242454538645583,
+          "protein_macro": 0.0031852497601001207,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.15289629915435482,
+            "protein_macro": 0.14998519929556844,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.028599709925453538,
+            "protein_macro": 0.02750225680538562,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.1374840877937485,
+            "protein_macro": 0.13544480717523785,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.023057193577249613,
+            "protein_macro": 0.022264068648824242,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.2299573559573866,
+            "protein_macro": 0.2299573559573866,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.056312291666473155,
+            "protein_macro": 0.056312291666473155,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 28,
+          "true_positive_T": 6,
+          "true_positive_groups": 5,
+          "false_positive_T": 38,
+          "false_negative_T": 5,
+          "truth_positive_T": 11,
+          "precision": 0.13636363636363635,
+          "recall": 0.5454545454545454
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 15,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 1,
+          "truth_positive_T": 2,
+          "precision": 0.022727272727272728,
+          "recall": 0.5
+        }
+      }
+    },
+    {
+      "method": "hidden256_MLP__raw",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04632871569186418,
+          "protein_macro": 0.04737416530891557,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0036949113715563837,
+          "protein_macro": 0.003930066887983043,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.11868939166584702,
+            "protein_macro": 0.11868939166584702,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.017605824232451654,
+            "protein_macro": 0.017605824232451654,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.12075660678074342,
+            "protein_macro": 0.12075660678074342,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.01848148483777012,
+            "protein_macro": 0.01848148483777012,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.11248774632115788,
+            "protein_macro": 0.11248774632115788,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.014978842416496262,
+            "protein_macro": 0.014978842416496262,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 12,
+            "unique_T": 12,
+            "groups": 12
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 34,
+          "true_positive_T": 7,
+          "true_positive_groups": 7,
+          "false_positive_T": 37,
+          "false_negative_T": 5,
+          "truth_positive_T": 12,
+          "precision": 0.1590909090909091,
+          "recall": 0.5833333333333334
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 14,
+          "true_positive_T": 3,
+          "true_positive_groups": 3,
+          "false_positive_T": 41,
+          "false_negative_T": 1,
+          "truth_positive_T": 4,
+          "precision": 0.06818181818181818,
+          "recall": 0.75
+        }
+      }
+    },
+    {
+      "method": "hidden256_MLP__binned",
+      "partition": "train",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.0385377114976538,
+          "protein_macro": 0.03659389069314617,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0024996669128108636,
+          "protein_macro": 0.002229289575620936,
+          "support": {
+            "rows": 13165,
+            "unique_T": 13162,
+            "groups": 4800
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.12142172965002253,
+            "protein_macro": 0.11984518150259625,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.01659450302885256,
+            "protein_macro": 0.016322643458622638,
+            "support": {
+              "rows": 49,
+              "unique_T": 49,
+              "groups": 48
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.11919130558915306,
+            "protein_macro": 0.11721708361117888,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.015623821284554553,
+            "protein_macro": 0.015298809779371182,
+            "support": {
+              "rows": 38,
+              "unique_T": 38,
+              "groups": 37
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.12892406512749258,
+            "protein_macro": 0.12892406512749258,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.019859523441491302,
+            "protein_macro": 0.019859523441491302,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 11
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 34,
+            "unique_T": 34,
+            "groups": 34
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 11
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 132,
+        "denominator_T": 13162,
+        "rankable_T": 13162,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 132,
+          "selected_groups": 96,
+          "true_positive_T": 26,
+          "true_positive_groups": 25,
+          "false_positive_T": 106,
+          "false_negative_T": 12,
+          "truth_positive_T": 38,
+          "precision": 0.19696969696969696,
+          "recall": 0.6842105263157895
+        },
+        "positive": {
+          "selected_T": 132,
+          "selected_groups": 54,
+          "true_positive_T": 9,
+          "true_positive_groups": 9,
+          "false_positive_T": 123,
+          "false_negative_T": 2,
+          "truth_positive_T": 11,
+          "precision": 0.06818181818181818,
+          "recall": 0.8181818181818182
+        }
+      }
+    },
+    {
+      "method": "hidden256_MLP__binned",
+      "partition": "stop",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.04480223638910932,
+          "protein_macro": 0.043671179026172194,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.003307863487189993,
+          "protein_macro": 0.0031382129565814955,
+          "support": {
+            "rows": 4390,
+            "unique_T": 4389,
+            "groups": 1600
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.17328976852525638,
+            "protein_macro": 0.1705258089647953,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.03496287155994517,
+            "protein_macro": 0.033809359287639264,
+            "support": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 12
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.1540803085999895,
+            "protein_macro": 0.152560125476287,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.027076316093651475,
+            "protein_macro": 0.02643003390513483,
+            "support": {
+              "rows": 11,
+              "unique_T": 11,
+              "groups": 10
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.2693370681515909,
+            "protein_macro": 0.2693370681515909,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.07439564889141365,
+            "protein_macro": 0.07439564889141365,
+            "support": {
+              "rows": 2,
+              "unique_T": 2,
+              "groups": 2
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 11,
+            "unique_T": 11,
+            "groups": 10
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 2,
+            "unique_T": 2,
+            "groups": 2
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4389,
+        "rankable_T": 4389,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 28,
+          "true_positive_T": 7,
+          "true_positive_groups": 6,
+          "false_positive_T": 37,
+          "false_negative_T": 4,
+          "truth_positive_T": 11,
+          "precision": 0.1590909090909091,
+          "recall": 0.6363636363636364
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 14,
+          "true_positive_T": 1,
+          "true_positive_groups": 1,
+          "false_positive_T": 43,
+          "false_negative_T": 1,
+          "truth_positive_T": 2,
+          "precision": 0.022727272727272728,
+          "recall": 0.5
+        }
+      }
+    },
+    {
+      "method": "hidden256_MLP__binned",
+      "partition": "evaluation",
+      "overall": {
+        "Bowley_AE": {
+          "group_macro": 0.045754205580648445,
+          "protein_macro": 0.046766301385901196,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        },
+        "Bowley_MSE": {
+          "group_macro": 0.0036188418609855804,
+          "protein_macro": 0.003814869750137441,
+          "support": {
+            "rows": 4366,
+            "unique_T": 4364,
+            "groups": 1599
+          }
+        }
+      },
+      "strong": {
+        "union": {
+          "Bowley_AE": {
+            "group_macro": 0.1452234619266698,
+            "protein_macro": 0.1452234619266698,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.024251539403682833,
+            "protein_macro": 0.024251539403682833,
+            "support": {
+              "rows": 16,
+              "unique_T": 16,
+              "groups": 16
+            }
+          }
+        },
+        "negative": {
+          "Bowley_AE": {
+            "group_macro": 0.1414621167115925,
+            "protein_macro": 0.1414621167115925,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.02371588588957105,
+            "protein_macro": 0.02371588588957105,
+            "support": {
+              "rows": 12,
+              "unique_T": 12,
+              "groups": 12
+            }
+          }
+        },
+        "positive": {
+          "Bowley_AE": {
+            "group_macro": 0.15650749757190174,
+            "protein_macro": 0.15650749757190174,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          },
+          "Bowley_MSE": {
+            "group_macro": 0.02585849994601817,
+            "protein_macro": 0.02585849994601817,
+            "support": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            }
+          }
+        }
+      },
+      "threshold": {
+        "negative": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 12,
+            "unique_T": 12,
+            "groups": 12
+          }
+        },
+        "positive": {
+          "TP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FP": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "FN": {
+            "rows": 4,
+            "unique_T": 4,
+            "groups": 4
+          }
+        }
+      },
+      "ranking": {
+        "budget_fraction": 0.01,
+        "budget_T": 44,
+        "denominator_T": 4364,
+        "rankable_T": 4364,
+        "rejected_T": 0,
+        "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+        "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+        "population": "Exposed development T pool, not historical source population percentiles",
+        "negative": {
+          "selected_T": 44,
+          "selected_groups": 34,
+          "true_positive_T": 7,
+          "true_positive_groups": 7,
+          "false_positive_T": 37,
+          "false_negative_T": 5,
+          "truth_positive_T": 12,
+          "precision": 0.1590909090909091,
+          "recall": 0.5833333333333334
+        },
+        "positive": {
+          "selected_T": 44,
+          "selected_groups": 10,
+          "true_positive_T": 2,
+          "true_positive_groups": 2,
+          "false_positive_T": 42,
+          "false_negative_T": 2,
+          "truth_positive_T": 4,
+          "precision": 0.045454545454545456,
+          "recall": 0.5
+        }
+      }
+    }
+  ],
+  "promotion_gate": "Rare group-MAE at least 10% lower in stop and evaluation; whole-cohort group-MSE no more than 5% worse in both; sum of directional budget TP not lower in either and at least 2 higher in one. Raw-target candidates only.",
+  "decisions": {
+    "linear": [
+      {
+        "method": "affine_scalar_raw",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": true,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": true,
+            "TP_delta": 0
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": true,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": true,
+            "TP_delta": 0
+          }
+        ],
+        "candidate_eligible": true,
+        "promising_for_strong_control_comparison": false
+      },
+      {
+        "method": "charge__raw",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -5
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -6
+          }
+        ],
+        "candidate_eligible": true,
+        "promising_for_strong_control_comparison": false
+      },
+      {
+        "method": "charge__binned",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -5
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -6
+          }
+        ],
+        "candidate_eligible": false,
+        "promising_for_strong_control_comparison": false
+      },
+      {
+        "method": "input_mean_charge__raw",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -5
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -7
+          }
+        ],
+        "candidate_eligible": true,
+        "promising_for_strong_control_comparison": false
+      },
+      {
+        "method": "input_mean_charge__binned",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -5
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -7
+          }
+        ],
+        "candidate_eligible": false,
+        "promising_for_strong_control_comparison": false
+      },
+      {
+        "method": "hidden256__raw",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": true,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -2
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": true,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -2
+          }
+        ],
+        "candidate_eligible": true,
+        "promising_for_strong_control_comparison": false
+      },
+      {
+        "method": "hidden256__binned",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -3
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -4
+          }
+        ],
+        "candidate_eligible": false,
+        "promising_for_strong_control_comparison": false
+      },
+      {
+        "method": "predicted_PMF__raw",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -4
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -4
+          }
+        ],
+        "candidate_eligible": true,
+        "promising_for_strong_control_comparison": false
+      },
+      {
+        "method": "predicted_PMF__binned",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -3
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": false,
+            "ranking_not_lower": false,
+            "TP_delta": -4
+          }
+        ],
+        "candidate_eligible": false,
+        "promising_for_strong_control_comparison": false
+      }
+    ],
+    "nonlinear": [
+      {
+        "arm": "raw",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": true,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -2
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": true,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -1
+          }
+        ],
+        "promising_for_strong_control_comparison": false
+      },
+      {
+        "arm": "binned",
+        "checks": [
+          {
+            "partition": "stop",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -1
+          },
+          {
+            "partition": "evaluation",
+            "rare_AE_reduction10pct": false,
+            "overall_MSE_within5pct": true,
+            "ranking_not_lower": false,
+            "TP_delta": -2
+          }
+        ],
+        "promising_for_strong_control_comparison": false
+      }
+    ],
+    "promoted": [],
+    "next": "Stop this bounded frozen-readout branch; retain current distribution model and strong charge control. No head/threshold rescue."
+  },
+  "cost": {
+    "feature_extraction_seconds": 26.8851,
+    "ridge_process_seconds": 8.028398787602782,
+    "nonlinear_process_seconds": 36.80370516516268,
+    "new_backbone_fits": 0,
+    "ridge_vectors": 24,
+    "nonlinear_heads": 2,
+    "nonlinear_parameters_each": 33025,
+    "nonlinear_epochs_each": 200,
+    "neural_peak_GPU_bytes": 43764224,
+    "meaning": "Observed process durations; not CPU or GPU busy-time accounting."
+  },
+  "limits": [
+    "Single exposed development fold/backbone; stop selected the backbone before the heads.",
+    "Rare support is small; no statistical significance or universal architecture claim.",
+    "Scalar probes leave PMF unchanged and cannot establish restored distribution shape.",
+    "Failed linear or small nonlinear probes do not prove the representation lacks relevant information.",
+    "Raw-target selection favors the intended raw task; binned partner shares hyperparameters and normalization."
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/pdf/1610.01644",
+      "title": "Understanding intermediate layers using linear classifier probes",
+      "read_scope": "Introduction and Section 3",
+      "use": "Independent frozen probes diagnose accessibility to the specified probe; not total information or causal mechanism."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1206.4661",
+      "title": "Predicting accurate probabilities with a ranking loss",
+      "read_scope": "Sections 1–3",
+      "use": "Separate score-value and ranking questions. Its binary calibration theory is not a guarantee for continuous Bowley regression."
+    }
+  ]
+}

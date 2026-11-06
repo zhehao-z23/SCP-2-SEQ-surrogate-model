@@ -1,0 +1,349 @@
+{
+  "schema": "night_20261107_archive_mapping.v1",
+  "status": "completed_development_evidence_archive",
+  "upstream_reviewed_packages": [
+    {
+      "lane": "atlas",
+      "candidate_manifest_sha256": "402289a847d2827a14f8f8ccc847c904de9be85b7b012be985d8c16384e90d4c",
+      "files": 10
+    },
+    {
+      "lane": "biology",
+      "candidate_manifest_sha256": "31e7ae794a4b1bfd0c5ae615aa33f1bf11a5f3de071245acf60903f90415faf5",
+      "files": 5
+    },
+    {
+      "lane": "cost",
+      "candidate_manifest_sha256": "867f1a62a062c28c4940f2be49b2cf8bda14ef9b4dfb30de62d5fdc08ddcf388",
+      "files": 11
+    },
+    {
+      "lane": "mechanism",
+      "candidate_manifest_sha256": "a67b6ce29ee8176cfc0c8a684741807996abbf92ec8e281166a57853a60db476",
+      "files": 18
+    }
+  ],
+  "files": [
+    {
+      "lane": "atlas",
+      "candidate_path": "configs/config.template.json",
+      "repository_path": "experiments/night_20261107/atlas/configs/config.template.json",
+      "sha256": "eed11fcb23085072c8c65229fe69fc1f1a5311ad898172aba4e76a643d4e1849",
+      "bytes": 3496
+    },
+    {
+      "lane": "atlas",
+      "candidate_path": "configs/plan.json",
+      "repository_path": "experiments/night_20261107/atlas/configs/plan.json",
+      "sha256": "ca002db52d5fbba74477fc4d27012b0746b97c0f10e40546b26ea2592147c15d",
+      "bytes": 3173
+    },
+    {
+      "lane": "atlas",
+      "candidate_path": "docs/reproduction.md",
+      "repository_path": "experiments/night_20261107/atlas/docs/reproduction.md",
+      "sha256": "49e1547414a4836f5bef376d8918b4f9ddda92f44de9c6a82653721b9b8b8ad6",
+      "bytes": 3496
+    },
+    {
+      "lane": "atlas",
+      "candidate_path": "docs/source_provenance.json",
+      "repository_path": "experiments/night_20261107/atlas/docs/source_provenance.json",
+      "sha256": "0c191d93dfb626e65313ec235b7f663358fe6bb47a20ab74318fd38dbc7fc6c0",
+      "bytes": 4950
+    },
+    {
+      "lane": "atlas",
+      "candidate_path": "README.md",
+      "repository_path": "experiments/night_20261107/atlas/README.md",
+      "sha256": "dfe90ecf048da15f556159d8f0e36c29befc148f0c1d3c99479e859eff3c8c8e",
+      "bytes": 8675
+    },
+    {
+      "lane": "atlas",
+      "candidate_path": "results/summary.json",
+      "repository_path": "experiments/night_20261107/atlas/results/summary.json",
+      "sha256": "f7620c4df51b9ef474d9561dd236c2299b7b891f0f15469e389a140313438522",
+      "bytes": 7190
+    },
+    {
+      "lane": "atlas",
+      "candidate_path": "src/night_20261107_atlas_checks.py",
+      "repository_path": "experiments/night_20261107/atlas/src/night_20261107_atlas_checks.py",
+      "sha256": "5e13d59a39ae9ad60688c63649915e3fa90692e3a7e9c126949e3fc34d870efa",
+      "bytes": 4213
+    },
+    {
+      "lane": "atlas",
+      "candidate_path": "src/night_20261107_atlas_entry.py",
+      "repository_path": "experiments/night_20261107/atlas/src/night_20261107_atlas_entry.py",
+      "sha256": "f160b22af2ddf01e599401ef3b5eb4a35c2d905b214c48ac5f70b08fc34bdba7",
+      "bytes": 22115
+    },
+    {
+      "lane": "atlas",
+      "candidate_path": "src/night_20261107_atlas_handoff_check.py",
+      "repository_path": "experiments/night_20261107/atlas/src/night_20261107_atlas_handoff_check.py",
+      "sha256": "34f65953c4c8ccbcaefceb70a61e852cec52511387aa528dadb59998ffb0309d",
+      "bytes": 3582
+    },
+    {
+      "lane": "atlas",
+      "candidate_path": "src/night_20261107_atlas_inventory.py",
+      "repository_path": "experiments/night_20261107/atlas/src/night_20261107_atlas_inventory.py",
+      "sha256": "c50220990727d2df5b5e663f6b0ee700a19d9a45db37dd0aef49565165b5e361",
+      "bytes": 5246
+    },
+    {
+      "lane": "biology",
+      "candidate_path": "night_20261107_biology_analysis_public.py",
+      "repository_path": "experiments/night_20261107/biology/night_20261107_biology_analysis_public.py",
+      "sha256": "b0aaca89512446f76d06356178cfd5f5c2b3f3781d8fb3c4aaa5b11c3200628c",
+      "bytes": 21516
+    },
+    {
+      "lane": "biology",
+      "candidate_path": "night_20261107_biology_uncertainty_public.py",
+      "repository_path": "experiments/night_20261107/biology/night_20261107_biology_uncertainty_public.py",
+      "sha256": "25d7bd03ce0b1a59894d7994e3c2c7ecf3e5123346ca169ffa4132906572391a",
+      "bytes": 9558
+    },
+    {
+      "lane": "biology",
+      "candidate_path": "night_20261107_biology_public_report.md",
+      "repository_path": "experiments/night_20261107/biology/night_20261107_biology_public_report.md",
+      "sha256": "28c048f6c6dbac506b3932565e249050723a47782e1ac270eef664ce7a188f54",
+      "bytes": 3218
+    },
+    {
+      "lane": "biology",
+      "candidate_path": "night_20261107_biology_public_aggregate.json",
+      "repository_path": "experiments/night_20261107/biology/night_20261107_biology_public_aggregate.json",
+      "sha256": "7a76e3ddec269d34ff73aec51bb21ca22a41c19a9c1dfc02b0ff0558a7cc75dd",
+      "bytes": 59389
+    },
+    {
+      "lane": "biology",
+      "candidate_path": "night_20261107_biology_public_provenance.json",
+      "repository_path": "experiments/night_20261107/biology/night_20261107_biology_public_provenance.json",
+      "sha256": "52f656427cf9a7c334b98bd167e490ff5cface960f7c6e0295ab85862b304933",
+      "bytes": 1925
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "conditional_cascade_cost.json",
+      "repository_path": "experiments/night_20261107/cost/conditional_cascade_cost.json",
+      "sha256": "8ba940a0c2e67a3ce8831e08a4d14d7fd2d509b1b7fba2d035c9a1c070c3c07e",
+      "bytes": 2180
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "night_20261107_cost_public_v3.json",
+      "repository_path": "experiments/night_20261107/cost/night_20261107_cost_public_v3.json",
+      "sha256": "297cd0267c8b13783f95426f120496d939ec2398ce8e5997333e4cf3ef122b34",
+      "bytes": 42705
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "README.md",
+      "repository_path": "experiments/night_20261107/cost/README.md",
+      "sha256": "dca7b8e908a4d8fac24fd967ec19f51c9b6d783eb61fab7547a88b49bc6c01f6",
+      "bytes": 1503
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "REPORT.md",
+      "repository_path": "experiments/night_20261107/cost/REPORT.md",
+      "sha256": "d7b79c47e9cb01f7324adb3e23405ce287165e131a265e23971f73c992b4e9ec",
+      "bytes": 12643
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "source_provenance.json",
+      "repository_path": "experiments/night_20261107/cost/source_provenance.json",
+      "sha256": "c6f3d5324fc9489cc36ca24912a5584c2bd93912998fbbc83663323345cd8d27",
+      "bytes": 3831
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "src/night_20261107_cost_benchmark_template.py",
+      "repository_path": "experiments/night_20261107/cost/src/night_20261107_cost_benchmark_template.py",
+      "sha256": "a35a84468eaa4eabcd5dad7e6d057ca88fac499737dcf7c58af241445906d6b7",
+      "bytes": 8223
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "src/night_20261107_cost_cached_vectors_template.py",
+      "repository_path": "experiments/night_20261107/cost/src/night_20261107_cost_cached_vectors_template.py",
+      "sha256": "1d9bccd7478e2bb55d2ffe7c9c178c76653cf218d54e7684c9bcbcf448b71969",
+      "bytes": 3356
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "src/night_20261107_cost_charge_export.py",
+      "repository_path": "experiments/night_20261107/cost/src/night_20261107_cost_charge_export.py",
+      "sha256": "69ab2652aad62e58eb530dd23b1f8e29d9429da6ab188cb9b988da08f056505d",
+      "bytes": 6678
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "src/night_20261107_cost_charge_template.py",
+      "repository_path": "experiments/night_20261107/cost/src/night_20261107_cost_charge_template.py",
+      "sha256": "4d299993bd17d898f95a756556d7632fa003e801322ac8147a67f3d4d3560ba9",
+      "bytes": 6742
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "src/night_20261107_cost_plot.py",
+      "repository_path": "experiments/night_20261107/cost/src/night_20261107_cost_plot.py",
+      "sha256": "695f9fd6c0bbfb29c6d84560a17d5d8f0281648d122da7d795fefe762d5969e2",
+      "bytes": 2776
+    },
+    {
+      "lane": "cost",
+      "candidate_path": "src/night_20261107_cost_production_template.py",
+      "repository_path": "experiments/night_20261107/cost/src/night_20261107_cost_production_template.py",
+      "sha256": "351b566a802f002b195b03f63d3df85cc8811b1a3fd10318eeead02b3d42e867",
+      "bytes": 9106
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "src/night_20261107_shape_extract.py",
+      "repository_path": "experiments/night_20261107/mechanism/src/night_20261107_shape_extract.py",
+      "sha256": "23effde896b21013c672b33ed1b1a304949c5f34cf40eefef38879ab2800085c",
+      "bytes": 9513
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "src/night_20261107_shape_probes.py",
+      "repository_path": "experiments/night_20261107/mechanism/src/night_20261107_shape_probes.py",
+      "sha256": "d3a96364e1479db4da0d801ec6dee527a5d8b388b5891490fb5b7a55bc42c3c6",
+      "bytes": 13504
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "src/night_20261107_nonlinear_probe.py",
+      "repository_path": "experiments/night_20261107/mechanism/src/night_20261107_nonlinear_probe.py",
+      "sha256": "64a87134f6092df3a1713bbcb2478573932812c562aa12fec8bd0c45aca9d9b8",
+      "bytes": 13414
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "src/night_20261107_mechanism_export.py",
+      "repository_path": "experiments/night_20261107/mechanism/src/night_20261107_mechanism_export.py",
+      "sha256": "e245f22c46ccb914572b8ba8f94b178b20375069db80003636acabd89acf2666",
+      "bytes": 9664
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "src/night_20261107_cost_shape_review.py",
+      "repository_path": "experiments/night_20261107/mechanism/src/night_20261107_cost_shape_review.py",
+      "sha256": "d21a9654e2e7df8982833f92ffd63b02e922218e505083bbf4fb742f934c41ec",
+      "bytes": 6700
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "configs/night_20261107_shape_plan_v1.json",
+      "repository_path": "experiments/night_20261107/mechanism/configs/night_20261107_shape_plan_v1.json",
+      "sha256": "7fc3f83c6dad2e9cbd6c2255e563469f314b7fbe9cb6f40ef04b24dca5872e51",
+      "bytes": 6348
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "configs/night_20261107_nonlinear_plan.json",
+      "repository_path": "experiments/night_20261107/mechanism/configs/night_20261107_nonlinear_plan.json",
+      "sha256": "8f8ce70d1b26146a16f3ee930d6997204d0e66f80da39bbf3a6d782190bb3616",
+      "bytes": 3726
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "results/summary.json",
+      "repository_path": "experiments/night_20261107/mechanism/results/summary.json",
+      "sha256": "583f294e579dcbac8c226d50d715b3df06c0f44783ab59e75969ad959b259e97",
+      "bytes": 185977
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "results/curves.json",
+      "repository_path": "experiments/night_20261107/mechanism/results/curves.json",
+      "sha256": "274df9be3e74cc85007479e1681f025fe6be301824ad5c388fd3786aa890e4ab",
+      "bytes": 84698
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "results/night_20261107_shape_probe_summary.json",
+      "repository_path": "experiments/night_20261107/mechanism/results/night_20261107_shape_probe_summary.json",
+      "sha256": "e7c0f3d6c66d4f9da3947a3c9f6c1ade4ce4ce6727a2edbe7c84c3ce93de1b41",
+      "bytes": 221815
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "results/night_20261107_nonlinear_summary.json",
+      "repository_path": "experiments/night_20261107/mechanism/results/night_20261107_nonlinear_summary.json",
+      "sha256": "c56fe6c6bb5e3c6d2bf813b7d90ec399213281297270a3a1a42c075618199fd9",
+      "bytes": 41524
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "results/night_20261107_shape_extract_summary.json",
+      "repository_path": "experiments/night_20261107/mechanism/results/night_20261107_shape_extract_summary.json",
+      "sha256": "5de0fefc16638e86dc8a8292ec32228b313c154ff31c2094583b98b287b8245c",
+      "bytes": 4630
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "results/raw_curve.json",
+      "repository_path": "experiments/night_20261107/mechanism/results/raw_curve.json",
+      "sha256": "92a6bcda0dbc391043d0b1a3884166143ea97503274b6eb5f65ec3ac16bc3342",
+      "bytes": 89926
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "results/binned_curve.json",
+      "repository_path": "experiments/night_20261107/mechanism/results/binned_curve.json",
+      "sha256": "452d932188c618fa3ecb7ba1e8ab7b8cb53dcf7cb6a1d2087f5b2927b65c261e",
+      "bytes": 89473
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "results/independent_review.json",
+      "repository_path": "experiments/night_20261107/mechanism/results/independent_review.json",
+      "sha256": "c305921b12c30faa90b585d4e87f99ed1dca701fd2a13a4c643fb4cb2de8285f",
+      "bytes": 14451
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "README.md",
+      "repository_path": "experiments/night_20261107/mechanism/README.md",
+      "sha256": "32b1208c636c57ab6f5f6d4e23991afea550ff634917acd3f31de895bb626961",
+      "bytes": 9259
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "source_archive_provenance.json",
+      "repository_path": "experiments/night_20261107/mechanism/source_archive_provenance.json",
+      "sha256": "1b9ad49e34c49fbf9180bcfaceadf4f2bb5971b6f0bfc2365d1dd23ad98a1edd",
+      "bytes": 4494
+    },
+    {
+      "lane": "mechanism",
+      "candidate_path": "aggregate_export_validation.json",
+      "repository_path": "experiments/night_20261107/mechanism/aggregate_export_validation.json",
+      "sha256": "708e6f89aff9e589420796a8a6feabde29ce3a234a67b26e0750b708f4402825",
+      "bytes": 953
+    }
+  ],
+  "actual_source_identity": "Source/archive deltas are documented per lane; no public adaptation is represented as original model execution. Only the mechanism aggregate exporter was rerun, producing byte-identical summary/curves.",
+  "private_exclusions": [
+    "individual cases",
+    "sequences",
+    "sample/group membership",
+    "feature arrays",
+    "predictions",
+    "weights",
+    "private meeting slides",
+    "images",
+    "HTML"
+  ],
+  "scientific_scope": "Exposed historical development, bounded frozen readouts, task/cost evidence, and accepted N1 new-contract interface smoke. Not final independent validation."
+}

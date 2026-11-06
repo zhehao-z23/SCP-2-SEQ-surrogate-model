@@ -1,0 +1,388 @@
+{
+  "schema": "independent_shape_probe_static_and_decision_review_v1",
+  "status": "pass_with_scope_limits",
+  "source_refs": [
+    {
+      "file": "night_20261107_shape_plan_v1.json",
+      "sha256": "f3541fd8fe14e59cb8a2a08e6c0b84877c52d1cb7731c722530a80c33cb442f5"
+    },
+    {
+      "file": "night_20261107_shape_probes.py",
+      "sha256": "a24c11cc740f1e78e91d3322aeac66a781fa7f4b988916dcf7f4e4eeccdc92b5"
+    },
+    {
+      "file": "night_20261107_shape_probe_summary.json",
+      "sha256": "e7c0f3d6c66d4f9da3947a3c9f6c1ade4ce4ce6727a2edbe7c84c3ce93de1b41"
+    },
+    {
+      "file": "night_20261107_nonlinear_plan.json",
+      "sha256": "160ecc703c8bdab518d3262990cdcbbcf15ac14baf0152af1c97af825bdef83c"
+    },
+    {
+      "file": "night_20261107_nonlinear_probe.py",
+      "sha256": "883bc3246547a3f2e6057d18866f4c390e1adfb33209e681bc0ed46723f4b5ee"
+    },
+    {
+      "file": "night_20261107_nonlinear_summary.json",
+      "sha256": "c56fe6c6bb5e3c6d2bf813b7d90ec399213281297270a3a1a42c075618199fd9"
+    }
+  ],
+  "review_code_sha256": "d21a9654e2e7df8982833f92ffd63b02e922218e505083bbf4fb742f934c41ec",
+  "execution": "Local aggregate JSON arithmetic only. No new fit, protected-object access, sample table or checkpoint read, server mutation, or publication. This review is post-execution auditing, not preregistration.",
+  "static_checks": {
+    "linear_weighted_ridge": "C=X^T W X/sumW; D=X^T W centeredY/sumW; eigen solve (C+lambda I)^-1 D matches declared weighted-MSE ridge; train-only weighted centering and standardization, unpenalized intercept.",
+    "linear_lambda_selection": "Only raw-task stop group-MSE chooses lambda; exact ties prefer larger lambda. Both raw and binned target columns share the chosen lambda/X/scaler/weights. Evaluation is not accessed for lambda choice. This explicit asymmetry favors the intended raw task.",
+    "nonlinear_controls": "Shared hidden256, fit-only scaler and raw-target mean/std; identical initial state, optimizer initialization, shuffled batches and dropout RNG. Two target columns differ; no backbone or PMF update.",
+    "nonlinear_epoch_selection": "Epoch0 eligible; raw-task stop group-MSE only, improvement >1e-7; all200 epochs executed. Evaluation predictions are computed after fitting and checkpoint selection. Binned arm also uses raw-task stop selection, as declared.",
+    "eligibility_and_ranking": "Inherited finite predicted-PMF quartiles/IQR>=1; all current rows eligible. Clipped scalar used for value/threshold metrics, preclip scalar for fixed-budget ranking; constant control gets no informative retrieval credit. Raw eligibility is used only for truth.",
+    "no_direct_promotion": "Same engineering gate on stop and evaluation; no candidate replaces a whole-distribution model. Only raw-target arms (and declared affine control) are candidate-eligible."
+  },
+  "recomputed_decisions": [
+    {
+      "family": "linear",
+      "candidate": "affine_scalar_raw",
+      "eligible": true,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": true,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": true,
+          "TP_delta": 0,
+          "rare_AE_ratio_to_PMF": 0.8879917907458864,
+          "overall_MSE_ratio_to_PMF": 0.9921064967336958,
+          "baseline_TP": 9,
+          "probe_TP": 9
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": true,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": true,
+          "TP_delta": 0,
+          "rare_AE_ratio_to_PMF": 0.8398400304804202,
+          "overall_MSE_ratio_to_PMF": 0.9939251855705544,
+          "baseline_TP": 11,
+          "probe_TP": 11
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "linear",
+      "candidate": "charge__raw",
+      "eligible": true,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -5,
+          "rare_AE_ratio_to_PMF": 1.1112748050078771,
+          "overall_MSE_ratio_to_PMF": 1.1679393016486028,
+          "baseline_TP": 9,
+          "probe_TP": 4
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -6,
+          "rare_AE_ratio_to_PMF": 1.345781462550003,
+          "overall_MSE_ratio_to_PMF": 1.2040770971405828,
+          "baseline_TP": 11,
+          "probe_TP": 5
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "linear",
+      "candidate": "charge__binned",
+      "eligible": false,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -5,
+          "rare_AE_ratio_to_PMF": 1.1674964771087717,
+          "overall_MSE_ratio_to_PMF": 1.180168740205726,
+          "baseline_TP": 9,
+          "probe_TP": 4
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -6,
+          "rare_AE_ratio_to_PMF": 1.3987873807375422,
+          "overall_MSE_ratio_to_PMF": 1.2181212875046676,
+          "baseline_TP": 11,
+          "probe_TP": 5
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "linear",
+      "candidate": "input_mean_charge__raw",
+      "eligible": true,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -5,
+          "rare_AE_ratio_to_PMF": 1.1103403937835998,
+          "overall_MSE_ratio_to_PMF": 1.1677847610091203,
+          "baseline_TP": 9,
+          "probe_TP": 4
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -7,
+          "rare_AE_ratio_to_PMF": 1.3090920525613619,
+          "overall_MSE_ratio_to_PMF": 1.1586630579719819,
+          "baseline_TP": 11,
+          "probe_TP": 4
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "linear",
+      "candidate": "input_mean_charge__binned",
+      "eligible": false,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -5,
+          "rare_AE_ratio_to_PMF": 1.1736442226368011,
+          "overall_MSE_ratio_to_PMF": 1.2076442005648071,
+          "baseline_TP": 9,
+          "probe_TP": 4
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -7,
+          "rare_AE_ratio_to_PMF": 1.3648839955208134,
+          "overall_MSE_ratio_to_PMF": 1.2016488489379178,
+          "baseline_TP": 11,
+          "probe_TP": 4
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "linear",
+      "candidate": "hidden256__raw",
+      "eligible": true,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": true,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -2,
+          "rare_AE_ratio_to_PMF": 0.8562093883378581,
+          "overall_MSE_ratio_to_PMF": 0.9888421056537259,
+          "baseline_TP": 9,
+          "probe_TP": 7
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": true,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -2,
+          "rare_AE_ratio_to_PMF": 0.8126321344839254,
+          "overall_MSE_ratio_to_PMF": 0.999679642614785,
+          "baseline_TP": 11,
+          "probe_TP": 9
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "linear",
+      "candidate": "hidden256__binned",
+      "eligible": false,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -3,
+          "rare_AE_ratio_to_PMF": 0.970564645097684,
+          "overall_MSE_ratio_to_PMF": 1.013702232616981,
+          "baseline_TP": 9,
+          "probe_TP": 6
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -4,
+          "rare_AE_ratio_to_PMF": 0.9737000088411485,
+          "overall_MSE_ratio_to_PMF": 1.0064457076690516,
+          "baseline_TP": 11,
+          "probe_TP": 7
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "linear",
+      "candidate": "predicted_PMF__raw",
+      "eligible": true,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -4,
+          "rare_AE_ratio_to_PMF": 1.0390193273586255,
+          "overall_MSE_ratio_to_PMF": 1.045117545962462,
+          "baseline_TP": 9,
+          "probe_TP": 5
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -4,
+          "rare_AE_ratio_to_PMF": 1.0947509889550018,
+          "overall_MSE_ratio_to_PMF": 1.0384552359278607,
+          "baseline_TP": 11,
+          "probe_TP": 7
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "linear",
+      "candidate": "predicted_PMF__binned",
+      "eligible": false,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -3,
+          "rare_AE_ratio_to_PMF": 1.1045736313443602,
+          "overall_MSE_ratio_to_PMF": 1.0739051437484597,
+          "baseline_TP": 9,
+          "probe_TP": 6
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": false,
+          "ranking_not_lower": false,
+          "TP_delta": -4,
+          "rare_AE_ratio_to_PMF": 1.2081154888051757,
+          "overall_MSE_ratio_to_PMF": 1.0649561686704891,
+          "baseline_TP": 11,
+          "probe_TP": 7
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "nonlinear",
+      "candidate": "raw",
+      "eligible": true,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": true,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -2,
+          "rare_AE_ratio_to_PMF": 0.8044795413890942,
+          "overall_MSE_ratio_to_PMF": 0.9672303684156558,
+          "baseline_TP": 9,
+          "probe_TP": 7
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": true,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -1,
+          "rare_AE_ratio_to_PMF": 0.7355761042968981,
+          "overall_MSE_ratio_to_PMF": 1.0000166879311392,
+          "baseline_TP": 11,
+          "probe_TP": 10
+        }
+      ],
+      "promotion": false
+    },
+    {
+      "family": "nonlinear",
+      "candidate": "binned",
+      "eligible": false,
+      "checks": [
+        {
+          "partition": "stop",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -1,
+          "rare_AE_ratio_to_PMF": 0.9117818696833375,
+          "overall_MSE_ratio_to_PMF": 0.9624638324056292,
+          "baseline_TP": 9,
+          "probe_TP": 8
+        },
+        {
+          "partition": "evaluation",
+          "rare_AE_reduction10pct": false,
+          "overall_MSE_within5pct": true,
+          "ranking_not_lower": false,
+          "TP_delta": -2,
+          "rare_AE_ratio_to_PMF": 0.9000206916324357,
+          "overall_MSE_ratio_to_PMF": 0.9794287028987635,
+          "baseline_TP": 11,
+          "probe_TP": 9
+        }
+      ],
+      "promotion": false
+    }
+  ],
+  "nonlinear_selected_epochs": [
+    3,
+    3
+  ],
+  "nonlinear_paired_RNG_batch_checks_reported": 200,
+  "nonlinear_checkpoint_replay_maxdiff_reported": 0,
+  "unchanged_PMF_reported": true,
+  "audit_boundary": "Source inspected and summary claims/hash binding checked. Independent review did not reload raw feature arrays, replay checkpoints, or independently recheck200 individual epoch hashes. Those are producer assertions bound by the inspected code and summary.",
+  "interpretation": [
+    "No tested probe passes the frozen ranking-and-error gate. Nonlinear raw rare-shape MAE improves while fixed-budget summed TP changes -2/-1 on stop/evaluation; better regression is insufficient for this retrieval criterion.",
+    "Linear or one small nonlinear failure is not evidence that representation contains no information; finite support, accessibility, function class and prior representation selection remain alternatives.",
+    "Epoch3 was the stop-selected checkpoint out of200; this does not prove convergence or optimization exhaustion.",
+    "The backbone was previously stop-selected and this is exposed development data; no independent final-test or new-C/AFDB claim.",
+    "A scalar auxiliary prediction is not a self-consistent improved probability distribution or physical causal explanation.",
+    "Promotion thresholds are engineering decision rules, not significance tests."
+  ]
+}

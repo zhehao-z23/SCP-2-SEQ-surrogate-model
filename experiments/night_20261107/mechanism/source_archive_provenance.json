@@ -1,0 +1,58 @@
+{
+  "schema": "mechanism_source_archive_adaptation.v1",
+  "status": "public_archive_checked",
+  "original_candidate_manifest_sha256": "ce9aac4b4baa34b80d41ba02b2a7c2d08e8c5b2931946accf6b49bd427ef714d",
+  "modifications": {
+    "src/night_20261107_shape_extract.py": {
+      "original_sha256": "1da4188030558be5e96bebf13718e0abc4650dc091e7ecf5a63acaf7d36eabd4",
+      "archive_sha256": "23effde896b21013c672b33ed1b1a304949c5f34cf40eefef38879ab2800085c",
+      "change": "Mandatory SCP_DATA_ROOT and SCP_H2_REFERENCE_RUN environment paths; numerical/role checks unchanged.",
+      "scientific_execution": "original_only; archived adaptation not rerun for feature extraction or fitting"
+    },
+    "src/night_20261107_shape_probes.py": {
+      "original_sha256": "a24c11cc740f1e78e91d3322aeac66a781fa7f4b988916dcf7f4e4eeccdc92b5",
+      "archive_sha256": "d3a96364e1479db4da0d801ec6dee527a5d8b388b5891490fb5b7a55bc42c3c6",
+      "change": "Mandatory SCP_DATA_ROOT environment path only.",
+      "scientific_execution": "original_only; archived adaptation not rerun for feature extraction or fitting"
+    },
+    "src/night_20261107_nonlinear_probe.py": {
+      "original_sha256": "883bc3246547a3f2e6057d18866f4c390e1adfb33209e681bc0ed46723f4b5ee",
+      "archive_sha256": "64a87134f6092df3a1713bbcb2478573932812c562aa12fec8bd0c45aca9d9b8",
+      "change": "Mandatory SCP_DATA_ROOT environment path only.",
+      "scientific_execution": "original_only; archived adaptation not rerun for feature extraction or fitting"
+    },
+    "configs/night_20261107_shape_plan_v1.json": {
+      "original_sha256": "f3541fd8fe14e59cb8a2a08e6c0b84877c52d1cb7731c722530a80c33cb442f5",
+      "archive_sha256": "7fc3f83c6dad2e9cbd6c2255e563469f314b7fbe9cb6f40ef04b24dca5872e51",
+      "change": "GPU identity becomes a mandatory placeholder; archive/execution status explicit; extract pin follows archive adapter where present; scientific design unchanged.",
+      "scientific_execution": "Original plan only; template not executed"
+    },
+    "configs/night_20261107_nonlinear_plan.json": {
+      "original_sha256": "160ecc703c8bdab518d3262990cdcbbcf15ac14baf0152af1c97af825bdef83c",
+      "archive_sha256": "8f8ce70d1b26146a16f3ee930d6997204d0e66f80da39bbf3a6d782190bb3616",
+      "change": "GPU identity becomes a mandatory placeholder; archive/execution status explicit; extract pin follows archive adapter where present; scientific design unchanged.",
+      "scientific_execution": "Original plan only; template not executed"
+    },
+    "results/night_20261107_shape_extract_summary.json": {
+      "original_sha256": "b4cdf785c67d8f47a52eb8517e8a8f77fce0183b77c57f99beb1a8875bcf4a30",
+      "archive_sha256": "5de0fefc16638e86dc8a8292ec32228b313c154ff31c2094583b98b287b8245c",
+      "change": "Reference key paths projected to public placeholders. All values, numeric data and original executed source/plan hashes unchanged.",
+      "scientific_execution": "original_only; archived adaptation not rerun for feature extraction or fitting"
+    },
+    "src/night_20261107_mechanism_export.py": {
+      "original_sha256": "06e4b2f5dda67ebd94a634b8c4735e8edbab40b36cbcc648b6546f394ed884a9",
+      "archive_sha256": "e245f22c46ccb914572b8ba8f94b178b20375069db80003636acabd89acf2666",
+      "change": "Input validator pins the public path projection. Aggregate output retains original execution summary pin; no metrics or curves changed.",
+      "scientific_execution": "original_only; archived adaptation not rerun for feature extraction or fitting"
+    },
+    "README.md": {
+      "original_sha256": "69faae3c7ebce43d6890c240b6c092df890fb0559d4a7d79a6f7f8525ccebf9c",
+      "archive_sha256": "32b1208c636c57ab6f5f6d4e23991afea550ff634917acd3f31de895bb626961",
+      "change": "Remove internal machine path; clarify private images, portable adapters, original review snapshot and the executed public-only aggregate export.",
+      "scientific_execution": "original_only; archived adaptation not rerun for feature extraction or fitting"
+    }
+  },
+  "source_results": "Original executed source/plan/result hashes in unchanged aggregates refer to original Byte execution, never to adapted code.",
+  "aggregate_replay": "Only public aggregate exporter ran locally and reproduced summary/curves exactly.",
+  "private_dependencies": "Original data release, exact model/cache/roles/profile and upstream snapshots remain required; no datasets or weights supplied."
+}

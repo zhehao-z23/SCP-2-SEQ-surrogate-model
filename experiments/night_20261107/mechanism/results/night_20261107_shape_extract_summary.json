@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "schema": "frozen_H2_shape_feature_extraction.v1",
+  "source_refs": {
+    "${H2_REFERENCE_RUN}/receipt.json": "adbdfc561f2c1969f28032f5d62785578dcf36a0e8523c36d154701ff81c4426",
+    "${DATA_ROOT}/atlas_scale_20261105/data/release.json": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+    "${DATA_ROOT}/atlas_scale_20261105/data/samples.parquet": "28e5ed7bb5c614cd51eae385b6ea2f5401ea6635367806ee35c804abd7bc71ae",
+    "${DATA_ROOT}/bridge_20261106/roles/code/bridge_roles_guard.py": "5401723f38305496ab11ab71d07825b2f1fe56476d753593d7929ed12a693cd3",
+    "${H2_REFERENCE_RUN}/roles.json": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a",
+    "${H2_REFERENCE_RUN}/fixed_best_partitions.json": "39b83a7a2a0ffadde2142d3231b069c1219ca8214a5a90108545a971004c9866",
+    "${H2_REFERENCE_RUN}/train_source_indices.npy": "e2d8786e91191190226c4aa109a414d2e1415428be1eff1e4d62da01f7454934",
+    "${H2_REFERENCE_RUN}/stop_source_indices.npy": "5b19205ebe7003994735bf1861a90d4ac93d786edd1174c8378a54d58ac95644",
+    "${H2_REFERENCE_RUN}/evaluation_source_indices.npy": "da0980f84ed281f6fb8a15f3afc27f106ead25ef98d0908e31f3ff7bf9f9a0cd",
+    "${DATA_ROOT}/pooling_20261105/cache/receipt.json": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+    "${DATA_ROOT}/pooling_20261105/cache/index.parquet": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+    "${DATA_ROOT}/pooling_20261105/cache/flat.npy": "cd9bd826b7b3a6489400856f1a1009e08d2575fe2c424466cc1a7ea0ddd4531d",
+    "${DATA_ROOT}/pooling_20261105/cache/mean.npy": "c87cd7007cca9b0e187fda0d8a355559d5be2fc7fc81b1185c8cb9cf13e93a5f",
+    "${DATA_ROOT}/pooling_20261105/cache/max.npy": "379e8c2d6ace80c30aca55d1943fe1550d2cde23c89a5b396b1d929109f58df5",
+    "${H2_REFERENCE_RUN}/best.pt": "e9e63211ac905ce06449b2aa1f39f547e595b117052b88eb8df96e3c130f8b0f",
+    "${DATA_ROOT}/bridge_20261106/optimization/code/bridge_optimization_model.py": "41b81d67c67a55898324f20436c487548cc45c19b0d9991f3592b9e9487fdd7d",
+    "${DATA_ROOT}/atlas_scale_20261105/data/composition_charge.npy": "f370082d67acf7e5c7312bb5d71900d289ec7e9e10a6da4fee07332a601c3cf8",
+    "${H2_REFERENCE_RUN}/train_prediction.npy": "c87f97bab33c1a9f86b2f878215b79f7e1c3f9a484b7d05d21d50212122e43db",
+    "${H2_REFERENCE_RUN}/stop_prediction.npy": "15886a0c6d75f9752132346e361e87ea7e97be22bdbf40211e172d00e964f287",
+    "${H2_REFERENCE_RUN}/evaluation_prediction.npy": "07981f4d772ee2cc0c527eaeafd3810bbe39227172bb0285e5ad44ca04ff8bc9"
+  },
+  "outputs": {
+    "hidden256": {
+      "sha256": "0721995d70b5d9e966f5414c67537e83ea166f4d193c355e970d403d89cffadf",
+      "shape": [
+        21921,
+        256
+      ]
+    },
+    "predicted_PMF": {
+      "sha256": "b63b4c454b5d5f98a853954de74be814fa0240bfd38cd57b4c9646e4ceb8aff1",
+      "shape": [
+        21921,
+        63
+      ]
+    },
+    "input_mean_charge": {
+      "sha256": "ccd682e923234c6382ead6b04c02e1448482486597c2ad4ab004c0a1d81b24e7",
+      "shape": [
+        21921,
+        1038
+      ]
+    },
+    "charge": {
+      "sha256": "798b058d532ade5e21535fbc61689fa0e95e0091158bd83d316740e637cc0c45",
+      "shape": [
+        21921,
+        78
+      ]
+    },
+    "train_indices": {
+      "sha256": "e2d8786e91191190226c4aa109a414d2e1415428be1eff1e4d62da01f7454934",
+      "shape": [
+        13165
+      ]
+    },
+    "stop_indices": {
+      "sha256": "5b19205ebe7003994735bf1861a90d4ac93d786edd1174c8378a54d58ac95644",
+      "shape": [
+        4390
+      ]
+    },
+    "evaluation_indices": {
+      "sha256": "da0980f84ed281f6fb8a15f3afc27f106ead25ef98d0908e31f3ff7bf9f9a0cd",
+      "shape": [
+        4366
+      ]
+    }
+  },
+  "private_meta_sha256": "f53a9bc5657591e0c694ae09bdff9e2ddae6ee17f86cac443b618c5505c2b81d",
+  "checks": {
+    "train": {
+      "prediction_max_abs_difference": 0.0,
+      "rows": 13165
+    },
+    "stop": {
+      "prediction_max_abs_difference": 0.0,
+      "rows": 4390
+    },
+    "evaluation": {
+      "prediction_max_abs_difference": 0.0,
+      "rows": 4366
+    }
+  },
+  "code_sha256": "1da4188030558be5e96bebf13718e0abc4650dc091e7ecf5a63acaf7d36eabd4",
+  "plan_sha256": "f3541fd8fe14e59cb8a2a08e6c0b84877c52d1cb7731c722530a80c33cb442f5",
+  "model_weights_changed": false,
+  "PMF_replay_tolerance": 1e-06,
+  "new_fits": 0,
+  "GPU_inference_wall_seconds": 2.1998750614002347,
+  "process_seconds": 26.885103851556778,
+  "max_RSS_KiB": 24825784,
+  "peak_GPU_bytes": 12534130688,
+  "interpretation": "Features of a fixed stop-selected development model. Linear accessibility is not a test of information-theoretic absence or biological causality."
+}

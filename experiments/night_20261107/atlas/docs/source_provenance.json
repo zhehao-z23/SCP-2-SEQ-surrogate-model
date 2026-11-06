@@ -1,0 +1,98 @@
+{
+  "schema": "atlas_transition_source_archive.v1",
+  "status": "completed_development_smoke_archive_not_published",
+  "entries": [
+    {
+      "archive_path": "src/night_20261107_atlas_entry.py",
+      "source_sha256": "f160b22af2ddf01e599401ef3b5eb4a35c2d905b214c48ac5f70b08fc34bdba7",
+      "archive_sha256": "f160b22af2ddf01e599401ef3b5eb4a35c2d905b214c48ac5f70b08fc34bdba7",
+      "bytes": 22115,
+      "source_status": "actually_executed",
+      "changes": "none; byte-exact source archive"
+    },
+    {
+      "archive_path": "src/night_20261107_atlas_inventory.py",
+      "source_sha256": "c50220990727d2df5b5e663f6b0ee700a19d9a45db37dd0aef49565165b5e361",
+      "archive_sha256": "c50220990727d2df5b5e663f6b0ee700a19d9a45db37dd0aef49565165b5e361",
+      "bytes": 5246,
+      "source_status": "actually_executed",
+      "changes": "none; byte-exact source archive"
+    },
+    {
+      "archive_path": "src/night_20261107_atlas_checks.py",
+      "source_sha256": "5e13d59a39ae9ad60688c63649915e3fa90692e3a7e9c126949e3fc34d870efa",
+      "archive_sha256": "5e13d59a39ae9ad60688c63649915e3fa90692e3a7e9c126949e3fc34d870efa",
+      "bytes": 4213,
+      "source_status": "actually_executed",
+      "changes": "none; byte-exact source archive"
+    },
+    {
+      "archive_path": "src/night_20261107_atlas_handoff_check.py",
+      "source_sha256": "34f65953c4c8ccbcaefceb70a61e852cec52511387aa528dadb59998ffb0309d",
+      "archive_sha256": "34f65953c4c8ccbcaefceb70a61e852cec52511387aa528dadb59998ffb0309d",
+      "bytes": 3582,
+      "source_status": "actually_executed",
+      "changes": "none; byte-exact source archive"
+    },
+    {
+      "archive_path": "configs/plan.json",
+      "source_sha256": "ca002db52d5fbba74477fc4d27012b0746b97c0f10e40546b26ea2592147c15d",
+      "archive_sha256": "ca002db52d5fbba74477fc4d27012b0746b97c0f10e40546b26ea2592147c15d",
+      "bytes": 3173,
+      "source_status": "executed_plan",
+      "changes": "none; byte-exact source archive"
+    },
+    {
+      "archive_path": "configs/config.template.json",
+      "source_sha256": "eed11fcb23085072c8c65229fe69fc1f1a5311ad898172aba4e76a643d4e1849",
+      "archive_sha256": "eed11fcb23085072c8c65229fe69fc1f1a5311ad898172aba4e76a643d4e1849",
+      "bytes": 3496,
+      "source_status": "template_not_executed",
+      "changes": "none; byte-exact source archive"
+    },
+    {
+      "archive_path": "results/summary.json",
+      "source_sha256": "f7620c4df51b9ef474d9561dd236c2299b7b891f0f15469e389a140313438522",
+      "archive_sha256": "f7620c4df51b9ef474d9561dd236c2299b7b891f0f15469e389a140313438522",
+      "bytes": 7190,
+      "source_status": "derived_summary_or_documentation",
+      "changes": "none; byte-exact source archive"
+    },
+    {
+      "archive_path": "README.md",
+      "source_sha256": "dfe90ecf048da15f556159d8f0e36c29befc148f0c1d3c99479e859eff3c8c8e",
+      "archive_sha256": "dfe90ecf048da15f556159d8f0e36c29befc148f0c1d3c99479e859eff3c8c8e",
+      "bytes": 8675,
+      "source_status": "derived_summary_or_documentation",
+      "changes": "none; byte-exact source archive"
+    },
+    {
+      "archive_path": "docs/reproduction.md",
+      "source_sha256": "49e1547414a4836f5bef376d8918b4f9ddda92f44de9c6a82653721b9b8b8ad6",
+      "archive_sha256": "49e1547414a4836f5bef376d8918b4f9ddda92f44de9c6a82653721b9b8b8ad6",
+      "bytes": 3496,
+      "source_status": "derived_summary_or_documentation",
+      "changes": "none; byte-exact source archive"
+    }
+  ],
+  "executed_adapter_sha256": "f160b22af2ddf01e599401ef3b5eb4a35c2d905b214c48ac5f70b08fc34bdba7",
+  "executed_private_config_sha256": "840f3cd3697a08309a104eda3ccd2895fb05a6a85b1e46a88108325ca6c73872",
+  "config_template_changes": [
+    "paths replaced by placeholders",
+    "status template_not_executed",
+    "original executed config SHA added; scientific parameters and source pins unchanged"
+  ],
+  "source_prepared_executed_distinction": "All four Python sources in this package actually executed on Byte. Configuration template did not execute. Documentation/public aggregation is retrospective. Existing private dependency code is referenced by hashes; not copied into this package.",
+  "private_excluded": [
+    "input sequence",
+    "accepted receipt with identity",
+    "target and prediction arrays",
+    "loss curves",
+    "historical exposure membership",
+    "checkpoints",
+    "residue embeddings",
+    "production inventory machine paths"
+  ],
+  "model_dependency_boundary": "Current user-project charge/features, role guard, local HF backend+encoder manifest/checkpoint and historical checkpoint required privately. This is not an independently self-contained training distribution.",
+  "code_review": "Peer static review confirmed affine rebase signs; synthetic and actual-input checks independently assert arithmetic. No claim this is scientific transfer validation."
+}

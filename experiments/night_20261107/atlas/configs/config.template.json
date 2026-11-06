@@ -1,0 +1,97 @@
+{
+  "schema": "atlas_transition_cpu_smoke.v1",
+  "stage": "development",
+  "output": "${OUTPUT_ROOT}",
+  "cpu_affinity": [
+    176,
+    177
+  ],
+  "max_RSS_bytes": 8589934592,
+  "max_seconds_each_stage": 600,
+  "seed": 1701,
+  "smoke_lr": 0.0003,
+  "smoke_updates": 8,
+  "accepted_receipt": {
+    "path": "${ACCEPTED_RECEIPT_PATH}",
+    "sha256": "aaf0517369b9be9f981dc8914efadbcacdd0df01aa7e2b060880b618e40a2e41"
+  },
+  "guard_code": {
+    "path": "${GUARD_CODE_PATH}",
+    "sha256": "5401723f38305496ab11ab71d07825b2f1fe56476d753593d7929ed12a693cd3"
+  },
+  "guard_contract": {
+    "path": "${GUARD_CONTRACT_PATH}",
+    "sha256": "71359d1a06e18ab5dec65e825c82a07c3d7e0401c35266e8645957b943bb903c"
+  },
+  "expected_bin_source_sha256": "4e9f05936bb1e7bf24a7fb2a5d4243fccc2bdb1f5484a6bd2074838e47a07343",
+  "expected_protocol_sha256": "315c2e8d34a507be8286cf437064b139659e5d1dbf222496457cfd6dd08e2660",
+  "charge_code": {
+    "path": "${CHARGE_CODE_PATH}",
+    "sha256": "5553add8cc81565cb345baa55d6ddc14644b2618100fcab56b9e0816dd3b9796"
+  },
+  "feature_schema_code": {
+    "path": "${FEATURE_SCHEMA_CODE_PATH}",
+    "sha256": "2cef7bc4e3a0cf88e3c059f946926a4827563ae18b529864bb07637d39d7560a"
+  },
+  "backend_src": "${BACKEND_SRC}",
+  "backend_code": {
+    "path": "${BACKEND_CODE_PATH}",
+    "sha256": "3de075876cdd11896ae76dce4a12140d876fecb66cc0f1e2d98df0c40bf0be18"
+  },
+  "encoder_manifest": {
+    "path": "${ENCODER_MANIFEST_PATH}",
+    "sha256": "dd518367099147283233cb7d23eb587c24d97e9f8c4c93e7b030e6ca9bfdfd36"
+  },
+  "historical_checkpoint": {
+    "path": "${HISTORICAL_CHECKPOINT_PATH}",
+    "sha256": "d21e8a32ab08bc3725455939f8c8d9c8eec8d5a151754073a614b66bcd74d5f3"
+  },
+  "historical_receipt": {
+    "path": "${HISTORICAL_RECEIPT_PATH}",
+    "sha256": "198c37b080786aa93b6e346bc8f4504b6bc791589c550c706d5a534285f8e7d4"
+  },
+  "historical_roles": {
+    "path": "${HISTORICAL_ROLES_PATH}",
+    "sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a"
+  },
+  "historical_release": {
+    "path": "${HISTORICAL_RELEASE_PATH}",
+    "sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b"
+  },
+  "historical_meta": {
+    "path": "${HISTORICAL_META_PATH}",
+    "sha256": "28e5ed7bb5c614cd51eae385b6ea2f5401ea6635367806ee35c804abd7bc71ae"
+  },
+  "known_caches": [
+    {
+      "receipt": {
+        "path": "${CACHE_0_RECEIPT_PATH}",
+        "sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23"
+      },
+      "index": {
+        "path": "${CACHE_0_INDEX_PATH}",
+        "sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a"
+      }
+    },
+    {
+      "receipt": {
+        "path": "${CACHE_1_RECEIPT_PATH}",
+        "sha256": "9afeb1a74731d023f6ab035034b12f205e2d024ba7f778f00f2d0a9c6f56ed6d"
+      },
+      "index": {
+        "path": "${CACHE_1_INDEX_PATH}",
+        "sha256": "47de9ef1d058da520423efbdc6d4aaeb546e3972b277334d2d1a741bd09f9cfb"
+      }
+    }
+  ],
+  "runtime_upgrade": {
+    "path": "${RUNTIME_UPGRADE_PATH}",
+    "sha256": "7d06f55d3ad79a759bac90c96b82cdee6d28c6e482dae410b431f91ca715782b"
+  },
+  "resource_inventory": {
+    "path": "${RESOURCE_INVENTORY_PATH}",
+    "sha256": "a9b72ebcd423bbdde3c245bf3971fe99f7ab13e38c93c1a0507c947acc966a61"
+  },
+  "status": "template_not_executed",
+  "original_executed_config_sha256": "840f3cd3697a08309a104eda3ccd2895fb05a6a85b1e46a88108325ca6c73872"
+}

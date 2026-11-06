@@ -1,0 +1,51 @@
+{
+  "schema": "conditional_screen_then_physics_cost_v1",
+  "source_cost_summary_sha256": "297cd0267c8b13783f95426f120496d939ec2398ce8e5997333e4cf3ef122b34",
+  "N": 1000000,
+  "q": 0.01,
+  "formula": {
+    "physical_CPU_hours": "N*q*c_selected_CPU_seconds/3600",
+    "inference_GPU_process_hours": "N*t_infer_seconds/3600",
+    "all_physical_reference_CPU_hours": "N*c_all_CPU_seconds/3600"
+  },
+  "assumed_c_all_CPU_seconds": 305.96327842657314,
+  "all_physical_reference_CPU_hours": 84989.79956293698,
+  "scenarios": [
+    {
+      "c_selected_multiple_of_c_all": 1,
+      "selected_physics_CPU_hours": 849.8979956293698,
+      "charge_core_GPU_process_hours": 0.15807603226001093,
+      "ESMC_residue_core_GPU_process_hours": 5.230815731602682
+    },
+    {
+      "c_selected_multiple_of_c_all": 2,
+      "selected_physics_CPU_hours": 1699.7959912587396,
+      "charge_core_GPU_process_hours": 0.15807603226001093,
+      "ESMC_residue_core_GPU_process_hours": 5.230815731602682
+    },
+    {
+      "c_selected_multiple_of_c_all": 4,
+      "selected_physics_CPU_hours": 3399.591982517479,
+      "charge_core_GPU_process_hours": 0.15807603226001093,
+      "ESMC_residue_core_GPU_process_hours": 5.230815731602682
+    }
+  ],
+  "CPU_and_GPU_hours_are_not_added": true,
+  "screening_protocol": "Historical Atlas LPBE vertex-measure target, existing exposed T cohort.",
+  "pricing_protocol": "Current new Atlas NPBE SES-area production completed-subset CPU accounting.",
+  "not_validated_new_protocol_cascade": true,
+  "unknowns": [
+    "Selected-object physical cost c_selected",
+    "New-label-semantics recall and false negatives",
+    "Target-release length mix",
+    "Full-library IO, restart, network and queue walltime"
+  ],
+  "historical_seed1701_missed": {
+    "charge_certified_positive": 11,
+    "charge_unknown": 284,
+    "residue_certified_positive": 17,
+    "residue_unknown": 275
+  },
+  "bounds_warning": "Bin-internal identification bounds are not sampling confidence intervals. Unknown labels cannot be called false positives or true negatives.",
+  "scope": "Conditional resource-pricing model only. No new fit, physics job, full-library scan, or sample-level output."
+}

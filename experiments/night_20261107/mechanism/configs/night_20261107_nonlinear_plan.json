@@ -1,0 +1,55 @@
+{
+  "schema": "bounded_nonlinear_shape_probe.v1",
+  "timing": "Frozen after the first linear probe result, before any nonlinear-probe fit.",
+  "trigger_summary_sha256": "e7c0f3d6c66d4f9da3947a3c9f6c1ade4ce4ce6727a2edbe7c84c3ce93de1b41",
+  "prior_plan_sha256": "f3541fd8fe14e59cb8a2a08e6c0b84877c52d1cb7731c722530a80c33cb442f5",
+  "why": "The hidden256 linear raw-target probe reduced rare-shape MAE by more than10% on both held-out partitions but lost two fixed-budget hits on each. Affine rescaling produced much of the error improvement with exactly unchanged ordering. No probe passed the initial gate. A single nonlinear head family tests whether the negative ranking result is merely a linear-accessibility limitation; it is not a promoted candidate confirmation or a rescue hyperparameter search.",
+  "hypothesis": "A nonlinear readout of the fixed hidden representation can recover raw-Bowley task information beyond the linear probe.",
+  "alternative": "Scarce strong-shape support or representation/sequence-to-structure ambiguity persists even with a small nonlinear readout. Better regression can still fail the screening task.",
+  "features": "Same frozen hidden256 arrays and fit-only weighted feature standardization as the accepted linear probe; no backbone, encoder, PMF or physical-object change.",
+  "arms": [
+    "raw_QC_Bowley",
+    "true63_uniform_Bowley"
+  ],
+  "architecture": "Linear256x128, GELU, dropout0.1, Linear128x1. Common raw-fit target mean/std define output coordinates for both arms; no new input or target resampling.",
+  "seed": 1707,
+  "epochs": 200,
+  "batch": 256,
+  "optimizer": "AdamW with weight_decay0.0001 and gradnorm clip1; empty state in both arms.",
+  "LR": [
+    {
+      "first": 1,
+      "last": 80,
+      "value": 0.001
+    },
+    {
+      "first": 81,
+      "last": 140,
+      "value": 0.0003
+    },
+    {
+      "first": 141,
+      "last": 200,
+      "value": 0.0001
+    }
+  ],
+  "loss": "Mean squared normalized-target error with the original inverse-view equal-T training weights. Both arms use the same raw-target scale, so target-column substitution does not implicitly change the global loss coefficient.",
+  "selection": "Epoch0 eligible; select only stop raw-Bowley group-macro MSE improvements greater than1e-7. All200 epochs run for each arm with identical initial state, batches and dropout RNG; no early stop or evaluation-based selection. Binned-target arm also uses raw-task stop MSE and this favors the intended raw task explicitly.",
+  "metrics": "Reuse the exact initial probe raw/strong MSE/MAE, fixed absolute thresholds, fixed1%T budget, fit/stop/evaluation and clipping/eligibility conventions. PMF stays unchanged.",
+  "promotion": "Unchanged initial gate: on BOTH stop and evaluation rare-union raw Bowley MAE at least10% lower, overall raw Bowley MSE at most5% worse, summed fixed-budget TP not lower, and at least2 extra TP on ONE partition. Only the raw-target arm is candidate-eligible. Before any confirmation also compare available matched-fold strong PMF baselines.",
+  "resource": {
+    "GPU": "${GPU}",
+    "CPU": [
+      172,
+      173
+    ],
+    "torch_threads": 2,
+    "fit_cap_seconds_each": 300,
+    "outer_cap_seconds": 700,
+    "concurrency": 1
+  },
+  "stop_rule": "No additional head widths, dropout, learning rates, rare weighting or thresholds in this followup. If the gate fails, stop this probe branch and report its limitations rather than infer an absence of all information.",
+  "no_final_or_new_C_claim": true,
+  "archive_status": "portable_plan_template_not_executed",
+  "actual_executed_plan_sha256": "160ecc703c8bdab518d3262990cdcbbcf15ac14baf0152af1c97af825bdef83c"
+}

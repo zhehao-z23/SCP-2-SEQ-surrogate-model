@@ -1,0 +1,1180 @@
+{
+  "schema": "night_20261107_cost_public_v3",
+  "v1_summary_sha256": "547e0ec721e2bca411ca488cfe7a61fd86984806a6091f63ce4aa8685713ecac",
+  "revision_scope": "Adds the bounded same-input exact historical charge-only OOF route cost; all earlier measured values are retained.",
+  "status": "complete",
+  "created_unix": 1793983628.0586605,
+  "scope": "Engineering cost, not accuracy or full-library execution; all input-only benchmarks use historical exposed Atlas sequences and historical head semantics.",
+  "length_frame": {
+    "unique_sequences": 21915,
+    "residues": 6358684,
+    "mean_length": 290.1521332420716,
+    "sample_size": 95,
+    "selection": "First 16 sequence SHA256 order per fixed length stratum, all 15 in longest stratum; no label/prediction-based selection.",
+    "strata": [
+      {
+        "lo": 40,
+        "hi_exclusive": 151,
+        "population_n": 6305,
+        "population_residues": 668686,
+        "sample_n": 16,
+        "length_range": [
+          62,
+          135
+        ],
+        "sample_mean_length": 100.875,
+        "population_mean_length": 106.05646312450436,
+        "pipeline_seconds_per_sequence_by_repeat": [
+          0.03914050507592037,
+          0.016165395849384367,
+          0.0160939734778367
+        ],
+        "descriptor_seconds_mean_warm": 0.00029887069831602275,
+        "encoder_seconds_mean_warm": 0.01464371828478761,
+        "readout_seconds_mean_warm": 0.0006704360421281308,
+        "cached_residue_mean_singleton_seconds": 0.000692937154478083,
+        "cached_mean_pre_singleton_seconds": 0.00063877737071986
+      },
+      {
+        "lo": 151,
+        "hi_exclusive": 301,
+        "population_n": 7802,
+        "population_residues": 1700830,
+        "sample_n": 16,
+        "length_range": [
+          154,
+          284
+        ],
+        "sample_mean_length": 217.375,
+        "population_mean_length": 217.99923096641888,
+        "pipeline_seconds_per_sequence_by_repeat": [
+          0.01767576124984771,
+          0.01691732439212501,
+          0.016863056691363454
+        ],
+        "descriptor_seconds_mean_warm": 0.0003150214033666998,
+        "encoder_seconds_mean_warm": 0.014787702995818108,
+        "readout_seconds_mean_warm": 0.0007843283237889409,
+        "cached_residue_mean_singleton_seconds": 0.000952842722957333,
+        "cached_mean_pre_singleton_seconds": 0.0006232772332926592
+      },
+      {
+        "lo": 301,
+        "hi_exclusive": 601,
+        "population_n": 6117,
+        "population_residues": 2481628,
+        "sample_n": 16,
+        "length_range": [
+          318,
+          550
+        ],
+        "sample_mean_length": 388.625,
+        "population_mean_length": 405.6936406735328,
+        "pipeline_seconds_per_sequence_by_repeat": [
+          0.019802321563474834,
+          0.01928792236139998,
+          0.019272388541139662
+        ],
+        "descriptor_seconds_mean_warm": 0.000333802483510226,
+        "encoder_seconds_mean_warm": 0.01629012278863229,
+        "readout_seconds_mean_warm": 0.0009403580916114151,
+        "cached_residue_mean_singleton_seconds": 0.0013396679035698373,
+        "cached_mean_pre_singleton_seconds": 0.0009119398891925812
+      },
+      {
+        "lo": 601,
+        "hi_exclusive": 1201,
+        "population_n": 1475,
+        "population_residues": 1164623,
+        "sample_n": 16,
+        "length_range": [
+          602,
+          1062
+        ],
+        "sample_mean_length": 727.25,
+        "population_mean_length": 789.5749152542373,
+        "pipeline_seconds_per_sequence_by_repeat": [
+          0.031924060778692365,
+          0.031445231405086815,
+          0.03112331114243716
+        ],
+        "descriptor_seconds_mean_warm": 0.00036069838097319007,
+        "encoder_seconds_mean_warm": 0.02646486772573553,
+        "readout_seconds_mean_warm": 0.0012737131619360298,
+        "cached_residue_mean_singleton_seconds": 0.00198769379251947,
+        "cached_mean_pre_singleton_seconds": 0.0014065488940104842
+      },
+      {
+        "lo": 1201,
+        "hi_exclusive": 2401,
+        "population_n": 201,
+        "population_residues": 299788,
+        "sample_n": 16,
+        "length_range": [
+          1201,
+          2059
+        ],
+        "sample_mean_length": 1504,
+        "population_mean_length": 1491.4825870646766,
+        "pipeline_seconds_per_sequence_by_repeat": [
+          0.06623830937314779,
+          0.06487603235291317,
+          0.06441622041165829
+        ],
+        "descriptor_seconds_mean_warm": 0.00042693185969255865,
+        "encoder_seconds_mean_warm": 0.055883375491248444,
+        "readout_seconds_mean_warm": 0.0019073299772571772,
+        "cached_residue_mean_singleton_seconds": 0.003496245655696839,
+        "cached_mean_pre_singleton_seconds": 0.002493906804981331
+      },
+      {
+        "lo": 2401,
+        "hi_exclusive": 1000000,
+        "population_n": 15,
+        "population_residues": 43129,
+        "sample_n": 15,
+        "length_range": [
+          2405,
+          3619
+        ],
+        "sample_mean_length": 2875.266666666667,
+        "population_mean_length": 2875.266666666667,
+        "pipeline_seconds_per_sequence_by_repeat": [
+          0.14311392462501923,
+          0.142518473106126,
+          0.14150359239429236
+        ],
+        "descriptor_seconds_mean_warm": 0.000580608348051707,
+        "encoder_seconds_mean_warm": 0.1251593002739052,
+        "readout_seconds_mean_warm": 0.003637397630761067,
+        "cached_residue_mean_singleton_seconds": 0.006179758347570896,
+        "cached_mean_pre_singleton_seconds": 0.004423330351710319
+      }
+    ],
+    "lengths_above_3619": "not measured, no throughput or validity guarantee"
+  },
+  "measured_surrogate": {
+    "GPU": "one NVIDIA RTX 4090",
+    "CPU_logical": 2,
+    "CPU_physical": 1,
+    "precision": "FP32 extraction, FP16 residue roundtrip, FP32 readout",
+    "batching": "Singleton full-sequence encoder and identical singleton readout comparison; additional cached length batches use <=8 sequences/16384 padded residues.",
+    "cold_process_to_95_predictions_seconds": 19.425435449928045,
+    "load_seconds": 14.274113288149238,
+    "three_end_to_end_passes": [
+      {
+        "repeat": 0,
+        "wall_seconds": 5.151322161778808,
+        "prediction_repeat_maxdiff": 0
+      },
+      {
+        "repeat": 1,
+        "wall_seconds": 4.519644328393042,
+        "prediction_repeat_maxdiff": 0.0
+      },
+      {
+        "repeat": 2,
+        "wall_seconds": 4.488725619390607,
+        "prediction_repeat_maxdiff": 0.0
+      }
+    ],
+    "historical_frame_weighted_seconds_per_sequence_by_repeat": [
+      0.02593504784306249,
+      0.018866328211017202,
+      0.018795545056522103
+    ],
+    "cached_mean_vector_seconds_per_sequence": [
+      {
+        "batch": 1,
+        "mean_seconds_per_sequence": 0.00019502695698879268,
+        "min_seconds_per_sequence": 0.00019390760479789032,
+        "max_seconds_per_sequence": 0.0001976076121393003
+      },
+      {
+        "batch": 32,
+        "mean_seconds_per_sequence": 9.055995921555318e-06,
+        "min_seconds_per_sequence": 6.9127565151766725e-06,
+        "max_seconds_per_sequence": 4.033016923226808e-05
+      },
+      {
+        "batch": 95,
+        "mean_seconds_per_sequence": 2.958365765057112e-06,
+        "min_seconds_per_sequence": 2.7259811758995056e-06,
+        "max_seconds_per_sequence": 3.956562202227743e-06
+      }
+    ],
+    "cached_residue_and_reduced_mean_batch_sample": [
+      {
+        "mode": "residue_mean",
+        "batched_total_seconds": [
+          0.2530264984816313,
+          0.23379225935786963,
+          0.23796055931597948
+        ],
+        "batches": 14,
+        "max_batch": 8,
+        "max_padded_residues": 16384
+      },
+      {
+        "mode": "mean_pre",
+        "batched_total_seconds": [
+          0.14938150066882372,
+          0.14623922854661942,
+          0.14778334461152554
+        ],
+        "batches": 14,
+        "max_batch": 8,
+        "max_padded_residues": 16384
+      }
+    ],
+    "cache_IO": {
+      "write_fsync_seconds": 0.20490535907447338,
+      "read_copy_seconds": 0.06757873669266701,
+      "bytes": 173066880,
+      "page_cache_state": "OS page cache possibly warm; no cache dropping; storage bandwidth not certified"
+    },
+    "peak_GPU_bytes": 1666943488,
+    "peak_RSS_bytes": 2285617152,
+    "measured_process_wall_seconds_total": 33.88836898189038,
+    "measured_CPU_seconds_total": 25.967053,
+    "GPU_busy_seconds_measured": false,
+    "full_length_and_prediction_parity_pass": true
+  },
+  "conditional_scan_scenarios": [
+    {
+      "sequences": 1000000,
+      "historical_frame_reweighted_single_GPU_process_hours": 5.230815731602682,
+      "repeat_spread_hours_not_CI": [
+        5.220984737922807,
+        5.240646725282556
+      ],
+      "one_time_cold_load_seconds": 14.274113288149238,
+      "with_25pct_unmeasured_overhead_hours": 6.538519664503353,
+      "with_100pct_unmeasured_overhead_hours": 10.461631463205364,
+      "cached_residue_host_singleton_readout_hours_excluding_cache_IO": 0.30072104780603043,
+      "cached_mean_vector_readout_hours_excluding_cache_IO": {
+        "1": 0.05417415471910908,
+        "32": 0.002515554422654255,
+        "95": 0.00082176826807142
+      },
+      "storage_payload_bytes": {
+        "sequence_residue_letters_only": 290152133.2420716,
+        "probabilities63_FP32": 252000000,
+        "mean960_FP32": 3840000000,
+        "residue960_FP16": 557092095824.7776,
+        "charge39_FP32": 156000000,
+        "sequence_sha256_binary": 32000000
+      },
+      "residue_cache_read_lower_bound_hours_at_assumed_sustained_bandwidth": {
+        "100_MB_per_second": 1.5474780439577156,
+        "1_GB_per_second": 0.15474780439577157
+      },
+      "mean_cache_read_lower_bound_hours_at_assumed_sustained_bandwidth": {
+        "100_MB_per_second": 0.0111,
+        "1_GB_per_second": 0.00111
+      },
+      "output63_write_lower_bound_hours_at_assumed_100MBps": 0.0007,
+      "physical_CPU_hours_if_completed_production_mix_were_repeated": 84989.79956293698
+    },
+    {
+      "sequences": 100000000,
+      "historical_frame_reweighted_single_GPU_process_hours": 523.0815731602681,
+      "repeat_spread_hours_not_CI": [
+        522.0984737922806,
+        524.0646725282556
+      ],
+      "one_time_cold_load_seconds": 14.274113288149238,
+      "with_25pct_unmeasured_overhead_hours": 653.8519664503352,
+      "with_100pct_unmeasured_overhead_hours": 1046.1631463205363,
+      "cached_residue_host_singleton_readout_hours_excluding_cache_IO": 30.072104780603045,
+      "cached_mean_vector_readout_hours_excluding_cache_IO": {
+        "1": 5.417415471910907,
+        "32": 0.2515554422654255,
+        "95": 0.082176826807142
+      },
+      "storage_payload_bytes": {
+        "sequence_residue_letters_only": 29015213324.207165,
+        "probabilities63_FP32": 25200000000,
+        "mean960_FP32": 384000000000,
+        "residue960_FP16": 55709209582477.76,
+        "charge39_FP32": 15600000000,
+        "sequence_sha256_binary": 3200000000
+      },
+      "residue_cache_read_lower_bound_hours_at_assumed_sustained_bandwidth": {
+        "100_MB_per_second": 154.74780439577157,
+        "1_GB_per_second": 15.474780439577154
+      },
+      "mean_cache_read_lower_bound_hours_at_assumed_sustained_bandwidth": {
+        "100_MB_per_second": 1.11,
+        "1_GB_per_second": 0.111
+      },
+      "output63_write_lower_bound_hours_at_assumed_100MBps": 0.07,
+      "physical_CPU_hours_if_completed_production_mix_were_repeated": 8498979.956293698
+    }
+  ],
+  "normal_new_Atlas_production": {
+    "queue_snapshot_counts": {
+      "complete": 9937,
+      "failed": 170,
+      "pending": 26364,
+      "running": 5,
+      "science_complete": 17
+    },
+    "queue_event_counts": {
+      "claimed": 10127,
+      "compatible_result_imported": 2,
+      "created": 1,
+      "dead_owner_recovered": 193,
+      "deferred_unresolved_before_PB": 21,
+      "dispatch_enabled": 99,
+      "dispatch_stopped": 344,
+      "manifest_submitted": 1,
+      "preparation_rule_rejected_before_PB": 149,
+      "publication_claimed": 9958,
+      "publication_released": 9952,
+      "transition": 40164
+    },
+    "PB_ledger_counts_at_end": [
+      {
+        "phase": "production_pilot",
+        "status": "completed",
+        "n": 19923
+      },
+      {
+        "phase": "production_pilot",
+        "status": "running",
+        "n": 2
+      }
+    ],
+    "completed_census": {
+      "cases": 9937,
+      "with_execution_receipts": 9935,
+      "CPU_seconds_per_case": {
+        "n": 9935,
+        "sum": 3039745.171168004,
+        "mean": 305.96327842657314,
+        "min": 85.558912,
+        "median": 274.19375099999996,
+        "p90": 485.5723038000001,
+        "p95": 579.0858935999998,
+        "max": 2118.5962649999997
+      },
+      "captured_pipeline_task_wall_seconds_per_case": {
+        "n": 9935,
+        "sum": 4321001.046011911,
+        "mean": 434.92713095238156,
+        "min": 85.1908794939518,
+        "median": 397.78459944576025,
+        "p90": 670.0339570961895,
+        "p95": 789.2884999851693,
+        "max": 2489.743643500842
+      },
+      "service_task_seconds_per_case": {
+        "n": 9935,
+        "sum": 3757180.852478234,
+        "mean": 378.17623074768335,
+        "min": 85.1908794939518,
+        "median": 352.1068850988522,
+        "p90": 585.6393453195691,
+        "p95": 676.5555552901699,
+        "max": 2134.812321735546
+      },
+      "stage_pool_wait_task_seconds_per_case": {
+        "n": 9935,
+        "sum": 563820.1935336767,
+        "mean": 56.750900204698205,
+        "min": 0.0,
+        "median": 0.0,
+        "p90": 192.05529771968725,
+        "p95": 300.9299498395993,
+        "max": 1808.6889327885583
+      },
+      "queue_first_to_complete_seconds": {
+        "n": 9935,
+        "sum": 8723294.197335243,
+        "mean": 878.0366580105932,
+        "min": 115.31672644615173,
+        "median": 703.2621912956238,
+        "p90": 1078.029318571091,
+        "p95": 1254.7097597360603,
+        "max": 44622.064740896225
+      },
+      "first_run_to_science_complete_seconds": {
+        "n": 9935,
+        "sum": 4323969.298707247,
+        "mean": 435.2258982090837,
+        "min": 85.48182439804077,
+        "median": 398.16370248794556,
+        "p90": 670.3515368461611,
+        "p95": 789.9415702819824,
+        "max": 2490.0381429195404
+      },
+      "recovered_case_count": 23,
+      "C_length": {
+        "n": 189,
+        "sum": 46033.0,
+        "mean": 243.56084656084656,
+        "min": 60.0,
+        "median": 215.0,
+        "p90": 430.00000000000017,
+        "p95": 493.19999999999993,
+        "max": 603.0
+      },
+      "APBS_wall_task_seconds": {
+        "n": 189,
+        "sum": 24206.084332248196,
+        "mean": 128.07452027644547,
+        "min": 39.77543771639466,
+        "median": 112.26917856466025,
+        "p90": 202.09397417120647,
+        "p95": 240.30691484343257,
+        "max": 439.5117028718814
+      },
+      "APBS_peak_RSS_bytes": {
+        "n": 189,
+        "mean": 7059006198.518518,
+        "min": 2271121408.0,
+        "median": 6385680384.0,
+        "p90": 11417193676.8,
+        "p95": 12757139456.0,
+        "max": 23234146304.0
+      },
+      "PB_fields": {
+        "n": 189,
+        "sum": 378.0,
+        "mean": 2.0,
+        "min": 2.0,
+        "median": 2.0,
+        "p90": 2.0,
+        "p95": 2.0,
+        "max": 2.0
+      }
+    },
+    "uniform_SHA128_completed": {
+      "cases": 128,
+      "with_execution_receipts": 128,
+      "CPU_seconds_per_case": {
+        "n": 128,
+        "sum": 37707.967273999995,
+        "mean": 294.59349432812496,
+        "min": 113.51724200000001,
+        "median": 268.646026,
+        "p90": 474.3962137,
+        "p95": 542.37180845,
+        "max": 1121.523252
+      },
+      "captured_pipeline_task_wall_seconds_per_case": {
+        "n": 128,
+        "sum": 53837.83845394105,
+        "mean": 420.60811292141443,
+        "min": 135.56217294745147,
+        "median": 390.6205586530268,
+        "p90": 631.9933934560046,
+        "p95": 693.436489472212,
+        "max": 2342.3678259896114
+      },
+      "service_task_seconds_per_case": {
+        "n": 128,
+        "sum": 46952.87381661497,
+        "mean": 366.81932669230446,
+        "min": 135.56217294745147,
+        "median": 337.3538609687239,
+        "p90": 563.1334950152784,
+        "p95": 651.9625958424059,
+        "max": 1189.4184420155361
+      },
+      "stage_pool_wait_task_seconds_per_case": {
+        "n": 128,
+        "sum": 6884.964637326077,
+        "mean": 53.788786229109974,
+        "min": 0.0,
+        "median": 0.0,
+        "p90": 160.24249007077887,
+        "p95": 224.13807230480006,
+        "max": 1777.4034867612645
+      },
+      "queue_first_to_complete_seconds": {
+        "n": 128,
+        "sum": 90174.65753221512,
+        "mean": 704.4895119704306,
+        "min": 197.82239437103271,
+        "median": 685.9099982976913,
+        "p90": 1047.69935503006,
+        "p95": 1212.6730375528334,
+        "max": 2655.1734104156494
+      },
+      "first_run_to_science_complete_seconds": {
+        "n": 128,
+        "sum": 53875.50969958305,
+        "mean": 420.9024195279926,
+        "min": 136.32088375091553,
+        "median": 390.90249502658844,
+        "p90": 632.2759487867355,
+        "p95": 693.7337022304532,
+        "max": 2342.668219804764
+      },
+      "recovered_case_count": 0,
+      "C_length": {
+        "n": 128,
+        "sum": 30524.0,
+        "mean": 238.46875,
+        "min": 61.0,
+        "median": 211.0,
+        "p90": 421.19999999999993,
+        "p95": 483.54999999999995,
+        "max": 573.0
+      },
+      "APBS_wall_task_seconds": {
+        "n": 128,
+        "sum": 15764.377524232492,
+        "mean": 123.15919940806634,
+        "min": 39.77543771639466,
+        "median": 108.3106632353738,
+        "p90": 200.7155081678182,
+        "p95": 231.4598407244775,
+        "max": 390.69643664639443
+      },
+      "APBS_peak_RSS_bytes": {
+        "n": 128,
+        "mean": 6840214176.0,
+        "min": 2271121408.0,
+        "median": 5754851328.0,
+        "p90": 11470647296.0,
+        "p95": 12673101619.199999,
+        "max": 22166351872.0
+      },
+      "PB_fields": {
+        "n": 128,
+        "sum": 256.0,
+        "mean": 2.0,
+        "min": 2.0,
+        "median": 2.0,
+        "p90": 2.0,
+        "p95": 2.0,
+        "max": 2.0
+      }
+    },
+    "latest64_completed": {
+      "cases": 64,
+      "with_execution_receipts": 64,
+      "CPU_seconds_per_case": {
+        "n": 64,
+        "sum": 20086.093746000002,
+        "mean": 313.84521478125004,
+        "min": 122.86788600000001,
+        "median": 287.7820455,
+        "p90": 459.08350970000004,
+        "p95": 637.993197599999,
+        "max": 839.766564
+      },
+      "captured_pipeline_task_wall_seconds_per_case": {
+        "n": 64,
+        "sum": 21049.28683170583,
+        "mean": 328.8951067454036,
+        "min": 139.45392160955817,
+        "median": 290.2910282118246,
+        "p90": 456.6527060239576,
+        "p95": 651.2950804949261,
+        "max": 835.1408260390162
+      },
+      "service_task_seconds_per_case": {
+        "n": 64,
+        "sum": 20716.8980331691,
+        "mean": 323.70153176826716,
+        "min": 139.45392160955817,
+        "median": 287.07668409403414,
+        "p90": 456.6527060239576,
+        "p95": 651.2950804949261,
+        "max": 835.1408260390162
+      },
+      "stage_pool_wait_task_seconds_per_case": {
+        "n": 64,
+        "sum": 332.3887985367328,
+        "mean": 5.19357497713645,
+        "min": 0.0,
+        "median": 0.0,
+        "p90": 22.965015800856055,
+        "p95": 28.821716674556953,
+        "max": 34.3011524528265
+      },
+      "queue_first_to_complete_seconds": {
+        "n": 64,
+        "sum": 26520.005792617798,
+        "mean": 414.3750905096531,
+        "min": 170.54864239692688,
+        "median": 388.20585584640503,
+        "p90": 559.1111226081848,
+        "p95": 749.5725335359564,
+        "max": 956.8299832344055
+      },
+      "first_run_to_science_complete_seconds": {
+        "n": 64,
+        "sum": 21069.08992433548,
+        "mean": 329.20453006774187,
+        "min": 139.75156617164612,
+        "median": 290.58961486816406,
+        "p90": 457.00006361007695,
+        "p95": 651.5890236616124,
+        "max": 835.4234075546265
+      },
+      "recovered_case_count": 0,
+      "C_length": {
+        "n": 64,
+        "sum": 16433.0,
+        "mean": 256.765625,
+        "min": 60.0,
+        "median": 227.0,
+        "p90": 441.30000000000007,
+        "p95": 514.4,
+        "max": 603.0
+      },
+      "APBS_wall_task_seconds": {
+        "n": 64,
+        "sum": 8863.618478035554,
+        "mean": 138.49403871930554,
+        "min": 46.96091796737164,
+        "median": 124.84909384790808,
+        "p90": 206.93202067362148,
+        "p95": 279.08677841965084,
+        "max": 439.5117028718814
+      },
+      "APBS_peak_RSS_bytes": {
+        "n": 64,
+        "mean": 7536163200.0,
+        "min": 2640150528.0,
+        "median": 6624495616.0,
+        "p90": 11185519820.800003,
+        "p95": 14707833036.799986,
+        "max": 23234146304.0
+      },
+      "PB_fields": {
+        "n": 64,
+        "sum": 128.0,
+        "mean": 2.0,
+        "min": 2.0,
+        "median": 2.0,
+        "p90": 2.0,
+        "p95": 2.0,
+        "max": 2.0
+      }
+    },
+    "failed_state_captured_costs": {
+      "cases": 170,
+      "with_execution_receipts": 170,
+      "CPU_seconds_per_case": {
+        "n": 170,
+        "sum": 2290.0713850000006,
+        "mean": 13.471008147058827,
+        "min": 4.486044000000001,
+        "median": 5.3748175,
+        "p90": 7.810595499999994,
+        "p95": 77.55014354999997,
+        "max": 149.34341600000002
+      },
+      "captured_pipeline_task_wall_seconds_per_case": {
+        "n": 170,
+        "sum": 2894.8578875837848,
+        "mean": 17.02857580931638,
+        "min": 4.561547183431685,
+        "median": 5.822741423733532,
+        "p90": 48.16232791086658,
+        "p95": 82.39808860742474,
+        "max": 168.3914309013635
+      },
+      "service_task_seconds_per_case": {
+        "n": 170,
+        "sum": 2715.1421769680455,
+        "mean": 15.971424570400268,
+        "min": 4.561547183431685,
+        "median": 5.822741423733532,
+        "p90": 46.41819984596221,
+        "p95": 77.49493055427445,
+        "max": 148.24547369591892
+      },
+      "stage_pool_wait_task_seconds_per_case": {
+        "n": 170,
+        "sum": 179.71571061573923,
+        "mean": 1.057151238916113,
+        "min": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "max": 92.27659151609987
+      },
+      "queue_first_to_complete_seconds": {
+        "n": 0
+      },
+      "first_run_to_science_complete_seconds": {
+        "n": 0
+      },
+      "recovered_case_count": 170,
+      "C_length": {
+        "n": 0
+      },
+      "APBS_wall_task_seconds": {
+        "n": 0
+      },
+      "APBS_peak_RSS_bytes": {
+        "n": 0
+      },
+      "PB_fields": {
+        "n": 0
+      }
+    },
+    "execution_receipt_status_counts": [
+      {
+        "mode": "pilot",
+        "status": "completed",
+        "n": 9935
+      },
+      {
+        "mode": "pilot",
+        "status": "failed",
+        "n": 170
+      }
+    ],
+    "timing_implementation_counts": {
+      "d54cd9fcf0849be3d54bf1f906cad615bd6b2dbde2d39f50de9de4e89df5bc4c": 10105
+    },
+    "cost_definitions": {
+      "CPU_seconds": "Captured self user+system plus reaped children user+system in timed production execution receipts. Not inferred from APBS wall; stages are not added again to total.",
+      "pipeline_wall": "Sum of captured invocation elapsed times, not elapsed time of parallel full cohort. Queue intervals also include waiting/recovery/publication.",
+      "scope": "Completed snapshot biased toward finished/supported cases. No cost guarantee for remaining or much larger proteins. No archive object/label/field arrays read. Missing or killed unreceipted work and auxiliary controller/publication processes are not reconstructed.",
+      "failed": "Failed queue states and recovery events are not automatically failed PB attempts; ledger status counts are separate."
+    }
+  },
+  "one_time_AF_qualification": {
+    "PB_attempt_status_counts": {
+      "completed": 94
+    },
+    "PB_attempts_total": 94,
+    "APBS_wall_seconds_per_completed_field": {
+      "count": 94,
+      "min": 14.186707419343293,
+      "median": 335.20957588171586,
+      "max": 481.10336416307837,
+      "sum": 28405.21502470132
+    },
+    "first_APBS_start_to_last_APBS_finish_wall_seconds": 35261.781902,
+    "true_CPU_accounting_available": false,
+    "cost_scope": "APBS receipts only; excludes map generation, meshing, sampling, validation and paused wall time. Sum is task-seconds, not elapsed pipeline time.",
+    "further_retained_branch_bytes_at_completion": 340851687676,
+    "interruption_records": 2,
+    "coordinate_objects": 1,
+    "self_executed_axes": 8,
+    "not_normal_per_protein_cost": true,
+    "unmeasured_early_pre_PB_and_engineering_work": true
+  },
+  "one_time_model_development_phases": [
+    {
+      "phase": "atlas_scale_52",
+      "new_fits": 52,
+      "fit_task_wall_seconds": 592.8914979556575,
+      "GPU_busy_or_CPU_accounting_available": false
+    },
+    {
+      "phase": "pooling_20",
+      "new_fits": 20,
+      "fit_task_wall_seconds": 1525.5329706910998,
+      "GPU_process_allocated_seconds": 1737.7869868278503,
+      "encoder_launch_to_receipt_task_seconds": 482.3688077926636,
+      "encoder_cache_rows": 21915,
+      "GPU_busy_or_CPU_accounting_available": false
+    },
+    {
+      "phase": "overnight_explore",
+      "new_fits": 10,
+      "fit_task_wall_seconds": 840.7292525116354,
+      "GPU_process_allocated_seconds": 1091.481874704361,
+      "replay_cost_limitation": "Separate from fit/process cost; fresh_replay elapsed excludes cache staging, first failed alternative-batch replay wall cost not separately instrumented; do not claim exact total GPU service cost.",
+      "GPU_busy_or_CPU_accounting_available": false
+    },
+    {
+      "phase": "overnight_confirmation",
+      "new_fits": 20,
+      "fit_task_wall_seconds": 1415.2908376669511,
+      "GPU_process_allocated_seconds": 1598.7814543247223,
+      "encoder_new_extractions": 0,
+      "GPU_busy_or_CPU_accounting_available": false
+    },
+    {
+      "phase": "optimization_18",
+      "new_fits": 18,
+      "fit_task_wall_seconds": 1572.7466306947172,
+      "GPU_process_allocated_seconds": 1725.5092251300812,
+      "replay_task_wall_seconds": 122.9406622722745,
+      "failed_fits": 0,
+      "GPU_busy_or_CPU_accounting_available": false
+    },
+    {
+      "phase": "loss_probe_2",
+      "new_fits": 2,
+      "control_replay_sha256": "0a9dfba54999b32facc466871e02c4d7d07700d9537aac5987afbf79363d3e91",
+      "paired_path_sha256": "592c87ddb2ec48dc622e8f8cb9b19837a4dfce78ab4e1b6100a11b4624d2116e",
+      "note": "Process times from actual replay/path receipts, not in analyzer elapsed.",
+      "H2_process_allocated_seconds": 264.9249171456322,
+      "CE_process_allocated_seconds": 231.8667541500181
+    },
+    {
+      "phase": "traditional_14",
+      "new_fits": 14,
+      "GPU_used": false,
+      "fit_task_wall_seconds": 703.6397545523942,
+      "queue_wall_seconds": 727.8638951778412,
+      "CPU_threads": 8,
+      "actual_CPU_seconds_measured": false
+    }
+  ],
+  "one_time_scope": "Separately identified recent phases, not a complete lifetime cost inventory. Reused prior fits are excluded from new fit counts; no summing heterogeneous fit timers as GPU busy hours. Historical decoder cannot substitute for the new-C target without a separately qualified head.",
+  "conditions_and_unknowns": [
+    "No exact 1e6 or 1e8 release, sequence list, taxonomic mixture or target length histogram was supplied. Reweighting uses only the measured historical frame.",
+    "Repeat spread is timing variation, not a population confidence interval. SHA-stratified selection is label-independent but not proof of population representativeness.",
+    "Single RTX4090 FP32 unpadded sequences; no linear multi-GPU scaling guarantee. Longer sequences, other precision, optimized on-device encoder/readout and batched encoder are unmeasured.",
+    "25%/100% overhead rows and bandwidth rows are explicit scenarios, not measured uncertainty bounds.",
+    "Local OS caches may be warm. Network/database access, retries, output formatting/indexing, sharding and sustained filesystem throughput are not measured.",
+    "CPU time, GPU process allocation and wall-clock are different resources; no hardware-independent speedup claim.",
+    "Full residue cache is optional: streaming encoder then readout can discard residues and retain small outputs; output validity for new targets remains a separate gate."
+  ],
+  "sources": {
+    "atlas_scale_52": {
+      "sha256": "98e739c552975ff6edd0ddf9b42d6ce7f943efff571eb1ea51d4c15f778fbb83",
+      "basename": "summary.json"
+    },
+    "pooling_20": {
+      "sha256": "94699d4893ddef0d94efaaf98403bcddfd28d38c3bb88d93eea5ee386bb3ca97",
+      "basename": "cost_public.json"
+    },
+    "overnight_explore": {
+      "sha256": "4708ffc222ea9f9386a5e6c2d806aacc0bf6b3bc5f2b08c566b1c30379aeac5f",
+      "basename": "cost.json"
+    },
+    "overnight_confirmation": {
+      "sha256": "1f0160804cbc9a40660c5c1957615b3173b6e63d31e5f573f3fb67af504d572d",
+      "basename": "cost_public.json"
+    },
+    "optimization_18": {
+      "sha256": "ab40e8c28dce31fd49edb9ea92150b720b6d611d4d7785c24e2365302ea3577c",
+      "basename": "public_summary.json"
+    },
+    "loss_probe_2": {
+      "sha256": "c20abcc692a6b7943d6cd6b1a3c2b161bf4a7a8e1307c0cdb8f1b6ec57b2aec5",
+      "basename": "summary.json"
+    },
+    "loss_H2": {
+      "sha256": "0a9dfba54999b32facc466871e02c4d7d07700d9537aac5987afbf79363d3e91",
+      "basename": "H2_control_replay.json"
+    },
+    "loss_CE": {
+      "sha256": "592c87ddb2ec48dc622e8f8cb9b19837a4dfce78ab4e1b6100a11b4624d2116e",
+      "basename": "paired_path_checks.json"
+    },
+    "traditional_14": {
+      "sha256": "466d83c066f4d081091c3d8153e145868760b98bf1e08c96db871d28750c261b",
+      "basename": "cost.json"
+    },
+    "AF_qualification": {
+      "sha256": "294c8679760fa980956ccced40485e1643ef1c785df5bd252aa52c613dfcfd30",
+      "basename": "bridge_physical_public_v2.json"
+    }
+  },
+  "benchmark_sha256": "e6a963b81d14d92fc4bdf71de2c52b4b007562f37c6cb21ab3e326ac65fcdbab",
+  "cached_vector_benchmark_sha256": "d2ef940a24f9a5c0ad8cb1757c3df98736bdda774b451fb556a88e9ff7069ca0",
+  "production_summary_sha256": "332dc2e5a051f73ffb9c37ebdbdd45e2d191e3a249ab4205126ddbe6f245180d",
+  "plan_sha256": "62fad27be2a1e83337f5c29d25771969f5c09e613bdf3aca9c810f3826100cb5",
+  "code_sha256": "4e0f578de51399a0ec99b5c0855fdf60cdada7bf117f7bfb4d749d37a6f8b59d",
+  "no_sample_identifiers_sequences_targets_weights_or_prediction_arrays": true,
+  "new_fits": 0,
+  "new_physical_calls": 0,
+  "v2_summary_sha256": "99f72c1ed4f97eb6e9e069550ba7c94cf4747c4f3544f3b9d4f3076baa3235b1",
+  "charge_only_followup": {
+    "schema": "matched_charge_cost_aggregate_v1",
+    "measurement_sha256": "0a1c283c7e41d0b3254f40751f9cb38c294496f753fe6f7d6e25cf37163b2ae3",
+    "code_sha256": "c67b9ee881e8868f8557482b20027fbf0a5bcf62c6c9379e771ce7240717cf98",
+    "plan_sha256": "c1c4eada24079a647d51cced2a4c80355505ece6d34b1add253d4f62d6f0f795",
+    "trigger": "Bounded followup prompted by the independently frozen positive-tail screening comparison; no model or threshold selection in this cost benchmark.",
+    "same_inputs_as_primary_benchmark": 95,
+    "repeats": 3,
+    "model": "Historical composition_charge_deep seed1701 exact five OOF heads; each input routed to one original fold, not an ensemble. Timing is not an accuracy comparison with the fold0 residue head.",
+    "encoder_loaded": false,
+    "new_fits": 0,
+    "targets_read": false,
+    "strata": [
+      {
+        "length_lo": 40,
+        "length_hi_exclusive": 151,
+        "population_n": 6305,
+        "sample_n": 16,
+        "pipeline_seconds_by_repeat": [
+          0.005722705041989684,
+          0.0005541213322430849,
+          0.000557180552277714
+        ],
+        "feature_seconds_by_repeat": [
+          0.00031910534016788006,
+          0.000288104813080281,
+          0.00028897455194965005
+        ],
+        "head_seconds_by_repeat": [
+          0.005322315264493227,
+          0.00020516541553661227,
+          0.00020493497140705585
+        ],
+        "cached_head_seconds_by_repeat": [
+          0.00015826302114874125,
+          0.00014757172903046012,
+          0.00015170086408033967
+        ]
+      },
+      {
+        "length_lo": 151,
+        "length_hi_exclusive": 301,
+        "population_n": 7802,
+        "sample_n": 16,
+        "pipeline_seconds_by_repeat": [
+          0.000566899951081723,
+          0.0005592376692220569,
+          0.0005657734582200646
+        ],
+        "feature_seconds_by_repeat": [
+          0.000306343543343246,
+          0.00030515185790136456,
+          0.0003049090737476945
+        ],
+        "head_seconds_by_repeat": [
+          0.00019851187244057655,
+          0.00019527628319337964,
+          0.00019992655143141747
+        ],
+        "cached_head_seconds_by_repeat": [
+          0.00014696334255859256,
+          0.00014848547289147973,
+          0.00014779757475480437
+        ]
+      },
+      {
+        "length_lo": 301,
+        "length_hi_exclusive": 601,
+        "population_n": 6117,
+        "sample_n": 16,
+        "pipeline_seconds_by_repeat": [
+          0.0005878969095647335,
+          0.0005791860749013722,
+          0.0005795836332254112
+        ],
+        "feature_seconds_by_repeat": [
+          0.0003228394780308008,
+          0.00031795864924788475,
+          0.0003171282587572932
+        ],
+        "head_seconds_by_repeat": [
+          0.0002038321108557284,
+          0.00020129536278545856,
+          0.00019840168533846736
+        ],
+        "cached_head_seconds_by_repeat": [
+          0.00014952151104807854,
+          0.00014784472296014428,
+          0.0001470724819228053
+        ]
+      },
+      {
+        "length_lo": 601,
+        "length_hi_exclusive": 1201,
+        "population_n": 1475,
+        "sample_n": 16,
+        "pipeline_seconds_by_repeat": [
+          0.0006158380419947207,
+          0.0006027719937264919,
+          0.0006046287599019706
+        ],
+        "feature_seconds_by_repeat": [
+          0.0003506691427901387,
+          0.00034299358958378434,
+          0.000344043190125376
+        ],
+        "head_seconds_by_repeat": [
+          0.00020312314154580235,
+          0.0001987333525903523,
+          0.00019892922136932611
+        ],
+        "cached_head_seconds_by_repeat": [
+          0.00014552287757396698,
+          0.00014493416529148817,
+          0.00014840095536783338
+        ]
+      },
+      {
+        "length_lo": 1201,
+        "length_hi_exclusive": 2401,
+        "population_n": 201,
+        "sample_n": 16,
+        "pipeline_seconds_by_repeat": [
+          0.0006684223189949989,
+          0.0006599791813641787,
+          0.0006628421833738685
+        ],
+        "feature_seconds_by_repeat": [
+          0.00040112092392519116,
+          0.00040036631980910897,
+          0.0003967678057961166
+        ],
+        "head_seconds_by_repeat": [
+          0.00020420574583113194,
+          0.000199122354388237,
+          0.00020413391757756472
+        ],
+        "cached_head_seconds_by_repeat": [
+          0.000148450315464288,
+          0.0001481261570006609,
+          0.0001481210347265005
+        ]
+      },
+      {
+        "length_lo": 2401,
+        "length_hi_exclusive": 1000000,
+        "population_n": 15,
+        "sample_n": 15,
+        "pipeline_seconds_by_repeat": [
+          0.0007836698244015376,
+          0.0007649315521121025,
+          0.000795619748532772
+        ],
+        "feature_seconds_by_repeat": [
+          0.0005091557900110881,
+          0.0005015203729271889,
+          0.0005049617340167363
+        ],
+        "head_seconds_by_repeat": [
+          0.00021020372708638508,
+          0.0002002459019422531,
+          0.0002263881266117096
+        ],
+        "cached_head_seconds_by_repeat": [
+          0.00014761618028084436,
+          0.00014462949087222418,
+          0.0001484543705979983
+        ]
+      }
+    ],
+    "historical_frame_weighted_pipeline_seconds_by_repeat": [
+      0.002060471966658374,
+      0.0005673286331150942,
+      0.0005708187991569846
+    ],
+    "historical_frame_weighted_cached_singleton_seconds_by_repeat": [
+      0.00015084546797171732,
+      0.00014779878052059044,
+      0.00014876219716595374
+    ],
+    "historical_frame_weighted_descriptor_seconds_by_repeat": [
+      0.00031861100662612283,
+      0.00030737671365633357,
+      0.00030734871835047317
+    ],
+    "historical_frame_weighted_head_seconds_by_repeat": [
+      0.0016744984457273135,
+      0.00020007283675216414,
+      0.0002009314350470834
+    ],
+    "warm_pipeline_seconds_per_sequence": 0.0005690737161360394,
+    "warm_cached_singleton_seconds_per_sequence": 0.0001482804888432721,
+    "warm_feature_plus_head_seconds_per_sequence": 0.0005078648519030271,
+    "pipeline_definition": "Feature extraction, normalization/missing flags, transfer, exact head, output transfer and correctness-validation overhead. Feature+head sum excludes the per-input archived-feature assertion; additional full-library input/output IO is not included.",
+    "primary_ESMC_residue_pipeline_divided_by_charge_pipeline": 33.09050497294105,
+    "ratio_scope": "Measured engineering route ratio on the same 95 inputs and historical-frame weights, singleton GPU1, not a matched-accuracy speedup; Python/PyTorch environments differ and batching can change this ratio.",
+    "three_passes": [
+      {
+        "repeat": 0,
+        "wall_seconds": 0.14358817040920258,
+        "saved_OOF_prediction_maxdiff": 7.450580596923828e-08
+      },
+      {
+        "repeat": 1,
+        "wall_seconds": 0.059890564531087875,
+        "saved_OOF_prediction_maxdiff": 7.450580596923828e-08
+      },
+      {
+        "repeat": 2,
+        "wall_seconds": 0.060593120753765106,
+        "saved_OOF_prediction_maxdiff": 7.450580596923828e-08
+      }
+    ],
+    "saved_OOF_prediction_maxdiff": 7.450580596923828e-08,
+    "cached_five_fold_batches_seconds": [
+      0.018380151130259037,
+      0.0010405601933598518,
+      0.0009708842262625694
+    ],
+    "warm_cached_batch_seconds_per_sequence": 1.0586549576960112e-05,
+    "cached_batch_scope": "Small in-memory 95-input panel partitioned into five fold batches; not a sustained full-cache throughput measurement.",
+    "load_seconds": 2.47240696195513,
+    "new_process_to_first_95_predictions_seconds": 2.6159951323643327,
+    "process_wall_seconds": 2.8018415020778775,
+    "CPU_seconds": 2.8682179999999997,
+    "GPU_busy_seconds_measured": false,
+    "peak_GPU_bytes": 24776192,
+    "peak_RSS_bytes": 1000095744,
+    "failed_start": "First interpreter lacked pandas and stopped during imports before model/data loading. Original failure receipt retained; successful rerun used the existing training runtime. No installation or scientific-code change.",
+    "conditional_scan_scenarios": [
+      {
+        "sequences": 1000000,
+        "core_singleton_process_hours": 0.15807603226001093,
+        "warm_repeat_spread_hours_not_CI": [
+          0.15759128697641503,
+          0.15856077754360684
+        ],
+        "plus25pct_unmeasured_overhead_hours": 0.19759504032501368,
+        "plus100pct_unmeasured_overhead_hours": 0.31615206452002187
+      },
+      {
+        "sequences": 100000000,
+        "core_singleton_process_hours": 15.807603226001094,
+        "warm_repeat_spread_hours_not_CI": [
+          15.759128697641506,
+          15.856077754360683
+        ],
+        "plus25pct_unmeasured_overhead_hours": 19.759504032501365,
+        "plus100pct_unmeasured_overhead_hours": 31.615206452002187
+      }
+    ],
+    "screening_link": {
+      "independent_summary_sha256": "63cfcacc492495be8a006c6fb7772fa2b6af961f563c4b158354607e77a37a97",
+      "population_T": 21915,
+      "budget_T": 220,
+      "certified_positive_T": 135,
+      "unknown_T": 374,
+      "charge1701_selected": {
+        "certified_positive": 124,
+        "unknown": 90,
+        "certified_negative": 6
+      },
+      "charge3407_selected": {
+        "certified_positive": 121,
+        "unknown": 96,
+        "certified_negative": 3
+      },
+      "residue1701_selected": {
+        "certified_positive": 118,
+        "unknown": 99,
+        "certified_negative": 3
+      },
+      "residue3407_selected": {
+        "certified_positive": 117,
+        "unknown": 99,
+        "certified_negative": 4
+      },
+      "simple_KRDE_selected": {
+        "certified_positive": 46,
+        "unknown": 121,
+        "certified_negative": 53
+      },
+      "scope": "Historical vertex-measure label task and existing exposed T pool. Unknowns are not false positives; certified-positive recall is not recall against all physically positive objects. No new-C, AFDB or per-protein physical walltime guarantee. Selected-count reduction is an object-count comparison only."
+    },
+    "limitations": [
+      "Same small deterministic length-stratified panel, not AFDB-random; population-weighting does not remove within-stratum bias.",
+      "Three repeated timings quantify repeat variability, not population uncertainty.",
+      "The primary benchmark uses FP32 ESMC plus residue head; this supplement is the independently specified historical charge-only architecture. Cost alone does not select a final model.",
+      "No inference above the observed maximum length, networked IO, sustained cache scan or multi-GPU scaling measured."
+    ]
+  }
+}

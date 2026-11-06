@@ -1,0 +1,56 @@
+{
+  "schema": "cost_public_source_provenance_v1",
+  "sources": [
+    {
+      "file": "src/night_20261107_cost_benchmark_template.py",
+      "original_executed_source_sha256": "b421585f55cbd46cb665f853ce0dab5ce7ea7b3064b50c8563dd7de2275a387b",
+      "archived_template_sha256": "a35a84468eaa4eabcd5dad7e6d057ca88fac499737dcf7c58af241445906d6b7",
+      "status": "Template, not executed bytes. Only machine root prefixes/GPU identifier and text newline serialization changed; original numeric logic and identity guards retained. Private plan/panel/roles/checkpoints not supplied."
+    },
+    {
+      "file": "src/night_20261107_cost_cached_vectors_template.py",
+      "original_executed_source_sha256": "60e0c34d8aa6f697d1cfe03eecfeb35a4353ab5eba5adcec979c0a6061141790",
+      "archived_template_sha256": "1d9bccd7478e2bb55d2ffe7c9c178c76653cf218d54e7684c9bcbcf448b71969",
+      "status": "Template, not executed bytes. Only machine root prefixes/GPU identifier and text newline serialization changed; original numeric logic and identity guards retained. Private plan/panel/roles/checkpoints not supplied."
+    },
+    {
+      "file": "src/night_20261107_cost_charge_template.py",
+      "original_executed_source_sha256": "c67b9ee881e8868f8557482b20027fbf0a5bcf62c6c9379e771ce7240717cf98",
+      "archived_template_sha256": "4d299993bd17d898f95a756556d7632fa003e801322ac8147a67f3d4d3560ba9",
+      "status": "Template, not executed bytes. Only machine root prefixes/GPU identifier and text newline serialization changed; original numeric logic and identity guards retained. Private plan/panel/roles/checkpoints not supplied."
+    },
+    {
+      "file": "src/night_20261107_cost_production_template.py",
+      "original_executed_source_sha256": "e7ef00a5f0dc34788cbcb7fe68a388d04c54067672906ea7a9932271638f915e",
+      "archived_template_sha256": "351b566a802f002b195b03f63d3df85cc8811b1a3fd10318eeead02b3d42e867",
+      "status": "Template, not executed bytes. Only machine root prefixes/GPU identifier and text newline serialization changed; original numeric logic and identity guards retained. Private plan/panel/roles/checkpoints not supplied."
+    },
+    {
+      "file": "src/night_20261107_cost_charge_export.py",
+      "original_source_sha256": "69ab2652aad62e58eb530dd23b1f8e29d9429da6ab188cb9b988da08f056505d",
+      "archived_sha256": "69ab2652aad62e58eb530dd23b1f8e29d9429da6ab188cb9b988da08f056505d",
+      "status": "Byte-exact postprocessing source. Plot source included, rendered images excluded."
+    },
+    {
+      "file": "src/night_20261107_cost_plot.py",
+      "original_source_sha256": "695f9fd6c0bbfb29c6d84560a17d5d8f0281648d122da7d795fefe762d5969e2",
+      "archived_sha256": "695f9fd6c0bbfb29c6d84560a17d5d8f0281648d122da7d795fefe762d5969e2",
+      "status": "Byte-exact postprocessing source. Plot source included, rendered images excluded."
+    }
+  ],
+  "public_summary_exact_sha256": "297cd0267c8b13783f95426f120496d939ec2398ce8e5997333e4cf3ef122b34",
+  "report_exact_sha256": "d7b79c47e9cb01f7324adb3e23405ce287165e131a265e23971f73c992b4e9ec",
+  "prior_report_sha256": "6ce336638d21e3b1e7f47fd53055312d41ed14a4ee2176cc9d9d69a97f5a87cb",
+  "private_final_completion_sha256": "33178b04ddc9e7244dce9dd8d9c5ab2227f6ba2b8a6ffee7edb53d7b810a448c",
+  "summary_v3_retained_without_mutation": true,
+  "report_v2_scope_addition": "Explicit historical LPBE/vertex versus new NPBE/area distinction and conditional cascade arithmetic. No timing, prediction, target, threshold or model change.",
+  "excluded": [
+    "sample identities or sequences",
+    "per-object values, predictions or descriptors",
+    "model checkpoints and embeddings",
+    "physical fields or arrays",
+    "private plans, raw receipts, case tables and role membership",
+    "rendered PNG/SVG, HTML, slides"
+  ],
+  "publication_performed": false
+}

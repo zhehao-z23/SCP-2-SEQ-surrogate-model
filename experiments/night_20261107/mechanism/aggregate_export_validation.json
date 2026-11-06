@@ -1,0 +1,24 @@
+{
+  "schema": "public_aggregate_export_validation.v1",
+  "status": "pass",
+  "input_projection_sha256": "5de0fefc16638e86dc8a8292ec32228b313c154ff31c2094583b98b287b8245c",
+  "original_extract_summary_sha256": "b4cdf785c67d8f47a52eb8517e8a8f77fce0183b77c57f99beb1a8875bcf4a30",
+  "archive_exporter_sha256": "e245f22c46ccb914572b8ba8f94b178b20375069db80003636acabd89acf2666",
+  "comparisons": {
+    "summary.json": {
+      "deep_JSON_equal": true,
+      "byte_equal": true,
+      "sha256": "583f294e579dcbac8c226d50d715b3df06c0f44783ab59e75969ad959b259e97"
+    },
+    "curves.json": {
+      "deep_JSON_equal": true,
+      "byte_equal": true,
+      "sha256": "274df9be3e74cc85007479e1681f025fe6be301824ad5c388fd3786aa890e4ab"
+    }
+  },
+  "new_fits": 0,
+  "model_loads": 0,
+  "sample_reads": 0,
+  "GPU_used": false,
+  "scope": "Only archive aggregate export was executed; source extraction and model-fit adapters were not rerun."
+}

@@ -1,0 +1,179 @@
+{
+  "schema": "new_atlas_executable_handoff.v1",
+  "status": "completed_development_interface_smoke",
+  "available_accepted_new_protocol_AF_labels": 1,
+  "production_rows_admitted_or_consumed": 0,
+  "stage_summaries": {
+    "prepare": {
+      "status": "complete",
+      "accepted_labels": 1,
+      "sequence_views_equal": true,
+      "target_bins": 63,
+      "existing_cache_exact_hits": 0,
+      "guard_before_target": true,
+      "raw_phi_read": false,
+      "PB_calls": 0,
+      "code_sha256": "f160b22af2ddf01e599401ef3b5eb4a35c2d905b214c48ac5f70b08fc34bdba7",
+      "config_sha256": "840f3cd3697a08309a104eda3ccd2895fb05a6a85b1e46a88108325ca6c73872",
+      "elapsed_seconds": 2.2515126364305615,
+      "max_RSS_bytes": 301056000,
+      "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]"
+    },
+    "embedding": {
+      "status": "complete",
+      "rows": 1,
+      "frozen_encoder": true,
+      "width": 960,
+      "GPU_used": false,
+      "forward_seconds": 1.4017117349430919,
+      "code_sha256": "f160b22af2ddf01e599401ef3b5eb4a35c2d905b214c48ac5f70b08fc34bdba7",
+      "config_sha256": "840f3cd3697a08309a104eda3ccd2895fb05a6a85b1e46a88108325ca6c73872",
+      "elapsed_seconds": 6.47182381991297,
+      "max_RSS_bytes": 2138972160,
+      "python": "3.12.13 | packaged by conda-forge | (main, Aug 11 2026, 10:27:28) [GCC 14.4.0]"
+    },
+    "smoke": {
+      "status": "complete",
+      "N": 1,
+      "arms": [
+        {
+          "arm": "from_scratch",
+          "steps": 8,
+          "finite_gradients": true,
+          "probability_valid": true,
+          "checkpoint_replay_max_difference": 0.0,
+          "parameter_count": 1736255
+        },
+        {
+          "arm": "historical_hidden_rebased",
+          "steps": 8,
+          "finite_gradients": true,
+          "probability_valid": true,
+          "checkpoint_replay_max_difference": 0.0,
+          "parameter_count": 1736255
+        }
+      ],
+      "same_new_output_initialization": true,
+      "same_new_fit_only_scalers": true,
+      "old_output_discarded": true,
+      "old_optimizer_or_RNG_imported": false,
+      "new_fit_updates_total": 16,
+      "stop_or_test_partition": false,
+      "scientific_comparison_or_generalization_claim": false,
+      "historical_initialization_final_eligible": false,
+      "GPU_used": false,
+      "new_PB_calls": 0,
+      "scaler_scope": "N1 fit-only zero variance fallback; not reusable population estimates",
+      "code_sha256": "f160b22af2ddf01e599401ef3b5eb4a35c2d905b214c48ac5f70b08fc34bdba7",
+      "config_sha256": "840f3cd3697a08309a104eda3ccd2895fb05a6a85b1e46a88108325ca6c73872",
+      "elapsed_seconds": 4.735425818711519,
+      "max_RSS_bytes": 870989824,
+      "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]"
+    }
+  },
+  "checks": {
+    "status": "passed",
+    "checks_source_sha256": "34f65953c4c8ccbcaefceb70a61e852cec52511387aa528dadb59998ffb0309d",
+    "executed_adapter_sha256": "f160b22af2ddf01e599401ef3b5eb4a35c2d905b214c48ac5f70b08fc34bdba7",
+    "actual_input_first_affine_rebase_max_abs_difference": 5.9604644775390625e-06,
+    "layer_parameter_counts": {
+      "first.": 1063936,
+      "head.1.": 524800,
+      "head.4.": 131328,
+      "head.7.": 16191
+    },
+    "hidden_source_derived_parameters": 1720064,
+    "reset_output_parameters": 16191,
+    "historical_exposure_counts": {
+      "train_ids": {
+        "unique_sequences": 13162,
+        "groups": 4800
+      },
+      "stop_ids": {
+        "unique_sequences": 4389,
+        "groups": 1600
+      },
+      "evaluation_ids": {
+        "unique_sequences": 4364,
+        "groups": 1599
+      }
+    },
+    "historical_source_eligibility": "development_only; new-release final closure unresolved",
+    "no_fitting_or_model_predictions_in_this_check": true,
+    "initialization_winner_selected": false,
+    "source_summary_sha256": {
+      "prepared": "96832f8cbd67a8b27a0ee03a9705a78827e2aff66ab7c2a8656299e8906e9f6f",
+      "embedding": "067e26f64dec633abb5c33a3a8bf735599806ea2bcbc1e476c6e59b7d69a409f",
+      "smoke": "e6fa1567369c57e588f2faf5208d00c1b06b346dfd7d4924404940d7a360a99a"
+    },
+    "PB_calls": 0,
+    "GPU_used": false
+  },
+  "synthetic_checks": {
+    "status": "passed",
+    "synthetic_only": true,
+    "source_sha256": "5e13d59a39ae9ad60688c63649915e3fa90692e3a7e9c126949e3fc34d870efa",
+    "adapter_sha256": "f160b22af2ddf01e599401ef3b5eb4a35c2d905b214c48ac5f70b08fc34bdba7",
+    "affine_rebase": [
+      {
+        "mode": "residue_mean",
+        "mixed_missing_affine_rebase_max_abs_difference": 2.6226043701171875e-06,
+        "new_output_layer_retained": true
+      },
+      {
+        "mode": "mean_pre",
+        "mixed_missing_affine_rebase_max_abs_difference": 9.5367431640625e-07,
+        "new_output_layer_retained": true
+      },
+      {
+        "mode": "charge_deep",
+        "mixed_missing_affine_rebase_max_abs_difference": 1.1920928955078125e-06,
+        "new_output_layer_retained": true
+      }
+    ],
+    "padding_max_abs_difference": 1.1175870895385742e-08,
+    "dynamic_output_bins_tested": 17,
+    "rejected_contract_mutations": [
+      "measure",
+      "equation",
+      "bin_source_sha256",
+      "input_matches_prepared",
+      "role",
+      "qualification_status",
+      "final_release"
+    ],
+    "old_missing_median_changes_tested": true,
+    "N1_scientific_result": false
+  },
+  "frozen_plan_sha256": "ca002db52d5fbba74477fc4d27012b0746b97c0f10e40546b26ea2592147c15d",
+  "actual_cpu_stage_elapsed_seconds_sum": 13.45876227505505,
+  "time_scope": "Sum of three completed process-internal stages including relevant loading/hash checks; excludes inventory/synthetic/handoff checks and shell startup; not active-CPU accounting.",
+  "new_PB_calls": 0,
+  "GPU_used": false,
+  "protected_target_or_prediction_reads": 0,
+  "initialization_winner_selected": false,
+  "training_steps": 16,
+  "scientific_model_comparison_completed": false,
+  "future_independent_training_authorized": false,
+  "new_protocol": {
+    "label_measure": "area",
+    "equation": "NPBE",
+    "salt_M": 0.1,
+    "bins": 63,
+    "finite_cut_range": [
+      -20.0342930165395,
+      24.757910640129058
+    ],
+    "potential_unit": "kBT/e",
+    "bin_semantics": "61 finite central bins plus two open tails; right-bin ties; no clipping",
+    "bin_source_sha256": "4e9f05936bb1e7bf24a7fb2a5d4243fccc2bdb1f5484a6bd2074838e47a07343",
+    "scope": "Accepted exact AF-coordinate development operator, not experimental truth or all AF qualification."
+  },
+  "limits": [
+    "N1 is not validation/test or initialization evidence",
+    "N1 scalers only exercise the interface; refit on each future fit partition",
+    "Historical training, stopping and model-selection/evaluation exposures remain development-only until full new-release closure excludes protected groups",
+    "Reusable cache must match exact input-sequence and encoder/token/layer/precision identity",
+    "Future new-C release has not been admitted by this adapter"
+  ]
+}

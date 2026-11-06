@@ -1,0 +1,26 @@
+{
+  "schema": "biology_public_source_archive_v1",
+  "sources": [
+    {
+      "executed_source_SHA256": "3264ffc740c1b4e9979f60f5c8f8758587a3428d6792a924996e9a56683a6120",
+      "public_archive_file": "night_20261107_biology_analysis_public.py",
+      "public_archive_SHA256": "b0aaca89512446f76d06356178cfd5f5c2b3f3781d8fb3c4aaa5b11c3200628c",
+      "adaptation": "Private fixed Byte root/production phase paths replaced by required environment variables; two private case aliases replaced by anonymous role names. Scientific formulas, guard checks, fixed selection/ranking, uncertainty treatment unchanged. Archive copy has not been executed; original private plan pins must be intentionally adapted for reproduction. Do not claim this byte identity was the executed source."
+    },
+    {
+      "executed_source_SHA256": "5c421264b406368b0052c6760fa3e3e1cac594a18cd6aa7f1a29a82bc2ff3857",
+      "public_archive_file": "night_20261107_biology_uncertainty_public.py",
+      "public_archive_SHA256": "25d7bd03ce0b1a59894d7994e3c2c7ecf3e5123346ca169ffa4132906572391a",
+      "adaptation": "Private fixed Byte root/production phase paths replaced by required environment variables; two private case aliases replaced by anonymous role names. Scientific formulas, guard checks, fixed selection/ranking, uncertainty treatment unchanged. Archive copy has not been executed; original private plan pins must be intentionally adapted for reproduction. Do not claim this byte identity was the executed source."
+    }
+  ],
+  "aggregate_SHA256": "7a76e3ddec269d34ff73aec51bb21ca22a41c19a9c1dfc02b0ff0558a7cc75dd",
+  "public_report_SHA256": "28c048f6c6dbac506b3932565e249050723a47782e1ac270eef664ce7a188f54",
+  "exclusions": [
+    "All case identities and rows",
+    "Raw annotation/parquet, source PDB/UniProt entries",
+    "Private reports and PNGs",
+    "Private export/transfer helpers"
+  ],
+  "new_fits": 0
+}
