@@ -1,0 +1,46 @@
+{
+  "status": "complete_provisional_roles",
+  "input_eligible_v2": 3,
+  "reserved_candidate_count": 2,
+  "reserved_component_count": 2,
+  "protected_newC_sequences": 0,
+  "protected_newC_aliases": 0,
+  "old_reference_nodes": 187939,
+  "newC_reference_nodes": 133315,
+  "newC_alias_count": 706552,
+  "exact_old_alias_joins": 118043,
+  "hits": {
+    "panel_to_reference": {
+      "raw": 6316,
+      "accepted": 932
+    },
+    "reference_to_panel": {
+      "raw": 7472,
+      "accepted": 962
+    },
+    "panel_to_panel": {
+      "raw": 240,
+      "accepted": 207
+    }
+  },
+  "roles": {
+    "development_or_challenge_previously_exposed": 121,
+    "input_ineligible_or_unresolved_no_training": 93,
+    "reserved_pending_final_closure": 2,
+    "development_related_to_old_or_exposed": 1
+  },
+  "supplemental_exposure": {
+    "resolved_accessions": 143,
+    "unique_sequences": 149,
+    "unresolved_accessions": 0,
+    "accepted_hits": 0,
+    "candidate_queries": 2,
+    "historical_sequences_transferred": false
+  },
+  "final_closure_ready": false,
+  "search_scope": "Small AF panel bidirectional sequence relations against old views and newC; inherited old groups and all newC aliases. Full newC-to-old/profile closure NOT completed. Heuristic non-hit is not proof of distant-family or pLM-pretraining independence.",
+  "selection_bias": "Input-screened sample from existing biased AF pool; not a representative AFDB population or pLM-unseen set.",
+  "guard_contract_sha256": "71359d1a06e18ab5dec65e825c82a07c3d7e0401c35266e8645957b943bb903c",
+  "script_sha256": "9d68544d34c7fed39e368413317ba3602e537ec7e951238e5da7eae7035302c0",
+  "no_protected_target_or_prediction_reads": true
+}

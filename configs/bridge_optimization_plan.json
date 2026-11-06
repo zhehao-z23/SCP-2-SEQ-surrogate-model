@@ -1,0 +1,23 @@
+{
+ "stage":"bridge_20261106_optimization_v1",
+ "root":"${PROJECT_ROOT}/bridge_20261106/optimization",
+ "parent":"${PROJECT_ROOT}/atlas_scale_20261105",
+ "cache_root":"${PROJECT_ROOT}/pooling_20261105",
+ "families":["residue_mean","mean_pre","charge_deep"],
+ "policies":["fresh","plateau","reset","retain"],
+ "fold":0,"seed":1701,
+ "phase1_lr":0.0003,"phase2_lr":0.0001,
+ "plateau_lrs":[0.0003,0.0001,0.00003],
+ "plateau_trigger":"within-stage stop H fails to improve by 1e-5 for 15 epochs; change LR only, no model/optimizer/RNG rollback",
+ "plateau_early_stop":"only after final LR stage has run >=20 epochs and global best has not improved for 30 epochs; min40 overall",
+ "branch_semantics":"reset/retain branch from same fresh best model and RNG; retain loads actual same-epoch AdamW state, reset starts empty AdamW state; both LR1e-4; not continuation from phase1 terminal epoch",
+ "budget_semantics":"fresh/plateau each <=300epoch/900sec; reset/retain have an additional <=300epoch/900sec plus source cost, not compute-matched to one-stage training",
+ "screen_fits_max":12,"confirmation_fits_max":6,"max_GPU_hours":3,
+ "fit_max_seconds":900,"process_max_seconds":1020,"max_epochs":300,
+ "max_concurrency":2,"cpu_threads_per_fit":2,"automatic_retries":0,
+ "gpus":["${GPU_UUID_0}","${GPU_UUID_1}"],
+ "old_overnight_results":"reuse existing three mean_continue observations as context only; old checkpoints lack optimizer state",
+ "selection":"stop group-macro H and actual cost, evaluation exposed development; no new-C or AFDB claim",
+ "promotion":"at most six additional fits including any new source fit; prefer distinct fold/seed for best useful policy, no architecture expansion",
+ "new_C_transfer_permitted":false,"not_blind":true
+}

@@ -1,0 +1,280 @@
+{
+  "stage": "bridge_20261106_partial_publication",
+  "scope": "Optimization completed; anonymous diagnostics completed; roles provisionally reserved; physical qualification remains active and is not represented as completed.",
+  "remote_base_commit": "17404b7a82f0ec026d614af76318b3bb4a529cfc",
+  "remote_base_tree": "f954901a90b311cdddd208d542e77bfa029cb8e2",
+  "files": [
+    {
+      "path": "src/bridge_optimization_model.py",
+      "source_snapshot_sha256": "41b81d67c67a55898324f20436c487548cc45c19b0d9991f3592b9e9487fdd7d",
+      "archived_sha256": "41b81d67c67a55898324f20436c487548cc45c19b0d9991f3592b9e9487fdd7d",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "41b81d67c67a55898324f20436c487548cc45c19b0d9991f3592b9e9487fdd7d",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_optimization_train.py",
+      "source_snapshot_sha256": "dd6d59f68c3cf8034af44e307e505e7dec588a3ebdd5f3816b01b37d1e9f3736",
+      "archived_sha256": "dd6d59f68c3cf8034af44e307e505e7dec588a3ebdd5f3816b01b37d1e9f3736",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "dd6d59f68c3cf8034af44e307e505e7dec588a3ebdd5f3816b01b37d1e9f3736",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_optimization_queue.py",
+      "source_snapshot_sha256": "d4e57e75995aa7ae73d0aafa0578335abdaa3ef6a77d8708f653d174528f3b49",
+      "archived_sha256": "d4e57e75995aa7ae73d0aafa0578335abdaa3ef6a77d8708f653d174528f3b49",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "d4e57e75995aa7ae73d0aafa0578335abdaa3ef6a77d8708f653d174528f3b49",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_optimization_confirmation_queue.py",
+      "source_snapshot_sha256": "c3f9a552999d552541962a291834d66d3476465cbb359a7e1ec0028fc7cb3b09",
+      "archived_sha256": "c3f9a552999d552541962a291834d66d3476465cbb359a7e1ec0028fc7cb3b09",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "c3f9a552999d552541962a291834d66d3476465cbb359a7e1ec0028fc7cb3b09",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_optimization_build.py",
+      "source_snapshot_sha256": "a58db1c80eba55c150f66f09904ed44a0b7f8eed64369e5444d53faecec48c9c",
+      "archived_sha256": "d3a2bf0096b339b00d382230ca0681cda2b184eef4837abe755bdbdc8cfa9a33",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged",
+      "executed_sha256": "a58db1c80eba55c150f66f09904ed44a0b7f8eed64369e5444d53faecec48c9c",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_optimization_audit.py",
+      "source_snapshot_sha256": "cc6e5721a16bd2147d91be668ae2d5895d20c6436b0ae549565ee69f489e7eb2",
+      "archived_sha256": "cc6e5721a16bd2147d91be668ae2d5895d20c6436b0ae549565ee69f489e7eb2",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "cc6e5721a16bd2147d91be668ae2d5895d20c6436b0ae549565ee69f489e7eb2",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_optimization_replay.py",
+      "source_snapshot_sha256": "91c58287288a73c0ae78f0329519b565d7598442b3186f7fede5903ba7fbc205",
+      "archived_sha256": "91c58287288a73c0ae78f0329519b565d7598442b3186f7fede5903ba7fbc205",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "91c58287288a73c0ae78f0329519b565d7598442b3186f7fede5903ba7fbc205",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_optimization_references.py",
+      "source_snapshot_sha256": "b1b2ecf10e219db7f9b4a72a82edecc74ba88e70eadf1c3f6cc16c6cedd29372",
+      "archived_sha256": "bdac1b69d4882fe7d5b2f3a7752c0780624bca1c6c9d344bd66dc247c9c13d81",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged",
+      "executed_sha256": "b1b2ecf10e219db7f9b4a72a82edecc74ba88e70eadf1c3f6cc16c6cedd29372",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_optimization_legacy_charge.py",
+      "source_snapshot_sha256": "d80987c89c1e5ca6ea9f8c5ea835ce473da2bf1c8c61e14134fac3466ca610c1",
+      "archived_sha256": "bb590457406376e805fa28de16449b6fe7b678a487d70c4ec2620bbd1640c278",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged",
+      "executed_sha256": "d80987c89c1e5ca6ea9f8c5ea835ce473da2bf1c8c61e14134fac3466ca610c1",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_diagnostics_build.py",
+      "source_snapshot_sha256": "b4e2f6e89d4bdd39df9637402fb645d634c2155309460f98223b2b82a52771d8",
+      "archived_sha256": "b4e2f6e89d4bdd39df9637402fb645d634c2155309460f98223b2b82a52771d8",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "b4e2f6e89d4bdd39df9637402fb645d634c2155309460f98223b2b82a52771d8",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_tail_diagnostic.py",
+      "source_snapshot_sha256": "c9ab0112586a22c33859cea92b6be709e7e53f0e096addcda902ec7b29589671",
+      "archived_sha256": "c9ab0112586a22c33859cea92b6be709e7e53f0e096addcda902ec7b29589671",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "c9ab0112586a22c33859cea92b6be709e7e53f0e096addcda902ec7b29589671",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_roles_finalize.py",
+      "source_snapshot_sha256": "9d68544d34c7fed39e368413317ba3602e537ec7e951238e5da7eae7035302c0",
+      "archived_sha256": "9d68544d34c7fed39e368413317ba3602e537ec7e951238e5da7eae7035302c0",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "9d68544d34c7fed39e368413317ba3602e537ec7e951238e5da7eae7035302c0",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_roles_guard.py",
+      "source_snapshot_sha256": "5401723f38305496ab11ab71d07825b2f1fe56476d753593d7929ed12a693cd3",
+      "archived_sha256": "5401723f38305496ab11ab71d07825b2f1fe56476d753593d7929ed12a693cd3",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "5401723f38305496ab11ab71d07825b2f1fe56476d753593d7929ed12a693cd3",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_roles_guard_check.py",
+      "source_snapshot_sha256": "a6c1ea7c2fa9322e4692bec6f45faa02d9390ed37e64fb99fbe0fc820a01f060",
+      "archived_sha256": "a6c1ea7c2fa9322e4692bec6f45faa02d9390ed37e64fb99fbe0fc820a01f060",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "a6c1ea7c2fa9322e4692bec6f45faa02d9390ed37e64fb99fbe0fc820a01f060",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_roles_search_v2.py",
+      "source_snapshot_sha256": "11c251aadef50978d4966b7c780f129218eb50e8fc6724df9be7792ec6661dfa",
+      "archived_sha256": "626d84350e2785fd1c5c18a057854ce61326998dd2b40d135c7aec719866c701",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged",
+      "executed_sha256": "11c251aadef50978d4966b7c780f129218eb50e8fc6724df9be7792ec6661dfa",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_roles_fetch_public_AF_v2.py",
+      "source_snapshot_sha256": "e33c3a4588eb8b0f0c4d318d6d7848f4a28fbea41eb29f30d7f43179b0fa5c90",
+      "archived_sha256": "e33c3a4588eb8b0f0c4d318d6d7848f4a28fbea41eb29f30d7f43179b0fa5c90",
+      "adaptation": "byte_for_byte",
+      "executed_sha256": "e33c3a4588eb8b0f0c4d318d6d7848f4a28fbea41eb29f30d7f43179b0fa5c90",
+      "source_matches_executed": true
+    },
+    {
+      "path": "src/bridge_roles_select_v2.py",
+      "source_snapshot_sha256": "ee8371d25705913ffa5548cab1c8d37c0149de8fb66ee4ef762f3bb7060c5c3d",
+      "archived_sha256": "f0fffb01693cf447cf3a1f928881337cbe9e0e1a2cb522c03688af5d788bfc02",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged"
+    },
+    {
+      "path": "src/bridge_roles_exposure_hashes.py",
+      "source_snapshot_sha256": "dd4b46f32c54f991dbaf7422c0549b68931f806129a210f73ac2d23b3283a586",
+      "archived_sha256": "d28d4771b0768c0549c1c3bee350a483ede692b22d1937dd40dab921b19c7b20",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged"
+    },
+    {
+      "path": "src/bridge_roles_exposure_search_g3.py",
+      "source_snapshot_sha256": "19a90278d57f9d6ab1695248151f5c7231fe8f0ede3172e8ca08ee3239edc555",
+      "archived_sha256": "6f556200bd78a22ff57cd9ed054d9fa2ac44da9d16f356f39974605303bbbb49",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged",
+      "executed_sha256": "19a90278d57f9d6ab1695248151f5c7231fe8f0ede3172e8ca08ee3239edc555",
+      "source_matches_executed": true
+    },
+    {
+      "path": "configs/bridge_optimization_plan.json",
+      "source_snapshot_sha256": "a8d9b4a5abe4f315712af06c4b8341e16c4ea12fec94f5a1a4991d3d516fccb9",
+      "archived_sha256": "8f568ea9617345e938fab442beba0311e370627bdcd479af4d58c5de54a9a4dd",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged"
+    },
+    {
+      "path": "configs/bridge_optimization_confirmation_plan.json",
+      "source_snapshot_sha256": "7ea6ac7407d852708cc3f395355069e066533151119c9d450b9feb82fd5ebfdb",
+      "archived_sha256": "314d2ed97ba2e7408713596c92689843d1706a0675a44418467461f230608510",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged"
+    },
+    {
+      "path": "docs/bridge_optimization_report.md",
+      "source_snapshot_sha256": "3aff30c069916fa5ff62b438c39f106f2f30433eeafb300c4db8ca48b7cad952",
+      "archived_sha256": "3aff30c069916fa5ff62b438c39f106f2f30433eeafb300c4db8ca48b7cad952",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "docs/bridge_diagnostics_report.md",
+      "source_snapshot_sha256": "f39b85fee437b6555cc54f9850e46a0e7849634c01afd755394712cf36abf047",
+      "archived_sha256": "9666f22662b1ac7c1c8b2bdd7dc45375a08df56055e7a884530cc6c273347720",
+      "adaptation": "Appended publication status: automatic review rejected image upload; no images included; original scientific report unchanged."
+    },
+    {
+      "path": "docs/bridge_roles_report.md",
+      "source_snapshot_sha256": "cd4173dd03a1cc18ffff07cf0e4078cbd70e003ef4780cbb0b56392d39a712a0",
+      "archived_sha256": "cd4173dd03a1cc18ffff07cf0e4078cbd70e003ef4780cbb0b56392d39a712a0",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "docs/round_20261105_research.md",
+      "source_snapshot_sha256": "610dd10c1cecbe6d8fdc1fc61c47071ba1480218179fcde743905997f7a28975",
+      "archived_sha256": "0171c50e754fd3ad82c50fce2430d85b1bd52d7437964901aec20483b5f41a3a",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged"
+    },
+    {
+      "path": "experiments/bridge_20261106/optimization/summary.json",
+      "source_snapshot_sha256": "ab40e8c28dce31fd49edb9ea92150b720b6d611d4d7785c24e2365302ea3577c",
+      "archived_sha256": "ab40e8c28dce31fd49edb9ea92150b720b6d611d4d7785c24e2365302ea3577c",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/optimization/provenance.json",
+      "source_snapshot_sha256": "10a0ed5ca1714b70b1b0e725efb3659972b0ac446b6b9cd58a0e53cc3c3c0698",
+      "archived_sha256": "10a0ed5ca1714b70b1b0e725efb3659972b0ac446b6b9cd58a0e53cc3c3c0698",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/diagnostics/continuation.json",
+      "source_snapshot_sha256": "580cda000ae0bf1ff6918449f04f3147ce0e0618df91a0008a12b26edef7c9eb",
+      "archived_sha256": "580cda000ae0bf1ff6918449f04f3147ce0e0618df91a0008a12b26edef7c9eb",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/diagnostics/correlations.csv",
+      "source_snapshot_sha256": "a6ec529aa945d9589553a664d7bb92c677ee9f7571bc5ee11de9bc4d44e07e84",
+      "archived_sha256": "a6ec529aa945d9589553a664d7bb92c677ee9f7571bc5ee11de9bc4d44e07e84",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/diagnostics/receipt.json",
+      "source_snapshot_sha256": "a39427ca30cc7fdc652f5355bc3854d2d10288cfd47c1b4937d7a6ca453cfa15",
+      "archived_sha256": "a39427ca30cc7fdc652f5355bc3854d2d10288cfd47c1b4937d7a6ca453cfa15",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/diagnostics/scores.csv",
+      "source_snapshot_sha256": "973be21db4b9b9656706bdc074625811f5d538f10349ebe0bdf0519a30c9bbd7",
+      "archived_sha256": "973be21db4b9b9656706bdc074625811f5d538f10349ebe0bdf0519a30c9bbd7",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/diagnostics/strata.csv",
+      "source_snapshot_sha256": "e78ec8ed13a67c461d797253cf1d72676435eb73d85789503b56f624d03933fd",
+      "archived_sha256": "e78ec8ed13a67c461d797253cf1d72676435eb73d85789503b56f624d03933fd",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/diagnostics/tail_scale_diagnostic.json",
+      "source_snapshot_sha256": "ec1fc6ca1179f6d5d6b166c2cb78069b028b8fd966ec4d87c32e0ee532dc73a1",
+      "archived_sha256": "ec1fc6ca1179f6d5d6b166c2cb78069b028b8fd966ec4d87c32e0ee532dc73a1",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/diagnostics/visual_QA.json",
+      "source_snapshot_sha256": "c01d5a758636bf97ba02e428d3b7f86b06ee384491777ea5d1cfbed8588df694",
+      "archived_sha256": "0e92e6963a897f5a35054eb37d3ac2b9dd91af8ce30d31d6fcba4cf79bc1e2a2",
+      "adaptation": "machine paths/GPU selectors parameterized where present; LF UTF-8 archive; algorithms and scientific results unchanged"
+    },
+    {
+      "path": "experiments/bridge_20261106/roles/summary.json",
+      "source_snapshot_sha256": "dfc31548104ee9c7cabfc2a2f44465d038824e9d2976a85387f67c86f27f0163",
+      "archived_sha256": "dfc31548104ee9c7cabfc2a2f44465d038824e9d2976a85387f67c86f27f0163",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/roles/search_summary.json",
+      "source_snapshot_sha256": "64514fcfac1db4653914cdd1104670e7a1c23eea9c870add38275df2bd224f3d",
+      "archived_sha256": "64514fcfac1db4653914cdd1104670e7a1c23eea9c870add38275df2bd224f3d",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/roles/guard_check.json",
+      "source_snapshot_sha256": "fb13d853da656ab7439783d7976afd7c633df0ba4690b4c8673e8b639ab86bc0",
+      "archived_sha256": "fb13d853da656ab7439783d7976afd7c633df0ba4690b4c8673e8b639ab86bc0",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "experiments/bridge_20261106/roles/provenance.json",
+      "source_snapshot_sha256": "faf7dd9a34d2ec8443dc5106e5be4661f65fb9934613afe7a8a79d01aa1cbac8",
+      "archived_sha256": "faf7dd9a34d2ec8443dc5106e5be4661f65fb9934613afe7a8a79d01aa1cbac8",
+      "adaptation": "byte_for_byte"
+    }
+  ],
+  "private_material_excluded": [
+    "individual sequences and candidates",
+    "private role/component/alias bindings",
+    "diagnostic index/cases/private tables",
+    "physical private inputs and case-level status",
+    "targets/predictions/weights/embeddings",
+    "full execution logs"
+  ],
+  "hash_semantics": "Runtime receipts retain actual execution SHAs. Portable archive edits have separate SHAs and do not retroactively change the executed source. Sources run through stdin without a separately bound runtime SHA are source snapshots only.",
+  "image_publication": "All 22 PNG/SVG files excluded after automatic approval review rejected exact image uploads despite per-image visual/content checks. Six anonymous PNG blob objects were created by approved calls but are not referenced by this publication commit. Original figures and specific review receipts remain in private workspace."
+}

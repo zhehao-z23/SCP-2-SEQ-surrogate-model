@@ -65,4 +65,18 @@
 
 ### Byte本地ESM3可用性补核（2026-11-05）
 
-只读盘点了已知`/root/Software/models`下3层，以及`/root/Software/models/huggingface`下3层（含模型revision目录）；没有全盘搜索、凭证读取、下载或模型加载。该范围列出`arcinstitute/evo2_1b_base`、`Synthyra/ESMplusplus_small`、`Synthyra/ESMplusplus_large`、`biohub/ESMC-6B`及`biohub/ESMFold2`，**未见`esm3-sm-open-v1`模型目录或对应manifest**。因此ESM3当前应登记为“已核官方接口；已知本地模型根未找到，需获取或由用户提供其他确切路径”，不能登记为“本地exists/可立即执行”。这不是全机不存在的证明。补齐checkpoint身份、必要tokenizer/结构encoder配套资产和固定环境后，才进入16条加载/前向pilot。
+只读盘点了已知`${MODEL_ROOT}`下3层，以及`${MODEL_ROOT}/huggingface`下3层（含模型revision目录）；没有全盘搜索、凭证读取、下载或模型加载。该范围列出`arcinstitute/evo2_1b_base`、`Synthyra/ESMplusplus_small`、`Synthyra/ESMplusplus_large`、`biohub/ESMC-6B`及`biohub/ESMFold2`，**未见`esm3-sm-open-v1`模型目录或对应manifest**。因此ESM3当前应登记为“已核官方接口；已知本地模型根未找到，需获取或由用户提供其他确切路径”，不能登记为“本地exists/可立即执行”。这不是全机不存在的证明。补齐checkpoint身份、必要tokenizer/结构encoder配套资产和固定环境后，才进入16条加载/前向pilot。
+
+## 2026-11-06 补充：序列到空间电荷描述符的近邻先例
+
+本次在AF物理计算等待期间做定向补核，不重新展开模型搜索，也不把这次检索称为穷尽式创新审查。
+
+[DeepSP原论文](https://pmc.ncbi.nlm.nih.gov/articles/PMC11140563/)使用20,530条抗体Fv序列，预测MD平均的SCM/SAP共30项区域描述符；SCM来自暴露残基附近的局部电荷和，不是PB电势概率分布。正文方法与结果说明输入为IMGT对齐、one-hot后的重轻链序列，模型为CNN。[作者仓库](https://github.com/Lailabcode/DeepSP)也提供仅序列推理入口。[DeepSCM作者仓库及论文入口](https://github.com/Lailabcode/DeepSCM)证实2022年已有序列到SCM的代理模型。已核DeepSP主文相关方法/结果及两个README；没有重放其训练、读取完整SI或声称本项目优于其指标。
+
+由这些证据作出的项目判断：论文不应声称“首次从序列预测空间电荷性质”“首次以代理模型替代结构计算”，也不能仅以扩大到全库作为新意。当前可检验差异是：面向一般蛋白、指定化学与盐条件下的SES面积加权电势分布、连续量/尾部的可追溯数值资格，以及低同源评估后的适用域。差异存在不等于贡献已被证明，仍需新标签和独立科学用途证据。
+
+[Deep Sets原论文](https://arxiv.org/abs/1703.06114)已有逐元素变换后聚合范式；当前残基共享非线性后mean不承担通用架构首创主张。冻结pLM残基向量带上下文，所以本实验只检验读出位置，不能据此说序列顺序没有作用。
+
+[2026年结构/力场DNN论文](https://pmc.ncbi.nlm.nih.gov/articles/PMC13080996/)使用结构、拓扑与电性特征预测Coulomb/溶剂化能，是另一类物理代理先例。该条本次取得原始页面检索正文，直接ACS全文访问受限，未完整审阅SI。它不能作为本项目同任务直接性能基线，但进一步限制“首次电性代理模型”的措辞。
+
+收束动作：保留现有共享残基mean、mean_pre与强电荷头；不因这些先例新增CNN或大encoder扫描。后续只保留两类有具体问题的实验：新定义标签上确认当前三者排序；在合法同源闭包下比较随机初始化与历史监督初始化。若新面积标签也显示明确尾部偏差，再登记一个有限的尾部校准/复合loss对照。每项必须先固定数据/标签、训练与stop角色、主要指标及成本，再查看结果。

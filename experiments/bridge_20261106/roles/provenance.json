@@ -1,0 +1,41 @@
+{
+  "executed_sources": [
+    {
+      "relative": "code/bridge_roles_search.py",
+      "sha256": "e2e5a0aed73574e812176658ea76f4d06303c73521a5cdc25d812bf2fe64ece9"
+    },
+    {
+      "relative": "code/bridge_roles_search_v2.py",
+      "sha256": "11c251aadef50978d4966b7c780f129218eb50e8fc6724df9be7792ec6661dfa"
+    },
+    {
+      "relative": "code/bridge_roles_finalize.py",
+      "sha256": "9d68544d34c7fed39e368413317ba3602e537ec7e951238e5da7eae7035302c0"
+    },
+    {
+      "relative": "code/bridge_roles_guard.py",
+      "sha256": "5401723f38305496ab11ab71d07825b2f1fe56476d753593d7929ed12a693cd3"
+    },
+    {
+      "relative": "code/bridge_roles_guard_check.py",
+      "sha256": "a6c1ea7c2fa9322e4692bec6f45faa02d9390ed37e64fb99fbe0fc820a01f060"
+    },
+    {
+      "relative": "code/bridge_roles_fetch_public_AF_v2.py",
+      "sha256": "e33c3a4588eb8b0f0c4d318d6d7848f4a28fbea41eb29f30d7f43179b0fa5c90"
+    },
+    {
+      "relative": "code/bridge_roles_exposure_search_g3.py",
+      "sha256": "19a90278d57f9d6ab1695248151f5c7231fe8f0ede3172e8ca08ee3239edc555"
+    },
+    {
+      "relative": "code/bridge_roles_exposure_search_g3_v1.py",
+      "sha256": "0a8fcc2fab845ab51f7a420cfb4fe86f2dfb2329a18265296a6f7564d53bcf5f"
+    }
+  ],
+  "guard_contract_sha256": "71359d1a06e18ab5dec65e825c82a07c3d7e0401c35266e8645957b943bb903c",
+  "roles_private_sha256": "89a3a6ddf5018ff801a55c778ead63a6a6bd138052f96013735e09a4b27c45d8",
+  "identities_private_sha256": "f062bfe89821d9f5fd51f905d17624ce5547ffcdd760f7fe7d7dc48d3882568c",
+  "exposure_supplement_sha256": "682699cacac3cc7631032e756b9f4d1043ea4609a664d114ae61fe79ed8a9bed",
+  "private_data_not_published": true
+}

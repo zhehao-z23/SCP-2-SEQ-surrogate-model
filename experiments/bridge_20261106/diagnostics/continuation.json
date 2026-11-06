@@ -1,0 +1,32 @@
+[
+  {
+    "fold": 0,
+    "seed": 1701,
+    "source_best_epoch": 68,
+    "continued_best_epoch": 12,
+    "source_H": 0.0491035096347332,
+    "continued_H": 0.04825696349143982,
+    "source_stop": 0.04851889610290527,
+    "continued_stop": 0.04769650101661682
+  },
+  {
+    "fold": 1,
+    "seed": 1701,
+    "source_best_epoch": 61,
+    "continued_best_epoch": 26,
+    "source_H": 0.04904010891914368,
+    "continued_H": 0.04799598827958107,
+    "source_stop": 0.04844362288713455,
+    "continued_stop": 0.04750413820147514
+  },
+  {
+    "fold": 0,
+    "seed": 3407,
+    "source_best_epoch": 67,
+    "continued_best_epoch": 9,
+    "source_H": 0.04915787652134895,
+    "continued_H": 0.048313774168491364,
+    "source_stop": 0.04838663712143898,
+    "continued_stop": 0.0477798655629158
+  }
+]

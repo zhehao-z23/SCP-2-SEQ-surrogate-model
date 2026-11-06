@@ -1,0 +1,28 @@
+{
+ "stage":"bridge_20261106_optimization_confirmation_v1",
+ "registered_after":"all 12 screening fits completed and independently audited",
+ "selection":"continuous plateau had lowest stop H in all three families, and lower whole-pipeline cost than reset/retain branches; no evaluation-only selection",
+ "root":"${PROJECT_ROOT}/bridge_20261106/optimization/confirmation",
+ "parent":"${PROJECT_ROOT}/atlas_scale_20261105",
+ "cache_root":"${PROJECT_ROOT}/pooling_20261105",
+ "expected_fits":6,
+ "fits":[
+  {"family":"residue_mean","policy":"plateau","fold":1,"seed":1701},
+  {"family":"residue_mean","policy":"plateau","fold":0,"seed":3407},
+  {"family":"mean_pre","policy":"plateau","fold":1,"seed":1701},
+  {"family":"mean_pre","policy":"plateau","fold":0,"seed":3407},
+  {"family":"charge_deep","policy":"fresh","fold":1,"seed":1701},
+  {"family":"charge_deep","policy":"plateau","fold":1,"seed":1701}
+ ],
+ "initial_lr":0.0003,
+ "plateau_lrs":[0.0003,0.0001,0.00003],
+ "trigger":"within-stage no stop improvement >1e-5 for 15epoch; no model/AdamW/RNG rollback; final stage >=20epoch before patience30 early stop",
+ "reference":"Reuse original fixed-LR3e-4 pooling results for matched family/fold/seed and exact roles/scalers; no claimed optimizer restoration from old checkpoints",
+ "fit_max_seconds":900,"process_max_seconds":1020,"max_epochs":300,
+ "max_concurrency":2,"CPU_threads_per_fit":2,"automatic_retries":0,
+ "gpus":["${GPU_UUID_0}","${GPU_UUID_1}"],
+ "global_stage_GPU_hours_cap":3,
+ "screen_process_seconds_already_used":976.2576494216919,
+ "not_blind":true,"new_C_transfer_permitted":false,
+ "closure":"No more fits after these six; audit/replay and report partial factorial and dev exposure explicitly"
+}

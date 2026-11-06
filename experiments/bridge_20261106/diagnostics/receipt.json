@@ -1,0 +1,282 @@
+{
+  "status": "complete",
+  "OOF_configs": 30,
+  "continuations": 3,
+  "rows": 21921,
+  "unique_T": 21915,
+  "groups": 7999,
+  "cases": 10,
+  "CPU_threads": 4,
+  "GPU": false,
+  "elapsed_seconds": 16.070238900370896,
+  "peak_RSS_bytes": 959819776,
+  "script_sha256": "b4e2f6e89d4bdd39df9637402fb645d634c2155309460f98223b2b82a52771d8",
+  "historical_label_contract_sha256": "05932133251f6c20956d9dbf77af4d857a78137bf125b3485c1e97098ba61c9c",
+  "historical_label_binding_sha256": "c7d55d8c1f09637112da3edc0a3125ba055ceb6dd63d6d5dec3c2f90224f15b0",
+  "CDF_axis_cutpoint_range": [
+    -44.62060589458578,
+    108.05362546017078
+  ],
+  "CDF_axis_units": "kBT/e",
+  "fit_index_sha256": "224251b6320031487be1514222d8cea3a9d0201f6dfea4ddfbdc1d9e1eeff9ef",
+  "source_manifest_sha256": "d108028ecc33c40af9402dbf841734ad7d1fe22f4d275f598ebc663f7525d59c",
+  "source_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+  "environment": {
+    "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9"
+  },
+  "case_selection": "fixed deterministic five rules, two cases each, unique T and homology group deduplicated",
+  "external_requests": 0,
+  "checks": {
+    "probabilities_valid": true,
+    "OOF_complete": true,
+    "groups_disjoint": true,
+    "raw_prediction_metrics_match": true,
+    "all_HTML_images_exist": true,
+    "PNG_integrity_pass": true
+  },
+  "source_fits": [
+    {
+      "family": "residue_mean",
+      "fold": 0,
+      "seed": 3407,
+      "prediction_sha256": "5232e50023d0b1699d618125c6d1217e241dbe1f178f227984faefa1d5a900ca",
+      "curve_sha256": "98788583a4abd15955b4d92de3f16eed0db4d02ce2ed56ed575e983f05e0f229",
+      "roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a"
+    },
+    {
+      "family": "residue_mean",
+      "fold": 1,
+      "seed": 3407,
+      "prediction_sha256": "2f53db8bc217bee582a877d371f4dfe43af6f0fd3b8668d2669f2ab249d40976",
+      "curve_sha256": "78258711b419be3807bb0497eac556ebcce8cb61920c5a35695d349396bcb5ca",
+      "roles_sha256": "b535234178b3412ebe8a0bc2542c681cba8c88d1ac2d506ea200e652b4e31712"
+    },
+    {
+      "family": "residue_mean",
+      "fold": 1,
+      "seed": 1701,
+      "prediction_sha256": "58a679e49c2ea38768f8743f87b42e8d8efdb7080ca30b961f296bf7ee81e897",
+      "curve_sha256": "2b4f1322ae9a660196e401df3ddd863a4721f7b0cd0306c8fe8e889b34b62c3a",
+      "roles_sha256": "b535234178b3412ebe8a0bc2542c681cba8c88d1ac2d506ea200e652b4e31712"
+    },
+    {
+      "family": "residue_mean",
+      "fold": 0,
+      "seed": 1701,
+      "prediction_sha256": "5bc1e2b18f506d788af58f30f8b4fa7b209e80ebc65b3ca00a6bb6c0b067a621",
+      "curve_sha256": "bd0262f1d434096ffc725c4adb13c519c508adef443f60192ebc571a29ace28b",
+      "roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 0,
+      "seed": 3407,
+      "prediction_sha256": "66063a015ee9af094b96500a256f9c60ccae06160708ec407e842eca3a4f037c",
+      "curve_sha256": "e790d989baa0406810706110a8d674b3dbb811166b5ef8351ab7e69d7c5e0f41",
+      "roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 1,
+      "seed": 1701,
+      "prediction_sha256": "7bc9b0e68a35e3b00875d9c43851745215deabd509f6a49d6884bec1c1be1c2b",
+      "curve_sha256": "eb20e696965e0a86f1ea81b7784a613311228fb7b11127f46fe99958376b526d",
+      "roles_sha256": "b535234178b3412ebe8a0bc2542c681cba8c88d1ac2d506ea200e652b4e31712"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 0,
+      "seed": 1701,
+      "prediction_sha256": "717f818324c44b0ea90e287303c271b1bbe181f06a2e69d79b90568027d5f818",
+      "curve_sha256": "81a9014e540f22876902dd8314fad415509df4ef620caa53e73dacc22f42bc05",
+      "roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 1,
+      "seed": 3407,
+      "prediction_sha256": "a6bbafd0e6e98a349411669af51966aecf81c3e0636f3eb520709ed38abe66b4",
+      "curve_sha256": "bc3fa2eb88007406cddae100daa25424f7931923b47be6e59c96ecdf44233474",
+      "roles_sha256": "b535234178b3412ebe8a0bc2542c681cba8c88d1ac2d506ea200e652b4e31712"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 1,
+      "seed": 1701,
+      "prediction_sha256": "e1701ff6ba587981fc62bc14c46c233f0f6251568a9a7a57997d30b5ca400ba1",
+      "curve_sha256": "161c860c2125db0a216c0c6249139bf6a05423cf2d510e312f98df84d249c020",
+      "roles_sha256": "b535234178b3412ebe8a0bc2542c681cba8c88d1ac2d506ea200e652b4e31712"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 0,
+      "seed": 1701,
+      "prediction_sha256": "f414a3466f42cda627a8a57f86d820725b42e4e41def3978b5b0b2be2dba659e",
+      "curve_sha256": "30e84d6442a22adcd1a05d873926c488ba5d31ed616c244c50a077c4cfc62f30",
+      "roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 2,
+      "seed": 1701,
+      "prediction_sha256": "b7e9aa205b3a7858ee8aee61cf1e548616c3b68e777830ffe9e0811b019b67c9",
+      "curve_sha256": "039785ccbb3c83988a182a0a899394d2dac6f9bcb6219abdb04c1bdf5833139a",
+      "roles_sha256": "a13f343adb4e106cb1bc36121ba3b05007892b49b8842b9ac8ecb9743089ecc1"
+    },
+    {
+      "family": "residue_mean",
+      "fold": 2,
+      "seed": 1701,
+      "prediction_sha256": "63f7b83d1e92be6d62d218d893b71ba83e40ad70c89be594d3f31ad95792b794",
+      "curve_sha256": "cdf654b4b3c7cdfebdebe056237fbc58d2abf1e5829b67b0130b49d779f4d5dc",
+      "roles_sha256": "a13f343adb4e106cb1bc36121ba3b05007892b49b8842b9ac8ecb9743089ecc1"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 2,
+      "seed": 1701,
+      "prediction_sha256": "94d0a2089af83a52b42c93c3585c1d26d3fbc6cd0aeb2f93a9f7ff8a93e2f0bb",
+      "curve_sha256": "3668c78be5e5e602d7c6ba9e852c8e17877ca2f14e7a49590aacd2da935405e7",
+      "roles_sha256": "a13f343adb4e106cb1bc36121ba3b05007892b49b8842b9ac8ecb9743089ecc1"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 3,
+      "seed": 1701,
+      "prediction_sha256": "c13f09d237cb0036566e4419b62efa1c234f61c09b2490b098ea22f2fe3149b7",
+      "curve_sha256": "225917b7d3d187008fc628c460493f8168e2e4854c9f080e0bd95f3ee95c8c0b",
+      "roles_sha256": "bd707c5abe070de10a39cd06b07525928e4c3f7bb8dcaf6eff59b245d5201b6d"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 3,
+      "seed": 1701,
+      "prediction_sha256": "2b055446562530cf59c2d3379ef5dcb7cc4aac0e7860472327804a290dc0d920",
+      "curve_sha256": "00383696de1415a59a6dac591d8be4281b058627a2c6418b0cf305d686939eb4",
+      "roles_sha256": "bd707c5abe070de10a39cd06b07525928e4c3f7bb8dcaf6eff59b245d5201b6d"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 4,
+      "seed": 1701,
+      "prediction_sha256": "ba5d7bc92ff8318d7a90fcf8ded6b17f7bf3579eb73fc7dd95c9fd72e647f9c8",
+      "curve_sha256": "ae992bd3394e4647f764cf79293554cc28623f946aa6742ceb4e1066e9a47829",
+      "roles_sha256": "ed06120685d24c1647412e90be113db4bf47f036682d7c51fef3dcba4f4fa74e"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 4,
+      "seed": 1701,
+      "prediction_sha256": "d9a11f6a2eaf1b568e940681ecebb61891a88a57514e90381978a565f9395dee",
+      "curve_sha256": "d4b03a9562617138cc4e99081347ddf409ce2819e58c286a08b4deb0d0a24805",
+      "roles_sha256": "ed06120685d24c1647412e90be113db4bf47f036682d7c51fef3dcba4f4fa74e"
+    },
+    {
+      "family": "residue_mean",
+      "fold": 3,
+      "seed": 1701,
+      "prediction_sha256": "534a44cd493a550e69dbf43404d96158046bb316ad63cbe4384afd8baab46022",
+      "curve_sha256": "b98492b2a9eae7d70719dd5d2fbcdbd72fcf60d1d44a0094ff3451ff574e0218",
+      "roles_sha256": "bd707c5abe070de10a39cd06b07525928e4c3f7bb8dcaf6eff59b245d5201b6d"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 0,
+      "seed": 3407,
+      "prediction_sha256": "4dfa07b9a5aaf53181c7f3320bdba1d2baa5a3d84daee4a4b66021bf79c50a97",
+      "curve_sha256": "84c669bfb4cda7c8887497c9863c1348c2edeb1bd5c81b263515916126998ad1",
+      "roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 1,
+      "seed": 3407,
+      "prediction_sha256": "3759f2e0e6c9a278a9cbc95e71f288b468e2fa7faef46064a886a7836d22be7d",
+      "curve_sha256": "b55ac3b69a5ed176c064916835aad71fb4f3fd9b413d432d48464eaa783e94da",
+      "roles_sha256": "b535234178b3412ebe8a0bc2542c681cba8c88d1ac2d506ea200e652b4e31712"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 2,
+      "seed": 3407,
+      "prediction_sha256": "e17e41674c8dccc848eaac3cab13780b762e04650a65abb1338a4a80003522f3",
+      "curve_sha256": "3d3c30aa254f12f05416fd167902d8d0a2f9bf6c10fe885a0ad4a2e59159e0fb",
+      "roles_sha256": "a13f343adb4e106cb1bc36121ba3b05007892b49b8842b9ac8ecb9743089ecc1"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 2,
+      "seed": 3407,
+      "prediction_sha256": "e41895a22be7786e481d6812016840829d514211fbe552ee0b4dc7e9392c4606",
+      "curve_sha256": "07d494250d89d7049c61ac08a0aefce927201fcc94894649c3c248a34758baa6",
+      "roles_sha256": "a13f343adb4e106cb1bc36121ba3b05007892b49b8842b9ac8ecb9743089ecc1"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 3,
+      "seed": 3407,
+      "prediction_sha256": "37629f49ef69cebbf8a442c8a755768769c2b09d76e5724a5ac68d7f7bf8a57b",
+      "curve_sha256": "02222ebe7b382398aa459aa9f0312c8976ff39cf0c19258413ccbc7be2074986",
+      "roles_sha256": "bd707c5abe070de10a39cd06b07525928e4c3f7bb8dcaf6eff59b245d5201b6d"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 3,
+      "seed": 3407,
+      "prediction_sha256": "b2b12d88a1f8c47f43a5ebc37339854aad5c9259d46aa8782ee0ae24b08ec483",
+      "curve_sha256": "ded812504bd84b24b7d662d06f6c9cf4450b36008f3428f0fb8443bf120880fb",
+      "roles_sha256": "bd707c5abe070de10a39cd06b07525928e4c3f7bb8dcaf6eff59b245d5201b6d"
+    },
+    {
+      "family": "mean_pre",
+      "fold": 4,
+      "seed": 3407,
+      "prediction_sha256": "180f5cc02f74bb3f10d7f436a28d9dbf61951a37c4df7e5c2e397e56f0217d3a",
+      "curve_sha256": "15dcdfa530a5f5380ba130af3bd74ea21ce7531adc3f376283ab5c67a2685eca",
+      "roles_sha256": "ed06120685d24c1647412e90be113db4bf47f036682d7c51fef3dcba4f4fa74e"
+    },
+    {
+      "family": "composition_charge_deep",
+      "fold": 4,
+      "seed": 3407,
+      "prediction_sha256": "6e9d894530118316e471cd0d3e325c8c319502833bc44c725d1b8c40b9a41915",
+      "curve_sha256": "a346887e91f07d0463b716a730e917a802b65e10877a67fccab39ee0b3ad7bbd",
+      "roles_sha256": "ed06120685d24c1647412e90be113db4bf47f036682d7c51fef3dcba4f4fa74e"
+    },
+    {
+      "family": "residue_mean",
+      "fold": 4,
+      "seed": 1701,
+      "prediction_sha256": "41e2659710f897ffcbcd3a2a3e6289e4b770f44858d1f88229fe7dd16a6f7228",
+      "curve_sha256": "36cb3545d79c025e70ea787d428857f6f1e5f446729355b511684c4b07395a13",
+      "roles_sha256": "ed06120685d24c1647412e90be113db4bf47f036682d7c51fef3dcba4f4fa74e"
+    },
+    {
+      "family": "residue_mean",
+      "fold": 2,
+      "seed": 3407,
+      "prediction_sha256": "4f28dbc7c75fa94b21e24ceccb785d054b6853bbfabb07f489ab48ebfc8217d4",
+      "curve_sha256": "cc9d555390aa8300bf6d116448f29bb52a858dc4bc9c7e414f3367145ba1783e",
+      "roles_sha256": "a13f343adb4e106cb1bc36121ba3b05007892b49b8842b9ac8ecb9743089ecc1"
+    },
+    {
+      "family": "residue_mean",
+      "fold": 3,
+      "seed": 3407,
+      "prediction_sha256": "a1d506df53b28b206110dabc0493824c3a284e6b363fa2bfda79a9e9649ef291",
+      "curve_sha256": "7ab6af0ebdb34a324808e1d83b54e9e7c388999e7f02b2c18aaeb07ea225c2f8",
+      "roles_sha256": "bd707c5abe070de10a39cd06b07525928e4c3f7bb8dcaf6eff59b245d5201b6d"
+    },
+    {
+      "family": "residue_mean",
+      "fold": 4,
+      "seed": 3407,
+      "prediction_sha256": "82fe648b97c3428b295e9b5de9bfff4e0955965de54d14a01243a9921e7d9e7c",
+      "curve_sha256": "227e17774370ab849d51aecbb30f3ff5aef433cab16c010f2df39f2943e395a4",
+      "roles_sha256": "ed06120685d24c1647412e90be113db4bf47f036682d7c51fef3dcba4f4fa74e"
+    }
+  ]
+}

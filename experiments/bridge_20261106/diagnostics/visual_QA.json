@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "png_visual_review": "All 10 anonymous plots and 10 private cases inspected via rendered contact sheets; additionally length strata and worst-case plot inspected full-size.",
+  "corrections": [
+    "Numeric order for length and coverage bins",
+    "One unique homology group per case across all fixed-rule categories",
+    "Historical CDF plot axis bound to actual label contract, not newC bins"
+  ],
+  "browser_page_screenshot": false,
+  "HTML_resource_integrity": true,
+  "PNG_integrity": true,
+  "case_groups_unique": 10,
+  "external_requests": 0,
+  "axis_correction_full_size_review_cases": [
+    3,
+    10
+  ],
+  "numerical_aggregate_hashes_unchanged": true
+}

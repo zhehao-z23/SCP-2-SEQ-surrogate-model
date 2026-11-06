@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "contract_sha256": "71359d1a06e18ab5dec65e825c82a07c3d7e0401c35266e8645957b943bb903c",
+  "guard_sha256": "5401723f38305496ab11ab71d07825b2f1fe56476d753593d7929ed12a693cd3",
+  "cases": [
+    {
+      "case": "known_development",
+      "expected_allowed": true,
+      "passed": true
+    },
+    {
+      "case": "unknown_identity",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "final_closure_missing",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "unpinned_contract",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "empty_identity",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "reserved_train",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "reserved_stop",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "reserved_model_select",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "reserved_model_eval",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "reserved_read_target",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "reserved_predict",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "reserved_alias",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "changed_groupmap_lock",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "missing_search_or_source_lock",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "incomplete_search",
+      "expected_allowed": false,
+      "passed": true
+    },
+    {
+      "case": "tampered_protected_identity_lists",
+      "expected_allowed": false,
+      "passed": true
+    }
+  ]
+}

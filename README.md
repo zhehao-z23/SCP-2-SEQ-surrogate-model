@@ -1,36 +1,27 @@
-# 模型研究：2026-11-06夜间结果
+# SCP sequence surrogate: bridge stage, 2026-11-06
 
-**已完成44次新增拟合，以及旧结果复用、预测重算、checkpoint回放和64条AF来源序列的实际推理。** Byte权威根：`${PROJECT_ROOT}/overnight_20261106`。
+**本阶段仍在进行：优化、匿名诊断和暂定保护登记已完成；AF新物理资格尚未在本次公开归档中验收。** 历史Atlas开发成绩不等于新C最终模型，也不授权全sequence space精度扫描。
 
-主确认：21,921行、21,915个teacher序列、7,999组；三家模型五折两seed，共30配置，其中10个复用、20个新增，全部早停完成。各seed独立聚合，不合并为更多蛋白；这里是历史Atlas已曝光开发OOF。
+18次新增优化拟合全部early-stop，独立预测复算及18个checkpoint恢复通过。冻结ESMC300＋共享残基非线性后mean＋电荷仍是主候选；下一阶段优先验证连续plateau降LR `3e-4 → 1e-4 → 3e-5`，mean_pre作匹配机制对照，并保留旧capacity runner更强的电荷基线。
 
-| 模型 | seed1701组宏H↓ | seed3407组宏H↓ |
+| residue_mean配置 | 固定LR组宏H↓ | 连续plateau组宏H↓ |
 |---|---:|---:|
-| 共享残基非线性后mean＋电荷 | **0.049038** | **0.049027** |
-| 先mean再MLP＋电荷 | 0.050601 | 0.050433 |
-| 电荷深MLP | 0.052344 | 0.052358 |
-| HistGBDT | 0.054149 | 未追加 |
-| ExtraTrees | 0.054794 | 未追加 |
+| fold0 / seed1701 | 0.04910350 | 0.04804177 |
+| fold1 / seed1701 | 0.04904011 | 0.04795070 |
+| fold0 / seed3407 | 0.04915787 | 0.04815976 |
 
-共享残基mean在10/10个折×seed对比中均胜过mean与电荷深头。相对mean总体H改善3.09%/2.79%，相对电荷深头改善6.32%/6.36%；总体CDF与尾误差也改善。**主架构方向因此更明确。**树模型实际做了14fit及两家完整五折，保留GBDT作论文参照，停止本轮扩搜。
+这只是部分fold/seed复制。与前夜低LR续训相比，增益较小、部分描述性区间跨0，而且尾误差有局部代价。新共同runner的charge结果没有取代旧强基线。训练进程总占用0.4793 GPU小时，恢复脚本122.94秒另列。[优化报告](docs/bridge_optimization_report.md)和[聚合结果](experiments/bridge_20261106/optimization/summary.json)保留比较口径、成本与限制。
 
-新的有效改进是**降低LR到1e−4、重启AdamW继续训练原残基mean**：fold0/1701、fold1/1701、fold0/3407的H分别到0.048257、0.047996、0.048314，三配置H/CDF/尾误差均改善。尚未完整五折两seed，不能与上表OOF混排为最终第一。
+[匿名诊断](docs/bridge_diagnostics_report.md)覆盖30个完整OOF配置与3个既有续训结果。H与长度相关很弱；尾箱误差与长度的关联部分来自真实尾质量的尺度，剩余关系仍须面对。真实目标尺度用于回顾诊断，不是可部署特征或因果解释。病例CDF轴已绑定历史切点，个例序列、真实/预测分布和私有图册均不公开。匿名图表已完成核验并保留在本地/服务器；具体图片上传被自动审批拒绝，本次公开提交仅包含代码、数值摘要和报告，不含PNG/SVG。
 
-attention做了均匀初始化、暖启动和零残差门控等8个辨识实验。暖启动最好的H仅比匹配的mean继续训练低0.000048，注意力接近均匀；主要收益来自额外低LR优化。暂不扩大attention搜索，也未否定所有attention。共享读出、MIL attention及ReZero均有文献先例，不作为原创架构主张。
+两对象、两组件已实际登记为 **reserved_pending_final_closure**，保护标签和模型预测未读。已完成小面板与187,939旧视图、133,315新C序列的双向关系搜索，并保留706,552别名与旧组件；另在原服务器完成143历史曝光ID、149序列视图的补查，无历史FASTA跨机复制。16项守卫检查通过。**这不是最终独立外测**：完整新release组图与profile闭包未齐时，最终放行仍拒绝；旧角色与训练资格gate也仍必须满足。[保护报告](docs/bridge_roles_report.md)和[匿名收据](experiments/bridge_20261106/roles/summary.json)给出边界。
 
-**全空间扫描尚未通过的关键项：**严格T=U子群有1,164行/767组，其H优势比旧两折更明确；这只表示当前序列hash相等，不等同天然全长物理资格。>600 aa相对电荷头仍有seed/指标差异，T=U且>600仅48行/42组，H不稳、CDF/尾误差仍有劣化。新C物理目标、保护组与用途误差资格也没有被历史成绩替代。
+创新主张继续收窄：Deep Sets、MIL attention、ReZero及序列到空间电荷proxy均有先例，包括DeepSP/DeepSCM。项目应以清楚定义的结构/序列/物理标签合同、可靠转移与验证证据建立贡献，不宣称首次从序列预测空间电荷或原创pooling架构。[研究核验记录](docs/round_20261105_research.md)包含本次增补。
 
-64条既有AF候选序列已实际全长编码和双头推理，冷进程共7.77秒，独立回放最大概率差1.64×10⁻⁷。它们来自有偏候选池；旧240箱标签不直接兼容当前63箱，暂停新标签数值资格未通过，**本轮没有AF精度结论**。
+## Reproduction and history
 
-下一步优先补齐继续训练的确认，并给必要强基线同等低LR优化机会，再用合格新C标签比较随机初始化与历史暖启动。未来保护组须从旧监督和stop选择阶段隔离；先迁移架构/配置，不能把旧权重直接称为合格最终初始化。随后补足长全长及跨来源物理挑战证据；不重开全部架构笛卡尔积。
+- [Bridge reproduction](docs/bridge_reproduction.md) and [executed/archive source provenance](docs/bridge_source_provenance.json).
+- [Completed overnight stage](docs/overnight_20261106.md): 44 new fits, five-fold/two-seed development OOF, traditional baselines and AFDB engineering evidence.
+- [Earlier 52-fit Atlas stage](experiments/atlas_scale_20261105/README.md), [20-fit pooling stage](experiments/pooling_20261105/README.md), [original source layout](docs/reproduction.md), [runtime requirements](requirements-stage.txt), and [contribution rules](CONTRIBUTING.md).
 
-详细结果与原始证据留在Byte各分支；公开代码与无样本明细摘要见[本轮Git分支](https://github.com/zhehao-z23/SCP-2-SEQ-surrogate-model/tree/codex/overnight-20261106)，总报告为`docs/overnight_20261106.md`。源码、配置和结果各有SHA；公开模板若改动环境路径，会区分归档SHA与实际执行SHA。
-
-## Repository evidence and reproduction
-
-- [Full overnight report](docs/overnight_20261106.md), [reproduction instructions](docs/overnight_reproduction.md), and [execution/archive provenance](docs/overnight_source_provenance.json).
-- [Five-fold/two-seed confirmation](experiments/overnight_20261106/confirmation/summary.json), [mechanism exploration](experiments/overnight_20261106/explore/summary_public.json), [traditional baselines](experiments/overnight_20261106/traditional/summary.json), and [AFDB engineering diagnostic](experiments/overnight_20261106/afdb/summary_public.json).
-- Earlier [52-fit Atlas scale stage](experiments/atlas_scale_20261105/README.md) and [20-fit pooling stage](experiments/pooling_20261105/README.md) remain unchanged historical evidence.
-- [Original data/module layout](docs/reproduction.md), [pooling reproduction](docs/pooling_reproduction.md), [head runtime requirements](requirements-stage.txt), and [contribution rules](CONTRIBUTING.md).
-
-`src/` holds source, `configs/` holds plans/templates, `docs/` holds scientific and reproduction notes, and `experiments/` holds aggregate evidence. Raw datasets, private sample/sequence identities, embeddings, predictions, checkpoints and full logs remain in the execution workspace. Portable settings must be materialized on the target machine; do not substitute public archive hashes for the recorded original execution hashes.
+`src/` contains source, `configs/` portable plans, `docs/` scientific/reproduction notes, and `experiments/` anonymous aggregates. Raw data, private identities and roles, embeddings, predictions, weights and full logs stay in the execution workspace. Archived portable edits and actual executed source hashes are recorded separately. Publication of this partial stage does not mark the full bridge objective complete.

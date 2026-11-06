@@ -53,3 +53,13 @@ Thumbs.db
 # Private AFDB diagnostics inputs
 overnight_afdb_private_panel.json
 overnight_afdb_sequences.json
+
+# Bridge private identities, diagnostic cases and role bindings.
+*_private.json
+*_private/
+roles_private.json
+guard_identities_private.json
+guard_contract.json
+**/diagnostics/index.html
+**/diagnostics/cases/
+**/diagnostics/private/
