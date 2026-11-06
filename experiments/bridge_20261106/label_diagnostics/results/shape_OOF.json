@@ -1,0 +1,1705 @@
+{
+  "schema": "public_aggregate_diagnostic_v1",
+  "status": "completed_development_diagnostic",
+  "diagnostic": "shape_OOF",
+  "new_fits": 0,
+  "new_physical_solves": 0,
+  "raw_phi_reads": 0,
+  "model_loads": 0,
+  "public_sample_memberships": false,
+  "results": {
+    "cohort": {
+      "rows": 21921,
+      "unique_T": 21915,
+      "groups": 7999
+    },
+    "OOF_fits": 30,
+    "seeds": [
+      1701,
+      3407
+    ],
+    "seeds_are_not_independent_sample_replicates": true,
+    "definitions": {
+      "proxy": "First cumulative p>=q bin; finite central interval uses uniform-density interpolation. Open-tail bins abstain even at boundary. Model p is row-renormalized only for proxy quantiles.",
+      "truth": "Previously verified raw QC type7-compatible q25/q50/q75; IQR and Bowley computed per original sample.",
+      "absolute_shape": "Raw IQR>=1 and Bowley<=-.30 or >=+.30; no original source-percentile condition.",
+      "aggregation": "Each row metric -> same T within group mean -> equal groups. Missing proxy metrics excluded only from that metric and support reported; common support supplied separately.",
+      "confusion": "Full row events with distinct T/groups plus ratios of group-balanced TP/FP/FN masses; rejected positives remain FN.",
+      "oracle": "True63 under the same within-bin-uniform inverse-CDF rule. Assumption-based reference; not best attainable or irreducible error lower bound. Includes quantile-estimator convention differences."
+    },
+    "limits": [
+      "All observations are previously exposed development; neither final-test claims nor source-population extreme screening.",
+      "Two seeds are reported separately on the same samples; no seed-as-independent-n pooling or best-seed selection.",
+      "Multiple target views remain separate. No probability or raw shape averaging; fixed canonical-row scores used only for T-budget ranking and any-view raw truth is explicit.",
+      "No mode classification, AP/PR sweep, model loading, new fit or raw phi matrix access."
+    ],
+    "elapsed_seconds": 6.316505585797131,
+    "peak_RSS_KiB": 437500,
+    "results": [
+      {
+        "family": "oracle_true63_uniform",
+        "seed": null,
+        "metrics": {
+          "H": {
+            "group_macro": 0.0,
+            "protein_macro": 0.0,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "CDF_MSE": {
+            "group_macro": 0.0,
+            "protein_macro": 0.0,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "edge_MAE": {
+            "group_macro": 0.0,
+            "protein_macro": 0.0,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Q50_AE": {
+            "group_macro": 0.04098032534522055,
+            "protein_macro": 0.039475824134378085,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "IQR_AE": {
+            "group_macro": 0.19248462142565756,
+            "protein_macro": 0.18784141251398578,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Bowley_AE": {
+            "group_macro": 0.012414413628916538,
+            "protein_macro": 0.011780563892113474,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          }
+        },
+        "support": {
+          "Q50_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "Q50_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "IQR_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "IQR_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "Bowley_eligible": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "any_quantile_open_tail": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "finite_predicted_IQR_below_1": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          }
+        },
+        "negative": {
+          "row_events": {
+            "TP": {
+              "rows": 27,
+              "unique_T": 27,
+              "groups": 26
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 34,
+              "unique_T": 34,
+              "groups": 33
+            },
+            "TN": {
+              "rows": 21860,
+              "unique_T": 21854,
+              "groups": 7965
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 61,
+            "unique_T": 61,
+            "groups": 59
+          },
+          "predicted_positive": {
+            "rows": 27,
+            "unique_T": 27,
+            "groups": 26
+          },
+          "row_precision": 1.0,
+          "row_recall": 0.4426229508196721,
+          "group_balanced_event_masses": {
+            "TP": 0.002419637966728412,
+            "FP": 0.0,
+            "FN": 0.0025890682222723727
+          },
+          "group_balanced_precision": 1.0,
+          "group_balanced_recall": 0.4830864250017267,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "positive": {
+          "row_events": {
+            "TP": {
+              "rows": 4,
+              "unique_T": 4,
+              "groups": 4
+            },
+            "FP": {
+              "rows": 1,
+              "unique_T": 1,
+              "groups": 1
+            },
+            "FN": {
+              "rows": 13,
+              "unique_T": 13,
+              "groups": 13
+            },
+            "TN": {
+              "rows": 21903,
+              "unique_T": 21897,
+              "groups": 7988
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 17,
+            "unique_T": 17,
+            "groups": 17
+          },
+          "predicted_positive": {
+            "rows": 5,
+            "unique_T": 5,
+            "groups": 5
+          },
+          "row_precision": 0.8,
+          "row_recall": 0.23529411764705882,
+          "group_balanced_event_masses": {
+            "TP": 0.00016743164324111942,
+            "FP": 2.083593782556153e-05,
+            "FN": 0.0013793390840521733
+          },
+          "group_balanced_precision": 0.8893280632411067,
+          "group_balanced_recall": 0.1082459347637833,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "fixed_one_percent_ranking": {
+          "budget_fraction": 0.01,
+          "budget_T": 220,
+          "denominator_T": 21915,
+          "rankable_T": 21915,
+          "rejected_T": 0,
+          "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+          "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+          "population": "Exposed development T pool, not historical source population percentiles",
+          "negative": {
+            "selected_T": 220,
+            "selected_groups": 179,
+            "true_positive_T": 61,
+            "true_positive_groups": 59,
+            "false_positive_T": 159,
+            "false_negative_T": 0,
+            "truth_positive_T": 61,
+            "precision": 0.2772727272727273,
+            "recall": 1.0
+          },
+          "positive": {
+            "selected_T": 220,
+            "selected_groups": 113,
+            "true_positive_T": 16,
+            "true_positive_groups": 16,
+            "false_positive_T": 204,
+            "false_negative_T": 1,
+            "truth_positive_T": 17,
+            "precision": 0.07272727272727272,
+            "recall": 0.9411764705882353
+          }
+        }
+      },
+      {
+        "family": "composition_charge_deep",
+        "seed": 1701,
+        "metrics": {
+          "H": {
+            "group_macro": 0.05234426352014168,
+            "protein_macro": 0.05212043737492982,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "CDF_MSE": {
+            "group_macro": 0.00019647455058936214,
+            "protein_macro": 0.00019563662662405544,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "edge_MAE": {
+            "group_macro": 0.002077416269901695,
+            "protein_macro": 0.0019577418540853656,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Q50_AE": {
+            "group_macro": 0.5141080697785209,
+            "protein_macro": 0.5396263937842972,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "IQR_AE": {
+            "group_macro": 1.0388928447061567,
+            "protein_macro": 1.0365940264919378,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Bowley_AE": {
+            "group_macro": 0.048282923158447726,
+            "protein_macro": 0.04776971886130933,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          }
+        },
+        "support": {
+          "Q50_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "Q50_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "IQR_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "IQR_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "Bowley_eligible": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "any_quantile_open_tail": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "finite_predicted_IQR_below_1": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          }
+        },
+        "negative": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 61,
+              "unique_T": 61,
+              "groups": 59
+            },
+            "TN": {
+              "rows": 21860,
+              "unique_T": 21854,
+              "groups": 7965
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 61,
+            "unique_T": 61,
+            "groups": 59
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0050087061890007846
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "positive": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 17,
+              "unique_T": 17,
+              "groups": 17
+            },
+            "TN": {
+              "rows": 21904,
+              "unique_T": 21898,
+              "groups": 7988
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 17,
+            "unique_T": 17,
+            "groups": 17
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0015467707272932925
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "fixed_one_percent_ranking": {
+          "budget_fraction": 0.01,
+          "budget_T": 220,
+          "denominator_T": 21915,
+          "rankable_T": 21915,
+          "rejected_T": 0,
+          "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+          "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+          "population": "Exposed development T pool, not historical source population percentiles",
+          "negative": {
+            "selected_T": 220,
+            "selected_groups": 167,
+            "true_positive_T": 21,
+            "true_positive_groups": 19,
+            "false_positive_T": 199,
+            "false_negative_T": 40,
+            "truth_positive_T": 61,
+            "precision": 0.09545454545454546,
+            "recall": 0.3442622950819672
+          },
+          "positive": {
+            "selected_T": 220,
+            "selected_groups": 64,
+            "true_positive_T": 3,
+            "true_positive_groups": 3,
+            "false_positive_T": 217,
+            "false_negative_T": 14,
+            "truth_positive_T": 17,
+            "precision": 0.013636363636363636,
+            "recall": 0.17647058823529413
+          }
+        }
+      },
+      {
+        "family": "mean_pre",
+        "seed": 1701,
+        "metrics": {
+          "H": {
+            "group_macro": 0.05060096058389979,
+            "protein_macro": 0.05074923474797421,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "CDF_MSE": {
+            "group_macro": 0.00019515888647097813,
+            "protein_macro": 0.0001918857635725396,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "edge_MAE": {
+            "group_macro": 0.0019700578597103844,
+            "protein_macro": 0.001888028141940116,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Q50_AE": {
+            "group_macro": 0.5369661798037033,
+            "protein_macro": 0.5621529461038817,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "IQR_AE": {
+            "group_macro": 0.9269295465670317,
+            "protein_macro": 0.9411160087370405,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Bowley_AE": {
+            "group_macro": 0.046494075598819046,
+            "protein_macro": 0.04619460600595091,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          }
+        },
+        "support": {
+          "Q50_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "Q50_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "IQR_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "IQR_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "Bowley_eligible": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "any_quantile_open_tail": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "finite_predicted_IQR_below_1": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          }
+        },
+        "negative": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 61,
+              "unique_T": 61,
+              "groups": 59
+            },
+            "TN": {
+              "rows": 21860,
+              "unique_T": 21854,
+              "groups": 7965
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 61,
+            "unique_T": 61,
+            "groups": 59
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0050087061890007846
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "positive": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 17,
+              "unique_T": 17,
+              "groups": 17
+            },
+            "TN": {
+              "rows": 21904,
+              "unique_T": 21898,
+              "groups": 7988
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 17,
+            "unique_T": 17,
+            "groups": 17
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0015467707272932925
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "fixed_one_percent_ranking": {
+          "budget_fraction": 0.01,
+          "budget_T": 220,
+          "denominator_T": 21915,
+          "rankable_T": 21915,
+          "rejected_T": 0,
+          "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+          "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+          "population": "Exposed development T pool, not historical source population percentiles",
+          "negative": {
+            "selected_T": 220,
+            "selected_groups": 158,
+            "true_positive_T": 30,
+            "true_positive_groups": 28,
+            "false_positive_T": 190,
+            "false_negative_T": 31,
+            "truth_positive_T": 61,
+            "precision": 0.13636363636363635,
+            "recall": 0.4918032786885246
+          },
+          "positive": {
+            "selected_T": 220,
+            "selected_groups": 73,
+            "true_positive_T": 8,
+            "true_positive_groups": 8,
+            "false_positive_T": 212,
+            "false_negative_T": 9,
+            "truth_positive_T": 17,
+            "precision": 0.03636363636363636,
+            "recall": 0.47058823529411764
+          }
+        }
+      },
+      {
+        "family": "residue_mean",
+        "seed": 1701,
+        "metrics": {
+          "H": {
+            "group_macro": 0.04903844096156598,
+            "protein_macro": 0.04926106405706268,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "CDF_MSE": {
+            "group_macro": 0.00017756566566852158,
+            "protein_macro": 0.00017575932754816475,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "edge_MAE": {
+            "group_macro": 0.001942075522679754,
+            "protein_macro": 0.0018644303250327278,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Q50_AE": {
+            "group_macro": 0.5064474175488407,
+            "protein_macro": 0.5303523484870148,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "IQR_AE": {
+            "group_macro": 0.8851469024911716,
+            "protein_macro": 0.9045989441236276,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Bowley_AE": {
+            "group_macro": 0.046082380802433445,
+            "protein_macro": 0.04586963555437751,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          }
+        },
+        "support": {
+          "Q50_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "Q50_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "IQR_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "IQR_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "Bowley_eligible": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "any_quantile_open_tail": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "finite_predicted_IQR_below_1": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          }
+        },
+        "negative": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 1,
+              "unique_T": 1,
+              "groups": 1
+            },
+            "FN": {
+              "rows": 61,
+              "unique_T": 61,
+              "groups": 59
+            },
+            "TN": {
+              "rows": 21859,
+              "unique_T": 21853,
+              "groups": 7964
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 61,
+            "unique_T": 61,
+            "groups": 59
+          },
+          "predicted_positive": {
+            "rows": 1,
+            "unique_T": 1,
+            "groups": 1
+          },
+          "row_precision": 0.0,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.00012501562695336918,
+            "FN": 0.0050087061890007846
+          },
+          "group_balanced_precision": 0.0,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "positive": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 17,
+              "unique_T": 17,
+              "groups": 17
+            },
+            "TN": {
+              "rows": 21904,
+              "unique_T": 21898,
+              "groups": 7988
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 17,
+            "unique_T": 17,
+            "groups": 17
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0015467707272932925
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "fixed_one_percent_ranking": {
+          "budget_fraction": 0.01,
+          "budget_T": 220,
+          "denominator_T": 21915,
+          "rankable_T": 21915,
+          "rejected_T": 0,
+          "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+          "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+          "population": "Exposed development T pool, not historical source population percentiles",
+          "negative": {
+            "selected_T": 220,
+            "selected_groups": 164,
+            "true_positive_T": 30,
+            "true_positive_groups": 28,
+            "false_positive_T": 190,
+            "false_negative_T": 31,
+            "truth_positive_T": 61,
+            "precision": 0.13636363636363635,
+            "recall": 0.4918032786885246
+          },
+          "positive": {
+            "selected_T": 220,
+            "selected_groups": 58,
+            "true_positive_T": 6,
+            "true_positive_groups": 6,
+            "false_positive_T": 214,
+            "false_negative_T": 11,
+            "truth_positive_T": 17,
+            "precision": 0.02727272727272727,
+            "recall": 0.35294117647058826
+          }
+        }
+      },
+      {
+        "family": "composition_charge_deep",
+        "seed": 3407,
+        "metrics": {
+          "H": {
+            "group_macro": 0.05235809559367336,
+            "protein_macro": 0.05206403205014655,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "CDF_MSE": {
+            "group_macro": 0.0001981357120859046,
+            "protein_macro": 0.00019577289657659452,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "edge_MAE": {
+            "group_macro": 0.0020856467442731783,
+            "protein_macro": 0.001962071153407889,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Q50_AE": {
+            "group_macro": 0.5162110816857254,
+            "protein_macro": 0.5393038086816332,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "IQR_AE": {
+            "group_macro": 1.0500764178947166,
+            "protein_macro": 1.0485592980714815,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Bowley_AE": {
+            "group_macro": 0.0483475933720745,
+            "protein_macro": 0.04765611241914355,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          }
+        },
+        "support": {
+          "Q50_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "Q50_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "IQR_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "IQR_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "Bowley_eligible": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "any_quantile_open_tail": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "finite_predicted_IQR_below_1": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          }
+        },
+        "negative": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 61,
+              "unique_T": 61,
+              "groups": 59
+            },
+            "TN": {
+              "rows": 21860,
+              "unique_T": 21854,
+              "groups": 7965
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 61,
+            "unique_T": 61,
+            "groups": 59
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0050087061890007846
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "positive": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 17,
+              "unique_T": 17,
+              "groups": 17
+            },
+            "TN": {
+              "rows": 21904,
+              "unique_T": 21898,
+              "groups": 7988
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 17,
+            "unique_T": 17,
+            "groups": 17
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0015467707272932925
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "fixed_one_percent_ranking": {
+          "budget_fraction": 0.01,
+          "budget_T": 220,
+          "denominator_T": 21915,
+          "rankable_T": 21915,
+          "rejected_T": 0,
+          "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+          "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+          "population": "Exposed development T pool, not historical source population percentiles",
+          "negative": {
+            "selected_T": 220,
+            "selected_groups": 162,
+            "true_positive_T": 21,
+            "true_positive_groups": 19,
+            "false_positive_T": 199,
+            "false_negative_T": 40,
+            "truth_positive_T": 61,
+            "precision": 0.09545454545454546,
+            "recall": 0.3442622950819672
+          },
+          "positive": {
+            "selected_T": 220,
+            "selected_groups": 71,
+            "true_positive_T": 5,
+            "true_positive_groups": 5,
+            "false_positive_T": 215,
+            "false_negative_T": 12,
+            "truth_positive_T": 17,
+            "precision": 0.022727272727272728,
+            "recall": 0.29411764705882354
+          }
+        }
+      },
+      {
+        "family": "mean_pre",
+        "seed": 3407,
+        "metrics": {
+          "H": {
+            "group_macro": 0.05043254738947159,
+            "protein_macro": 0.050554037372482895,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "CDF_MSE": {
+            "group_macro": 0.00019430210298767827,
+            "protein_macro": 0.0001919962800798882,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "edge_MAE": {
+            "group_macro": 0.001980185194822212,
+            "protein_macro": 0.0018912996935785506,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Q50_AE": {
+            "group_macro": 0.5363363288818729,
+            "protein_macro": 0.5632499897163958,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "IQR_AE": {
+            "group_macro": 0.9187060270590348,
+            "protein_macro": 0.9228229675892063,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Bowley_AE": {
+            "group_macro": 0.04640687803039217,
+            "protein_macro": 0.04619234222381334,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          }
+        },
+        "support": {
+          "Q50_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "Q50_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "IQR_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "IQR_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "Bowley_eligible": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "any_quantile_open_tail": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "finite_predicted_IQR_below_1": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          }
+        },
+        "negative": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 61,
+              "unique_T": 61,
+              "groups": 59
+            },
+            "TN": {
+              "rows": 21860,
+              "unique_T": 21854,
+              "groups": 7965
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 61,
+            "unique_T": 61,
+            "groups": 59
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0050087061890007846
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "positive": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 17,
+              "unique_T": 17,
+              "groups": 17
+            },
+            "TN": {
+              "rows": 21904,
+              "unique_T": 21898,
+              "groups": 7988
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 17,
+            "unique_T": 17,
+            "groups": 17
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0015467707272932925
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "fixed_one_percent_ranking": {
+          "budget_fraction": 0.01,
+          "budget_T": 220,
+          "denominator_T": 21915,
+          "rankable_T": 21915,
+          "rejected_T": 0,
+          "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+          "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+          "population": "Exposed development T pool, not historical source population percentiles",
+          "negative": {
+            "selected_T": 220,
+            "selected_groups": 162,
+            "true_positive_T": 26,
+            "true_positive_groups": 24,
+            "false_positive_T": 194,
+            "false_negative_T": 35,
+            "truth_positive_T": 61,
+            "precision": 0.11818181818181818,
+            "recall": 0.4262295081967213
+          },
+          "positive": {
+            "selected_T": 220,
+            "selected_groups": 56,
+            "true_positive_T": 7,
+            "true_positive_groups": 7,
+            "false_positive_T": 213,
+            "false_negative_T": 10,
+            "truth_positive_T": 17,
+            "precision": 0.031818181818181815,
+            "recall": 0.4117647058823529
+          }
+        }
+      },
+      {
+        "family": "residue_mean",
+        "seed": 3407,
+        "metrics": {
+          "H": {
+            "group_macro": 0.04902651205030634,
+            "protein_macro": 0.04923822507795657,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "CDF_MSE": {
+            "group_macro": 0.0001772130777424375,
+            "protein_macro": 0.00017548024242111158,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "edge_MAE": {
+            "group_macro": 0.0019547960117604936,
+            "protein_macro": 0.0018814546141824955,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Q50_AE": {
+            "group_macro": 0.5036383003874269,
+            "protein_macro": 0.5287710059066609,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "IQR_AE": {
+            "group_macro": 0.8907426279167376,
+            "protein_macro": 0.9045724870339624,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          },
+          "Bowley_AE": {
+            "group_macro": 0.04615185551516852,
+            "protein_macro": 0.04570626739230359,
+            "support": {
+              "rows": 21921,
+              "unique_T": 21915,
+              "groups": 7999
+            }
+          }
+        },
+        "support": {
+          "Q50_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "Q50_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "IQR_estimable": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "IQR_open_tail_rejected": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "Bowley_eligible": {
+            "rows": 21921,
+            "unique_T": 21915,
+            "groups": 7999
+          },
+          "any_quantile_open_tail": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "finite_predicted_IQR_below_1": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          }
+        },
+        "negative": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 61,
+              "unique_T": 61,
+              "groups": 59
+            },
+            "TN": {
+              "rows": 21860,
+              "unique_T": 21854,
+              "groups": 7965
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 61,
+            "unique_T": 61,
+            "groups": 59
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0050087061890007846
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "positive": {
+          "row_events": {
+            "TP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FP": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "FN": {
+              "rows": 17,
+              "unique_T": 17,
+              "groups": 17
+            },
+            "TN": {
+              "rows": 21904,
+              "unique_T": 21898,
+              "groups": 7988
+            },
+            "abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            },
+            "positive_truth_abstained": {
+              "rows": 0,
+              "unique_T": 0,
+              "groups": 0
+            }
+          },
+          "truth_positive": {
+            "rows": 17,
+            "unique_T": 17,
+            "groups": 17
+          },
+          "predicted_positive": {
+            "rows": 0,
+            "unique_T": 0,
+            "groups": 0
+          },
+          "row_precision": null,
+          "row_recall": 0.0,
+          "group_balanced_event_masses": {
+            "TP": 0.0,
+            "FP": 0.0,
+            "FN": 0.0015467707272932925
+          },
+          "group_balanced_precision": null,
+          "group_balanced_recall": 0.0,
+          "abstention_rule": "No positive call; therefore positive truth rejected remains FN. TN includes negative-truth abstentions and is not called supported specificity."
+        },
+        "fixed_one_percent_ranking": {
+          "budget_fraction": 0.01,
+          "budget_T": 220,
+          "denominator_T": 21915,
+          "rankable_T": 21915,
+          "rejected_T": 0,
+          "score_selection": "One lexicographically first sample_id row per T, fixed before inspecting scores; no view averaging",
+          "truth_selection": "Any raw view of the T satisfies the same-direction absolute condition; raw views remain separate elsewhere",
+          "population": "Exposed development T pool, not historical source population percentiles",
+          "negative": {
+            "selected_T": 220,
+            "selected_groups": 165,
+            "true_positive_T": 28,
+            "true_positive_groups": 26,
+            "false_positive_T": 192,
+            "false_negative_T": 33,
+            "truth_positive_T": 61,
+            "precision": 0.12727272727272726,
+            "recall": 0.45901639344262296
+          },
+          "positive": {
+            "selected_T": 220,
+            "selected_groups": 55,
+            "true_positive_T": 6,
+            "true_positive_groups": 6,
+            "false_positive_T": 214,
+            "false_negative_T": 11,
+            "truth_positive_T": 17,
+            "precision": 0.02727272727272727,
+            "recall": 0.35294117647058826
+          }
+        }
+      }
+    ],
+    "probability_replay": {
+      "fits": 30,
+      "all_passed": true,
+      "max_absolute_H_difference": 5.395164592858492e-09
+    }
+  }
+}

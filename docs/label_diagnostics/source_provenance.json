@@ -1,0 +1,74 @@
+{
+  "schema": "diagnostic_public_projection_provenance_v1",
+  "status": "completed_evidence_prepared_for_publication",
+  "sources": [
+    {
+      "path": "src/bridge_binned_quantile_bounds.py",
+      "actual_execution_source_sha256": "28c30fc2cbb34cb388bf2495b58a8d567521b5ed323f42845dc327dabedbd04e",
+      "archive_sha256": "28c30fc2cbb34cb388bf2495b58a8d567521b5ed323f42845dc327dabedbd04e",
+      "adaptation": "byte_for_byte; original completed execution, not rerun by this archive filter"
+    },
+    {
+      "path": "src/bridge_representation_audit.py",
+      "actual_execution_source_sha256": "91aa0158c1dadb63b31feccfc4e1855307cd18ecaa339c65da7e579ad6c73ae0",
+      "archive_sha256": "91aa0158c1dadb63b31feccfc4e1855307cd18ecaa339c65da7e579ad6c73ae0",
+      "adaptation": "byte_for_byte; original completed execution, not rerun by this archive filter"
+    },
+    {
+      "path": "src/bridge_coarse_shape_support.py",
+      "actual_execution_source_sha256": "86d6fc6f728885e2600223cbf6117df61cc2150c73e8c1b5126f5c3b8378b96a",
+      "archive_sha256": "86d6fc6f728885e2600223cbf6117df61cc2150c73e8c1b5126f5c3b8378b96a",
+      "adaptation": "byte_for_byte; original completed execution, not rerun by this archive filter"
+    },
+    {
+      "path": "src/bridge_duplicate_T_audit.py",
+      "actual_execution_source_sha256": "9f844b295cdf11276978275ef2d13939fcedf46e8c18ff36c11607765adb4bbe",
+      "archive_sha256": "9f844b295cdf11276978275ef2d13939fcedf46e8c18ff36c11607765adb4bbe",
+      "adaptation": "byte_for_byte; original completed execution, not rerun by this archive filter"
+    },
+    {
+      "path": "src/bridge_duplicate_T_input_closure.py",
+      "actual_execution_source_sha256": "243e32761b419ede66505433b03c1b0a7f5200afb71ea1bc6469e380297524eb",
+      "archive_sha256": "243e32761b419ede66505433b03c1b0a7f5200afb71ea1bc6469e380297524eb",
+      "adaptation": "byte_for_byte; original completed execution, not rerun by this archive filter"
+    },
+    {
+      "path": "src/bridge_shape_model_comparison.py",
+      "actual_execution_source_sha256": "4be007ff1b869a4a71b800713f3e833f79b04770f7f27dd66aeb22507da16ce6",
+      "archive_sha256": "4be007ff1b869a4a71b800713f3e833f79b04770f7f27dd66aeb22507da16ce6",
+      "adaptation": "byte_for_byte; original completed execution, not rerun by this archive filter"
+    },
+    {
+      "path": "src/bridge_shape_optimization_addendum.py",
+      "actual_execution_source_sha256": "d50b8011eedc808dbfb46ddbbec075967389aa9919657c90ef866bf582b05277",
+      "archive_sha256": "d50b8011eedc808dbfb46ddbbec075967389aa9919657c90ef866bf582b05277",
+      "adaptation": "byte_for_byte; original completed execution, not rerun by this archive filter"
+    },
+    {
+      "path": "src/export_bridge_diagnostic_public.py",
+      "actual_execution_source_sha256": "e33dfc185a55c26d50ec1737a6dfd45676718007a58013f665cdf4a93c28760a",
+      "archive_sha256": "e33dfc185a55c26d50ec1737a6dfd45676718007a58013f665cdf4a93c28760a",
+      "adaptation": "New archival projection executed locally on pinned aggregate JSON only; does not recompute any scientific measurement"
+    }
+  ],
+  "private_source_summary_sha256": {
+    "representation": "995a2e7b6502226ea39540a752b0574af0cf498d2b90919732447cf6f87ad41f",
+    "coarse": "4fec38480424061afc9ca4207682564da20758e95406d07190c60ac18cebbfb3",
+    "duplicate": "40d97475b6dbdce650add4d10e1c39162eec3fd6f273cd3a9c80a14a4ff6595a",
+    "input": "c12bf8ae57550127e2d3c3ead0c3ac8c7eaa963e1d675f2d0a09c23fa7a54eb2",
+    "oof": "675c87743ed787135fa99b1d25c98ebfa0fa1bb427a06681c96f5b54b7e292cd",
+    "optimization": "9d3d7855f7841c593ac745a549e5362ead50c9c8ec39ca5bd94cdd5014686575"
+  },
+  "source_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+  "historical_label_contract_sha256": "05932133251f6c20956d9dbf77af4d857a78137bf125b3485c1e97098ba61c9c",
+  "projection": "Explicitly selected aggregate fields only. No per-sample tables, identities, run membership, prediction arrays, weights, cache addresses, paths, PNG, SVG or HTML.",
+  "executed_original_sources_preserved": true,
+  "source_normalization_or_path_rewrite": false,
+  "private_reproduction_inputs_required": true,
+  "failed_optimization_attempt_preserved": {
+    "stage": "v1",
+    "failure": "A source-cohort string was overwritten by a same-named cohort-count field at final aggregation, after 16 prediction/role/metric checks.",
+    "repair": "Use source_cohort for provenance, retaining cohort for counts; successful v2 changes no mathematical or scientific definition.",
+    "old_records_preserved_private": true
+  }
+}

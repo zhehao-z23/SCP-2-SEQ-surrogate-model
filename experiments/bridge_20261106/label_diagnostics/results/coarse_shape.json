@@ -1,0 +1,271 @@
+{
+  "schema": "public_aggregate_diagnostic_v1",
+  "status": "completed_development_diagnostic",
+  "diagnostic": "coarse_shape",
+  "new_fits": 0,
+  "new_physical_solves": 0,
+  "raw_phi_reads": 0,
+  "model_loads": 0,
+  "public_sample_memberships": false,
+  "results": {
+    "data_rows": 21921,
+    "unique_T": 21915,
+    "groups": 7999,
+    "counts": {
+      "native_class": {
+        "one_major_peak": {
+          "rows": 21853,
+          "unique_T": 21847,
+          "groups_with_presence": 7985
+        },
+        "two_major_peaks": {
+          "rows": 1,
+          "unique_T": 1,
+          "groups_with_presence": 1
+        },
+        "multiple_major_peaks": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "uncertain": {
+          "rows": 67,
+          "unique_T": 67,
+          "groups_with_presence": 48
+        }
+      },
+      "phase0_class": {
+        "one_major_peak": {
+          "rows": 21916,
+          "unique_T": 21910,
+          "groups_with_presence": 7998
+        },
+        "two_major_peaks": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "multiple_major_peaks": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "uncertain": {
+          "rows": 5,
+          "unique_T": 5,
+          "groups_with_presence": 4
+        }
+      },
+      "phase1_class": {
+        "one_major_peak": {
+          "rows": 21909,
+          "unique_T": 21903,
+          "groups_with_presence": 7996
+        },
+        "two_major_peaks": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "multiple_major_peaks": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "uncertain": {
+          "rows": 12,
+          "unique_T": 12,
+          "groups_with_presence": 10
+        }
+      },
+      "consensus_class": {
+        "one_major_peak": {
+          "rows": 19397,
+          "unique_T": 19391,
+          "groups_with_presence": 7501
+        },
+        "two_major_peaks": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "multiple_major_peaks": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "uncertain": {
+          "rows": 2524,
+          "unique_T": 2524,
+          "groups_with_presence": 1599
+        }
+      }
+    },
+    "unique_T_consensus_classes_without_averaging_rows": {
+      "one_major_peak": 19391,
+      "uncertain": 2524
+    },
+    "uncertainty_reason_row_counts_nonexclusive": {
+      "ordered_peak_intervals_lack_positive_common_overlap": 2452,
+      "adjacent_major_pair_has_insufficient_valley_or_interval_separation": 57,
+      "major_count_changes_with_exact_coarsening": 57,
+      "significant_boundary_density_not_resolved_as_interior_peak": 14,
+      "major_basin_threshold_crossed_by_valley_mass_bounds": 2
+    },
+    "per_view_uncertainty_reasons_nonexclusive": {
+      "native61": {
+        "adjacent_major_pair_has_insufficient_valley_or_interval_separation": 56,
+        "significant_boundary_density_not_resolved_as_interior_peak": 10,
+        "major_basin_threshold_crossed_by_valley_mass_bounds": 2
+      },
+      "pair_merge_phase0": {
+        "significant_boundary_density_not_resolved_as_interior_peak": 5
+      },
+      "pair_merge_phase1": {
+        "significant_boundary_density_not_resolved_as_interior_peak": 10,
+        "adjacent_major_pair_has_insufficient_valley_or_interval_separation": 2
+      }
+    },
+    "open_tail_mass_support": {
+      "negative": {
+        "zero": {
+          "rows": 107,
+          "unique_T": 107,
+          "groups_with_presence": 53
+        },
+        "positive_up_to_0.01": {
+          "rows": 18535,
+          "unique_T": 18530,
+          "groups_with_presence": 6972
+        },
+        "above_0.01_up_to_0.05": {
+          "rows": 3246,
+          "unique_T": 3245,
+          "groups_with_presence": 1764
+        },
+        "above_0.05": {
+          "rows": 33,
+          "unique_T": 33,
+          "groups_with_presence": 29
+        }
+      },
+      "positive": {
+        "zero": {
+          "rows": 48,
+          "unique_T": 48,
+          "groups_with_presence": 19
+        },
+        "positive_up_to_0.01": {
+          "rows": 21139,
+          "unique_T": 21133,
+          "groups_with_presence": 7951
+        },
+        "above_0.01_up_to_0.05": {
+          "rows": 734,
+          "unique_T": 734,
+          "groups_with_presence": 132
+        },
+        "above_0.05": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        }
+      }
+    },
+    "both_open_tails_nonzero": {
+      "rows": 21808,
+      "unique_T": 21802,
+      "groups_with_presence": 7977
+    },
+    "open_tail_presence_by_consensus": {
+      "one_major_peak": {
+        "negative_nonzero": {
+          "rows": 19306,
+          "unique_T": 19300,
+          "groups_with_presence": 7482
+        },
+        "positive_nonzero": {
+          "rows": 19354,
+          "unique_T": 19348,
+          "groups_with_presence": 7484
+        },
+        "both_nonzero": {
+          "rows": 19301,
+          "unique_T": 19295,
+          "groups_with_presence": 7478
+        }
+      },
+      "two_major_peaks": {
+        "negative_nonzero": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "positive_nonzero": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "both_nonzero": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        }
+      },
+      "multiple_major_peaks": {
+        "negative_nonzero": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "positive_nonzero": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        },
+        "both_nonzero": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups_with_presence": 0
+        }
+      },
+      "uncertain": {
+        "negative_nonzero": {
+          "rows": 2508,
+          "unique_T": 2508,
+          "groups_with_presence": 1595
+        },
+        "positive_nonzero": {
+          "rows": 2519,
+          "unique_T": 2519,
+          "groups_with_presence": 1594
+        },
+        "both_nonzero": {
+          "rows": 2507,
+          "unique_T": 2507,
+          "groups_with_presence": 1594
+        }
+      }
+    },
+    "support_count_note": "Rows partition by class; unique-T and group presence counts within categories may overlap. No average distribution or group-majority class was formed.",
+    "finite_window": [
+      -44.62060589458578,
+      108.05362546017078
+    ],
+    "finite_bins": 61,
+    "native_width_range": [
+      2.5028562517173043,
+      2.5028562517173327
+    ],
+    "classification_scope": "limited finite-window visible major-peak support, may contain smaller shoulders; never raw unimodality, reproduction of historical fine-grid rules, significance or physical qualification",
+    "unconfirmed_is_not_absence": true,
+    "resource": {
+      "BLAS_threads": 1,
+      "GPU": false,
+      "elapsed_seconds": 14.079356995411217,
+      "peak_RSS_KiB": 308784,
+      "address_space_limit_GiB": 8,
+      "wall_budget_seconds": 600
+    }
+  }
+}

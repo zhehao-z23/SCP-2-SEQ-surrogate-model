@@ -1,0 +1,162 @@
+{
+  "schema": "diagnostic_supplement_aggregate_v1",
+  "status": "completed_measurements_draft_not_published",
+  "scope": {
+    "model": "residue_mean plus composition/charge",
+    "fold": 0,
+    "seed": 1701,
+    "data": "exposed historical teacher-sequence / vertex-measure 63-bin development target",
+    "aggregation": "per-row metric, then mean within protein, mean within homology group, equal mean over groups",
+    "fixed_best_model_mode": "eval / dropout off / no parameter updates",
+    "edge_definition": "mean absolute error of first and last open-bin probability masses; not neg5/pos5 screening accuracy"
+  },
+  "curve_review": {
+    "preexisting_fits": 18,
+    "screen_fits": 12,
+    "confirmation_fits": 6,
+    "small_log_files_hash_checked": 54,
+    "epoch_records": 1751,
+    "selection_LR_and_early_stop_state_machine_matches": 18,
+    "early_stop_count": 18,
+    "epochs_since_last_selected_best_range": [
+      30,
+      38
+    ],
+    "selected_best_in_last_30_epochs": 0,
+    "late_window_stop_H_descriptive_counts": {
+      "late_window_higher": 10,
+      "late_window_near_flat": 3,
+      "late_window_lower": 5
+    },
+    "late_window_definition": "mean of final 10 recorded epochs minus mean of preceding 10; +/-1e-5 is only a descriptive near-flat band, not a scientific convergence or significance criterion",
+    "plateau_fits": 8,
+    "plateau_best_in_final_LR_stage": 7,
+    "raw_minimum_below_selected_best_by_less_than_min_delta_count": 4,
+    "all_online_train_H2_last10_mean_below_previous10": true,
+    "train_vs_stop_comparable": false,
+    "missing": [
+      "epochwise train eval metrics",
+      "epochwise stop CDF/open-edge errors",
+      "last or arbitrary historical-epoch checkpoints"
+    ]
+  },
+  "fixed_best_partition_aggregates": [
+    {
+      "policy": "fresh",
+      "saved_best_epoch": 68,
+      "partition": "train",
+      "rows": 13165,
+      "unique_teacher_sequences": 13162,
+      "homology_groups": 4800,
+      "group_macro": {
+        "H": 0.03788067050049077,
+        "H2": 0.0016442668609835634,
+        "CDF_MSE": 7.301840736650184e-05,
+        "edge_mass_MAE": 0.0015388026352008085
+      }
+    },
+    {
+      "policy": "fresh",
+      "saved_best_epoch": 68,
+      "partition": "stop",
+      "rows": 4390,
+      "unique_teacher_sequences": 4389,
+      "homology_groups": 1600,
+      "group_macro": {
+        "H": 0.048518895490548816,
+        "H2": 0.003088713739429401,
+        "CDF_MSE": 0.0001721182696502964,
+        "edge_mass_MAE": 0.0019157449043300373
+      }
+    },
+    {
+      "policy": "fresh",
+      "saved_best_epoch": 68,
+      "partition": "evaluation",
+      "rows": 4366,
+      "unique_teacher_sequences": 4364,
+      "homology_groups": 1599,
+      "group_macro": {
+        "H": 0.04910350423956861,
+        "H2": 0.0030247532397160836,
+        "CDF_MSE": 0.00018322249769592923,
+        "edge_mass_MAE": 0.002021698605244052
+      }
+    },
+    {
+      "policy": "plateau",
+      "saved_best_epoch": 104,
+      "partition": "train",
+      "rows": 13165,
+      "unique_teacher_sequences": 13162,
+      "homology_groups": 4800,
+      "group_macro": {
+        "H": 0.032575113608016175,
+        "H2": 0.0011851615812034683,
+        "CDF_MSE": 4.394985203435246e-05,
+        "edge_mass_MAE": 0.001344971648085033
+      }
+    },
+    {
+      "policy": "plateau",
+      "saved_best_epoch": 104,
+      "partition": "stop",
+      "rows": 4390,
+      "unique_teacher_sequences": 4389,
+      "homology_groups": 1600,
+      "group_macro": {
+        "H": 0.04758425464832221,
+        "H2": 0.003000730784906562,
+        "CDF_MSE": 0.00016129927277654425,
+        "edge_mass_MAE": 0.0019009899630562904
+      }
+    },
+    {
+      "policy": "plateau",
+      "saved_best_epoch": 104,
+      "partition": "evaluation",
+      "rows": 4366,
+      "unique_teacher_sequences": 4364,
+      "homology_groups": 1599,
+      "group_macro": {
+        "H": 0.04804177216975451,
+        "H2": 0.0028984271889575678,
+        "CDF_MSE": 0.00017154338283241092,
+        "edge_mass_MAE": 0.002023031852054325
+      }
+    }
+  ],
+  "verification": {
+    "evaluated_saved_best_states": 2,
+    "new_fits": 0,
+    "optimizer_updates": 0,
+    "new_epoch_selection": false,
+    "evaluation_saved_probability_max_abs_difference": [
+      0.0,
+      0.0
+    ],
+    "max_stop_H_difference_from_original_receipt": 3.3716019559593136e-09,
+    "role_guard_applied_before_target_checkpoint_prediction_reads": true
+  },
+  "resource_measurements": {
+    "fixed_best_process_internal_elapsed_seconds": 49.77424311731011,
+    "elapsed_definition": "wall time inside the GPU evaluation process, including input checks/loading and CPU reductions; not CUDA kernel time, reservation time or end-to-end launch time",
+    "peak_GPU_allocated_bytes": 12535073792,
+    "peak_process_RSS_KiB": 24614948,
+    "gallery_local_render_elapsed_seconds": 15.327999999979511,
+    "curve_review_elapsed_seconds": null,
+    "curve_review_elapsed_note": "Not recorded in the original review receipt."
+  },
+  "interpretation": {
+    "observed": "All three partitions improve H and CDF MSE for plateau; evaluation open-edge mass MAE increases slightly. The fixed-state train-stop H gap increases while stop/evaluation H themselves improve.",
+    "not_claimed": [
+      "statistical significance of the open-edge change",
+      "harmful overfitting inferred from gap increase alone",
+      "causal effect of an isolated LR factor",
+      "arbitrary epoch reconstruction",
+      "independent final test performance",
+      "new-C or full-sequence-space qualification"
+    ],
+    "further_diagnostics": "Potential mechanisms require separately defined work; this supplement does not claim that later mechanistic research is complete."
+  }
+}

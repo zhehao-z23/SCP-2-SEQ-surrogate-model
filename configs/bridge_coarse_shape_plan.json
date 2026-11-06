@@ -1,0 +1,59 @@
+{
+  "schema": "native63_coarse_shape_support_plan_v1",
+  "status": "frozen_method_before_target_read",
+  "source_code_sha256": "86d6fc6f728885e2600223cbf6117df61cc2150c73e8c1b5126f5c3b8378b96a",
+  "historical_rule_source_sha256": "86c68ef48f56be5d20f05008233d3b66a756960849cbf386e8723296ca3cc8d8",
+  "source_release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+  "label_contract_sha256": "05932133251f6c20956d9dbf77af4d857a78137bf125b3485c1e97098ba61c9c",
+  "guard_code_sha256": "5401723f38305496ab11ab71d07825b2f1fe56476d753593d7929ed12a693cd3",
+  "guard_contract_sha256": "71359d1a06e18ab5dec65e825c82a07c3d7e0401c35266e8645957b943bb903c",
+  "expected_rows": 21921,
+  "expected_unique_T": 21915,
+  "expected_groups": 7999,
+  "measure": "historical equal retained vertices, original 63 probability masses",
+  "views": [
+    "native61",
+    "pair_merge_phase0",
+    "pair_merge_phase1"
+  ],
+  "density": "finite-bin mass divided by actual edge difference; endpoint singleton bins keep their actual width",
+  "prominence_relative_to_view_max": 0.05,
+  "major_basin_full_distribution_mass": 0.15,
+  "mass_threshold_uncertainty_tolerance": 1e-07,
+  "valley_depth_relative_lower_major_peak": 0.25,
+  "minimum_peak_interval_separation_in_native_widths": 1.0,
+  "boundary_guard_native_widths": 2.0,
+  "density_plateau_relative_tolerance": 1e-12,
+  "basin_mass_bounds": "valley minimum plateau bins are unassigned between adjacent candidate peaks; core excludes adjacent valley plateaus, upper includes both; threshold-crossing or within 1e-7 is uncertain",
+  "pair_requirement": "all adjacent major peaks must pass valley depth and minimum possible interval separation; not only one pair",
+  "scale_consensus": "all three views individually supported, same major count, each ordered major peak interval has a positive-length common intersection across all three; touching endpoints alone is uncertain",
+  "native_and_consensus_both_reported": true,
+  "finite_zero_or_insufficient_major_mass": "retain explicit uncertainty reasons, never drop rows",
+  "open_tail_mass_categories": [
+    "zero",
+    "positive_up_to_0.01",
+    "above_0.01_up_to_0.05",
+    "above_0.05"
+  ],
+  "open_tails": "negative and positive masses separately, plus both nonzero; never assign width, density, center or interpret as neg5/pos5",
+  "units": "kBT/e",
+  "scope": "limited finite-window visible major-peak support, may contain smaller shoulders; never raw unimodality, reproduction of historical fine-grid rules, significance or physical qualification",
+  "row_handling": "classify every row independently; no mean distribution; distinct T/group presence counts can overlap; inconsistent duplicate-T labels reported separately",
+  "resources": {
+    "logical_CPU": 174,
+    "BLAS_threads": 1,
+    "GPU": false,
+    "address_space_GiB": 8,
+    "wall_seconds": 600
+  },
+  "outputs": "private per-row table remains Byte; local lightweight source/plan/aggregate summary/report only",
+  "forbidden": [
+    "raw phi",
+    "model predictions or checkpoint loading",
+    "new training",
+    "physical modification",
+    "protected labels",
+    "gallery modification",
+    "upsampling or invented 0.5 resolution"
+  ]
+}

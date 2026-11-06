@@ -39,3 +39,8 @@ python bridge_roles_guard.py --contract PRIVATE_REGISTRY/guard_contract.json \
 The request declares operation, `stage: development`, actual sequence hashes and optional aliases. Unknown identities and protected components are denied. A pass clears only this bridge preflight; existing release-role and eligibility gates still apply. The current registry denies every `final_release` request. Changed grouping, inputs or exposure require renewed audit and a new pinned registry. The guard is not OS access control, so launchers must enforce its successful receipt.
 
 Sixteen checks passed against the real registry and isolated mutation fixtures, including protected-list tampering under an unchanged contract pin. They did not reveal protected targets or predictions. The exposure audit pins a source snapshot; it does not continuously monitor remote files.
+
+
+## Completed physical bridge and diagnostic supplements
+
+The earlier partial-stage record above is retained. One fixed-coordinate AF development object has now passed all eight registered compound numerical sensitivity checks and final main/independent/acceptance gates. See [final physical report](physical_bridge/physical_final_report.md), [source and dependency boundary](physical_bridge/physical_reproduction.md), [fixed best-state diagnostics](../experiments/bridge_20261106/diagnostic_supplement/README.md) and [label/shape diagnostics](../experiments/bridge_20261106/label_diagnostics/README.md). This closes this bounded stage, not the final model or full-sequence-space deployment. Protected roles remain provisional and existing release gates are mandatory. Private images and detailed arrays are not published.

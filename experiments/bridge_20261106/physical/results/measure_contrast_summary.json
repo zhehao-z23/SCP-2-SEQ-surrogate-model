@@ -1,0 +1,34 @@
+{
+  "schema": "anonymous_same_field_measure_contrast_v1",
+  "status": "root_reviewed_for_final_publication_not_published",
+  "execution_code_sha256": "dc3d10b6aaad24a19c2549ee623ad07714ed30e03c6bfbb80d438635895a7636",
+  "result": {
+    "case_count": 1,
+    "comparison": "equal vertex minus normalized incident-triangle area; same frozen corrected field and mesh",
+    "bin_count": 63,
+    "finite_boundary_range_kBT_per_e": [
+      -20.0342930165395,
+      24.757910640129058
+    ],
+    "tie_rule": "left-closed/right-open; value at upper central edge enters right tail",
+    "metrics": {
+      "raw_W1_kBT_per_e": 0.0038470658892225803,
+      "raw_CDF_sup": 0.0012004319161619127,
+      "Hellinger_shared63": 0.0013074865133945557
+    },
+    "delta_vertex_minus_area": {
+      "mean_kBT_per_e": -0.002826829152172805,
+      "positive_fraction": -0.0006650685561291336
+    },
+    "scope": [
+      "Measure-only mathematical contrast on one exposed existing numerically validated PDB development reference.",
+      "Not the complete historical Atlas-to-new-C target shift, not structural-source causality, not a surrogate-generalization or production-authorization result.",
+      "Existing PDB qualification does not transfer to any AF object."
+    ],
+    "PB_calls": 0,
+    "model_predictions": 0,
+    "raw_DX_reads": 0,
+    "tail_scope": "This single reference has no observed open-tail mass and cannot assess tail differences or tail generalization; zero mass is not evidence of interchangeable measures in tails."
+  },
+  "public_derivation": "Absolute single-object target summaries and tail zero comparisons removed from the executed private receipt; numerical execution was not rerun."
+}

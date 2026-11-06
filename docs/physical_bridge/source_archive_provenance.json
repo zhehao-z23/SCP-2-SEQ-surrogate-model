@@ -1,0 +1,279 @@
+{
+  "status": "completed_stage_source_archive",
+  "files": [
+    {
+      "path": "src/bridge_physical_run.py",
+      "archived_sha256": "e32d8a22e10216aac092f9f2c6adc78193e346155d5cb4ddeff84fecf3b5366e",
+      "source_snapshot_sha256": "97a86df4955b9e54ac9b4c04dcd4c723dcbdea0bb622f28824be3cd033034aa8",
+      "status": "portable_archive_checked_not_numerically_rerun",
+      "adaptation": "Portable path binding only; no numerical implementation changes. Historical authorization prose replaced by non-authorizing archive description. Archive-only main() guard rejects any --variants further before initialize(), including --plan-only; only nested parallel entry is accepted. Original executed source and numerical functions unchanged.",
+      "executed_source_sha256": "97a86df4955b9e54ac9b4c04dcd4c723dcbdea0bb622f28824be3cd033034aa8"
+    },
+    {
+      "path": "src/bridge_physical_further_parallel.py",
+      "archived_sha256": "51b83d01d65588cf0cabb22b19b15f855e5d2c21faf95a2082cc1b5ac9faedb5",
+      "source_snapshot_sha256": "c4bde620511443501266b0d2ecd8c3936396ec0a52bcf316035c5f4a35b34fb8",
+      "status": "completed_all_68_nested_fields",
+      "adaptation": "Only configured heavy-root binding, configured production command marker and matching path-description prose. All source functions are AST-identical except the path-derived marker in check_host. Resume logic is part of the actual executed source, not an archive modification.",
+      "executed_source_sha256": "c4bde620511443501266b0d2ecd8c3936396ec0a52bcf316035c5f4a35b34fb8",
+      "execution_history": [
+        {
+          "stage": 1,
+          "phase": "original_interrupted_stage",
+          "executed_sha256": "77daafe39c9b680769ed1560231bd26cad649d7f4f6ec04f44dbd81dc424f907",
+          "completed_sampled_fields_added": 37,
+          "completed_sampled_fields_cumulative": 37,
+          "guard_stop_reason": "Bound runtime-upgrade metadata identity changed; production release remained v45. Stopped before a new PB reservation.",
+          "superseded_portable_sha256": "63cfe20740420a46bcf527d8764f1f49ecc9c53d739fec45ff50f85d385d4eec",
+          "preservation": "Original executed source, interruption manifest and scientific evidence remain private and immutable."
+        },
+        {
+          "stage": 2,
+          "phase": "resume_after_v45_metadata_identity_review",
+          "executed_sha256": "c4bde620511443501266b0d2ecd8c3936396ec0a52bcf316035c5f4a35b34fb8",
+          "support_sha256": "6328702a1ed12f9502f1520bc92a52b082b32afc0c94382e85ea31f8dd3ee607",
+          "completed_sampled_fields_added": 2,
+          "completed_sampled_fields_cumulative": 39,
+          "guard_stop_reason": "A substantive production release upgrade from v45 to v48 changed the pinned runtime identity. Stopped before a new PB reservation.",
+          "scope": "Reused the original 37 completed fields only after full validation; independent resource review and explicit contract refresh required before subsequent resumption."
+        },
+        {
+          "stage": 3,
+          "phase": "resume_after_v48_release_review_and_contract_refresh",
+          "executed_sha256": "c4bde620511443501266b0d2ecd8c3936396ec0a52bcf316035c5f4a35b34fb8",
+          "support_sha256": "6328702a1ed12f9502f1520bc92a52b082b32afc0c94382e85ea31f8dd3ee607",
+          "completed_sampled_fields_before_stage": 39,
+          "remaining_fields_at_resume": 29,
+          "completed_sampled_fields_added": 29,
+          "status": "completed_and_accepted_development_only",
+          "scope": "Strict v48 identity pin, original fixed CPU allocation and unchanged numerical one_field function; reuses 39 completed fields after validation.",
+          "completed_sampled_fields_cumulative": 68
+        }
+      ]
+    },
+    {
+      "path": "src/bridge_physical_geometry_v3.py",
+      "archived_sha256": "27bf03888580d7b0d2a5cd63adb0721dc52f0e93e257212804d4350fa8e5b290",
+      "source_snapshot_sha256": "27bf03888580d7b0d2a5cd63adb0721dc52f0e93e257212804d4350fa8e5b290",
+      "status": "portable_archive_checked_not_numerically_rerun",
+      "adaptation": "Portable path binding only; no numerical implementation changes.",
+      "executed_source_sha256": "27bf03888580d7b0d2a5cd63adb0721dc52f0e93e257212804d4350fa8e5b290"
+    },
+    {
+      "path": "src/bridge_physical_geometry_admission.py",
+      "archived_sha256": "5339e985f23607d3e254064c5fa9ef34e3514146d7dfe1aaf4df0113f0348703",
+      "source_snapshot_sha256": "5339e985f23607d3e254064c5fa9ef34e3514146d7dfe1aaf4df0113f0348703",
+      "status": "portable_archive_checked_not_numerically_rerun",
+      "adaptation": "Portable path binding only; no numerical implementation changes.",
+      "executed_source_sha256": "5339e985f23607d3e254064c5fa9ef34e3514146d7dfe1aaf4df0113f0348703"
+    },
+    {
+      "path": "src/bridge_physical_further.py",
+      "archived_sha256": "2a3e7287604e012b83097d580edb252f93c62704139dd9ebf5a33bbea52ca52d",
+      "source_snapshot_sha256": "5019dc56c45423e5e0056d30071b3906b90389ace6f2fb0a8308ebb227a0b227",
+      "status": "portable_archive_checked_not_numerically_rerun",
+      "adaptation": "Exact used plan() function retained; inactive historical execute() and old CLI removed; new plan-only CLI.",
+      "executed_source_sha256": "5019dc56c45423e5e0056d30071b3906b90389ace6f2fb0a8308ebb227a0b227"
+    },
+    {
+      "path": "src/bridge_physical_paths.py",
+      "adaptation": "New CLI path adapter, not part of the historical numerical execution.",
+      "archived_sha256": "1cd3aebf0bed726725329b1f6b38a678ff028aecfbce96d37ff4f5f2f840ab23",
+      "executed_source_sha256": null,
+      "status": "archive_only_not_executed"
+    },
+    {
+      "status": "frozen_generic_metrics_verifier_not_final_integrity_acceptance",
+      "archived_sha256": "b344ce771572218c555cbd9d8955ccef77387ca8f192dde8074fe9ea68b8374e",
+      "source_snapshot_sha256": "b344ce771572218c555cbd9d8955ccef77387ca8f192dde8074fe9ea68b8374e",
+      "adaptation": "byte_for_byte; executed via source-byte base64 in frozen runtime, bound by independent batch receipts",
+      "execution_archive_relative": "records/independent_review_20261106/snapshot_01/bridge_physical_independent_audit.py",
+      "executed_source_sha256": "b344ce771572218c555cbd9d8955ccef77387ca8f192dde8074fe9ea68b8374e",
+      "path": "src/bridge_physical_independent_audit.py"
+    },
+    {
+      "path": "src/bridge_physical_independent_local_overlap.py",
+      "archived_sha256": "eda66d0d9fd6fe8ca2281a804c389682a6bc27036b7172d7ae3ac995d3b26011",
+      "source_snapshot_sha256": "eda66d0d9fd6fe8ca2281a804c389682a6bc27036b7172d7ae3ac995d3b26011",
+      "executed_source_sha256": "eda66d0d9fd6fe8ca2281a804c389682a6bc27036b7172d7ae3ac995d3b26011",
+      "status": "frozen_local_overlap_metrics_and_captured_parent_header_verifier_not_full_field_hash_acceptance",
+      "adaptation": "byte_for_byte; executed locally using Python 3.12.14 / NumPy 2.3.5; parameterized private input root; includes expected seven-parent workflow contract",
+      "scope": "Checks completed seventh-axis arrays and captured parent headers/nested containment. Full parent payload hashes remain native field auditor responsibility."
+    },
+    {
+      "path": "src/bridge_measure_contrast.py",
+      "source_snapshot_sha256": "dc3d10b6aaad24a19c2549ee623ad07714ed30e03c6bfbb80d438635895a7636",
+      "executed_source_sha256": "dc3d10b6aaad24a19c2549ee623ad07714ed30e03c6bfbb80d438635895a7636",
+      "archived_sha256": "874087bca2f69e21314433653b6705739aeef4778f7cdcc4a1a11a36e71f0984",
+      "status": "portable_archive_checked_no_numerical_rerun",
+      "adaptation": "Original already takes --inputs, --manifest-sha256, --output and --public-output; no machine path or case identity hardcoded. Archive changes only public JSON serialization to omit absolute single-object target statistics, retain mean/positive-fraction effect differences, and add a tail-scope limitation. Input binding, all numerical functions and private receipt construction unchanged. Actual execution used the original SHA; the reviewed public summary was filtered separately after that run."
+    },
+    {
+      "path": "experiments/bridge_20261106/physical/results/measure_contrast_summary.json",
+      "archived_sha256": "2a2a14d226892799297c9eb51bc91f2a4fa749f46c0584daeb2c1b8fbd293871",
+      "executed_source_sha256": "dc3d10b6aaad24a19c2549ee623ad07714ed30e03c6bfbb80d438635895a7636",
+      "status": "reviewed_anonymous_derivative",
+      "adaptation": "Reviewed anonymous derivative of private one-case receipt; no absolute target summaries, sample ID, source paths, arrays, or tail-zero equivalence claim."
+    },
+    {
+      "path": "src/bridge_physical_resume_support.py",
+      "archived_sha256": "6328702a1ed12f9502f1520bc92a52b082b32afc0c94382e85ea31f8dd3ee607",
+      "source_snapshot_sha256": "6328702a1ed12f9502f1520bc92a52b082b32afc0c94382e85ea31f8dd3ee607",
+      "executed_source_sha256": "6328702a1ed12f9502f1520bc92a52b082b32afc0c94382e85ea31f8dd3ee607",
+      "status": "frozen_resume_support",
+      "adaptation": "byte_for_byte; obtains paths from configured bridge_physical_run module; no machine paths or case IDs hardcoded",
+      "scope": "Read-only frozen-plan reconstruction and existing sampling/native artifact reuse verification; no solver or sampling call."
+    },
+    {
+      "path": "src/bridge_physical_audit.py",
+      "source_snapshot_sha256": "d4b73e4bad41e73aadfe8cc194ce1ffa284aa76642d91b9a08bef04f07239abd",
+      "archived_sha256": "d4b73e4bad41e73aadfe8cc194ce1ffa284aa76642d91b9a08bef04f07239abd",
+      "executed_source_sha256": "d4b73e4bad41e73aadfe8cc194ce1ffa284aa76642d91b9a08bef04f07239abd",
+      "status": "actually_executed_successfully",
+      "adaptation": "byte_for_byte; parameterized CLI and input-bound references; no machine roots or case identity hardcoded",
+      "scope": "Actually executed main full-file, map/archive, sampling integrity and execution-source identity audit; private case-level result remains excluded.",
+      "prior_prepared_source": {
+        "sha256": "fc11d73db374c21feea2ca5ebe3966a76d11f48f0ed95709e2f720c0c94dccd1",
+        "preserved_private_snapshot": true,
+        "actual_final_execution_claim": false
+      },
+      "reviewed_changes": "Adds only normalized PQR, bindings object, canonical ledger source hash and four raw-log identity closure; acceptance binds exact native working-directory refs and hashes. Original numerical limits, axis pairs, base target and fallback rules unchanged."
+    },
+    {
+      "path": "src/bridge_physical_accept_label.py",
+      "source_snapshot_sha256": "2133bf83598702534c03c0e15fb14ce1596466383981f31ba2ada49f9cf64aa2",
+      "archived_sha256": "2133bf83598702534c03c0e15fb14ce1596466383981f31ba2ada49f9cf64aa2",
+      "executed_source_sha256": "2133bf83598702534c03c0e15fb14ce1596466383981f31ba2ada49f9cf64aa2",
+      "status": "actually_executed_successfully",
+      "adaptation": "byte_for_byte; parameterized CLI and input-bound references; no machine roots or case identity hardcoded",
+      "scope": "Actually executed immutable development-only successor acceptance; requires all bound role, geometry, main integrity, independent numerical/sampling/nested and resource gates together.",
+      "reviewed_changes": "Adds only normalized PQR, bindings object, canonical ledger source hash and four raw-log identity closure; acceptance binds exact native working-directory refs and hashes. Original numerical limits, axis pairs, base target and fallback rules unchanged.",
+      "prior_prepared_source": {
+        "sha256": "146bb308ddd7f73205b20a120940f53c8c6437f2604b44fa14bf088c34389620",
+        "preserved_private_snapshot": true,
+        "actual_final_execution_claim": false
+      }
+    },
+    {
+      "path": "src/bridge_physical_independent_final.py",
+      "source_snapshot_sha256": "de6cb5b47b8684f3f2400d7f4299bc7eaa63a273555ad4db68e92bcd75eb5772",
+      "archived_sha256": "de6cb5b47b8684f3f2400d7f4299bc7eaa63a273555ad4db68e92bcd75eb5772",
+      "executed_source_sha256": "de6cb5b47b8684f3f2400d7f4299bc7eaa63a273555ad4db68e92bcd75eb5772",
+      "status": "actually_executed_successfully",
+      "adaptation": "byte_for_byte; parameterized CLI and input-bound references; no machine roots or case identity hardcoded",
+      "scope": "Actually executed independent final numerical/sampling/nested and stage-history verification; earlier seven comparisons reused only by pinned immutable evidence.",
+      "reviewed_changes": "Required three predeclared metrics may coexist with auxiliary diagnostics; all three remain finite, nonnegative and within original thresholds. Reuses seven exact-hash comparisons/area checks; independently checks final axis, nine-variant sampling, 68 children and all interrupted/resumed execution stages. No new scientific threshold."
+    },
+    {
+      "path": "src/bridge_physical_summary.py",
+      "source_snapshot_sha256": "2c9089e847e2760f2e94a2be0239b0fbb0b34c8225e633de7c9f6c6630bfa607",
+      "archived_sha256": "2c9089e847e2760f2e94a2be0239b0fbb0b34c8225e633de7c9f6c6630bfa607",
+      "executed_source_sha256": "2c9089e847e2760f2e94a2be0239b0fbb0b34c8225e633de7c9f6c6630bfa607",
+      "status": "actually_executed_successfully",
+      "adaptation": "byte_for_byte; parameterized root/receipt and separate public/private outputs",
+      "scope": "Executed accepted-development gate/export; private case-level receipts remain excluded. The v1 exporter is retained as executed history; v2 is the final public summary.",
+      "superseded_prepared_source_sha256": "7bdcf989b70d1c7a287bcb64705c6c7aee8109f2aa1fc812ab427806c33334dd"
+    },
+    {
+      "path": "src/bridge_physical_summary_v2.py",
+      "source_snapshot_sha256": "26079f3718f593ec26211e60dce15ba05142d862bbb10010471faf621bacc077",
+      "executed_source_sha256": "26079f3718f593ec26211e60dce15ba05142d862bbb10010471faf621bacc077",
+      "archived_sha256": "26079f3718f593ec26211e60dce15ba05142d862bbb10010471faf621bacc077",
+      "status": "actually_executed_successfully",
+      "adaptation": "byte_for_byte",
+      "change_from_executed_v1": "Public schema changes to v2 and per-field RSS sum is omitted. No numerical/gate/target calculation changes. The prior source/output remain preserved privately.",
+      "previous_executed_source_sha256": "2c9089e847e2760f2e94a2be0239b0fbb0b34c8225e633de7c9f6c6630bfa607",
+      "final_output_sha256": "294c8679760fa980956ccced40485e1643ef1c785df5bd252aa52c613dfcfd30"
+    }
+  ],
+  "physical_qualification": "one_coordinate_object_accepted_development_only",
+  "portable_entry_guard_verification": {
+    "archive_only": true,
+    "default_route_reaches_mock_initialize": true,
+    "production_imports": 0,
+    "record_sha256": "b321e1677b4e82c10da0cb6790d303c34cd17d7636e5f424b71f8a4465d4a017",
+    "record_name": "bridge_physical_draft_entry_guard_check.json",
+    "physical_calls": 0,
+    "rejected_before_initialize": [
+      "further",
+      "base further",
+      "further --plan-only"
+    ],
+    "run_unchanged_definitions": 10,
+    "prior_source_check": "bridge_physical_draft_source_check.json describes the earlier pre-guard draft; this entry supersedes its main() comparison.",
+    "run_changed_definitions": [
+      "initialize",
+      "main"
+    ],
+    "status": "passed"
+  },
+  "measure_archive_preparation_check": {
+    "record_name": "bridge_physical_draft_measure_check.json",
+    "sha256": "fc3612864f9efe6d0020ade6eba994036196c2efb95b1617131cd2ff79d3df55",
+    "scope": "In-memory compile, --help without data, exact public-only serialization change, unchanged numerical-function AST, pinned parallel version and legacy further CLI guard; no numerical rerun.",
+    "historical_parallel_version_note": "Its parallel source/archive hashes describe the original interrupted stage; see resume_archive_preparation_check for the current executor."
+  },
+  "resume_archive_preparation_check": {
+    "record_name": "bridge_physical_draft_resume_check.json",
+    "sha256": "9abd448e11e4d5fe9190c6aafaf763ca95b873e4a43e2058e51809e41e615608",
+    "scope": "Current c4bde620 executor and support; supersedes the earlier 77daafe3 parallel-version check in the measure preparation receipt. No numerical execution or production import."
+  },
+  "sampling_gate_source_review": {
+    "record_name": "bridge_physical_sampling_review_closed.json",
+    "sha256": "8f11534cfb4899079fbbe21051b714584e80b428c4ff8d2faac37fcb106a6fec",
+    "status": "historical_source_review_followed_by_successful_final_gates"
+  },
+  "current_resource_binding": {
+    "production_version": "v48",
+    "production_release_identity": "313f25862fb1366fab442c8d1c69117c2bbae067aaf954d5fbf8f274d8cd4dfe",
+    "runtime_upgrade_sha256": "7d06f55d3ad79a759bac90c96b82cdee6d28c6e482dae410b431f91ca715782b",
+    "release_manifest_sha256": "f8e7ad6338f533d7957ac7599e32ba92f6aeb9dafa144a339f65e33f10aeb7ab",
+    "controller_sha256": "9547a213252f5f9dadcbb38e8677fa77d9c0c449651ebb828d27883d8ab3b300",
+    "phase_sha256": "6ee28b3b0ea2b67a4bb9d36863b70e89ebd2d28c10984ec338b0a4a17af5174d",
+    "independent_compatibility_receipt_sha256": "e4c1838d19ee41df026073eab34cc1774bfc02b4bdd700da18572b021f5f97bd",
+    "refreshed_CPU_contract_sha256": "e611d4ad6b5191ed9758f749c4a11de35c0460420b47b8fe4eeeb50ab1086df0",
+    "CPU_contract_status": "Owner-confirmed stage03 contract; exact SHA is recorded in the existing local physical status receipt.",
+    "runtime_change_policy": "Any change remains fail-closed; no automatic compatibility exception, repinning, expanded CPU allocation or release-name-only acceptance.",
+    "fixed_logical_CPUs": [
+      176,
+      177,
+      178,
+      179
+    ],
+    "physical_core_count": 2,
+    "source_of_pins": "Previously archived independent v48 review; no fresh server inspection in this archive preparation.",
+    "stage03_execution_preflight_sha256": "1de9710f8bf818577b38d276c75f02c03e06fd26bcad28ebe67bca5b7dd78fa7",
+    "source_of_contract_pin": "Owner-provided current stage03 pin, cross-checked against local status receipt; no fresh server inspection during preparation."
+  },
+  "final_source_review": {
+    "status": "historical_pre_identity_closure_review_retained_final_executions_separately_bound",
+    "independent_final_prepared_sha256": "de6cb5b47b8684f3f2400d7f4299bc7eaa63a273555ad4db68e92bcd75eb5772",
+    "accept_prepared_sha256": "146bb308ddd7f73205b20a120940f53c8c6437f2604b44fa14bf088c34389620",
+    "main_audit_prepared_sha256": "fc11d73db374c21feea2ca5ebe3966a76d11f48f0ed95709e2f720c0c94dccd1",
+    "owner_reported_metadata_compatibility_checks": "Both interruption manifests (37 and 39 completed fields) and old seven-axis qualification metadata matched prepared interfaces. This is not actual final audit execution."
+  },
+  "latest_gate_delta_review": {
+    "static_review_sha256": "5cb239dff049529e7fa1e4c4259fe272d0eeb4dcf6c6a0d0ff29176e2f59b4fd",
+    "exact_diff_sha256": "6081d5a67c0fefe8918235f072f3567b3d25e569393f9161970405e03011a711",
+    "old_source_snapshots_preserved": true,
+    "independent_final_prepared_sha256": "de6cb5b47b8684f3f2400d7f4299bc7eaa63a273555ad4db68e92bcd75eb5772",
+    "additive_main_fields_interface_compatible": true,
+    "actual_final_gate_execution": true,
+    "summary_metrics_whitelist": [
+      "Hellinger",
+      "W1_kBT_per_e",
+      "CDF_sup"
+    ],
+    "summary_final_source_sha256": "26079f3718f593ec26211e60dce15ba05142d862bbb10010471faf621bacc077"
+  },
+  "final_execution_evidence": {
+    "qualification": "fd0fb9dd521b3b6c16d8dcab62e7656c964f1edb3c85f752684e643087b4e9e8",
+    "integrity_audit": "50b625c02ed4686fba0f64b94eefdede39b28ead7696cc26ada6c9aef2475178",
+    "independent_audit": "c19b96af90d152d3476cc34d633afaf7f18b05806aafb22293fa9ea6e31f5591",
+    "acceptance_code": "2133bf83598702534c03c0e15fb14ce1596466383981f31ba2ada49f9cf64aa2",
+    "geometry_validation_revision": "7006834f15746922d8a901da84676c17df50590af99f1e4d316f44f251cac79f",
+    "accepted_receipt_sha256": "aaf0517369b9be9f981dc8914efadbcacdd0df01aa7e2b060880b618e40a2e41",
+    "summary_sha256": "294c8679760fa980956ccced40485e1643ef1c785df5bd252aa52c613dfcfd30",
+    "actual_summary_source_sha256": "26079f3718f593ec26211e60dce15ba05142d862bbb10010471faf621bacc077"
+  }
+}

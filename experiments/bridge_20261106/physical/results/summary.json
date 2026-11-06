@@ -1,0 +1,220 @@
+{
+  "schema": "anonymous_AF_numerical_bridge_engineering_summary_v2",
+  "status": "accepted_development_only",
+  "qualified_coordinate_objects": 1,
+  "self_executed_required_axes": 8,
+  "inherited_instead_of_self_executed_axes": 0,
+  "thresholds": {
+    "Hellinger": 0.02,
+    "W1_kBT_per_e": 0.1,
+    "CDF_sup": 0.01
+  },
+  "axes": [
+    {
+      "axis": "spacing",
+      "test_variant": "base",
+      "reference_variant": "refined",
+      "pass": true,
+      "difference_metrics": {
+        "Hellinger": 0.011191350726603409,
+        "W1_kBT_per_e": 0.016234368247241407,
+        "CDF_sup": 0.002445053713571621
+      }
+    },
+    {
+      "axis": "further_refinement",
+      "test_variant": "refined",
+      "reference_variant": "further",
+      "pass": true,
+      "difference_metrics": {
+        "Hellinger": 0.00757347965705308,
+        "W1_kBT_per_e": 0.008289709185447906,
+        "CDF_sup": 0.0023025300681885907
+      }
+    },
+    {
+      "axis": "phase",
+      "test_variant": "base",
+      "reference_variant": "shifted",
+      "pass": true,
+      "difference_metrics": {
+        "Hellinger": 0.004314201975524781,
+        "W1_kBT_per_e": 0.005427995848622521,
+        "CDF_sup": 0.0010491995509427365
+      }
+    },
+    {
+      "axis": "rotation",
+      "test_variant": "base",
+      "reference_variant": "rotation",
+      "pass": true,
+      "difference_metrics": {
+        "Hellinger": 0.004956012509159669,
+        "W1_kBT_per_e": 0.0064773798458464295,
+        "CDF_sup": 0.0013385174663766986
+      }
+    },
+    {
+      "axis": "surface_resolution",
+      "test_variant": "base",
+      "reference_variant": "surface16",
+      "pass": true,
+      "difference_metrics": {
+        "Hellinger": 0.0034629970694766816,
+        "W1_kBT_per_e": 0.005160704581828072,
+        "CDF_sup": 0.0010749010060278064
+      }
+    },
+    {
+      "axis": "expanded_domain",
+      "test_variant": "base",
+      "reference_variant": "expanded",
+      "pass": true,
+      "difference_metrics": {
+        "Hellinger": 0.002631447767025099,
+        "W1_kBT_per_e": 0.003869631978053101,
+        "CDF_sup": 0.0011825520792300426
+      }
+    },
+    {
+      "axis": "coarse_parent",
+      "test_variant": "base",
+      "reference_variant": "parent_refined",
+      "pass": true,
+      "difference_metrics": {
+        "Hellinger": 0.0026315681634988953,
+        "W1_kBT_per_e": 0.0038768579942265583,
+        "CDF_sup": 0.0011842256764265091
+      }
+    },
+    {
+      "axis": "overlap",
+      "test_variant": "refined",
+      "reference_variant": "overlap12",
+      "pass": true,
+      "difference_metrics": {
+        "Hellinger": 0.002477598185683767,
+        "W1_kBT_per_e": 0.0019636829041687334,
+        "CDF_sup": 0.0006665967482880619
+      }
+    }
+  ],
+  "auxiliary_comparisons": [
+    {
+      "comparison": "matched_parent_spacing",
+      "difference_metrics": {
+        "Hellinger": 0.011512686303209388,
+        "W1_kBT_per_e": 0.015559077579017805,
+        "CDF_sup": 0.00207203968756442
+      },
+      "descriptive_within_original_limits": true,
+      "additional_PB_calls": 0,
+      "replaces_required_gate": false,
+      "residual_joint_changes": "Matches the outer parent grid; fine box, partition count and actual local halo still differ."
+    },
+    {
+      "comparison": "matched_intermediate_further",
+      "difference_metrics": {
+        "Hellinger": 0.007364921691835925,
+        "W1_kBT_per_e": 0.00797217710193811,
+        "CDF_sup": 0.0021090392786526913
+      },
+      "descriptive_within_original_limits": true,
+      "additional_PB_calls": 0,
+      "replaces_required_gate": false,
+      "residual_joint_changes": "Uses the intermediate result as actual nested boundary data; fine spacing, local domains, halos and boundary-propagation path still differ."
+    }
+  ],
+  "registered_comparison_scope": "The spacing and coarse-parent pairs also change fine-box or partition geometry. Passing them demonstrates registered numerical sensitivity limits, not isolated causal effects.",
+  "accepted_operator": "base-resolution area-weighted potential distribution",
+  "audit_gates": {
+    "main_field_map_archive_integrity": true,
+    "independent_numerical_sampling_nested_geometry": true,
+    "immutable_successor_acceptance": true,
+    "original_outcome_flags_retained": true
+  },
+  "query_integrity": {
+    "variants_verified": 9,
+    "all_queries_retained": true,
+    "all_query_ownership_exactly_once": true,
+    "all_eight_interpolation_corners_present": true,
+    "uncorrected_queries_retain_raw_values": true,
+    "nested_child_fields": 68,
+    "nested_queries_owned_once": 973858,
+    "fallback_fraction_has_no_unregistered_veto_threshold": true
+  },
+  "execution": {
+    "PB_attempt_status_counts": {
+      "completed": 94
+    },
+    "PB_attempts_total": 94,
+    "PB_attempt_cap_including_failures": 120,
+    "audited_unique_completed_fields": 94,
+    "APBS_wall_seconds_per_completed_field": {
+      "count": 94,
+      "min": 14.186707419343293,
+      "median": 335.20957588171586,
+      "max": 481.10336416307837,
+      "sum": 28405.21502470132
+    },
+    "APBS_peak_RSS_bytes_per_completed_field": {
+      "count": 94,
+      "min": 1116463104,
+      "median": 20572760064.0,
+      "max": 26344632320
+    },
+    "first_APBS_start_to_last_APBS_finish_wall_seconds": 35261.781902,
+    "native_observation_window_scope": "Includes inter-field work and pauses inside this window; excludes preparation before the first solve and audits after the last solve. It is not full pipeline wall time or CPU accounting.",
+    "true_CPU_accounting_available": false,
+    "cost_scope": "APBS receipts only; excludes map generation, meshing, sampling, validation and paused wall time. Sum is task-seconds, not elapsed pipeline time.",
+    "native_APBS_threads_per_field": 1,
+    "maximum_concurrent_further_fields": 2,
+    "logical_CPU_allocation": 4,
+    "physical_cores_in_allocation": 2,
+    "worker_slot_separation_is_not_OS_exclusive": true,
+    "further_retained_branch_bytes_at_completion": 340851687676,
+    "further_branch_budget_bytes": 697932185600,
+    "interruption_records": 2,
+    "further_execution_stages": [
+      {
+        "stage": 1,
+        "completed_fields_before": 0,
+        "completed_fields_added": 37,
+        "completed_fields_cumulative": 37
+      },
+      {
+        "stage": 2,
+        "completed_fields_before": 37,
+        "completed_fields_added": 2,
+        "completed_fields_cumulative": 39
+      },
+      {
+        "stage": 3,
+        "completed_fields_before": 39,
+        "completed_fields_added": 29,
+        "completed_fields_cumulative": 68
+      }
+    ]
+  },
+  "scope": {
+    "numerical_stability_of_fixed_coordinate_and_protocol": true,
+    "experimental_absolute_accuracy_established": false,
+    "all_AFDB_or_long_sequence_validity_established": false,
+    "protected_evaluation_or_release_training_permission_granted": false,
+    "structure_source_effect_separated": false,
+    "grid_comparisons_are_perfect_single_factor_interventions": false,
+    "continuous_limit_error_bound_established": false,
+    "old_and_new_histogram_heads_interchangeable": false,
+    "existing_release_role_gate_still_required": true
+  },
+  "public_content": "No sample identifiers, sequences, structure descriptors, target distributions, target quantiles or individual potential summaries.",
+  "evidence_sha256": {
+    "qualification": "fd0fb9dd521b3b6c16d8dcab62e7656c964f1edb3c85f752684e643087b4e9e8",
+    "integrity_audit": "50b625c02ed4686fba0f64b94eefdede39b28ead7696cc26ada6c9aef2475178",
+    "independent_audit": "c19b96af90d152d3476cc34d633afaf7f18b05806aafb22293fa9ea6e31f5591",
+    "acceptance_code": "2133bf83598702534c03c0e15fb14ce1596466383981f31ba2ada49f9cf64aa2",
+    "geometry_validation_revision": "7006834f15746922d8a901da84676c17df50590af99f1e4d316f44f251cac79f"
+  },
+  "accepted_receipt_sha256": "aaf0517369b9be9f981dc8914efadbcacdd0df01aa7e2b060880b618e40a2e41",
+  "summary_code_sha256": "26079f3718f593ec26211e60dce15ba05142d862bbb10010471faf621bacc077"
+}

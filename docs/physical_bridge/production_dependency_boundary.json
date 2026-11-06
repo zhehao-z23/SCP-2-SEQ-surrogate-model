@@ -1,0 +1,192 @@
+{
+  "stage": "physical_archive_dependency_inventory",
+  "source_files": [
+    {
+      "name": "bridge_physical_run.py",
+      "sha256": "97a86df4955b9e54ac9b4c04dcd4c723dcbdea0bb622f28824be3cd033034aa8",
+      "bytes": 15488
+    },
+    {
+      "name": "bridge_physical_further_parallel.py",
+      "sha256": "c4bde620511443501266b0d2ecd8c3936396ec0a52bcf316035c5f4a35b34fb8",
+      "bytes": 24336
+    },
+    {
+      "name": "bridge_physical_geometry_v3.py",
+      "sha256": "27bf03888580d7b0d2a5cd63adb0721dc52f0e93e257212804d4350fa8e5b290",
+      "bytes": 8124
+    },
+    {
+      "name": "bridge_physical_geometry_admission.py",
+      "sha256": "5339e985f23607d3e254064c5fa9ef34e3514146d7dfe1aaf4df0113f0348703",
+      "bytes": 3549
+    },
+    {
+      "name": "bridge_physical_further.py",
+      "sha256": "5019dc56c45423e5e0056d30071b3906b90389ace6f2fb0a8308ebb227a0b227",
+      "bytes": 9392
+    },
+    {
+      "name": "bridge_physical_resume_support.py",
+      "sha256": "6328702a1ed12f9502f1520bc92a52b082b32afc0c94382e85ea31f8dd3ee607",
+      "bytes": 8817
+    },
+    {
+      "name": "bridge_physical_audit.py",
+      "sha256": "fc11d73db374c21feea2ca5ebe3966a76d11f48f0ed95709e2f720c0c94dccd1",
+      "bytes": 12292,
+      "execution_status": "pending_real_final_audit_or_acceptance"
+    },
+    {
+      "name": "bridge_physical_accept_label.py",
+      "sha256": "146bb308ddd7f73205b20a120940f53c8c6437f2604b44fa14bf088c34389620",
+      "bytes": 15945,
+      "execution_status": "pending_real_final_audit_or_acceptance"
+    },
+    {
+      "name": "bridge_physical_independent_final.py",
+      "sha256": "de6cb5b47b8684f3f2400d7f4299bc7eaa63a273555ad4db68e92bcd75eb5772",
+      "bytes": 31572,
+      "execution_status": "pending_real_final_audit_or_acceptance"
+    }
+  ],
+  "direct_project_imports": [
+    {
+      "relative_to_production_project": "code/PB_ledger.py",
+      "sha256": "bad260a04b78bab537b13c29d4c5bc5fe867e62496116f3668adab55dba8171b",
+      "bytes": 1790
+    },
+    {
+      "relative_to_production_project": "code/SES_local_map_preparation_v4_resources.py",
+      "sha256": "80050f06f8601b8a8d1f085c7e9adf9d5e97b830dc2fd4bafe360b43420b0c9e",
+      "bytes": 3801
+    },
+    {
+      "relative_to_production_project": "code/SES_map_solver_v3_runtime.py",
+      "sha256": "939b67ea13dc5a6c904e780cfd4d7cc70e4eb5756c0a4c710dd8f87d51a99f71",
+      "bytes": 7637
+    },
+    {
+      "relative_to_production_project": "code/adaptive_query_boxes.py",
+      "sha256": "92c54e89c5a88c67dcb4e96fcbf939e9bd492555de3711b523261fb283d3c864",
+      "bytes": 2977
+    },
+    {
+      "relative_to_production_project": "code/archived_execution.py",
+      "sha256": "98011bbbca708ea200b37e7aa40ea30eeef9549a039b165a93bfbfa449895f4f",
+      "bytes": 8230
+    },
+    {
+      "relative_to_production_project": "code/capacity_coarse_geometry.py",
+      "sha256": "c8f04a4060548f125c9ef54e2aefde05829eea2198203eef0d3c83c4dce869b3",
+      "bytes": 1065
+    },
+    {
+      "relative_to_production_project": "code/checked_surface_normals_v2.py",
+      "sha256": "0300ba0815042ef40f9a6a6be9944b7d194c3b37efc60bd7c2816e4fa24df473",
+      "bytes": 2902
+    },
+    {
+      "relative_to_production_project": "code/distribution_metrics.py",
+      "sha256": "7642893d51273897cd4680eb1d223d27f4661ef90e99c52aa272b59dbfffe4fd",
+      "bytes": 2111
+    },
+    {
+      "relative_to_production_project": "code/export_representation.py",
+      "sha256": "073094ea208bf525276b9eaac34b5ee9f90e199578785917d9fcd1f5076e6f56",
+      "bytes": 8431
+    },
+    {
+      "relative_to_production_project": "code/geometry_classifier.py",
+      "sha256": "59fac9f3a82e20fd42be35ee5ebe9843fc9d0081a8bd113d725ca7e1ceb8883a",
+      "bytes": 11097
+    },
+    {
+      "relative_to_production_project": "code/nanoshaper15_adapter_v3_runtime.py",
+      "sha256": "f3d5528ad92b4ab57d92d6c6b3c48aacf6320cff7c6b4613ae5cd3418d2ebc4c",
+      "bytes": 4556
+    },
+    {
+      "relative_to_production_project": "code/operational_grid_geometry.py",
+      "sha256": "4d719e69d0973213e2ddc85b59469aedc4de297baaf3c413615cdda3f8cc2f66",
+      "bytes": 2857
+    },
+    {
+      "relative_to_production_project": "code/orientation_winding_fallback.py",
+      "sha256": "5638387851e98235f6e9bcfa109d0e1d619c115de914a6db9c0e91547dcf232f",
+      "bytes": 1561
+    },
+    {
+      "relative_to_production_project": "code/project_paths.py",
+      "sha256": "62914dbcbcee6853c54fe2eae4bfc2df5405f2626467c69d7ffd328bbfd89acb",
+      "bytes": 3135
+    },
+    {
+      "relative_to_production_project": "code/vendor_revision003/solver_surface.py",
+      "sha256": "0da8ebd99113bfcd55bc8846e72cd39df96c76904c6037a8d05334c9d5187b80",
+      "bytes": 35925
+    },
+    {
+      "relative_to_production_project": "code/surface_field_sampling.py",
+      "sha256": "761fdf583d61f500bb2f2324f2bbf0c2facc6032cb58371817f6d7d353777edd",
+      "bytes": 1615
+    },
+    {
+      "relative_to_production_project": "code/vendor_revision003/workflow_core.py",
+      "sha256": "08a6840ba469f7f7f084576fa38d6b02a3e8fe9b7ab1d4cc08320d557fc8b136",
+      "bytes": 12349
+    }
+  ],
+  "contracts": [
+    {
+      "relative_to_production_project": "config/production_candidate_SES_v2.json",
+      "sha256": "315c2e8d34a507be8286cf437064b139659e5d1dbf222496457cfd6dd08e2660",
+      "bytes": 6878
+    },
+    {
+      "relative_to_production_project": "config/chemistry_revision15_source.json",
+      "sha256": "ee9e68fd5c0e65d8029a28055b4a6ba50a5d211cfff8d8b5759abd2b3ffca6a7",
+      "bytes": 23465
+    },
+    {
+      "relative_to_production_project": "contracts/representation_acceptance_v1.json",
+      "sha256": "20968266beb6766b9d0720e0cb35f50b26403f9c4ea00408c10dcc35c4205fd1",
+      "bytes": 2910
+    }
+  ],
+  "shared_bins_reference": {
+    "path": "${HISTORICAL_SHARED_BINS_REFERENCE}",
+    "sha256": "4e9f05936bb1e7bf24a7fb2a5d4243fccc2bdb1f5484a6bd2074838e47a07343"
+  },
+  "scope": "Read-only selected direct dependencies; not transitive dependency closure or a standalone package.",
+  "historical_execution_sources": [
+    {
+      "name": "bridge_physical_further_parallel.py",
+      "sha256": "77daafe39c9b680769ed1560231bd26cad649d7f4f6ec04f44dbd81dc424f907",
+      "bytes": 21932,
+      "scope": "first37 completed sampled fields; interrupted before further dispatch by resource identity guard"
+    }
+  ],
+  "production_resource_identity": {
+    "production_version": "v48",
+    "production_release_identity": "313f25862fb1366fab442c8d1c69117c2bbae067aaf954d5fbf8f274d8cd4dfe",
+    "runtime_upgrade_sha256": "7d06f55d3ad79a759bac90c96b82cdee6d28c6e482dae410b431f91ca715782b",
+    "release_manifest_sha256": "f8e7ad6338f533d7957ac7599e32ba92f6aeb9dafa144a339f65e33f10aeb7ab",
+    "controller_sha256": "9547a213252f5f9dadcbb38e8677fa77d9c0c449651ebb828d27883d8ab3b300",
+    "phase_sha256": "6ee28b3b0ea2b67a4bb9d36863b70e89ebd2d28c10984ec338b0a4a17af5174d",
+    "independent_compatibility_receipt_sha256": "e4c1838d19ee41df026073eab34cc1774bfc02b4bdd700da18572b021f5f97bd",
+    "refreshed_CPU_contract_sha256": "e611d4ad6b5191ed9758f749c4a11de35c0460420b47b8fe4eeeb50ab1086df0",
+    "CPU_contract_status": "Owner-confirmed stage03 contract; exact SHA is recorded in the existing local physical status receipt.",
+    "runtime_change_policy": "Any change remains fail-closed; no automatic compatibility exception, repinning, expanded CPU allocation or release-name-only acceptance.",
+    "fixed_logical_CPUs": [
+      176,
+      177,
+      178,
+      179
+    ],
+    "physical_core_count": 2,
+    "source_of_pins": "Previously archived independent v48 review; no fresh server inspection in this archive preparation.",
+    "stage03_execution_preflight_sha256": "1de9710f8bf818577b38d276c75f02c03e06fd26bcad28ebe67bca5b7dd78fa7",
+    "source_of_contract_pin": "Owner-provided current stage03 pin, cross-checked against local status receipt; no fresh server inspection during preparation."
+  }
+}

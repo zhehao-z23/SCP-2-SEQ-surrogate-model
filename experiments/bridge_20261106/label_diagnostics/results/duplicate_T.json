@@ -1,0 +1,140 @@
+{
+  "schema": "public_aggregate_diagnostic_v1",
+  "status": "completed_development_diagnostic",
+  "diagnostic": "duplicate_T",
+  "new_fits": 0,
+  "new_physical_solves": 0,
+  "raw_phi_reads": 0,
+  "model_loads": 0,
+  "public_sample_memberships": false,
+  "results": {
+    "selection": "all sequence_sha256 duplicated across rows of pinned 21921-row release, no target/error selection",
+    "cohort": {
+      "rows": 21921,
+      "unique_T": 21915,
+      "groups": 7999
+    },
+    "duplicate_support": {
+      "rows": 12,
+      "unique_T": 6,
+      "groups": 6,
+      "unordered_pairs": 6,
+      "rows_per_duplicate_T": 2
+    },
+    "nonidentical_p_support": {
+      "rows": 12,
+      "unique_T": 6,
+      "groups": 6
+    },
+    "same_identity_pair_counts": {
+      "source_structure_sha256": 0,
+      "source_origin": 6,
+      "source_release": 6,
+      "source_sequence_id": 5,
+      "target_row": 0,
+      "target_file_sha256": 6,
+      "target_source_sha256": 6,
+      "pairing_receipt_sha256": 6,
+      "sequence_sha256": 6,
+      "strict_sequence_equal": 6,
+      "T_U_coverage": 6,
+      "matrix_path": 0,
+      "current_p_artifact_and_row": 0,
+      "original_label_artifact_and_row": 0,
+      "n_vertices": 0,
+      "count_vector": 0,
+      "current_p": 0
+    },
+    "unavailable_identity_comparison_pair_counts": {
+      "source_structure_sha256": 0,
+      "source_origin": 0,
+      "source_release": 0,
+      "source_sequence_id": 0,
+      "target_row": 0,
+      "target_file_sha256": 0,
+      "target_source_sha256": 0,
+      "pairing_receipt_sha256": 0,
+      "sequence_sha256": 0,
+      "strict_sequence_equal": 0,
+      "T_U_coverage": 0,
+      "matrix_path": 0,
+      "current_p_artifact_and_row": 0,
+      "original_label_artifact_and_row": 0,
+      "n_vertices": 0,
+      "count_vector": 0,
+      "current_p": 0
+    },
+    "pair_H": {
+      "min": 0.020182058875487047,
+      "median": 0.03168216024059871,
+      "max": 0.04968352534819149,
+      "nonzero": 6
+    },
+    "max_abs_p_difference": 0.03019106388092041,
+    "max_abs_saved_raw_QC_differences": {
+      "q0p01": 138.1991663315415,
+      "q0p05": 39.264264626442234,
+      "q0p1": 14.502922741326095,
+      "q0p5": 3.2222872270548137,
+      "q1": 3.3391985899275625,
+      "q5": 0.7553838632078573,
+      "q25": 0.7021390939553918,
+      "q50": 0.24761392286871864,
+      "q75": 0.5001608903293886,
+      "q95": 4.691988398997292,
+      "q99": 7.004366207751616,
+      "q99p5": 6.0154062165799616,
+      "q99p9": 7.3217071637041045,
+      "q99p95": 12.498442974693546,
+      "q99p99": 21.387559106667652,
+      "phi_mean": 0.4361202164278284
+    },
+    "affected_max_metric_contribution_support_bounds": {
+      "row_mean_H": 0.0005474202819214452,
+      "T_macro_H": 0.0002737850787132101,
+      "group_macro_H_exact_T_weight": 0.00039241016238140877,
+      "assumption": "H<=1, and row->T->group aggregation; possible contribution ceiling, not observed error or causal explanation"
+    },
+    "triangle_inequality_lower_bounds_if_one_deterministic_T_prediction": {
+      "row_mean_H": 8.859652695315443e-06,
+      "T_macro_H": 4.431039168013001e-06,
+      "group_macro_H": 6.1354852079561445e-06,
+      "scope": "empirical duplicate rows only; not global conditional noise estimate or source of model residuals"
+    },
+    "controls": {
+      "all_12_current_p_bit_equal_exact_count_normalization_FP32": true,
+      "all_12_saved_QC_count_index_and_manifest_bindings_match": true,
+      "identity_self_H_zero": true,
+      "onehot_disjoint_H_one": true,
+      "same_input_and_same_target_pair_count": 0,
+      "same_input_and_same_source_structure_pair_count": 0,
+      "controls_do_not_create_an_independent_physical_replicate": true
+    },
+    "not_identified": [
+      "causal decomposition into structure, preparation, protocol, grid or numerical effects",
+      "per-object PQR/mesh/grid equality from raw solver receipts",
+      "original matrix bytes or continuous phi replay",
+      "sequence-exact unseen input conditional variability"
+    ],
+    "actual_input_closure": {
+      "status": "passed",
+      "rows": 12,
+      "duplicate_T_pairs": 6,
+      "charge_shape_per_row": [
+        39
+      ],
+      "charge_dtype": "float32",
+      "charge_byte_identical_pairs": 6,
+      "NaN_mask_identical_pairs": 6,
+      "same_cache_index_offset_length_pairs": 6,
+      "current_model_input_scope": "charge descriptor bytes and frozen residue-cache addresses; same per-checkpoint normalization then gives the same deterministic eval-mode input for these exact T pairs",
+      "embedding_arrays_loaded": 0,
+      "embedding_bytes_rehashed": false,
+      "cache_check": "receipt and index freshly hashed; all accepted cache file size/mtime identities checked; prior full-byte acceptance retained"
+    },
+    "elapsed_seconds": {
+      "target_QC_audit": 1.0786658320575953,
+      "input_closure": 0.7969594653695822
+    }
+  }
+}

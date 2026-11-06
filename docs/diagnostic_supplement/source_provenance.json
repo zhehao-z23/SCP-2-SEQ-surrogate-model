@@ -1,0 +1,41 @@
+{
+  "schema": "diagnostic_supplement_source_provenance_v1",
+  "status": "completed_evidence_prepared_for_publication",
+  "sources": [
+    {
+      "path": "src/bridge_diagnostics_optimization_section.py",
+      "executed_source_sha256": "e102e324e5acb2a2388b64fc63cd30a40b2bea4141ae34ff784d4d107bf17f1e",
+      "archived_sha256": "e102e324e5acb2a2388b64fc63cd30a40b2bea4141ae34ff784d4d107bf17f1e",
+      "byte_for_byte": true,
+      "adaptation": "None. Paths are CLI arguments or read from private machine-local plans and receipts. Exact historical version-specific pins and validation gates remain unchanged.",
+      "execution_evidence": "Completed source-bound receipt; local gallery/review or completed private GPU best-state measurement."
+    },
+    {
+      "path": "src/bridge_best_state_diagnostics.py",
+      "executed_source_sha256": "30e9137b8c61defb9f03f6fbc07543b00e2518a9bf2fde7d2afd360e39862e58",
+      "archived_sha256": "30e9137b8c61defb9f03f6fbc07543b00e2518a9bf2fde7d2afd360e39862e58",
+      "byte_for_byte": true,
+      "adaptation": "None. Paths are CLI arguments or read from private machine-local plans and receipts. Exact historical version-specific pins and validation gates remain unchanged.",
+      "execution_evidence": "Completed source-bound receipt; local gallery/review or completed private GPU best-state measurement."
+    },
+    {
+      "path": "src/bridge_optimization_generalization_curve_review.py",
+      "executed_source_sha256": "e6cae46543250874796f66625a22013e7e0ab4a76d5086b873454453ca8ddfcd",
+      "archived_sha256": "e6cae46543250874796f66625a22013e7e0ab4a76d5086b873454453ca8ddfcd",
+      "byte_for_byte": true,
+      "adaptation": "None. Paths are CLI arguments or read from private machine-local plans and receipts. Exact historical version-specific pins and validation gates remain unchanged.",
+      "execution_evidence": "Completed source-bound receipt; local gallery/review or completed private GPU best-state measurement."
+    }
+  ],
+  "private_receipt_hashes": {
+    "fixed_best_summary": "292f35d956933b8ff0706a37b2ecf8ad12ff693b07c62c10f5e39801d8083742",
+    "curve_review_summary": "8322cb72349ce4ca438f93c5ba9a42b8852ca17b50d0481d44b530bd23e384df",
+    "gallery_integration_receipt": "3f79ffba7a3d2cadca6b3498a31b7c369ef9ca37e5682dac0f1838db65f965e8",
+    "gallery_sync_receipt": "6ccc0b0c222ec59fca82fa45efa12e40e04bfb4db0809b3cd0f2de449be6d5ac"
+  },
+  "public_summary_derivation": "Direct selection of six partition aggregates/support counts and existing verification/resource fields; no model or prediction recomputation. Per-run/member identities, arrays, model weights, GPU identity, affinity and all absolute paths omitted.",
+  "public_summary_sha256": "44e7404ae4f039dfaeb6ebfa31c9886b7e8db464ca2129345518c08dcd2305d6",
+  "private_output_boundary": "All three programs can generate detailed private outputs. Source availability is not permission to publish their HTML, images, logs, source identifiers, model predictions or membership tables. This draft includes none of those outputs.",
+  "qualification_boundary": "Historical exposed development analysis only; the role guard remains mandatory, and the bridge guard does not replace other release role gates.",
+  "archive_checks": "Byte equality and in-memory Python compilation only; no measurement rerun during this archive preparation."
+}

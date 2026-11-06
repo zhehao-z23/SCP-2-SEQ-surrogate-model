@@ -1,0 +1,221 @@
+{
+  "schema": "public_aggregate_diagnostic_v1",
+  "status": "completed_development_diagnostic",
+  "diagnostic": "representation",
+  "new_fits": 0,
+  "new_physical_solves": 0,
+  "raw_phi_reads": 0,
+  "model_loads": 0,
+  "public_sample_memberships": false,
+  "results": {
+    "outcome": "all_quantile_and_certificate_consistency_checks_passed",
+    "identity_status": "passed",
+    "cohort": {
+      "rows": 21921,
+      "unique_T": 21915,
+      "groups": 7999
+    },
+    "quantiles": {
+      "q25": {
+        "mismatch_after_tolerance": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups": 0
+        },
+        "strict_positive_roundoff_excess": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups": 0
+        },
+        "maximum_excess_before_tolerance": 0.0,
+        "finite_support": {
+          "rows": 21921,
+          "unique_T": 21915,
+          "groups": 7999
+        },
+        "unbounded_support": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups": 0
+        },
+        "finite_width": {
+          "finite_n": 21921,
+          "min": 2.5028562517173185,
+          "median": 2.5028562517173185,
+          "mean": 2.502856251717321,
+          "p90": 2.5028562517173256,
+          "p95": 2.5028562517173256,
+          "max": 2.5028562517173256
+        }
+      },
+      "q50": {
+        "mismatch_after_tolerance": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups": 0
+        },
+        "strict_positive_roundoff_excess": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups": 0
+        },
+        "maximum_excess_before_tolerance": 0.0,
+        "finite_support": {
+          "rows": 21921,
+          "unique_T": 21915,
+          "groups": 7999
+        },
+        "unbounded_support": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups": 0
+        },
+        "finite_width": {
+          "finite_n": 21921,
+          "min": 2.5028562517173185,
+          "median": 2.5028562517173185,
+          "mean": 2.502856251717321,
+          "p90": 2.5028562517173256,
+          "p95": 2.5028562517173256,
+          "max": 2.5028562517173327
+        }
+      },
+      "q75": {
+        "mismatch_after_tolerance": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups": 0
+        },
+        "strict_positive_roundoff_excess": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups": 0
+        },
+        "maximum_excess_before_tolerance": 0.0,
+        "finite_support": {
+          "rows": 21921,
+          "unique_T": 21915,
+          "groups": 7999
+        },
+        "unbounded_support": {
+          "rows": 0,
+          "unique_T": 0,
+          "groups": 0
+        },
+        "finite_width": {
+          "finite_n": 21921,
+          "min": 2.5028562517173185,
+          "median": 2.5028562517173185,
+          "mean": 2.5028562517173203,
+          "p90": 2.5028562517173256,
+          "p95": 2.5028562517173256,
+          "max": 2.5028562517173327
+        }
+      }
+    },
+    "any_quantile_mismatch": {
+      "rows": 0,
+      "unique_T": 0,
+      "groups": 0
+    },
+    "quantile_tolerance": {
+      "formula": "1e-10 + 1e-12*max(abs(internal_edges))",
+      "value_kBT_per_e": 2.080536254601708e-10,
+      "formula_fixed_before_execution": true
+    },
+    "shape": {
+      "definition": "Historical absolute conditions only: raw IQR>=1 and Bowley<=-0.30 or >=+0.30; source-percentile requirement NOT applied.",
+      "denominator": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999
+      },
+      "raw_IQR_at_least_1": {
+        "rows": 21921,
+        "unique_T": 21915,
+        "groups": 7999
+      },
+      "raw_negative": {
+        "rows": 61,
+        "unique_T": 61,
+        "groups": 59
+      },
+      "raw_positive": {
+        "rows": 17,
+        "unique_T": 17,
+        "groups": 17
+      },
+      "raw_either": {
+        "rows": 78,
+        "unique_T": 78,
+        "groups": 76
+      },
+      "certificate_eligible": {
+        "rows": 21850,
+        "unique_T": 21844,
+        "groups": 7981
+      },
+      "certified_negative": {
+        "rows": 1,
+        "unique_T": 1,
+        "groups": 1
+      },
+      "certified_positive": {
+        "rows": 0,
+        "unique_T": 0,
+        "groups": 0
+      },
+      "raw_negative_not_certified": {
+        "rows": 60,
+        "unique_T": 60,
+        "groups": 58
+      },
+      "raw_positive_not_certified": {
+        "rows": 17,
+        "unique_T": 17,
+        "groups": 17
+      },
+      "not_certificate_eligible": {
+        "rows": 71,
+        "unique_T": 71,
+        "groups": 32
+      },
+      "checks": {
+        "QC_within_Bowley_bounds_on_eligible_rows": true,
+        "every_negative_certificate_satisfies_raw_absolute_condition": true,
+        "every_positive_certificate_satisfies_raw_absolute_condition": true
+      }
+    },
+    "finite_certifiable_Bowley_interval_width": {
+      "finite_n": 21850,
+      "min": 0.4000000000685018,
+      "median": 1.000000000084127,
+      "mean": 0.9374842605480911,
+      "p90": 1.3333333334451676,
+      "p95": 1.3333333334451696,
+      "max": 2.0
+    },
+    "method": {
+      "quantiles": "NumPy linear/type7 two-order-statistic interval from exact integer counts; no uniform-bin assumption",
+      "certificate": "Quantile support expanded by fixed tolerance; finite ordered box with IQR lower>=1; monotonic corner extrema clipped to [-1,1], then outward S tolerance 1e-12",
+      "unit": "equal retained historical vertices, kBT/e, original U-inclusive last central bin",
+      "unique_T_and_groups": "Counts of distinct identifiers among matching rows, no averaging of per-sample distributions; one group/T may appear in multiple shape categories"
+    },
+    "limits": [
+      "Retrospective exposed development only; no source-population percentile ranking, hence not full historical extreme screening.",
+      "No model scoring, new fit, mode classification, raw phi read or new physical qualification.",
+      "Uncertified by these sufficient conservative bounds does not prove irrecoverable information loss; quantile dependence can narrow the true feasible set.",
+      "Archived producer uses np.quantile without explicit method; original execution NumPy version/exact producer execution SHA remain unbound.",
+      "Fresh hashes bind current snapshots and p. This is not original-matrix byte replay."
+    ],
+    "mathematical_preflight": {
+      "status": "passed",
+      "finite_ordered_boxes": 229,
+      "sorted_triples": 14656,
+      "actual_proteins_read": false
+    },
+    "elapsed_seconds": 2.6593536185100675,
+    "peak_RSS_KiB": 308896,
+    "current_count_normalization_bit_equal_FP32": true
+  }
+}
