@@ -1,0 +1,88 @@
+{
+  "schema": "fixed_path_shape_loss_probe_v1",
+  "status": "portable_plan_template_not_executed",
+  "trainer_sha256": "efe1fe540651a565a110e0bb042fdefb7382940c9c2234d95f513302af074b62",
+  "source_trainer_sha256": "dd6d59f68c3cf8034af44e307e505e7dec588a3ebdd5f3816b01b37d1e9f3736",
+  "model_sha256": "41b81d67c67a55898324f20436c487548cc45c19b0d9991f3592b9e9487fdd7d",
+  "metrics_code_sha256": "8f5d1ae625abc8b7b636fc1bdd6febbcb436ba0d3e0a1f1f5034d2a69621878b",
+  "cache_receipt_sha256": "c278ca5f93b52070d9b10a86c5934d369b7d371bdc7013f17a4f56399e6f0c23",
+  "cache_index_sha256": "83c8f9f753fa27e38c86156dce2fd2deb826c3dceaa6210d20dd1674a73d2c0a",
+  "release_sha256": "67053baa3e80d8c30fda95c0686b8f56c141391bed4ebe880de11cb24c47a49b",
+  "roles_root": "${ROLES_ROOT}",
+  "guard_code_sha256": "5401723f38305496ab11ab71d07825b2f1fe56476d753593d7929ed12a693cd3",
+  "guard_contract_sha256": "71359d1a06e18ab5dec65e825c82a07c3d7e0401c35266e8645957b943bb903c",
+  "reference_directory": "${REFERENCE_DIRECTORY}",
+  "reference_roles_sha256": "14f90de0446fa31c9830304440600b3f98307e1f8e9ea4216630809b7030e16a",
+  "reference_curve_sha256": "599a850faf86bd34327c8152751de9657a2e151851d1324108e96bd322b8ff31",
+  "reference_receipt_sha256": "198c37b080786aa93b6e346bc8f4504b6bc791589c550c706d5a534285f8e7d4",
+  "root": "${ROOT}",
+  "parent": "${PARENT}",
+  "cache_root": "${CACHE_ROOT}",
+  "fold": 0,
+  "seed": 1701,
+  "mode": "residue_mean",
+  "epochs": 134,
+  "LR_path": [
+    {
+      "stage": 0,
+      "first_epoch": 1,
+      "last_epoch": 83,
+      "lr": 0.0003
+    },
+    {
+      "stage": 1,
+      "first_epoch": 84,
+      "last_epoch": 101,
+      "lr": 0.0001
+    },
+    {
+      "stage": 2,
+      "first_epoch": 102,
+      "last_epoch": 134,
+      "lr": 3e-05
+    }
+  ],
+  "arms": [
+    "H2",
+    "CE_quarter"
+  ],
+  "loss_definition": {
+    "H2": "0.5 sum_j (sqrt(p_j)-sqrt(q_j))^2, exact existing implementation",
+    "CE_quarter": "-0.25 sum_j p_j log(q_j), no new labels or parameters"
+  },
+  "hypothesis": "Changing the conditional risk center while holding inputs, architecture and realized LR path fixed may reduce shape/tail attenuation. Existing training as well as validation shapes are attenuated; this is evidence to test the loss, not proof that H2 is the cause.",
+  "comparison_scope": "Finite-budget loss replacement under the current H2-derived schedule and stop-H selection. CE/4 matches local second-order loss scale near p=q, not AdamW/clip dynamics or global gradient scale. Negative results do not establish CE has no useful optimum.",
+  "checkpoint_selection": "Epoch0 eligible; update only when stop group-macro H < selected best - 1e-5. Run all 134 epochs for both arms; no independent plateau triggers or early stop. Evaluation never chooses epoch or LR.",
+  "new_recording": "Each epoch online loss, same stop H/CDF/edge plus common unscaled CE with explicit 1e-30 floor-count diagnostic, gradient norm/clip fraction, batch/RNG digests. Selected best train/stop/evaluation predictions with dropout off; no invented prior trajectories. Monitor CE trajectory and endpoint best to disclose H-based schedule/selection limitations.",
+  "control_replay_gate": {
+    "required_before_CE": true,
+    "initial_stop_absolute_tolerance": 1e-07,
+    "each_epoch_stop_absolute_tolerance": 1e-07,
+    "each_epoch_online_H2_absolute_tolerance": 1e-08,
+    "selected_epoch": 104,
+    "prediction_max_absolute_tolerance": 1e-06,
+    "new_arm_initial_model_RNG_and_batch_digests_equal": true,
+    "all_134_end_epoch_RNG_and_batch_digests_equal": true
+  },
+  "evaluation": "Reuse frozen whole-distribution H/CDF/edge, raw Q50/IQR/Bowley errors, absolute Bowley TP/FP/FN and fixed 1% unique-T budget retrieval. Report both tail bias and absolute error. Same oracle and training-only constant centers. No threshold tuning.",
+  "promotion_rule": {
+    "necessary_primary_improvement": "Within the pre-existing raw strong-shape union (IQR>=1 and abs(Bowley)>=0.30), at least 10% lower group-macro Bowley AE OR at least 20% lower magnitude of whole-cohort negative open-tail bias together with lower negative-tail absolute error, on both stop and evaluation. Report each sign and training performance separately; do not substitute whole-cohort average Bowley error for this rare-shape condition.",
+    "guardrails": "Overall H and CDF MSE each no more than 1% worse on stop and evaluation; no decrease in summed negative-plus-positive fixed-budget true positives on either partition. Rare-event counts remain descriptive, not significance claims.",
+    "if_passed": "At most one further fold/seed paired confirmation under an independently frozen existing H2 schedule. No new architecture or hyperparameter search.",
+    "if_failed": "Do not tune CE weight/LR/threshold to rescue it. Retain H2 engineering baseline; use effect pattern and controls to narrow the mechanism claim."
+  },
+  "CPU_affinity": [
+    172,
+    173
+  ],
+  "GPU": "${GPU}",
+  "concurrency": 1,
+  "fit_seconds_cap": 900,
+  "process_seconds_cap": 1020,
+  "GPU_hours_cap_initial_two_arms": 0.6,
+  "preflight": "Fresh cache/release/source hash check; guard before target reads; available GPU at least 18GiB and no competing compute process; MemAvailable at least 320GiB; no production CPU change.",
+  "new_C_or_AF_claims": false,
+  "final_test_used": false,
+  "retries": 0,
+  "actual_executed_plan_sha256": "34fd332bf2779a8212392e2d6e7a9b911a3f483cbf392b6a10cc8411e8255b64"
+}

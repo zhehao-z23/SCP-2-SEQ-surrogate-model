@@ -1,0 +1,120 @@
+{
+  "schema": "diagnostic_decisions_sources_v1",
+  "status": "completed_evidence_candidate_for_publication",
+  "parent_public_commit": "260d925bf59c30d3594d763faea17f6edf098325",
+  "sources": [
+    {
+      "path": "src/bridge_shape_partition_diagnostics.py",
+      "actual_execution_source_sha256": "d2a48e1da87a035806643806956487e7911f89bc72be570781492305785ee3f7",
+      "archive_sha256": "d2a48e1da87a035806643806956487e7911f89bc72be570781492305785ee3f7",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_tail_screening_audit.py",
+      "actual_execution_source_sha256": "2371ead1f595bf72ca1e55bd291e4ce227a45a6b6ed8cda93003955a29e7ff5b",
+      "archive_sha256": "2371ead1f595bf72ca1e55bd291e4ce227a45a6b6ed8cda93003955a29e7ff5b",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_tail_fraction_bounds.py",
+      "actual_execution_source_sha256": "c947afb5920ec89cfd964cb03e1fa63676dfcb622887e1b9cdf0b544415aab00",
+      "archive_sha256": "c947afb5920ec89cfd964cb03e1fa63676dfcb622887e1b9cdf0b544415aab00",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_length_matched_diagnostic.py",
+      "actual_execution_source_sha256": "79017b655fa900f3951c90d05b062824365685b34519fecf19791b3d4f639cf2",
+      "archive_sha256": "79017b655fa900f3951c90d05b062824365685b34519fecf19791b3d4f639cf2",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_shape_case_facts.py",
+      "actual_execution_source_sha256": "338c4d033849d25b5d005b30b673ad4f2958f690ca061f54eb7a49001d29e334",
+      "archive_sha256": "338c4d033849d25b5d005b30b673ad4f2958f690ca061f54eb7a49001d29e334",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_shape_loss_train.py",
+      "actual_execution_source_sha256": "efe1fe540651a565a110e0bb042fdefb7382940c9c2234d95f513302af074b62",
+      "archive_sha256": "efe1fe540651a565a110e0bb042fdefb7382940c9c2234d95f513302af074b62",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_shape_loss_execute.py",
+      "actual_execution_source_sha256": "a07b4e74505052f7a99c8e17f002bab3ae48a3735f546a0c8d3e49b5b46824b3",
+      "archive_sha256": "a07b4e74505052f7a99c8e17f002bab3ae48a3735f546a0c8d3e49b5b46824b3",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_shape_loss_analyze.py",
+      "actual_execution_source_sha256": "e2e907f94f4841f401820a4cccbc3ddd36ff195aed5090299768d0f56ec28e5a",
+      "archive_sha256": "e2e907f94f4841f401820a4cccbc3ddd36ff195aed5090299768d0f56ec28e5a",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_loss_probe_plot.py",
+      "actual_execution_source_sha256": "520e2fad0967509bdda97019663d6b36ee8040af7e14c4f89c3db6314bc8c7ed",
+      "archive_sha256": "520e2fad0967509bdda97019663d6b36ee8040af7e14c4f89c3db6314bc8c7ed",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_shape_case_loss_addendum.py",
+      "actual_execution_source_sha256": "357f5ce8ccefc35f03ff325d2e09bc1715126623878a97990a707680c613cac8",
+      "archive_sha256": "357f5ce8ccefc35f03ff325d2e09bc1715126623878a97990a707680c613cac8",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_shape_loss_probe_review.ps1",
+      "actual_execution_source_sha256": "760e088b170a6368703c4a48b8fd48c401ca4b3bb9397414b58b7548311f4d34",
+      "archive_sha256": "760e088b170a6368703c4a48b8fd48c401ca4b3bb9397414b58b7548311f4d34",
+      "adaptation": "byte_for_byte"
+    },
+    {
+      "path": "src/bridge_diagnostic_decisions_page.py",
+      "actual_execution_source_sha256": "fdfa3194609418d4b31ab0816572c0f7fa8550f17988fc014ff734b3bd4774ad",
+      "archive_sha256": "fdfa3194609418d4b31ab0816572c0f7fa8550f17988fc014ff734b3bd4774ad",
+      "scope": "Local HTML rendering and explicit aggregate projection only; no numerical recomputation."
+    }
+  ],
+  "summary_inputs": {
+    "shape_partition": {
+      "sha256": "20aaa0fa233f82e172c40932e80a9ebe99c9c74e2b8dc2fba51baf1e7125feec",
+      "schema": "shape_partition_diagnostics_v1"
+    },
+    "tail_screening": {
+      "sha256": "45b6ccbf9a3c02a531cf71606ae2343c92d63932208f90fa621dfe3994913cc9",
+      "schema": "interval_tail5_concentration_audit_v2_exact_counts"
+    },
+    "length_match": {
+      "sha256": "c580a95cba1c583875e32b059183718c5ba7d1f531041994e56d0920466f0a29",
+      "schema": "label_matched_length_diagnostic_v1"
+    },
+    "curve_review": {
+      "sha256": "8322cb72349ce4ca438f93c5ba9a42b8852ca17b50d0481d44b530bd23e384df",
+      "schema": "existing_optimization_curve_review_v1"
+    },
+    "loss_probe": {
+      "sha256": "c20abcc692a6b7943d6cd6b1a3c2b161bf4a7a8e1307c0cdb8f1b6ec57b2aec5",
+      "projection": "Only aggregate results, trajectory diagnostics, declared decisions and opaque source/evidence hashes; no prediction or index arrays."
+    }
+  },
+  "private_plan_not_distributed": true,
+  "actual_data_files_not_distributed": true,
+  "loss_plan_template": {
+    "actual_executed_plan_sha256": "34fd332bf2779a8212392e2d6e7a9b911a3f483cbf392b6a10cc8411e8255b64",
+    "archived_template_sha256": "fa7e4387f002d990ce22bb6d3c88b070397f73047ff81ff40487adbeb6e764c1",
+    "changes": "Five private root/reference paths and one GPU UUID replaced by placeholders; status and original-plan hash distinguish the unexecuted template. Scientific schedule, limits and declared rule unchanged."
+  },
+  "posthoc_case_outputs_public_policy": "Only support counts and bounded interpretation flags are projected; individual target/QC values, private facts, probabilities and neighbor details are excluded.",
+  "execution_history": {
+    "case_facts": "Initial v1 NumPy-bool JSON serialization failure preserved; executed v2 only fixes serialization and retains matching/numerical choices.",
+    "case_loss_addendum": "Prepared-source updates preceded execution; one wrapper parsing failure launched no child; completed evidence uses source357f5ce8.",
+    "loss_probe": "H2 and CE/4 completed; original analyzer per-partition OR ambiguity is disclosed by the independent post-execution review, not silently patched."
+  },
+  "source_platforms": {
+    "bridge_diagnostic_decisions_page.py": "local render/projection only",
+    "bridge_loss_probe_plot.py": "local plot from six verified small logs",
+    "bridge_shape_loss_probe_review.ps1": "local read-only independent scalar/source review",
+    "other_scientific_sources": "Byte completed guarded analysis or two real training arms"
+  }
+}

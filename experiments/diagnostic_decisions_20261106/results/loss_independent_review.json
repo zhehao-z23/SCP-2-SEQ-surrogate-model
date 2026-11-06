@@ -1,0 +1,243 @@
+{
+  "schema": "anonymous_independent_fixed_path_loss_probe_review_v1",
+  "status": "no_promotion_confirmed_with_executed_v1_scope_ambiguity_disclosed",
+  "provenance": {
+    "bridge_shape_loss_probe_summary.json": "c20abcc692a6b7943d6cd6b1a3c2b161bf4a7a8e1307c0cdb8f1b6ec57b2aec5",
+    "bridge_shape_loss_probe_plan.json": "34fd332bf2779a8212392e2d6e7a9b911a3f483cbf392b6a10cc8411e8255b64",
+    "bridge_shape_loss_train.py": "efe1fe540651a565a110e0bb042fdefb7382940c9c2234d95f513302af074b62",
+    "bridge_shape_loss_execute.py": "a07b4e74505052f7a99c8e17f002bab3ae48a3735f546a0c8d3e49b5b46824b3",
+    "bridge_shape_loss_analyze.py": "e2e907f94f4841f401820a4cccbc3ddd36ff195aed5090299768d0f56ec28e5a"
+  },
+  "audit_timing": "Post-execution read-only decision audit; not a preregistration or alteration of the original plan/analyzer.",
+  "scope": "Aggregate summary and frozen local source review, plus two small execution-control receipts; no raw samples, prediction arrays, checkpoints, protected targets or new fits.",
+  "recomputed_partitions": [
+    {
+      "partition": "stop",
+      "strong_shape_Bowley_AE_change_percent": 2.072140919514598,
+      "negative_tail_bias_magnitude_reduction_percent": 21.349947932456438,
+      "negative_tail_AE_change": -3.3760443329811096E-08,
+      "H_change_percent": -0.20699529745543677,
+      "CDF_MSE_change_percent": -1.0596072308275528,
+      "strong_shape_10pct_pass": false,
+      "tail_bias_20pct_pass": true,
+      "tail_AE_lower": true,
+      "tail_combined_pass": true,
+      "distribution_guardrail_pass": true,
+      "fixed_budget_TP": [
+        9,
+        7
+      ],
+      "ranking_guardrail_pass": false,
+      "executed_partition_pass": false,
+      "strong_shape_support_rows": 13,
+      "strong_shape_support_groups": 12
+    },
+    {
+      "partition": "evaluation",
+      "strong_shape_Bowley_AE_change_percent": 3.0280057713032216,
+      "negative_tail_bias_magnitude_reduction_percent": 13.589948723671586,
+      "negative_tail_AE_change": 3.321375697851181E-05,
+      "H_change_percent": 0.2796913784269828,
+      "CDF_MSE_change_percent": 0.66479925022358,
+      "strong_shape_10pct_pass": false,
+      "tail_bias_20pct_pass": false,
+      "tail_AE_lower": false,
+      "tail_combined_pass": false,
+      "distribution_guardrail_pass": true,
+      "fixed_budget_TP": [
+        11,
+        11
+      ],
+      "ranking_guardrail_pass": true,
+      "executed_partition_pass": false,
+      "strong_shape_support_rows": 16,
+      "strong_shape_support_groups": 16
+    }
+  ],
+  "promotion": {
+    "executed_v1_primary": false,
+    "same_primary_path_on_both": false,
+    "all_guardrails": false,
+    "executed_v1_final": false,
+    "conservative_same_path_final": false,
+    "executed_expression": "(Sstop OR Tstop) AND (Seval OR Teval)",
+    "conservative_reference_expression": "(Sstop AND Seval) OR (Tstop AND Teval)",
+    "plan_scope_note": "The plan wording on both partitions can be read as requiring the same improvement route on both. V1 admits mixed-route successes; this audit makes the more conservative interpretation explicit without rewriting the frozen record. Both interpretations reject this actual probe.",
+    "truth_table_assumes_guardrails_pass": [
+      {
+        "Sstop": false,
+        "Seval": false,
+        "Tstop": false,
+        "Teval": false,
+        "executed_v1": false,
+        "same_path_both": false
+      },
+      {
+        "Sstop": true,
+        "Seval": false,
+        "Tstop": false,
+        "Teval": false,
+        "executed_v1": false,
+        "same_path_both": false
+      },
+      {
+        "Sstop": false,
+        "Seval": true,
+        "Tstop": false,
+        "Teval": false,
+        "executed_v1": false,
+        "same_path_both": false
+      },
+      {
+        "Sstop": true,
+        "Seval": true,
+        "Tstop": false,
+        "Teval": false,
+        "executed_v1": true,
+        "same_path_both": true
+      },
+      {
+        "Sstop": false,
+        "Seval": false,
+        "Tstop": true,
+        "Teval": false,
+        "executed_v1": false,
+        "same_path_both": false
+      },
+      {
+        "Sstop": true,
+        "Seval": false,
+        "Tstop": true,
+        "Teval": false,
+        "executed_v1": false,
+        "same_path_both": false
+      },
+      {
+        "Sstop": false,
+        "Seval": true,
+        "Tstop": true,
+        "Teval": false,
+        "executed_v1": true,
+        "same_path_both": false
+      },
+      {
+        "Sstop": true,
+        "Seval": true,
+        "Tstop": true,
+        "Teval": false,
+        "executed_v1": true,
+        "same_path_both": true
+      },
+      {
+        "Sstop": false,
+        "Seval": false,
+        "Tstop": false,
+        "Teval": true,
+        "executed_v1": false,
+        "same_path_both": false
+      },
+      {
+        "Sstop": true,
+        "Seval": false,
+        "Tstop": false,
+        "Teval": true,
+        "executed_v1": true,
+        "same_path_both": false
+      },
+      {
+        "Sstop": false,
+        "Seval": true,
+        "Tstop": false,
+        "Teval": true,
+        "executed_v1": false,
+        "same_path_both": false
+      },
+      {
+        "Sstop": true,
+        "Seval": true,
+        "Tstop": false,
+        "Teval": true,
+        "executed_v1": true,
+        "same_path_both": true
+      },
+      {
+        "Sstop": false,
+        "Seval": false,
+        "Tstop": true,
+        "Teval": true,
+        "executed_v1": true,
+        "same_path_both": true
+      },
+      {
+        "Sstop": true,
+        "Seval": false,
+        "Tstop": true,
+        "Teval": true,
+        "executed_v1": true,
+        "same_path_both": true
+      },
+      {
+        "Sstop": false,
+        "Seval": true,
+        "Tstop": true,
+        "Teval": true,
+        "executed_v1": true,
+        "same_path_both": true
+      },
+      {
+        "Sstop": true,
+        "Seval": true,
+        "Tstop": true,
+        "Teval": true,
+        "executed_v1": true,
+        "same_path_both": true
+      }
+    ]
+  },
+  "checkpoint_selection_review": {
+    "epoch0_eligible": true,
+    "selected_using_stop_H_only": true,
+    "min_delta": 1E-05,
+    "evaluation_used_to_choose_epoch_or_LR": false,
+    "evidence": "Trainer computes score from va stop group-macro H, updates best only at score < best - 1e-5, completes the frozen 134-epoch LR path, restores selected state, and only then predicts te. Scalers use tr only. The later evaluation-based promotion decision is exposed development use, not epoch selection or a blind final test."
+  },
+  "controls": {
+    "H2_replay_receipt_sha256": "0a9dfba54999b32facc466871e02c4d7d07700d9537aac5987afbf79363d3e91",
+    "paired_path_receipt_sha256": "592c87ddb2ec48dc622e8f8cb9b19837a4dfce78ab4e1b6100a11b4624d2116e",
+    "small_receipts_read_and_hashes_matched": true,
+    "H2_replay_max_reported_differences": 0,
+    "matched_epoch_batch_and_RNG_checks": 134,
+    "new_pair_initial_model_and_RNG_equal": true,
+    "historical_initial_state_hash_available": false,
+    "control_arrays_independently_recomputed_in_this_audit": false
+  },
+  "trajectories": [
+    {
+      "loss": "H2",
+      "selected_epoch": 104,
+      "best_at_budget_endpoint": false,
+      "last10_minus_previous10_stop_CE": -1.2162264134918388E-05,
+      "last10_minus_previous10_stop_H": -5.365870893001695E-05,
+      "recorded_mean_clip_fraction": 0.0,
+      "recorded_stop_CE_floor_count_max": 0
+    },
+    {
+      "loss": "CE_quarter",
+      "selected_epoch": 134,
+      "best_at_budget_endpoint": true,
+      "last10_minus_previous10_stop_CE": -9.008463490722818E-06,
+      "last10_minus_previous10_stop_H": -5.21123409271268E-05,
+      "recorded_mean_clip_fraction": 0.0,
+      "recorded_stop_CE_floor_count_max": 0
+    }
+  ],
+  "interpretation_limits": [
+    "CE/4 best is epoch 134, the fixed budget endpoint, with recent stop CE and H still improving. Convergence or CE optimality is not established.",
+    "Both recorded clip fractions are zero; there is no evidence to attribute the observed difference to clipping.",
+    "This is one exposed fold/seed under an H2-derived schedule and H-based checkpoint selection. Loss replacement also changes gradients and AdamW trajectories; it does not isolate an asymptotic Bayes-center mechanism.",
+    "The shape sets and retrieval counts are small; frozen effect thresholds are engineering rules, not significance tests. The tiny stop-tail AE reduction is only a strict numerical improvement, not evidence of a meaningful practical gain.",
+    "H2 remains the current engineering baseline after this failed promotion gate. This does not show CE is useless, prove H2 caused attenuation, or establish performance on new-C or AF targets."
+  ],
+  "recommendation": "Do not promote or tune CE weight/LR/threshold to rescue this probe under the failed frozen rule. Preserve original execution and this post-execution clarification.",
+  "review_code_sha256": "760e088b170a6368703c4a48b8fd48c401ca4b3bb9397414b58b7548311f4d34"
+}

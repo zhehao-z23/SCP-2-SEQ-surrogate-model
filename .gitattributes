@@ -52,3 +52,24 @@
 /src/export_bridge_diagnostic_public.py -text
 /README.md -text
 /docs/bridge_reproduction.md -text
+
+# Preserve reviewed byte identities for the completed decision-diagnostics archive.
+/experiments/diagnostic_decisions_20261106/README.md -text
+/experiments/diagnostic_decisions_20261106/configs/loss_probe_plan.template.json -text
+/experiments/diagnostic_decisions_20261106/docs/metric_rationale.md -text
+/experiments/diagnostic_decisions_20261106/docs/reproduction.md -text
+/experiments/diagnostic_decisions_20261106/docs/source_provenance.json -text
+/experiments/diagnostic_decisions_20261106/results/diagnostic_decisions.json -text
+/experiments/diagnostic_decisions_20261106/results/loss_independent_review.json -text
+/experiments/diagnostic_decisions_20261106/src/bridge_diagnostic_decisions_page.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_length_matched_diagnostic.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_loss_probe_plot.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_shape_case_facts.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_shape_case_loss_addendum.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_shape_loss_analyze.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_shape_loss_execute.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_shape_loss_probe_review.ps1 -text
+/experiments/diagnostic_decisions_20261106/src/bridge_shape_loss_train.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_shape_partition_diagnostics.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_tail_fraction_bounds.py -text
+/experiments/diagnostic_decisions_20261106/src/bridge_tail_screening_audit.py -text

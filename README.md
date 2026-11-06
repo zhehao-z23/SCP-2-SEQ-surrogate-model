@@ -1,5 +1,10 @@
 # SCP sequence surrogate: completed bridge stage, 2026-11-06
 
+本轮四项模型诊断已收束：既有 plateau 仅证实有限改善；强形态与极端筛选仍有缺口；病例核验排除了部分简单错配，但主要因果未分离。固定路径 H² 对 CE/4 的两臂 134 轮实验实际完成，H²精确重放和配对检查通过，**CE/4未达推广门槛，保留H²，不追加第二折或事后调参**。CE在预算末端仍改善，不能由此宣称其全局无用。任务仍限已曝光开发数据，最终模型和新C迁移尚未完成。
+
+[本轮四项验收、支持数与负结果](experiments/diagnostic_decisions_20261106/README.md) · [指标依据与解释边界](experiments/diagnostic_decisions_20261106/docs/metric_rationale.md) · [独立决策复核](experiments/diagnostic_decisions_20261106/results/loss_independent_review.json)。该章节保留19个已审归档文件的原始字节与内部目录；私有图册和病例数值不在公开仓库。
+
+
 **本轮开发阶段已闭环：历史 Atlas 优化与形态诊断完成，1 个 AF 坐标对象通过自身 8 项数值敏感性检查和最终开发标签验收。最终模型、新 C 全量训练和全 sequence space 精度扫描仍未完成。**
 
 冻结 ESMC300＋共享残基非线性后 mean＋电荷仍是整体分布 H 的主候选，连续 plateau 降 LR 值得保留；charge 和 matched mean 对照继续保留。18 次优化拟合均 early-stop，预测复算和 checkpoint 恢复通过。这些部分 fold/seed 的优化收益不是最终独立测试，也没有解决形态检索失败。
